@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_rebelxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_rebel.xml.rawclobber:140
 msgid ""
@@ -650,9 +657,12 @@ msgid ""
 msgstr "你在低频收到一条信息：“你们被包围了，就像你们在联邦最后的朋友一样。去死吧。”敌人已传送到你的船上！"
 
 #: src-ru/data/events_rebel.xml.rawclobber:838
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"START_BEACON_ORDEN\"]/text[1]"
-msgstr "你抵达了秩序教团星区。自从冲突开始以来，由于与联邦和叛军的无序交战，他们的力量已大幅削弱。然而，他们仍然构成威胁。"
+msgstr ""
+"你抵达了秩序教团星区。自从冲突开始以来，由于与联邦和叛军的无序交战，他们的力"
+"量已大幅削弱。然而，他们仍然构成威胁。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:839
 msgid ""
@@ -670,6 +680,7 @@ msgid ""
 msgstr "这个地方是混沌秩序教团星区。目前他们的首要任务是恢复昔日的权力和财富。与他们的强盗式冲突愈发频繁，他们也不会放过访客。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:842
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"START_BEACON_ORDEN\"]/text[5]"
 msgstr "秩序教团拥有自己独特的技术。然而，进行贸易谈判可不是他们的作风……"
@@ -3529,9 +3540,12 @@ msgid ""
 msgstr "人工智能HAL控制着银河系的这个星区。创造它的种族在几个世纪前与自己的造物战争中灭亡。自那时起，HAL不断占领新的领土。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:3313
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"START_BEACON_HAL\"]/text[3]"
-msgstr "没人记得人工智能HAL是从哪里来的了。然而，它对银河系中所有生命都构成了威胁。穿越这个星系时应格外小心。"
+msgstr ""
+"没人记得人工智能HAL是从哪里来的了。然而，它对银河系中所有生命都构成了威胁。穿"
+"越这个星系时应格外小心。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:3314
 msgid ""
@@ -3813,9 +3827,12 @@ msgid ""
 msgstr "攻击那架维修无人机。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:3485
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"HAL_BOSS_FIGHT\"]/choice[1]/event/text"
-msgstr "你依靠突然性冲过去攻击。然而，HAL 9000及时对攻击做出了反应。等待维修的无人机选择飞离，远离你的拆解。"
+msgstr ""
+"你依靠突然性冲过去攻击。然而，HAL 9000及时对攻击做出了反应。等待维修的无人机"
+"选择飞离，远离你的拆解。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:3490
 msgid ""
@@ -4595,10 +4612,12 @@ msgid ""
 msgstr "拒绝。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:4322
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"QUEST_HAL_FED_NOFUEL\"]/text"
 msgstr ""
-"“舰长，感谢您的护送！不过，这不是我们要去的地方。我们搞错了信标。但现在我们弄清楚了，也有了精确的坐标！对了，顺便提一下，我们的油箱又空了……您看怎么办？”"
+"“舰长，感谢您的护送！不过，这不是我们要去的地方。我们搞错了信标。但现在我们弄"
+"清楚了，也有了精确的坐标！对了，顺便提一下，我们的油箱又空了……您看怎么办？”"
 
 #: src-ru/data/events_rebel.xml.rawclobber:4325
 msgid ""
@@ -6443,9 +6462,12 @@ msgid ""
 msgstr "一艘菇人种族的飞船出现在星空背景下，它不寻常的轮廓引起了警觉。你启动武器系统，准备应对即将到来的战斗。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:6207
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"MUSHROOM_FIGHT_TEXT\"]/text[3]"
-msgstr "太空的寂静突然被打破，菇人飞船闪烁的轮廓出现在雷达上。你的导航面板嗡嗡作响，屏幕充满红色威胁指示器——该战斗了！"
+msgstr ""
+"太空的寂静突然被打破，菇人飞船闪烁的轮廓出现在雷达上。你的导航面板嗡嗡作响，"
+"屏幕充满红色威胁指示器——该战斗了！"
 
 #: src-ru/data/events_rebel.xml.rawclobber:6208
 msgid ""
