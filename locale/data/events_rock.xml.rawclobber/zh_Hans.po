@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_rockxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_rock.xml.rawclobber:119
 msgid ""
@@ -1305,19 +1312,28 @@ msgid ""
 msgstr "不知为何，克隆队列中的熔岩族立刻解体了。你的小队困惑地看着这一幕，然后收集了飞船残骸上幸存的东西……"
 
 #: src-ru/data/events_rock.xml.rawclobber:1396
+#, fuzzy
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[2]/text"
-msgstr "不知为何，克隆队列中的熔岩族立刻解体了。不过，有一个是完好无损的。他跟随你的小队一起收集了飞船残骸上幸存的东西……"
+msgstr ""
+"不知为何，克隆队列中的熔岩族立刻解体了。不过，有一个是完好无损的。他跟随你的"
+"小队一起收集了飞船残骸上幸存的东西……"
 
 #: src-ru/data/events_rock.xml.rawclobber:1401
+#, fuzzy
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[3]/text"
-msgstr "不知为何，克隆队列中的熔岩族立刻解体了。不过，有两个是完好无损的。他们跟随你的小队一起帮忙收集了飞船残骸上幸存的东西……"
+msgstr ""
+"不知为何，克隆队列中的熔岩族立刻解体了。不过，有两个是完好无损的。他们跟随你"
+"的小队一起帮忙收集了飞船残骸上幸存的东西……"
 
 #: src-ru/data/events_rock.xml.rawclobber:1407
+#, fuzzy
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[4]/text"
-msgstr "不知为何，克隆队列中的熔岩族立刻解体了。不过，有两个是完好无损的。他们跟随你的小队一起帮忙收集了飞船残骸上幸存的东西……"
+msgstr ""
+"不知为何，克隆队列中的熔岩族立刻解体了。不过，有两个是完好无损的。他们跟随你"
+"的小队一起帮忙收集了飞船残骸上幸存的东西……"
 
 #: src-ru/data/events_rock.xml.rawclobber:1413
 msgid ""
