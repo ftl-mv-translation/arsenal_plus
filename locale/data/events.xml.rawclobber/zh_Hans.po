@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataeventsxmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -29678,9 +29678,12 @@ msgid ""
 msgstr "（蛞蝓族船员）尝试进行心灵感应联系。"
 
 #: src-ru/data/events.xml.rawclobber:32205
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_1\"]/event/choice[@req=\"slug_crew\"]/event/text"
-msgstr "过了一会儿，蛞蝓族向你报告说，这些是过着和平生活的简单生物。然而，这并非第一次有飞船在此降落。它们告诉你附近有一个坠毁地点。"
+msgstr ""
+"过了一会儿，蛞蝓族向你报告说，这些是过着和平生活的简单生物。然而，这并非第一"
+"次有飞船在此降落。它们告诉你附近有一个坠毁地点。"
 
 #: src-ru/data/events.xml.rawclobber:32209
 msgid ""
@@ -30201,9 +30204,12 @@ msgid ""
 msgstr "基谢廖夫"
 
 #: src-ru/data/events.xml.rawclobber:32614
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_5_JOIN\"]/event[2]/text"
-msgstr "你向研究员解释了联邦目前的处境。然而，他忠于自己的事业，不愿抛弃自己的飞船，留在了行星上。"
+msgstr ""
+"你向研究员解释了联邦目前的处境。然而，他忠于自己的事业，不愿抛弃自己的飞船，"
+"留在了行星上。"
 
 #: src-ru/data/events.xml.rawclobber:32617
 msgid ""
@@ -33783,9 +33789,12 @@ msgid ""
 msgstr "你的队伍和当地的舞女一起度过了愉快的时光。休息过后，所有人都回到了船上各自的岗位。"
 
 #: src-ru/data/events.xml.rawclobber:35203
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"CIV_CW_ST_DANCE1\"]/event[5]/text"
-msgstr "你的队伍和当地的舞女一起度过了愉快的时光。然而，你注意到队伍里有人失踪很久了！到处寻找和询问当地人都无果……"
+msgstr ""
+"你的队伍和当地的舞女一起度过了愉快的时光。然而，你注意到队伍里有人失踪很久了"
+"！到处寻找和询问当地人都无果……"
 
 #: src-ru/data/events.xml.rawclobber:35206
 msgid ""
@@ -37989,8 +37998,11 @@ msgid ""
 msgstr "你谢绝了陌生人的交易，但拒绝了他的提议。他失望地退到一边，让你进了商店。"
 
 #: src-ru/data/events.xml.rawclobber:45193
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"ENGI_EVO\"]/text"
-msgstr "乍一看信标是空的。然而，不久一个隐藏的半械族空间站联系了你，将你识别为联邦的盟友。你收到了对接的邀请。"
+msgstr ""
+"乍一看信标是空的。然而，不久一个隐藏的半械族空间站联系了你，将你识别为联邦的"
+"盟友。你收到了对接的邀请。"
 
 #: src-ru/data/events.xml.rawclobber:45195
 msgid "data/events.xml.rawclobber$//event[@name=\"ENGI_EVO\"]/choice[1]/text"
