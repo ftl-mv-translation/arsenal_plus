@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"datablueprintsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/blueprints.xml.rawclobber:169
 msgid ""
@@ -4787,6 +4794,7 @@ msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SOUL_MAGNIT\"]/titl
 msgstr "Soul Captor"
 
 #: src-ru/data/blueprints.xml.rawclobber:15194
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SOUL_MAGNIT\"]/desc"
 msgstr ""
 "The purpose of this augment is unknown, but at least it's worth some scrap."
@@ -15574,6 +15582,7 @@ msgid ""
 msgstr "Tachyon I"
 
 #: src-ru/data/blueprints.xml.rawclobber:33615
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1\"]/desc"
 msgstr ""
 "Generates a light cluster of particles constantly in flux with time, making "
@@ -15595,10 +15604,11 @@ msgid ""
 msgstr "Tachyon II"
 
 #: src-ru/data/blueprints.xml.rawclobber:33644
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2\"]/desc"
 msgstr ""
-"Quickly generates a light cluster of particles constantly in flux with time,"
-" making any attempts at intercepting the cluster futile, including shields."
+"Quickly generates a light cluster of particles constantly in flux with time, "
+"making any attempts at intercepting the cluster futile, including shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:33669
 msgid ""
@@ -15616,6 +15626,7 @@ msgid ""
 msgstr "Heavy Tachyon"
 
 #: src-ru/data/blueprints.xml.rawclobber:33673
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3\"]/desc"
 msgstr ""
 "Generates a heavy cluster of particles constantly in flux with time, making "
@@ -38128,6 +38139,7 @@ msgid ""
 msgstr "Tachyon I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:78875
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_FRC\"]/desc"
 msgstr ""
@@ -38150,6 +38162,7 @@ msgid ""
 msgstr "Tachyon I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:78903
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_CLD\"]/desc"
 msgstr ""
@@ -38172,6 +38185,7 @@ msgid ""
 msgstr "Tachyon I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:78931
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_POW\"]/desc"
 msgstr ""
@@ -38194,11 +38208,12 @@ msgid ""
 msgstr "Tachyon II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:78959
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_FRC\"]/desc"
 msgstr ""
-"Quickly generates a light cluster of particles constantly in flux with time,"
-" making any attempts at intercepting the cluster futile, including shields."
+"Quickly generates a light cluster of particles constantly in flux with time, "
+"making any attempts at intercepting the cluster futile, including shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:78983
 msgid ""
@@ -38216,11 +38231,12 @@ msgid ""
 msgstr "Tachyon II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:78987
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_CLD\"]/desc"
 msgstr ""
-"Quickly generates a light cluster of particles constantly in flux with time,"
-" making any attempts at intercepting the cluster futile, including shields."
+"Quickly generates a light cluster of particles constantly in flux with time, "
+"making any attempts at intercepting the cluster futile, including shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:79011
 msgid ""
@@ -38238,11 +38254,12 @@ msgid ""
 msgstr "Tachyon II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:79015
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_POW\"]/desc"
 msgstr ""
-"Quickly generates a light cluster of particles constantly in flux with time,"
-" making any attempts at intercepting the cluster futile, including shields."
+"Quickly generates a light cluster of particles constantly in flux with time, "
+"making any attempts at intercepting the cluster futile, including shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:79039
 msgid ""
@@ -38260,6 +38277,7 @@ msgid ""
 msgstr "Heavy Tachyon ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:79043
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_FRC\"]/desc"
 msgstr ""
@@ -38282,6 +38300,7 @@ msgid ""
 msgstr "Heavy Tachyon ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:79071
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_CLD\"]/desc"
 msgstr ""
@@ -38304,6 +38323,7 @@ msgid ""
 msgstr "Heavy Tachyon †"
 
 #: src-ru/data/blueprints.xml.rawclobber:79099
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_POW\"]/desc"
 msgstr ""
@@ -89000,10 +89020,12 @@ msgid ""
 msgstr "Deals 6 damage per room hit."
 
 #: src-ru/data/blueprints.xml.rawclobber:178064
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/descriptionOverride"
 msgstr ""
-"This weapon deals absolutely colossal damage. Each swipe inevitably damages your own weapons system and sometimes 1 point of your hull.\n"
+"This weapon deals absolutely colossal damage. Each swipe inevitably damages "
+"your own weapons system and sometimes 1 point of your hull.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 4\n"
