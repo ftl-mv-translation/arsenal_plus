@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: circle217 <3545024352@qq.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_engixmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -8406,6 +8406,7 @@ msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/text"
 msgstr ""
 
 #: src-ru/data/events_engi.xml.rawclobber:10085
+#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/choice[1]/text"
 msgstr "发送“10”。"
@@ -8426,6 +8427,7 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events_engi.xml.rawclobber:10100
+#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/choice[4]/text"
 msgstr "什么都不碰，只是在超光速推进器充能时与船员交谈。"
@@ -8440,6 +8442,7 @@ msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/text
 msgstr ""
 
 #: src-ru/data/events_engi.xml.rawclobber:10111
+#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/choice[1]/text"
 msgstr "发送“10”。"
@@ -8460,6 +8463,7 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events_engi.xml.rawclobber:10126
+#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/choice[4]/text"
 msgstr "什么都不碰，只是在超光速推进器充能时与船员交谈。"
@@ -8474,6 +8478,7 @@ msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/text
 msgstr ""
 
 #: src-ru/data/events_engi.xml.rawclobber:10137
+#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/choice[1]/text"
 msgstr "发送“10”。"
@@ -8494,6 +8499,7 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events_engi.xml.rawclobber:10152
+#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/choice[4]/text"
 msgstr "什么都不碰，只是在超光速推进器充能时与船员交谈。"
