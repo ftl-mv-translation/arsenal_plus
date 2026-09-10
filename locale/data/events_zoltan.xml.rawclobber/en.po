@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"dataevents_zoltanxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:169
 #, fuzzy
@@ -30,11 +37,12 @@ msgstr ""
 "coming war and made preparations to hold their borders."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:172
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"START_BEACON_ZOLTAN\"]/text[4]"
 msgstr ""
-"You're far from Federation home space here in Zoltan territory, and it's not"
-" clear whether the authorities will have any goodwill remaining. Still, you "
+"You're far from Federation home space here in Zoltan territory, and it's not "
+"clear whether the authorities will have any goodwill remaining. Still, you "
 "have to push forward."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:173
@@ -144,6 +152,7 @@ msgstr ""
 "but you've none of the necessary equipment to mine them."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:203
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"NOTHING_ZOLTAN\"]/text[2]"
 msgstr ""
@@ -7137,12 +7146,13 @@ msgid ""
 msgstr "Inquire on the cost of upgrading your shield tech."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4605
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"8\"]/event/text"
 msgstr ""
-"The Zoltons say that your shields cannot be upgraded. However, they take you"
-" to a small hardware store at the station."
+"The Zoltons say that your shields cannot be upgraded. However, they take you "
+"to a small hardware store at the station."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4613
 #, fuzzy
@@ -10956,6 +10966,7 @@ msgid ""
 msgstr "While you were dealing with the drone, the smugglers fled..."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6961
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_VS_AUTOSHIP_R1\"]/event[3]/text"
 msgstr ""
@@ -14613,13 +14624,14 @@ msgid ""
 msgstr "Chen Rong"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9207
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_ITB_VEK_LAND\"]/event[4]/text"
 msgstr ""
 "You land next to the city on a strategically advantageous position and kill "
 "giant bugs one by one in quick succession, driving them back through cracks "
-"in the ground until they retreat altogether. However, while your ship was on"
-" the surface one of the creatures attacked it and struck several blows! The "
+"in the ground until they retreat altogether. However, while your ship was on "
+"the surface one of the creatures attacked it and struck several blows! The "
 "grateful residents give you supplies you'll find useful for your mission."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9216
