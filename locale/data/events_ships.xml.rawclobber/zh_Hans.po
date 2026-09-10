@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_shipsxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_ships.xml.rawclobber:75
 msgid "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE\"]/gotaway/text"
@@ -838,14 +845,20 @@ msgid ""
 msgstr "当你还在搜刮螳螂族的残骸时，超能族的安全巡逻队带着另外三艘船回来了。你迅速收拾了能拿的东西，赶在他们拦住你盘问之前启程。"
 
 #: src-ru/data/events_ships.xml.rawclobber:1179
+#, fuzzy
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK2\"]/destroyed/text"
-msgstr "解决了登陆舰后，你注意到了建造平台。然而，你发现它早已消失在星云中。你收集了能拿的东西，准备继续前行。"
+msgstr ""
+"解决了登陆舰后，你注意到了建造平台。然而，你发现它早已消失在星云中。你收集了"
+"能拿的东西，准备继续前行。"
 
 #: src-ru/data/events_ships.xml.rawclobber:1183
+#, fuzzy
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK2\"]/deadCrew/text"
-msgstr "解决了登陆舰后，你注意到了建造平台。然而，你发现它早已消失在星云中。你收集了能拿的东西，准备继续前行。"
+msgstr ""
+"解决了登陆舰后，你注意到了建造平台。然而，你发现它早已消失在星云中。你收集了"
+"能拿的东西，准备继续前行。"
 
 #: src-ru/data/events_ships.xml.rawclobber:1189
 msgid ""
