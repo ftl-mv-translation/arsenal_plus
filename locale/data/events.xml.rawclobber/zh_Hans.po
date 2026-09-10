@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 12:56+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataeventsxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events.xml.rawclobber:32
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/text"
@@ -54502,6 +54509,7 @@ msgid "data/events.xml.rawclobber$//textList[@name=\"PRAZDNIK_CHOISE3\"]/text[5]
 msgstr "回复“XXL”。"
 
 #: src-ru/data/events.xml.rawclobber:67794
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_BATTLE_OR_PRAZDNIK\"]/choice/text"
 msgstr "在超光速推进器充能时和船员谈谈。"
@@ -54800,6 +54808,7 @@ msgid ""
 msgstr "拒绝交出毛虫并和船员谈谈。"
 
 #: src-ru/data/events.xml.rawclobber:68207
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_GUS2R\"]/loadEventList/event[2]/choice/text"
 msgstr "在超光速推进器充能时和船员谈谈。"
@@ -55202,6 +55211,7 @@ msgid ""
 msgstr "尝试联系那艘飞船。"
 
 #: src-ru/data/events.xml.rawclobber:68683
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"MIRROR_FIGHT2\"]/loadEventList/event[2]/choice[3]/text"
 msgstr "在超光速推进器充能时和船员谈谈。"
