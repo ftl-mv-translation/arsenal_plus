@@ -1,28 +1,6 @@
 
-
-local buttonItems1 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/sell_res_off.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonItems2 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/sell_res_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonItems3 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/sell_res_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonCargo1 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/trum_off.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonCargo2 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/trum_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonCargo3 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/trum_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonDrone1 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/top_drones2_off.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonDrone2 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/top_drones2_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonDrone3 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/top_drones2_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonShip1 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/top_ship_off.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonShip2 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/top_ship_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local buttonShip3 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/top_ship_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-
 local iconScrap = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/icon_scrap_mini.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-
 local box = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/box.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-
---local text1 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderText.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-
---local traderName1 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName1.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
---local traderName2 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
---local traderName3 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName3.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
---local traderName4 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName4.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
 
 local portrait1 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/trader_portrait_1.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
 local portrait2 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/trader_portrait_2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
@@ -41,7 +19,7 @@ local gib9 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/9a.png', 
 
 local station = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/station_10.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
 
-local score =0
+local score = 0
 local lvl = 0
 
 local port = 0
@@ -61,8 +39,6 @@ local enemyName = ''
 
 local function CheckEnemyShip()  
     local enemyShip = Hyperspace.ships.enemy  
-    --print(enemyShip.name)
-
     local enemyShipName = ''
     if enemyShip then
         enemyShipName = Hyperspace.ships.enemy.myBlueprint.blueprintName
@@ -78,37 +54,8 @@ local function CheckEnemyShip()
     else 
         isInDrawEvent = false
     end
-    
 end
 
-
-local function DrawButtons()
-    --local gui = Hyperspace.Global.GetInstance():GetCApp().gui
-	--local inSafeEnviroment = (gui.upgradeButton.bActive and not gui.event_pause)
-    local buttonsX = 721
-    local buttonsY = 22 
-    Graphics.CSurface.GL_PushMatrix()   
-    pcall(function()
-        Graphics.CSurface.GL_Translate(buttonsX, buttonsY)
-        Graphics.CSurface.GL_RenderPrimitive(buttonShip1)
-    end)
-     Graphics.CSurface.GL_PopMatrix()
-
-     Graphics.CSurface.GL_PushMatrix()   
-    pcall(function()
-        Graphics.CSurface.GL_Translate(buttonsX+77, buttonsY)
-        Graphics.CSurface.GL_RenderPrimitive(buttonItems1)
-    end)
-     Graphics.CSurface.GL_PopMatrix()
-
-      Graphics.CSurface.GL_PushMatrix()   
-    pcall(function()
-        Graphics.CSurface.GL_Translate(buttonsX+170, buttonsY)
-        Graphics.CSurface.GL_RenderPrimitive(buttonDrone1)
-    end)
-     Graphics.CSurface.GL_PopMatrix()
-     
-end
 
 local function LeavePoint() 
    leave = true  
@@ -485,77 +432,40 @@ local function Init()
     CheckNextLvl()
   
     Graphics.CSurface.GL_PushMatrix()
-    pcall(function()
-        Graphics.CSurface.GL_Translate(currentX-9, currentY-8)
-        Graphics.CSurface.GL_RenderPrimitive(box)
-    end)    
+    Graphics.CSurface.GL_Translate(currentX-9, currentY-8)
+    Graphics.CSurface.GL_RenderPrimitive(box)
     Graphics.CSurface.GL_PopMatrix()
 
     Graphics.CSurface.GL_PushMatrix()   
-    pcall(function()
-        Graphics.CSurface.GL_Translate(currentX+2, currentY+2)
-        Graphics.CSurface.GL_RenderPrimitive(portrait)        
-    end)    
+    Graphics.CSurface.GL_Translate(currentX+2, currentY+2)
+    Graphics.CSurface.GL_RenderPrimitive(portrait)        
     Graphics.CSurface.GL_PopMatrix()
-
-    -- Graphics.CSurface.GL_PushMatrix()   
-    -- pcall(function()
-        -- Graphics.CSurface.GL_Translate(currentX+5, currentY+76)
-        -- Graphics.CSurface.GL_RenderPrimitive(traderName)
-    -- end)
-    -- Graphics.CSurface.GL_PopMatrix()
-
+	
 	Graphics.CSurface.GL_SetColor(Graphics.GL_Color(0.9, 0.9, 0.9, 1))
 	Graphics.freetype.easy_print(10, currentX+7, currentY+78, traderName)
 
     if enemyName ~= 'BUILDINGSTATION_10' then
-        -- Graphics.CSurface.GL_PushMatrix()
-        -- pcall(function()
-        -- Graphics.CSurface.GL_Translate(currentX+73, currentY+3)
-        -- Graphics.CSurface.GL_RenderPrimitive(text1)        
-        -- end)
-        -- Graphics.CSurface.GL_PopMatrix()
-		
-		Graphics.CSurface.GL_SetColor(Graphics.GL_Color(0.9, 0.9, 0.9, 1))
+        Graphics.CSurface.GL_SetColor(Graphics.GL_Color(0.9, 0.9, 0.9, 1))
 		Graphics.freetype.easy_print(10, currentX+73, currentY+5, "внесено лома:\n\nдо пристроя:")
 
         curLVL = math.floor(tonumber(curLVL))   
-        local str1 = string.format(lvl)
-        local str2 = string.format(curLVL)
-        local str3 = str2 .. "=>" .. str1
-        if lvl == 10 then
-            str3 = '10'
-        end
+        
+		Graphics.freetype.easy_print(10, 90+currentX+5, currentY+76-55, string.format(score))
+        Graphics.freetype.easy_print(10, 90+currentX+5, currentY+76-20, string.format(nextLevel))
+        
         Graphics.CSurface.GL_PushMatrix()   
-        pcall(function()
-            Graphics.CSurface.GL_Translate(currentX+5, currentY+76)      
-            Graphics.freetype.easy_print(10, 90, -55, string.format(score))-- -56
-            Graphics.freetype.easy_print(10, 90, -20, string.format(nextLevel))
-            --Graphics.freetype.easy_print(9, 140, 0, str1)
-        end)
-        Graphics.CSurface.GL_PopMatrix()
-
-        Graphics.CSurface.GL_PushMatrix()   
-		pcall(function()
-			Graphics.CSurface.GL_Translate(currentX+78, currentY+22)
-			Graphics.CSurface.GL_RenderPrimitive(iconScrap) 
-		end)
+		Graphics.CSurface.GL_Translate(currentX+78, currentY+22)
+		Graphics.CSurface.GL_RenderPrimitive(iconScrap) 
 		Graphics.CSurface.GL_PopMatrix()
 
         Graphics.CSurface.GL_PushMatrix()   
-		pcall(function()
-			Graphics.CSurface.GL_Translate(currentX+78, currentY+57)--78/58
-			Graphics.CSurface.GL_RenderPrimitive(iconScrap) 
-		end)
+		Graphics.CSurface.GL_Translate(currentX+78, currentY+57)
+		Graphics.CSurface.GL_RenderPrimitive(iconScrap) 
 		Graphics.CSurface.GL_PopMatrix()
-
     else
         Graphics.CSurface.GL_PushMatrix()   
-        pcall(function()
-            Graphics.CSurface.GL_Translate(currentX+85, currentY+2)
-            Graphics.CSurface.GL_RenderPrimitive(station)
-            --Graphics.freetype.easy_print(9, 70, 75, string.format(lvl))
-        end)
+        Graphics.CSurface.GL_Translate(currentX+85, currentY+2)
+        Graphics.CSurface.GL_RenderPrimitive(station)
         Graphics.CSurface.GL_PopMatrix()
     end
 
@@ -609,25 +519,19 @@ local function Init()
     end
 
     if drawGib > 0 and gibIsDraw and metaDrawGib == 1 then
-    Graphics.CSurface.GL_PushMatrix()   
-    pcall(function()
-        Graphics.CSurface.GL_Translate(gibX, gibY)
-        Graphics.CSurface.GL_RenderPrimitive(curGib)
-                                         
-    end)
-     Graphics.CSurface.GL_PopMatrix()
+		Graphics.CSurface.GL_PushMatrix()   
+		Graphics.CSurface.GL_Translate(gibX, gibY)
+		Graphics.CSurface.GL_RenderPrimitive(curGib)
+		Graphics.CSurface.GL_PopMatrix()
     end
-
-
-      --DrawButtons()
 end
 
 
 
-local function HotReset()
-    Hyperspace.metaVariables['meta_trader_store_lvl'] = 0
-    Hyperspace.metaVariables['meta_trader_store_score'] = 0
-end
+-- local function HotReset()
+    -- Hyperspace.metaVariables['meta_trader_store_lvl'] = 0
+    -- Hyperspace.metaVariables['meta_trader_store_score'] = 0
+-- end
 
 script.on_game_event("META_TRADER_SHIP_PARAMETERS_DESTROYED", false, DestroyStation)
 script.on_game_event("META_TRADER_SHIP_PARAMETERS_DEADCREW", false, DestroyStation)

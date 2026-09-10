@@ -62,6 +62,7 @@
 	<name>magman</name>
 	<name>magman_a</name><!-- 1.31 -->
 	<name>magman_b</name><!-- 1.31 -->
+	<name>magman_legendary</name><!-- 1.36 -->
 </blueprintList>
 <blueprintList name="CREW_ORCHID"> <!-- 1.28 -->
 	<name>orchid</name>
@@ -87,6 +88,7 @@
 </blueprintList>
 <blueprintList name="CREW_MORPH"> <!-- 1.28 -->
 	<name>morph</name>
+	<name>morph_legendary</name> <!-- 1.36 -->
 </blueprintList>
 <blueprintList name="CREW_ENERGYX"> <!-- 1.28 -->
 	<name>energyx</name>
@@ -117,6 +119,7 @@
 </blueprintList>
 <blueprintList name="ENGI_AND_MORPH"> <!-- 1.28 -->
 	<name>morph</name>
+	<name>morph_legendary</name> <!-- 1.36 -->
 	<name>engi</name>
 	<name>engi_legendary</name><!-- 1.31 --> 
 </blueprintList>
@@ -145,6 +148,7 @@
 	<name>magman</name> <!-- 1.28 -->
 	<name>magman_a</name><!-- 1.31 --> 
 	<name>magman_b</name><!-- 1.31 --> 
+	<name>magman_legendary</name><!-- 1.36 --> 
 	<name>orchid</name> <!-- 1.28 -->
 	<name>orchid_legendary</name> <!-- 1.31 -->
 	<name>shell</name> <!-- 1.28 -->
@@ -152,6 +156,7 @@
 	<name>turtle_legendary</name><!-- 1.35 -->
 	<name>slug_armored</name> <!-- 1.28 -->
 	<name>morph</name> <!-- 1.28 -->
+	<name>morph_legendary</name> <!-- 1.36 -->
 	<name>energyx</name> <!-- 1.28 -->
 	<name>energyx_w</name> <!-- 1.29 -->
 	<name>slig</name> <!-- 1.28 -->
@@ -205,6 +210,7 @@
 	<name>magman</name>
 	<name>magman_a</name>
 	<name>magman_b</name>
+	<name>magman_legendary</name><!-- 1.36 -->
 	<name>orchid</name>
 	<name>orchid_legendary</name>
 	<name>shell</name>
@@ -212,6 +218,7 @@
 	<name>turtle_legendary</name>
 	<name>slug_armored</name>
 	<name>morph</name>
+	<name>morph_legendary</name> <!-- 1.36 -->
 	<name>energyx</name>
 	<name>energyx_w</name>
 	<name>slig</name>
@@ -323,7 +330,9 @@
 	<name>order_human_legendary</name><!-- 1.33 -->
 	<name>slig_legendary</name><!-- 1.33 -->	
 	<name>keeper_legendary</name><!-- 1.34 -->
-	<name>turtle_legendary</name><!-- 1.34 -->
+	<name>turtle_legendary</name><!-- 1.35 -->
+	<name>magman_legendary</name><!-- 1.36 -->
+	<name>morph_legendary</name> <!-- 1.36 -->
 </blueprintList>
 
 <blueprintList name="LIST_CREW_RIVER"> <!-- 1.34 -->
@@ -358,6 +367,27 @@
 	<name>SHELL_GAS_5</name>
 </blueprintList>
 
+<!-- Этот список используется луа для тех орудий/оборудования которое не должны копироваться орудийным принтером.
+если имя блюпринта содержит кусочек или равно одному из имён ниже, то не разрешит копировать его -->
+<blueprintList name="WEAPONS_DONT_ALLOW_TO_COPY"><!-- 1.36 -->
+	<name>SOULREAPER</name>
+	<name>COPY_MASHINE</name>
+	<name>GLIF_GUN</name>
+	<name>CYCLED_WEAPON</name>
+	<name>BEAM_ANNIHILATOR</name>
+	<name>SILV</name>
+</blueprintList>
+
+<!-- Этот список используется луа для тех орудий, которые должны скрывать свою полоску зарядки от игрока.
+Если имя блюпринта орудия содержит любой из выбранных кусочков текста в списке, то отключит полоску заряда.
+Работает для артиллерий и обычных орудий -->
+<blueprintList name="WEAPONS_HIDE_CHARGE_BAR"><!-- 1.36 -->
+	<name>MAGMAN_GIGAART</name>
+	<name>HAL_EYE</name>
+	<name>ZOLTAN_BLINK</name>
+	<name>ORDER1</name>
+</blueprintList>
+
 <blueprintList name="WEAPON_ITEMS"> <!-- 1.35 -->
 	<name>RECYCLER_CORE</name>
 	<name>SHIPRADAR</name>
@@ -368,6 +398,7 @@
 	<name>PDS_AIMER</name>
 	<name>4K_VISOR</name>
 	<name>HACK_GUN</name>
+	<name>KOMAROV_CORE</name><!-- 1.36 -->
 </blueprintList>
 <blueprintList name="WEAPON_ITEMS_NO_RARE"> <!-- 1.35 -->
 	<name>RECYCLER_CORE</name>
@@ -376,6 +407,31 @@
 	<name>EM_JAMMER</name>
 	<name>4K_VISOR</name>
 	<name>HACK_GUN</name>
+	<name>KOMAROV_CORE</name><!-- 1.36 -->
+	<name>KOMAROV_CORE</name><!-- 1.36 -->
+</blueprintList>
+
+<blueprintList name="WEAPONS_BAK"><!-- 1.36 -->
+	<name>BAK_MISSILES_LVL0</name>
+	<name>BAK_MISSILES_LVL1</name>
+	<name>BAK_MISSILES_LVL2</name>
+	<name>BAK_MISSILES_LVL3</name>
+	<name>BAK_BEAM_LVL0</name>
+	<name>BAK_BEAM_LVL1</name>
+	<name>BAK_BEAM_LVL2</name>
+	<name>BAK_BEAM_LVL3</name>
+	<name>BAK_BOMB_LVL0</name>
+	<name>BAK_BOMB_LVL1</name>
+	<name>BAK_BOMB_LVL2</name>
+	<name>BAK_BOMB_LVL3</name>
+	<name>BAK_SHOTGUN_LVL0</name>
+	<name>BAK_SHOTGUN_LVL1</name>
+	<name>BAK_SHOTGUN_LVL2</name>
+	<name>BAK_SHOTGUN_LVL3</name>
+	<name>BAK_LASER_LVL0</name>
+	<name>BAK_LASER_LVL1</name>
+	<name>BAK_LASER_LVL2</name>
+	<name>BAK_LASER_LVL3</name>
 </blueprintList>
 
 <blueprintList name="MISSILES_BREACH_PLUS"> <!-- 1.28 -->
@@ -472,6 +528,21 @@
 	<name>ORCHID_PROTOTYPE_2</name><!-- 1.28.1 -->
 	<name>MAGMAN_PROTOTYPE_1</name><!-- 1.28.1 -->
 	<name>MAGMAN_PROTOTYPE_2</name><!-- 1.28.1 -->
+</blueprintList>
+
+<blueprintList name="DRONES_ALAS_ONLY"><!-- 1.36 -->
+	<name>DE_DRONE_DEFENSE_ALAS</name>
+	<name>DE_DRONE_DEFENSE_ALAS2</name>
+</blueprintList>
+<blueprintList name="DRONES_BEAM_ONLY"><!-- 1.36 -->
+	<name>COMBAT_BEAM_2</name>
+	<name>COMBAT_BEAM_3</name>
+	<name>COMBAT_BEAM_OLD</name>
+	<name>DE_DRONE_BEAM_2</name>
+	<name>DE_DRONE_BEAM_FOCUS</name>
+	<name>DE_DRONE_HULL_BEAM</name>
+	<name>PSLD_1_BEAM_DRONE</name>
+	<name>PSLD_2_BEAM_DRONE</name>
 </blueprintList>
 
 <!-- req drones -->
@@ -959,6 +1030,7 @@
 	<name>BA_BEAM_PARTISAN</name><!-- 1.26 -->
 	<name>BA_BEAM_VILKA_G</name><!-- 1.34 -->
 	<name>BA_BEAM_VILKA_V</name><!-- 1.34 -->
+	<name>BA_BEAM_VILKA_ADV</name><!-- 1.36 -->
 	<name>BEAM_SP_KATANA</name><!-- 1.23 --> <!-- add in 1.21 really, maybe missed? -->
 	<name>BEAM_2</name>
 	<name>BA_BEAM_POLLAXE</name><!-- 1.26 -->
@@ -1346,14 +1418,27 @@
 	<name>BA_BEAM_VILKA_V_CLD</name>
 	<name>BA_BEAM_VILKA_V_POW</name>
 	<name>BA_BEAM_VILKA_V_UNI</name>
-	<!-- 1.34 -->
+	<!-- 1.35 -->
 	<name>BEAM_BAGOR</name>
 	<name>BEAM_BAGOR_PRC</name>
 	<name>BEAM_BAGOR_BRC</name>
 	<name>BEAM_BAGOR_CLD</name>
 	<name>BEAM_BAGOR_POW</name>
 	<name>BEAM_BAGOR_UNI</name>
-
+	<!-- 1.36 -->
+	<name>BA_BEAM_TRI</name>
+	<name>BA_BEAM_TRI_PRC</name>
+	<name>BA_BEAM_TRI_BRC</name>
+	<name>BA_BEAM_TRI_CLD</name>
+	<name>BA_BEAM_TRI_POW</name>
+	<name>BA_BEAM_TRI_UNI</name>
+	<name>BA_BEAM_VILKA_ADV</name>
+	<name>BA_BEAM_VILKA_ADV_PRC</name>
+	<name>BA_BEAM_VILKA_ADV_BRC</name>
+	<name>BA_BEAM_VILKA_ADV_CLD</name>
+	<name>BA_BEAM_VILKA_ADV_POW</name>
+	<name>BA_BEAM_VILKA_ADV_UNI</name>
+	
 </blueprintList>
 
 <blueprintList name="UWB_MISSILES"><!-- 1.26 -->
@@ -2689,6 +2774,7 @@
 	<name>SHOTGUN_RAND3</name><!-- 1.35 -->
 	<name>SHOTGUN_007</name>
 	<name>BA_SHOTGUN_SCATTER</name>
+	<name>BA_SHOTGUN_SCATTER_MINI</name><!-- 1.36 -->
 	<name>SHTURM_FLAK</name>
 	<name>CHARGEGUN_SHOTGUN</name>
 	<!-- <name>BA_PLASMA_3</name> --> <!-- 1.28 -->
@@ -2830,6 +2916,7 @@
 	<name>BA_BEAM_PARTISAN</name><!-- 1.26 -->
 	<name>BA_BEAM_VILKA_G</name><!-- 1.34 -->
 	<name>BA_BEAM_VILKA_V</name><!-- 1.34 -->
+	<name>BA_BEAM_VILKA_ADV</name><!-- 1.36 -->
 	<name>BEAM_SP_KATANA</name>
 	<name>BEAM_BIOFIRE</name>
 </blueprintList>
@@ -4226,3213 +4313,16 @@
 	<name>PREIGNITE_BLOOD_3</name><!-- 1.35 -->
 </blueprintList>
 
-<blueprintList name="INJECTOR_WEAPONS"><!-- 1.31 -->
-	<name>PREIGNITE_BLOOD_1_BRC</name><!-- 1.35 -->
-	<name>PREIGNITE_BLOOD_1_UNI</name><!-- 1.35 -->
-	<name>PREIGNITE_BLOOD_1_ACC</name><!-- 1.35 -->
-	<name>PREIGNITE_BLOOD_2_BRC</name><!-- 1.35 -->
-	<name>PREIGNITE_BLOOD_2_UNI</name><!-- 1.35 -->
-	<name>PREIGNITE_BLOOD_2_ACC</name><!-- 1.35 -->
-	<name>PREIGNITE_BLOOD_3_BRC</name><!-- 1.35 -->
-	<name>PREIGNITE_BLOOD_3_UNI</name><!-- 1.35 -->
-	<name>PREIGNITE_BLOOD_3_ACC</name><!-- 1.35 -->	
-	<name>PREIGNITE_ION_IMPULSE_1_PRC</name>
-	<name>PREIGNITE_ION_IMPULSE_1_UNI</name>
-	<name>PREIGNITE_ION_IMPULSE_1_ACC</name>
-	<name>PREIGNITE_ION_IMPULSE_2_PRC</name>
-	<name>PREIGNITE_ION_IMPULSE_2_UNI</name>
-	<name>PREIGNITE_ION_IMPULSE_2_ACC</name>
-	<name>PREIGNITE_ION_IMPULSE_3_PRC</name>
-	<name>PREIGNITE_ION_IMPULSE_3_UNI</name>
-	<name>PREIGNITE_ION_IMPULSE_3_ACC</name>
-	<name>PREIGNITE_PP_IMPULSE_1_BRC</name>
-	<name>PREIGNITE_PP_IMPULSE_1_UNI</name>
-	<name>PREIGNITE_PP_IMPULSE_1_ACC</name>
-	<name>PREIGNITE_PP_IMPULSE_2_BRC</name>
-	<name>PREIGNITE_PP_IMPULSE_2_UNI</name>
-	<name>PREIGNITE_PP_IMPULSE_2_ACC</name>
-	<name>PREIGNITE_PP_IMPULSE_3_BRC</name>
-	<name>PREIGNITE_PP_IMPULSE_3_UNI</name>
-	<name>PREIGNITE_PP_IMPULSE_3_ACC</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_1_PRC</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_1_BRC</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_1_UNI</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_1_ACC</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_2_PRC</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_2_BRC</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_2_UNI</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_2_ACC</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_3_PRC</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_3_BRC</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_3_UNI</name>
-	<name>PREIGNITE_SHOTGUN_IMPULSE_3_ACC</name>
-	<name>PREIGNITE_PLASMA_IMPULSE_1_FRC</name>
-	<name>PREIGNITE_PLASMA_IMPULSE_1_UNI</name>
-	<name>PREIGNITE_PLASMA_IMPULSE_1_ACC</name>
-	<name>PREIGNITE_PLASMA_IMPULSE_2_FRC</name>
-	<name>PREIGNITE_PLASMA_IMPULSE_2_UNI</name>
-	<name>PREIGNITE_PLASMA_IMPULSE_2_ACC</name>
-	<name>PREIGNITE_PLASMA_IMPULSE_3_FRC</name>
-	<name>PREIGNITE_PLASMA_IMPULSE_3_UNI</name>
-	<name>PREIGNITE_PLASMA_IMPULSE_3_ACC</name>
-	<name>SLURMGUN_A_CLD</name>
-	<name>SLURMGUN_A_POW</name>
-	<name>SLURMGUN_A_UNI</name>
-	<name>SLURMGUN_A_ACC</name>
-	<name>SLURMGUN_B_CLD</name>
-	<name>SLURMGUN_B_POW</name>
-	<name>SLURMGUN_B_UNI</name>
-	<name>SLURMGUN_B_ACC</name>
-	<name>SLURMGUN_C_CLD</name>
-	<name>SLURMGUN_C_POW</name>
-	<name>SLURMGUN_C_UNI</name>
-	<name>SLURMGUN_C_ACC</name>
-	<name>PHOTO_1_PRC</name>
-	<name>PHOTO_1_BRC</name>
-	<name>PHOTO_1_CLD</name>
-	<name>PHOTO_1_UNI</name>
-	<name>PHOTO_1_ACC</name>
-	<name>PHOTO_2_PRC</name>
-	<name>PHOTO_2_BRC</name>
-	<name>PHOTO_2_CLD</name>
-	<name>PHOTO_2_UNI</name>
-	<name>PHOTO_2_ACC</name>
-	<name>PHOTO_HEAVY_1_PRC</name>
-	<name>PHOTO_HEAVY_1_BRC</name>
-	<name>PHOTO_HEAVY_1_CLD</name>
-	<name>PHOTO_HEAVY_1_POW</name>
-	<name>PHOTO_HEAVY_1_UNI</name>
-	<name>PHOTO_HEAVY_1_ACC</name>
-	<name>PHOTO_HEAVY_2_PRC</name>
-	<name>PHOTO_HEAVY_2_BRC</name>
-	<name>PHOTO_HEAVY_2_CLD</name>
-	<name>PHOTO_HEAVY_2_POW</name>
-	<name>PHOTO_HEAVY_2_UNI</name>
-	<name>PHOTO_HEAVY_2_ACC</name>
-	<name>PHOTO_CHAINGUN_PRC</name>
-	<name>PHOTO_CHAINGUN_BRC</name>
-	<name>PHOTO_CHAINGUN_CLD</name>
-	<name>PHOTO_CHAINGUN_POW</name>
-	<name>PHOTO_CHAINGUN_UNI</name>
-	<name>PHOTO_CHAINGUN_ACC</name>
-	<name>LASER_PIERCE_1_PRC</name>
-	<name>LASER_PIERCE_1_FRC</name>
-	<name>LASER_PIERCE_1_CLD</name>
-	<name>LASER_PIERCE_1_UNI</name>
-	<name>LASER_PIERCE_1_ACC</name>
-	<name>LASER_PIERCE_2_PRC</name>
-	<name>LASER_PIERCE_2_FRC</name>
-	<name>LASER_PIERCE_2_CLD</name>
-	<name>LASER_PIERCE_2_UNI</name>
-	<name>LASER_PIERCE_2_ACC</name>
-	<name>SHTURM_LASER_1_PRC</name>
-	<name>SHTURM_LASER_1_BRC</name>
-	<name>SHTURM_LASER_1_CLD</name>
-	<name>SHTURM_LASER_1_POW</name>
-	<name>SHTURM_LASER_1_UNI</name>
-	<name>SHTURM_LASER_1_ACC</name>
-	<name>SHTURM_LASER_2_PRC</name>
-	<name>SHTURM_LASER_2_BRC</name>
-	<name>SHTURM_LASER_2_CLD</name>
-	<name>SHTURM_LASER_2_POW</name>
-	<name>SHTURM_LASER_2_UNI</name>
-	<name>SHTURM_LASER_2_ACC</name>
-	<name>RAIL_DRIVER_PRC</name>
-	<name>RAIL_DRIVER_FRC</name>
-	<name>RAIL_DRIVER_BRC</name>
-	<name>RAIL_DRIVER_CLD</name>
-	<name>RAIL_DRIVER_POW</name>
-	<name>RAIL_DRIVER_UNI</name>
-	<name>RAIL_DRIVER_ACC</name>
-	<name>RAIL_DRIVER_2_PRC</name>
-	<name>RAIL_DRIVER_2_FRC</name>
-	<name>RAIL_DRIVER_2_BRC</name>
-	<name>RAIL_DRIVER_2_CLD</name>
-	<name>RAIL_DRIVER_2_POW</name>
-	<name>RAIL_DRIVER_2_UNI</name>
-	<name>RAIL_DRIVER_2_ACC</name>
-	<name>RAIL_DRIVER_3_PRC</name>
-	<name>RAIL_DRIVER_3_FRC</name>
-	<name>RAIL_DRIVER_3_BRC</name>
-	<name>RAIL_DRIVER_3_CLD</name>
-	<name>RAIL_DRIVER_3_POW</name>
-	<name>RAIL_DRIVER_3_UNI</name>
-	<name>RAIL_DRIVER_3_ACC</name>
-	<name>LASER_HEAVY_CHAIN_PRC</name>
-	<name>LASER_HEAVY_CHAIN_FRC</name>
-	<name>LASER_HEAVY_CHAIN_BRC</name>
-	<name>LASER_HEAVY_CHAIN_CLD</name>
-	<name>LASER_HEAVY_CHAIN_POW</name>
-	<name>LASER_HEAVY_CHAIN_UNI</name>
-	<name>LASER_HEAVY_CHAIN_ACC</name>
-	<name>LASER_CHAINGUN_PRC</name>
-	<name>LASER_CHAINGUN_FRC</name>
-	<name>LASER_CHAINGUN_CLD</name>
-	<name>LASER_CHAINGUN_POW</name>
-	<name>LASER_CHAINGUN_UNI</name>
-	<name>LASER_CHAINGUN_ACC</name>
-	<name>HEAVY_MINIGUN_PRC</name>
-	<name>HEAVY_MINIGUN_BRC</name><!-- 1.31 -->
-	<name>HEAVY_MINIGUN_CLD</name>
-	<name>HEAVY_MINIGUN_POW</name>
-	<name>HEAVY_MINIGUN_UNI</name>
-	<name>HEAVY_MINIGUN_ACC</name>
-	<name>LASER_CHAINGUN_HEAVY_PRC</name>
-	<name>LASER_CHAINGUN_HEAVY_FRC</name>
-	<name>LASER_CHAINGUN_HEAVY_BRC</name>
-	<name>LASER_CHAINGUN_HEAVY_CLD</name>
-	<name>LASER_CHAINGUN_HEAVY_POW</name>
-	<name>LASER_CHAINGUN_HEAVY_UNI</name>
-	<name>LASER_CHAINGUN_HEAVY_ACC</name>
-	<name>HEAVY_PPL_PRC</name>
-	<name>HEAVY_PPL_BRC</name>
-	<name>HEAVY_PPL_CLD</name>
-	<name>HEAVY_PPL_POW</name>
-	<name>HEAVY_PPL_UNI</name>
-	<name>HEAVY_PPL_ACC</name>
-	<name>LASER_AUTO_CHAIN_PRC</name>
-	<name>LASER_AUTO_CHAIN_FRC</name>
-	<name>LASER_AUTO_CHAIN_CLD</name>
-	<name>LASER_AUTO_CHAIN_POW</name>
-	<name>LASER_AUTO_CHAIN_UNI</name>
-	<name>LASER_AUTO_CHAIN_ACC</name>
-	<name>LASER_CHAIN_1_PRC</name>
-	<name>LASER_CHAIN_1_FRC</name>
-	<name>LASER_CHAIN_1_CLD</name>
-	<name>LASER_CHAIN_1_UNI</name>
-	<name>LASER_CHAIN_1_ACC</name>
-	<name>LASER_CHAIN_2_PRC</name>
-	<name>LASER_CHAIN_2_FRC</name>
-	<name>LASER_CHAIN_2_CLD</name>
-	<name>LASER_CHAIN_2_POW</name>
-	<name>LASER_CHAIN_2_UNI</name>
-	<name>LASER_CHAIN_2_ACC</name>
-	<name>LASER_CHAIN_3_PRC</name>
-	<name>LASER_CHAIN_3_FRC</name>
-	<name>LASER_CHAIN_3_CLD</name>
-	<name>LASER_CHAIN_3_POW</name>
-	<name>LASER_CHAIN_3_UNI</name>
-	<name>LASER_CHAIN_3_ACC</name>
-	<name>LASER_CHAIN_LONG_1_PRC</name>
-	<name>LASER_CHAIN_LONG_1_FRC</name>
-	<name>LASER_CHAIN_LONG_1_CLD</name>
-	<name>LASER_CHAIN_LONG_1_UNI</name>
-	<name>LASER_CHAIN_LONG_1_ACC</name>
-	<name>LASER_CHAIN_LONG_2_PRC</name>
-	<name>LASER_CHAIN_LONG_2_FRC</name>
-	<name>LASER_CHAIN_LONG_2_CLD</name>
-	<name>LASER_CHAIN_LONG_2_POW</name>
-	<name>LASER_CHAIN_LONG_2_UNI</name>
-	<name>LASER_CHAIN_LONG_2_ACC</name>
-	<name>LASER_CHAIN_LONG_3_PRC</name>
-	<name>LASER_CHAIN_LONG_3_FRC</name>
-	<name>LASER_CHAIN_LONG_3_CLD</name>
-	<name>LASER_CHAIN_LONG_3_POW</name>
-	<name>LASER_CHAIN_LONG_3_UNI</name>
-	<name>LASER_CHAIN_LONG_3_ACC</name>
-	<name>LASER_FIRE_CHAINGUN_FRC</name>
-	<name>LASER_FIRE_CHAINGUN_CLD</name>
-	<name>LASER_FIRE_CHAINGUN_POW</name>
-	<name>LASER_FIRE_CHAINGUN_UNI</name>
-	<name>LASER_FIRE_CHAINGUN_ACC</name>
-	<name>LASER_HEAVY_CHARGE_1_PRC</name>
-	<name>LASER_HEAVY_CHARGE_1_FRC</name>
-	<name>LASER_HEAVY_CHARGE_1_BRC</name>
-	<name>LASER_HEAVY_CHARGE_1_CLD</name>
-	<name>LASER_HEAVY_CHARGE_1_POW</name>
-	<name>LASER_HEAVY_CHARGE_1_UNI</name>
-	<name>LASER_HEAVY_CHARGE_1_ACC</name>
-	<name>LASER_HEAVY_CHARGE_2_PRC</name>
-	<name>LASER_HEAVY_CHARGE_2_FRC</name>
-	<name>LASER_HEAVY_CHARGE_2_BRC</name>
-	<name>LASER_HEAVY_CHARGE_2_CLD</name>
-	<name>LASER_HEAVY_CHARGE_2_POW</name>
-	<name>LASER_HEAVY_CHARGE_2_UNI</name>
-	<name>LASER_HEAVY_CHARGE_2_ACC</name>
-	<name>LASER_CHARGEGUN_PLUS_PRC</name>
-	<name>LASER_CHARGEGUN_PLUS_CLD</name>
-	<name>LASER_CHARGEGUN_PLUS_UNI</name>
-	<name>LASER_CHARGEGUN_PLUS_ACC</name>
-	<name>LASER_CHARGEGUN_1_PRC</name>
-	<name>LASER_CHARGEGUN_1_FRC</name>
-	<name>LASER_CHARGEGUN_1_CLD</name>
-	<name>LASER_CHARGEGUN_1_POW</name>
-	<name>LASER_CHARGEGUN_1_UNI</name>
-	<name>LASER_CHARGEGUN_1_ACC</name>
-	<name>LASER_CHARGEGUN_2_PRC</name>
-	<name>LASER_CHARGEGUN_2_FRC</name>
-	<name>LASER_CHARGEGUN_2_CLD</name>
-	<name>LASER_CHARGEGUN_2_POW</name>
-	<name>LASER_CHARGEGUN_2_UNI</name>
-	<name>LASER_CHARGEGUN_2_ACC</name>
-	<name>LASER_CHARGEGUN_3_PRC</name>
-	<name>LASER_CHARGEGUN_3_FRC</name>
-	<name>LASER_CHARGEGUN_3_CLD</name>
-	<name>LASER_CHARGEGUN_3_POW</name>
-	<name>LASER_CHARGEGUN_3_UNI</name>
-	<name>LASER_CHARGEGUN_3_ACC</name>
-	<name>LASER_CHARGEGUN_4_PRC</name>
-	<name>LASER_CHARGEGUN_4_FRC</name>
-	<name>LASER_CHARGEGUN_4_CLD</name>
-	<name>LASER_CHARGEGUN_4_POW</name>
-	<name>LASER_CHARGEGUN_4_UNI</name>
-	<name>LASER_CHARGEGUN_4_ACC</name>
-	<name>LASER_BURST_1_PRC</name>
-	<name>LASER_BURST_1_FRC</name>
-	<name>LASER_BURST_1_CLD</name>
-	<name>LASER_BURST_1_POW</name>
-	<name>LASER_BURST_1_UNI</name>
-	<name>LASER_BURST_1_ACC</name>
-	<name>LASER_BURST_1P_PRC</name>
-	<name>LASER_BURST_1P_FRC</name>
-	<name>LASER_BURST_1P_CLD</name>
-	<name>LASER_BURST_1P_UNI</name>
-	<name>LASER_BURST_1P_ACC</name>
-	<name>LASER_BURST_2_PRC</name>
-	<name>LASER_BURST_2_FRC</name>
-	<name>LASER_BURST_2_CLD</name>
-	<name>LASER_BURST_2_POW</name>
-	<name>LASER_BURST_2_UNI</name>
-	<name>LASER_BURST_2_ACC</name>
-	<name>LASER_BURST_2P_PRC</name>
-	<name>LASER_BURST_2P_FRC</name>
-	<name>LASER_BURST_2P_CLD</name>
-	<name>LASER_BURST_2P_UNI</name>
-	<name>LASER_BURST_2P_ACC</name>
-	<name>LASER_BURST_3_PRC</name>
-	<name>LASER_BURST_3_FRC</name>
-	<name>LASER_BURST_3_CLD</name>
-	<name>LASER_BURST_3_POW</name>
-	<name>LASER_BURST_3_UNI</name>
-	<name>LASER_BURST_3_ACC</name>
-	<name>LASER_BURST_3P_PRC</name>
-	<name>LASER_BURST_3P_FRC</name>
-	<name>LASER_BURST_3P_CLD</name>
-	<name>LASER_BURST_3P_UNI</name>
-	<name>LASER_BURST_3P_ACC</name>
-	<name>LASER_BURST_4_PRC</name>
-	<name>LASER_BURST_4_FRC</name>
-	<name>LASER_BURST_4_CLD</name>
-	<name>LASER_BURST_4_POW</name>
-	<name>LASER_BURST_4_UNI</name>
-	<name>LASER_BURST_4_ACC</name>
-	<name>LASER_BURST_4P_PRC</name>
-	<name>LASER_BURST_4P_FRC</name>
-	<name>LASER_BURST_4P_CLD</name>
-	<name>LASER_BURST_4P_UNI</name>
-	<name>LASER_BURST_4P_ACC</name>
-	<name>LASER_BURST_5_PRC</name>
-	<name>LASER_BURST_5_FRC</name>
-	<name>LASER_BURST_5_CLD</name>
-	<name>LASER_BURST_5_UNI</name>
-	<name>LASER_BURST_5_ACC</name>
-	<name>LASER_AL_1_PRC</name>
-	<name>LASER_AL_1_FRC</name>
-	<name>LASER_AL_1_BRC</name>
-	<name>LASER_AL_1_CLD</name>
-	<name>LASER_AL_1_UNI</name>
-	<name>LASER_AL_1_ACC</name>
-	<name>LASER_AL_2_PRC</name>
-	<name>LASER_AL_2_FRC</name>
-	<name>LASER_AL_2_BRC</name>
-	<name>LASER_AL_2_CLD</name>
-	<name>LASER_AL_2_POW</name>
-	<name>LASER_AL_2_UNI</name>
-	<name>LASER_AL_2_ACC</name>
-	<name>LASER_SUPER_HEAVY_1_PRC</name>
-	<name>LASER_SUPER_HEAVY_1_FRC</name>
-	<name>LASER_SUPER_HEAVY_1_BRC</name>
-	<name>LASER_SUPER_HEAVY_1_CLD</name>
-	<name>LASER_SUPER_HEAVY_1_UNI</name>
-	<name>LASER_SUPER_HEAVY_1_ACC</name>
-	<name>LASER_SUPER_HEAVY_2_PRC</name>
-	<name>LASER_SUPER_HEAVY_2_FRC</name>
-	<name>LASER_SUPER_HEAVY_2_BRC</name>
-	<name>LASER_SUPER_HEAVY_2_CLD</name>
-	<name>LASER_SUPER_HEAVY_2_POW</name>
-	<name>LASER_SUPER_HEAVY_2_UNI</name>
-	<name>LASER_SUPER_HEAVY_2_ACC</name>
-	<name>LASER_HEAVY_1_PRC</name>
-	<name>LASER_HEAVY_1_FRC</name>
-	<name>LASER_HEAVY_1_BRC</name>
-	<name>LASER_HEAVY_1_CLD</name>
-	<name>LASER_HEAVY_1_UNI</name>
-	<name>LASER_HEAVY_1_ACC</name>
-	<name>LASER_HEAVY_2_PRC</name>
-	<name>LASER_HEAVY_2_FRC</name>
-	<name>LASER_HEAVY_2_BRC</name>
-	<name>LASER_HEAVY_2_CLD</name>
-	<name>LASER_HEAVY_2_POW</name>
-	<name>LASER_HEAVY_2_UNI</name>
-	<name>LASER_HEAVY_2_ACC</name>
-	<name>LASER_HEAVY_PIERCE_1_PRC</name>
-	<name>LASER_HEAVY_PIERCE_1_FRC</name>
-	<name>LASER_HEAVY_PIERCE_1_BRC</name>
-	<name>LASER_HEAVY_PIERCE_1_CLD</name>
-	<name>LASER_HEAVY_PIERCE_1_POW</name>
-	<name>LASER_HEAVY_PIERCE_1_UNI</name>
-	<name>LASER_HEAVY_PIERCE_1_ACC</name>
-	<name>LASER_HEAVY_PIERCE_2_PRC</name>
-	<name>LASER_HEAVY_PIERCE_2_FRC</name>
-	<name>LASER_HEAVY_PIERCE_2_BRC</name>
-	<name>LASER_HEAVY_PIERCE_2_CLD</name>
-	<name>LASER_HEAVY_PIERCE_2_POW</name>
-	<name>LASER_HEAVY_PIERCE_2_UNI</name>
-	<name>LASER_HEAVY_PIERCE_2_ACC</name>
-	<name>LASER_OLD_PRC</name>
-	<name>LASER_OLD_CLD</name>
-	<name>LASER_OLD_UNI</name>
-	<name>LASER_OLD_ACC</name>
-	<name>LASER_TIRED_PRC</name>
-	<name>LASER_TIRED_FRC</name>
-	<name>LASER_TIRED_CLD</name>
-	<name>LASER_TIRED_UNI</name>
-	<name>LASER_TIRED_ACC</name>
-	<name>ORU_MISSILE_BRC</name>
-	<name>ORU_MISSILE_CLD</name>
-	<name>ORU_MISSILE_UNI</name>
-	<name>ORU_MISSILE_ACC</name>
-	<name>LASER_VERY_OLD_PRC</name>
-	<name>LASER_VERY_OLD_CLD</name>
-	<name>LASER_VERY_OLD_UNI</name>
-	<name>LASER_VERY_OLD_ACC</name>
-	<name>LASER_STANDARD_1_PRC</name>
-	<name>LASER_STANDARD_1_FRC</name>
-	<name>LASER_STANDARD_1_CLD</name>
-	<name>LASER_STANDARD_1_UNI</name>
-	<name>LASER_STANDARD_1_ACC</name>
-	<name>LASER_STANDARD_2_PRC</name>
-	<name>LASER_STANDARD_2_FRC</name>
-	<name>LASER_STANDARD_2_CLD</name>
-	<name>LASER_STANDARD_2_UNI</name>
-	<name>LASER_STANDARD_2_ACC</name>
-	<name>LASER_DUAL_OLD_PRC</name>
-	<name>LASER_DUAL_OLD_CLD</name>
-	<name>LASER_DUAL_OLD_UNI</name>
-	<name>LASER_DUAL_OLD_ACC</name>
-	<name>LASER_DUAL_VERY_OLD_PRC</name>
-	<name>LASER_DUAL_VERY_OLD_CLD</name>
-	<name>LASER_DUAL_VERY_OLD_UNI</name>
-	<name>LASER_DUAL_VERY_OLD_ACC</name>
-	<name>LASER_DUAL_ORDEN_PRC</name>
-	<name>LASER_DUAL_ORDEN_FRC</name>
-	<name>LASER_DUAL_ORDEN_CLD</name>
-	<name>LASER_DUAL_ORDEN_POW</name>
-	<name>LASER_DUAL_ORDEN_UNI</name>
-	<name>LASER_DUAL_ORDEN_ACC</name>
-	<name>LASER_DUAL_ORDEN_2_PRC</name>
-	<name>LASER_DUAL_ORDEN_2_FRC</name>
-	<name>LASER_DUAL_ORDEN_2_CLD</name>
-	<name>LASER_DUAL_ORDEN_2_POW</name>
-	<name>LASER_DUAL_ORDEN_2_UNI</name>
-	<name>LASER_DUAL_ORDEN_2_ACC</name>
-	<name>LASER_DUAL_1_PRC</name>
-	<name>LASER_DUAL_1_FRC</name>
-	<name>LASER_DUAL_1_CLD</name>
-	<name>LASER_DUAL_1_UNI</name>
-	<name>LASER_DUAL_1_ACC</name>
-	<name>LASER_DUAL_2_PRC</name>
-	<name>LASER_DUAL_2_FRC</name>
-	<name>LASER_DUAL_2_CLD</name>
-	<name>LASER_DUAL_2_UNI</name>
-	<name>LASER_DUAL_2_ACC</name>
-	<name>BA_LASER_WAR_1_PRC</name>
-	<name>BA_LASER_WAR_1_FRC</name>
-	<name>BA_LASER_WAR_1_CLD</name>
-	<name>BA_LASER_WAR_1_UNI</name>
-	<name>BA_LASER_WAR_1_ACC</name>
-	<name>BA_LASER_WAR_2_PRC</name>
-	<name>BA_LASER_WAR_2_FRC</name>
-	<name>BA_LASER_WAR_2_BRC</name>
-	<name>BA_LASER_WAR_2_CLD</name>
-	<name>BA_LASER_WAR_2_UNI</name>
-	<name>BA_LASER_WAR_2_ACC</name>
-	<name>BA_LASER_WAR_3_PRC</name>
-	<name>BA_LASER_WAR_3_FRC</name>
-	<name>BA_LASER_WAR_3_CLD</name>
-	<name>BA_LASER_WAR_3_UNI</name>
-	<name>BA_LASER_WAR_3_ACC</name>
-	<name>BA_LASER_WAR_1P_PRC</name>
-	<name>BA_LASER_WAR_1P_FRC</name>
-	<name>BA_LASER_WAR_1P_CLD</name>
-	<name>BA_LASER_WAR_1P_UNI</name>
-	<name>BA_LASER_WAR_1P_ACC</name>
-	<name>BA_LASER_WAR_2P_PRC</name>
-	<name>BA_LASER_WAR_2P_FRC</name>
-	<name>BA_LASER_WAR_2P_BRC</name>
-	<name>BA_LASER_WAR_2P_CLD</name>
-	<name>BA_LASER_WAR_2P_UNI</name>
-	<name>BA_LASER_WAR_2P_ACC</name>
-	<name>BA_LASER_WAR_3P_PRC</name>
-	<name>BA_LASER_WAR_3P_FRC</name>
-	<name>BA_LASER_WAR_3P_CLD</name>
-	<name>BA_LASER_WAR_3P_UNI</name>
-	<name>BA_LASER_WAR_3P_ACC</name>
-	<name>LIGHT_BREACH_LASER_1_PRC</name>
-	<name>LIGHT_BREACH_LASER_1_BRC</name>
-	<name>LIGHT_BREACH_LASER_1_CLD</name>
-	<name>LIGHT_BREACH_LASER_1_POW</name>
-	<name>LIGHT_BREACH_LASER_1_UNI</name>
-	<name>LIGHT_BREACH_LASER_1_ACC</name>
-	<name>LIGHT_BREACH_LASER_2_PRC</name>
-	<name>LIGHT_BREACH_LASER_2_BRC</name>
-	<name>LIGHT_BREACH_LASER_2_CLD</name>
-	<name>LIGHT_BREACH_LASER_2_POW</name>
-	<name>LIGHT_BREACH_LASER_2_UNI</name>
-	<name>LIGHT_BREACH_LASER_2_ACC</name>
-	<name>LIGHT_BREACH_VULCAN_PRC</name>
-	<name>LIGHT_BREACH_VULCAN_BRC</name>
-	<name>LIGHT_BREACH_VULCAN_CLD</name>
-	<name>LIGHT_BREACH_VULCAN_POW</name>
-	<name>LIGHT_BREACH_VULCAN_UNI</name>
-	<name>LIGHT_BREACH_VULCAN_ACC</name>
-	<name>MPP_LASER_1_PRC</name>
-	<name>MPP_LASER_1_BRC</name>
-	<name>MPP_LASER_1_CLD</name>
-	<name>MPP_LASER_1_UNI</name>
-	<name>MPP_LASER_1_ACC</name>
-	<name>MPP_LASER_2_PRC</name>
-	<name>MPP_LASER_2_BRC</name>
-	<name>MPP_LASER_2_CLD</name>
-	<name>MPP_LASER_2_UNI</name>
-	<name>MPP_LASER_2_ACC</name>
-	<name>LASER_LIGHT_1_PRC</name>
-	<name>LASER_LIGHT_1_BRC</name>
-	<name>LASER_LIGHT_1_CLD</name>
-	<name>LASER_LIGHT_1_UNI</name>
-	<name>LASER_LIGHT_1_ACC</name>
-	<name>LASER_LIGHT_2_PRC</name>
-	<name>LASER_LIGHT_2_BRC</name>
-	<name>LASER_LIGHT_2_CLD</name>
-	<name>LASER_LIGHT_2_UNI</name>
-	<name>LASER_LIGHT_2_ACC</name>
-	<name>LASER_LIGHT_3_PRC</name>
-	<name>LASER_LIGHT_3_BRC</name>
-	<name>LASER_LIGHT_3_CLD</name>
-	<name>LASER_LIGHT_3_POW</name>
-	<name>LASER_LIGHT_3_UNI</name>
-	<name>LASER_LIGHT_3_ACC</name>
-	<name>LASER_LIGHT_AUTO_PRC</name>
-	<name>LASER_LIGHT_AUTO_BRC</name>
-	<name>LASER_LIGHT_AUTO_CLD</name>
-	<name>LASER_LIGHT_AUTO_UNI</name>
-	<name>LASER_LIGHT_AUTO_ACC</name>
-	<name>LASER_LIGHT_SCATTER_1_PRC</name>
-	<name>LASER_LIGHT_SCATTER_1_BRC</name>
-	<name>LASER_LIGHT_SCATTER_1_CLD</name>
-	<name>LASER_LIGHT_SCATTER_1_UNI</name>
-	<name>LASER_LIGHT_SCATTER_1_ACC</name>
-	<name>LASER_LIGHT_SCATTER_2_PRC</name>
-	<name>LASER_LIGHT_SCATTER_2_BRC</name>
-	<name>LASER_LIGHT_SCATTER_2_CLD</name>
-	<name>LASER_LIGHT_SCATTER_2_UNI</name>
-	<name>LASER_LIGHT_SCATTER_2_ACC</name>
-	<name>LASER_LIGHT_SCATTER_3_PRC</name>
-	<name>LASER_LIGHT_SCATTER_3_BRC</name>
-	<name>LASER_LIGHT_SCATTER_3_CLD</name>
-	<name>LASER_LIGHT_SCATTER_3_POW</name>
-	<name>LASER_LIGHT_SCATTER_3_UNI</name>
-	<name>LASER_LIGHT_SCATTER_3_ACC</name>
-	<name>BA_LASER_LIGHT_ARTILLERY_PRC</name>
-	<name>BA_LASER_LIGHT_ARTILLERY_BRC</name>
-	<name>BA_LASER_LIGHT_ARTILLERY_CLD</name>
-	<name>BA_LASER_LIGHT_ARTILLERY_POW</name>
-	<name>BA_LASER_LIGHT_ARTILLERY_UNI</name>
-	<name>BA_LASER_LIGHT_ARTILLERY_ACC</name>
-	<name>BA_LASER_LIGHT_CHAINGUN_PRC</name>
-	<name>BA_LASER_LIGHT_CHAINGUN_BRC</name>
-	<name>BA_LASER_LIGHT_CHAINGUN_CLD</name>
-	<name>BA_LASER_LIGHT_CHAINGUN_POW</name>
-	<name>BA_LASER_LIGHT_CHAINGUN_UNI</name>
-	<name>BA_LASER_LIGHT_CHAINGUN_ACC</name>
-	<name>SHOTGUN_PLAYER_VERYOLD_PRC</name>
-	<name>SHOTGUN_PLAYER_VERYOLD_BRC</name>
-	<name>SHOTGUN_PLAYER_VERYOLD_CLD</name>
-	<name>SHOTGUN_PLAYER_VERYOLD_UNI</name>
-	<name>SHOTGUN_PLAYER_VERYOLD_ACC</name>
-	<name>BA_SHOTGUN_SMALL_PRC</name>
-	<name>BA_SHOTGUN_SMALL_BRC</name>
-	<name>BA_SHOTGUN_SMALL_CLD</name>
-	<name>BA_SHOTGUN_SMALL_UNI</name>
-	<name>BA_SHOTGUN_SMALL_ACC</name>
-	<name>SHOTGUN_PLAYER_PRC</name>
-	<name>SHOTGUN_PLAYER_BRC</name>
-	<name>SHOTGUN_PLAYER_CLD</name>
-	<name>SHOTGUN_PLAYER_UNI</name>
-	<name>SHOTGUN_PLAYER_ACC</name>
-	<name>SHOTGUN_007_PRC</name>
-	<name>SHOTGUN_007_BRC</name>
-	<name>SHOTGUN_007_CLD</name>
-	<name>SHOTGUN_007_POW</name>
-	<name>SHOTGUN_007_UNI</name>
-	<name>SHOTGUN_007_ACC</name>
-	<name>SHOTGUN_PRC</name>
-	<name>SHOTGUN_BRC</name>
-	<name>SHOTGUN_CLD</name>
-	<name>SHOTGUN_POW</name>
-	<name>SHOTGUN_UNI</name>
-	<name>SHOTGUN_ACC</name>
-	<name>SHOTGUN_2_PRC</name>
-	<name>SHOTGUN_2_BRC</name>
-	<name>SHOTGUN_2_CLD</name>
-	<name>SHOTGUN_2_POW</name>
-	<name>SHOTGUN_2_UNI</name>
-	<name>SHOTGUN_2_ACC</name>
-	<name>SHOTGUN_RAND1_PRC</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND1_BRC</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND1_CLD</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND1_POW</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND1_UNI</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND1_ACC</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND2_PRC</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND2_BRC</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND2_CLD</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND2_POW</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND2_UNI</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND2_ACC</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND3_PRC</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND3_BRC</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND3_CLD</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND3_POW</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND3_UNI</name><!-- 1.35 -->
-	<name>SHOTGUN_RAND3_ACC</name><!-- 1.35 -->
-	<name>SHOTGUN_3_PRC</name>
-	<name>SHOTGUN_3_BRC</name>
-	<name>SHOTGUN_3_CLD</name>
-	<name>SHOTGUN_3_POW</name>
-	<name>SHOTGUN_3_UNI</name>
-	<name>SHOTGUN_3_ACC</name>
-	<name>SHOTGUN_3_BROKEN_PRC</name>
-	<name>SHOTGUN_3_BROKEN_BRC</name>
-	<name>SHOTGUN_3_BROKEN_CLD</name>
-	<name>SHOTGUN_3_BROKEN_POW</name>
-	<name>SHOTGUN_3_BROKEN_UNI</name>
-	<name>SHOTGUN_3_BROKEN_ACC</name>
-	<name>BA_SHOTGUN_SCATTER_PRC</name>
-	<name>BA_SHOTGUN_SCATTER_BRC</name>
-	<name>BA_SHOTGUN_SCATTER_CLD</name>
-	<name>BA_SHOTGUN_SCATTER_POW</name>
-	<name>BA_SHOTGUN_SCATTER_UNI</name>
-	<name>BA_SHOTGUN_SCATTER_ACC</name>
-	<name>SHTURM_FLAK_PRC</name>
-	<name>SHTURM_FLAK_BRC</name>
-	<name>SHTURM_FLAK_CLD</name>
-	<name>SHTURM_FLAK_POW</name>
-	<name>SHTURM_FLAK_UNI</name>
-	<name>SHTURM_FLAK_ACC</name>
-	<name>CHARGEGUN_SHOTGUN_PRC</name>
-	<name>CHARGEGUN_SHOTGUN_BRC</name>
-	<name>CHARGEGUN_SHOTGUN_CLD</name>
-	<name>CHARGEGUN_SHOTGUN_POW</name>
-	<name>CHARGEGUN_SHOTGUN_UNI</name>
-	<name>CHARGEGUN_SHOTGUN_ACC</name>
-	<name>BA_PLASMA_1_PRC</name>
-	<name>BA_PLASMA_1_FRC</name>
-	<name>BA_PLASMA_1_CLD</name>
-	<name>BA_PLASMA_1_UNI</name>
-	<name>BA_PLASMA_1_ACC</name>
-	<name>BA_PLASMA_2_PRC</name>
-	<name>BA_PLASMA_2_FRC</name>
-	<name>BA_PLASMA_2_CLD</name>
-	<name>BA_PLASMA_2_POW</name>
-	<name>BA_PLASMA_2_UNI</name>
-	<name>BA_PLASMA_2_ACC</name>
-	<name>BA_PLASMA_3_PRC</name>
-	<name>BA_PLASMA_3_FRC</name>
-	<name>BA_PLASMA_3_CLD</name>
-	<name>BA_PLASMA_3_POW</name>
-	<name>BA_PLASMA_3_UNI</name>
-	<name>BA_PLASMA_3_ACC</name>
-	<name>IMITATION_COMPLEX_PLAYER_CLD</name>
-	<name>IMITATION_COMPLEX_PLAYER_UNI</name>
-	<name>BA_STUNGUN_1_CLD</name>
-	<name>BA_STUNGUN_1_UNI</name>
-	<name>BA_STUNGUN_1_ACC</name>
-	<name>BA_STUNGUN_2_CLD</name>
-	<name>BA_STUNGUN_2_UNI</name>
-	<name>BA_STUNGUN_2_ACC</name>
-	<name>BA_STUNGUN_3_CLD</name>
-	<name>BA_STUNGUN_3_UNI</name>
-	<name>BA_STUNGUN_3_ACC</name>
-	<name>BA_CRYSTAL_LIGHT_1_BRC</name>
-	<name>BA_CRYSTAL_LIGHT_1_CLD</name>
-	<name>BA_CRYSTAL_LIGHT_1_UNI</name>
-	<name>BA_CRYSTAL_LIGHT_1_ACC</name>
-	<name>BA_CRYSTAL_LIGHT_2_BRC</name>
-	<name>BA_CRYSTAL_LIGHT_2_CLD</name>
-	<name>BA_CRYSTAL_LIGHT_2_POW</name>
-	<name>BA_CRYSTAL_LIGHT_2_UNI</name>
-	<name>BA_CRYSTAL_LIGHT_2_ACC</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_1_BRC</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_1_CLD</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_1_UNI</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_1_ACC</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_BRC</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_CLD</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_POW</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_UNI</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_ACC</name>
-	<name>CRYSTAL_BURST_1_BRC</name>
-	<name>CRYSTAL_BURST_1_CLD</name>
-	<name>CRYSTAL_BURST_1_POW</name>
-	<name>CRYSTAL_BURST_1_UNI</name>
-	<name>CRYSTAL_BURST_1_ACC</name>
-	<name>CRYSTAL_BURST_2_BRC</name>
-	<name>CRYSTAL_BURST_2_CLD</name>
-	<name>CRYSTAL_BURST_2_POW</name>
-	<name>CRYSTAL_BURST_2_UNI</name>
-	<name>CRYSTAL_BURST_2_ACC</name>
-	<name>CRYSTAL_HEAVY_1_BRC</name>
-	<name>CRYSTAL_HEAVY_1_CLD</name>
-	<name>CRYSTAL_HEAVY_1_UNI</name>
-	<name>CRYSTAL_HEAVY_1_ACC</name>
-	<name>CRYSTAL_HEAVY_2_CLD</name>
-	<name>CRYSTAL_HEAVY_2_POW</name>
-	<name>CRYSTAL_HEAVY_2_UNI</name>
-	<name>CRYSTAL_HEAVY_2_ACC</name>
-	<name>CRYSTAL_FLAK_I_CLD</name>
-	<name>CRYSTAL_FLAK_I_POW</name>
-	<name>CRYSTAL_FLAK_I_UNI</name>
-	<name>CRYSTAL_FLAK_I_ACC</name>
-	<name>BA_CRYSTAL_VULKAN_BRC</name>
-	<name>BA_CRYSTAL_VULKAN_CLD</name>
-	<name>BA_CRYSTAL_VULKAN_POW</name>
-	<name>BA_CRYSTAL_VULKAN_UNI</name>
-	<name>BA_CRYSTAL_VULKAN_ACC</name>
-	<name>BA_LASER_AUTO_1_PRC</name>
-	<name>BA_LASER_AUTO_1_FRC</name>
-	<name>BA_LASER_AUTO_1_CLD</name>
-	<name>BA_LASER_AUTO_1_POW</name>
-	<name>BA_LASER_AUTO_1_UNI</name>
-	<name>BA_LASER_AUTO_1_ACC</name>
-	<name>BA_LASER_AUTO_2_PRC</name>
-	<name>BA_LASER_AUTO_2_FRC</name>
-	<name>BA_LASER_AUTO_2_CLD</name>
-	<name>BA_LASER_AUTO_2_POW</name>
-	<name>BA_LASER_AUTO_2_UNI</name>
-	<name>BA_LASER_AUTO_2_ACC</name>
-	<name>BA_LASER_AUTO_3_PRC</name>
-	<name>BA_LASER_AUTO_3_FRC</name>
-	<name>BA_LASER_AUTO_3_CLD</name>
-	<name>BA_LASER_AUTO_3_POW</name>
-	<name>BA_LASER_AUTO_3_UNI</name>
-	<name>BA_LASER_AUTO_3_ACC</name>
-	<name>BA_LASER_BURST_SCATTER_1_PRC</name>
-	<name>BA_LASER_BURST_SCATTER_1_CLD</name>
-	<name>BA_LASER_BURST_SCATTER_1_UNI</name>
-	<name>BA_LASER_BURST_SCATTER_1_ACC</name>
-	<name>BA_LASER_BURST_SCATTER_2_PRC</name>
-	<name>BA_LASER_BURST_SCATTER_2_CLD</name>
-	<name>BA_LASER_BURST_SCATTER_2_POW</name>
-	<name>BA_LASER_BURST_SCATTER_2_UNI</name>
-	<name>BA_LASER_BURST_SCATTER_2_ACC</name>
-	<name>BA_LASER_BURST_SCATTER_3_PRC</name>
-	<name>BA_LASER_BURST_SCATTER_3_CLD</name>
-	<name>BA_LASER_BURST_SCATTER_3_POW</name>
-	<name>BA_LASER_BURST_SCATTER_3_UNI</name>
-	<name>BA_LASER_BURST_SCATTER_3_ACC</name>
-	<name>LASER_SCATTERCHAIN_PRC</name>
-	<name>LASER_SCATTERCHAIN_CLD</name>
-	<name>LASER_SCATTERCHAIN_POW</name>
-	<name>LASER_SCATTERCHAIN_UNI</name>
-	<name>LASER_SCATTERCHAIN_ACC</name>
-	<name>BA_LASER_HEAVY_SCATTER_1_PRC</name>
-	<name>BA_LASER_HEAVY_SCATTER_1_BRC</name>
-	<name>BA_LASER_HEAVY_SCATTER_1_CLD</name>
-	<name>BA_LASER_HEAVY_SCATTER_1_UNI</name>
-	<name>BA_LASER_HEAVY_SCATTER_1_ACC</name>
-	<name>BA_LASER_HEAVY_SCATTER_2_PRC</name>
-	<name>BA_LASER_HEAVY_SCATTER_2_BRC</name>
-	<name>BA_LASER_HEAVY_SCATTER_2_CLD</name>
-	<name>BA_LASER_HEAVY_SCATTER_2_UNI</name>
-	<name>BA_LASER_HEAVY_SCATTER_2_ACC</name>
-	<name>BA_LASER_ARTILLERY_1_PRC</name>
-	<name>BA_LASER_ARTILLERY_1_FRC</name>
-	<name>BA_LASER_ARTILLERY_1_BRC</name>
-	<name>BA_LASER_ARTILLERY_1_CLD</name>
-	<name>BA_LASER_ARTILLERY_1_POW</name>
-	<name>BA_LASER_ARTILLERY_1_UNI</name>
-	<name>BA_LASER_ARTILLERY_1_ACC</name>
-	<name>BA_LASER_ARTILLERY_2_PRC</name>
-	<name>BA_LASER_ARTILLERY_2_FRC</name>
-	<name>BA_LASER_ARTILLERY_2_BRC</name>
-	<name>BA_LASER_ARTILLERY_2_CLD</name>
-	<name>BA_LASER_ARTILLERY_2_POW</name>
-	<name>BA_LASER_ARTILLERY_2_UNI</name>
-	<name>BA_LASER_ARTILLERY_2_ACC</name>
-	<name>BA_LASER_HULLCRUSHER_PRC</name>
-	<name>BA_LASER_HULLCRUSHER_BRC</name>
-	<name>BA_LASER_HULLCRUSHER_CLD</name>
-	<name>BA_LASER_HULLCRUSHER_POW</name>
-	<name>BA_LASER_HULLCRUSHER_UNI</name>
-	<name>BA_LASER_HULLCRUSHER_ACC</name>
-	<name>BA_LASER_HULLCRUSHER_2_PRC</name>
-	<name>BA_LASER_HULLCRUSHER_2_BRC</name>
-	<name>BA_LASER_HULLCRUSHER_2_CLD</name>
-	<name>BA_LASER_HULLCRUSHER_2_POW</name>
-	<name>BA_LASER_HULLCRUSHER_2_UNI</name>
-	<name>BA_LASER_HULLCRUSHER_2_ACC</name>
-	<name>BA_LASER_HULLCRUSHER_3_PRC</name>
-	<name>BA_LASER_HULLCRUSHER_3_BRC</name>
-	<name>BA_LASER_HULLCRUSHER_3_CLD</name>
-	<name>BA_LASER_HULLCRUSHER_3_POW</name>
-	<name>BA_LASER_HULLCRUSHER_3_UNI</name>
-	<name>BA_LASER_HULLCRUSHER_3_ACC</name>
-	<name>W_LASER_HULL_BASIC_PRC</name>
-	<name>W_LASER_HULL_BASIC_BRC</name>
-	<name>W_LASER_HULL_BASIC_CLD</name>
-	<name>W_LASER_HULL_BASIC_UNI</name>
-	<name>W_LASER_HULL_BASIC_ACC</name>
-	<name>W_LASER_HULL_1_UPGRADED_PRC</name>
-	<name>W_LASER_HULL_1_UPGRADED_BRC</name>
-	<name>W_LASER_HULL_1_UPGRADED_CLD</name>
-	<name>W_LASER_HULL_1_UPGRADED_POW</name>
-	<name>W_LASER_HULL_1_UPGRADED_UNI</name>
-	<name>W_LASER_HULL_1_UPGRADED_ACC</name>
-	<name>W_LASER_HULL_2_UPGRADED_PRC</name>
-	<name>W_LASER_HULL_2_UPGRADED_BRC</name>
-	<name>W_LASER_HULL_2_UPGRADED_CLD</name>
-	<name>W_LASER_HULL_2_UPGRADED_POW</name>
-	<name>W_LASER_HULL_2_UPGRADED_UNI</name>
-	<name>W_LASER_HULL_2_UPGRADED_ACC</name>
-	<name>BA_LASER_HULL_SMALL_PRC</name>
-	<name>BA_LASER_HULL_SMALL_BRC</name>
-	<name>BA_LASER_HULL_SMALL_CLD</name>
-	<name>BA_LASER_HULL_SMALL_UNI</name>
-	<name>BA_LASER_HULL_SMALL_ACC</name>
-	<name>LASER_HULL_1_PRC</name>
-	<name>LASER_HULL_1_BRC</name>
-	<name>LASER_HULL_1_CLD</name>
-	<name>LASER_HULL_1_POW</name>
-	<name>LASER_HULL_1_UNI</name>
-	<name>LASER_HULL_1_ACC</name>
-	<name>LASER_HULL_2_PRC</name>
-	<name>LASER_HULL_2_BRC</name>
-	<name>LASER_HULL_2_CLD</name>
-	<name>LASER_HULL_2_POW</name>
-	<name>LASER_HULL_2_UNI</name>
-	<name>LASER_HULL_2_ACC</name>
-	<name>LASER_HULLCHAIN_PRC</name>
-	<name>LASER_HULLCHAIN_BRC</name>
-	<name>LASER_HULLCHAIN_CLD</name>
-	<name>LASER_HULLCHAIN_POW</name>
-	<name>LASER_HULLCHAIN_UNI</name>
-	<name>LASER_HULLCHAIN_ACC</name>
-	<name>LASER_IMP_2_PRC</name>
-	<name>LASER_IMP_2_BRC</name>
-	<name>LASER_IMP_2_CLD</name>
-	<name>LASER_IMP_2_POW</name>
-	<name>LASER_IMP_2_UNI</name>
-	<name>LASER_IMP_2_ACC</name>
-	<name>LASER_IMP_3_PRC</name>
-	<name>LASER_IMP_3_BRC</name>
-	<name>LASER_IMP_3_CLD</name>
-	<name>LASER_IMP_3_POW</name>
-	<name>LASER_IMP_3_UNI</name>
-	<name>LASER_IMP_3_ACC</name>
-	<name>BA_LASER_ADDFIRE_PRC</name>
-	<name>BA_LASER_ADDFIRE_FRC</name>
-	<name>BA_LASER_ADDFIRE_BRC</name>
-	<name>BA_LASER_ADDFIRE_CLD</name>
-	<name>BA_LASER_ADDFIRE_UNI</name>
-	<name>BA_LASER_ADDFIRE_ACC</name>
-	<name>LASER_HEAVY_CUMULATIVE_PRC</name>
-	<name>LASER_HEAVY_CUMULATIVE_FRC</name>
-	<name>LASER_HEAVY_CUMULATIVE_BRC</name>
-	<name>LASER_HEAVY_CUMULATIVE_CLD</name>
-	<name>LASER_HEAVY_CUMULATIVE_UNI</name>
-	<name>LASER_HEAVY_CUMULATIVE_ACC</name>
-	<name>GAUSS_ORDEN_MOD1_PRC</name>
-	<name>GAUSS_ORDEN_MOD1_FRC</name>
-	<name>GAUSS_ORDEN_MOD1_BRC</name>
-	<name>GAUSS_ORDEN_MOD1_CLD</name>
-	<name>GAUSS_ORDEN_MOD1_POW</name>
-	<name>GAUSS_ORDEN_MOD1_UNI</name>
-	<name>GAUSS_ORDEN_MOD1_ACC</name>
-	<name>GAUSS_ORDEN_MOD2_PRC</name>
-	<name>GAUSS_ORDEN_MOD2_FRC</name>
-	<name>GAUSS_ORDEN_MOD2_BRC</name>
-	<name>GAUSS_ORDEN_MOD2_CLD</name>
-	<name>GAUSS_ORDEN_MOD2_POW</name>
-	<name>GAUSS_ORDEN_MOD2_UNI</name>
-	<name>GAUSS_ORDEN_MOD2_ACC</name>
-	<name>GAUSS_ORDEN_PP_PRC</name>
-	<name>GAUSS_ORDEN_PP_FRC</name>
-	<name>GAUSS_ORDEN_PP_BRC</name>
-	<name>GAUSS_ORDEN_PP_CLD</name>
-	<name>GAUSS_ORDEN_PP_POW</name>
-	<name>GAUSS_ORDEN_PP_UNI</name>
-	<name>GAUSS_ORDEN_PP_ACC</name>
-	<name>GAUSS_MIXER_M1_PRC</name>
-	<name>GAUSS_MIXER_M1_FRC</name>
-	<name>GAUSS_MIXER_M1_BRC</name>
-	<name>GAUSS_MIXER_M1_CLD</name>
-	<name>GAUSS_MIXER_M1_POW</name>
-	<name>GAUSS_MIXER_M1_UNI</name>
-	<name>GAUSS_MIXER_M1_ACC</name>
-	<name>GAUSS_MIXER_M2_PRC</name>
-	<name>GAUSS_MIXER_M2_FRC</name>
-	<name>GAUSS_MIXER_M2_BRC</name>
-	<name>GAUSS_MIXER_M2_CLD</name>
-	<name>GAUSS_MIXER_M2_POW</name>
-	<name>GAUSS_MIXER_M2_UNI</name>
-	<name>GAUSS_MIXER_M2_ACC</name>
-	<name>GAUSS_MIXER_M3_PRC</name>
-	<name>GAUSS_MIXER_M3_FRC</name>
-	<name>GAUSS_MIXER_M3_BRC</name>
-	<name>GAUSS_MIXER_M3_CLD</name>
-	<name>GAUSS_MIXER_M3_POW</name>
-	<name>GAUSS_MIXER_M3_UNI</name>
-	<name>GAUSS_MIXER_M3_ACC</name>
-	<name>BEAM_HEALBIO_CLD</name>
-	<name>BEAM_HEALBIO_UNI</name>
-	<name>EP_BA_BEAM_BARDICHE_PRC</name>
-	<name>EP_BA_BEAM_BARDICHE_FRC</name>
-	<name>EP_BA_BEAM_BARDICHE_CLD</name>
-	<name>EP_BA_BEAM_BARDICHE_POW</name>
-	<name>EP_BA_BEAM_BARDICHE_UNI</name>
-	<name>EP_BA_BEAM_BO_PRC</name>
-	<name>EP_BA_BEAM_BO_CLD</name>
-	<name>EP_BA_BEAM_BO_POW</name>
-	<name>EP_BA_BEAM_BO_UNI</name>
-	<name>EP_BA_BEAM_SCYTHE_PRC</name>
-	<name>EP_BA_BEAM_SCYTHE_BRC</name>
-	<name>EP_BA_BEAM_SCYTHE_CLD</name>
-	<name>EP_BA_BEAM_SCYTHE_UNI</name>
-	<name>EP_BA_BEAM_HASTA_PRC</name>
-	<name>EP_BA_BEAM_HASTA_FRC</name>
-	<name>EP_BA_BEAM_HASTA_CLD</name>
-	<name>EP_BA_BEAM_HASTA_UNI</name>
-	<name>EP_BA_BEAM_NAGINATA_PRC</name>
-	<name>EP_BA_BEAM_NAGINATA_BRC</name>
-	<name>EP_BA_BEAM_NAGINATA_CLD</name>
-	<name>EP_BA_BEAM_NAGINATA_POW</name>
-	<name>EP_BA_BEAM_NAGINATA_UNI</name>
-	<name>EP_BA_BEAM_FLAIL_DAMAGE_PRC</name>
-	<name>EP_BA_BEAM_FLAIL_DAMAGE_BRC</name>
-	<name>EP_BA_BEAM_FLAIL_DAMAGE_CLD</name>
-	<name>EP_BA_BEAM_FLAIL_DAMAGE_POW</name>
-	<name>EP_BA_BEAM_FLAIL_DAMAGE_UNI</name>
-	<name>EP_BA_BEAM_SHEST_PRC</name>
-	<name>EP_BA_BEAM_SHEST_CLD</name>
-	<name>EP_BA_BEAM_SHEST_POW</name>
-	<name>EP_BA_BEAM_SHEST_UNI</name>
-	<name>EP_BA_BEAM_K1_PRC</name>
-	<name>EP_BA_BEAM_K1_CLD</name>
-	<name>EP_BA_BEAM_K1_UNI</name>
-	<name>EP_BA_BEAM_K2_PRC</name>
-	<name>EP_BA_BEAM_K2_CLD</name>
-	<name>EP_BA_BEAM_K2_POW</name>
-	<name>EP_BA_BEAM_K2_UNI</name>
-	<name>EP_BEAM_2_PRC</name>
-	<name>EP_BEAM_2_BRC</name>
-	<name>EP_BEAM_2_CLD</name>
-	<name>EP_BEAM_2_POW</name>
-	<name>EP_BEAM_2_UNI</name>
-	<name>EP_BEAM_3_PRC</name>
-	<name>EP_BEAM_3_BRC</name>
-	<name>EP_BEAM_3_CLD</name>
-	<name>EP_BEAM_3_POW</name>
-	<name>EP_BEAM_3_UNI</name>
-	<name>EP_BEAM_BIOFIRE_PRC</name>
-	<name>EP_BEAM_BIOFIRE_FRC</name>
-	<name>EP_BEAM_BIOFIRE_CLD</name>
-	<name>EP_BEAM_BIOFIRE_POW</name>
-	<name>EP_BEAM_BIOFIRE_UNI</name>
-	<name>EP_BEAM_FAUCHARD_PRC</name>
-	<name>EP_BEAM_FAUCHARD_BRC</name>
-	<name>EP_BEAM_FAUCHARD_CLD</name>
-	<name>EP_BEAM_FAUCHARD_POW</name>
-	<name>EP_BEAM_FAUCHARD_UNI</name>
-	<name>EP_BEAM_GUISARME_PRC</name>
-	<name>EP_BEAM_GUISARME_FRC</name>
-	<name>EP_BEAM_GUISARME_BRC</name>
-	<name>EP_BEAM_GUISARME_CLD</name>
-	<name>EP_BEAM_GUISARME_POW</name>
-	<name>EP_BEAM_GUISARME_UNI</name>
-	<name>EP_BEAM_LONG_PRC</name>
-	<name>EP_BEAM_LONG_FRC</name>
-	<name>EP_BEAM_LONG_CLD</name>
-	<name>EP_BEAM_LONG_POW</name>
-	<name>EP_BEAM_LONG_UNI</name>
-	<name>EP_BEAM_SP_KATANA_PRC</name>
-	<name>EP_BEAM_SP_KATANA_BRC</name>
-	<name>EP_BEAM_SP_KATANA_CLD</name>
-	<name>EP_BEAM_SP_KATANA_POW</name>
-	<name>EP_BEAM_SP_KATANA_UNI</name>
-	<name>EP_BEAM_SP_DAITO_PRC</name>
-	<name>EP_BEAM_SP_DAITO_BRC</name>
-	<name>EP_BEAM_SP_DAITO_CLD</name>
-	<name>EP_BEAM_SP_DAITO_POW</name>
-	<name>EP_BEAM_SP_DAITO_UNI</name>
-	<name>BEAM_DEEP_MINE_PRC</name>
-	<name>BEAM_DEEP_MINE_FRC</name>
-	<name>BEAM_DEEP_MINE_CLD</name>
-	<name>BEAM_DEEP_MINE_POW</name>
-	<name>BEAM_DEEP_MINE_UNI</name>
-	<name>BEAM_FAUCHARD_PRC</name>
-	<name>BEAM_FAUCHARD_BRC</name>
-	<name>BEAM_FAUCHARD_CLD</name>
-	<name>BEAM_FAUCHARD_POW</name>
-	<name>BEAM_FAUCHARD_UNI</name>
-	<name>BEAM_1_PRC</name>
-	<name>BEAM_1_FRC</name>
-	<name>BEAM_1_CLD</name>
-	<name>BEAM_1_UNI</name>
-	<name>BEAM_1_2_PRC</name>
-	<name>BEAM_1_2_FRC</name>
-	<name>BEAM_1_2_CLD</name>
-	<name>BEAM_1_2_UNI</name>
-	<name>BEAM_LONG_PRC</name>
-	<name>BEAM_LONG_FRC</name>
-	<name>BEAM_LONG_CLD</name>
-	<name>BEAM_LONG_POW</name>
-	<name>BEAM_LONG_UNI</name>
-	<name>BEAM_GUISARME_PRC</name>
-	<name>BEAM_GUISARME_FRC</name>
-	<name>BEAM_GUISARME_BRC</name>
-	<name>BEAM_GUISARME_CLD</name>
-	<name>BEAM_GUISARME_POW</name>
-	<name>BEAM_GUISARME_UNI</name>
-	<name>BEAM_LONG_SYS_PRC</name>
-	<name>BEAM_LONG_SYS_FRC</name>
-	<name>BEAM_LONG_SYS_CLD</name>
-	<name>BEAM_LONG_SYS_POW</name>
-	<name>BEAM_LONG_SYS_UNI</name>
-	<name>BA_BEAM_BATON_PRC</name>
-	<name>BA_BEAM_BATON_CLD</name>
-	<name>BA_BEAM_BATON_UNI</name>
-	<name>BA_BEAM_BO_PRC</name>
-	<name>BA_BEAM_BO_CLD</name>
-	<name>BA_BEAM_BO_POW</name>
-	<name>BA_BEAM_BO_UNI</name>
-	<name>BA_BEAM_SHEST_PRC</name>
-	<name>BA_BEAM_SHEST_CLD</name>
-	<name>BA_BEAM_SHEST_POW</name>
-	<name>BA_BEAM_SHEST_UNI</name>
-	<name>BA_BEAM_SMASHER_PRC</name>
-	<name>BA_BEAM_SMASHER_CLD</name>
-	<name>BA_BEAM_SMASHER_POW</name>
-	<name>BA_BEAM_SMASHER_UNI</name>
-	<name>BA_BEAM_K1_PRC</name>
-	<name>BA_BEAM_K1_CLD</name>
-	<name>BA_BEAM_K1_UNI</name>
-	<name>BA_BEAM_K2_PRC</name>
-	<name>BA_BEAM_K2_CLD</name>
-	<name>BA_BEAM_K2_POW</name>
-	<name>BA_BEAM_K2_UNI</name>
-	<name>BA_BEAM_HASTA_PRC</name>
-	<name>BA_BEAM_HASTA_FRC</name>
-	<name>BA_BEAM_HASTA_CLD</name>
-	<name>BA_BEAM_HASTA_UNI</name>
-	<name>BA_BEAM_HULL_MINI_PRC</name>
-	<name>BA_BEAM_HULL_MINI_BRC</name>
-	<name>BA_BEAM_HULL_MINI_CLD</name>
-	<name>BA_BEAM_HULL_MINI_UNI</name>
-	<name>BA_BEAM_HULL_SMALL_PRC</name>
-	<name>BA_BEAM_HULL_SMALL_BRC</name>
-	<name>BA_BEAM_HULL_SMALL_CLD</name>
-	<name>BA_BEAM_HULL_SMALL_POW</name>
-	<name>BA_BEAM_HULL_SMALL_UNI</name>
-	<name>BEAM_HULL_PRC</name>
-	<name>BEAM_HULL_BRC</name>
-	<name>BEAM_HULL_CLD</name>
-	<name>BEAM_HULL_POW</name>
-	<name>BEAM_HULL_UNI</name>
-	<name>BA_BEAM_AUTO_PRC</name>
-	<name>BA_BEAM_AUTO_CLD</name>
-	<name>BA_BEAM_AUTO_UNI</name>
-	<name>BA_BEAM_ADAPTIVE_1_PRC</name>
-	<name>BA_BEAM_ADAPTIVE_1_CLD</name>
-	<name>BA_BEAM_ADAPTIVE_1_UNI</name>
-	<name>BA_BEAM_ADAPTIVE_2_PRC</name>
-	<name>BA_BEAM_ADAPTIVE_2_BRC</name>
-	<name>BA_BEAM_ADAPTIVE_2_CLD</name>
-	<name>BA_BEAM_ADAPTIVE_2_POW</name>
-	<name>BA_BEAM_ADAPTIVE_2_UNI</name>
-	<name>BA_BEAM_ADAPTIVE_3_PRC</name>
-	<name>BA_BEAM_ADAPTIVE_3_BRC</name>
-	<name>BA_BEAM_ADAPTIVE_3_CLD</name>
-	<name>BA_BEAM_ADAPTIVE_3_POW</name>
-	<name>BA_BEAM_ADAPTIVE_3_UNI</name>
-	<name>BA_BEAM_BARDICHE_PRC</name>
-	<name>BA_BEAM_BARDICHE_FRC</name>
-	<name>BA_BEAM_BARDICHE_CLD</name>
-	<name>BA_BEAM_BARDICHE_POW</name>
-	<name>BA_BEAM_BARDICHE_UNI</name>
-	<name>BA_BEAM_SCYTHE_PRC</name>
-	<name>BA_BEAM_SCYTHE_BRC</name>
-	<name>BA_BEAM_SCYTHE_CLD</name>
-	<name>BA_BEAM_SCYTHE_UNI</name>
-	<name>BA_BEAM_FLAIL_DAMAGE_PRC</name>
-	<name>BA_BEAM_FLAIL_DAMAGE_BRC</name>
-	<name>BA_BEAM_FLAIL_DAMAGE_CLD</name>
-	<name>BA_BEAM_FLAIL_DAMAGE_POW</name>
-	<name>BA_BEAM_FLAIL_DAMAGE_UNI</name>
-	<name>BA_BEAM_NAGINATA_PRC</name>
-	<name>BA_BEAM_NAGINATA_BRC</name>
-	<name>BA_BEAM_NAGINATA_CLD</name>
-	<name>BA_BEAM_NAGINATA_POW</name>
-	<name>BA_BEAM_NAGINATA_UNI</name>
-	<name>BA_BEAM_PERNACH_PRC</name>
-	<name>BA_BEAM_PERNACH_BRC</name>
-	<name>BA_BEAM_PERNACH_CLD</name>
-	<name>BA_BEAM_PERNACH_POW</name>
-	<name>BA_BEAM_PERNACH_UNI</name>
-	<name>BA_BEAM_MAUL_PRC</name>
-	<name>BA_BEAM_MAUL_BRC</name>
-	<name>BA_BEAM_MAUL_CLD</name>
-	<name>BA_BEAM_MAUL_POW</name>
-	<name>BA_BEAM_MAUL_UNI</name>
-	<name>BEAM_FIRE_PRC</name>
-	<name>BEAM_FIRE_FRC</name>
-	<name>BEAM_FIRE_CLD</name>
-	<name>BEAM_FIRE_POW</name>
-	<name>BEAM_FIRE_UNI</name>
-	<name>BEAM_FIRE_P_PRC</name>
-	<name>BEAM_FIRE_P_FRC</name>
-	<name>BEAM_FIRE_P_CLD</name>
-	<name>BEAM_FIRE_P_POW</name>
-	<name>BEAM_FIRE_P_UNI</name>
-	<name>BA_BEAM_FIRE_2_PRC</name>
-	<name>BA_BEAM_FIRE_2_FRC</name>
-	<name>BA_BEAM_FIRE_2_CLD</name>
-	<name>BA_BEAM_FIRE_2_POW</name>
-	<name>BA_BEAM_FIRE_2_UNI</name>
-	<name>BEAM_FIRECHAIN_PRC</name>
-	<name>BEAM_FIRECHAIN_FRC</name>
-	<name>BEAM_FIRECHAIN_CLD</name>
-	<name>BEAM_FIRECHAIN_POW</name>
-	<name>BEAM_FIRECHAIN_UNI</name>
-	<name>BA_BEAM_FIRE_FOCUS_FRC</name>
-	<name>BA_BEAM_FIRE_FOCUS_CLD</name>
-	<name>BA_BEAM_FIRE_FOCUS_POW</name>
-	<name>BA_BEAM_FIRE_FOCUS_UNI</name>
-	<name>BA_BEAM_FIRE_FOCUS2_FRC</name>
-	<name>BA_BEAM_FIRE_FOCUS2_CLD</name>
-	<name>BA_BEAM_FIRE_FOCUS2_POW</name>
-	<name>BA_BEAM_FIRE_FOCUS2_UNI</name>
-	<name>BA_BEAM_HOT_1_PRC</name>
-	<name>BA_BEAM_HOT_1_FRC</name>
-	<name>BA_BEAM_HOT_1_CLD</name>
-	<name>BA_BEAM_HOT_1_POW</name>
-	<name>BA_BEAM_HOT_1_UNI</name>
-	<name>BA_BEAM_HOT_2_PRC</name>
-	<name>BA_BEAM_HOT_2_FRC</name>
-	<name>BA_BEAM_HOT_2_CLD</name>
-	<name>BA_BEAM_HOT_2_POW</name>
-	<name>BA_BEAM_HOT_2_UNI</name>
-	<name>BA_BEAM_HOT_3_PRC</name>
-	<name>BA_BEAM_HOT_3_FRC</name>
-	<name>BA_BEAM_HOT_3_CLD</name>
-	<name>BA_BEAM_HOT_3_POW</name>
-	<name>BA_BEAM_HOT_3_UNI</name>
-	<name>BA_BEAM_BIO_2_PRC</name>
-	<name>BA_BEAM_BIO_2_CLD</name>
-	<name>BA_BEAM_BIO_2_POW</name>
-	<name>BA_BEAM_BIO_2_UNI</name>
-	<name>BEAM_BIO_PRC</name>
-	<name>BEAM_BIO_CLD</name>
-	<name>BEAM_BIO_POW</name>
-	<name>BEAM_BIO_UNI</name>
-	<name>BEAM_CHAIN_BIO_PRC</name>
-	<name>BEAM_CHAIN_BIO_CLD</name>
-	<name>BEAM_CHAIN_BIO_POW</name>
-	<name>BEAM_CHAIN_BIO_UNI</name>
-	<name>BA_BEAM_BIO_FOCUS_CLD</name>
-	<name>BA_BEAM_BIO_FOCUS_POW</name>
-	<name>BA_BEAM_BIO_FOCUS_UNI</name>
-	<name>BA_BEAM_BIO_SP1_PRC</name>
-	<name>BA_BEAM_BIO_SP1_CLD</name>
-	<name>BA_BEAM_BIO_SP1_POW</name>
-	<name>BA_BEAM_BIO_SP1_UNI</name>
-	<name>BA_BEAM_BIO_SP2_PRC</name>
-	<name>BA_BEAM_BIO_SP2_CLD</name>
-	<name>BA_BEAM_BIO_SP2_POW</name>
-	<name>BA_BEAM_BIO_SP2_UNI</name>
-	<name>BEAM_3_PRC</name>
-	<name>BEAM_3_BRC</name>
-	<name>BEAM_3_CLD</name>
-	<name>BEAM_3_POW</name>
-	<name>BEAM_3_UNI</name>
-	<name>BEAM_2_PRC</name>
-	<name>BEAM_2_BRC</name>
-	<name>BEAM_2_CLD</name>
-	<name>BEAM_2_POW</name>
-	<name>BEAM_2_UNI</name>
-	<name>BA_BEAM_POLLAXE_BRC</name>
-	<name>BA_BEAM_POLLAXE_CLD</name>
-	<name>BA_BEAM_POLLAXE_POW</name>
-	<name>BA_BEAM_POLLAXE_UNI</name>
-	<name>BA_BEAM_PARTISAN_BRC</name>
-	<name>BA_BEAM_PARTISAN_CLD</name>
-	<name>BA_BEAM_PARTISAN_POW</name>
-	<name>BA_BEAM_PARTISAN_UNI</name>
-	<name>BEAM_SP_DAITO_PRC</name>
-	<name>BEAM_SP_DAITO_BRC</name>
-	<name>BEAM_SP_DAITO_CLD</name>
-	<name>BEAM_SP_DAITO_POW</name>
-	<name>BEAM_SP_DAITO_UNI</name>
-	<name>BEAM_SP_KATANA_PRC</name>
-	<name>BEAM_SP_KATANA_BRC</name>
-	<name>BEAM_SP_KATANA_CLD</name>
-	<name>BEAM_SP_KATANA_POW</name>
-	<name>BEAM_SP_KATANA_UNI</name>
-	<name>BEAM_BIOFIRE_PRC</name>
-	<name>BEAM_BIOFIRE_FRC</name>
-	<name>BEAM_BIOFIRE_CLD</name>
-	<name>BEAM_BIOFIRE_POW</name>
-	<name>BEAM_BIOFIRE_UNI</name>
-	<name>BEAM_SCALPEL_PRC</name>
-	<name>BEAM_SCALPEL_FRC</name>
-	<name>BEAM_SCALPEL_CLD</name>
-	<name>BEAM_SCALPEL_UNI</name>
-	<name>FIRE_HELL_BEAM_PRC</name>
-	<name>FIRE_HELL_BEAM_FRC</name>
-	<name>FIRE_HELL_BEAM_CLD</name>
-	<name>FIRE_HELL_BEAM_POW</name>
-	<name>FIRE_HELL_BEAM_UNI</name>
-	<name>BEAM_FIRE_SARISSA_PRC</name>
-	<name>BEAM_FIRE_SARISSA_FRC</name>
-	<name>BEAM_FIRE_SARISSA_CLD</name>
-	<name>BEAM_FIRE_SARISSA_POW</name>
-	<name>BEAM_FIRE_SARISSA_UNI</name>
-	<name>BOMB_STUN_CLD</name>
-	<name>BOMB_STUN_UNI</name>
-	<name>BOMB_HEAL_SYSTEM_CLD</name>
-	<name>BOMB_HEAL_SYSTEM_UNI</name>
-	<name>BOMB_LOCK_BRC</name>
-	<name>BOMB_LOCK_CLD</name>
-	<name>BOMB_LOCK_UNI</name>
-	<name>BA_BOMB_LOCK_2_CLD</name>
-	<name>BA_BOMB_LOCK_2_UNI</name>
-	<name>BOMB_1_FRC</name>
-	<name>BOMB_1_CLD</name>
-	<name>BOMB_1_UNI</name>
-	<name>BA_BOMB_BIG_FRC</name>
-	<name>BA_BOMB_BIG_CLD</name>
-	<name>BA_BOMB_BIG_POW</name>
-	<name>BA_BOMB_BIG_UNI</name>
-	<name>BA_BOMB_TIMER_FRC</name>
-	<name>BA_BOMB_TIMER_BRC</name>
-	<name>BA_BOMB_TIMER_CLD</name>
-	<name>BA_BOMB_TIMER_POW</name>
-	<name>BA_BOMB_TIMER_UNI</name>
-	<name>BOMB_HEALFIRE_FRC</name>
-	<name>BOMB_HEALFIRE_CLD</name>
-	<name>BOMB_HEALFIRE_UNI</name>
-	<name>BA_BOMB_FIRE_SMALL_FRC</name>
-	<name>BA_BOMB_FIRE_SMALL_CLD</name>
-	<name>BA_BOMB_FIRE_SMALL_UNI</name>
-	<name>BOMB_FIRE_FRC</name>
-	<name>BOMB_FIRE_CLD</name>
-	<name>BOMB_FIRE_POW</name>
-	<name>BOMB_FIRE_UNI</name>
-	<name>BA_BOMB_FIRE_2_CLD</name>
-	<name>BA_BOMB_FIRE_2_POW</name>
-	<name>BA_BOMB_FIRE_2_UNI</name>
-	<name>BA_BOMB_CLUSTER_FIRE_FRC</name>
-	<name>BA_BOMB_CLUSTER_FIRE_CLD</name>
-	<name>BA_BOMB_CLUSTER_FIRE_POW</name>
-	<name>BA_BOMB_CLUSTER_FIRE_UNI</name>
-	<name>BOMB_DELAY_FIRE_STUN_CLD</name>
-	<name>BOMB_DELAY_FIRE_STUN_UNI</name>
-	<name>BOMB_DELAY_BIO_CLD</name>
-	<name>BOMB_DELAY_BIO_UNI</name>
-	<name>BA_BOMB_BIO_CLD</name>
-	<name>BA_BOMB_BIO_POW</name>
-	<name>BA_BOMB_BIO_UNI</name>
-	<name>BOMB_HEAL_CLD</name>
-	<name>BOMB_HEAL_UNI</name>
-	<name>BA_BOMB_HEAL_2_CLD</name>
-	<name>BA_BOMB_HEAL_2_UNI</name>
-	<name>BOMB_BREACH_1_BRC</name>
-	<name>BOMB_BREACH_1_CLD</name>
-	<name>BOMB_BREACH_1_POW</name>
-	<name>BOMB_BREACH_1_UNI</name>
-	<name>BOMB_BREACH_2_BRC</name>
-	<name>BOMB_BREACH_2_CLD</name>
-	<name>BOMB_BREACH_2_POW</name>
-	<name>BOMB_BREACH_2_UNI</name>
-	<name>BOMB_BREACH_3_CLD</name>
-	<name>BOMB_BREACH_3_POW</name>
-	<name>BOMB_BREACH_3_UNI</name>
-	<name>BA_BOMB_CLUSTER_BREACH_BRC</name>
-	<name>BA_BOMB_CLUSTER_BREACH_CLD</name>
-	<name>BA_BOMB_CLUSTER_BREACH_POW</name>
-	<name>BA_BOMB_CLUSTER_BREACH_UNI</name>
-	<name>BA_BOMB_CLUSTER_1_FRC</name>
-	<name>BA_BOMB_CLUSTER_1_CLD</name>
-	<name>BA_BOMB_CLUSTER_1_POW</name>
-	<name>BA_BOMB_CLUSTER_1_UNI</name>
-	<name>BOMB_ION_CLD</name>
-	<name>BOMB_ION_UNI</name>
-	<name>BA_BOMB_CLUSTER_ION_CLD</name>
-	<name>BA_BOMB_CLUSTER_ION_UNI</name>
-	<name>BA_BOMB_NANO_1_CLD</name>
-	<name>BA_BOMB_NANO_1_UNI</name>
-	<name>BA_BOMB_NANO_2_CLD</name>
-	<name>BA_BOMB_NANO_2_POW</name>
-	<name>BA_BOMB_NANO_2_UNI</name>
-	<name>BA_BOMB_NANO_3_CLD</name>
-	<name>BA_BOMB_NANO_3_POW</name>
-	<name>BA_BOMB_NANO_3_UNI</name>
-	<name>BA_BOMB_NANO_X_CLD</name>
-	<name>BA_BOMB_NANO_X_POW</name>
-	<name>BA_BOMB_NANO_X_UNI</name>
-	<name>BA_BOMB_CLUSTER_STUN_BRC</name>
-	<name>BA_BOMB_CLUSTER_STUN_CLD</name>
-	<name>BA_BOMB_CLUSTER_STUN_UNI</name>
-	<name>BA_BOMB_CLUSTER_STUN2_BRC</name>
-	<name>BA_BOMB_CLUSTER_STUN2_CLD</name>
-	<name>BA_BOMB_CLUSTER_STUN2_UNI</name>
-	<name>TAHION_M1_FRC</name>
-	<name>TAHION_M1_CLD</name>
-	<name>TAHION_M1_POW</name>
-	<name>TAHION_M1_UNI</name>
-	<name>TAHION_M2_FRC</name>
-	<name>TAHION_M2_CLD</name>
-	<name>TAHION_M2_POW</name>
-	<name>TAHION_M2_UNI</name>
-	<name>TAHION_M3_FRC</name>
-	<name>TAHION_M3_CLD</name>
-	<name>TAHION_M3_POW</name>
-	<name>TAHION_M3_UNI</name>
-	<name>KERNEL_1_BRC</name>
-	<name>KERNEL_1_CLD</name>
-	<name>KERNEL_1_UNI</name>
-	<name>KERNEL_1_ACC</name>
-	<name>KERNEL_2_BRC</name>
-	<name>KERNEL_2_CLD</name>
-	<name>KERNEL_2_POW</name>
-	<name>KERNEL_2_UNI</name>
-	<name>KERNEL_2_ACC</name>
-	<name>KERNEL_CHAIN_BRC</name>
-	<name>KERNEL_CHAIN_CLD</name>
-	<name>KERNEL_CHAIN_POW</name>
-	<name>KERNEL_CHAIN_UNI</name>
-	<name>KERNEL_CHAIN_ACC</name>
-	<name>MISSILES_ARU_GOLIAPH_BRC</name>
-	<name>MISSILES_ARU_GOLIAPH_CLD</name>
-	<name>MISSILES_ARU_GOLIAPH_UNI</name>
-	<name>MISSILES_ARU_GOLIAPH_ACC</name>
-	<name>MISSILES_HYDRA_FRC</name>
-	<name>MISSILES_HYDRA_BRC</name>
-	<name>MISSILES_HYDRA_CLD</name>
-	<name>MISSILES_HYDRA_POW</name>
-	<name>MISSILES_HYDRA_UNI</name>
-	<name>MISSILES_HYDRA_ACC</name>
-	<name>MISSILES_MEGA_FRC</name>
-	<name>MISSILES_MEGA_BRC</name>
-	<name>MISSILES_MEGA_CLD</name>
-	<name>MISSILES_MEGA_POW</name>
-	<name>MISSILES_MEGA_UNI</name>
-	<name>MISSILES_MEGA_ACC</name>
-	<name>MISSILES_1_FRC</name>
-	<name>MISSILES_1_BRC</name>
-	<name>MISSILES_1_CLD</name>
-	<name>MISSILES_1_UNI</name>
-	<name>MISSILES_1_ACC</name>
-	<name>MISSILES_2_PLAYER_FRC</name>
-	<name>MISSILES_2_PLAYER_BRC</name>
-	<name>MISSILES_2_PLAYER_CLD</name>
-	<name>MISSILES_2_PLAYER_UNI</name>
-	<name>MISSILES_2_PLAYER_ACC</name>
-	<name>MISSILES_3_FRC</name>
-	<name>MISSILES_3_BRC</name>
-	<name>MISSILES_3_CLD</name>
-	<name>MISSILES_3_POW</name>
-	<name>MISSILES_3_UNI</name>
-	<name>MISSILES_3_ACC</name>
-	<name>MISSILES_BURST_FRC</name>
-	<name>MISSILES_BURST_BRC</name>
-	<name>MISSILES_BURST_CLD</name>
-	<name>MISSILES_BURST_POW</name>
-	<name>MISSILES_BURST_UNI</name>
-	<name>MISSILES_BURST_ACC</name>
-	<name>MISSILES_BREACH_FRC</name>
-	<name>MISSILES_BREACH_BRC</name>
-	<name>MISSILES_BREACH_CLD</name>
-	<name>MISSILES_BREACH_POW</name>
-	<name>MISSILES_BREACH_UNI</name>
-	<name>MISSILES_BREACH_ACC</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_FRC</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_BRC</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_CLD</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_UNI</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_ACC</name>
-	<name>MISSILE_CHARGEGUN_FRC</name>
-	<name>MISSILE_CHARGEGUN_BRC</name>
-	<name>MISSILE_CHARGEGUN_CLD</name>
-	<name>MISSILE_CHARGEGUN_POW</name>
-	<name>MISSILE_CHARGEGUN_UNI</name>
-	<name>MISSILE_CHARGEGUN_ACC</name>
-	<name>BA_SHOTGUN_MISSILES_BRC</name>
-	<name>BA_SHOTGUN_MISSILES_CLD</name>
-	<name>BA_SHOTGUN_MISSILES_POW</name>
-	<name>BA_SHOTGUN_MISSILES_UNI</name>
-	<name>BA_SHOTGUN_MISSILES_ACC</name>
-	<name>BA_SHOTGUN_MISSILES2_BRC</name>
-	<name>BA_SHOTGUN_MISSILES2_CLD</name>
-	<name>BA_SHOTGUN_MISSILES2_POW</name>
-	<name>BA_SHOTGUN_MISSILES2_UNI</name>
-	<name>BA_SHOTGUN_MISSILES2_ACC</name>
-	<name>BA_SHOTGUN_MISSILES3_BRC</name>
-	<name>BA_SHOTGUN_MISSILES3_CLD</name>
-	<name>BA_SHOTGUN_MISSILES3_POW</name>
-	<name>BA_SHOTGUN_MISSILES3_UNI</name>
-	<name>BA_SHOTGUN_MISSILES3_ACC</name>
-	<name>BA_MISSILES_ONI_FRC</name>
-	<name>BA_MISSILES_ONI_BRC</name>
-	<name>BA_MISSILES_ONI_CLD</name>
-	<name>BA_MISSILES_ONI_POW</name>
-	<name>BA_MISSILES_ONI_UNI</name>
-	<name>BA_MISSILES_ONI_ACC</name>
-	<name>BA_MISSILES_IFRIT_CLD</name>
-	<name>BA_MISSILES_IFRIT_POW</name>
-	<name>BA_MISSILES_IFRIT_UNI</name>
-	<name>BA_MISSILES_IFRIT_ACC</name>
-	<name>MISSILES_SYS1_FRC</name>
-	<name>MISSILES_SYS1_CLD</name>
-	<name>MISSILES_SYS1_UNI</name>
-	<name>MISSILES_SYS1_ACC</name>
-	<name>MISSILES_SYS2_FRC</name>
-	<name>MISSILES_SYS2_CLD</name>
-	<name>MISSILES_SYS2_UNI</name>
-	<name>MISSILES_SYS2_ACC</name>
-	<name>BA_MISSILES_FOBOS_FRC</name>
-	<name>BA_MISSILES_FOBOS_CLD</name>
-	<name>BA_MISSILES_FOBOS_UNI</name>
-	<name>BA_MISSILES_FOBOS_ACC</name>
-	<name>BA_MISSILES_DEIMOS_FRC</name>
-	<name>BA_MISSILES_DEIMOS_CLD</name>
-	<name>BA_MISSILES_DEIMOS_POW</name>
-	<name>BA_MISSILES_DEIMOS_UNI</name>
-	<name>BA_MISSILES_DEIMOS_ACC</name>
-	<name>BA_MISSILES_SWARM_1_FRC</name>
-	<name>BA_MISSILES_SWARM_1_CLD</name>
-	<name>BA_MISSILES_SWARM_1_UNI</name>
-	<name>BA_MISSILES_SWARM_1_ACC</name>
-	<name>BA_MISSILES_SWARM_2_FRC</name>
-	<name>BA_MISSILES_SWARM_2_BRC</name>
-	<name>BA_MISSILES_SWARM_2_CLD</name>
-	<name>BA_MISSILES_SWARM_2_POW</name>
-	<name>BA_MISSILES_SWARM_2_UNI</name>
-	<name>BA_MISSILES_SWARM_2_ACC</name>
-	<name>BA_MISSILES_SWARM_3_FRC</name>
-	<name>BA_MISSILES_SWARM_3_BRC</name>
-	<name>BA_MISSILES_SWARM_3_CLD</name>
-	<name>BA_MISSILES_SWARM_3_POW</name>
-	<name>BA_MISSILES_SWARM_3_UNI</name>
-	<name>BA_MISSILES_SWARM_3_ACC</name>
-	<name>BA_MISSILES_ASTERIA_CLD</name>
-	<name>BA_MISSILES_ASTERIA_UNI</name>
-	<name>BA_MISSILES_ASTERIA_ACC</name>
-	<name>BA_MISSILES_HULL_SMALL_BRC</name>
-	<name>BA_MISSILES_HULL_SMALL_CLD</name>
-	<name>BA_MISSILES_HULL_SMALL_UNI</name>
-	<name>BA_MISSILES_HULL_SMALL_ACC</name>
-	<name>MISSILES_HULL_BRC</name>
-	<name>MISSILES_HULL_CLD</name>
-	<name>MISSILES_HULL_POW</name>
-	<name>MISSILES_HULL_UNI</name>
-	<name>MISSILES_HULL_ACC</name>
-	<name>BA_MISSILES_4_FRC</name>
-	<name>BA_MISSILES_4_BRC</name>
-	<name>BA_MISSILES_4_CLD</name>
-	<name>BA_MISSILES_4_POW</name>
-	<name>BA_MISSILES_4_UNI</name>
-	<name>BA_MISSILES_4_ACC</name>
-	<name>BA_MISSILES_PERYTON_CLD</name>
-	<name>BA_MISSILES_PERYTON_POW</name>
-	<name>BA_MISSILES_PERYTON_UNI</name>
-	<name>BA_MISSILES_PERYTON_ACC</name>
-	<name>BA_MISSILES_COCKATRICE_CLD</name>
-	<name>BA_MISSILES_COCKATRICE_POW</name>
-	<name>BA_MISSILES_COCKATRICE_UNI</name>
-	<name>BA_MISSILES_COCKATRICE_ACC</name>
-	<name>BA_MISSILES_FIRE_FRC</name>
-	<name>BA_MISSILES_FIRE_CLD</name>
-	<name>BA_MISSILES_FIRE_POW</name>
-	<name>BA_MISSILES_FIRE_UNI</name>
-	<name>BA_MISSILES_FIRE_ACC</name>
-	<name>BA_MISSILES_SIMURGH_CLD</name>
-	<name>BA_MISSILES_SIMURGH_POW</name>
-	<name>BA_MISSILES_SIMURGH_UNI</name>
-	<name>BA_MISSILES_SIMURGH_ACC</name>
-	<name>ORDEN2_MISSILES_FRC</name>
-	<name>ORDEN2_MISSILES_CLD</name>
-	<name>ORDEN2_MISSILES_POW</name>
-	<name>ORDEN2_MISSILES_UNI</name>
-	<name>ORDEN2_MISSILES_ACC</name>
-	<name>ORDEN3_MISSILES_FRC</name>
-	<name>ORDEN3_MISSILES_CLD</name>
-	<name>ORDEN3_MISSILES_POW</name>
-	<name>ORDEN3_MISSILES_UNI</name>
-	<name>ORDEN3_MISSILES_ACC</name>
-	<name>BA_MINES_BIG_FRC</name>
-	<name>BA_MINES_BIG_BRC</name>
-	<name>BA_MINES_BIG_CLD</name>
-	<name>BA_MINES_BIG_POW</name>
-	<name>BA_MINES_BIG_UNI</name>
-	<name>BA_MINES_BIG_ACC</name>
-	<name>BA_MINES_MEDIUM_FRC</name>
-	<name>BA_MINES_MEDIUM_BRC</name>
-	<name>BA_MINES_MEDIUM_CLD</name>
-	<name>BA_MINES_MEDIUM_UNI</name>
-	<name>BA_MINES_MEDIUM_ACC</name>
-	<name>BA_MINES_SMALL_FRC</name>
-	<name>BA_MINES_SMALL_BRC</name>
-	<name>BA_MINES_SMALL_CLD</name>
-	<name>BA_MINES_SMALL_UNI</name>
-	<name>BA_MINES_SMALL_ACC</name>
-	<name>BA_MINES_TECH_FRC</name>
-	<name>BA_MINES_TECH_BRC</name>
-	<name>BA_MINES_TECH_CLD</name>
-	<name>BA_MINES_TECH_POW</name>
-	<name>BA_MINES_TECH_UNI</name>
-	<name>BA_MINES_TECH_ACC</name>
-	<name>BA_MINE_ION_CLD</name>
-	<name>BA_MINE_ION_UNI</name>
-	<name>BA_MINE_ION_ACC</name>
-	<name>BA_MINES_MEDIUM_M3_BRC</name>
-	<name>BA_MINES_MEDIUM_M3_CLD</name>
-	<name>BA_MINES_MEDIUM_M3_UNI</name>
-	<name>BA_MINES_MEDIUM_M3_ACC</name>
-	<name>BA_MINES_MEDIUM_M2_BRC</name>
-	<name>BA_MINES_MEDIUM_M2_CLD</name>
-	<name>BA_MINES_MEDIUM_M2_UNI</name>
-	<name>BA_MINES_MEDIUM_M2_ACC</name>
-	<name>BA_MISSILES_CHAFFLAUNCHER_CLD</name>
-	<name>BA_MISSILES_CHAFFLAUNCHER_UNI</name>
-	<name>BA_MISSILES_CHAFFLAUNCHER_ACC</name>
-	<name>MISSILES_KARAKURT_FRC</name>
-	<name>MISSILES_KARAKURT_BRC</name>
-	<name>MISSILES_KARAKURT_CLD</name>
-	<name>MISSILES_KARAKURT_POW</name>
-	<name>MISSILES_KARAKURT_UNI</name>
-	<name>MISSILES_KARAKURT_ACC</name>
-	<name>MISSILES_V3_CLD</name>
-	<name>MISSILES_V3_POW</name>
-	<name>MISSILES_V3_UNI</name>
-	<name>MISSILES_V3_ACC</name>
-	<name>ORDEN2_MISSILES_M_FRC</name>
-	<name>ORDEN2_MISSILES_M_CLD</name>
-	<name>ORDEN2_MISSILES_M_POW</name>
-	<name>ORDEN2_MISSILES_M_UNI</name>
-	<name>ORDEN2_MISSILES_M_ACC</name>
-	<name>ORDEN3_MISSILES_M_FRC</name>
-	<name>ORDEN3_MISSILES_M_CLD</name>
-	<name>ORDEN3_MISSILES_M_POW</name>
-	<name>ORDEN3_MISSILES_M_UNI</name>
-	<name>ORDEN3_MISSILES_M_ACC</name>
-	<name>MISSILES_V3_M_CLD</name>
-	<name>MISSILES_V3_M_POW</name>
-	<name>MISSILES_V3_M_UNI</name>
-	<name>MISSILES_V3_M_ACC</name>
-	<name>MISSILES_KARAKURT_M_FRC</name>
-	<name>MISSILES_KARAKURT_M_BRC</name>
-	<name>MISSILES_KARAKURT_M_CLD</name>
-	<name>MISSILES_KARAKURT_M_POW</name>
-	<name>MISSILES_KARAKURT_M_UNI</name>
-	<name>MISSILES_KARAKURT_M_ACC</name>
-	<name>ORU_MISSILE_M_BRC</name>
-	<name>ORU_MISSILE_M_CLD</name>
-	<name>ORU_MISSILE_M_UNI</name>
-	<name>ORU_MISSILE_M_ACC</name>
-	<name>BA_MISSILES_ASTERIA_M_CLD</name>
-	<name>BA_MISSILES_ASTERIA_M_UNI</name>
-	<name>BA_MISSILES_ASTERIA_M_ACC</name>
-	<name>BA_MISSILES_HULL_SMALL_M_BRC</name>
-	<name>BA_MISSILES_HULL_SMALL_M_CLD</name>
-	<name>BA_MISSILES_HULL_SMALL_M_UNI</name>
-	<name>BA_MISSILES_HULL_SMALL_M_ACC</name>
-	<name>BA_MISSILES_4_M_FRC</name>
-	<name>BA_MISSILES_4_M_BRC</name>
-	<name>BA_MISSILES_4_M_CLD</name>
-	<name>BA_MISSILES_4_M_POW</name>
-	<name>BA_MISSILES_4_M_UNI</name>
-	<name>BA_MISSILES_4_M_ACC</name>
-	<name>BA_MISSILES_PERYTON_M_CLD</name>
-	<name>BA_MISSILES_PERYTON_M_POW</name>
-	<name>BA_MISSILES_PERYTON_M_UNI</name>
-	<name>BA_MISSILES_PERYTON_M_ACC</name>
-	<name>BA_MISSILES_COCKATRICE_M_CLD</name>
-	<name>BA_MISSILES_COCKATRICE_M_POW</name>
-	<name>BA_MISSILES_COCKATRICE_M_UNI</name>
-	<name>BA_MISSILES_COCKATRICE_M_ACC</name>
-	<name>BA_MISSILES_FIRE_M_FRC</name>
-	<name>BA_MISSILES_FIRE_M_CLD</name>
-	<name>BA_MISSILES_FIRE_M_POW</name>
-	<name>BA_MISSILES_FIRE_M_UNI</name>
-	<name>BA_MISSILES_FIRE_M_ACC</name>
-	<name>BA_MISSILES_SIMURGH_M_CLD</name>
-	<name>BA_MISSILES_SIMURGH_M_POW</name>
-	<name>BA_MISSILES_SIMURGH_M_UNI</name>
-	<name>BA_MISSILES_SIMURGH_M_ACC</name>
-	<name>BA_MISSILES_ONI_M_FRC</name>
-	<name>BA_MISSILES_ONI_M_BRC</name>
-	<name>BA_MISSILES_ONI_M_CLD</name>
-	<name>BA_MISSILES_ONI_M_POW</name>
-	<name>BA_MISSILES_ONI_M_UNI</name>
-	<name>BA_MISSILES_ONI_M_ACC</name>
-	<name>BA_MISSILES_IFRIT_M_CLD</name>
-	<name>BA_MISSILES_IFRIT_M_POW</name>
-	<name>BA_MISSILES_IFRIT_M_UNI</name>
-	<name>BA_MISSILES_IFRIT_M_ACC</name>
-	<name>MISSILES_SYS1_M_FRC</name>
-	<name>MISSILES_SYS1_M_CLD</name>
-	<name>MISSILES_SYS1_M_UNI</name>
-	<name>MISSILES_SYS1_M_ACC</name>
-	<name>MISSILES_SYS2_M_FRC</name>
-	<name>MISSILES_SYS2_M_CLD</name>
-	<name>MISSILES_SYS2_M_UNI</name>
-	<name>MISSILES_SYS2_M_ACC</name>
-	<name>BA_MISSILES_FOBOS_M_FRC</name>
-	<name>BA_MISSILES_FOBOS_M_CLD</name>
-	<name>BA_MISSILES_FOBOS_M_UNI</name>
-	<name>BA_MISSILES_FOBOS_M_ACC</name>
-	<name>BA_MISSILES_DEIMOS_M_FRC</name>
-	<name>BA_MISSILES_DEIMOS_M_CLD</name>
-	<name>BA_MISSILES_DEIMOS_M_POW</name>
-	<name>BA_MISSILES_DEIMOS_M_UNI</name>
-	<name>BA_MISSILES_DEIMOS_M_ACC</name>
-	<name>BA_MISSILES_SWARM_1_M_FRC</name>
-	<name>BA_MISSILES_SWARM_1_M_CLD</name>
-	<name>BA_MISSILES_SWARM_1_M_UNI</name>
-	<name>BA_MISSILES_SWARM_1_M_ACC</name>
-	<name>BA_MISSILES_SWARM_2_M_FRC</name>
-	<name>BA_MISSILES_SWARM_2_M_BRC</name>
-	<name>BA_MISSILES_SWARM_2_M_CLD</name>
-	<name>BA_MISSILES_SWARM_2_M_POW</name>
-	<name>BA_MISSILES_SWARM_2_M_UNI</name>
-	<name>BA_MISSILES_SWARM_2_M_ACC</name>
-	<name>BA_MISSILES_SWARM_3_M_FRC</name>
-	<name>BA_MISSILES_SWARM_3_M_BRC</name>
-	<name>BA_MISSILES_SWARM_3_M_CLD</name>
-	<name>BA_MISSILES_SWARM_3_M_POW</name>
-	<name>BA_MISSILES_SWARM_3_M_UNI</name>
-	<name>BA_MISSILES_SWARM_3_M_ACC</name>
-	<name>BA_SHOTGUN_MISSILES_M_BRC</name>
-	<name>BA_SHOTGUN_MISSILES_M_CLD</name>
-	<name>BA_SHOTGUN_MISSILES_M_POW</name>
-	<name>BA_SHOTGUN_MISSILES_M_UNI</name>
-	<name>BA_SHOTGUN_MISSILES_M_ACC</name>
-	<name>BA_SHOTGUN_MISSILES2_M_BRC</name>
-	<name>BA_SHOTGUN_MISSILES2_M_CLD</name>
-	<name>BA_SHOTGUN_MISSILES2_M_POW</name>
-	<name>BA_SHOTGUN_MISSILES2_M_UNI</name>
-	<name>BA_SHOTGUN_MISSILES2_M_ACC</name>
-	<name>BA_SHOTGUN_MISSILES3_M_BRC</name>
-	<name>BA_SHOTGUN_MISSILES3_M_CLD</name>
-	<name>BA_SHOTGUN_MISSILES3_M_POW</name>
-	<name>BA_SHOTGUN_MISSILES3_M_UNI</name>
-	<name>BA_SHOTGUN_MISSILES3_M_ACC</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_M_FRC</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_M_BRC</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_M_CLD</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_M_UNI</name>
-	<name>BA_MISSILE_CHARGEGUN_SMALL_M_ACC</name>
-	<name>MISSILE_CHARGEGUN_M_FRC</name>
-	<name>MISSILE_CHARGEGUN_M_BRC</name>
-	<name>MISSILE_CHARGEGUN_M_CLD</name>
-	<name>MISSILE_CHARGEGUN_M_POW</name>
-	<name>MISSILE_CHARGEGUN_M_UNI</name>
-	<name>MISSILE_CHARGEGUN_M_ACC</name>
-	<name>MISSILES_1_M_FRC</name>
-	<name>MISSILES_1_M_BRC</name>
-	<name>MISSILES_1_M_CLD</name>
-	<name>MISSILES_1_M_UNI</name>
-	<name>MISSILES_1_M_ACC</name>
-	<name>MISSILES_2_PLAYER_M_FRC</name>
-	<name>MISSILES_2_PLAYER_M_BRC</name>
-	<name>MISSILES_2_PLAYER_M_CLD</name>
-	<name>MISSILES_2_PLAYER_M_UNI</name>
-	<name>MISSILES_2_PLAYER_M_ACC</name>
-	<name>MISSILES_3_M_FRC</name>
-	<name>MISSILES_3_M_BRC</name>
-	<name>MISSILES_3_M_CLD</name>
-	<name>MISSILES_3_M_POW</name>
-	<name>MISSILES_3_M_UNI</name>
-	<name>MISSILES_3_M_ACC</name>
-	<name>MISSILES_BURST_M_FRC</name>
-	<name>MISSILES_BURST_M_BRC</name>
-	<name>MISSILES_BURST_M_CLD</name>
-	<name>MISSILES_BURST_M_POW</name>
-	<name>MISSILES_BURST_M_UNI</name>
-	<name>MISSILES_BURST_M_ACC</name>
-	<name>MISSILES_BREACH_M_FRC</name>
-	<name>MISSILES_BREACH_M_BRC</name>
-	<name>MISSILES_BREACH_M_CLD</name>
-	<name>MISSILES_BREACH_M_POW</name>
-	<name>MISSILES_BREACH_M_UNI</name>
-	<name>MISSILES_BREACH_M_ACC</name>
-	<name>MISSILES_HULL_M_BRC</name>
-	<name>MISSILES_HULL_M_CLD</name>
-	<name>MISSILES_HULL_M_POW</name>
-	<name>MISSILES_HULL_M_UNI</name>
-	<name>MISSILES_HULL_M_ACC</name>
-	<name>MISSILES_MEGA_M_FRC</name>
-	<name>MISSILES_MEGA_M_BRC</name>
-	<name>MISSILES_MEGA_M_CLD</name>
-	<name>MISSILES_MEGA_M_POW</name>
-	<name>MISSILES_MEGA_M_UNI</name>
-	<name>MISSILES_MEGA_M_ACC</name>
-	<name>KERNEL_1_M_BRC</name>
-	<name>KERNEL_1_M_CLD</name>
-	<name>KERNEL_1_M_UNI</name>
-	<name>KERNEL_1_M_ACC</name>
-	<name>KERNEL_2_M_BRC</name>
-	<name>KERNEL_2_M_CLD</name>
-	<name>KERNEL_2_M_POW</name>
-	<name>KERNEL_2_M_UNI</name>
-	<name>KERNEL_2_M_ACC</name>
-	<name>KERNEL_CHAIN_M_BRC</name>
-	<name>KERNEL_CHAIN_M_CLD</name>
-	<name>KERNEL_CHAIN_M_POW</name>
-	<name>KERNEL_CHAIN_M_UNI</name>
-	<name>KERNEL_CHAIN_M_ACC</name>
-	<name>MISSILES_ARU_GOLIAPH_M_BRC</name>
-	<name>MISSILES_ARU_GOLIAPH_M_CLD</name>
-	<name>MISSILES_ARU_GOLIAPH_M_UNI</name>
-	<name>MISSILES_ARU_GOLIAPH_M_ACC</name>
-	<name>MISSILES_HYDRA_M_FRC</name>
-	<name>MISSILES_HYDRA_M_BRC</name>
-	<name>MISSILES_HYDRA_M_CLD</name>
-	<name>MISSILES_HYDRA_M_POW</name>
-	<name>MISSILES_HYDRA_M_UNI</name>
-	<name>MISSILES_HYDRA_M_ACC</name>
-	<name>SILV_MISSILES_ASTERIA_M_FRC</name>
-	<name>SILV_MISSILES_ASTERIA_M_BRC</name>
-	<name>SILV_MISSILES_ASTERIA_M_CLD</name>
-	<name>SILV_MISSILES_ASTERIA_M_UNI</name>
-	<name>SILV_MISSILES_ASTERIA_M_ACC</name>
-	<name>SILV_MISSILES_BURST_M_FRC</name>
-	<name>SILV_MISSILES_BURST_M_BRC</name>
-	<name>SILV_MISSILES_BURST_M_CLD</name>
-	<name>SILV_MISSILES_BURST_M_POW</name>
-	<name>SILV_MISSILES_BURST_M_UNI</name>
-	<name>SILV_MISSILES_BURST_M_ACC</name>
-	<name>SILV_MISSILES_HYDRA_M_FRC</name>
-	<name>SILV_MISSILES_HYDRA_M_BRC</name>
-	<name>SILV_MISSILES_HYDRA_M_CLD</name>
-	<name>SILV_MISSILES_HYDRA_M_POW</name>
-	<name>SILV_MISSILES_HYDRA_M_UNI</name>
-	<name>SILV_MISSILES_HYDRA_M_ACC</name>
-	<name>BA_ION_HVBURST_1_PRC</name>
-	<name>BA_ION_HVBURST_1_CLD</name>
-	<name>BA_ION_HVBURST_1_POW</name>
-	<name>BA_ION_HVBURST_1_UNI</name>
-	<name>BA_ION_HVBURST_1_ACC</name>
-	<name>BA_ION_HVBURST_2_PRC</name>
-	<name>BA_ION_HVBURST_2_CLD</name>
-	<name>BA_ION_HVBURST_2_POW</name>
-	<name>BA_ION_HVBURST_2_UNI</name>
-	<name>BA_ION_HVBURST_2_ACC</name>
-	<name>BA_ION_HVBURST_3_PRC</name>
-	<name>BA_ION_HVBURST_3_CLD</name>
-	<name>BA_ION_HVBURST_3_POW</name>
-	<name>BA_ION_HVBURST_3_UNI</name>
-	<name>BA_ION_HVBURST_3_ACC</name>
-	<name>ION_CHARGEGUN_PRC</name>
-	<name>ION_CHARGEGUN_CLD</name>
-	<name>ION_CHARGEGUN_POW</name>
-	<name>ION_CHARGEGUN_UNI</name>
-	<name>ION_CHARGEGUN_ACC</name>
-	<name>ION_CHARGEGUN_2_PRC</name>
-	<name>ION_CHARGEGUN_2_CLD</name>
-	<name>ION_CHARGEGUN_2_POW</name>
-	<name>ION_CHARGEGUN_2_UNI</name>
-	<name>ION_CHARGEGUN_2_ACC</name>
-	<name>ION_STUN_PRC</name>
-	<name>ION_STUN_CLD</name>
-	<name>ION_STUN_UNI</name>
-	<name>ION_STUN_ACC</name>
-	<name>ION_CHAINGUN_PRC</name>
-	<name>ION_CHAINGUN_CLD</name>
-	<name>ION_CHAINGUN_POW</name>
-	<name>ION_CHAINGUN_UNI</name>
-	<name>ION_CHAINGUN_ACC</name>
-	<name>BA_ION_VULKAN_PRC</name>
-	<name>BA_ION_VULKAN_CLD</name>
-	<name>BA_ION_VULKAN_POW</name>
-	<name>BA_ION_VULKAN_UNI</name>
-	<name>BA_ION_VULKAN_ACC</name>
-	<name>BA_SHOTGUN_ION_1_PRC</name>
-	<name>BA_SHOTGUN_ION_1_CLD</name>
-	<name>BA_SHOTGUN_ION_1_UNI</name>
-	<name>BA_SHOTGUN_ION_1_ACC</name>
-	<name>BA_SHOTGUN_ION_2_PRC</name>
-	<name>BA_SHOTGUN_ION_2_CLD</name>
-	<name>BA_SHOTGUN_ION_2_POW</name>
-	<name>BA_SHOTGUN_ION_2_UNI</name>
-	<name>BA_SHOTGUN_ION_2_ACC</name>
-	<name>BA_ION_2_STUN_PRC</name>
-	<name>BA_ION_2_STUN_CLD</name>
-	<name>BA_ION_2_STUN_POW</name>
-	<name>BA_ION_2_STUN_UNI</name>
-	<name>BA_ION_2_STUN_ACC</name>
-	<name>BA_ION_BURST_1_STUN_PRC</name>
-	<name>BA_ION_BURST_1_STUN_CLD</name>
-	<name>BA_ION_BURST_1_STUN_UNI</name>
-	<name>BA_ION_BURST_1_STUN_ACC</name>
-	<name>BA_ION_PIERCE_1_CLD</name>
-	<name>BA_ION_PIERCE_1_UNI</name>
-	<name>BA_ION_PIERCE_1_ACC</name>
-	<name>BA_ION_PIERCE_2_CLD</name>
-	<name>BA_ION_PIERCE_2_POW</name>
-	<name>BA_ION_PIERCE_2_UNI</name>
-	<name>BA_ION_PIERCE_2_ACC</name>
-	<name>BA_EFFECTOR_1_CLD</name>
-	<name>BA_EFFECTOR_1_POW</name>
-	<name>BA_EFFECTOR_1_UNI</name>
-	<name>BA_EFFECTOR_2_CLD</name>
-	<name>BA_EFFECTOR_2_POW</name>
-	<name>BA_EFFECTOR_2_UNI</name>
-	<name>BA_EFFECTOR_3_CLD</name>
-	<name>BA_EFFECTOR_3_POW</name>
-	<name>BA_EFFECTOR_3_UNI</name>
-	<name>BA_EFFECTOR_ADAPTIVE_CLD</name>
-	<name>BA_EFFECTOR_ADAPTIVE_POW</name>
-	<name>BA_EFFECTOR_ADAPTIVE_UNI</name>
-	<name>BA_ION_BURST_1_PRC</name>
-	<name>BA_ION_BURST_1_CLD</name>
-	<name>BA_ION_BURST_1_UNI</name>
-	<name>BA_ION_BURST_1_ACC</name>
-	<name>BA_ION_BURST_2_PRC</name>
-	<name>BA_ION_BURST_2_CLD</name>
-	<name>BA_ION_BURST_2_POW</name>
-	<name>BA_ION_BURST_2_UNI</name>
-	<name>BA_ION_BURST_2_ACC</name>
-	<name>BA_ION_BURST_3_PRC</name>
-	<name>BA_ION_BURST_3_CLD</name>
-	<name>BA_ION_BURST_3_POW</name>
-	<name>BA_ION_BURST_3_UNI</name>
-	<name>BA_ION_BURST_3_ACC</name>
-	<name>ION_HEAVY_1_PRC</name>
-	<name>ION_HEAVY_1_CLD</name>
-	<name>ION_HEAVY_1_POW</name>
-	<name>ION_HEAVY_1_UNI</name>
-	<name>ION_HEAVY_1_ACC</name>
-	<name>ION_HEAVY_2_PRC</name>
-	<name>ION_HEAVY_2_CLD</name>
-	<name>ION_HEAVY_2_POW</name>
-	<name>ION_HEAVY_2_UNI</name>
-	<name>ION_HEAVY_2_ACC</name>
-	<name>ION_HEAVY_3_PRC</name>
-	<name>ION_HEAVY_3_CLD</name>
-	<name>ION_HEAVY_3_POW</name>
-	<name>ION_HEAVY_3_UNI</name>
-	<name>ION_HEAVY_3_ACC</name>
-	<name>ION_HEAVY_FIRE_1_PRC</name>
-	<name>ION_HEAVY_FIRE_1_FRC</name>
-	<name>ION_HEAVY_FIRE_1_CLD</name>
-	<name>ION_HEAVY_FIRE_1_POW</name>
-	<name>ION_HEAVY_FIRE_1_UNI</name>
-	<name>ION_HEAVY_FIRE_1_ACC</name>
-	<name>ION_HEAVY_FIRE_2_PRC</name>
-	<name>ION_HEAVY_FIRE_2_FRC</name>
-	<name>ION_HEAVY_FIRE_2_CLD</name>
-	<name>ION_HEAVY_FIRE_2_POW</name>
-	<name>ION_HEAVY_FIRE_2_UNI</name>
-	<name>ION_HEAVY_FIRE_2_ACC</name>
-	<name>ION_HEAVY_FIRE_3_PRC</name>
-	<name>ION_HEAVY_FIRE_3_FRC</name>
-	<name>ION_HEAVY_FIRE_3_CLD</name>
-	<name>ION_HEAVY_FIRE_3_POW</name>
-	<name>ION_HEAVY_FIRE_3_UNI</name>
-	<name>ION_HEAVY_FIRE_3_ACC</name>
-	<name>ION_BLAST_1_PRC</name>
-	<name>ION_BLAST_1_CLD</name>
-	<name>ION_BLAST_1_UNI</name>
-	<name>ION_BLAST_1_ACC</name>
-	<name>ION_BLAST_2_PRC</name>
-	<name>ION_BLAST_2_CLD</name>
-	<name>ION_BLAST_2_POW</name>
-	<name>ION_BLAST_2_UNI</name>
-	<name>ION_BLAST_2_ACC</name>
-	<name>ION_BLAST_3_PRC</name>
-	<name>ION_BLAST_3_CLD</name>
-	<name>ION_BLAST_3_POW</name>
-	<name>ION_BLAST_3_UNI</name>
-	<name>ION_BLAST_3_ACC</name>
-	<name>BA_ION_CHAIN_MINI_PRC</name>
-	<name>BA_ION_CHAIN_MINI_CLD</name>
-	<name>BA_ION_CHAIN_MINI_POW</name>
-	<name>BA_ION_CHAIN_MINI_UNI</name>
-	<name>BA_ION_CHAIN_MINI_ACC</name>
-	<name>ION_BLAST_FIRE_1_PRC</name>
-	<name>ION_BLAST_FIRE_1_FRC</name>
-	<name>ION_BLAST_FIRE_1_CLD</name>
-	<name>ION_BLAST_FIRE_1_UNI</name>
-	<name>ION_BLAST_FIRE_1_ACC</name>
-	<name>ION_BLAST_FIRE_2_PRC</name>
-	<name>ION_BLAST_FIRE_2_FRC</name>
-	<name>ION_BLAST_FIRE_2_CLD</name>
-	<name>ION_BLAST_FIRE_2_POW</name>
-	<name>ION_BLAST_FIRE_2_UNI</name>
-	<name>ION_BLAST_FIRE_2_ACC</name>
-	<name>ION_BLAST_FIRE_3_PRC</name>
-	<name>ION_BLAST_FIRE_3_FRC</name>
-	<name>ION_BLAST_FIRE_3_CLD</name>
-	<name>ION_BLAST_FIRE_3_POW</name>
-	<name>ION_BLAST_FIRE_3_UNI</name>
-	<name>ION_BLAST_FIRE_3_ACC</name>
-	<name>MESON_CANNON_FRC</name>
-	<name>MESON_CANNON_CLD</name>
-	<name>MESON_CANNON_POW</name>
-	<name>MESON_CANNON_UNI</name>
-	<name>MESON_CANNON_ACC</name>
-	<name>ORCHID_PROTOTYPE_1_BRC</name>
-	<name>ORCHID_PROTOTYPE_1_CLD</name>
-	<name>ORCHID_PROTOTYPE_1_POW</name>
-	<name>ORCHID_PROTOTYPE_1_UNI</name>
-	<name>ORCHID_PROTOTYPE_1_ACC</name>
-	<name>ORCHID_PROTOTYPE_2_BRC</name>
-	<name>ORCHID_PROTOTYPE_2_CLD</name>
-	<name>ORCHID_PROTOTYPE_2_POW</name>
-	<name>ORCHID_PROTOTYPE_2_UNI</name>
-	<name>ORCHID_PROTOTYPE_2_ACC</name>
-	<name>MAGMAN_PROTOTYPE_1_CLD</name>
-	<name>MAGMAN_PROTOTYPE_1_POW</name>
-	<name>MAGMAN_PROTOTYPE_1_UNI</name>
-	<name>MAGMAN_PROTOTYPE_2_CLD</name>
-	<name>MAGMAN_PROTOTYPE_2_POW</name>
-	<name>MAGMAN_PROTOTYPE_2_UNI</name>
-	<name>PROTOTYPE_MORPHGUN_FRC</name>
-	<name>PROTOTYPE_MORPHGUN_BRC</name>
-	<name>PROTOTYPE_MORPHGUN_CLD</name>
-	<name>PROTOTYPE_MORPHGUN_POW</name>
-	<name>PROTOTYPE_MORPHGUN_UNI</name>
-	<name>PROTOTYPE_MORPHGUN2_FRC</name>
-	<name>PROTOTYPE_MORPHGUN2_BRC</name>
-	<name>PROTOTYPE_MORPHGUN2_CLD</name>
-	<name>PROTOTYPE_MORPHGUN2_POW</name>
-	<name>PROTOTYPE_MORPHGUN2_UNI</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_1_PRC</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_1_BRC</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_1_CLD</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_1_POW</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_1_UNI</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_2_PRC</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_2_BRC</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_2_CLD</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_2_POW</name>
-	<name>PROTOTYPE_ZOLTON_BEAM_2_UNI</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_1_FRC</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_1_CLD</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_1_POW</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_1_UNI</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_1_ACC</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_2_FRC</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_2_CLD</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_2_POW</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_2_UNI</name>
-	<name>PROTOTYPE_ZOLTON_MISSILE_2_ACC</name>
-	<name>SLURMS_PROTOTYPE_CLD</name>
-	<name>SLURMS_PROTOTYPE_POW</name>
-	<name>SLURMS_PROTOTYPE_UNI</name>
-	<name>SLURMS_PROTOTYPE_ACC</name>
-	<name>SLURMS_PROTOTYPE_2_CLD</name>
-	<name>SLURMS_PROTOTYPE_2_POW</name>
-	<name>SLURMS_PROTOTYPE_2_UNI</name>
-	<name>SLURMS_PROTOTYPE_2_ACC</name>
-	<name>CRYSTAL_PRO_LIGHT_BRC</name>
-	<name>CRYSTAL_PRO_LIGHT_CLD</name>
-	<name>CRYSTAL_PRO_LIGHT_POW</name>
-	<name>CRYSTAL_PRO_LIGHT_UNI</name>
-	<name>CRYSTAL_PRO_HEAVY_BRC</name>
-	<name>CRYSTAL_PRO_HEAVY_CLD</name>
-	<name>CRYSTAL_PRO_HEAVY_POW</name>
-	<name>CRYSTAL_PRO_HEAVY_UNI</name>
-	<name>CRYSTAL_PRO_HEAVY_ACC</name>
-	<name>CRYSTAL_PRO_LIGHT2_BRC</name>
-	<name>CRYSTAL_PRO_LIGHT2_CLD</name>
-	<name>CRYSTAL_PRO_LIGHT2_POW</name>
-	<name>CRYSTAL_PRO_LIGHT2_UNI</name>
-	<name>CRYSTAL_PRO_HEAVY2_BRC</name>
-	<name>CRYSTAL_PRO_HEAVY2_CLD</name>
-	<name>CRYSTAL_PRO_HEAVY2_POW</name>
-	<name>CRYSTAL_PRO_HEAVY2_UNI</name>
-	<name>CRYSTAL_PRO_HEAVY2_ACC</name>
-	<name>OMICRON_AEGON_ROCKET_1_FRC</name>
-	<name>OMICRON_AEGON_ROCKET_1_BRC</name>
-	<name>OMICRON_AEGON_ROCKET_1_CLD</name>
-	<name>OMICRON_AEGON_ROCKET_1_POW</name>
-	<name>OMICRON_AEGON_ROCKET_1_UNI</name>
-	<name>OMICRON_AEGON_ROCKET_1_ACC</name>
-	<name>OMICRON_AEGON_ROCKET_12_FRC</name>
-	<name>OMICRON_AEGON_ROCKET_12_BRC</name>
-	<name>OMICRON_AEGON_ROCKET_12_CLD</name>
-	<name>OMICRON_AEGON_ROCKET_12_POW</name>
-	<name>OMICRON_AEGON_ROCKET_12_UNI</name>
-	<name>OMICRON_AEGON_ROCKET_12_ACC</name>
-	<name>OMICRON_TRIPLE_BLASTER_1_BRC</name>
-	<name>OMICRON_TRIPLE_BLASTER_1_CLD</name>
-	<name>OMICRON_TRIPLE_BLASTER_1_POW</name>
-	<name>OMICRON_TRIPLE_BLASTER_1_UNI</name>
-	<name>OMICRON_TRIPLE_BLASTER_1_ACC</name>
-	<name>OMICRON_TRIPLE_BLASTER_12_BRC</name>
-	<name>OMICRON_TRIPLE_BLASTER_12_CLD</name>
-	<name>OMICRON_TRIPLE_BLASTER_12_UNI</name>
-	<name>OMICRON_TRIPLE_BLASTER_12_ACC</name>
-	<name>SOLAR_BARRAGE_ARRAY_FRC</name>
-	<name>SOLAR_BARRAGE_ARRAY_CLD</name>
-	<name>SOLAR_BARRAGE_ARRAY_POW</name>
-	<name>SOLAR_BARRAGE_ARRAY_UNI</name>
-	<name>SOLAR_BARRAGE_ARRAY_ACC</name>
-	<name>SOLAR_BARRAGE_ARRAY2_FRC</name>
-	<name>SOLAR_BARRAGE_ARRAY2_CLD</name>
-	<name>SOLAR_BARRAGE_ARRAY2_POW</name>
-	<name>SOLAR_BARRAGE_ARRAY2_UNI</name>
-	<name>SOLAR_BARRAGE_ARRAY2_ACC</name>
-	<name>OMICRON_IMPACT_ION_BEAM_1_PRC</name>
-	<name>OMICRON_IMPACT_ION_BEAM_1_BRC</name>
-	<name>OMICRON_IMPACT_ION_BEAM_1_CLD</name>
-	<name>OMICRON_IMPACT_ION_BEAM_1_POW</name>
-	<name>OMICRON_IMPACT_ION_BEAM_1_UNI</name>
-	<name>OMICRON_IMPACT_ION_BEAM_12_PRC</name>
-	<name>OMICRON_IMPACT_ION_BEAM_12_CLD</name>
-	<name>OMICRON_IMPACT_ION_BEAM_12_POW</name>
-	<name>OMICRON_IMPACT_ION_BEAM_12_UNI</name>
-	<name>OMICRON_AUTOCANNON_1_BRC</name>
-	<name>OMICRON_AUTOCANNON_1_CLD</name>
-	<name>OMICRON_AUTOCANNON_1_POW</name>
-	<name>OMICRON_AUTOCANNON_1_UNI</name>
-	<name>OMICRON_AUTOCANNON_12_BRC</name>
-	<name>OMICRON_AUTOCANNON_12_CLD</name>
-	<name>OMICRON_AUTOCANNON_12_UNI</name>
-	<name>OMICRON_PLASMA_RAILCANNON_1_PRC</name>
-	<name>OMICRON_PLASMA_RAILCANNON_1_FRC</name>
-	<name>OMICRON_PLASMA_RAILCANNON_1_CLD</name>
-	<name>OMICRON_PLASMA_RAILCANNON_1_POW</name>
-	<name>OMICRON_PLASMA_RAILCANNON_1_UNI</name>
-	<name>OMICRON_PLASMA_RAILCANNON_1_ACC</name>
-	<name>OMICRON_PLASMA_RAILCANNON_12_PRC</name>
-	<name>OMICRON_PLASMA_RAILCANNON_12_FRC</name>
-	<name>OMICRON_PLASMA_RAILCANNON_12_CLD</name>
-	<name>OMICRON_PLASMA_RAILCANNON_12_POW</name>
-	<name>OMICRON_PLASMA_RAILCANNON_12_UNI</name>
-	<name>OMICRON_PLASMA_RAILCANNON_12_ACC</name>
-	<name>OMICRON_PERFORATOR_1_CLD</name>
-	<name>OMICRON_PERFORATOR_1_POW</name>
-	<name>OMICRON_PERFORATOR_1_UNI</name>
-	<name>OMICRON_PERFORATOR_1_ACC</name>
-	<name>OMICRON_PERFORATOR_12_BRC</name>
-	<name>OMICRON_PERFORATOR_12_CLD</name>
-	<name>OMICRON_PERFORATOR_12_POW</name>
-	<name>OMICRON_PERFORATOR_12_UNI</name>
-	<name>OMICRON_PERFORATOR_12_ACC</name>
-	<name>OMICRON_OMNI_CANNON2_1_PRC</name>
-	<name>OMICRON_OMNI_CANNON2_1_FRC</name>
-	<name>OMICRON_OMNI_CANNON2_1_BRC</name>
-	<name>OMICRON_OMNI_CANNON2_1_CLD</name>
-	<name>OMICRON_OMNI_CANNON2_1_POW</name>
-	<name>OMICRON_OMNI_CANNON2_1_UNI</name>
-	<name>OMICRON_OMNI_CANNON2_1_ACC</name>
-	<name>OMICRON_OMNI_CANNON2_12_PRC</name>
-	<name>OMICRON_OMNI_CANNON2_12_FRC</name>
-	<name>OMICRON_OMNI_CANNON2_12_BRC</name>
-	<name>OMICRON_OMNI_CANNON2_12_CLD</name>
-	<name>OMICRON_OMNI_CANNON2_12_POW</name>
-	<name>OMICRON_OMNI_CANNON2_12_UNI</name>
-	<name>OMICRON_OMNI_CANNON2_12_ACC</name>
-	<name>ORDEN_PROTOTYPE_PRC</name>
-	<name>ORDEN_PROTOTYPE_FRC</name>
-	<name>ORDEN_PROTOTYPE_CLD</name>
-	<name>ORDEN_PROTOTYPE_POW</name>
-	<name>ORDEN_PROTOTYPE_UNI</name>
-	<name>ORDEN_PROTOTYPE_ACC</name>
-	<name>ORDEN_PROTOTYPE_2_PRC</name>
-	<name>ORDEN_PROTOTYPE_2_FRC</name>
-	<name>ORDEN_PROTOTYPE_2_CLD</name>
-	<name>ORDEN_PROTOTYPE_2_POW</name>
-	<name>ORDEN_PROTOTYPE_2_UNI</name>
-	<name>ORDEN_PROTOTYPE_2_ACC</name>
-	<name>HAL_PROTOTYPE_1_CLD</name>
-	<name>HAL_PROTOTYPE_1_POW</name>
-	<name>HAL_PROTOTYPE_1_UNI</name>
-	<name>HAL_PROTOTYPE_1_ACC</name>
-	<name>HAL_PROTOTYPE_2_CLD</name>
-	<name>HAL_PROTOTYPE_2_POW</name>
-	<name>HAL_PROTOTYPE_2_UNI</name>
-	<name>HAL_PROTOTYPE_2_ACC</name>
-	<name>FK_BA_SHOTGUN_SMALL_ACC</name>
-	<name>FK_SHOTGUN_007_ACC</name>
-	<name>FK_SHOTGUN_ACC</name>
-	<name>FK_SHOTGUN_2_ACC</name>
-	<name>FK_SHOTGUN_3_ACC</name>
-	<name>FK_BA_SHOTGUN_SCATTER_ACC</name>
-	<name>FK_BA_BEAM_NAGINATA_ACC</name>
-	<name>FK_BEAM_GUISARME_ACC</name>
-	<name>FK_SHTURM_LASER_1_ACC</name>
-	<name>FK_SHTURM_LASER_2_ACC</name>
-	<name>FK_HEAVY_MINIGUN_ACC</name>
-	<name>FK_LASER_HULL_1_ACC</name>
-	<name>FK_LASER_HULL_2_ACC</name>
-	<name>FK_BA_BEAM_BARDICHE_ACC</name>
-	<name>FK_BA_ION_PIERCE_1_ACC</name>
-	<name>FK_BA_ION_PIERCE_2_ACC</name>
-	<name>FK_ION_VULKAN_ACC</name>
-	<name>UWB_LASER_BURST_1_PRC</name>
-	<name>UWB_LASER_BURST_1_FRC</name>
-	<name>UWB_LASER_BURST_1_CLD</name>
-	<name>UWB_LASER_BURST_1_POW</name>
-	<name>UWB_LASER_BURST_1_UNI</name>
-	<name>UWB_LASER_BURST_1_ACC</name>
-	<name>UWB_LASER_HEAVY_1_PRC</name>
-	<name>UWB_LASER_HEAVY_1_FRC</name>
-	<name>UWB_LASER_HEAVY_1_BRC</name>
-	<name>UWB_LASER_HEAVY_1_CLD</name>
-	<name>UWB_LASER_HEAVY_1_UNI</name>
-	<name>UWB_LASER_HEAVY_1_ACC</name>
-	<name>UWB_LASER_STANDARD_1_PRC</name>
-	<name>UWB_LASER_STANDARD_1_FRC</name>
-	<name>UWB_LASER_STANDARD_1_CLD</name>
-	<name>UWB_LASER_STANDARD_1_UNI</name>
-	<name>UWB_LASER_STANDARD_1_ACC</name>
-	<name>UWB_LASER_STANDARD_2_PRC</name>
-	<name>UWB_LASER_STANDARD_2_FRC</name>
-	<name>UWB_LASER_STANDARD_2_CLD</name>
-	<name>UWB_LASER_STANDARD_2_UNI</name>
-	<name>UWB_LASER_STANDARD_2_ACC</name>
-	<name>UWB_LASER_DUAL_1_PRC</name>
-	<name>UWB_LASER_DUAL_1_FRC</name>
-	<name>UWB_LASER_DUAL_1_CLD</name>
-	<name>UWB_LASER_DUAL_1_UNI</name>
-	<name>UWB_LASER_DUAL_1_ACC</name>
-	<name>UWB_LASER_DUAL_2_PRC</name>
-	<name>UWB_LASER_DUAL_2_FRC</name>
-	<name>UWB_LASER_DUAL_2_CLD</name>
-	<name>UWB_LASER_DUAL_2_UNI</name>
-	<name>UWB_LASER_DUAL_2_ACC</name>
-	<name>UWB_BA_SHOTGUN_SMALL_PRC</name>
-	<name>UWB_BA_SHOTGUN_SMALL_BRC</name>
-	<name>UWB_BA_SHOTGUN_SMALL_CLD</name>
-	<name>UWB_BA_SHOTGUN_SMALL_UNI</name>
-	<name>UWB_BA_SHOTGUN_SMALL_ACC</name>
-	<name>UWB_BA_PLASMA_1_PRC</name>
-	<name>UWB_BA_PLASMA_1_FRC</name>
-	<name>UWB_BA_PLASMA_1_CLD</name>
-	<name>UWB_BA_PLASMA_1_UNI</name>
-	<name>UWB_BA_PLASMA_1_ACC</name>
-	<name>UWB_BA_LASER_AUTO_1_PRC</name>
-	<name>UWB_BA_LASER_AUTO_1_FRC</name>
-	<name>UWB_BA_LASER_AUTO_1_CLD</name>
-	<name>UWB_BA_LASER_AUTO_1_POW</name>
-	<name>UWB_BA_LASER_AUTO_1_UNI</name>
-	<name>UWB_BA_LASER_AUTO_1_ACC</name>
-	<name>UWB_BA_LASER_AUTO_2_PRC</name>
-	<name>UWB_BA_LASER_AUTO_2_FRC</name>
-	<name>UWB_BA_LASER_AUTO_2_CLD</name>
-	<name>UWB_BA_LASER_AUTO_2_POW</name>
-	<name>UWB_BA_LASER_AUTO_2_UNI</name>
-	<name>UWB_BA_LASER_AUTO_2_ACC</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_1_PRC</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_1_CLD</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_1_UNI</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_1_ACC</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_2_PRC</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_2_CLD</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_2_POW</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_2_UNI</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_2_ACC</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_1_PRC</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_1_BRC</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_1_CLD</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_1_UNI</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_1_ACC</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_2_PRC</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_2_BRC</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_2_CLD</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_2_UNI</name>
-	<name>UWB_BA_LASER_HEAVY_SCATTER_2_ACC</name>
-	<name>UWB_BA_LASER_HULL_SMALL_PRC</name>
-	<name>UWB_BA_LASER_HULL_SMALL_BRC</name>
-	<name>UWB_BA_LASER_HULL_SMALL_CLD</name>
-	<name>UWB_BA_LASER_HULL_SMALL_UNI</name>
-	<name>UWB_BA_LASER_HULL_SMALL_ACC</name>
-	<name>UWB_SHTURM_LASER_1_PRC</name>
-	<name>UWB_SHTURM_LASER_1_BRC</name>
-	<name>UWB_SHTURM_LASER_1_CLD</name>
-	<name>UWB_SHTURM_LASER_1_POW</name>
-	<name>UWB_SHTURM_LASER_1_UNI</name>
-	<name>UWB_SHTURM_LASER_1_ACC</name>
-	<name>UWB_SHTURM_LASER_2_PRC</name>
-	<name>UWB_SHTURM_LASER_2_BRC</name>
-	<name>UWB_SHTURM_LASER_2_CLD</name>
-	<name>UWB_SHTURM_LASER_2_POW</name>
-	<name>UWB_SHTURM_LASER_2_UNI</name>
-	<name>UWB_SHTURM_LASER_2_ACC</name>
-	<name>UWB_LASER_BURST_2_PRC</name>
-	<name>UWB_LASER_BURST_2_FRC</name>
-	<name>UWB_LASER_BURST_2_CLD</name>
-	<name>UWB_LASER_BURST_2_POW</name>
-	<name>UWB_LASER_BURST_2_UNI</name>
-	<name>UWB_LASER_BURST_2_ACC</name>
-	<name>UWB_LASER_HEAVY_2_PRC</name>
-	<name>UWB_LASER_HEAVY_2_FRC</name>
-	<name>UWB_LASER_HEAVY_2_BRC</name>
-	<name>UWB_LASER_HEAVY_2_CLD</name>
-	<name>UWB_LASER_HEAVY_2_POW</name>
-	<name>UWB_LASER_HEAVY_2_UNI</name>
-	<name>UWB_LASER_HEAVY_2_ACC</name>
-	<name>UWB_SHOTGUN_PRC</name>
-	<name>UWB_SHOTGUN_BRC</name>
-	<name>UWB_SHOTGUN_CLD</name>
-	<name>UWB_SHOTGUN_POW</name>
-	<name>UWB_SHOTGUN_UNI</name>
-	<name>UWB_SHOTGUN_ACC</name>
-	<name>UWB_SHOTGUN_2_PRC</name>
-	<name>UWB_SHOTGUN_2_BRC</name>
-	<name>UWB_SHOTGUN_2_CLD</name>
-	<name>UWB_SHOTGUN_2_POW</name>
-	<name>UWB_SHOTGUN_2_UNI</name>
-	<name>UWB_SHOTGUN_2_ACC</name>
-	<name>UWB_BA_PLASMA_2_PRC</name>
-	<name>UWB_BA_PLASMA_2_FRC</name>
-	<name>UWB_BA_PLASMA_2_CLD</name>
-	<name>UWB_BA_PLASMA_2_POW</name>
-	<name>UWB_BA_PLASMA_2_UNI</name>
-	<name>UWB_BA_PLASMA_2_ACC</name>
-	<name>UWB_BA_LASER_AUTO_3_PRC</name>
-	<name>UWB_BA_LASER_AUTO_3_FRC</name>
-	<name>UWB_BA_LASER_AUTO_3_CLD</name>
-	<name>UWB_BA_LASER_AUTO_3_POW</name>
-	<name>UWB_BA_LASER_AUTO_3_UNI</name>
-	<name>UWB_BA_LASER_AUTO_3_ACC</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_3_PRC</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_3_CLD</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_3_POW</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_3_UNI</name>
-	<name>UWB_BA_LASER_BURST_SCATTER_3_ACC</name>
-	<name>UWB_BA_LASER_ARTILLERY_1_PRC</name>
-	<name>UWB_BA_LASER_ARTILLERY_1_FRC</name>
-	<name>UWB_BA_LASER_ARTILLERY_1_BRC</name>
-	<name>UWB_BA_LASER_ARTILLERY_1_CLD</name>
-	<name>UWB_BA_LASER_ARTILLERY_1_POW</name>
-	<name>UWB_BA_LASER_ARTILLERY_1_UNI</name>
-	<name>UWB_BA_LASER_ARTILLERY_1_ACC</name>
-	<name>UWB_BA_LASER_HULLCRUSHER_PRC</name>
-	<name>UWB_BA_LASER_HULLCRUSHER_BRC</name>
-	<name>UWB_BA_LASER_HULLCRUSHER_CLD</name>
-	<name>UWB_BA_LASER_HULLCRUSHER_POW</name>
-	<name>UWB_BA_LASER_HULLCRUSHER_UNI</name>
-	<name>UWB_BA_LASER_HULLCRUSHER_ACC</name>
-	<name>UWB_LASER_HULL_1_PRC</name>
-	<name>UWB_LASER_HULL_1_BRC</name>
-	<name>UWB_LASER_HULL_1_CLD</name>
-	<name>UWB_LASER_HULL_1_POW</name>
-	<name>UWB_LASER_HULL_1_UNI</name>
-	<name>UWB_LASER_HULL_1_ACC</name>
-	<name>UWB_LASER_HULL_2_PRC</name>
-	<name>UWB_LASER_HULL_2_BRC</name>
-	<name>UWB_LASER_HULL_2_CLD</name>
-	<name>UWB_LASER_HULL_2_POW</name>
-	<name>UWB_LASER_HULL_2_UNI</name>
-	<name>UWB_LASER_HULL_2_ACC</name>
-	<name>UWB_LASER_IMP_2_PRC</name>
-	<name>UWB_LASER_IMP_2_BRC</name>
-	<name>UWB_LASER_IMP_2_CLD</name>
-	<name>UWB_LASER_IMP_2_POW</name>
-	<name>UWB_LASER_IMP_2_UNI</name>
-	<name>UWB_LASER_IMP_2_ACC</name>
-	<name>UWB_LASER_IMP_3_PRC</name>
-	<name>UWB_LASER_IMP_3_BRC</name>
-	<name>UWB_LASER_IMP_3_CLD</name>
-	<name>UWB_LASER_IMP_3_POW</name>
-	<name>UWB_LASER_IMP_3_UNI</name>
-	<name>UWB_LASER_IMP_3_ACC</name>
-	<name>UWB_LASER_LIGHT_1_PRC</name>
-	<name>UWB_LASER_LIGHT_1_BRC</name>
-	<name>UWB_LASER_LIGHT_1_CLD</name>
-	<name>UWB_LASER_LIGHT_1_UNI</name>
-	<name>UWB_LASER_LIGHT_1_ACC</name>
-	<name>UWB_LASER_LIGHT_2_PRC</name>
-	<name>UWB_LASER_LIGHT_2_BRC</name>
-	<name>UWB_LASER_LIGHT_2_CLD</name>
-	<name>UWB_LASER_LIGHT_2_UNI</name>
-	<name>UWB_LASER_LIGHT_2_ACC</name>
-	<name>UWB_LASER_LIGHT_SCATTER_1_PRC</name>
-	<name>UWB_LASER_LIGHT_SCATTER_1_BRC</name>
-	<name>UWB_LASER_LIGHT_SCATTER_1_CLD</name>
-	<name>UWB_LASER_LIGHT_SCATTER_1_UNI</name>
-	<name>UWB_LASER_LIGHT_SCATTER_1_ACC</name>
-	<name>UWB_LASER_LIGHT_SCATTER_2_PRC</name>
-	<name>UWB_LASER_LIGHT_SCATTER_2_BRC</name>
-	<name>UWB_LASER_LIGHT_SCATTER_2_CLD</name>
-	<name>UWB_LASER_LIGHT_SCATTER_2_UNI</name>
-	<name>UWB_LASER_LIGHT_SCATTER_2_ACC</name>
-	<name>UWB_HEAVY_MINIGUN_PRC</name>
-	<name>UWB_HEAVY_MINIGUN_BRC</name><!-- 1.31 -->
-	<name>UWB_HEAVY_MINIGUN_CLD</name>
-	<name>UWB_HEAVY_MINIGUN_POW</name>
-	<name>UWB_HEAVY_MINIGUN_UNI</name>
-	<name>UWB_HEAVY_MINIGUN_ACC</name>
-	<name>UWB_LASER_CHAINGUN_PRC</name>
-	<name>UWB_LASER_CHAINGUN_FRC</name>
-	<name>UWB_LASER_CHAINGUN_CLD</name>
-	<name>UWB_LASER_CHAINGUN_POW</name>
-	<name>UWB_LASER_CHAINGUN_UNI</name>
-	<name>UWB_LASER_CHAINGUN_ACC</name>
-	<name>UWB_BA_LASER_WAR_1_PRC</name>
-	<name>UWB_BA_LASER_WAR_1_FRC</name>
-	<name>UWB_BA_LASER_WAR_1_CLD</name>
-	<name>UWB_BA_LASER_WAR_1_UNI</name>
-	<name>UWB_BA_LASER_WAR_1_ACC</name>
-	<name>UWB_BA_LASER_WAR_2_PRC</name>
-	<name>UWB_BA_LASER_WAR_2_FRC</name>
-	<name>UWB_BA_LASER_WAR_2_BRC</name>
-	<name>UWB_BA_LASER_WAR_2_CLD</name>
-	<name>UWB_BA_LASER_WAR_2_UNI</name>
-	<name>UWB_BA_LASER_WAR_2_ACC</name>
-	<name>UWB_BA_LASER_WAR_3_PRC</name>
-	<name>UWB_BA_LASER_WAR_3_FRC</name>
-	<name>UWB_BA_LASER_WAR_3_CLD</name>
-	<name>UWB_BA_LASER_WAR_3_UNI</name>
-	<name>UWB_BA_LASER_WAR_3_ACC</name>
-	<name>UWB_LASER_SUPER_HEAVY_1_PRC</name>
-	<name>UWB_LASER_SUPER_HEAVY_1_FRC</name>
-	<name>UWB_LASER_SUPER_HEAVY_1_BRC</name>
-	<name>UWB_LASER_SUPER_HEAVY_1_CLD</name>
-	<name>UWB_LASER_SUPER_HEAVY_1_UNI</name>
-	<name>UWB_LASER_SUPER_HEAVY_1_ACC</name>
-	<name>UWB_LASER_SUPER_HEAVY_2_PRC</name>
-	<name>UWB_LASER_SUPER_HEAVY_2_FRC</name>
-	<name>UWB_LASER_SUPER_HEAVY_2_BRC</name>
-	<name>UWB_LASER_SUPER_HEAVY_2_CLD</name>
-	<name>UWB_LASER_SUPER_HEAVY_2_POW</name>
-	<name>UWB_LASER_SUPER_HEAVY_2_UNI</name>
-	<name>UWB_LASER_SUPER_HEAVY_2_ACC</name>
-	<name>UWB_BA_BEAM_BATON_PRC</name>
-	<name>UWB_BA_BEAM_BATON_CLD</name>
-	<name>UWB_BA_BEAM_BATON_UNI</name>
-	<name>UWB_BA_BEAM_BO_PRC</name>
-	<name>UWB_BA_BEAM_BO_CLD</name>
-	<name>UWB_BA_BEAM_BO_POW</name>
-	<name>UWB_BA_BEAM_BO_UNI</name>
-	<name>UWB_BA_BEAM_BIO_2_PRC</name>
-	<name>UWB_BA_BEAM_BIO_2_CLD</name>
-	<name>UWB_BA_BEAM_BIO_2_POW</name>
-	<name>UWB_BA_BEAM_BIO_2_UNI</name>
-	<name>UWB_BEAM_1_PRC</name>
-	<name>UWB_BEAM_1_FRC</name>
-	<name>UWB_BEAM_1_CLD</name>
-	<name>UWB_BEAM_1_UNI</name>
-	<name>UWB_BEAM_LONG_PRC</name>
-	<name>UWB_BEAM_LONG_FRC</name>
-	<name>UWB_BEAM_LONG_CLD</name>
-	<name>UWB_BEAM_LONG_POW</name>
-	<name>UWB_BEAM_LONG_UNI</name>
-	<name>UWB_BEAM_GUISARME_PRC</name>
-	<name>UWB_BEAM_GUISARME_FRC</name>
-	<name>UWB_BEAM_GUISARME_BRC</name>
-	<name>UWB_BEAM_GUISARME_CLD</name>
-	<name>UWB_BEAM_GUISARME_POW</name>
-	<name>UWB_BEAM_GUISARME_UNI</name>
-	<name>UWB_BA_BEAM_HASTA_PRC</name>
-	<name>UWB_BA_BEAM_HASTA_FRC</name>
-	<name>UWB_BA_BEAM_HASTA_CLD</name>
-	<name>UWB_BA_BEAM_HASTA_UNI</name>
-	<name>UWB_BA_BEAM_HULL_SMALL_PRC</name>
-	<name>UWB_BA_BEAM_HULL_SMALL_BRC</name>
-	<name>UWB_BA_BEAM_HULL_SMALL_CLD</name>
-	<name>UWB_BA_BEAM_HULL_SMALL_POW</name>
-	<name>UWB_BA_BEAM_HULL_SMALL_UNI</name>
-	<name>UWB_BA_BEAM_AUTO_PRC</name>
-	<name>UWB_BA_BEAM_AUTO_CLD</name>
-	<name>UWB_BA_BEAM_AUTO_UNI</name>
-	<name>UWB_BA_BEAM_BARDICHE_PRC</name>
-	<name>UWB_BA_BEAM_BARDICHE_FRC</name>
-	<name>UWB_BA_BEAM_BARDICHE_CLD</name>
-	<name>UWB_BA_BEAM_BARDICHE_POW</name>
-	<name>UWB_BA_BEAM_BARDICHE_UNI</name>
-	<name>UWB_BA_BEAM_SCYTHE_PRC</name>
-	<name>UWB_BA_BEAM_SCYTHE_BRC</name>
-	<name>UWB_BA_BEAM_SCYTHE_CLD</name>
-	<name>UWB_BA_BEAM_SCYTHE_UNI</name>
-	<name>UWB_BEAM_1_2_PRC</name>
-	<name>UWB_BEAM_1_2_FRC</name>
-	<name>UWB_BEAM_1_2_CLD</name>
-	<name>UWB_BEAM_1_2_UNI</name>
-	<name>UWB_BEAM_HULL_PRC</name>
-	<name>UWB_BEAM_HULL_BRC</name>
-	<name>UWB_BEAM_HULL_CLD</name>
-	<name>UWB_BEAM_HULL_POW</name>
-	<name>UWB_BEAM_HULL_UNI</name>
-	<name>UWB_BA_BEAM_PERNACH_PRC</name>
-	<name>UWB_BA_BEAM_PERNACH_BRC</name>
-	<name>UWB_BA_BEAM_PERNACH_CLD</name>
-	<name>UWB_BA_BEAM_PERNACH_POW</name>
-	<name>UWB_BA_BEAM_PERNACH_UNI</name>
-	<name>UWB_BEAM_FIRE_PRC</name>
-	<name>UWB_BEAM_FIRE_FRC</name>
-	<name>UWB_BEAM_FIRE_CLD</name>
-	<name>UWB_BEAM_FIRE_POW</name>
-	<name>UWB_BEAM_FIRE_UNI</name>
-	<name>UWB_BEAM_2_PRC</name>
-	<name>UWB_BEAM_2_BRC</name>
-	<name>UWB_BEAM_2_CLD</name>
-	<name>UWB_BEAM_2_POW</name>
-	<name>UWB_BEAM_2_UNI</name>
-	<name>UWB_BEAM_FAUCHARD_PRC</name>
-	<name>UWB_BEAM_FAUCHARD_BRC</name>
-	<name>UWB_BEAM_FAUCHARD_CLD</name>
-	<name>UWB_BEAM_FAUCHARD_POW</name>
-	<name>UWB_BEAM_FAUCHARD_UNI</name>
-	<name>UWB_BEAM_3_PRC</name>
-	<name>UWB_BEAM_3_BRC</name>
-	<name>UWB_BEAM_3_CLD</name>
-	<name>UWB_BEAM_3_POW</name>
-	<name>UWB_BEAM_3_UNI</name>
-	<name>UWB_MISSILES_1_FRC</name>
-	<name>UWB_MISSILES_1_BRC</name>
-	<name>UWB_MISSILES_1_CLD</name>
-	<name>UWB_MISSILES_1_UNI</name>
-	<name>UWB_MISSILES_1_ACC</name>
-	<name>UWB_MISSILES_2_PLAYER_FRC</name>
-	<name>UWB_MISSILES_2_PLAYER_BRC</name>
-	<name>UWB_MISSILES_2_PLAYER_CLD</name>
-	<name>UWB_MISSILES_2_PLAYER_UNI</name>
-	<name>UWB_MISSILES_2_PLAYER_ACC</name>
-	<name>UWB_MISSILES_SYS1_FRC</name>
-	<name>UWB_MISSILES_SYS1_CLD</name>
-	<name>UWB_MISSILES_SYS1_UNI</name>
-	<name>UWB_MISSILES_SYS1_ACC</name>
-	<name>UWB_MISSILES_SYS2_FRC</name>
-	<name>UWB_MISSILES_SYS2_CLD</name>
-	<name>UWB_MISSILES_SYS2_UNI</name>
-	<name>UWB_MISSILES_SYS2_ACC</name>
-	<name>UWB_BA_MISSILES_ASTERIA_CLD</name>
-	<name>UWB_BA_MISSILES_ASTERIA_UNI</name>
-	<name>UWB_BA_MISSILES_ASTERIA_ACC</name>
-	<name>UWB_BA_MISSILES_HULL_SMALL_BRC</name>
-	<name>UWB_BA_MISSILES_HULL_SMALL_CLD</name>
-	<name>UWB_BA_MISSILES_HULL_SMALL_UNI</name>
-	<name>UWB_BA_MISSILES_HULL_SMALL_ACC</name>
-	<name>UWB_MISSILES_3_FRC</name>
-	<name>UWB_MISSILES_3_BRC</name>
-	<name>UWB_MISSILES_3_CLD</name>
-	<name>UWB_MISSILES_3_POW</name>
-	<name>UWB_MISSILES_3_UNI</name>
-	<name>UWB_MISSILES_3_ACC</name>
-	<name>UWB_MISSILES_BURST_FRC</name>
-	<name>UWB_MISSILES_BURST_BRC</name>
-	<name>UWB_MISSILES_BURST_CLD</name>
-	<name>UWB_MISSILES_BURST_POW</name>
-	<name>UWB_MISSILES_BURST_UNI</name>
-	<name>UWB_MISSILES_BURST_ACC</name>
-	<name>UWB_BA_MISSILES_ONI_FRC</name>
-	<name>UWB_BA_MISSILES_ONI_BRC</name>
-	<name>UWB_BA_MISSILES_ONI_CLD</name>
-	<name>UWB_BA_MISSILES_ONI_POW</name>
-	<name>UWB_BA_MISSILES_ONI_UNI</name>
-	<name>UWB_BA_MISSILES_ONI_ACC</name>
-	<name>UWB_MISSILES_HULL_BRC</name>
-	<name>UWB_MISSILES_HULL_CLD</name>
-	<name>UWB_MISSILES_HULL_POW</name>
-	<name>UWB_MISSILES_HULL_UNI</name>
-	<name>UWB_MISSILES_HULL_ACC</name>
-	<name>UWB_BA_MISSILES_4_FRC</name>
-	<name>UWB_BA_MISSILES_4_BRC</name>
-	<name>UWB_BA_MISSILES_4_CLD</name>
-	<name>UWB_BA_MISSILES_4_POW</name>
-	<name>UWB_BA_MISSILES_4_UNI</name>
-	<name>UWB_BA_MISSILES_4_ACC</name>
-	<name>UWB_BA_MISSILES_PERYTON_CLD</name>
-	<name>UWB_BA_MISSILES_PERYTON_POW</name>
-	<name>UWB_BA_MISSILES_PERYTON_UNI</name>
-	<name>UWB_BA_MISSILES_PERYTON_ACC</name>
-	<name>UWB_BA_MISSILES_COCKATRICE_CLD</name>
-	<name>UWB_BA_MISSILES_COCKATRICE_POW</name>
-	<name>UWB_BA_MISSILES_COCKATRICE_UNI</name>
-	<name>UWB_BA_MISSILES_COCKATRICE_ACC</name>
-	<name>UWB_MISSILES_MEGA_FRC</name>
-	<name>UWB_MISSILES_MEGA_BRC</name>
-	<name>UWB_MISSILES_MEGA_CLD</name>
-	<name>UWB_MISSILES_MEGA_POW</name>
-	<name>UWB_MISSILES_MEGA_UNI</name>
-	<name>UWB_MISSILES_MEGA_ACC</name>
-	<name>UWB_ION_STUN_PRC</name>
-	<name>UWB_ION_STUN_CLD</name>
-	<name>UWB_ION_STUN_UNI</name>
-	<name>UWB_ION_STUN_ACC</name>
-	<name>UWB_BA_SHOTGUN_ION_1_PRC</name>
-	<name>UWB_BA_SHOTGUN_ION_1_CLD</name>
-	<name>UWB_BA_SHOTGUN_ION_1_UNI</name>
-	<name>UWB_BA_SHOTGUN_ION_1_ACC</name>
-	<name>UWB_BA_ION_2_STUN_PRC</name>
-	<name>UWB_BA_ION_2_STUN_CLD</name>
-	<name>UWB_BA_ION_2_STUN_POW</name>
-	<name>UWB_BA_ION_2_STUN_UNI</name>
-	<name>UWB_BA_ION_2_STUN_ACC</name>
-	<name>UWB_BA_ION_BURST_1_STUN_PRC</name>
-	<name>UWB_BA_ION_BURST_1_STUN_CLD</name>
-	<name>UWB_BA_ION_BURST_1_STUN_UNI</name>
-	<name>UWB_BA_ION_BURST_1_STUN_ACC</name>
-	<name>UWB_BA_ION_BURST_1_PRC</name>
-	<name>UWB_BA_ION_BURST_1_CLD</name>
-	<name>UWB_BA_ION_BURST_1_UNI</name>
-	<name>UWB_BA_ION_BURST_1_ACC</name>
-	<name>UWB_ION_HEAVY_1_PRC</name>
-	<name>UWB_ION_HEAVY_1_CLD</name>
-	<name>UWB_ION_HEAVY_1_POW</name>
-	<name>UWB_ION_HEAVY_1_UNI</name>
-	<name>UWB_ION_HEAVY_1_ACC</name>
-	<name>UWB_ION_BLAST_1_PRC</name>
-	<name>UWB_ION_BLAST_1_CLD</name>
-	<name>UWB_ION_BLAST_1_UNI</name>
-	<name>UWB_ION_BLAST_1_ACC</name>
-	<name>UWB_BA_SHOTGUN_ION_2_PRC</name>
-	<name>UWB_BA_SHOTGUN_ION_2_CLD</name>
-	<name>UWB_BA_SHOTGUN_ION_2_POW</name>
-	<name>UWB_BA_SHOTGUN_ION_2_UNI</name>
-	<name>UWB_BA_SHOTGUN_ION_2_ACC</name>
-	<name>UWB_BA_ION_BURST_2_PRC</name>
-	<name>UWB_BA_ION_BURST_2_CLD</name>
-	<name>UWB_BA_ION_BURST_2_POW</name>
-	<name>UWB_BA_ION_BURST_2_UNI</name>
-	<name>UWB_BA_ION_BURST_2_ACC</name>
-	<name>UWB_ION_BLAST_2_PRC</name>
-	<name>UWB_ION_BLAST_2_CLD</name>
-	<name>UWB_ION_BLAST_2_POW</name>
-	<name>UWB_ION_BLAST_2_UNI</name>
-	<name>UWB_ION_BLAST_2_ACC</name>
-	<name>UWB_ION_BLAST_3_PRC</name>
-	<name>UWB_ION_BLAST_3_CLD</name>
-	<name>UWB_ION_BLAST_3_POW</name>
-	<name>UWB_ION_BLAST_3_UNI</name>
-	<name>UWB_ION_BLAST_3_ACC</name>
-	<name>UWB_JADE_CANNON_PLAYER_FRC</name>
-	<name>UWB_JADE_CANNON_PLAYER_BRC</name>
-	<name>UWB_JADE_CANNON_PLAYER_CLD</name>
-	<name>UWB_JADE_CANNON_PLAYER_POW</name>
-	<name>UWB_JADE_CANNON_PLAYER_UNI</name>
-	<name>SILV_BEAM_1_PRC</name>
-	<name>SILV_BEAM_1_FRC</name>
-	<name>SILV_BEAM_1_CLD</name>
-	<name>SILV_BEAM_1_UNI</name>
-	<name>SILV_BOMB_BREACH_3_CLD</name>
-	<name>SILV_BOMB_BREACH_3_UNI</name>
-	<name>SILV_BOMB_FIRE_2_CLD</name>
-	<name>SILV_BOMB_FIRE_2_UNI</name>
-	<name>SILV_ION_BLAST_2_PRC</name>
-	<name>SILV_ION_BLAST_2_CLD</name>
-	<name>SILV_ION_BLAST_2_POW</name>
-	<name>SILV_ION_BLAST_2_UNI</name>
-	<name>SILV_ION_BLAST_2_ACC</name>
-	<name>SILV_ION_HEAVY_2_PRC</name>
-	<name>SILV_ION_HEAVY_2_CLD</name>
-	<name>SILV_ION_HEAVY_2_POW</name>
-	<name>SILV_ION_HEAVY_2_UNI</name>
-	<name>SILV_ION_HEAVY_2_ACC</name>
-	<name>SILV_ION_PIERCE_1_CLD</name>
-	<name>SILV_ION_PIERCE_1_POW</name>
-	<name>SILV_ION_PIERCE_1_UNI</name>
-	<name>SILV_ION_PIERCE_1_ACC</name>
-	<name>SILV_LASER_AUTO_1_PRC</name>
-	<name>SILV_LASER_AUTO_1_FRC</name>
-	<name>SILV_LASER_AUTO_1_CLD</name>
-	<name>SILV_LASER_AUTO_1_UNI</name>
-	<name>SILV_LASER_AUTO_1_ACC</name>
-	<name>SILV_LASER_BURST_SCATTER_1_PRC</name>
-	<name>SILV_LASER_BURST_SCATTER_1_CLD</name>
-	<name>SILV_LASER_BURST_SCATTER_1_UNI</name>
-	<name>SILV_LASER_BURST_SCATTER_1_ACC</name>
-	<name>SILV_LASER_BURST_2_PRC</name>
-	<name>SILV_LASER_BURST_2_FRC</name>
-	<name>SILV_LASER_BURST_2_CLD</name>
-	<name>SILV_LASER_BURST_2_POW</name>
-	<name>SILV_LASER_BURST_2_UNI</name>
-	<name>SILV_LASER_BURST_2_ACC</name>
-	<name>SILV_MISSILES_ASTERIA_FRC</name>
-	<name>SILV_MISSILES_ASTERIA_BRC</name>
-	<name>SILV_MISSILES_ASTERIA_CLD</name>
-	<name>SILV_MISSILES_ASTERIA_UNI</name>
-	<name>SILV_MISSILES_ASTERIA_ACC</name>
-	<name>SILV_MISSILES_BURST_FRC</name>
-	<name>SILV_MISSILES_BURST_BRC</name>
-	<name>SILV_MISSILES_BURST_CLD</name>
-	<name>SILV_MISSILES_BURST_POW</name>
-	<name>SILV_MISSILES_BURST_UNI</name>
-	<name>SILV_MISSILES_BURST_ACC</name>
-	<name>SILV_MISSILES_HYDRA_FRC</name>
-	<name>SILV_MISSILES_HYDRA_BRC</name>
-	<name>SILV_MISSILES_HYDRA_CLD</name>
-	<name>SILV_MISSILES_HYDRA_POW</name>
-	<name>SILV_MISSILES_HYDRA_UNI</name>
-	<name>SILV_MISSILES_HYDRA_ACC</name>
-	<name>SILV_SHOTGUN_PRC</name>
-	<name>SILV_SHOTGUN_BRC</name>
-	<name>SILV_SHOTGUN_CLD</name>
-	<name>SILV_SHOTGUN_POW</name>
-	<name>SILV_SHOTGUN_UNI</name>
-	<name>SILV_SHOTGUN_ACC</name>	
-	<name>SILV_LASER_SUPER_HEAVY_1_PRC</name><!-- 1.34 -->
-	<name>SILV_LASER_SUPER_HEAVY_1_FRC</name><!-- 1.34 -->
-	<name>SILV_LASER_SUPER_HEAVY_1_BRC</name><!-- 1.34 -->
-	<name>SILV_LASER_SUPER_HEAVY_1_CLD</name><!-- 1.34 -->
-	<name>SILV_LASER_SUPER_HEAVY_1_UNI</name><!-- 1.34 -->
-	<name>SILV_LASER_SUPER_HEAVY_1_ACC</name><!-- 1.34 -->
-	<name>MAGMAN_GUN_1_CLD</name>
-	<name>MAGMAN_GUN_1_POW</name>
-	<name>MAGMAN_GUN_1_UNI</name>
-	<name>MAGMAN_GUN_2_CLD</name>
-	<name>MAGMAN_GUN_2_POW</name>
-	<name>MAGMAN_GUN_2_UNI</name>
-	<name>MAGMAN_GUN_3_CLD</name>
-	<name>MAGMAN_GUN_3_POW</name>
-	<name>MAGMAN_GUN_3_UNI</name>
-	<name>MORPHGUN_M_CLD</name>
-	<name>MORPHGUN_M_POW</name>
-	<name>MORPHGUN_M_UNI</name>
-	<name>MORPHGUN_R_FRC</name>
-	<name>MORPHGUN_R_CLD</name>
-	<name>MORPHGUN_R_POW</name>
-	<name>MORPHGUN_R_UNI</name>
-	<name>MORPHGUN_S_BRC</name>
-	<name>MORPHGUN_S_CLD</name>
-	<name>MORPHGUN_S_POW</name>
-	<name>MORPHGUN_S_UNI</name>
-	<name>MORPHGUN_Z_CLD</name>
-	<name>MORPHGUN_Z_POW</name>
-	<name>MORPHGUN_Z_UNI</name>
-	<name>PULSE_CANNON_1_PRC</name>
-	<name>PULSE_CANNON_1_FRC</name>
-	<name>PULSE_CANNON_1_BRC</name>
-	<name>PULSE_CANNON_1_CLD</name>
-	<name>PULSE_CANNON_1_POW</name>
-	<name>PULSE_CANNON_1_UNI</name>
-	<name>PULSE_CANNON_1_ACC</name>
-	<name>PULSE_CANNON_2_PRC</name>
-	<name>PULSE_CANNON_2_FRC</name>
-	<name>PULSE_CANNON_2_BRC</name>
-	<name>PULSE_CANNON_2_CLD</name>
-	<name>PULSE_CANNON_2_POW</name>
-	<name>PULSE_CANNON_2_UNI</name>
-	<name>PULSE_CANNON_2_ACC</name>
-	<name>PULSE_CANNON_3_PRC</name>
-	<name>PULSE_CANNON_3_FRC</name>
-	<name>PULSE_CANNON_3_BRC</name>
-	<name>PULSE_CANNON_3_CLD</name>
-	<name>PULSE_CANNON_3_POW</name>
-	<name>PULSE_CANNON_3_UNI</name>
-	<name>PULSE_CANNON_3_ACC</name>
-	<name>PULSE_CANNON_1X_PRC</name>
-	<name>PULSE_CANNON_1X_FRC</name>
-	<name>PULSE_CANNON_1X_BRC</name>
-	<name>PULSE_CANNON_1X_CLD</name>
-	<name>PULSE_CANNON_1X_POW</name>
-	<name>PULSE_CANNON_1X_UNI</name>
-	<name>PULSE_CANNON_1X_ACC</name>
-	<name>PULSE_CANNON_2X_PRC</name>
-	<name>PULSE_CANNON_2X_FRC</name>
-	<name>PULSE_CANNON_2X_BRC</name>
-	<name>PULSE_CANNON_2X_CLD</name>
-	<name>PULSE_CANNON_2X_POW</name>
-	<name>PULSE_CANNON_2X_UNI</name>
-	<name>PULSE_CANNON_2X_ACC</name>
-	<name>PULSE_CANNON_3X_PRC</name>
-	<name>PULSE_CANNON_3X_FRC</name>
-	<name>PULSE_CANNON_3X_BRC</name>
-	<name>PULSE_CANNON_3X_CLD</name>
-	<name>PULSE_CANNON_3X_POW</name>
-	<name>PULSE_CANNON_3X_UNI</name>
-	<name>PULSE_CANNON_3X_ACC</name>
-	<name>LASER_PRISM_PRC</name>
-	<name>LASER_PRISM_BRC</name>
-	<name>LASER_PRISM_CLD</name>
-	<name>LASER_PRISM_UNI</name>
-	<name>LASER_PRISM_ACC</name>
-	<name>LASER_PRISM_2_PRC</name>
-	<name>LASER_PRISM_2_BRC</name>
-	<name>LASER_PRISM_2_CLD</name>
-	<name>LASER_PRISM_2_POW</name>
-	<name>LASER_PRISM_2_UNI</name>
-	<name>LASER_PRISM_2_ACC</name>
-	<name>LASER_PRISM_3_PRC</name>
-	<name>LASER_PRISM_3_BRC</name>
-	<name>LASER_PRISM_3_CLD</name>
-	<name>LASER_PRISM_3_POW</name>
-	<name>LASER_PRISM_3_UNI</name>
-	<name>LASER_PRISM_3_ACC</name>
-	<name>ASTEROID_GUN_PRC</name>
-	<name>ASTEROID_GUN_FRC</name>
-	<name>ASTEROID_GUN_BRC</name>
-	<name>ASTEROID_GUN_CLD</name>
-	<name>ASTEROID_GUN_POW</name>
-	<name>ASTEROID_GUN_UNI</name>
-	<name>ASTEROID_GUN_ACC</name><!-- 1.33 --> <!-- some trash -->
-	<name>DRONE_FLAK1_FIRE_ACC</name>
-	<name>DRONE_MISSILES_TRASS_ACC</name>
-	<name>DRONE_LOCKER_ACC</name>
-	<name>DRONE_LOCKER2_ACC</name>
-	<name>BA_DRONE_CRYSTAL_BRC</name>
-	<name>BA_DRONE_CRYSTAL_CLD</name>
-	<name>BA_DRONE_CRYSTAL_POW</name>
-	<name>BA_DRONE_CRYSTAL_UNI</name>
-	<name>BA_DRONE_CRYSTAL_ACC</name>
-	<name>BA_DRONE_CRYSTAL_2_BRC</name>
-	<name>BA_DRONE_CRYSTAL_2_CLD</name>
-	<name>BA_DRONE_CRYSTAL_2_POW</name>
-	<name>BA_DRONE_CRYSTAL_2_UNI</name>
-	<name>BA_DRONE_CRYSTAL_2_ACC</name>
-	<name>BA_HEAVY_DRONE_CRYSTAL_BRC</name>
-	<name>BA_HEAVY_DRONE_CRYSTAL_CLD</name>
-	<name>BA_HEAVY_DRONE_CRYSTAL_UNI</name>
-	<name>BA_HEAVY_DRONE_CRYSTAL_ACC</name>
-	<name>BA_LIGHT_DRONE_CRYSTAL_BRC</name>
-	<name>BA_LIGHT_DRONE_CRYSTAL_CLD</name>
-	<name>BA_LIGHT_DRONE_CRYSTAL_UNI</name>
-	<name>BA_LIGHT_DRONE_CRYSTAL_ACC</name>
-	<name>DE_DRONE_MISSILES_STUN_ENEMY2_ACC</name>
-	<name>DE_DRONE_MISSILES_STUN_ENEMY_ACC</name>
-	<name>DE_DRONE_MISSILES_STUN_ACC</name>
-	<name>DE_DRONE_ION_V3_ACC</name>
-	<name>DE_DRONE_ION_V4_ACC</name>
-	<name>DE_ION_PIERCE_DRONE_CLD</name>
-	<name>DE_ION_PIERCE_DRONE_UNI</name>
-	<name>DE_ION_PIERCE_DRONE_ACC</name>
-	<name>DE_DRONE_LASER_LIGHT_1_ACC</name>
-	<name>DE_DRONE_LASER_LIGHT_2_ACC</name>
-	<name>DE_DRONE_LASER_LIGHT_SCATTER_ACC</name>
-	<name>DE_DRONE_LASER_HEAVY_ACC</name>
-	<name>DE_DRONE_LASER_SCATTER_ACC</name>
-	<name>DE_DRONE_LASER_HEAVY_SCATTER_ACC</name>
-	<name>DE_DRONE_LASER_HULL_ACC</name>
-	<name>DE_DRONE_LASER_SCATTER_DEFENSE_ACC</name>
-	<name>DE_DRONE_LASER_HEAVY_DEFENSE_ACC</name>
-	<name>DE_DRONE_LASER_LIGHT_DEFENSE_ACC</name>
-	<name>DE_DRONE_MISSILES_DEFENSE_ACC</name>
-	<name>DE_DRONE_MISSILES_DEFENSE_SWARM_ACC</name>
-	<name>DE_DRONE_MISSILES_LIGHT_ACC</name>
-	<name>DE_DRONE_MISSILES_LIGHT_FIRE_ACC</name>
-	<name>DE_DRONE_MISSILES_ACC</name>
-	<name>DE_DRONE_MISSILES_HEAVY_ACC</name>
-	<name>DE_DRONE_MISSILES_SWARM_ACC</name>
-	<name>DE_DRONE_MINES_SMALL_ACC</name>
-	<name>DE_DRONE_MINES_MEDIUM_ACC</name>
-	<name>DE_DRONE_ION_ACC</name>
-	<name>DE_DRONE_ION_HEAVY_ACC</name>
-	<name>DE_DRONE_ION_MINESWEEPER_ACC</name>
-	<name>DE_DRONE_PLASMA_THROWER_ACC</name>
-	<name>DRONE_LASER_ACC</name>
-	<name>DRONE_LOCKER_HAL_ACC</name>
-	<name>DRONE_LOCKER2_HAL_ACC</name>
-	<name>DE_DRONE_LASER_LIGHT_SCATTER_HAL_ACC</name>
-	<name>DE_DRONE_MISSILES_LIGHT_HAL_ACC</name>
-	<name>DE_DRONE_MISSILES_LIGHT_FIRE_HAL_ACC</name>
-	<name>BA_ANTI_DRONE_EFFECTOR_INVISIBLE_ACC</name>
-	<name>BA_ANTI_DRONE_MISSILES_SWARM_ACC</name>
-	<name>DE_DRONE_LASER_HEAVY_ANTI_ACC</name>
-	<name>BA_LIGHT_DEFENSE_DRONE_CRYSTAL_PRC</name>
-	<name>BA_LIGHT_DEFENSE_DRONE_CRYSTAL_CLD</name>
-	<name>BA_LIGHT_DEFENSE_DRONE_CRYSTAL_UNI</name>
-	<name>BA_LIGHT_DEFENSE_DRONE_CRYSTAL_ACC</name>
-	<name>BA_ANTI_DRONE_CRYSTAL_PRC</name>
-	<name>BA_ANTI_DRONE_CRYSTAL_BRC</name>
-	<name>BA_ANTI_DRONE_CRYSTAL_CLD</name>
-	<name>BA_ANTI_DRONE_CRYSTAL_POW</name>
-	<name>BA_ANTI_DRONE_CRYSTAL_UNI</name>
-	<name>BA_ANTI_DRONE_CRYSTAL_ACC</name>
-	<name>DE_DRONE_DEFENSE_GAUSS_WEAPON_ACC</name>
-	<name>DE_DRONE_DEFENSE_SVCH_WEAPON_ACC</name>
-	<name>DRONE_CHAFF_WEAP_ACC</name>
-	<name>DRONE_LASER_DEFENSE_ACC</name>
-	<name>DRONE_LASER_DEFENSE_2_ACC</name>
-	<name>REPAIR_KIT_10_ACC</name>
-	<name>REPAIR_KIT_15_ACC</name>
-	<name>REPAIR_KIT_20_ACC</name>
-	<name>LOCK_BEAM_BRC</name>
-	<name>LOCK_BEAM_CLD</name>
-	<name>LOCK_BEAM_POW</name>
-	<name>LOCK_BEAM_UNI</name>
-	<name>HACK_GUN_CLD</name>
-	<name>HACK_GUN_POW</name>
-	<name>HACK_GUN_UNI</name>
-	<name>DE_DRONE_LASER_DEFENSE_UNIVERSAL_1_ACC</name>
-	<name>DRONE_UNIX_WEAPON_ACC</name>
-	<name>BOULDERGUN_HOT_PRC</name>
-	<name>BOULDERGUN_HOT_CLD</name>
-	<name>BOULDERGUN_HOT_POW</name>
-	<name>BOULDERGUN_HOT_UNI</name>
-	<name>BOULDERGUN_HOT_ACC</name>
-	<name>BOULDERGUN_PRC</name>
-	<name>BOULDERGUN_BRC</name>
-	<name>BOULDERGUN_CLD</name>
-	<name>BOULDERGUN_POW</name>
-	<name>BOULDERGUN_UNI</name>
-	<name>BOULDERGUN_ACC</name>
-	<name>BOULDERGUN2_PRC</name>
-	<name>BOULDERGUN2_BRC</name>
-	<name>BOULDERGUN2_CLD</name>
-	<name>BOULDERGUN2_POW</name>
-	<name>BOULDERGUN2_UNI</name>
-	<name>BOULDERGUN2_ACC</name>
-	<name>CREW_GUN_1_HUMAN_PRC</name>
-	<name>CREW_GUN_1_HUMAN_BRC</name>
-	<name>CREW_GUN_1_HUMAN_CLD</name>
-	<name>CREW_GUN_1_HUMAN_UNI</name>
-	<name>CREW_GUN_1_ORDER_HUMAN_PRC</name>
-	<name>CREW_GUN_1_ORDER_HUMAN_BRC</name>
-	<name>CREW_GUN_1_ORDER_HUMAN_CLD</name>
-	<name>CREW_GUN_1_ORDER_HUMAN_UNI</name>
-	<name>CREW_GUN_1_MANTIS_PRC</name>
-	<name>CREW_GUN_1_MANTIS_BRC</name>
-	<name>CREW_GUN_1_MANTIS_CLD</name>
-	<name>CREW_GUN_1_MANTIS_UNI</name>
-	<name>CREW_GUN_1_ENERGY_PRC</name>
-	<name>CREW_GUN_1_ENERGY_BRC</name>
-	<name>CREW_GUN_1_ENERGY_CLD</name>
-	<name>CREW_GUN_1_ENERGY_UNI</name>
-	<name>CREW_GUN_1_MUSHROOM_PRC</name>
-	<name>CREW_GUN_1_MUSHROOM_BRC</name>
-	<name>CREW_GUN_1_MUSHROOM_CLD</name>
-	<name>CREW_GUN_1_MUSHROOM_UNI</name>
-	<name>CREW_GUN_1_CRYSTAL_PRC</name>
-	<name>CREW_GUN_1_CRYSTAL_BRC</name>
-	<name>CREW_GUN_1_CRYSTAL_CLD</name>
-	<name>CREW_GUN_1_CRYSTAL_UNI</name>
-	<name>CREW_GUN_1_ENGI_PRC</name>
-	<name>CREW_GUN_1_ENGI_BRC</name>
-	<name>CREW_GUN_1_ENGI_CLD</name>
-	<name>CREW_GUN_1_ENGI_UNI</name>
-	<name>CREW_GUN_1_GHOST_PRC</name>
-	<name>CREW_GUN_1_GHOST_BRC</name>
-	<name>CREW_GUN_1_GHOST_CLD</name>
-	<name>CREW_GUN_1_GHOST_UNI</name>
-	<name>CREW_GUN_1_KEEPER_PRC</name>
-	<name>CREW_GUN_1_KEEPER_BRC</name>
-	<name>CREW_GUN_1_KEEPER_CLD</name>
-	<name>CREW_GUN_1_KEEPER_UNI</name>
-	<name>CREW_GUN_1_MAGMAN_PRC</name>
-	<name>CREW_GUN_1_MAGMAN_BRC</name>
-	<name>CREW_GUN_1_MAGMAN_CLD</name>
-	<name>CREW_GUN_1_MAGMAN_UNI</name>
-	<name>CREW_GUN_1_ORCHID_PRC</name>
-	<name>CREW_GUN_1_ORCHID_BRC</name>
-	<name>CREW_GUN_1_ORCHID_CLD</name>
-	<name>CREW_GUN_1_ORCHID_UNI</name>
-	<name>CREW_GUN_1_ROCK_PRC</name>
-	<name>CREW_GUN_1_ROCK_BRC</name>
-	<name>CREW_GUN_1_ROCK_CLD</name>
-	<name>CREW_GUN_1_ROCK_UNI</name>
-	<name>CREW_GUN_1_SLUG_PRC</name>
-	<name>CREW_GUN_1_SLUG_BRC</name>
-	<name>CREW_GUN_1_SLUG_CLD</name>
-	<name>CREW_GUN_1_SLUG_UNI</name>
-	<name>CREW_GUN_1_SLIG_PRC</name>
-	<name>CREW_GUN_1_SLIG_BRC</name>
-	<name>CREW_GUN_1_SLIG_CLD</name>
-	<name>CREW_GUN_1_SLIG_UNI</name>
-	<name>CREW_GUN_1_ANAEROBIC_PRC</name>
-	<name>CREW_GUN_1_ANAEROBIC_BRC</name>
-	<name>CREW_GUN_1_ANAEROBIC_CLD</name>
-	<name>CREW_GUN_1_ANAEROBIC_UNI</name>
-	<name>CREW_GUN_1_ENERGYX_PRC</name>
-	<name>CREW_GUN_1_ENERGYX_BRC</name>
-	<name>CREW_GUN_1_ENERGYX_CLD</name>
-	<name>CREW_GUN_1_ENERGYX_UNI</name>
-	<name>CREW_GUN_1_SHELL_PRC</name>
-	<name>CREW_GUN_1_SHELL_BRC</name>
-	<name>CREW_GUN_1_SHELL_CLD</name>
-	<name>CREW_GUN_1_SHELL_UNI</name>
-	<name>CREW_GUN_1_MORPH_PRC</name>
-	<name>CREW_GUN_1_MORPH_BRC</name>
-	<name>CREW_GUN_1_MORPH_CLD</name>
-	<name>CREW_GUN_1_MORPH_UNI</name>
-	<name>CREW_GUN_2_ENERGY_PRC</name>
-	<name>CREW_GUN_2_ENERGY_BRC</name>
-	<name>CREW_GUN_2_ENERGY_CLD</name>
-	<name>CREW_GUN_2_ENERGY_POW</name>
-	<name>CREW_GUN_2_ENERGY_UNI</name>
-	<name>CREW_GUN_2_ENERGYX_PRC</name>
-	<name>CREW_GUN_2_ENERGYX_BRC</name>
-	<name>CREW_GUN_2_ENERGYX_CLD</name>
-	<name>CREW_GUN_2_ENERGYX_POW</name>
-	<name>CREW_GUN_2_ENERGYX_UNI</name>
-	<name>CREW_GUN_2_ANAEROBIC_PRC</name>
-	<name>CREW_GUN_2_ANAEROBIC_BRC</name>
-	<name>CREW_GUN_2_ANAEROBIC_CLD</name>
-	<name>CREW_GUN_2_ANAEROBIC_POW</name>
-	<name>CREW_GUN_2_ANAEROBIC_UNI</name>
-	<name>CREW_GUN_2_CRYSTAL_PRC</name>
-	<name>CREW_GUN_2_CRYSTAL_BRC</name>
-	<name>CREW_GUN_2_CRYSTAL_CLD</name>
-	<name>CREW_GUN_2_CRYSTAL_POW</name>
-	<name>CREW_GUN_2_CRYSTAL_UNI</name>
-	<name>CREW_GUN_2_ENGI_PRC</name>
-	<name>CREW_GUN_2_ENGI_BRC</name>
-	<name>CREW_GUN_2_ENGI_CLD</name>
-	<name>CREW_GUN_2_ENGI_POW</name>
-	<name>CREW_GUN_2_ENGI_UNI</name>
-	<name>CREW_GUN_2_GHOST_PRC</name>
-	<name>CREW_GUN_2_GHOST_BRC</name>
-	<name>CREW_GUN_2_GHOST_CLD</name>
-	<name>CREW_GUN_2_GHOST_POW</name>
-	<name>CREW_GUN_2_GHOST_UNI</name>
-	<name>CREW_GUN_2_HUMAN_PRC</name>
-	<name>CREW_GUN_2_HUMAN_BRC</name>
-	<name>CREW_GUN_2_HUMAN_CLD</name>
-	<name>CREW_GUN_2_HUMAN_POW</name>
-	<name>CREW_GUN_2_HUMAN_UNI</name>
-	<name>CREW_GUN_2_ORDER_HUMAN_PRC</name>
-	<name>CREW_GUN_2_ORDER_HUMAN_BRC</name>
-	<name>CREW_GUN_2_ORDER_HUMAN_CLD</name>
-	<name>CREW_GUN_2_ORDER_HUMAN_POW</name>
-	<name>CREW_GUN_2_ORDER_HUMAN_UNI</name>
-	<name>CREW_GUN_2_KEEPER_PRC</name>
-	<name>CREW_GUN_2_KEEPER_BRC</name>
-	<name>CREW_GUN_2_KEEPER_CLD</name>
-	<name>CREW_GUN_2_KEEPER_POW</name>
-	<name>CREW_GUN_2_KEEPER_UNI</name>
-	<name>CREW_GUN_2_MAGMAN_PRC</name>
-	<name>CREW_GUN_2_MAGMAN_BRC</name>
-	<name>CREW_GUN_2_MAGMAN_CLD</name>
-	<name>CREW_GUN_2_MAGMAN_POW</name>
-	<name>CREW_GUN_2_MAGMAN_UNI</name>
-	<name>CREW_GUN_2_MANTIS_PRC</name>
-	<name>CREW_GUN_2_MANTIS_BRC</name>
-	<name>CREW_GUN_2_MANTIS_CLD</name>
-	<name>CREW_GUN_2_MANTIS_POW</name>
-	<name>CREW_GUN_2_MANTIS_UNI</name>
-	<name>CREW_GUN_2_MUSHROOM_PRC</name>
-	<name>CREW_GUN_2_MUSHROOM_BRC</name>
-	<name>CREW_GUN_2_MUSHROOM_CLD</name>
-	<name>CREW_GUN_2_MUSHROOM_POW</name>
-	<name>CREW_GUN_2_MUSHROOM_UNI</name>
-	<name>CREW_GUN_2_ORCHID_PRC</name>
-	<name>CREW_GUN_2_ORCHID_BRC</name>
-	<name>CREW_GUN_2_ORCHID_CLD</name>
-	<name>CREW_GUN_2_ORCHID_POW</name>
-	<name>CREW_GUN_2_ORCHID_UNI</name>
-	<name>CREW_GUN_2_ROCK_PRC</name>
-	<name>CREW_GUN_2_ROCK_BRC</name>
-	<name>CREW_GUN_2_ROCK_CLD</name>
-	<name>CREW_GUN_2_ROCK_POW</name>
-	<name>CREW_GUN_2_ROCK_UNI</name>
-	<name>CREW_GUN_2_SLUG_PRC</name>
-	<name>CREW_GUN_2_SLUG_BRC</name>
-	<name>CREW_GUN_2_SLUG_CLD</name>
-	<name>CREW_GUN_2_SLUG_POW</name>
-	<name>CREW_GUN_2_SLUG_UNI</name>
-	<name>CREW_GUN_2_SLIG_PRC</name>
-	<name>CREW_GUN_2_SLIG_BRC</name>
-	<name>CREW_GUN_2_SLIG_CLD</name>
-	<name>CREW_GUN_2_SLIG_POW</name>
-	<name>CREW_GUN_2_SLIG_UNI</name>
-	<name>CREW_GUN_2_SHELL_PRC</name>
-	<name>CREW_GUN_2_SHELL_BRC</name>
-	<name>CREW_GUN_2_SHELL_CLD</name>
-	<name>CREW_GUN_2_SHELL_POW</name>
-	<name>CREW_GUN_2_SHELL_UNI</name>
-	<name>CREW_GUN_2_MORPH_PRC</name>
-	<name>CREW_GUN_2_MORPH_BRC</name>
-	<name>CREW_GUN_2_MORPH_CLD</name>
-	<name>CREW_GUN_2_MORPH_POW</name>
-	<name>CREW_GUN_2_MORPH_UNI</name>
-	<name>PREIGNITE_CREW_GUN_1_PRC</name>
-	<name>PREIGNITE_CREW_GUN_1_BRC</name>
-	<name>PREIGNITE_CREW_GUN_1_UNI</name>
-	<name>PREIGNITE_CREW_GUN_2_PRC</name>
-	<name>PREIGNITE_CREW_GUN_2_BRC</name>
-	<name>PREIGNITE_CREW_GUN_2_UNI</name>
-	<name>ION_BEAM_1_PRC</name>
-	<name>ION_BEAM_1_CLD</name>
-	<name>ION_BEAM_1_POW</name>
-	<name>ION_BEAM_1_UNI</name>
-	<name>ION_BEAM_2_PRC</name>
-	<name>ION_BEAM_2_CLD</name>
-	<name>ION_BEAM_2_POW</name>
-	<name>ION_BEAM_2_UNI</name>
-	<name>DRONE_FLAK1_FIRE_PRC</name>
-	<name>DRONE_FLAK1_FIRE_BRC</name>
-	<name>DRONE_FLAK1_FIRE_CLD</name>
-	<name>DRONE_FLAK1_FIRE_UNI</name>
-	<name>DRONE_FLAK1_FIRE_ACC</name>
-	<name>BOMB_MANTIS_CLD</name>
-	<name>BOMB_MANTIS_UNI</name>
-	<name>BOMB_TOXIC_CLD</name>
-	<name>BOMB_TOXIC_UNI</name>
-	<name>LASER_SNIPER_1_PRC</name>
-	<name>LASER_SNIPER_1_BRC</name>
-	<name>LASER_SNIPER_1_CLD</name>
-	<name>LASER_SNIPER_1_POW</name>
-	<name>LASER_SNIPER_1_UNI</name>
-	<name>LASER_SNIPER_1_ACC</name>
-	<name>LASER_SNIPER_2_PRC</name>
-	<name>LASER_SNIPER_2_BRC</name>
-	<name>LASER_SNIPER_2_CLD</name>
-	<name>LASER_SNIPER_2_POW</name>
-	<name>LASER_SNIPER_2_UNI</name>
-	<name>LASER_SNIPER_2_ACC</name>
-	<name>LASER_SNIPER_3_PRC</name>
-	<name>LASER_SNIPER_3_BRC</name>
-	<name>LASER_SNIPER_3_CLD</name>
-	<name>LASER_SNIPER_3_POW</name>
-	<name>LASER_SNIPER_3_UNI</name>
-	<name>LASER_SNIPER_3_ACC</name>
-	<name>ION_BLAST_1B_PRC</name>
-	<name>ION_BLAST_1B_BRC</name>
-	<name>ION_BLAST_1B_CLD</name>
-	<name>ION_BLAST_1B_UNI</name>
-	<name>ION_BLAST_1B_ACC</name>
-	<name>BA_BEAM_HASTA_P_PRC</name>
-	<name>BA_BEAM_HASTA_P_FRC</name>
-	<name>BA_BEAM_HASTA_P_CLD</name>
-	<name>BA_BEAM_HASTA_P_UNI</name>
-	<name>BA_MINES_MEDIUM_P_FRC</name>
-	<name>BA_MINES_MEDIUM_P_BRC</name>
-	<name>BA_MINES_MEDIUM_P_CLD</name>
-	<name>BA_MINES_MEDIUM_P_UNI</name>
-	<name>BA_MINES_MEDIUM_P_ACC</name>
-	<name>BOMB_1P_FRC</name>
-	<name>BOMB_1P_CLD</name>
-	<name>BOMB_1P_UNI</name>
-	<name>BA_LASER_ARTILLERY_MINI_PRC</name>
-	<name>BA_LASER_ARTILLERY_MINI_FRC</name>
-	<name>BA_LASER_ARTILLERY_MINI_BRC</name>
-	<name>BA_LASER_ARTILLERY_MINI_CLD</name>
-	<name>BA_LASER_ARTILLERY_MINI_POW</name>
-	<name>BA_LASER_ARTILLERY_MINI_UNI</name>
-	<name>BA_LASER_ARTILLERY_MINI_ACC</name>
-	<name>BA_PLASMA_PLUS_PRC</name>
-	<name>BA_PLASMA_PLUS_FRC</name>
-	<name>BA_PLASMA_PLUS_CLD</name>
-	<name>BA_PLASMA_PLUS_UNI</name>
-	<name>BA_PLASMA_PLUS_ACC</name>
-	<name>BA_BEAM_PERNACH_P_PRC</name>
-	<name>BA_BEAM_PERNACH_P_BRC</name>
-	<name>BA_BEAM_PERNACH_P_CLD</name>
-	<name>BA_BEAM_PERNACH_P_UNI</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_BRC</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_CLD</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_POW</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_UNI</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_ACC</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_BRC</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_CLD</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_UNI</name>
-	<name>BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_ACC</name>
-	<name>BA_HEAVY_DRONE_CRYSTAL_PLAYER_BRC</name>
-	<name>BA_HEAVY_DRONE_CRYSTAL_PLAYER_CLD</name>
-	<name>BA_HEAVY_DRONE_CRYSTAL_PLAYER_UNI</name>
-	<name>BA_HEAVY_DRONE_CRYSTAL_PLAYER_ACC</name>
-	<name>JADE_CANNON_PLAYER_FRC</name>
-	<name>JADE_CANNON_PLAYER_BRC</name>
-	<name>JADE_CANNON_PLAYER_CLD</name>
-	<name>JADE_CANNON_PLAYER_POW</name>
-	<name>JADE_CANNON_PLAYER_UNI</name>
-	<name>BA_EFFECTOR_0_CLD</name>
-	<name>BA_EFFECTOR_0_UNI</name>
-	<name>LASER_BURST_6_MIMICAL_PRC</name>
-	<name>LASER_BURST_6_MIMICAL_FRC</name>
-	<name>LASER_BURST_6_MIMICAL_CLD</name>
-	<name>LASER_BURST_6_MIMICAL_UNI</name>
-	<name>LASER_BURST_6_MIMICAL_ACC</name>
-	<name>BLOOD_LASER_1_PRC</name>
-	<name>BLOOD_LASER_1_FRC</name>
-	<name>BLOOD_LASER_1_CLD</name>
-	<name>BLOOD_LASER_1_UNI</name>
-	<name>BLOOD_LASER_1_ACC</name>
-	<name>BLOOD_LASER_2_PRC</name>
-	<name>BLOOD_LASER_2_FRC</name>
-	<name>BLOOD_LASER_2_CLD</name>
-	<name>BLOOD_LASER_2_POW</name>
-	<name>BLOOD_LASER_2_UNI</name>
-	<name>BLOOD_LASER_2_ACC</name>
-	<name>BLOOD_LASER_3_PRC</name>
-	<name>BLOOD_LASER_3_FRC</name>
-	<name>BLOOD_LASER_3_CLD</name>
-	<name>BLOOD_LASER_3_POW</name>
-	<name>BLOOD_LASER_3_UNI</name>
-	<name>BLOOD_LASER_3_ACC</name>
-	<name>BLOOD_LASER_4_PRC</name>
-	<name>BLOOD_LASER_4_FRC</name>
-	<name>BLOOD_LASER_4_CLD</name>
-	<name>BLOOD_LASER_4_POW</name>
-	<name>BLOOD_LASER_4_UNI</name>
-	<name>BLOOD_LASER_4_ACC</name>
-	<name>MISSILES_PIRATE_BIGBIG_CLD</name>
-	<name>MISSILES_PIRATE_BIGBIG_UNI</name>
-	<name>MISSILES_PIRATE_BIGBIG_ACC</name>
-	<name>MISSILES_PIRATE_BIGBIG_M_CLD</name>
-	<name>MISSILES_PIRATE_BIGBIG_M_UNI</name>
-	<name>MISSILES_PIRATE_BIGBIG_M_ACC</name>
-	<!-- 1.32 -->
-	<name>MISSILES_AREM_CLD</name>
-	<name>MISSILES_AREM_UNI</name>
-	<name>MISSILES_AREM_ACC</name>
-	<name>MISSILES_AREM_2_CLD</name>
-	<name>MISSILES_AREM_2_UNI</name>
-	<name>MISSILES_AREM_2_ACC</name>
-	<name>MISSILES_AREM_3_CLD</name>
-	<name>MISSILES_AREM_3_UNI</name>
-	<name>MISSILES_AREM_3_ACC</name>
-	<name>MISSILES_AREM_M_CLD</name>
-	<name>MISSILES_AREM_M_UNI</name>
-	<name>MISSILES_AREM_M_ACC</name>
-	<name>MISSILES_AREM_2_M_CLD</name>
-	<name>MISSILES_AREM_2_M_UNI</name>
-	<name>MISSILES_AREM_2_M_ACC</name>
-	<name>MISSILES_AREM_3_M_CLD</name>
-	<name>MISSILES_AREM_3_M_UNI</name>
-	<name>MISSILES_AREM_3_M_ACC</name>
-	<name>PREIGNITE_MISSILES_AREM_UNI</name>
-	<name>PREIGNITE_MISSILES_AREM_ACC</name>
-	<name>PREIGNITE_MISSILES_AREM_2_UNI</name>
-	<name>PREIGNITE_MISSILES_AREM_2_ACC</name>
-	<name>PREIGNITE_MISSILES_AREM_3_UNI</name>
-	<name>PREIGNITE_MISSILES_AREM_3_ACC</name>
-	<name>BEAM_ANNIHILATOR_PRC</name>
-	<name>BEAM_ANNIHILATOR_CLD</name>
-	<name>BEAM_ANNIHILATOR_POW</name>
-	<name>BEAM_ANNIHILATOR_UNI</name>
-	<name>MISSILES_VAMPIRE_CLD</name>
-	<name>MISSILES_VAMPIRE_UNI</name>
-	<name>MISSILES_VAMPIRE_ACC</name>
-	<name>MISSILES_VAMPIRE_M_CLD</name>
-	<name>MISSILES_VAMPIRE_M_UNI</name>
-	<name>MISSILES_VAMPIRE_M_ACC</name>
-	<name>RICOCHET_GUN_1_PRC</name>
-	<name>RICOCHET_GUN_1_CLD</name>
-	<name>RICOCHET_GUN_1_POW</name>
-	<name>RICOCHET_GUN_1_UNI</name>
-	<name>RICOCHET_GUN_1_ACC</name>
-	<name>RICOCHET_GUN_2_PRC</name>
-	<name>RICOCHET_GUN_2_CLD</name>
-	<name>RICOCHET_GUN_2_POW</name>
-	<name>RICOCHET_GUN_2_UNI</name>
-	<name>RICOCHET_GUN_2_ACC</name>
-	<name>RICOCHET_GUN_3_PRC</name>
-	<name>RICOCHET_GUN_3_CLD</name>
-	<name>RICOCHET_GUN_3_POW</name>
-	<name>RICOCHET_GUN_3_UNI</name>
-	<name>RICOCHET_GUN_3_ACC</name>
-	<name>MISSILES_DRILL_1_CLD</name>
-	<name>MISSILES_DRILL_1_UNI</name>
-	<name>MISSILES_DRILL_1_ACC</name>
-	<name>MISSILES_DRILL_2_CLD</name>
-	<name>MISSILES_DRILL_2_POW</name>
-	<name>MISSILES_DRILL_2_UNI</name>
-	<name>MISSILES_DRILL_2_ACC</name>	
-	<name>MISSILES_DRILL_1_M_CLD</name>
-	<name>MISSILES_DRILL_1_M_UNI</name>
-	<name>MISSILES_DRILL_1_M_ACC</name>
-	<name>MISSILES_DRILL_2_M_CLD</name>
-	<name>MISSILES_DRILL_2_M_POW</name>
-	<name>MISSILES_DRILL_2_M_UNI</name>
-	<name>MISSILES_DRILL_2_M_ACC</name>	
-	<!-- 1.33 -->
-	<name>LASER_SNIPER_1P_PRC</name>
-	<name>LASER_SNIPER_1P_BRC</name>
-	<name>LASER_SNIPER_1P_CLD</name>
-	<name>LASER_SNIPER_1P_POW</name>
-	<name>LASER_SNIPER_1P_UNI</name>
-	<name>LASER_SNIPER_2P_PRC</name>
-	<name>LASER_SNIPER_2P_BRC</name>
-	<name>LASER_SNIPER_2P_CLD</name>
-	<name>LASER_SNIPER_2P_POW</name>
-	<name>LASER_SNIPER_2P_UNI</name>
-	<name>LASER_SNIPER_3P_PRC</name>
-	<name>LASER_SNIPER_3P_BRC</name>
-	<name>LASER_SNIPER_3P_CLD</name>
-	<name>LASER_SNIPER_3P_POW</name>
-	<name>LASER_SNIPER_3P_UNI</name>
-	<name>LASER_SNIPER_1PP_PRC</name>
-	<name>LASER_SNIPER_1PP_BRC</name>
-	<name>LASER_SNIPER_1PP_CLD</name>
-	<name>LASER_SNIPER_1PP_POW</name>
-	<name>LASER_SNIPER_1PP_UNI</name>
-	<name>LASER_SNIPER_2PP_PRC</name>
-	<name>LASER_SNIPER_2PP_BRC</name>
-	<name>LASER_SNIPER_2PP_CLD</name>
-	<name>LASER_SNIPER_2PP_POW</name>
-	<name>LASER_SNIPER_2PP_UNI</name>
-	<name>LASER_SNIPER_3PP_PRC</name>
-	<name>LASER_SNIPER_3PP_BRC</name>
-	<name>LASER_SNIPER_3PP_CLD</name>
-	<name>LASER_SNIPER_3PP_POW</name>
-	<name>LASER_SNIPER_3PP_UNI</name>
-	<!-- 1.33 -->	
-	<name>KERNEL_CHAIN_RDY</name>
-	<name>KERNEL_CHAIN_M_RDY</name>
-	<name>ORCHID_PROTOTYPE_1_RDY</name>
-	<name>ORCHID_PROTOTYPE_2_RDY</name>
-	<name>PHOTO_CHAINGUN_RDY</name>
-	<name>LASER_HEAVY_CHAIN_RDY</name>	<name>LASER_CHAINGUN_RDY</name>	<name>HEAVY_MINIGUN_RDY</name>	<name>LASER_CHAINGUN_HEAVY_RDY</name>	<name>LASER_AUTO_CHAIN_RDY</name>	<name>LASER_CHAIN_1_RDY</name>	<name>LASER_CHAIN_2_RDY</name>	<name>LASER_CHAIN_3_RDY</name>	<name>LASER_CHAIN_LONG_1_RDY</name>	<name>LASER_CHAIN_LONG_2_RDY</name>	<name>LASER_CHAIN_LONG_3_RDY</name>	<name>LASER_FIRE_CHAINGUN_RDY</name>	<name>LIGHT_BREACH_VULCAN_RDY</name>	<name>BA_LASER_LIGHT_CHAINGUN_RDY</name>	<name>SHOTGUN_007_RDY</name>	<name>BA_CRYSTAL_VULKAN_RDY</name>	<name>LASER_SCATTERCHAIN_RDY</name>	<name>LASER_HULLCHAIN_RDY</name>	<name>BEAM_DEEP_MINE_RDY</name>	<name>BEAM_FIRECHAIN_RDY</name>	<name>BEAM_CHAIN_BIO_RDY</name>	<name>BA_ION_VULKAN_RDY</name>	<name>BA_ION_CHAIN_MINI_RDY</name>	<name>UWB_HEAVY_MINIGUN_RDY</name>	<name>UWB_LASER_CHAINGUN_RDY</name>	<name>LASER_AL_1_RDY</name>	<name>LASER_AL_2_RDY</name>	<name>BA_BEAM_ADAPTIVE_1_RDY</name>	<name>BA_BEAM_ADAPTIVE_2_RDY</name>	<name>BA_BEAM_ADAPTIVE_3_RDY</name>	<name>MISSILES_ARU_GOLIAPH_RDY</name>	<name>MISSILES_ARU_GOLIAPH_M_RDY</name>	<name>ION_CHAINGUN_RDY</name>	<name>BA_EFFECTOR_ADAPTIVE_RDY</name>	<name>PROTOTYPE_ZOLTON_BEAM_1_RDY</name>	<name>PROTOTYPE_ZOLTON_BEAM_2_RDY</name>	<name>PROTOTYPE_ZOLTON_MISSILE_1_RDY</name>	<name>PROTOTYPE_ZOLTON_MISSILE_2_RDY</name>		
-	<!-- 1.33 -->
-	<name>REAL_ION_VULKAN_PRC</name>
-	<name>REAL_ION_VULKAN_CLD</name>
-	<name>REAL_ION_VULKAN_POW</name>
-	<name>REAL_ION_VULKAN_UNI</name>
-	<!-- 1.34 -->
-	<name>BA_BEAM_VILKA_G_PRC</name>
-	<name>BA_BEAM_VILKA_G_BRC</name>
-	<name>BA_BEAM_VILKA_G_CLD</name>
-	<name>BA_BEAM_VILKA_G_POW</name>
-	<name>BA_BEAM_VILKA_G_UNI</name>
-	<name>BA_BEAM_VILKA_V_PRC</name>
-	<name>BA_BEAM_VILKA_V_BRC</name>
-	<name>BA_BEAM_VILKA_V_CLD</name>
-	<name>BA_BEAM_VILKA_V_POW</name>
-	<name>BA_BEAM_VILKA_V_UNI</name>
-	<name>BA_MISSILES_TAU_FRC</name>
-	<name>BA_MISSILES_TAU_BRC</name>
-	<name>BA_MISSILES_TAU_CLD</name>
-	<name>BA_MISSILES_TAU_POW</name>
-	<name>BA_MISSILES_TAU_UNI</name>
-	<name>BA_MISSILES_TAU_ACC</name>
-	<name>BA_MISSILES_ASIN_FRC</name>
-	<name>BA_MISSILES_ASIN_BRC</name>
-	<name>BA_MISSILES_ASIN_CLD</name>
-	<name>BA_MISSILES_ASIN_POW</name>
-	<name>BA_MISSILES_ASIN_UNI</name>
-	<name>BA_MISSILES_ASIN_ACC</name>
-	<name>BA_MISSILES_TAU_M_FRC</name>
-	<name>BA_MISSILES_TAU_M_BRC</name>
-	<name>BA_MISSILES_TAU_M_CLD</name>
-	<name>BA_MISSILES_TAU_M_POW</name>
-	<name>BA_MISSILES_TAU_M_UNI</name>
-	<name>BA_MISSILES_TAU_M_ACC</name>
-	<name>BA_MISSILES_ASIN_M_FRC</name>
-	<name>BA_MISSILES_ASIN_M_BRC</name>
-	<name>BA_MISSILES_ASIN_M_CLD</name>
-	<name>BA_MISSILES_ASIN_M_POW</name>
-	<name>BA_MISSILES_ASIN_M_UNI</name>
-	<name>BA_MISSILES_ASIN_M_ACC</name>
-	<!-- 1.35 -->
-	<name>ZOLT_LASER_BURST_1_PRC</name>
-	<name>ZOLT_LASER_BURST_1_FRC</name>
-	<name>ZOLT_LASER_BURST_1_CLD</name>
-	<name>ZOLT_LASER_BURST_1_POW</name>
-	<name>ZOLT_LASER_BURST_1_UNI</name>
-	<name>ZOLT_LASER_BURST_1_ACC</name>
-	<name>ZOLT_LASER_BURST_2_PRC</name>
-	<name>ZOLT_LASER_BURST_2_FRC</name>
-	<name>ZOLT_LASER_BURST_2_CLD</name>
-	<name>ZOLT_LASER_BURST_2_POW</name>
-	<name>ZOLT_LASER_BURST_2_UNI</name>
-	<name>ZOLT_LASER_BURST_2_ACC</name>	
-	<name>HYBRYD_LASER_BURST_1_PRC</name>
-	<name>HYBRYD_LASER_BURST_1_FRC</name>
-	<name>HYBRYD_LASER_BURST_1_CLD</name>
-	<name>HYBRYD_LASER_BURST_1_POW</name>
-	<name>HYBRYD_LASER_BURST_1_UNI</name>
-	<name>HYBRYD_LASER_BURST_1_ACC</name>
-	<name>HYBRYD_LASER_BURST_2_PRC</name>
-	<name>HYBRYD_LASER_BURST_2_FRC</name>
-	<name>HYBRYD_LASER_BURST_2_CLD</name>
-	<name>HYBRYD_LASER_BURST_2_POW</name>
-	<name>HYBRYD_LASER_BURST_2_UNI</name>
-	<name>HYBRYD_LASER_BURST_2_ACC</name>	
-	<name>BEAM_BAGOR_PRC</name>
-	<name>BEAM_BAGOR_BRC</name>
-	<name>BEAM_BAGOR_CLD</name>
-	<name>BEAM_BAGOR_POW</name>
-	<name>BEAM_BAGOR_UNI</name>
+<!-- <blueprintList name="INJECTOR_WEAPONS">
+
+</blueprintList> --><!-- 1.36 --> <!-- Lua -->
+
+<blueprintList name="RADIO_AUG"><!-- 1.36 -->
+	<name>AUTO_COOLDOWN</name>
+	<name>SCRAP_COLLECTOR</name>
+	<name>PREIGNITE_WEAPONS</name>
 </blueprintList>
-<!-- END OF INJECTOR_WEAPONS -->
+
 <blueprintList name="ZOLTAN_AUG">
 	<name>AUTO_COOLDOWN</name>
 	<name>SCRAP_COLLECTOR</name>
@@ -7565,8 +4455,12 @@
 	<name>CRYSTAL_SHARDS</name>
 	<name>STASIS_POD</name>
 	<!-- <name>DRUNK_CREW</name> -->
+	<!-- 1.36 -->
+	<name>DOOR_WORM</name>
+	<name>PDS_ASSIST</name>	
+	<name>TRAITORATOR</name>	
 </blueprintList>
-
+<!-- усиления флагмана -->
 <blueprintList name="ADDITIONAL_REBEL_BOSS_AUGS"> <!-- 1.35 -->
 	<name>AUTO_COOLDOWN</name>
 	<name>SHIELD_RECHARGE</name>
@@ -7595,6 +4489,10 @@
 	<name>DRUNK_CREW</name>
 	<name>BONUS_SHIELD</name>
 	<name>BONUS_SHIELD_PLUS</name>
+	<!-- 1.36 -->
+	<name>TRAITORATOR</name>
+	<name>PDS_ASSIST</name>
+	<name>DOOR_WORM</name>
 </blueprintList>
 
 <blueprintList name="CAN_BE_HIDDEN_AUGS"> <!-- 1.5 -->
@@ -7662,6 +4560,11 @@
 	<name>ANTIHACKER</name>
 	<name>DRUNK_CREW</name>
 	<!-- <name>DESSHIELD</name> -->
+	<!-- 1.36 -->
+	<name>GLIF_REPAIR</name>
+	<name>MAGMAN_EXTINGUISHERS</name>
+	<name>RADIOACTIVE</name>
+	<name>DOOR_WORM</name>
 </blueprintList>
 
 
@@ -10374,6 +7277,9 @@
 	<name>BA_MINES_TECH</name>
 	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
 	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	
 	<name>MISSILES_ARU_GOLIAPH</name> <!-- 1.26.1 -->
 	<name>MISSILES_HYDRA</name>
@@ -10565,6 +7471,10 @@
 
 
 <blueprintList name="WEAPONS_REBEL"> <!-- 1.31 -->
+	<name>BA_BEAM_TRI</name><!-- 1.36 -->
+	<name>LASER_MC_1</name><!-- 1.36 -->
+	<name>LASER_MC_2</name><!-- 1.36 -->
+	<name>LASER_MC_3</name><!-- 1.36 -->
 	<name>HYBRYD_LASER_BURST_1</name><!-- 1.35 -->
 	<name>HYBRYD_LASER_BURST_2</name><!-- 1.35 -->
 	<name>LASER_CHAIN_1</name>
@@ -10639,6 +7549,7 @@
 	<name>SHOTGUN_RAND3</name><!-- 1.35 -->
 	<name>SHOTGUN_007</name>
 	<name>BA_SHOTGUN_SCATTER</name>
+	<name>BA_SHOTGUN_SCATTER_MINI</name><!-- 1.36 -->
 	<name>SHTURM_FLAK</name>
 	<name>CHARGEGUN_SHOTGUN</name>
 	<name>BA_PLASMA_3</name>
@@ -10691,6 +7602,7 @@
 	<name>BA_BEAM_PARTISAN</name><!-- 1.26 -->
 	<name>BA_BEAM_VILKA_G</name><!-- 1.34 -->
 	<name>BA_BEAM_VILKA_V</name><!-- 1.34 -->
+	<name>BA_BEAM_VILKA_ADV</name><!-- 1.36 -->
 	<name>BEAM_SP_KATANA</name>
 	<name>BEAM_BIOFIRE</name>
 	
@@ -10735,6 +7647,9 @@
 	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->	
 	<name>BA_MISSILES_TAU</name><!-- 1.34 -->
 	<name>BA_MISSILES_ASIN</name><!-- 1.34 -->
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	
 	<name>ION_STUN</name>
 	<name>ION_CHAINGUN</name>
@@ -10831,6 +7746,7 @@
 	<name>SHOTGUN_RAND3</name><!-- 1.35 -->
 	<name>SHOTGUN_007</name>
 	<name>BA_SHOTGUN_SCATTER</name>
+	<name>BA_SHOTGUN_SCATTER_MINI</name><!-- 1.36 -->
 	<name>SHTURM_FLAK</name>
 	<name>CHARGEGUN_SHOTGUN</name>
 	<name>BA_PLASMA_3</name>
@@ -10902,6 +7818,7 @@
 	<name>BA_BEAM_PARTISAN</name>
 	<name>BA_BEAM_VILKA_G</name><!-- 1.34 -->
 	<name>BA_BEAM_VILKA_V</name><!-- 1.34 -->
+	<name>BA_BEAM_VILKA_ADV</name><!-- 1.36 -->
 	<name>BEAM_SP_KATANA</name>
 	<name>BEAM_BIOFIRE</name>
 	
@@ -10944,6 +7861,9 @@
 	<name>BA_MINES_TECH</name>
 	<name>BA_MINES_MEDIUM_M2</name>
 	<name>BA_MINES_MEDIUM_M3</name>
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	
 	<name>ION_STUN</name>
 	<name>ION_CHAINGUN</name>
@@ -10965,9 +7885,39 @@
 	<name>BA_ION_BURST_2</name>
 	<name>ION_BLAST_3</name>
 	<name>BA_ION_CHAIN_MINI</name> 
+	<!-- 1.36 -->
+	<name>BAK_MISSILES_LVL0</name>
+	<name>BAK_MISSILES_LVL1</name>
+	<name>BAK_MISSILES_LVL2</name>
+	<name>BAK_MISSILES_LVL3</name>
+	<name>BAK_BEAM_LVL0</name>
+	<name>BAK_BEAM_LVL1</name>
+	<name>BAK_BEAM_LVL2</name>
+	<name>BAK_BEAM_LVL3</name>
+	<name>BAK_BOMB_LVL0</name>
+	<name>BAK_BOMB_LVL1</name>
+	<name>BAK_BOMB_LVL2</name>
+	<name>BAK_BOMB_LVL3</name>
+	<name>BAK_SHOTGUN_LVL0</name>
+	<name>BAK_SHOTGUN_LVL1</name>
+	<name>BAK_SHOTGUN_LVL2</name>
+	<name>BAK_SHOTGUN_LVL3</name>
+	<name>BAK_LASER_LVL0</name>
+	<name>BAK_LASER_LVL1</name>
+	<name>BAK_LASER_LVL2</name>
+	<name>BAK_LASER_LVL3</name>
+	
+	<name>BA_BEAM_TRI</name>
+	<name>LASER_MC_1</name>
+	<name>LASER_MC_2</name>
+	<name>LASER_MC_3</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_AUTO">
+	<name>BA_BEAM_TRI</name><!-- 1.36 -->
+	<name>LASER_MC_1</name><!-- 1.36 -->
+	<name>LASER_MC_2</name><!-- 1.36 -->
+	<name>LASER_MC_3</name><!-- 1.36 -->
 	<name>HYBRYD_LASER_BURST_1</name><!-- 1.35 -->
 	<name>HYBRYD_LASER_BURST_2</name><!-- 1.35 -->
 	<name>LASER_CHAIN_1</name>
@@ -11042,6 +7992,7 @@
 	<name>SHOTGUN_RAND3</name><!-- 1.35 -->
 	<name>SHOTGUN_007</name>
 	<name>BA_SHOTGUN_SCATTER</name>
+	<name>BA_SHOTGUN_SCATTER_MINI</name><!-- 1.36 -->
 	<name>SHTURM_FLAK</name>
 	<name>CHARGEGUN_SHOTGUN</name>
 	<name>BA_PLASMA_3</name>
@@ -11116,6 +8067,9 @@
 	<name>BA_MINES_TECH</name>
 	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
 	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	
 	<name>MISSILES_ARU_GOLIAPH</name> <!-- 1.26.1 -->
 	<name>MISSILES_HYDRA</name>
@@ -11153,6 +8107,9 @@
 </blueprintList>
 
 <blueprintList name="WEAPONS_JELLY"> <!-- 1.31 -->
+	<name>LASER_MC_1</name><!-- 1.36 -->
+	<name>LASER_MC_2</name><!-- 1.36 -->
+	<name>LASER_MC_3</name><!-- 1.36 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
@@ -11305,6 +8262,9 @@
 	<name>BA_MINES_TECH</name>
 	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
 	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	
 	<name>ION_STUN</name>
 	<name>ION_CHAINGUN</name>
@@ -11401,6 +8361,7 @@
 	<name>SHOTGUN_RAND3</name><!-- 1.35 -->
 	<name>SHOTGUN_007</name>
 	<name>BA_SHOTGUN_SCATTER</name>
+	<name>BA_SHOTGUN_SCATTER_MINI</name><!-- 1.36 -->
 	<name>SHTURM_FLAK</name>
 	<name>CHARGEGUN_SHOTGUN</name>
 	<name>BA_PLASMA_3</name>
@@ -11459,6 +8420,9 @@
 	<name>BA_MINES_TECH</name>
 	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
 	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	
 	<name>ION_STUN</name>
 	<name>ION_CHAINGUN</name>
@@ -11598,6 +8562,9 @@
 	<name>BA_MINES_TECH</name>
 	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
 	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	
 	<name>ION_STUN</name>
 	<name>ION_CHAINGUN</name>
@@ -11876,6 +8843,9 @@
 	<name>BA_MINES_TECH</name>
 	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
 	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	
 	<name>ION_STUN</name>
 	<name>ION_CHAINGUN</name>
@@ -11982,6 +8952,7 @@
 	<name>BA_BEAM_PARTISAN</name><!-- 1.26 -->
 	<name>BA_BEAM_VILKA_G</name><!-- 1.34 -->
 	<name>BA_BEAM_VILKA_V</name><!-- 1.34 -->
+	<name>BA_BEAM_VILKA_ADV</name><!-- 1.36 -->
 	<name>BEAM_SP_KATANA</name>
 	<name>BEAM_BIOFIRE</name>
 	
@@ -12024,6 +8995,9 @@
 	<name>BA_MINES_TECH</name>
 	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
 	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	
 	<name>ION_STUN</name>
 	<name>ION_CHAINGUN</name>
@@ -12532,6 +9506,10 @@
 	<name>DEIONIZATOR</name>
 	<name>DE_DRONE_DEFENSE_ALAS</name>
 	<name>DE_DRONE_DEFENSE_ALAS2</name>
+	<!-- 1.36 -->
+	<name>PROTECTOR_BEAM</name>
+	<name>PROTECTOR_BEAM2</name>
+	
 </blueprintList>
 
 <blueprintList name="DRONES_STANDARD_PLAYER">  <!-- this is just all of them -->
@@ -15018,7 +11996,7 @@
 		<cloaking power="1" max="1" room="2" start="false"/> <!-- 1.24 --> <!-- new cloak png -->
 		<medbay power="1" max="3" room="10" start="false"/>
 		<doors power="1" max="3" room="0" start="false"/>
-		<drones power="2" max="8" room="7" start="false"/>
+		<!-- <drones power="2" max="8" room="7" start="false"/> --><!-- 1.36 -->
 		<engines power="1" max="8" room="12" start="true"/>
 		<hacking power="1" max="3" room="6" start="false"/>
 		<mind power="1" max="3" room="4" start="false"/>
@@ -15034,15 +12012,16 @@
 		<weapon name="BA_ION_BURST_3"/>
 		<weapon name="BA_STUNGUN_2"/>
 	</weaponList>
-	<droneList count="2" drones="3">
+	<!-- <droneList count="2" drones="3">
 		<drone name="BOARDER"/>
 		<drone name="BOARDER_ION"/>
-	</droneList>
+	</droneList> --><!-- 1.36 --> <!-- если орудия прописаны в списке жёстко, корабельные дроны не могут появиться -->
 	<health amount="13"/>
 	<maxPower amount="16"/>
 	<crewCount amount="6" max="10" class="engi"/><!-- 1.26 -->
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ZOLTAN_BYPASS"/>
+	<aug name="HACKING_STUN"/><!-- 1.36 -->
 	<!-- <aug name="FTL_JAMMER"/> --><!-- 1.26 -->
 	<aug name="TELEPORT_HEAL"/>
 </shipBlueprint>
@@ -15728,16 +12707,16 @@
 <shipBlueprint name="CIV_GLORY_FLAGSHIP_3" layout="civ_glory_flagship_3" img="civ_glory_flagship">
 	<class>Флагман Ордена</class>
 	<systemList>
-		<artillery power="2" max="4" room="2" start="true" weapon="ARTILLERY_CIVILIAN"/><!-- 1.26.3 -->
-		<artillery power="2" max="4" room="1" start="true" weapon="ARTILLERY_CIVILIAN"/><!-- 1.26.3 -->
+		<artillery power="1" max="4" room="2" start="true" weapon="ARTILLERY_CIVILIAN"/><!-- 1.26.3 --><!-- 1.36 -->
+		<artillery power="1" max="4" room="1" start="true" weapon="ARTILLERY_CIVILIAN"/><!-- 1.26.3 --><!-- 1.36 -->
 		<cloaking power="1" max="1" room="4" start="false"/>
 		<doors power="1" max="3" room="7" start="false"/>
-		<engines power="1" max="8" room="6" start="true"/>
+		<engines power="1" max="3" room="6" start="true"/><!-- 1.36 -->
 		<medbay power="1" max="3" room="10" start="false"/>
 		<oxygen power="1" max="3" room="8" start="true"/>
 		<pilot power="1" max="3" room="0" start="true"/>
-		<shields power="4" max="10" room="3" start="true"/> <!-- 1.27 --><!-- 1.31 -->
-		<weapons power="3" max="10" room="5" start="true"/> <!-- 1.27 -->
+		<shields power="3" max="10" room="3" start="true"/> <!-- 1.27 --><!-- 1.31 --><!-- 1.36 -->
+		<weapons power="2" max="10" room="5" start="true"/> <!-- 1.27 --><!-- 1.36 -->
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -16144,6 +13123,10 @@
 	<name>JELLY_TRUFFLE</name>
 	<name>JELLY_TRUFFLE_2</name>
 	<name>JELLY_TRUFFLE_3</name>
+	<!-- 1.36 -->
+	<name>JELLY_BUTTON_PROHACK_1DW</name>
+	<name>JELLY_CROISSANT_PROHACK_1DW</name>
+	<name>JELLY_TRUFFLE_PROHACK_1DW</name>
 </blueprintList>
 
 <blueprintList name="PULSE_CANNONS">
@@ -16151,6 +13134,74 @@
 	<name>PULSE_CANNON_2</name>
 	<name>PULSE_CANNON_3</name>
 </blueprintList>
+
+<!-- 1.36 -->
+<shipBlueprint name="JELLY_BUTTON_PROHACK_1DW" layout="jelly_button_prohack_1" img="jelly_button_prohack_1">
+	<class>Перехватчик хакеров</class>
+	<systemList>
+		<engines power="1" max="8" room="3" start="true"/>
+		<hacking power="3" max="3" room="6" start="true"/>
+		<oxygen power="1" max="3" room="2" start="true"/>
+		<pilot power="1" max="3" room="5" start="true"/>
+		<shields power="2" max="8" room="0" start="true"/>
+		<weapons power="2" max="8" room="1" start="true"/>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="4" count="4" load="WEAPONS_JELLY"/>
+	<droneList drones="5" count="2"/>
+	<health amount="8"/>
+	<maxPower amount="7"/>
+	<crewCount amount="3" max="5" class="slug"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="DOOR_WORM"/>
+</shipBlueprint>
+<shipBlueprint name="JELLY_CROISSANT_PROHACK_1DW" layout="jelly_croissant_prohack_1" img="jelly_croissant_prohack_1">
+	<class>Крейсер хакеров</class>
+	<systemList>
+		<clonebay power="1" max="3" room="6" start="false"/>
+		<engines power="1" max="6" room="2" start="true"/>
+		<hacking power="2" max="3" room="7" start="true"/>
+		<oxygen power="1" max="3" room="4" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="10" room="3" start="true"/>
+		<weapons power="2" max="7" room="1" start="true"/>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="6" count="4" load="WEAPONS_JELLY"/>
+	<droneList drones="5" count="2"/>
+	<health amount="9"/>
+	<maxPower amount="7"/>
+	<crewCount amount="3" max="5" class="slug"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="DOOR_WORM"/>
+</shipBlueprint>
+<shipBlueprint name="JELLY_TRUFFLE_PROHACK_1DW" layout="jelly_truffle_prohack_1" img="jelly_truffle_prohack_1">
+	<class>Штурмовик хакеров</class>
+	<systemList>
+		<cloaking power="1" max="1" room="2" start="false"/>
+		<clonebay power="1" max="3" room="7" start="false"/>
+		<engines power="1" max="6" room="3" start="true"/>
+		<hacking power="3" max="3" room="4" start="true"/>
+		<oxygen power="1" max="3" room="6" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="10" room="5" start="true"/>
+		<weapons power="2" max="9" room="1" start="true"/>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="8" count="4" load="WEAPONS_JELLY"/>
+	<droneList drones="5" count="2"/>
+	<health amount="10"/>
+	<maxPower amount="10"/>
+	<crewCount amount="3" max="6" class="slug"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="DOOR_WORM"/>
+</shipBlueprint>
 
 <shipBlueprint name="JELLY_BUTTON_PROHACK_1" layout="jelly_button_prohack_1" img="jelly_button_prohack_1">
 	<class>Перехватчик хакеров</class>
@@ -16280,7 +13331,7 @@
 	<crewCount amount="3" max="5" class="slug"/>
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SLUG_GEL"/>
-	<aug name="HACKING_STUN"/>
+	<aug name="HACKING_STUN"/> 
 </shipBlueprint>
 
 <shipBlueprint name="JELLY_TRUFFLE_PROHACK_1" layout="jelly_truffle_prohack_1" img="jelly_truffle_prohack_1"> <!-- 1.26 --> <!-- new xml -->
@@ -18957,8 +16008,8 @@
 	<class>Пиратский крейсер</class>
 	<systemList>
 		<doors power="1" max="3" room="1" start="false"/>
-		<drones power="2" max="4" room="7" start="false"/>
-		<engines power="1" max="4" room="6" start="true"/>
+		<!-- <drones power="2" max="4" room="7" start="false"/> --><!-- 1.26 -->
+		<engines power="1" max="6" room="6" start="true"/><!-- 1.26 -->
 		<medbay power="1" max="3" room="5" start="false"/>
 		<oxygen power="1" max="3" room="4" start="true"/>
 		<pilot power="1" max="3" room="0" start="true"/>
@@ -18966,16 +16017,16 @@
 		<weapons power="3" max="10" room="3" start="true"/>
 	</systemList>
 	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
+	<droneSlots>0</droneSlots><!-- 1.26 -->
 	<weaponList missiles="10" count="4">
 		<weapon name="MISSILES_PIRATE_BIGBIG"/>
 		<weapon name="WEAPONS_CLASS_LASER_HIGH"/>
 		<weapon name="WEAPONS_CLASS_LASER_HIGH"/>
 		<weapon name="WEAPONS_CLASS_LASER_HIGH"/>
 	</weaponList>
-	<droneList drones="2" count="10" load="DRONES_REPAIR_LIST"/>
+	<!-- <droneList drones="2" count="10" load="DRONES_REPAIR_LIST"/> --><!-- 1.26 -->
 	<health amount="12"/>
-	<maxPower amount="9"/>
+	<maxPower amount="11"/><!-- 1.26 -->
 	<crewCount amount="3" max="6" class="energy"/>
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ENERGY_SHIELD"/>
@@ -21015,6 +18066,9 @@
 	<name>BA_MINES_TECH</name>
 	<name>BA_MINES_MEDIUM_M2</name>
 	<name>BA_MINES_MEDIUM_M3</name>
+	<name>GRENADE_LAUNCHER1_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER2_LINE_TARG</name><!-- 1.36 -->
+	<name>GRENADE_LAUNCHER3_LINE_TARG</name><!-- 1.36 -->
 	<name>BA_MINE_ION</name>
 </blueprintList>
 
@@ -22146,6 +19200,7 @@
 	<name>BA_BEAM_PARTISAN</name>
 	<name>BA_BEAM_VILKA_G</name><!-- 1.34 -->
 	<name>BA_BEAM_VILKA_V</name><!-- 1.34 -->
+	<name>BA_BEAM_VILKA_ADV</name><!-- 1.36 -->
 	<name>BEAM_BIOFIRE</name>
 </blueprintList>
 <blueprintList name="WEAPONS_CLASS_MISSILE_L">
@@ -25294,6 +22349,7 @@
 
 <shipBlueprint name="JELLY_SCIENCE_1" layout="jelly_science_1" img="jelly_science">
 	<class>Исследователь слагов</class>
+	<minSector>2</minSector> <!-- 1.36 -->
 	<systemList>
 		<clonebay power="1" max="3" room="4" start="false"/>
 		<engines power="1" max="5" room="5" start="true"/>
@@ -25315,6 +22371,7 @@
 </shipBlueprint>
 <shipBlueprint name="JELLY_SCIENCE_2" layout="jelly_science_2" img="jelly_science">
 	<class>Исследователь слагов</class>
+	<minSector>2</minSector> <!-- 1.36 -->
 	<systemList>
 		<engines power="1" max="5" room="5" start="true"/>
 		<mind power="1" max="3" room="4" start="false"/>
@@ -25336,6 +22393,7 @@
 </shipBlueprint>
 <shipBlueprint name="JELLY_SCIENCE_3" layout="jelly_science_3" img="jelly_science">
 	<class>Исследователь слагов</class>
+	<minSector>2</minSector> <!-- 1.36 -->
 	<systemList>
 		<engines power="1" max="5" room="5" start="true"/>
 		<mind power="1" max="3" room="6" start="false"/>
@@ -25359,6 +22417,7 @@
 
 <shipBlueprint name="JELLY_SCIENCE_1P" layout="jelly_science_1p" img="jelly_science_p">
 	<class>Исследователь пиратов</class>
+	<minSector>2</minSector> <!-- 1.36 -->
 	<systemList>
 		<clonebay power="1" max="3" room="4" start="false"/>
 		<engines power="1" max="5" room="5" start="true"/>
@@ -25380,6 +22439,7 @@
 </shipBlueprint>
 <shipBlueprint name="JELLY_SCIENCE_2P" layout="jelly_science_2p" img="jelly_science_p">
 	<class>Исследователь пиратов</class>
+	<minSector>2</minSector> <!-- 1.36 -->
 	<systemList>
 		<engines power="1" max="5" room="5" start="true"/>
 		<mind power="1" max="3" room="4" start="false"/>
@@ -25401,6 +22461,7 @@
 </shipBlueprint>
 <shipBlueprint name="JELLY_SCIENCE_3P" layout="jelly_science_3p" img="jelly_science_p">
 	<class>Исследователь пиратов</class>
+	<minSector>2</minSector> <!-- 1.36 -->
 	<systemList>
 		<engines power="1" max="5" room="5" start="true"/>
 		<mind power="1" max="3" room="6" start="false"/>
@@ -25911,6 +22972,57 @@
 	<name>MAGMAN_E1</name>
 	<name>MAGMAN_E2</name>
 </blueprintList>
+<blueprintList name="MAGMAN_ARTILLERY_SHIPS"><!-- 1.36 -->
+	<name>MAGMAN_ART1</name>
+	<name>MAGMAN_ART2</name>
+</blueprintList>
+<shipBlueprint name="MAGMAN_ART1" layout="magman_art2" img="magman_art"><!-- 1.36 -->
+	<class>Артиллерия магменов</class>
+	<systemList>
+		<artillery power="1" max="4" room="6" start="true" weapon="MAGMAN_GIGAART" />
+		<cloaking power="1" max="1" room="1" start="false" />
+		<engines power="1" max="8" room="0" start="true" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="5" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="6" count="4" load="WEAPONS_MAGMAN"/>
+	<droneList drones="5" count="0"/>
+	<health amount="8" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="5" class="magman" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="MAGMAN_EXTINGUISHERS" />
+</shipBlueprint>
+<shipBlueprint name="MAGMAN_ART2" layout="magman_art1" img="magman_art"><!-- 1.36 -->
+	<class>Артиллерия магменов</class>
+	<systemList>
+		<artillery power="1" max="4" room="6" start="true" weapon="MAGMAN_GIGAART" />
+		<engines power="1" max="8" room="0" start="true" />
+		<medbay power="1" max="3" room="2" start="false" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="5" start="true" />
+		<shields power="2" max="8" room="1" start="true" >
+			<slot>
+				<direction>up</direction>
+				<number>2</number> 
+			</slot>
+		</pilot>
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="6" count="4" load="WEAPONS_MAGMAN"/>
+	<droneList drones="5" count="0"/>
+	<health amount="8" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="5" class="magman" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="MAGMAN_EXTINGUISHERS" />
+</shipBlueprint>
 <shipBlueprint name="MAGMAN_A1" layout="magman_a1" img="magman_a">
 	<class>Разведчик магменов</class>
 	<systemList>
@@ -26800,12 +23912,12 @@
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
 <!-- 1.32 -->
-<!-- набор кораблей для контры сборки игрока -->
+<!-- набор кораблей для контры сборки игрока --><!-- 1.36 --> <!-- оставили только дефолт, остальное в Lua -->
 <blueprintList name="JELLY_TRUFFLE_AD_DEFAULT">
 	<name>JELLY_TRUFFLE_AD_DEFAULT1</name>
 </blueprintList>
 <shipBlueprint name="JELLY_TRUFFLE_AD_DEFAULT1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик D</class>
+	<class>Адаптивный штурмовик</class>
 	<systemList>
 		<pilot power="1" max="3" room="0"/>
 		<doors power="1" max="3" room="4" start="false"/>
@@ -26814,348 +23926,17 @@
 		<shields power="2" max="10" room="6"/>
 		<engines power="1" max="5" room="5"/>
 		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
+		<cloaking power="1" max="3" room="2" start="true"/>
+		<drones power="2" max="8" room="3" start="true"/>
 	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<weaponList count="4" missiles="15" load="WEAPONS_JELLY"/>
+	<droneList count="2" drones="10" load="DRONES_STANDARD"/>
 	<health amount="11"/>
 	<maxPower amount ="10"/>
 	<crewCount amount = "4" max="7" class="random"/>
 	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<aug name="AUTO_COOLDOWN"/>
-	<cloakImage>jelly_truffle</cloakImage>
 </shipBlueprint>
 
-<blueprintList name="JELLY_TRUFFLE_AD_ANTITELE_NOZLTSHIELD">
-	<name>JELLY_TRUFFLE_AD_ANTITELE_NOZLTSHIELD1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTITELE_NOZLTSHIELD1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик AT</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<doors power="1" max="3" room="4" start="false"/>
-		<drones power="2" max="8" room="7" start="true"/>
-		<hacking power="1" max="3" room="8" start="false"/>
-		<shields power="2" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<droneList count="2" drones="25">
-		<drone name="BATTLE"/>
-		<drone name="DE_BATTLE_2"/>
-	</droneList>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount="0" max="0" class="human"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<aug name="DRONE_SPEED"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTITELE_WITHZLTSHIELD">
-	<name>JELLY_TRUFFLE_AD_ANTITELE_WITHZLTSHIELD1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTITELE_WITHZLTSHIELD1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик ATZ</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<doors power="1" max="3" room="4" start="false"/>
-		<drones power="2" max="8" room="7" start="true"/>
-		<hacking power="1" max="3" room="8" start="false"/>
-		<shields power="2" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<droneList count="2" drones="25">
-		<drone name="BATTLE"/>
-		<drone name="DE_BATTLE_2"/>
-	</droneList>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount="0" max="0" class="human"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<aug name="ENERGY_SHIELD"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTIMISSILE">
-	<name>JELLY_TRUFFLE_AD_ANTIMISSILE1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIMISSILE1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик AM</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<medbay power="1" max="3" room="4" start="true"/>
-		<drones power="2" max="8" room="7" start="true"/>
-		<oxygen power="1" max="3" room="8" start="true"/>
-		<shields power="2" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<droneList count="2" drones="25" load="DRONES_DEFENSE_LIST"/>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTIION">
-	<name>JELLY_TRUFFLE_AD_ANTIION1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIION1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик AI</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<medbay power="1" max="3" room="4" start="true"/>
-		<doors power="1" max="3" room="7" start="false"/>
-		<oxygen power="1" max="3" room="8" start="true"/>
-		<shields power="3" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<aug name="ION_ARMOR"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTILASER">
-	<name>JELLY_TRUFFLE_AD_ANTILASER1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTILASER1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик AL</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<medbay power="1" max="3" room="4" start="true"/>
-		<doors power="1" max="3" room="7" start="false"/>
-		<oxygen power="1" max="3" room="8" start="true"/>
-		<shields power="3" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<aug name="SHIELD_RECHARGE"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTIAUTOCOOLDOWN">
-	<name>JELLY_TRUFFLE_AD_ANTIAUTOCOOLDOWN1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIAUTOCOOLDOWN1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик AC</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<medbay power="1" max="3" room="4" start="true"/>
-		<doors power="1" max="3" room="7" start="false"/>
-		<oxygen power="1" max="3" room="8" start="true"/>
-		<shields power="3" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SHIELD_RECHARGE"/>
-	<aug name="SHIELD_RECHARGE"/>
-	<aug name="SHIELD_RECHARGE"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTILOWCREW">
-	<name>JELLY_TRUFFLE_AD_ANTILOWCREW1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTILOWCREW1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик ALC</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<drones power="2" max="8" room="4" start="true"/>
-		<mind power="1" max="3" room="7" start="true"/>
-		<oxygen power="1" max="3" room="8" start="true"/>
-		<shields power="3" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<droneList count="4" drones="25">
-		<drone name="BOARDER"/>
-		<drone name="BOARDER_ION"/>
-		<drone name="BOARDER"/>
-		<drone name="BOARDER_ION"/>
-	</droneList>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTILOWCREW_NOION">
-	<name>JELLY_TRUFFLE_AD_ANTILOWCREW_NOION1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTILOWCREW_NOION1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик ALCNI</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<drones power="2" max="8" room="4" start="true"/>
-		<mind power="1" max="3" room="7" start="true"/>
-		<oxygen power="1" max="3" room="8" start="true"/>
-		<shields power="3" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<droneList count="4" drones="25">
-		<drone name="BOARDER"/>
-		<drone name="BOARDER"/>
-		<drone name="BOARDER"/>
-		<drone name="BOARDER"/>
-	</droneList>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-<blueprintList name="JELLY_TRUFFLE_AD_ANTILOWCREW_WITHBYPASS">
-	<name>JELLY_TRUFFLE_AD_ANTILOWCREW_WITHBYPASS1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTILOWCREW_WITHBYPASS1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик ALCWB</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<drones power="2" max="8" room="4" start="true"/>
-		<mind power="1" max="3" room="7" start="true"/>
-		<oxygen power="1" max="3" room="8" start="true"/>
-		<shields power="3" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<droneList count="4" drones="25">
-		<drone name="BOARDER"/>
-		<drone name="BOARDER_ION"/>
-		<drone name="BOARDER"/>
-		<drone name="BOARDER_ION"/>
-	</droneList>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<aug name="ZOLTAN_BYPASS"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTINOSHIELD">
-	<name>JELLY_TRUFFLE_AD_ANTINOSHIELD1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTINOSHIELD1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик ANS</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<medbay power="1" max="3" room="4" start="false"/>
-		<doors power="1" max="3" room="7" start="false"/>
-		<oxygen power="1" max="3" room="8" start="true"/>
-		<shields power="2" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="3" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_CLASS_BEAM_LOW"/>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="AUTO_COOLDOWN"/>
-	<!-- <aug name="AUTO_COOLDOWN"/> -->
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTIFIRE">
-	<name>JELLY_TRUFFLE_AD_ANTIFIRE1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIFIRE1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик AF</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<doors power="1" max="3" room="4" start="false"/>
-		<oxygen power="1" max="3" room="7"/>
-		<medbay power="3" max="3" room="8" start="true"/>
-		<shields power="2" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<health amount="12"/>
-	<maxPower amount ="11"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<aug name="FIRE_EXTINGUISHERS"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
-
-<blueprintList name="JELLY_TRUFFLE_AD_ANTIATTACKDRONES">
-	<name>JELLY_TRUFFLE_AD_ANTIATTACKDRONES1</name>
-</blueprintList>
-<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIATTACKDRONES1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
-	<class>Адаптивный штурмовик AAD</class>
-	<systemList>
-		<pilot power="1" max="3" room="0"/>
-		<drones power="2" max="8" room="4" start="true"/>
-		<mind power="1" max="3" room="7" start="true"/>
-		<oxygen power="1" max="3" room="8" start="true"/>
-		<shields power="3" max="10" room="6"/>
-		<engines power="1" max="5" room="5"/>
-		<weapons power="2" max="10" room="1"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
-	</systemList>
-	<weaponList missiles="14" load="WEAPONS_JELLY"/>
-	<droneList count="4" drones="25">
-		<drone name="ANTI_DRONE"/>
-		<drone name="ANTI_DRONE_ION"/>
-		<drone name="ANTI_DRONE"/>
-		<drone name="ANTI_DRONE_ION"/>
-	</droneList>
-	<health amount="11"/>
-	<maxPower amount="10"/>
-	<crewCount amount = "4" max="7" class="random"/>
-	<boardingAI>sabotage</boardingAI>
-	<aug name="SLUG_GEL"/>
-	<cloakImage>jelly_truffle</cloakImage>
-</shipBlueprint>
 
 <blueprintList name="BUILDINGSTATION1">
 	<name>BUILDINGSTATION_1</name>
@@ -27529,6 +24310,34 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SLUG_GEL" />
 </shipBlueprint>
+
+<blueprintList name="JELLY_PRAZDNIK3_SHIPS"><!-- 1.36 -->
+	<name>JELLY_PRAZDNIK3</name>
+</blueprintList>
+<shipBlueprint name="JELLY_PRAZDNIK3" layout="jelly_prazdnik3" img="jelly_prazdnik3">
+	<class>Не опознан</class>
+	<systemList>
+		<cloaking power="1" max="3" room="5" start="true" />
+		<doors power="1" max="3" room="6" start="true" />
+		<engines power="1" max="8" room="4" start="true" />
+		<medbay power="1" max="3" room="3" start="true" />
+		<oxygen power="1" max="3" room="7" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<weapons power="2" max="8" room="1" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="WEAPONS_JELLY" />
+	<droneList drones="5" count="0" />
+	<health amount="13" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="6" class="slug" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL" />
+	<aug name="ACCURACY_BOOST" />
+	<aug name="HP_BOOSTER_5" />
+</shipBlueprint><!-- 1.36 -->
 
 <blueprintList name="MUSHROOM_SHIPS">
 	<name>MUSHROOM_SCOUT</name>
@@ -28211,6 +25020,7 @@
 	<name>MERCHANT_REQUEST</name>
 	<name>MERCHANT_DELIVER</name>
 	<name>EVENT_QMULTI</name>
+	<name>LOT_</name><!-- 1.36 -->
 </blueprintList>
 <!-- названия ивентов (внутренние) будут проверяться на наличие этих кусочков текста <name>EVENTNAMEPART</name>, если они будут найдены как часть или целое,
 то автозамена неразрешённых орудий-дронов-усилений НЕ будет использована -->
@@ -28392,5 +25202,58 @@
 	<name>TULLY_BOX</name>
 </blueprintList>
 
+<!-- 1.36 -->
+
+<blueprintList name="SHIPS_PIRATE_TRAITORATOR">
+	<name>MANTIS_BOMBER_P_TR</name>
+</blueprintList>
+<shipBlueprint name="MANTIS_BOMBER_P_TR" layout="mantis_bomber_pirate" img="mantis_bomber_pirate">
+	<class>Пиратский агрессор</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="10" start="false"/>
+		<oxygen power="1" max="3" room="5"/>
+		<medbay power="1" max="3" room="4" start="false"/>
+		<teleporter power="1" max="2" room="3"/>
+		<shields power="2" max="8" room="7"/>
+		<engines power="1" max="5" room="11"/>
+		<weapons power="2" max="8" room="6"/>
+		<mind power="1" max="3" room="8" start="true"/>
+	</systemList>
+	<weaponList missiles="8" load="WEAPONS_MANTIS"/>
+	<health amount="11"/>	
+	<maxPower amount="11"/>
+	<crewCount amount="3" max="6" class="random"/>
+	<aug name="MIND_ORDER"/>
+	<aug name="TRAITORATOR"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<blueprintList name="FED_TRRAD_SHIPS">
+	<name>FED_TRRAD</name>
+</blueprintList>
+<shipBlueprint name="FED_TRRAD" layout="fed_trrad" img="fed_trrad">
+	<class>Транспорт РАО</class>
+	<systemList>
+		<cloaking power="1" max="1" room="7" start="false"/>
+		<weapons power="2" max="8" room="3" start="true" />
+		<doors power="1" max="3" room="2" start="false"/>
+		<drones power="1" max="3" room="8" start="false" />
+		<engines power="1" max="4" room="9" start="true"/>
+		<medbay power="1" max="3" room="5" start="false"/>
+		<oxygen power="1" max="3" room="1" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="3" max="8" room="4" start="true"/>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="5" load="WEAPONS_FED"/>
+	<droneList drones="5" load="DRONES_DEFENSE_ENEMY"/>
+	<health amount="11"/>
+	<maxPower amount="11"/>
+	<crewCount amount="5" max="8" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="RADIOACTIVE"/>
+</shipBlueprint>
 
 </FTL>

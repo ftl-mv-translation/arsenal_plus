@@ -70,6 +70,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<event load="PIRATE_NO_ESCAPE"/>
 	<event load="PIRATE_PULSAR"/>
 	<event load="OXYGEN_FIGHT"/><!-- 1.35 -->
+	<event load="PSEVDO_REPAIR_REBEL"/><!-- 1.36 -->
 </eventList>
 
 
@@ -102,6 +103,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	
 	<event load="ENGI_HARDPOINT"/>
 	<event load="EVENT_MEET_ARTILLERY_MASTERS"/><!-- 1.35 -->
+	<event load="EVENT_ENGI_GIVE_MAX_HULL"/><!-- 1.36 -->
 </eventList>
 
 <eventList name="DISTRESS_BEACON_ENGI">
@@ -262,8 +264,36 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 </event> -->
 
+<event name="PSEVDO_REPAIR_REBEL"><!-- 1.36 -->
+	<repair/>
+	<text>Вместо ремонтной станции вы видите враждебный корабль... «А вот и он, наивный федерал, который надеется на ремонт! Заряжайте орудия!»</text>
+	<ship load="PMR_SHIP_REPAIR" hostile="true"/>
+</event>
+<ship name="PMR_SHIP_REPAIR" auto_blueprint="SHIPS_REBEL">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
 
-
+<!-- событие инжи укрепляют корабль --> <!-- 1.36 -->
+<event name="EVENT_ENGI_GIVE_MAX_HULL" unique="true">
+	<repair/>
+	<text>Инжи на базе возле маяка предлагают вам починить и усилить корабль.</text>
+	<choice hidden="false">
+		<text>Согласиться [полный ремонт и +2 максимальная прочность корпуса].</text> <!-- есть тех.необходимость это делать совместно с полным ремонтом -->
+		<event load="EVENT_ENGI_GIVE_MAX_HULL_OPERATOR02"/>
+	</choice>
+	<choice hidden="true">
+		<text>Отказаться и поговорить с экипажем пока заряжается FTL-привод.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
+</event>
+<event name="EVENT_ENGI_GIVE_MAX_HULL_OPERATOR02">
+	<text>Инжи усиливают часть внутренних несущих конструкций корабля и приваривают несколько новых. Это должно помочь.</text>
+	<item_modify>
+		<item type="scrap" min="-30" max="-15"/>
+	</item_modify>
+	<damage amount="-100"/>
+</event>
 
 <event name="ENGI_SURRENDER" unique="true">
 	<text>Находящийся поблизости крейсер инжи наблюдает ваше прибытие. Увидев ваш вооружённый до зубов корабль, их капитан немедленно сообщает о капитуляции: «Цель субъекта: благосостояние. Мотивация инжи: выживание. Передача припасов приемлема?»</text>
@@ -9313,7 +9343,7 @@ Date: 03/12/18
 	<choice hidden="true">
 		<text>Спросить, что им надо.</text>
 		<event>
-			<text>Орхиды сообщают: «Мы собрали огромную партию биологических образцов и теперь хотим доставить контейнер на родную планету. Однако, нам также нужно закончить исследования здесь. Сможете доставить биологически ценный груз?»</text>
+			<text>Орхиды сообщают: «Мы собрали огромную партию биологических образцов и теперь хотим доставить контейнер на родную планету. Однако нам также нужно закончить исследования здесь. Сможете доставить биологически ценный груз?»</text>
 			<choice hidden="false">
 				<text>Согласиться.</text>
 				<event>
@@ -9977,7 +10007,7 @@ Date: 03/12/18
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Поговорить с экипажем пока заряжается FTL-привод.</text>
+		<text>Поговорить с экипажем, пока заряжается FTL-привод.</text>
 		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
@@ -10026,7 +10056,7 @@ Date: 03/12/18
 	</deadCrew>
 </ship>
 <event name="EVENT_ADD_INNER_AI_TO_SHIP">
-	<text>Робототехники благодарят вас, хотя они не могут многого предложить, они готовы установить резервный искуственный интеллект на ваш корабль.</text>
+	<text>Робототехники благодарят вас, хотя они не могут многого предложить, они готовы установить резервный искусственный интеллект на ваш корабль.</text>
 	<choice hidden="true" req="prinuditelno_autoship" lvl="1" max_group="0" blue="false">
 		<text>Пусть загрузят резервный ИИ (корабль уже имеет ИИ).</text>
 		<event load="NOT_AVAILABLE"/>
@@ -10044,5 +10074,106 @@ Date: 03/12/18
 </event>
 <event name="EVENT_ADD_INNER_AI_TO_SHIP_PROCESS">
 	<text>Загрузка проходит успешно, и вы готовитесь отправляться дальше.</text>
+</event>
+
+<!-- 1.36 -->
+<!-- событие легендарного морфа -->
+<event name="EVENT_LEG_MORPH" unique="true">
+	<text>Корабль морфов присылает сообщение: "0? 1?"</text>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<choice hidden="true">
+		<text>Отправить "0".</text>
+		<event load="EVENT_LEG_MORPH_R"/>
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="EVENT_LEG_MORPH_2"/>
+	</choice>
+	<choice hidden="true">
+		<text>Атаковать их.</text>
+		<event>
+			<text>Морфы видят ваши действия и тоже готовятся к бою.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ничего не отвечать и поговорить с экипажем, пока заряжается FTL-привод.</text>
+		<event>
+			<text>Не получив ответ, морфы заряжают орудия. Не время для разговоров!</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+<event name="EVENT_LEG_MORPH_2">
+	<text>Они спрашивают снова: "1? 0?"</text>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<choice hidden="true">
+		<text>Отправить "0".</text>
+		<event load="EVENT_LEG_MORPH_3"/>
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="EVENT_LEG_MORPH_R"/>
+	</choice>
+	<choice hidden="true">
+		<text>Атаковать их.</text>
+		<event>
+			<text>Морфы видят ваши действия и тоже готовятся к бою.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ничего не отвечать и поговорить с экипажем, пока заряжается FTL-привод.</text>
+		<event>
+			<text>Не получив ответ, морфы заряжают орудия. Не время для разговоров!</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+<event name="EVENT_LEG_MORPH_3">
+	<text>Они опять спрашивают: "0?"</text>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<choice hidden="true">
+		<text>Отправить "0".</text>
+		<event load="EVENT_LEG_MORPH_R"/>
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="EVENT_LEG_MORPH_4"/>
+	</choice>
+	<choice hidden="true">
+		<text>Атаковать их.</text>
+		<event>
+			<text>Морфы видят ваши действия и тоже готовятся к бою.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ничего не отвечать и поговорить с экипажем, пока заряжается FTL-привод.</text>
+		<event>
+			<text>Не получив ответ, морфы заряжают орудия. Не время для разговоров!</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+<event name="EVENT_LEG_MORPH_4">
+	<loadEventList seeded="true" first="false" generate="false">
+		<event>
+			<text>Морфы присылают вам улыбающийся смайлик, собранный из символов ANSI. А к команде присоединяется легендарный морф с их корабля.</text>
+			<crewMember amount="1" all_skills="2" class="morph_legendary">Коротыш</crewMember>
+		</event>
+	</loadEventList>
+</event>
+<event name="EVENT_LEG_MORPH_R">
+	<loadEventList seeded="true" first="false" generate="false">
+		<event>
+			<text>Несмотря на ваш ответ, морфы заряжают орудия.</text>
+			<ship hostile="true"/>
+		</event>
+		<event>
+			<text>Морфы присылают вам улыбающийся смайлик, собранный из символов ANSI. А к команде присоединяется легендарный морф с их корабля.</text>
+			<crewMember amount="1" all_skills="2" class="morph_legendary">Коротыш</crewMember>
+		</event>
+	</loadEventList>
 </event>
 </FTL>

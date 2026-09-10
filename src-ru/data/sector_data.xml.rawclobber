@@ -632,11 +632,11 @@ CIVILIAN SECTORS
 		<name id="sectorname_MORPH_HOME" short="sectorname_short_MORPH_HOME"/>
 	</nameList>
 	<trackList>
-		<track>Mara</track><!-- 1.34 -->
-		<track>engi</track>
+		<track>Machines</track><!-- 1.36 -->
+		<!-- <track>engi</track>
 		<track>calm</track>
 		<track>cosmos</track>
-		<track>hacking</track>
+		<track>hacking</track> -->
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="1"/>
@@ -670,6 +670,7 @@ CIVILIAN SECTORS
 		<blueprint name="MORPH_STABILIZER" rarity="1"/>
 	</rarityList>
 	<startEvent>START_BEACON_MORPH</startEvent>
+	<event name="EVENT_LEG_MORPH" min="1" max="1"/> <!-- 1.36 -->
 	<event name="MORPH_PRO_EVENT" min="1" max="1"/>
 	<event name="SWORDFISH_EVENT" min="1" max="1"/>
 	<event name="NEBULA_HOME_REPAIRMENGI_EVENT" min="1" max="1"/>
@@ -679,7 +680,7 @@ CIVILIAN SECTORS
 	<event name="ITEMS_MORPH" min="1" max="1"/>
 	<event name="DISTRESS_BEACON_MORPH" min="2" max="2"/>
 	<event name="QUESTS_MORPH" min="1" max="3"/>
-	<event name="NEUTRAL_MORPH" min="3" max="5"/>
+	<event name="NEUTRAL_MORPH" min="2" max="4"/> <!-- 1.36 -->
 	<event name="HOSTILE_MORPH" min="2" max="4"/>
 	<event name="NEBULA_MORPH_2" min="6" max="6"/> <!-- 1.27.1 -->
 </sectorDescription>
@@ -2419,6 +2420,14 @@ HIDDEN SECTORS
 		<!-- 1.33 -->
 		<blueprint name="LASER_SNIPER_1" rarity="0"/>
 		<blueprint name="LASER_SNIPER_2" rarity="0"/>
+		<!-- 1.36 -->
+		<blueprint name="LASER_MC_1" rarity="0"/>
+		<blueprint name="LASER_MC_2" rarity="0"/>
+		<blueprint name="BEAM_BAGOR" rarity="0"/>
+		<blueprint name="HYBRYD_LASER_BURST_1" rarity="0"/>
+		<blueprint name="HYBRYD_LASER_BURST_2" rarity="0"/>
+		<blueprint name="SHOTGUN_RAND1" rarity="0"/>
+		<blueprint name="SHOTGUN_RAND2" rarity="0"/>
 	</rarityList>
 	<startEvent>START_BEACON_CRYSTAL</startEvent>
 	<event name="STORE_CRYSTAL" min="2" max="3"/>

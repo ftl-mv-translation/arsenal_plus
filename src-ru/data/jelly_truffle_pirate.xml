@@ -8,9 +8,9 @@
 <!-- Only used for iPad -->
 <glowOffset x="40" y="40" />
 
-<offsets>
+<!-- <offsets>
 	<cloak x="32" y="32" />
-</offsets>
+</offsets> -->
 <thrusters sync="true">
 	<thruster x="51" y="263">enemy_slug_thruster1</thruster>
 	<thruster x="58" y="268">enemy_slug_thruster1</thruster>

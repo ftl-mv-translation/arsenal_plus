@@ -57,6 +57,7 @@ Boarders:
 	<event load="NANITE_FIELD_PIRATE"/><!-- 1.31 -->
 	<event load="CONTR_FIGHT"/><!-- 1.32 -->
 	<event load="ROCK_JAIL"/><!-- 1.35 -->
+	<event load="EVENT_PIRATE_GLIF_FIGHT"/><!-- 1.36 -->
 </eventList>
 
 
@@ -1308,8 +1309,44 @@ Boarders:
 	</event>
 </eventList>
 
+<!-- 1.36 -->
 
-
-
+<event name="EVENT_PIRATE_GLIF_FIGHT" unique="true">
+	<loadEventList seeded="true" first="true" generate="false">
+		<event req="player_got_glifgun_this_run" lvl="1">
+			<text>Выскочивший из засады пират возле маяка несётся прямо на вас!</text>
+			<ship load="NOGLIF_ENEMY_PARAM" hostile="true"/>
+			<choice>
+				<text id="continue"/>
+				<event/>
+			</choice>
+		</event>
+		<event>
+			<text>Выскочивший из засады пират возле маяка решает испытать на вас какое-то странное орудие!</text>
+			<ship load="GLIF_ENEMY_PARAM" hostile="true"/>
+			<choice>
+				<text id="continue"/>
+				<event/>
+			</choice>
+		</event>
+	</loadEventList>
+</event>
+<ship name="GLIF_ENEMY_PARAM" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>Корабль уничтожен. Собрав обломки, вы отмечаете, что необычное орудие пирата не уцелело...</text>
+		<autoReward level="RANDOM">stuff</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Экипаж корабля уничтожен, и вы выгребаете всё ценное из его трюма... Вы замечаете, что необычное орудие пирата не подлежит восстановлению после боя...</text>
+		<autoReward level="RANDOM">standard</autoReward>
+	</deadCrew>
+	<weaponOverride count="1">
+		<name>GLIF_GUN</name>
+	</weaponOverride>
+</ship>
+<ship name="NOGLIF_ENEMY_PARAM" auto_blueprint="SHIPS_PIRATE">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
 
 </FTL>

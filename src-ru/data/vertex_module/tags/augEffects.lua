@@ -61,37 +61,70 @@ local function logic()
     local possibleValues = {}
     
     local function get_aug_bonus(system, equipmentInfo, augName)
-        local augBonusValue = 0
+        local augBonusValue = 0.0
         if system then
             for equipment in vter(system) do
                 for _, augEffect in ipairs(equipmentInfo[equipment.blueprint.name]["augEffects"]) do
                     if augEffect.effect == augName and (not augEffect.needsPower or equipment.powered) then
                         local effectAmount = augEffect.amount
                         if augEffect.chargeScaling and equipment.blueprint:GetType() == 0 then
-                            effectAmount = effectAmount*(equipment.chargeLevel/math.max(equipment.weaponVisual.iChargeLevels, 1))
+							--тут получается задумано что это будет зарядное орудие
+							--допустим на заряжено на 2 из 5 единиц, т.е. эффект будет 40% от указанного
+							--исходный механизм не подразумевал использование полоски заряда орудия
+							effectAmount = effectAmount*(equipment.chargeLevel/math.max(equipment.weaponVisual.iChargeLevels, 1))
+							
+							--специальный фикс KBA3u для тактического утилизатора, который работал не как написано было
+							if augName == "EXPLOSIVE_REPLICATOR" then
+								if effectAmount == 0.0 then
+									effectAmount = equipment.cooldown.first/equipment.cooldown.second
+									--print('fix'..effectAmount)
+								end
+							end
                         end
+						
+						
+						
+						
                         if augEffect.nostack then
                             table.insert(possibleValues, effectAmount)
                         else
                             augBonusValue = augBonusValue + effectAmount
                         end
+						
+						-- if augName == "EXPLOSIVE_REPLICATOR" then
+							-- print('abv='..augBonusValue)
+						-- end
                     end
                 end
             end
         end
+		
         return augBonusValue
     end
     
     script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE, function(shipManager, augName, augValue)
-        local weapons, drones
+        local weapons
+		local drones
         
-        pcall(function() weapons = shipManager.weaponSystem.weapons end)
-        pcall(function() drones = shipManager.droneSystem.drones end)
-        
+        --pcall(function() weapons = shipManager.weaponSystem.weapons end)
+        --pcall(function() drones = shipManager.droneSystem.drones end)
+        if shipManager then
+			if shipManager.weaponSystem and shipManager.weaponSystem.weapons then
+				weapons = shipManager.weaponSystem.weapons
+			end
+			if shipManager.droneSystem and shipManager.droneSystem.drones then
+				drones = shipManager.droneSystem.drones
+			end
+		end
+		
         local total = augValue + get_aug_bonus(weapons, weaponInfo, augName) + get_aug_bonus(drones, droneInfo, augName)
         augValue = math.max(total, table.unpack(possibleValues))
         for i in ipairs(possibleValues) do possibleValues[i] = nil end
-        
+		
+		-- if augName == "EXPLOSIVE_REPLICATOR" then
+			-- print('result='..augValue)
+		-- end
+		
         return Defines.Chain.CONTINUE, augValue
     end)
 end

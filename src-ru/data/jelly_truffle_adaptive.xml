@@ -8,9 +8,9 @@
 <!-- Only used for iPad -->
 <glowOffset x="40" y="40"/>
 
-<offsets>
+<!-- <offsets>
 	<cloak x="32" y="32"/>
-</offsets>
+</offsets> -->
 
 <weaponMounts>
 	<mount x="150" y="54" rotate="false" mirror="true" gib="3" slide="left"/>

@@ -1,6 +1,10 @@
-local game_version = "Arsenal+ v1.35"
+local game_version = "Arsenal+ v1.36"
 
-
+local gameOver = false
+local timer_real = 0
+local timer_real_saved = 0
+local timer_ingame = 0
+local timer_ingame_saved = 0
 
 local vter = function(cvec) --Taken from Vertex
 	local i = -1 -- so the first returned value is indexed at zero
@@ -146,6 +150,41 @@ local vter18 = function(cvec18)
 		if i < n then return cvec18[i] end
 	end
 end
+local vter19 = function(cvec19)
+	local i = -1
+	local n = cvec19:size()
+	return function()
+		i = i + 1
+		if i < n then return cvec19[i] end
+	end
+end
+
+
+local vter20 = function(cvec20)
+	local i = -1
+	local n = cvec20:size()
+	return function()
+		i = i + 1
+		if i < n then return cvec20[i] end
+	end
+end
+
+local vter97 = function(cvec97)
+	local i = -1
+	local n = cvec97:size()
+	return function()
+		i = i + 1
+		if i < n then return cvec97[i] end
+	end
+end
+local vter98 = function(cvec98)
+	local i = -1
+	local n = cvec98:size()
+	return function()
+		i = i + 1
+		if i < n then return cvec98[i] end
+	end
+end
 local vter99 = function(cvec99)
 	local i = -1
 	local n = cvec99:size()
@@ -164,13 +203,98 @@ local world = nil--Hyperspace.App.world
 local map = nil--Hyperspace.App.world.starMap
 local cur_sector = nil--Hyperspace.App.world.starMap.currentSector
 local pos = nil
+local playerPowerManager = nil --Hyperspace.PowerManager.GetPowerManager(0)
 
 -- я ввожу массив для хранения переменных...
 -- обращаться через varr.имя_переменной
 local varr = {
 
+--eff_time = 0.0,
+--sloknog_layerColors = nil,
+
+
+--массивы памяти слотов и направлений компьютеров на корабле врага. нужно для 3 лвл беспилотов.
+enemy_slot_arr ={},--[shields]=0
+enemy_dir_arr ={},--[shields]=2
+
+
+computer1_glow3 = Hyperspace.Resources:CreateImagePrimitiveString("ship/interior/computer1_glow3.png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false),
+
+hitted_crew_arr = {},
+--test_point_player = Hyperspace.Pointf(0,0),
+--test_point_player2 = Hyperspace.Pointf(0,0),
+
+room_danger_arr = {[0]=0},
+
+bPressedBACKSPACE = false,
+bPressedRCtrl = false,
+bPressedLCtrl = false,
+bPressedLMB = false,
+bPressedLMB_previous = false,
+
+
+radius_target_locking = 300,
+radius_target_locking2 = 400,
+fCountOfSecWithBeam = 0.0,
+targ_proj = nil, --объект для хранения цели-снаряда
+protector_shooting_now = nil,
+fCountOfSecWithBeam_en = 0.0,
+targ_proj_en = nil, --объект для хранения цели-снаряда
+protector_shooting_now_en = nil,
+protector_beam_target = Hyperspace.Resources:CreateImagePrimitiveString("misc/protector_beam_target.png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false),
+protector_beam_line = Hyperspace.Resources:CreateImagePrimitiveString("misc/protector_beam_line.png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false),
+protector_beam_glow = Hyperspace.Resources:CreateImagePrimitiveString("misc/protector_beam_glow.png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false),
+protector_beam_glow2 = Hyperspace.Resources:CreateImagePrimitiveString("misc/protector_beam_glow2.png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false),
+
+
+scroll_mouse_detector = 0,
+
+current_real_game_minute = 0,
+current_real_game_minute_previous = 0,
+
+store_imitation = Hyperspace.Resources:CreateImagePrimitiveString("map/store_imitation.png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false),
+
+legendary_morph_name = Hyperspace.Text:GetText('lua_legendary_morph_name'),
+
+bDoneCrewRestoreCheck = false,
+
+timerBox = Hyperspace.Resources:CreateImagePrimitiveString("statusUI/FTL_timer.png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false),
+ftl_timer_jtq_backgroundX = 545,-- Coordinates of the background element
+ftl_timer_jtq_backgroundY = 39,
+ftl_timer_jtq_textX = 572,-- Coordinates of the text
+ftl_timer_jtq_textY = 43,--39
+ftl_timer_jtq_textColor = "EBF5E5",-- Default text color
+ftl_timer_jtq_textNoChargeColor = "9C9292",-- Text color when not charging due non-functional engines or unmanned piloting
+ftl_timer_jtq_textNoEnginesColor = "FD5446",-- Text color when engines are completely destroyed
+ftl_timer_jtq_textFont = 62,-- Text font
+button_microswitcher_0_on = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/button_microswitcher_0_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_microswitcher_1_on = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/button_microswitcher_1_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_microswitcher_0_select2 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/button_microswitcher_0_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_microswitcher_1_select2 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/button_microswitcher_1_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_microswitcher_Box = {x = 612+5, y = 1, w = 9, h = 22},
+show_ftl_timer_ready = false,
+
+
+bOpenedTabPanelNow = false,
+
+local_list_WEAPONS_DONT_ALLOW_TO_COPY,--локальная копия списка из автоблюпринта, нужна чтобы снизить кол-во обращений каждый тик туда.
+local_list_WEAPONS_HIDE_CHARGE_BAR, 
+local_list_LIST_OF_EVENT_MARKERS_DONT_USE_AUTOREPLACE,
+local_list_CAN_BE_HIDDEN_AUGS,
+
+
+tutorial_arrow = Hyperspace.Resources:CreateImagePrimitiveString('tutorial/arrow.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+
+enemy_hack_target = Hyperspace.Resources:CreateImagePrimitiveString('effects/enemy_hack_target.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+
+iCurrentPlayerDoorLvl = 0,
+
+--bEnemyHasIonizedSysShields = false,
+count_of_tick_tp_waiter = 0.0,
+
 bEnemyHasPreparedZoltLaserBurst = false,
-iEnemyCountOfWaitingBeams = 0,
+iEnemyCountOfWaitingBeams = 0, -- кол-во вражеских ждущих лучей
+iEnemyCountOfWaitingPP = 0, -- кол-во вражеских ждущих противопехов
 
 PlaySoundMix_volume = 10,
 PlaySoundMix_string = "",
@@ -185,6 +309,7 @@ crew_array_previous = {["human"]=0},
 
 bNeededChangeLang = false,
 
+arr_of_glif_effects = {[0]={code="", adder=""}},
 
 line_base = {
 -- схема кодировок направлений
@@ -302,16 +427,16 @@ line_base = {
 [63]={code="6643154", adder="ADD_STUN05"},
 
 
---  __ __ \
---       \/
-[64]={code="22316", adder="ADD_SP01"},
-[65]={code="34655", adder="ADD_SP01"},
+--  __ \
+--    \/
+[64]={code="2316", adder="ADD_SP01"},
+[65]={code="3465", adder="ADD_SP01"},
 
 
--- __ __ __ \
---         \/
-[66]={code="222316", adder="ADD_SP02"},
-[67]={code="346555", adder="ADD_SP02"},
+-- __ __ \
+--      \/
+[66]={code="22316", adder="ADD_SP02"},
+[67]={code="34655", adder="ADD_SP02"},
 
 
 --  /\
@@ -480,9 +605,9 @@ line_base = {
 -- /_/
 [180]={code="2442112", adder="ADD_STEALCREW"},
 [181]={code="5445115", adder="ADD_STEALCREW"},
---   ___
---  /   \
--- /_____\
+
+--  ___
+-- /___\
 [182]={code="12355", adder="ADD_SYSDAMAGE1"},
 [183]={code="23551", adder="ADD_SYSDAMAGE1"},
 [184]={code="35512", adder="ADD_SYSDAMAGE1"},
@@ -513,16 +638,139 @@ line_base = {
 [201]={code="4421354", adder="ADD_SYSDAMAGE2"},
 [202]={code="1135511", adder="ADD_SYSDAMAGE2"},
 [203]={code="1264566", adder="ADD_SYSDAMAGE2"},
+
+--         __
+--        /
+--       /
+--      /
+--     /
+--    /
+-- __/
+[204]={code="21111112", adder="ADD_EVASION10"},
+[205]={code="54444445", adder="ADD_EVASION10"},
+
+--  /
+--  \
+--  /\
+--  \/
+[206]={code="433461", adder="ADD_SMALL_BOMB"},
+[207]={code="434316", adder="ADD_SMALL_BOMB"},
+[208]={code="346161", adder="ADD_SMALL_BOMB"},
+[209]={code="431661", adder="ADD_SMALL_BOMB"},
+
+--  __ 
+-- /  \
+-- \   \
+--  \__/
+--
+[210]={code="66123345", adder="ADD_DAMAGE02"},
+[211]={code="61233456", adder="ADD_DAMAGE02"},
+[212]={code="12334566", adder="ADD_DAMAGE02"},
+[213]={code="23345661", adder="ADD_DAMAGE02"},
+[214]={code="33456612", adder="ADD_DAMAGE02"},
+[215]={code="34566123", adder="ADD_DAMAGE02"},
+[216]={code="45661233", adder="ADD_DAMAGE02"},
+[217]={code="56612334", adder="ADD_DAMAGE02"},
+[218]={code="33216654", adder="ADD_DAMAGE02"},
+[219]={code="32166543", adder="ADD_DAMAGE02"},
+[220]={code="21665433", adder="ADD_DAMAGE02"},
+[221]={code="16654332", adder="ADD_DAMAGE02"},
+[222]={code="66543321", adder="ADD_DAMAGE02"},
+[223]={code="65433216", adder="ADD_DAMAGE02"},
+[224]={code="54332166", adder="ADD_DAMAGE02"},
+[225]={code="43321665", adder="ADD_DAMAGE02"},
+
+
+--   /
+-- __\
+[226]={code="261", adder="OXYGEN_FILL"},
+[227]={code="435", adder="OXYGEN_FILL"},
+
+
+--   \   /
+--    \./
+--    /_\
+[228]={code="3335111", adder="SET_SP10"},
+[229]={code="3342611", adder="SET_SP10"},
+[230]={code="4442666", adder="SET_SP10"},
+[231]={code="4435166", adder="SET_SP10"},
+
+-- \/\
+--   /
+--   \
+[232]={code="31343", adder="ADD_ASIN"},
+[233]={code="61646", adder="ADD_ASIN"},
+
+--    /\/
+--    \ \
+--     \/
+[234]={code="4643316", adder="ADD_TAU"},
+[235]={code="4346613", adder="ADD_TAU"},
+[236]={code="3166131", adder="ADD_TAU"},
+[237]={code="6433161", adder="ADD_TAU"},
+
+-- __ __ __ __
+--         __/
+--      __/
+[238]={code="22224545", adder="ADD_EMPTY_TELEPORT"},
+[239]={code="21215555", adder="ADD_EMPTY_TELEPORT"},
+
+
+--    /\
+--      \
+--    __/
+[240]={code="13345", adder="REMOVE_HDAMAGE01"},
+[241]={code="21664", adder="REMOVE_HDAMAGE01"},
+
+
+--    ____
+--    \__/
+--     \/
+[242]={code="2155331", adder="SPAWN_MANTIS"},
+[243]={code="2466224", adder="SPAWN_MANTIS"},
+[244]={code="5622446", adder="SPAWN_MANTIS"},
+[245]={code="5311553", adder="SPAWN_MANTIS"},
+[246]={code="4621553", adder="SPAWN_MANTIS"},
+[247]={code="4662245", adder="SPAWN_MANTIS"},
+[248]={code="3115532", adder="SPAWN_MANTIS"},
+[249]={code="3156224", adder="SPAWN_MANTIS"},
+[250]={code="6224531", adder="SPAWN_MANTIS"},
+[251]={code="6224462", adder="SPAWN_MANTIS"},
+[252]={code="1553315", adder="SPAWN_MANTIS"},
+[253]={code="1553246", adder="SPAWN_MANTIS"},
+
+--    __ .
+-- /\/  /_\
+[254]={code="4265464", adder="ADD_MIND_CONTROL"},
+[255]={code="3515464", adder="ADD_MIND_CONTROL"},
+[256]={code="1312426", adder="ADD_MIND_CONTROL"},
+[257]={code="1312351", adder="ADD_MIND_CONTROL"},
+
+--   .
+--  /_\
+-- /\_
+[258]={code="113532", adder="ADD_HACKING"},
+[259]={code="126432", adder="ADD_HACKING"},
+[260]={code="562644", adder="ADD_HACKING"},
+[261]={code="561354", adder="ADD_HACKING"},
+
+
+
+-- схема кодировок направлений
+--      6   1
+--       \ /
+--    5-— . —-2
+--       / \
+--      4   3
 },
 bNeededChangeEnemyGlifLine = false,
 info_glif_name = "",
 info_glif_desc = "",
 iMaxCountOfBrockenGlifPoints = 10,
 iNeededMorganieID = -1,
+iNeededMorganieID2 = -1,
 iNeededMorganieTimer = 0,
 g_mouse_pos = nil,
-bPressedLMB = false,
-bPressedLMB_previous = false,
 bOpenedGlifPanel = false,
 bDrawLineMode = false,
 strFullGlifLine = "",
@@ -530,8 +778,8 @@ enemy_strFullGlifLine = "",
 glif_lamp_off = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_lamp_off.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 glif_lamp_on = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_lamp_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 glif_lamp2_on = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_lamp2_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
-panel_g_array_h_count = 5,
-panel_g_array_w_count = 6,
+panel_g_array_h_count = 6,--5,--высота в точках
+panel_g_array_w_count = 6,--ширина в точках
 playerHasGlifInSlots = false,
 glif_on = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 glif2_on = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif2_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false), 
@@ -542,11 +790,16 @@ glif_clear_on = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_clear
 glif_clear_select2 = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_clear_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false), 
 glif_clear_off = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_clear_off.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false), 
 glif_draw_place = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_draw_place.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false), 
+glif_lastclear_on = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_lastclear_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false), 
+glif_lastclear_select2 = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_lastclear_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false), 
+glif_lastclear_off = Hyperspace.Resources:CreateImagePrimitiveString('glif/glif_lastclear_off.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false), 
 
 panel_g_array_locks = {["0_0"]=0},
 
-panel_g_x = 925,--920
-panel_g_y = 200,
+--начало отсчёта для отрисовки точек
+panel_g_x = 925,
+panel_g_y = 180,--200,
+
 panel_g_w = 350,
 panel_g_h = 300,
 panel_g_step = 40,
@@ -565,19 +818,12 @@ iDrawPointI = 0,
 iDrawPointJ = 0,
 button_g_clear_ready = false,
 button_g_onoff_ready = false,
-
-
-
-
-
-
-
-
+button_lastg_clear_ready = false,
 
 found_penta_conditions = false,
 
-
 bIsOpenBuyMenu = false,
+bIsOpenSellMenu = false,
 
 iCountOfActivePlayerRepairDrones = 0,
 iCountOfActiveEnemyRepairDrones = 0,
@@ -648,6 +894,7 @@ frs_weapon_arr = {
 [24]={blue="FRS_BOSS_ION_FLAK", frames=8, prim=Hyperspace.Resources:CreateImagePrimitiveString('weapons/fr_boss_ion_flak_strip8.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)},
 [25]={blue="FRS_BOSS_BEAM_HULL", frames=8, prim=Hyperspace.Resources:CreateImagePrimitiveString('weapons/fr_boss_beam_hull_strip8.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)},
 [26]={blue="FRS_BOSS_ION_BEAM", frames=8, prim=Hyperspace.Resources:CreateImagePrimitiveString('weapons/frs_boss_ion_beam.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)},
+[27]={blue="FRS_BOSS_BEAM_ANNIHILATOR", frames=24, prim=Hyperspace.Resources:CreateImagePrimitiveString('weapons/frs_annihilator.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)}
 },
 
 
@@ -669,7 +916,7 @@ make_enemy_same_as_player_at_first_free_tick = false,
 
 --массив-очередь памяти имён ивентов для безопасного запуска по очереди
 event_order_caller = {[0]="",[1]=""},
-
+sound_order_caller = {[0]="",[1]=""},
 
 current_beacon_enemy_cargo_drone = "",
 current_beacon_enemy_cargo_drone2 = "",
@@ -741,10 +988,21 @@ micro_delayer_to_waiting_at_beacon = 0.0,
 micro_tick_counter_battle = 0.0,
 micro_tick_counter29 = 0.0,--тикалка период 2 сек
 micro_tick_counter30 = 0.0, --отдельный переключатель для запуска флагмана 3 фазы сброса заряда фтл
+micro_tick_counter31 = 0.0,--тикалка период 1 сек не на паузе
+
 micro_tick_counter_slurmqueen = 0.0,
 micro_tick_counter_automind = 0.0, --отдельный счётки для авто-мк в защиту
 
 micro_tick_counter_crewsteal = 0.0,--счётчик на воровство экипажа отдельный
+
+micro_tick_counter_sound_launcher = 0.0,
+micro_tick_counter_crew_flagship = 0.0,--тикалка период 1 сек
+
+micro_tick_supershield_cooler = 0.0,
+micro_tick_supershield_cooler_e = 0.0,
+--специальный счетчик для суперщитов врага отсчитывает время с момента последнего выстрела в щиты противника бомбами
+
+micro_tick_counter_psevdomagazin = 1.0,
 
 
 micro_tick_counter_hack = 0.0,
@@ -772,6 +1030,8 @@ noise_mask_combat_main3 = Hyperspace.Resources:CreateImagePrimitiveString('comba
 s_sensors_green_alien = Hyperspace.Resources:CreateImagePrimitiveString('icons/s_sensors_green_alien.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 s_sensors_orange_alien = Hyperspace.Resources:CreateImagePrimitiveString('icons/s_sensors_orange_alien.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 
+tip_top = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/tip_top.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+tip_topBox = {x = 135, y = 3, w = 18, h = 18},
 
 
 danger_agressive_weaponanim = Hyperspace.Resources:CreateImagePrimitiveString('weapons/danger_agressive_weaponanim.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
@@ -835,7 +1095,7 @@ full_list_of_burst_weapon_proj_count = {},--{['WEAPON_NAME']=1}, -- для па�
 full_list_of_game_equipment_power = {},--{['WEAPON_NAME']=4}, -- для памяти энергии требуемой для оборудования
 full_list_of_game_equipment_rarity = {},--{['WEAPON_NAME']=0}, -- для памяти редкости оборудования
 full_list_of_game_equipment_shotlimit = {},--{['WEAPON_NAME']=0}, -- для памяти количества снарядов оборудования
-
+full_list_of_game_equipment_type = {[0]=''},--{['WEAPON_NAME']=0}, -- для памяти типа оборудования
 
 micro_tick_fish_on_kruchok = 0.0,
 is_enabled_monitor_to_planet = false,
@@ -844,28 +1104,43 @@ is_enabled_monitor_to_planet = false,
 color_dark_opaced = Graphics.GL_Color(0.0, 0.0, 0.0, 0.35),
 color_cyanbezh = Graphics.GL_Color(0.91, 0.96, 0.9, 1.0),
 color_red = Graphics.GL_Color(1.0, 0.2, 0.2, 1.0),
+color_red_targ_soft = Graphics.GL_Color(1.0, 0.33, 0.26, 1.0),
+color_red_targ_opaced = Graphics.GL_Color(1.0, 0.33, 0.26, 0.08),
+color_red_targ2_opaced = Graphics.GL_Color(1.0, 0.2, 0.2, 0.5),
 color_opac_red = Graphics.GL_Color(1.0, 0.2, 0.2, 0.22),
 color_yellow = Graphics.GL_Color(0.8, 0.8, 0.0, 1.0),
 color_green = Graphics.GL_Color(0.27, 0.71, 0.0, 1.0),
 color_green_bright = Graphics.GL_Color(0.41, 0.88, 0.13, 1.0),
 color_green_cyan = Graphics.GL_Color(0.39, 1.0, 0.39, 1.0),--64ff65
 color_green_nashishenniy = Graphics.GL_Color(0.0, 1.0, 0.1, 1.0),
+color_green_nashishenniy_bright = Graphics.GL_Color(0.1, 1.0, 0.2, 1.0),
+color_green_nashishenniy_opac = Graphics.GL_Color(0.0, 1.0, 0.1, 0.08),
 color_cyan = Graphics.GL_Color(0.0, 1.0, 1.0, 1.0),
+color_cyan_opac = Graphics.GL_Color(0.0, 1.0, 1.0, 0.08),
 color_blue = Graphics.GL_Color(0.2, 0.2, 1.0, 1.0),
+color_blue_opac = Graphics.GL_Color(0.2, 0.2, 1.0, 0.08),
 color_violet = Graphics.GL_Color(0.9, 0.0, 0.9, 1.0),
+color_violet_opac = Graphics.GL_Color(0.9, 0.0, 0.9, 0.08),
 color_hackviolet = Graphics.GL_Color(0.78, 0.2, 1.0, 1.0),
 color_softyellow = Graphics.GL_Color(0.8, 0.8, 0.0, 0.5),
 color_dark = Graphics.GL_Color(0.1, 0.1, 0.1, 1.0),
 color_gray = Graphics.GL_Color(0.8, 0.8, 0.8, 0.5),
+--color_gray_for_pauses = Graphics.GL_Color(0.91, 0.91, 0.91, 1.0),
+color_gray_for_pauses = Graphics.GL_Color(0.5, 0.5, 0.5, 1.0),
 color_blue_transp = Graphics.GL_Color(0.0, 0.66, 1.0, 0.5),
 color_red_soft = Graphics.GL_Color(1.0, 0.5, 0.5, 1.0),
 color_orange_bright = Graphics.GL_Color(1.0, 0.6, 0.0, 1.0),
+color_orange_bright_opac = Graphics.GL_Color(1.0, 0.6, 0.0, 0.08),
 color_orange = Graphics.GL_Color(1.0, 0.8, 0.0, 1.0),
 color_yellow_orange = Graphics.GL_Color(1.0, 0.9, 0.0, 1.0),
 color_yellow_bright = Graphics.GL_Color(1.0, 1.0, 0.0, 1.0),
+color_yellow_bright_opaced = Graphics.GL_Color(1.0, 0.88, 0.39, 0.08),
+color_yellow_bright_minibright = Graphics.GL_Color(1.0, 0.88, 0.39, 1.0),
 color_yellow_bright_plus = Graphics.GL_Color(1.0, 1.0, 0.3, 1.0),
 color_white = Graphics.GL_Color(1.0, 1.0, 1.0, 1.0),
+color_transp = Graphics.GL_Color(1.0, 1.0, 1.0, 0.5),
 
+pressed_now_LCTRL = false,
 
 prepare_to_explode_hack = false,
 prepare_to_cancel_mind = false,
@@ -1077,14 +1352,16 @@ button_notxt_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equ
 button_notxt_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_notxt_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 button_notxt_Box = {x = 380, y = 430, w = 32, h = 28},
 button_notxt_ready = false,
-
+button_notmr_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_notmr_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_notmr_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_notmr_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_notmr_Box = {x = 470, y = 430, w = 32, h = 28},
+button_notmr_ready = false,
 
 
 button_switch_screams_0_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_switch_screams_0_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 button_switch_screams_1_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_switch_screams_1_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 button_switch_screams_0_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_switch_screams_0_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 button_switch_screams_1_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_switch_screams_1_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
---button_switch_screams_Box = {x = 848, y = 503, w = 28, h = 33},
 button_switch_screams_Box = {x = 512, y = 12, w = 28, h = 33},
 button_switch_screams_ready = false,
 
@@ -1120,14 +1397,14 @@ button_resetchall_0_on = Hyperspace.Resources:CreateImagePrimitiveString('upgrad
 button_resetchall_1_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_resetchall_1_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 button_resetchall_0_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_resetchall_0_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 button_resetchall_1_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_resetchall_1_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
-button_resetchall_Box = {x = 848, y = 140, w = 28, h = 33},
+button_resetchall_Box = {x = 838, y = 140, w = 28, h = 33},
 button_resetchall_ready = false,
 
 button_rew_0_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_rew_0_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 button_rew_1_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_rew_1_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 button_rew_0_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_rew_0_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 button_rew_1_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_rew_1_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
-button_rew_Box = {x = 848, y = 177, w = 28, h = 33},
+button_rew_Box = {x = 838, y = 177, w = 28, h = 33},
 button_rew_ready = false,
 
 -- button_timer_0_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_timer_0_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
@@ -1142,7 +1419,6 @@ button_rew_ready = false,
 
 mini_target_r = Hyperspace.Resources:CreateImagePrimitiveString('misc/mini_target_r.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 mini_target_y = Hyperspace.Resources:CreateImagePrimitiveString('misc/mini_target_y.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
-bPressedLCtrl = false,
 
 mini_target_prism = Hyperspace.Resources:CreateImagePrimitiveString('misc/mini_target_prism.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 
@@ -1161,6 +1437,7 @@ button_strong_1 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/butt
 button_strong_2 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/button_strong_2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 
 icon_capsule = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/icon_capsule.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+icon_barrel = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/icon_barrel.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 
 array_memory_of_loot_decreasing = {},
 array_memory_of_scrap_decreasing = {},
@@ -1253,17 +1530,15 @@ icon_call_store_red = Hyperspace.Resources:CreateImagePrimitiveString('combatUI/
 def_temp_crew,
 def_skilled_crew_g,
 def_skilled_crew_y,
---def_nowarn_crew,
 def_fire_weakness,
 def_uncontrollable,
 def_mindresist,
 def_temporal_crew,
 def_slot_zero,
-
+def_no_low_hp_signal,
 def_bleed,
-
 def_skill_up_now,
---def_marker_temp_crew,
+
 
 red_wait = Hyperspace.Resources:CreateImagePrimitiveString('systemUI/red_wait.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 red_wait_8sec = Hyperspace.Resources:CreateImagePrimitiveString('systemUI/red_wait_8sec.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
@@ -1290,43 +1565,47 @@ projectile_eater2_select2 = Hyperspace.Resources:CreateImagePrimitiveString('sta
 projectile_eater1_select2 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/projectile_eater1_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 projectile_eater0_select2 = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/projectile_eater0_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 projectile_eaterTipBox = {text = "",x=6,y=695,w=33,h=33},
+
+lastArtilleryCap = -1,
+
+soulreaper_b_on = {},
+soulreaper_b_off = {},
+soulreaper_b_select2 = {},
+
+sr_b = {},
+
+micro_tick_array = {},
+anim_tick_array = {},--{[1]={}, [2]={}}
+
+frame = 0,
+cX = 0,
+cY = 0,
+nX1 = 0,
+nX2 = 0,
+nY1 = 0,
+nY2 = 0,
+
+offs_x = 0,
+offs_x_panel = 0,
+
+button_clearstat_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_clearstat_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_clearstat_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_clearstat_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_clearstatBox = {x = 847, y = 209, w = 32, h = 28},
+
+button_recOn_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_recOn_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_recOn_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_recOn_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_recOff_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_recOff_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_recOff_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_recOff_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+button_recBox = {x = 809, y = 209, w = 32, h = 28},
+
+sector_text_out = '',
 }
-
-local lastArtilleryCap = -1
-
-local soulreaper_b_on = {}
-local soulreaper_b_off = {}
-local soulreaper_b_select2 = {}
-local sr_b = {}
-
-local micro_tick_array = {}
-local anim_tick_array = {}--{[1]={}, [2]={}}
-local frame = 0
-local cX = 0
-local cY = 0
-local nX1 = 0
-local nX2 = 0
-local nY1 = 0
-local nY2 = 0
-
-local offs_x = 0
-local offs_x_panel = 0
 
 local diff = ''
 
 
 
 
-local button_clearstat_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_clearstat_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local button_clearstat_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_clearstat_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local button_clearstatBox = {x = 847, y = 209, w = 32, h = 28}
-
-local button_recOn_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_recOn_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local button_recOn_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_recOn_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local button_recOff_on = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_recOff_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local button_recOff_select2 = Hyperspace.Resources:CreateImagePrimitiveString('upgradeUI/Equipment/button_recOff_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local button_recBox = {x = 809, y = 209, w = 32, h = 28}
-local sector_text_out = ''
 
 
 
@@ -1339,37 +1618,44 @@ function define_date()
 		Hyperspace.metaVariables['prazdnik'] = 1
 	elseif (tonumber(arr.month) == 12 and tonumber(arr.day) >= 20) or (tonumber(arr.month) == 1 and tonumber(arr.day) <= 20) then
 		Hyperspace.metaVariables['prazdnik'] = 2
+	elseif (tonumber(arr.month) == 5 and tonumber(arr.day) >= 1 and tonumber(arr.day) <= 20) then
+		Hyperspace.metaVariables['prazdnik'] = 3
+	elseif (tonumber(arr.month) == 2 and tonumber(arr.day) >= 25) or (tonumber(arr.month) == 3 and tonumber(arr.day) <= 3) then
+		Hyperspace.metaVariables['prazdnik'] = 4
 	else
 		Hyperspace.metaVariables['prazdnik'] = 0
 	end
+	
+	
+	--Hyperspace.metaVariables['prazdnik'] = 4
 end
 
 
 -- блок запуска и воспроизведения ЛЮБЫХ анимаций в ЛЮБОЙ точке экрана
 function play_anim_tick_array (key)
 	-- key is "SPACE_STATUS_up" or "SPACE_STATUS" or "LAYER_BACKGROUND"
-	if #anim_tick_array > 0 then
-		for i = 1, #anim_tick_array do
-			if anim_tick_array[i].layer == key then
-				if anim_tick_array[i].time_length > 0.0 then
+	if #varr.anim_tick_array > 0 then
+		for i = 1, #varr.anim_tick_array do
+			if varr.anim_tick_array[i].layer == key then
+				if varr.anim_tick_array[i].time_length > 0.0 then
 					if not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
-						anim_tick_array[i].time_length = anim_tick_array[i].time_length - 60.0*Hyperspace.FPS.SpeedFactor
+						varr.anim_tick_array[i].time_length = varr.anim_tick_array[i].time_length - 60.0*Hyperspace.FPS.SpeedFactor
 					end
 					-- чёрная магия поиска координат в заданном анимационном листе
-					frame = math.floor((anim_tick_array[i].w/anim_tick_array[i].fw) * (1.0 - (anim_tick_array[i].time_length/anim_tick_array[i].time_length_mem)))--выбираем кадр анимации (нумерация с 0)
-					cX = frame*anim_tick_array[i].fw % anim_tick_array[i].w
-					cY = math.floor(frame/(anim_tick_array[i].w/anim_tick_array[i].fw))*anim_tick_array[i].fh
-					nX1 = cX/anim_tick_array[i].w
-					nX2 = (cX + anim_tick_array[i].fw)/anim_tick_array[i].w
-					nY1 = cY/anim_tick_array[i].h
-					nY2 = (cY + anim_tick_array[i].fh)/anim_tick_array[i].h
-					--print(nX1..','..nX2..','..nY1..','..nY2)
+					varr.frame = math.floor((varr.anim_tick_array[i].w/varr.anim_tick_array[i].fw) * (1.0 - (varr.anim_tick_array[i].time_length/varr.anim_tick_array[i].time_length_mem)))--выбираем кадр анимации (нумерация с 0)
+					varr.cX = varr.frame*varr.anim_tick_array[i].fw % varr.anim_tick_array[i].w
+					varr.cY = math.floor(varr.frame/(varr.anim_tick_array[i].w/varr.anim_tick_array[i].fw))*varr.anim_tick_array[i].fh
+					varr.nX1 = varr.cX/varr.anim_tick_array[i].w
+					varr.nX2 = (varr.cX + varr.anim_tick_array[i].fw)/varr.anim_tick_array[i].w
+					varr.nY1 = varr.cY/varr.anim_tick_array[i].h
+					varr.nY2 = (varr.cY + varr.anim_tick_array[i].fh)/varr.anim_tick_array[i].h
+					
 					Graphics.CSurface.GL_PushMatrix()
-					Graphics.CSurface.GL_Translate(anim_tick_array[i].x, anim_tick_array[i].y)
-					Graphics.CSurface.GL_BlitImagePartial(anim_tick_array[i].texture, 0, 0, anim_tick_array[i].fw, anim_tick_array[i].fh, nX1, nX2, nY1, nY2, 1, varr.color_white, false)
+					Graphics.CSurface.GL_Translate(varr.anim_tick_array[i].x, varr.anim_tick_array[i].y)
+					Graphics.CSurface.GL_BlitImagePartial(varr.anim_tick_array[i].texture, 0, 0, varr.anim_tick_array[i].fw, varr.anim_tick_array[i].fh, varr.nX1, varr.nX2, varr.nY1, varr.nY2, 1, varr.color_white, false)
 					Graphics.CSurface.GL_PopMatrix()
-				elseif anim_tick_array[i].time_length < 0.0 then
-					anim_tick_array[i].time_length = 0.0
+				elseif varr.anim_tick_array[i].time_length < 0.0 then
+					varr.anim_tick_array[i].time_length = 0.0
 					
 				end
 			end
@@ -1409,6 +1695,12 @@ local def
 
 function works_on_first_initialization_this_script() -- срабатывает 1 раз при загрузке скрипта/игры
 	
+	
+	varr.local_list_WEAPONS_DONT_ALLOW_TO_COPY = Hyperspace.Blueprints:GetBlueprintList("WEAPONS_DONT_ALLOW_TO_COPY")
+	varr.local_list_WEAPONS_HIDE_CHARGE_BAR = Hyperspace.Blueprints:GetBlueprintList("WEAPONS_HIDE_CHARGE_BAR")
+	varr.local_list_LIST_OF_EVENT_MARKERS_DONT_USE_AUTOREPLACE = Hyperspace.Blueprints:GetBlueprintList("LIST_OF_EVENT_MARKERS_DONT_USE_AUTOREPLACE")
+	varr.local_list_CAN_BE_HIDDEN_AUGS = Hyperspace.Blueprints:GetBlueprintList("CAN_BE_HIDDEN_AUGS")
+	
 	for crew_type_name in vter (Hyperspace.Blueprints:GetBlueprintList("CREW_ALL_ABSOLUTELY_FULL")) do
 		varr.crew_array[crew_type_name] = 0
 		varr.crew_array_previous[crew_type_name] = 0
@@ -1417,6 +1709,28 @@ function works_on_first_initialization_this_script() -- срабатывает 1
 	varr.crew_array_previous["human_woman"] = 0
 	
 	
+	--равновероятный массив эффектов глифов независимо от их сложности
+	local input_carpet_to_arr_pos = 0
+	varr.arr_of_glif_effects = {[0]={code="", adder=""}}
+	for i = 0, #varr.line_base do
+		local bEffSoonInArr = false
+		for j = 0, #varr.arr_of_glif_effects do
+			if varr.arr_of_glif_effects[j].adder == varr.line_base[i].adder then
+				bEffSoonInArr = true
+			end
+		end
+		if bEffSoonInArr == false then
+			varr.arr_of_glif_effects[input_carpet_to_arr_pos] = {code="", adder=""}
+			varr.arr_of_glif_effects[input_carpet_to_arr_pos].code = varr.line_base[i].code
+			varr.arr_of_glif_effects[input_carpet_to_arr_pos].adder = varr.line_base[i].adder
+			input_carpet_to_arr_pos = input_carpet_to_arr_pos + 1
+			--print('saved='..varr.line_base[i].code..','..varr.line_base[i].adder)
+		end
+	end
+	
+	-- for j = 0, #varr.arr_of_glif_effects do
+		-- print(j..'='..varr.arr_of_glif_effects[j].adder)
+	-- end
 	varr.info_glif_name = Hyperspace.Blueprints:GetWeaponBlueprint("GLIF_GUN").desc.title:GetText()
 	varr.info_glif_desc = Hyperspace.Blueprints:GetWeaponBlueprint("GLIF_GUN").desc.description:GetText()
 	
@@ -1424,6 +1738,8 @@ function works_on_first_initialization_this_script() -- срабатывает 1
 	
 	-- чистим/инициализируем массив запусков ивентов
 	clear_LaunchOrder()
+	
+	clear_SoundOrder()
 	
 	varr.arr_events_with_shops = Hyperspace.Blueprints:GetBlueprintList("EVENT_WITH_INNER_SHOPS")
 	
@@ -1445,7 +1761,8 @@ function works_on_first_initialization_this_script() -- срабатывает 1
 
 	
 	-- заполняет таблицу соответствия имён и описаний встраиваемых усилений
-	for augs in vter2 (Hyperspace.Blueprints:GetBlueprintList("CAN_BE_HIDDEN_AUGS")) do
+	--for augs in vter2 (Hyperspace.Blueprints:GetBlueprintList("CAN_BE_HIDDEN_AUGS")) do
+	for augs in vter2 (varr.local_list_CAN_BE_HIDDEN_AUGS) do
 		if augs:find('FISH_BUFF') == nil then
 			tip_text_replace_hidden_array[augs] = Hyperspace.Blueprints:GetAugmentBlueprint(augs).desc.description:GetText()
 			tip_img_replace_hidden_array[augs] = Hyperspace.Resources:CreateImagePrimitiveString('combatUI/icons/icon_'..augs:lower()..'.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
@@ -1577,6 +1894,46 @@ function works_on_first_initialization_this_script() -- срабатывает 1
 	varr.def_uncontrollable.realBoostId = Hyperspace.StatBoostDefinition.statBoostDefs:size()
 	Hyperspace.StatBoostDefinition.statBoostDefs:push_back(varr.def_uncontrollable)
 	
+	
+	
+	
+	
+	-- varr.def_exp = Hyperspace.StatBoostDefinition()
+	-- varr.def_exp.stat = Hyperspace.CrewStat.PASSIVE_HEAL_AMOUNT
+	-- varr.def_exp.amount = -1.0
+	-- varr.def_exp.boostAnim = "temp_crew"
+	-- varr.def_exp.boostType = Hyperspace.StatBoostDefinition.BoostType.FLAT
+	-- varr.def_exp.boostSource = Hyperspace.StatBoostDefinition.BoostSource.AUGMENT	
+	-- varr.def_exp.shipTarget = Hyperspace.StatBoostDefinition.ShipTarget.CURRENT_ROOM
+	-- varr.def_exp.crewTarget = Hyperspace.StatBoostDefinition.CrewTarget.ALL
+	-- varr.def_exp.duration = 80
+	-- varr.def_exp.stackId = 1006
+	-- varr.def_exp.maxStacks = 1
+	-- varr.def_exp.realBoostId = Hyperspace.StatBoostDefinition.statBoostDefs:size()
+	-- Hyperspace.StatBoostDefinition.statBoostDefs:push_back(varr.def_exp)
+	
+	-- varr.def_explosivedeath = Hyperspace.StatBoostDefinition()
+	-- varr.def_explosivedeath.stat = Hyperspace.CrewStat.FIRE_DAMAGE_MULTIPLIER
+	-- varr.def_explosivedeath.amount = 1.0
+	-- varr.def_explosivedeath.boostAnim = "skilled_yellow"
+	-- varr.def_explosivedeath.boostType = Hyperspace.StatBoostDefinition.BoostType.SET
+	-- varr.def_explosivedeath.boostSource = Hyperspace.StatBoostDefinition.BoostSource.AUGMENT	
+	-- varr.def_explosivedeath.shipTarget = Hyperspace.StatBoostDefinition.ShipTarget.ALL
+	-- varr.def_explosivedeath.crewTarget = Hyperspace.StatBoostDefinition.CrewTarget.ALL
+	-- varr.def_explosivedeath.duration = 80000
+	-- varr.def_explosivedeath.stackId = 1005
+	-- varr.def_explosivedeath.maxStacks = 1
+	-- varr.def_explosivedeath.deathEffectChange = varr.def_exp
+	-- varr.def_explosivedeath.realBoostId = Hyperspace.StatBoostDefinition.statBoostDefs:size()
+	-- Hyperspace.StatBoostDefinition.statBoostDefs:push_back(varr.def_explosivedeath)
+	
+	
+	
+	
+	
+	
+	
+	
 	varr.def_temporal_crew = Hyperspace.StatBoostDefinition()
 	varr.def_temporal_crew.stat = Hyperspace.CrewStat.NO_CLONE
 	varr.def_temporal_crew.value = true
@@ -1606,8 +1963,20 @@ function works_on_first_initialization_this_script() -- срабатывает 1
 	varr.def_bleed.realBoostId = Hyperspace.StatBoostDefinition.statBoostDefs:size()
 	Hyperspace.StatBoostDefinition.statBoostDefs:push_back(varr.def_bleed)
 	
-	
-	
+	varr.def_no_low_hp_signal = Hyperspace.StatBoostDefinition()
+	varr.def_no_low_hp_signal.stat = Hyperspace.CrewStat.LOW_HEALTH_THRESHOLD
+	--varr.def_slot_zero.value = true
+	varr.def_no_low_hp_signal.amount = -10.0
+	varr.def_no_low_hp_signal.boostType = Hyperspace.StatBoostDefinition.BoostType.SET
+	varr.def_no_low_hp_signal.boostSource = Hyperspace.StatBoostDefinition.BoostSource.AUGMENT
+	varr.def_no_low_hp_signal.shipTarget = Hyperspace.StatBoostDefinition.ShipTarget.ALL
+	varr.def_no_low_hp_signal.crewTarget = Hyperspace.StatBoostDefinition.CrewTarget.ALL
+	varr.def_no_low_hp_signal.duration = 1000
+	varr.def_no_low_hp_signal.stackId = 992
+	varr.def_no_low_hp_signal.maxStacks = 1
+	varr.def_no_low_hp_signal.realBoostId = Hyperspace.StatBoostDefinition.statBoostDefs:size()
+	Hyperspace.StatBoostDefinition.statBoostDefs:push_back(varr.def_no_low_hp_signal) 
+
 	
 	varr.def_slot_zero = Hyperspace.StatBoostDefinition()
 	varr.def_slot_zero.stat = Hyperspace.CrewStat.CREW_SLOTS
@@ -1638,37 +2007,12 @@ function works_on_first_initialization_this_script() -- срабатывает 1
 	varr.def_skill_up_now.realBoostId = Hyperspace.StatBoostDefinition.statBoostDefs:size()
 	Hyperspace.StatBoostDefinition.statBoostDefs:push_back(varr.def_skill_up_now)
 	
-	-- varr.def_marker_temp_crew = Hyperspace.StatBoostDefinition()
-	
-	-- varr.def_marker_temp_crew.boostType = Hyperspace.StatBoostDefinition.BoostType.SET
-	-- varr.def_marker_temp_crew.boostSource = Hyperspace.StatBoostDefinition.BoostSource.AUGMENT
-	-- varr.def_marker_temp_crew.shipTarget = Hyperspace.StatBoostDefinition.ShipTarget.ALL
-	-- varr.def_marker_temp_crew.crewTarget = Hyperspace.StatBoostDefinition.CrewTarget.ALL
-	-- varr.def_marker_temp_crew.duration = 1000
-	-- varr.def_marker_temp_crew.stackId = 983
-	-- varr.def_marker_temp_crew.maxStacks = 1
-	-- varr.def_marker_temp_crew.realBoostId = Hyperspace.StatBoostDefinition.statBoostDefs:size()
-	-- Hyperspace.StatBoostDefinition.statBoostDefs:push_back(varr.def_marker_temp_crew)
-	
-	
-	-- varr.def_mindresist = Hyperspace.StatBoostDefinition()
-	-- varr.def_mindresist.stat = Hyperspace.CrewStat.RESISTS_MIND_CONTROL
-	-- varr.def_mindresist.value = true
-	-- varr.def_mindresist.boostType = Hyperspace.StatBoostDefinition.BoostType.SET
-	-- varr.def_mindresist.boostSource = Hyperspace.StatBoostDefinition.BoostSource.AUGMENT
-	-- varr.def_mindresist.shipTarget = Hyperspace.StatBoostDefinition.ShipTarget.ALL
-	-- varr.def_mindresist.crewTarget = Hyperspace.StatBoostDefinition.CrewTarget.ALL
-	-- varr.def_mindresist.duration = 1
-	-- varr.def_mindresist.stackId = 986
-	-- varr.def_mindresist.maxStacks = 1
-	-- varr.def_mindresist.realBoostId = Hyperspace.StatBoostDefinition.statBoostDefs:size()
-	-- Hyperspace.StatBoostDefinition.statBoostDefs:push_back(varr.def_mindresist)
 	
 	-- подгружаем графику интерфейса душегуба в массивы
 	for num = 1, 13 do
-		soulreaper_b_on[num] = Hyperspace.Resources:CreateImagePrimitiveString('soulreaper/soulreaper_b'..num..'_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-		soulreaper_b_off[num] = Hyperspace.Resources:CreateImagePrimitiveString('soulreaper/soulreaper_b'..num..'_off.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-		soulreaper_b_select2[num] = Hyperspace.Resources:CreateImagePrimitiveString('soulreaper/soulreaper_b'..num..'_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+		varr.soulreaper_b_on[num] = Hyperspace.Resources:CreateImagePrimitiveString('soulreaper/soulreaper_b'..num..'_on.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+		varr.soulreaper_b_off[num] = Hyperspace.Resources:CreateImagePrimitiveString('soulreaper/soulreaper_b'..num..'_off.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+		varr.soulreaper_b_select2[num] = Hyperspace.Resources:CreateImagePrimitiveString('soulreaper/soulreaper_b'..num..'_select2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
 	end
 	-- sr_b[1] = {text_on = "Уменьшить потребление энергии.", x = 997, y = 97, w = 66, h = 31}
 	-- sr_b[2] = {text_on = "Уменьшить время перезарядки.", x = 997, y = 134, w = 66, h = 31}
@@ -1684,19 +2028,19 @@ function works_on_first_initialization_this_script() -- срабатывает 1
 	-- sr_b[12] = {text_on = "Добавить эффект двойного урона при попадании в отсеки без систем.", x = 997, y = 504, w = 66, h = 31}
 	-- sr_b[13] = {text_on = "Увеличить вместимость хранилища душ.", x = 997, y = 541, w = 66, h = 31}
 	
-	sr_b[1] = {text_on = Hyperspace.Text:GetText('lua_sr_b1'), x = 997, y = 97, w = 66, h = 31}
-	sr_b[2] = {text_on = Hyperspace.Text:GetText('lua_sr_b2'), x = 997, y = 134, w = 66, h = 31}
-	sr_b[3] = {text_on = Hyperspace.Text:GetText('lua_sr_b3'), x = 997, y = 171, w = 66, h = 31}
-	sr_b[4] = {text_on = Hyperspace.Text:GetText('lua_sr_b4'), x = 997, y = 208, w = 66, h = 31}
-	sr_b[5] = {text_on = Hyperspace.Text:GetText('lua_sr_b5'), x = 997, y = 245, w = 66, h = 31}
-	sr_b[6] = {text_on = Hyperspace.Text:GetText('lua_sr_b6'), x = 997, y = 282, w = 66, h = 31}
-	sr_b[7] = {text_on = Hyperspace.Text:GetText('lua_sr_b7'), x = 997, y = 319, w = 66, h = 31}
-	sr_b[8] = {text_on = Hyperspace.Text:GetText('lua_sr_b8'), x = 997, y = 356, w = 66, h = 31}
-	sr_b[9] = {text_on = Hyperspace.Text:GetText('lua_sr_b9'), x = 997, y = 430, w = 66, h = 31}
-	sr_b[10] = {text_on = Hyperspace.Text:GetText('lua_sr_b10'), x = 997, y = 393, w = 66, h = 31}
-	sr_b[11] = {text_on = Hyperspace.Text:GetText('lua_sr_b11'), x = 997, y = 467, w = 66, h = 31}
-	sr_b[12] = {text_on = Hyperspace.Text:GetText('lua_sr_b12'), x = 997, y = 504, w = 66, h = 31}
-	sr_b[13] = {text_on = Hyperspace.Text:GetText('lua_sr_b13'), x = 997, y = 541, w = 66, h = 31}
+	varr.sr_b[1] = {text_on = Hyperspace.Text:GetText('lua_sr_b1'), x = 997, y = 97, w = 66, h = 31}
+	varr.sr_b[2] = {text_on = Hyperspace.Text:GetText('lua_sr_b2'), x = 997, y = 134, w = 66, h = 31}
+	varr.sr_b[3] = {text_on = Hyperspace.Text:GetText('lua_sr_b3'), x = 997, y = 171, w = 66, h = 31}
+	varr.sr_b[4] = {text_on = Hyperspace.Text:GetText('lua_sr_b4'), x = 997, y = 208, w = 66, h = 31}
+	varr.sr_b[5] = {text_on = Hyperspace.Text:GetText('lua_sr_b5'), x = 997, y = 245, w = 66, h = 31}
+	varr.sr_b[6] = {text_on = Hyperspace.Text:GetText('lua_sr_b6'), x = 997, y = 282, w = 66, h = 31}
+	varr.sr_b[7] = {text_on = Hyperspace.Text:GetText('lua_sr_b7'), x = 997, y = 319, w = 66, h = 31}
+	varr.sr_b[8] = {text_on = Hyperspace.Text:GetText('lua_sr_b8'), x = 997, y = 356, w = 66, h = 31}
+	varr.sr_b[9] = {text_on = Hyperspace.Text:GetText('lua_sr_b9'), x = 997, y = 430, w = 66, h = 31}
+	varr.sr_b[10] = {text_on = Hyperspace.Text:GetText('lua_sr_b10'), x = 997, y = 393, w = 66, h = 31}
+	varr.sr_b[11] = {text_on = Hyperspace.Text:GetText('lua_sr_b11'), x = 997, y = 467, w = 66, h = 31}
+	varr.sr_b[12] = {text_on = Hyperspace.Text:GetText('lua_sr_b12'), x = 997, y = 504, w = 66, h = 31}
+	varr.sr_b[13] = {text_on = Hyperspace.Text:GetText('lua_sr_b13'), x = 997, y = 541, w = 66, h = 31}
 		
 	--if Hyperspace.Blueprints:GetWeaponBlueprint("ITB_INDICATOR")~= nil and Hyperspace.Blueprints:GetWeaponBlueprint("ITB_INDICATOR").desc.cost > 0 then
 	if Hyperspace.Blueprints:GetWeaponBlueprint("ITB_INDICATOR").desc.cost > 0 then
@@ -1706,13 +2050,18 @@ function works_on_first_initialization_this_script() -- срабатывает 1
 	end
 	--print('itb='..tostring(varr.bMod_itbui))
 	if varr.bMod_itbui == true then
-		offs_x = 14--24
-		button_clearstatBox.x = button_clearstatBox.x + 8--18
-		varr.button_confirmBox.x = varr.button_confirmBox.x + 8--18--+18
-		button_recBox.x = button_recBox.x + 9--19--+19 needed????
-		varr.analitica_Box.x = varr.analitica_Box.x + 11--21--18
+		varr.offs_x = 14
+		varr.button_clearstatBox.x = varr.button_clearstatBox.x + 8
+		varr.button_confirmBox.x = varr.button_confirmBox.x + 8
+		varr.button_recBox.x = varr.button_recBox.x + 9
+		varr.analitica_Box.x = varr.analitica_Box.x + 11
+		varr.tip_topBox.x = varr.tip_topBox.x - 33
+		
+		varr.button_resetchall_Box.x = varr.button_resetchall_Box.x + 10
+		varr.button_rew_Box.x = varr.button_rew_Box.x + 10
+		
 	else
-		offs_x = 0
+		varr.offs_x = 0
 	end
 	
 	if Hyperspace.Text:GetText('continue'):find("родолжить") ~= nil then
@@ -1723,36 +2072,36 @@ function works_on_first_initialization_this_script() -- срабатывает 1
 		--print('eng')
 		-- омерзительное написание кода
 		-- в английской версии идёт сдвиг панели влево на 20 пикселей.
-		offs_x = offs_x - 20
-		button_clearstatBox.x = button_clearstatBox.x - 20
+		varr.offs_x = varr.offs_x - 20
+		varr.button_clearstatBox.x = varr.button_clearstatBox.x - 20
 		varr.button_confirmBox.x = varr.button_confirmBox.x - 20
-		button_recBox.x = button_recBox.x - 20
+		varr.button_recBox.x = varr.button_recBox.x - 20
 		varr.analitica_Box.x = varr.analitica_Box.x - 20
 		
-		offs_x_panel = - 20
-		varr.button_nopause_Box.x = varr.button_nopause_Box.x + offs_x_panel
-		varr.button_noeye_Box.x = varr.button_noeye_Box.x + offs_x_panel
-		varr.button_nostor_Box.x = varr.button_nostor_Box.x + offs_x_panel
-		varr.button_nowst_Box.x = varr.button_nowst_Box.x + offs_x_panel
-		varr.button_nogus_Box.x = varr.button_nogus_Box.x + offs_x_panel
-		varr.button_noscrap_Box.x = varr.button_noscrap_Box.x + offs_x_panel
-		varr.button_nofuel_Box.x = varr.button_nofuel_Box.x + offs_x_panel
-		varr.button_nodromis_Box.x = varr.button_nodromis_Box.x + offs_x_panel
-		varr.button_norare_Box.x = varr.button_norare_Box.x + offs_x_panel
-		varr.button_nogeq_Box.x = varr.button_nogeq_Box.x + offs_x_panel
-		varr.button_nobrain_Box.x = varr.button_nobrain_Box.x + offs_x_panel
-		varr.button_nomaxhp_Box.x = varr.button_nomaxhp_Box.x + offs_x_panel
-		varr.button_nocont_Box.x = varr.button_nocont_Box.x + offs_x_panel
-		varr.button_noaug_Box.x = varr.button_noaug_Box.x + offs_x_panel
-		varr.button_noinst_Box.x = varr.button_noinst_Box.x + offs_x_panel
-		varr.button_nohull_Box.x = varr.button_nohull_Box.x + offs_x_panel
-		varr.button_nosysca_Box.x = varr.button_nosysca_Box.x + offs_x_panel
-		varr.button_nozlt_Box.x = varr.button_nozlt_Box.x + offs_x_panel
-		varr.button_noai_Box.x = varr.button_noai_Box.x + offs_x_panel
-		varr.button_nobf_Box.x = varr.button_nobf_Box.x + offs_x_panel
-		varr.button_noexp_Box.x = varr.button_noexp_Box.x + offs_x_panel
-		varr.button_nocrg_Box.x = varr.button_nocrg_Box.x + offs_x_panel
-		varr.button_nobuh_Box.x = varr.button_nobuh_Box.x + offs_x_panel
+		varr.offs_x_panel = - 20
+		varr.button_nopause_Box.x = varr.button_nopause_Box.x + varr.offs_x_panel
+		varr.button_noeye_Box.x = varr.button_noeye_Box.x + varr.offs_x_panel
+		varr.button_nostor_Box.x = varr.button_nostor_Box.x + varr.offs_x_panel
+		varr.button_nowst_Box.x = varr.button_nowst_Box.x + varr.offs_x_panel
+		varr.button_nogus_Box.x = varr.button_nogus_Box.x + varr.offs_x_panel
+		varr.button_noscrap_Box.x = varr.button_noscrap_Box.x + varr.offs_x_panel
+		varr.button_nofuel_Box.x = varr.button_nofuel_Box.x + varr.offs_x_panel
+		varr.button_nodromis_Box.x = varr.button_nodromis_Box.x + varr.offs_x_panel
+		varr.button_norare_Box.x = varr.button_norare_Box.x + varr.offs_x_panel
+		varr.button_nogeq_Box.x = varr.button_nogeq_Box.x + varr.offs_x_panel
+		varr.button_nobrain_Box.x = varr.button_nobrain_Box.x + varr.offs_x_panel
+		varr.button_nomaxhp_Box.x = varr.button_nomaxhp_Box.x + varr.offs_x_panel
+		varr.button_nocont_Box.x = varr.button_nocont_Box.x + varr.offs_x_panel
+		varr.button_noaug_Box.x = varr.button_noaug_Box.x + varr.offs_x_panel
+		varr.button_noinst_Box.x = varr.button_noinst_Box.x + varr.offs_x_panel
+		varr.button_nohull_Box.x = varr.button_nohull_Box.x + varr.offs_x_panel
+		varr.button_nosysca_Box.x = varr.button_nosysca_Box.x + varr.offs_x_panel
+		varr.button_nozlt_Box.x = varr.button_nozlt_Box.x + varr.offs_x_panel
+		varr.button_noai_Box.x = varr.button_noai_Box.x + varr.offs_x_panel
+		varr.button_nobf_Box.x = varr.button_nobf_Box.x + varr.offs_x_panel
+		varr.button_noexp_Box.x = varr.button_noexp_Box.x + varr.offs_x_panel
+		varr.button_nocrg_Box.x = varr.button_nocrg_Box.x + varr.offs_x_panel
+		varr.button_nobuh_Box.x = varr.button_nobuh_Box.x + varr.offs_x_panel
 	end
 	
 	
@@ -1919,6 +2268,43 @@ script.on_internal_event(Defines.InternalEvents.GET_DODGE_FACTOR, function(ShipM
 			end
 		end
 	end
+	
+	if ShipManager.iShipId == 0 and varr.strFullGlifLine:find("ADD_EVASION")~=nil and playerShip and playerShip.weaponSystem then
+		local bPoweredGlif = false
+		for pf in vter(playerShip.weaponSystem.weapons) do
+			if pf.powered == true and pf.blueprint.name=="GLIF_GUN" then
+				bPoweredGlif = true
+			end
+		end
+		if bPoweredGlif == true then
+			local evasion_local = 0
+			local cntx = select(2, string.gsub(varr.strFullGlifLine, "ADD_EVASION10", "ADD_EVASION10"))
+			if cntx > 0 then
+				evasion_local = evasion_local + cntx*10
+			end
+			if evasion_local > 0 then
+				value = value + evasion_local
+			end
+		end
+	elseif ShipManager.iShipId == 1 and varr.enemy_strFullGlifLine:find("ADD_EVASION")~=nil and enemyShip and enemyShip.weaponSystem then
+		local bPoweredGlif = false
+		for pf in vter(enemyShip.weaponSystem.weapons) do
+			if pf.powered == true and pf.blueprint.name=="GLIF_GUN" then
+				bPoweredGlif = true
+			end
+		end
+		if bPoweredGlif == true then
+			local evasion_local = 0
+			local cntx = select(2, string.gsub(varr.enemy_strFullGlifLine, "ADD_EVASION10", "ADD_EVASION10"))
+			if cntx > 0 then
+				evasion_local = evasion_local + cntx*10
+			end
+			if evasion_local > 0 then
+				value = value + evasion_local
+			end
+		end
+	end
+	
 	return Defines.Chain.Continue, value
 end)
 
@@ -1943,7 +2329,16 @@ local costy = 0
 local costy_pot = 0
 local overstrong = 0
 function jumped_away()
+
+	varr.enemy_slot_arr ={}
+	varr.enemy_dir_arr ={}
+
+	Hyperspace.metaVariables['traitor_is_done'] = 0
+	Hyperspace.metaVariables['traitor_is_done_player'] = 0
+	Hyperspace.metaVariables['pds_is_done'] = 0
+	Hyperspace.metaVariables['pds_is_done_player'] = 0
 	
+	varr.count_of_tick_tp_waiter = 0.0
 	varr.micro_tick_counter_crewsteal = 0.0
 	
 	varr.bShopIsClose = false
@@ -2063,6 +2458,11 @@ function jumped_away()
 				end
 			end
 		end
+		
+		
+		
+		
+		
 		
 		--изменение вероятности вылупления яиц в зависимости от условий на корабле/в комнате
 		for crew in vter(playerShip.vCrewList) do
@@ -2230,8 +2630,8 @@ function jumped_away()
 		
 		check_max_raw_victory_counter()
 		
-		micro_tick_array = {} -- очистка массива запланированных событий на тики
-		anim_tick_array = {}--{[1]={}, [2]={}}
+		varr.micro_tick_array = {} -- очистка массива запланированных событий на тики
+		varr.anim_tick_array = {}--{[1]={}, [2]={}}
 		
 		map = Hyperspace.App.world.starMap
 		if map then
@@ -2339,8 +2739,6 @@ function jumped_away()
 	if enemyShip and enemyShip.bJumping == true then -- этот блок срабатывает когда враг упрыгивает от игрока, единожды за прыжок.
 		if playerShip and playerShip.bJumping == false then --важное дополнение т.к. если враг упрыгнул, то его enemyShip.bJumping остаётся true...
 			redefine_enemy_ai_lamp()
-			--Hyperspace.metaVariables['enemy_has_advanced_ai'] = 0
-			--print('enemy gone new')
 		end
 		--print('enemy gone old')
 	end
@@ -2385,7 +2783,8 @@ function calculate_ship_cost (current_ship)
 		end
 		if current_ship.iShipId == 0 then-- оценка встроенных усилений
 			local coia = Hyperspace.playerVariables['counter_augments_installed']
-			for augs in vter(Hyperspace.Blueprints:GetBlueprintList("CAN_BE_HIDDEN_AUGS")) do
+			--for augs in vter(Hyperspace.Blueprints:GetBlueprintList("CAN_BE_HIDDEN_AUGS")) do
+			for augs in vter(varr.local_list_CAN_BE_HIDDEN_AUGS) do
 				if Hyperspace.playerVariables['installed_'..augs] == 1 then
 					shipCost = shipCost + math.floor(Hyperspace.Blueprints:GetAugmentBlueprint(augs).desc.cost/2)
 				end
@@ -2402,6 +2801,7 @@ function calculate_ship_cost (current_ship)
 				shipCost = shipCost + 440 + 100*(coia-8)
 			end
 		end
+		--стоимость экипажа
 		for crew in vter(current_ship.vCrewList) do
 			if crew.blueprint.desc.cost ~= nil then
 				if crew.intruder == false then
@@ -2411,6 +2811,21 @@ function calculate_ship_cost (current_ship)
 				end
 			end
 		end
+		--стоимость экипажа в клон-отсеке
+		if current_ship:HasSystem(13) == true then --clonebay
+			if current_ship.iShipId == 0 then
+				for crew in vter (Hyperspace.CrewFactory:GetCloneReadyList(true)) do --player clones
+					--print('p='..crew.blueprint.desc.cost)
+					shipCost = shipCost + crew.blueprint.desc.cost
+				end
+			else
+				for crew in vter (Hyperspace.CrewFactory:GetCloneReadyList(false)) do --enemy clones
+					shipCost = shipCost + crew.blueprint.desc.cost
+					--print('e='..crew.blueprint.desc.cost)
+				end
+			end
+		end
+		
 		if current_ship.droneSystem ~= nil then
 			for drone in vter(current_ship.droneSystem.drones) do
 				if drone.blueprint.desc.cost ~= nil then
@@ -2447,7 +2862,8 @@ function calculate_ship_cost (current_ship)
 					ps = current_ship:GetSystem(i).healthState.second
 				end
 				--print('sysnm='..sysnm..'lvl='..ps)
-				if sysnm == "reactor" then
+				if sysnm == "reactor" then -- i=17
+					--print(i)
 					--посчитана стоимость реактора корабля в зависимости от уровня текущей прокачки
 					ps = current_ship:GetAvailablePower().first
 					if ps == 1 then	shipCost = shipCost + 30
@@ -2767,7 +3183,17 @@ end
 script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, jumped_away)
 function waiting_on_beacon()
 	
+	varr.enemy_slot_arr ={}
+	varr.enemy_dir_arr ={}
+	
+	varr.bDoneCrewRestoreCheck = false
+	
 	--print('wait')
+	Hyperspace.metaVariables['traitor_is_done'] = 0
+	Hyperspace.metaVariables['traitor_is_done_player'] = 0
+	Hyperspace.metaVariables['pds_is_done'] = 0
+	Hyperspace.metaVariables['pds_is_done_player'] = 0
+	
 	Hyperspace.metaVariables['fuel_waiting_counter'] = playerShip.fuel_count
 	
 	varr.lovushka_dlya_abordazhnikov_s_osami = false
@@ -2792,7 +3218,7 @@ function waiting_on_beacon()
 	
 	--print('wait!'..Hyperspace.metaVariables['in_store_now'])
 	if (Hyperspace.metaVariables['in_store_now'] > 0) then
-		local playerShip = Hyperspace.ships.player
+		playerShip = Hyperspace.ships.player
 		fixed_store_here = true
 	else
 		fixed_store_here = false
@@ -2800,11 +3226,16 @@ function waiting_on_beacon()
 	if (fixed_store_here) then
 		timer_x = 5.0
 	end
-	Hyperspace.playerVariables['counter_beacon_waiting'] = Hyperspace.playerVariables['counter_beacon_waiting'] + 1
-	if Hyperspace.playerVariables['counter_beacon_waiting'] >= 3 then
-		Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_ANCHOR", false)
-	end
 	
+	
+	--теперь считает ожидание на маяке только без топлива согласно описанию достижения
+	if playerShip.fuel_count == 0 then
+		Hyperspace.playerVariables['counter_beacon_waiting'] = Hyperspace.playerVariables['counter_beacon_waiting'] + 1
+		if Hyperspace.playerVariables['counter_beacon_waiting'] >= 3 then
+			Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_ANCHOR", false)
+			--print('ach anchor') --протестено, работает
+		end
+	end
 	
 	
 	if playerShip.fuel_count > 0 then
@@ -2826,11 +3257,25 @@ function waiting_on_beacon()
 		resuffle_player_weapons_itteration()
 	end
 	
+	--clear_anim
+	Hyperspace.metaVariables['fishing_beacon'] = 0
+	varr.is_enabled_monitor_to_planet = false
+	
+	
+	--if Hyperspace.App.world.space.bNebula == true then
+	if map.currentLoc.nebula == true then
+		Hyperspace.metaVariables['map_nebula_beacon'] = 1
+	else
+		Hyperspace.metaVariables['map_nebula_beacon'] = 0
+	end
 end
 script.on_internal_event(Defines.InternalEvents.ON_WAIT, waiting_on_beacon)
 
 
 function jumped_arrive()
+	
+	varr.bDoneCrewRestoreCheck = false
+	
 	if playerShip then
 		--НЕ починил предзажигатель у игрока. оно само...
 		-- if playerShip and playerShip:HasAugmentation("WEAPON_PREIGNITE") > 0 then
@@ -2843,6 +3288,19 @@ function jumped_arrive()
 				-- end
 			-- end
 		-- end
+		
+		
+		
+		
+		--таймер контроля разума вызванного орудиями перестаёт работать после выхода-возврата через главное меню.
+		--типа фикс после прыжка сбросит состояние
+		for crew in vter(playerShip.vCrewList) do
+			if crew.bMindControlled == true then
+				crew:SetMindControl(false)
+			end
+		end
+		
+		
 		
 		varr.used_boss_inst_escape = false -- сброс той переменной флагмана 4 фазы. просто пос
 		
@@ -2889,7 +3347,15 @@ function jumped_arrive()
 					end
 				end
 				if crew.blueprint.name == "slug_legendary" then
-					calculated_slug_scrap_income = calculated_slug_scrap_income + math.random(1,9)
+					if Hyperspace.playerVariables['jumps_in_current_sector'] < 15 then
+						calculated_slug_scrap_income = calculated_slug_scrap_income + math.random(1,9)
+					elseif Hyperspace.playerVariables['jumps_in_current_sector'] < 20 then
+						calculated_slug_scrap_income = calculated_slug_scrap_income + math.random(1,5)
+					elseif Hyperspace.playerVariables['jumps_in_current_sector'] < 25 then
+						calculated_slug_scrap_income = calculated_slug_scrap_income + math.random(1,2)
+					else
+						--no scrap abuzer!
+					end
 				end
 			end
 		end
@@ -2961,6 +3427,173 @@ script.on_render_event(Defines.RenderEvents.SHIP_SPARKS, function() end, functio
 			Graphics.freetype.easy_print(8, shape.x + 5, shape.y, tostring(math.floor(room.iRoomId)))
 		end
 	end
+end)
+
+script.on_render_event(Defines.RenderEvents.SHIP, function() end, function(ship)
+	if ship.iShipId == 0 then
+		
+		--Graphics.CSurface.GL_DrawCircle(varr.test_point_player.x, varr.test_point_player.y, 6.0, varr.color_red)
+		--Graphics.CSurface.GL_DrawCircle(varr.test_point_player2.x, varr.test_point_player2.y, 6.0, varr.color_orange_bright)
+		
+		
+		
+		if varr.targ_proj then
+			local px = varr.targ_proj.position.x
+			local py = varr.targ_proj.position.y
+			-- local px = gui.shipPosition.x + varr.targ_proj.position.x
+			-- local py = gui.shipPosition.y + varr.targ_proj.position.y
+			
+			
+			
+			local px2 = px
+			local py2 = py
+			
+			Graphics.CSurface.GL_PushMatrix()
+			Graphics.CSurface.GL_Translate(px-28, py-28)
+			Graphics.CSurface.GL_RenderPrimitive(varr.protector_beam_target)
+			Graphics.CSurface.GL_PopMatrix()
+			
+			if varr.protector_shooting_now ~= nil then
+				local dx = - varr.protector_shooting_now:GetPosition().x + varr.targ_proj.position.x
+				local dy = varr.protector_shooting_now:GetPosition().y - varr.targ_proj.position.y - 4
+				local dist = math.sqrt(dx*dx + dy*dy)
+				
+				px = varr.protector_shooting_now:GetPosition().x
+				py = varr.protector_shooting_now:GetPosition().y - 4
+				
+				-- px = gui.shipPosition.x + varr.protector_shooting_now:GetPosition().x
+				-- py = gui.shipPosition.y + varr.protector_shooting_now:GetPosition().y - 4
+				
+				local anglee = (180*math.acos(dx/dist))/math.pi
+				if dy > 0 then
+					anglee = -anglee
+				end
+				if anglee > 180 then
+					anglee = anglee - 360
+				elseif anglee < -180 then
+					anglee = anglee + 360
+				end
+				
+				Graphics.CSurface.GL_PushMatrix()
+				Graphics.CSurface.GL_Translate(px, py, 0)
+				Graphics.CSurface.GL_Rotate(anglee, 0, 0, 1)
+				Graphics.CSurface.GL_Scale(dist, 1.0, 1.0)
+				Graphics.CSurface.GL_RenderPrimitive(varr.protector_beam_line)
+				Graphics.CSurface.GL_PopMatrix()
+				
+				Graphics.CSurface.GL_PushMatrix()
+				Graphics.CSurface.GL_Translate(px-10, py-10)
+				Graphics.CSurface.GL_RenderPrimitive(varr.protector_beam_glow)
+				Graphics.CSurface.GL_PopMatrix()
+				
+				Graphics.CSurface.GL_PushMatrix()
+				Graphics.CSurface.GL_Translate(px2-10, py2-10)
+				Graphics.CSurface.GL_RenderPrimitive(varr.protector_beam_glow2)
+				Graphics.CSurface.GL_PopMatrix()
+				
+				if gui and gui.event_pause == false and gui.bAutoPaused == false and gui.menu_pause == false then
+					if varr.fCountOfSecWithBeam > 50.0 then
+						--varr.protector_shooting_now.fStunTime = varr.protector_shooting_now.fStunTime + math.random(5,8) -- + 10.0
+						if varr.protector_shooting_now.blueprint.name == "protector_beam" then
+							varr.protector_shooting_now.fStunTime = varr.protector_shooting_now.fStunTime + math.random(5,8)
+						else
+							varr.protector_shooting_now.fStunTime = varr.protector_shooting_now.fStunTime + math.random(4,6)
+						end
+						varr.targ_proj.death_animation:Start(true)
+						varr.targ_proj.startedDeath = true
+						
+						
+						add_to_SoundOrder('def_beam_drone')
+						--Hyperspace.Sounds:PlaySoundMix('def_beam_drone', 10, false)
+						--Hyperspace.Sounds:PlaySoundMix('focusbeam1', 5, false)
+						
+						varr.targ_proj = nil
+						varr.protector_shooting_now = nil
+					end
+				end
+			end
+		end
+	end
+	
+	if ship.iShipId == 1 then
+		if varr.targ_proj_en then
+			-- local px = gui.combatControl.targetPosition.x+gui.combatControl.position.x + varr.targ_proj_en.position.x
+			-- local py = gui.combatControl.targetPosition.y+gui.combatControl.position.y + varr.targ_proj_en.position.y
+			local px = varr.targ_proj_en.position.x
+			local py = varr.targ_proj_en.position.y
+			
+			local px2 = px
+			local py2 = py
+			
+			Graphics.CSurface.GL_PushMatrix()
+			Graphics.CSurface.GL_Translate(px-28, py-28)
+			Graphics.CSurface.GL_RenderPrimitive(varr.protector_beam_target)
+			Graphics.CSurface.GL_PopMatrix()
+			
+			if varr.protector_shooting_now_en ~= nil then
+				local dx = - varr.protector_shooting_now_en:GetPosition().x + varr.targ_proj_en.position.x
+				local dy = varr.protector_shooting_now_en:GetPosition().y - varr.targ_proj_en.position.y - 4
+				local dist = math.sqrt(dx*dx + dy*dy)
+				
+				--px = gui.combatControl.targetPosition.x+gui.combatControl.position.x + varr.protector_shooting_now_en:GetPosition().x
+				--py = gui.combatControl.targetPosition.y+gui.combatControl.position.y + varr.protector_shooting_now_en:GetPosition().y - 4
+				px = varr.protector_shooting_now_en:GetPosition().x
+				py = varr.protector_shooting_now_en:GetPosition().y - 4
+				
+				local anglee = (180*math.acos(dx/dist))/math.pi
+				if dy > 0 then
+					anglee = -anglee
+				end
+				if anglee > 180 then
+					anglee = anglee - 360
+				elseif anglee < -180 then
+					anglee = anglee + 360
+				end
+				
+				Graphics.CSurface.GL_PushMatrix()
+				Graphics.CSurface.GL_Translate(px, py, 0)
+				Graphics.CSurface.GL_Rotate(anglee, 0, 0, 1)
+				Graphics.CSurface.GL_Scale(dist, 1.0, 1.0)
+				Graphics.CSurface.GL_RenderPrimitive(varr.protector_beam_line)
+				Graphics.CSurface.GL_PopMatrix()
+				
+				Graphics.CSurface.GL_PushMatrix()
+				Graphics.CSurface.GL_Translate(px-10, py-10)
+				Graphics.CSurface.GL_RenderPrimitive(varr.protector_beam_glow)
+				Graphics.CSurface.GL_PopMatrix()
+				
+				Graphics.CSurface.GL_PushMatrix()
+				Graphics.CSurface.GL_Translate(px2-10, py2-10)
+				Graphics.CSurface.GL_RenderPrimitive(varr.protector_beam_glow2)
+				Graphics.CSurface.GL_PopMatrix()
+				
+				if gui and gui.event_pause == false and gui.bAutoPaused == false and gui.menu_pause == false then
+					if varr.fCountOfSecWithBeam_en > 50.0 then
+						if varr.protector_shooting_now_en.blueprint.name == "protector_beam" then
+							varr.protector_shooting_now_en.fStunTime = varr.protector_shooting_now_en.fStunTime + math.random(5,8)
+						else
+							varr.protector_shooting_now_en.fStunTime = varr.protector_shooting_now_en.fStunTime + math.random(4,6)
+						end
+							
+						varr.targ_proj_en.death_animation:Start(true)
+						varr.targ_proj_en.startedDeath = true
+						
+						add_to_SoundOrder('def_beam_drone')
+						--Hyperspace.Sounds:PlaySoundMix('def_beam_drone', 10, false)
+						--Hyperspace.Sounds:PlaySoundMix('focusbeam1', 5, false)
+						
+						varr.targ_proj_en = nil
+						varr.protector_shooting_now_en = nil
+					end
+				end
+			end
+		end
+	end
+	
+	
+	
+	
+	
 end)
 
 
@@ -3043,7 +3676,7 @@ function update_state_of_soulreaper()
 				gui.equipScreen:AddWeapon(Hyperspace.Blueprints:GetWeaponBlueprint(soulname), true, false)
 				if mem_nm ~= soulname then
 					Hyperspace.Sounds:PlaySoundMix('levelup', 10, false)
-					table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("soulreaper/soulreaper_upgraded.png"), time_length = 2200.0, time_length_mem = 2200.0, x = 1227, y = 105, w=192, h=19, fw=16, fh=19, layer = "SPACE_STATUS_up"})
+					table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("soulreaper/soulreaper_upgraded.png"), time_length = 2200.0, time_length_mem = 2200.0, x = 1227, y = 105, w=192, h=19, fw=16, fh=19, layer = "SPACE_STATUS_up"})
 				end
 				
 				break
@@ -3343,7 +3976,7 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 		else
 			if Hyperspace.playerVariables['soulreaper_panel_opened'] == 1 then
 				for i = 1, 13 do
-					if mouseInside(sr_b[i]) then
+					if mouseInside(varr.sr_b[i]) then
 						press_button(i)
 						break
 					end
@@ -3353,18 +3986,27 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 					Hyperspace.Sounds:PlaySoundMix('moreInfoOff', 10, false)
 				end
 			else
-				if mouseInside(soulreaperTipBox) then
-					Hyperspace.playerVariables['soulreaper_panel_opened'] = 1
-					Hyperspace.Sounds:PlaySoundMix('moreInfoOn', 10, false)
-					
-					varr.bOpenedGlifPanel = false
+				--панель выключена, игрок нажал на хитбокс кнопки душегуба
+				if Hyperspace.metaVariables['enemy_state'] ~= 2 and gui and gui.upgradeButton.bActive == true then
+					if enemyShip == nil or enemyShip._targetable.hostile == false then
+						if isReallyDangerousEnvironment() == false then
+							
+							if mouseInside(soulreaperTipBox) then
+								Hyperspace.playerVariables['soulreaper_panel_opened'] = 1
+								Hyperspace.Sounds:PlaySoundMix('moreInfoOn', 10, false)
+								
+								varr.bOpenedGlifPanel = false
+							end
+							
+						end
+					end
 				end
 			end
 		end
 	end
 	
 	if varr.TABBED_WINDOW_is_visible == true then
-		if mouseInside(button_clearstatBox) then
+		if mouseInside(varr.button_clearstatBox) then
 			
 			if varr.prepare_to_clear_stat == false then
 				varr.prepare_to_clear_stat = true
@@ -3373,7 +4015,7 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 				varr.prepare_to_clear_stat = false
 				Hyperspace.Sounds:PlaySoundMix('moreInfoOff', 10, false)
 			end
-		elseif mouseInside(button_recBox) then
+		elseif mouseInside(varr.button_recBox) then
 			switch_rec_statistic()
 		end
 		
@@ -3390,7 +4032,9 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 	if varr.prepare_to_explode_hack == true then
 		if mouseInside({x = 106 + varr.x_offset_of_tips_artillery_system, y = 671, w = 22, h = 22}) and gui and gui.menu_pause == false then
 			playerShip.hackingSystem:BlowHackingDrone()
+			--print('test1')
 			if varr.allowed_hack_explosion_on_cooldown == true then
+				--print('allow')
 				playerShip.hackingSystem.iLockCount = 1
 				playerShip.hackingSystem.lockTimer.running = true
 				playerShip.hackingSystem.lockTimer.currTime = playerShip.hackingSystem.lockTimer.currGoal-1.0
@@ -3607,7 +4251,13 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 			press_button_notxt()
 		end
 	end
-	
+	if varr.button_notmr_ready == true then
+		if Hyperspace.playerVariables['jumps_in_current_sector'] > 0 or Hyperspace.playerVariables['counter_number_of_sector'] ~= 1 then
+			Hyperspace.Sounds:PlaySoundMix('wrong', 7, false)
+		else
+			press_button_notmr()
+		end
+	end
 	
 	if varr.button_resetchall_ready == true then
 		press_button_resetchall()
@@ -3637,6 +4287,10 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 		clear_map_drawing(true)
 	end
 	
+	if varr.show_ftl_timer_ready == true then
+		press_show_ftl_timer_ready()
+	end
+	
 	if varr.dps_switch_ready == true then
 		press_dps_switch_button()
 	end
@@ -3651,6 +4305,10 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 	if varr.button_g_clear_ready == true then
 		press_g_clear_button()
 	end
+	if varr.button_lastg_clear_ready == true then
+		press_lastg_clear_button()
+	end
+	
 	
 	if varr.button_g_onoff_ready == true then
 		press_g_onoff_button()
@@ -3679,6 +4337,10 @@ end)
 
 -- Если нажать HOME выдаст в лог текущую стоимость корабля игрока (и, если есть, то врага тоже)
 script.on_internal_event(Defines.InternalEvents.ON_KEY_DOWN, function(key)
+	
+	
+	
+	
 	if key == Defines.SDL.KEY_RCTRL then
 		if Hyperspace.metaVariables['fishing_beacon'] == 1 and varr.is_enabled_monitor_to_planet == true then
 			press_button_fish()
@@ -3782,12 +4444,73 @@ end)
 
 -- Если нажать INSERT то переключит режим показывания номеров отсеков (кораблей игрока и врагов)
 script.on_internal_event(Defines.InternalEvents.ON_KEY_DOWN, function(key)
+	
+	-- if key == Defines.SDL.KEY_HOME then
+		-- varr.cur_angle_off2 = varr.cur_angle_off2 + 1
+	-- end
+	
 	if key == Defines.SDL.KEY_INSERT then
 		if (bShowRoomNumbers == true) then
 			bShowRoomNumbers = false
 		else
 			bShowRoomNumbers = true
 		end
+		
+		--varr.eff_time = 0.0
+		-- for combatdrone in vter(playerShip.spaceDrones) do
+			-- if combatdrone.blueprint.typeName == "DEFENSE" then
+				-- print(combatdrone.blueprint.name..'='..combatdrone.type)--.currentTargetType)
+				-- --combatdrone.type   0=защитный, 1=атакующий
+				-- print(combatdrone.currentTargetType)--5 = все?
+			-- end
+		-- end
+		
+		
+		
+		--local idrmmm = playerShip:GetSystem(3):GetRoomId()
+		--GetRoomById(playerShip, idrmmm).extend.sysDamageResistChance = 50.0
+		
+		
+		-- Room_Extend
+		-- Accessed via Room's .extend field
+
+		-- Fields
+		-- float .sysDamageResistChance
+		-- float .ionDamageResistChance
+		-- float .hullDamageResistChance
+		-- int .timeDilation
+
+
+
+		-- enemyShip.fuel_count = 0
+		-- print(enemyShip.fuel_count)
+		
+		--resuffle_only_one_player_weapon()
+		--remove_random_item_from_player_cargo()
+		
+		--Hyperspace.CustomShipSelect.GetInstance():GetDefinition(playerShip.myBlueprint.blueprintName).hpCap = 31
+        
+		--playerShip.ship.hullIntegrity.second = 32
+		
+		
+		--varr.cur_angle_off1 = varr.cur_angle_off1 + 1
+		
+		--redefine_enemy_strFullGlifLine()
+		--clear_last_player_glif()
+		--varr.cur_font_test = varr.cur_font_test + 1
+		--print(varr.cur_font_test)
+		
+		--redefine_start_glif()--test
+		
+		-- for crew in vter(playerShip.vCrewList) do
+			-- Hyperspace.StatBoostManager.GetInstance():CreateTimedAugmentBoost(Hyperspace.StatBoost(varr.def_explosivedeath), crew)
+		-- end
+		--add_to_LaunchOrder("PLAYER_CALLS_PDS")
+		--add_to_LaunchOrder("BOSS_CALLS_PDS")
+		
+		
+		
+		--redefine_target_point_to_gigabeam()
 		
 		
 		-- for stringy in vter2 (Hyperspace.Blueprints:GetBlueprintList("BEAMS_OF_HAMELEON")) do
@@ -4056,7 +4779,6 @@ script.on_internal_event(Defines.InternalEvents.ON_KEY_DOWN, function(key)
 			-- end
 		-- end
 		
-		--reset_osa_activity(true)
 		
 		--print(math.random(0, #varr.fish_imgs))
 		--playerShip.bAutomated = true
@@ -4377,11 +5099,12 @@ script.on_internal_event(Defines.InternalEvents.DRONE_FIRE, function(projectile,
 						for i = 0, playerShip.vCrewList:size() - 1 do
 							local crew = playerShip.vCrewList[i]
 							if crew.intruder == false then
-								if(room_target_ide == -1)then
-									room_target_ide = crew.iRoomId
+								if(room_target_idp == -1)then
+									room_target_idp = crew.iRoomId
 								end
 								if (math.random(0,100) < 33) then
-									room_target_ide = crew.iRoomId
+									room_target_idp = crew.iRoomId
+									--print('retarg'..room_target_idp)
 								end
 							end
 						end
@@ -4484,6 +5207,16 @@ function GetRoomAtLocation(shipManager, location, includeWalls)
 	return Hyperspace.ShipGraph.GetShipInfo(shipManager.iShipId):GetSelectedRoom(location.x, location.y, includeWalls)
 end
 
+-- возвращает объект Room по айди
+function GetRoomById(shipManager, local_id)
+    -- nil если нет комнаты с таким id
+	for room in vter20(shipManager.ship.vRoomList) do
+		if room.iRoomId == local_id then
+			return room
+		end
+	end
+	return nil
+end
 
 
 local jump_fuel_check_done = false
@@ -4521,6 +5254,12 @@ function check_arsenal_on_tick_processes()
 		end
 	end
 	
+	varr.micro_tick_counter_psevdomagazin = varr.micro_tick_counter_psevdomagazin + 10.0*Hyperspace.FPS.SpeedFactor
+	if varr.micro_tick_counter_psevdomagazin > 200000.0 then
+		varr.micro_tick_counter_psevdomagazin = 0.0
+	end
+	
+	
 	
 	--не самое очевидное место для сброса отслеживалок нажатий на кнопки, но вроде работает как надо...
 	varr.button_mind_ready = false
@@ -4551,11 +5290,17 @@ function check_arsenal_on_tick_processes()
 	varr.button_noevd_ready = false
 	varr.button_noorc_ready = false
 	varr.button_notxt_ready = false
+	varr.button_notmr_ready = false
 	varr.button_resetchall_ready = false
 	varr.button_rew_ready = false
 	varr.waiting_button_ready = false
 	varr.draw_ready = false
 	varr.draw_clear_ready = false
+	
+	varr.show_ftl_timer_ready = false
+	
+	
+	
 	
 	if Hyperspace.App.menu.shipBuilder.bOpen == true then -- при заходе в ангар для выбора корабля включает запись статистики полётов
 		Hyperspace.metaVariables['rec_sector_statistic'] = 1 -- рестарт без захода в ангар не меняет настройку записи
@@ -4623,10 +5368,11 @@ function check_arsenal_on_tick_processes()
 		clear_aug_state_of_player()
 		
 		clear_LaunchOrder()
+		
+		clear_SoundOrder()
 	end
 	varr.previous_shipBuilder_bOpen = Hyperspace.App.menu.shipBuilder.bOpen
 	
-	--print(Hyperspace.metaVariables['prinuditelno_autoship']..'=='..math.random(0,100))
 	
 	if Hyperspace.App.menu.shipBuilder.bOpen == true or Hyperspace.App.menu.bOpen == true then -- останавливаем выполнение всех тик-процессов
 		
@@ -4659,34 +5405,460 @@ function check_arsenal_on_tick_processes()
 		-- ////// П О Л Ё Т /////////////////////
 		-- //////////////////////////////////////
 		
+		-- if enemyShip and enemyShip.shieldSystem and enemyShip.shieldSystem.shields then
+			-- print(enemyShip.shieldSystem.shields.superTimer)
+		-- end
 		
-		-- if enemyShip and enemyShip:GetSystem(12) ~= nil then
-			-- --print(enemyShip:GetSystem(12).iLockCount)
-			-- if enemyShip:GetSystem(12).timer then
-				-- print(enemyShip:GetSystem(12).timer.currTime)
+		-- if playerShip and varr.bPressedBACKSPACE == true then
+			-- playerShip.ship.bCloaked = true
+		-- end
+		
+		-- if playerShip then
+			-- print(playerShip.failedDodgeCounter)
+		-- end
+		-- if playerShip then
+			-- varr.count_of_player_crew_no_osa = 0
+			-- for crew in vter (playerShip.vCrewList) do
+				-- if crew:IsDrone() == false and crew.crewAnim.bPlayer==true and crew.bOutOfGame == false and crew.bDead == false then
+					-- if crew.blueprint.name:find("osa")==nil then
+						-- varr.count_of_player_crew_no_osa = varr.count_of_player_crew_no_osa + 1
+					-- end
+				-- end
 			-- end
 		-- end
 		
-		-- if playerShip and enemyShip and enemyShip.bJumping == false and playerShip.bJumping == false and Hyperspace.metaVariables['enemy_state'] == 2 then
-			-- local nm = enemyShip.myBlueprint.blueprintName
-			-- if nm == "SLURM_QUEENY" then
-				-- varr.micro_tick_counter_slurmqueen = varr.micro_tick_counter_slurmqueen + 60.0*Hyperspace.FPS.SpeedFactor
-				-- if (varr.micro_tick_counter_slurmqueen >= 3750.0) then --каждые x сек атака
-					-- varr.micro_tick_counter_slurmqueen = 0.0
-					-- Hyperspace.App.world.space:CreateBomb(Hyperspace.Blueprints:GetWeaponBlueprint('SLURM_SMALL'), 1, playerShip:GetRandomRoomCenter(), 0)
-				-- end
-			-- elseif nm:find("SLURM_")~=nil then
-				-- varr.micro_tick_counter_slurmqueen = varr.micro_tick_counter_slurmqueen + 60.0*Hyperspace.FPS.SpeedFactor
-				-- if (varr.micro_tick_counter_slurmqueen >= 6250.0) then --каждые x сек атака
-					-- varr.micro_tick_counter_slurmqueen = 0.0
-					-- Hyperspace.App.world.space:CreateBomb(Hyperspace.Blueprints:GetWeaponBlueprint('SLURM_SMALL'), 1, playerShip:GetRandomRoomCenter(), 0)
-				-- end
-			-- else
-				-- varr.micro_tick_counter_slurmqueen = 0.0
-			-- end
-		-- else
-			-- varr.micro_tick_counter_slurmqueen = 0.0
+		-- if enemyShip then
+			-- enemyShip.bJumping = false
 		-- end
+		
+		
+		if enemyShip and playerShip then
+			if hasAnyAugmentationOfList(playerShip, {"DOOR_WORM", "HID_DOOR_WORM"}) == true then
+				if playerShip.hackingSystem and playerShip.hackingSystem.drone~=nil and playerShip.hackingSystem.drone.bDead == false and playerShip.hackingSystem.drone.arrived == true then
+					if enemyShip:GetSystem(8) ~= nil and enemyShip:GetSystem(8).healthState.first > 0 then
+						if varr.micro_tick_counter25 == 0.0 then
+							Hyperspace.App.world.space:CreateBomb(Hyperspace.Blueprints:GetWeaponBlueprint('ULTRA_FAST_LUA_HACK_BOMB'), 0, enemyShip:GetRoomCenter(enemyShip:GetSystem(8):GetRoomId()), 1)
+							--print('send')
+						end
+					else
+						for doory in vter2(enemyShip.ship.vOuterAirlocks) do
+							doory:ApplyDamage(0.1)
+							doory.bOpen = false
+						end
+						for doory in vter2(enemyShip.ship.vDoorList) do
+							doory:ApplyDamage(0.1)
+							doory.bOpen = false
+						end
+					end
+				end
+			end
+			
+			if enemyShip:HasAugmentation("DOOR_WORM") > 0 then
+				
+				--не взламываем двери игрока, т.к. не эффективно
+				if playerShip:GetSystem(8)~= nil and enemyShip.hackingSystem.queuedSystem == playerShip:GetSystem(8) then
+					--print('dont hack doors if has door worm')
+					enemyShip.hackingSystem.queuedSystem = nil
+				end
+				
+				if enemyShip.hackingSystem and enemyShip.hackingSystem.drone~=nil and enemyShip.hackingSystem.drone.bDead == false and enemyShip.hackingSystem.drone.arrived == true then
+					if playerShip:GetSystem(8) ~= nil and playerShip:GetSystem(8).healthState.first > 0 then
+						if varr.micro_tick_counter25 == 0.0 then
+							Hyperspace.App.world.space:CreateBomb(Hyperspace.Blueprints:GetWeaponBlueprint('ULTRA_FAST_LUA_HACK_BOMB'), 1, playerShip:GetRoomCenter(playerShip:GetSystem(8):GetRoomId()), 0)
+							--print('send e')
+						end
+					else
+						for doory in vter2(playerShip.ship.vOuterAirlocks) do
+							doory:ApplyDamage(0.1)
+							doory.bOpen = false
+						end
+						for doory in vter2(playerShip.ship.vDoorList) do
+							doory:ApplyDamage(0.1)
+							doory.bOpen = false
+						end
+					end
+				end
+			end
+		end
+		
+		
+		
+		varr.targ_proj = nil
+		if playerShip then
+			for crew in vter(playerShip.vCrewList) do
+				if crew.blueprint.name == "protector_beam" or crew.blueprint.name == "protector_beam2" then
+					if crew:Functional() == true and crew:IsDrone() == true and crew.fStunTime <= 0.0 then
+						if crew.bOutOfGame == false and crew.health.first > 0.0 and crew.bDead == false and crew.crewAnim.bPlayer == true then
+							
+							local dx = 0.0
+							local dy = 0.0
+							local dist = 0.0
+							
+							
+							local projs = Hyperspace.App.world.space.projectiles
+							for i = 0, projs:size() - 1 do
+								local projectile = projs[i]
+								local projName = tostring(projectile.extend.name)
+								if varr.targ_proj == nil then --..hitTarget
+									if not (projName == "" or projName == "nil" or projName == "PDS_SHOT") then
+										if projectile.currentSpace == 0 and projectile.ownerId == 1 and projectile.destinationSpace == 0 then --владелец враг, целевое пространство - окно игрока.
+											if projectile.missed == false and projectile.dead == false and projectile.passedTarget == false then --and projectile.hitTarget == false then
+												if projectile.startedDeath == false then
+													if (projectile.damage.iDamage > 0) or (projectile.damage.iShieldPiercing > 0) or (projectile.damage.fireChance > 0.0) or(projectile.damage.breachChance > 0.0) or (projectile.damage.stunChance > 0.0) or (projectile.damage.iIonDamage > 0) or (projectile.damage.iSystemDamage > 0) or (projectile.damage.iPersDamage > 0) or (projectile.damage.bLockdown == true) or (projectile.damage.iStun > 0) then
+														if projectile.speed_magnitude > 0 then
+															dx = projectile.position.x - crew:GetPosition().x
+															dy = projectile.position.y - crew:GetPosition().y
+															dist = math.sqrt(dx*dx + dy*dy)
+															if crew.blueprint.name == "protector_beam" then
+																if dist < varr.radius_target_locking then
+																	varr.targ_proj = projectile
+																	varr.protector_shooting_now = crew
+																end
+															else
+																if dist < varr.radius_target_locking2 then
+																	varr.targ_proj = projectile
+																	varr.protector_shooting_now = crew
+																end
+															end
+														end
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+		
+		varr.targ_proj_en = nil
+		if enemyShip then
+			for crew in vter(enemyShip.vCrewList) do
+				if crew.blueprint.name == "protector_beam" or crew.blueprint.name == "protector_beam2" then
+					if crew:Functional() == true and crew:IsDrone() == true and crew.fStunTime <= 0.0 then
+						if crew.bOutOfGame == false and crew.health.first > 0.0 and crew.bDead == false and crew.crewAnim.bPlayer == false then
+							local dx = 0.0
+							local dy = 0.0
+							local dist = 0.0
+							local projs = Hyperspace.App.world.space.projectiles
+							for i = 0, projs:size() - 1 do
+								local projectile = projs[i]
+								local projName = tostring(projectile.extend.name)
+								if varr.targ_proj == nil then
+									if not (projName == "" or projName == "nil" or projName == "PDS_SHOT") then
+										if projectile.currentSpace == 1 and projectile.ownerId == 0 and projectile.destinationSpace == 1 then
+											if projectile.missed == false and projectile.dead == false and projectile.passedTarget == false then --and projectile.hitTarget == false then
+												if projectile.startedDeath == false then
+													if (projectile.damage.iDamage > 0) or (projectile.damage.iShieldPiercing > 0) or (projectile.damage.fireChance > 0.0) or(projectile.damage.breachChance > 0.0) or (projectile.damage.stunChance > 0.0) or (projectile.damage.iIonDamage > 0) or (projectile.damage.iSystemDamage > 0) or (projectile.damage.iPersDamage > 0) or (projectile.damage.bLockdown == true) or (projectile.damage.iStun > 0) then
+														if projectile.speed_magnitude > 0 then
+															
+															dx = projectile.position.x - crew:GetPosition().x
+															dy = projectile.position.y - crew:GetPosition().y
+															dist = math.sqrt(dx*dx + dy*dy)
+															
+															if crew.blueprint.name == "protector_beam" then
+																if dist < varr.radius_target_locking then
+																	varr.targ_proj_en = projectile
+																	varr.protector_shooting_now_en = crew
+																end
+															else
+																if dist < varr.radius_target_locking2 then
+																	varr.targ_proj_en = projectile
+																	varr.protector_shooting_now_en = crew
+																end
+															end
+															
+															
+														end
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+		
+		
+		
+		if not Hyperspace.App.world.space.gamePaused and gui and gui.event_pause == false and gui.bAutoPaused == false and gui.menu_pause == false then
+			if varr.targ_proj ~= nil then
+				varr.fCountOfSecWithBeam = varr.fCountOfSecWithBeam + 60.0*Hyperspace.FPS.SpeedFactor
+			else
+				varr.fCountOfSecWithBeam = 0.0
+			end
+			if varr.targ_proj_en ~= nil then
+				varr.fCountOfSecWithBeam_en = varr.fCountOfSecWithBeam_en + 60.0*Hyperspace.FPS.SpeedFactor
+			else
+				varr.fCountOfSecWithBeam_en = 0.0
+			end
+		end
+		
+		if varr.micro_tick_counter29 == 0.0 then --1 раз в 2 секунды
+			--просто сохраняем состояние беспилотности корабля в переменную, для дальнейшего использования в эвентс возможно. хз надо значит надо.
+			if playerShip and playerShip.bAutomated == true then
+				Hyperspace.metaVariables['ship_is_automated'] = 1
+			else
+				Hyperspace.metaVariables['ship_is_automated'] = 0
+			end
+			--print(Hyperspace.metaVariables['ship_is_automated']..','..math.random(0,10))
+			
+			--сохраняет периодически состояние раскрытости карты. метапеременную можно использовать в событиях
+			if map then
+				if map.bMapRevealed == true then
+					Hyperspace.metaVariables['player_has_sector_map'] = 1
+				else
+					Hyperspace.metaVariables['player_has_sector_map'] = 0
+				end
+			end
+			--print(Hyperspace.metaVariables['player_has_sector_map'])
+		end
+		
+		
+		--блок улучшенных контролёров систем невидимых у беспилотников игрока
+		--2 продвинутый, 3 - эксперт. хз почему так.
+		if playerShip and playerShip.bAutomated == true then
+			local sysy_local = playerShip:GetSystem(6)
+			if sysy_local and sysy_local.healthState.second == sysy_local.healthState.first and sysy_local.bOnFire == false and sysy_local:GetLocked() == false and sysy_local.bOccupied == false then
+				if Hyperspace.metaVariables['ai_adv_pilot'] == 1 then
+					if sysy_local.iActiveManned < 2 then
+						sysy_local.iActiveManned = 2
+					end
+				elseif Hyperspace.metaVariables['ai_adv_pilot'] >= 2 then
+					if sysy_local.iActiveManned < 3 then
+						sysy_local.iActiveManned = 3
+					end
+				end
+			end
+			sysy_local = playerShip:GetSystem(1)
+			if sysy_local and sysy_local.healthState.second == sysy_local.healthState.first and sysy_local.bOnFire == false and sysy_local:GetLocked() == false and sysy_local.bOccupied == false then
+				if Hyperspace.metaVariables['ai_adv_engines'] == 1 then
+					if sysy_local.iActiveManned < 2 then
+						sysy_local.iActiveManned = 2
+					end
+				elseif Hyperspace.metaVariables['ai_adv_engines'] >= 2 then
+					if sysy_local.iActiveManned < 3 then
+						sysy_local.iActiveManned = 3
+					end
+				end
+			end
+			sysy_local = playerShip:GetSystem(0)
+			if sysy_local and sysy_local.healthState.second == sysy_local.healthState.first and sysy_local.bOnFire == false and sysy_local:GetLocked() == false and sysy_local.bOccupied == false then
+				if Hyperspace.metaVariables['ai_adv_shields'] == 1 then
+					if sysy_local.iActiveManned < 2 then
+						sysy_local.iActiveManned = 2
+					end
+				elseif Hyperspace.metaVariables['ai_adv_shields'] >= 2 then
+					if sysy_local.iActiveManned < 3 then
+						sysy_local.iActiveManned = 3
+					end
+				end
+			end
+			sysy_local = playerShip:GetSystem(3)
+			if sysy_local and sysy_local.healthState.second == sysy_local.healthState.first and sysy_local.bOnFire == false and sysy_local:GetLocked() == false and sysy_local.bOccupied == false then
+				if Hyperspace.metaVariables['ai_adv_weapons'] == 1 then
+					if sysy_local.iActiveManned < 2 then
+						sysy_local.iActiveManned = 2
+					end
+				elseif Hyperspace.metaVariables['ai_adv_weapons'] >= 2 then
+					if sysy_local.iActiveManned < 3 then
+						sysy_local.iActiveManned = 3
+					end
+				end
+			end
+		end
+		
+		
+		if Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] ~= 0 then
+			--блок улучшенных контролёров систем невидимых у беспилотников врага
+			--2 продвинутый, 3 - эксперт. хз почему так.
+			if enemyShip and enemyShip.bAutomated == true then
+				local sysy_local = enemyShip:GetSystem(6)
+				if sysy_local and sysy_local.healthState.second == sysy_local.healthState.first and sysy_local.bOnFire == false and sysy_local:GetLocked() == false and sysy_local.bOccupied == false then
+					if Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] == 1 then
+						if sysy_local.iActiveManned < 2 then
+							sysy_local.iActiveManned = 2
+						end
+					elseif Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] >= 2 then
+						if sysy_local.iActiveManned < 3 then
+							sysy_local.iActiveManned = 3
+						end
+					end
+				end
+				sysy_local = enemyShip:GetSystem(1)
+				if sysy_local and sysy_local.healthState.second == sysy_local.healthState.first and sysy_local.bOnFire == false and sysy_local:GetLocked() == false and sysy_local.bOccupied == false then
+					if Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] == 1 then
+						if sysy_local.iActiveManned < 2 then
+							sysy_local.iActiveManned = 2
+						end
+					elseif Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] >= 2 then
+						if sysy_local.iActiveManned < 3 then
+							sysy_local.iActiveManned = 3
+						end
+					end
+				end
+				sysy_local = enemyShip:GetSystem(0)
+				if sysy_local and sysy_local.healthState.second == sysy_local.healthState.first and sysy_local.bOnFire == false and sysy_local:GetLocked() == false and sysy_local.bOccupied == false then
+					if Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] == 1 then
+						if sysy_local.iActiveManned < 2 then
+							sysy_local.iActiveManned = 2
+						end
+					elseif Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] >= 2 then
+						if sysy_local.iActiveManned < 3 then
+							sysy_local.iActiveManned = 3
+						end
+					end
+				end
+				sysy_local = enemyShip:GetSystem(3)
+				if sysy_local and sysy_local.healthState.second == sysy_local.healthState.first and sysy_local.bOnFire == false and sysy_local:GetLocked() == false and sysy_local.bOccupied == false then
+					if Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] == 1 then
+						if sysy_local.iActiveManned < 2 then
+							sysy_local.iActiveManned = 2
+						end
+					elseif Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] >= 2 then
+						if sysy_local.iActiveManned < 3 then
+							sysy_local.iActiveManned = 3
+						end
+					end
+				end
+			end
+		end
+		
+		
+		
+	
+		if Hyperspace.playerVariables['jumps_in_current_sector'] > 0 or Hyperspace.playerVariables['counter_number_of_sector'] ~= 1 then
+			if Hyperspace.metaVariables['challenge_notmr'] == 1 then
+				varr.current_real_game_minute = (timer_real // 60) % 60
+				if varr.current_real_game_minute_previous ~= varr.current_real_game_minute then
+					--print('minute changed'..varr.current_real_game_minute)
+					if varr.current_real_game_minute ~= 0 and varr.current_real_game_minute_previous ~= 0 then
+						if varr.current_real_game_minute%5 == 0 then-- делится на 5 нацело, т.е. каждые 5 минут происходит запуск
+						--if varr.current_real_game_minute%1 == 0 then
+							--print('bad thing')
+							add_to_LaunchOrder("CURSED_TIMER_EVENT_CHALLENGE")
+						end
+					end
+				end
+				varr.current_real_game_minute_previous = varr.current_real_game_minute
+			end
+		end
+		
+		
+		
+		if gui and gui.event_pause == false and gui.bAutoPaused == false and gui.menu_pause == false then
+			varr.micro_tick_counter_crew_flagship = varr.micro_tick_counter_crew_flagship + 60.0*Hyperspace.FPS.SpeedFactor
+		end
+		if (varr.micro_tick_counter_crew_flagship >= 920.0) then
+			varr.micro_tick_counter_crew_flagship = 0.0
+		end
+		--контроллер кол-ва экипажа флагмана. он загадочно терял его иногда
+		if varr.micro_tick_counter_crew_flagship == 0.0 then
+			
+			if playerShip and playerShip.ship.hullIntegrity.first > 0 then
+				Hyperspace.metaVariables['ship_hull_cur'] = playerShip.ship.hullIntegrity.first
+			end
+			
+			--print(playerShip.bJumping)
+			--print(enemyShip.bJumping)
+			if playerShip and playerShip.bJumping == false and enemyShip and enemyShip.bJumping == false and enemyShip.ship and enemyShip.ship.hullIntegrity and enemyShip.ship.hullIntegrity.first > 0 then
+				if enemyShip.myBlueprint then
+					--print('save')
+					local nm = enemyShip.myBlueprint.blueprintName
+					if nm == "BOSS_1_HARD_DLC" or nm == "BOSS_2_HARD_DLC" or nm == "BOSS_3_HARD_DLC" then
+						local ccountmini = 0
+						for crew in vter(enemyShip.vCrewList) do
+							if crew:IsDrone() == false and crew.crewAnim.bPlayer==false and not crew.extend.deathTimer and crew.health.first > 0.0 then
+								ccountmini = ccountmini + 1
+							end
+						end
+						Hyperspace.metaVariables['flagship_crew_count'] = ccountmini
+						--print('saved count boss crew='..ccountmini)
+					end
+				end
+			end
+		end
+		
+		
+		
+		-- отключить зарядку, полоска заряда, полоску зарядки
+		-- данная структура для перечисленных орудий отключает отображение полоски зарядки меняя их на типа-игроковые орудия
+		-- побочных эффектов данной махинации не выявил пока что...
+		if enemyShip then
+			if enemyShip.weaponSystem ~= nil then
+				for pf in vter(enemyShip.weaponSystem.weapons) do
+					--local pfnm = pf.blueprint.name
+					if isNeededToHideChargeBarWeapon(pf.blueprint.name) == true then
+					--if pfnm:find("MAGMAN_GIGAART") ~= nil or pfnm:find("HAL_EYE") ~= nil or pfnm:find("ZOLTAN_BLINK") ~= nil or pfnm:find("ORDER1") ~= nil then
+						if pf.weaponVisual.playerShip == false then
+							pf.weaponVisual.playerShip = true
+							--print('dis change bar o w = '..pf.blueprint.name)
+						end
+					end
+				end
+			end
+			
+			if enemyShip.artillerySystems ~= nil then
+				local vSystemList = enemyShip.artillerySystems
+				for i=0, vSystemList:size()-1 do
+					local pf = vSystemList[i].projectileFactory
+					--local pfnm = pf.blueprint.name
+					--if pfnm:find("MAGMAN_GIGAART") ~= nil or pfnm:find("HAL_EYE") ~= nil or pfnm:find("ZOLTAN_BLINK") ~= nil or pfnm:find("ORDER1") ~= nil then
+					if isNeededToHideChargeBarWeapon(pf.blueprint.name) == true then
+						if pf.weaponVisual.playerShip == false then
+							pf.weaponVisual.playerShip = true
+							--print('dis change bar = '..pf.blueprint.name)
+						end
+					end
+				end
+			end
+		end
+		
+		
+		
+		
+		--отслеживает рабочий уровень дверей игрока
+		if playerShip and playerShip:GetSystem(8) then
+			varr.iCurrentPlayerDoorLvl = playerShip:GetSystem(8):GetEffectivePower()
+		else
+			varr.iCurrentPlayerDoorLvl = 0
+		end
+		--print(varr.iCurrentPlayerDoorLvl)
+		
+		
+		-- блок не даёт противникам запускать хак-дрона в систему невидимости если у врага демаскирующее поле
+		if enemyShip and playerShip and enemyShip.hackingSystem and playerShip.cloakSystem then
+			if enemyShip:HasAugmentation("ANTICLOAK_FIELD") > 0 then
+				if enemyShip.hackingSystem.queuedSystem ~= nil then
+					if enemyShip.hackingSystem.queuedSystem == playerShip.cloakSystem then
+						--print('dont hack cloak if anticloak field')
+						enemyShip.hackingSystem.queuedSystem = nil
+					end
+				end
+			end
+		end
+		
+		--охладители доп.задержки бомбовых снарядов. игрока и врага. (типа фикс фишки с неуязвимостью золт.щита)
+		if (varr.micro_tick_supershield_cooler > 0.0) then
+			varr.micro_tick_supershield_cooler = varr.micro_tick_supershield_cooler - 60.0*Hyperspace.FPS.SpeedFactor
+		end
+		if (varr.micro_tick_supershield_cooler < 0.0) then
+			varr.micro_tick_supershield_cooler = 0.0
+		end		
+		if (varr.micro_tick_supershield_cooler_e > 0.0) then
+			varr.micro_tick_supershield_cooler_e = varr.micro_tick_supershield_cooler_e - 60.0*Hyperspace.FPS.SpeedFactor
+		end
+		if (varr.micro_tick_supershield_cooler_e < 0.0) then
+			varr.micro_tick_supershield_cooler_e = 0.0
+		end	
+		
 		
 		
 		if varr.PlaySoundMix_timer > 0.0 then
@@ -4745,7 +5917,9 @@ function check_arsenal_on_tick_processes()
 								-- end
 								
 								if count_of_mindcontrolled_player_crew == 0 then
-									enemyShip.mindSystem.controlTimer.first = enemyShip.mindSystem.controlTimer.second - 0.01
+									if enemyShip.mindSystem and enemyShip.mindSystem.controlTimer then
+										enemyShip.mindSystem.controlTimer.first = enemyShip.mindSystem.controlTimer.second - 0.01
+									end
 								end
 							end
 						end
@@ -4754,14 +5928,23 @@ function check_arsenal_on_tick_processes()
 			end
 			
 			if varr.bWillSaveMyCrewFromMindSteal == false then
-				if enemyShip and enemyShip.mindSystem and enemyShip.mindSystem.iLockCount == -1 then--.iLockCount
-					varr.iWillSaveMyCrewFromMindSteal = varr.iWillSaveMyCrewFromMindSteal + 1
-					if varr.iWillSaveMyCrewFromMindSteal > 10 then
-						varr.iWillSaveMyCrewFromMindSteal = 10
-					end
-				else
-					varr.iWillSaveMyCrewFromMindSteal = 0
+				varr.iWillSaveMyCrewFromMindSteal = varr.iWillSaveMyCrewFromMindSteal + 1
+				if varr.iWillSaveMyCrewFromMindSteal > 10 then
+					varr.iWillSaveMyCrewFromMindSteal = 10
 				end
+				-- if enemyShip and enemyShip.mindSystem and enemyShip.mindSystem.iLockCount == -1 then--.iLockCount
+					-- varr.iWillSaveMyCrewFromMindSteal = varr.iWillSaveMyCrewFromMindSteal + 1
+					-- if varr.iWillSaveMyCrewFromMindSteal > 10 then
+						-- varr.iWillSaveMyCrewFromMindSteal = 10
+					-- end
+				-- elseif enemyShip and enemyShip.mindSystem == nil or (enemyShip:GetSystem(14) and enemyShip:GetSystem(14))
+					-- varr.iWillSaveMyCrewFromMindSteal = varr.iWillSaveMyCrewFromMindSteal + 1
+					-- if varr.iWillSaveMyCrewFromMindSteal > 10 then
+						-- varr.iWillSaveMyCrewFromMindSteal = 10
+					-- end
+				-- else
+					-- varr.iWillSaveMyCrewFromMindSteal = 0
+				-- end
 			else
 				varr.iWillSaveMyCrewFromMindSteal = 0
 			end
@@ -4936,6 +6119,35 @@ function check_arsenal_on_tick_processes()
 			end
 		end
 		
+		
+		
+		
+		
+		if enemyShip and enemyShip.artillerySystems ~= nil then
+			local vSystemList = enemyShip.artillerySystems
+			for i = 0, vSystemList:size() - 1 do
+				local pf = vSystemList[i].projectileFactory
+				if pf.blueprint.name == "MAGMAN_GIGAART" then
+					-- if pf.weaponVisual.bShowCharge == true then
+						-- pf.weaponVisual.bShowCharge = false
+					-- end
+					
+					if pf.powered == true and (pf.cooldown.first > (pf.cooldown.second - 4.0) and pf.cooldown.first < (pf.cooldown.second - 3.8)) then
+						pf.cooldown.first = pf.cooldown.second - 3.7
+						redefine_target_point_to_gigabeam()
+						Hyperspace.Sounds:PlaySoundMix('warning', 5, false)
+						
+						local px = Hyperspace.metaVariables['target_point_x']
+						local py = Hyperspace.metaVariables['target_point_y']
+						
+						table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/gigaart_warning.png"), time_length = 3000.0, time_length_mem = 3000.0, x = px-95, y = py-76, w=1890, h=100, fw=315, fh=100, layer = "SPACE_STATUS_up"})
+						--print('en micro proskok sdelan')
+					end
+				end
+			end
+		end
+		
+		
 		--обновляет информацию о кол-ве снарядов для пушек
 		if varr.micro_tick_counter25 == 0.0 then --1 раз в секунду	
 			if playerShip and playerShip.weaponSystem ~= nil then
@@ -5066,7 +6278,20 @@ function check_arsenal_on_tick_processes()
 				end
 			end
 		end
-
+		
+		varr.micro_tick_counter_sound_launcher = varr.micro_tick_counter_sound_launcher + 60.0*Hyperspace.FPS.SpeedFactor
+		if (varr.micro_tick_counter_sound_launcher >= 160.0) then
+			varr.micro_tick_counter_sound_launcher = 0.0
+			try_zero_in_SoundOrder()--пусковик звуков по очереди
+		end
+		
+		
+		if gui and not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
+			varr.micro_tick_counter31 = varr.micro_tick_counter31 + 60.0*Hyperspace.FPS.SpeedFactor
+			if (varr.micro_tick_counter31 >= 220.0) then
+				varr.micro_tick_counter31 = 0.0
+			end
+		end
 		
 		varr.micro_tick_counter25 = varr.micro_tick_counter25 + 60.0*Hyperspace.FPS.SpeedFactor
 		if (varr.micro_tick_counter25 >= 920.0) then
@@ -5097,7 +6322,9 @@ function check_arsenal_on_tick_processes()
 					local bNeededActivation = false
 					for crew in vter(enemyShip.vCrewList) do
 						if crew.intruder == true then
-							bNeededActivation = true
+							if crew.bOutOfGame == false and crew.health.first > 0.0 and crew.bDead == false and crew.crewAnim.bPlayer == true then
+								bNeededActivation = true
+							end
 						end
 					end
 					if bNeededActivation == true and gui and gui.event_pause == false and enemyShip._targetable.hostile == true then
@@ -5294,6 +6521,15 @@ function check_arsenal_on_tick_processes()
 		GSIe = Hyperspace.ShipGraph.GetShipInfo(1)
 		GSIp = Hyperspace.ShipGraph.GetShipInfo(0)
 		
+		
+		-- if enemyShip then
+			-- if Hyperspace.metaVariables['fishing_beacon'] ~= 0 then
+				-- Hyperspace.metaVariables['fishing_beacon'] = 0
+			-- end
+		
+		-- end
+		
+		
 		if gui and gui.bPaused == true then
 			if Hyperspace.metaVariables['challenge_nopause'] == 1 then
 				gui.bPaused = false
@@ -5484,20 +6720,20 @@ function check_arsenal_on_tick_processes()
 		
 		
 		-- этот блок для исправления поведения врагов, которые теряли свой мозг и стояли на месте. я хз, баг у меня не подтверждается
-		-- и проверить что это работает не смог в итоге...
-		if playerShip ~= nil then
-			for crew in vter(playerShip.vCrewList) do
-				if crew:IsDrone() == false and crew.crewAnim.bPlayer==false then --crew.intruder == true then
-					if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "osae" and crew.blueprint.name ~= "alien" and crew.blueprint.name ~= "gus" and crew.blueprint.name ~= "gusq" and crew.blueprint.name:find("magman") == nil then
-						if crew.extend:GetDefinition().noAI == true then
-							crew.extend:GetDefinition().noAI = false
-							--print('restored ai board')
-						end
-					end
-				end					
-			end
-		end
-		if Hyperspace.metaVariables['enemy_has_advanced_ai'] == 0 then
+		if Hyperspace.metaVariables['enemy_has_advanced_ai'] == 0 then --абордажник на корабле игрока и врага
+			-- if playerShip ~= nil then
+				-- for crew in vter(playerShip.vCrewList) do
+					-- if crew:IsDrone() == false and crew.crewAnim.bPlayer==false and crew.bMindControlled == true then --crew.intruder == true then
+						-- if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "osae" and crew.blueprint.name ~= "alien" and crew.blueprint.name ~= "gus" and crew.blueprint.name ~= "gusq" and crew.blueprint.name:find("magman") == nil then
+							-- if crew.extend:GetDefinition().noAI == true then
+								-- crew.extend:GetDefinition().noAI = false
+								-- --print('restored ai board')
+							-- end
+						-- end
+					-- end					
+				-- end
+			-- end
+			
 			if enemyShip ~= nil then
 				for crew in vter(enemyShip.vCrewList) do
 					if crew:IsDrone() == false and crew.crewAnim.bPlayer==false then --and crew.intruder == false then
@@ -5511,6 +6747,292 @@ function check_arsenal_on_tick_processes()
 				end
 			end
 		end
+		
+		
+		
+		
+		--абордаж, ИИ, улучшенный, мозг
+		-- //////////////////////////////////////////////////////////////////
+		-- ТЕПЕРЬ БАЗОВЫЙ КОНТРОЛЛЕР ВРАЖЕСКИХ АБОРДАЖНИКОВ НА КОРАБЛЕ ИГРОКА
+		-- //////////////////////////////////////////////////////////////////
+		if playerShip then
+			--print('test1')
+			for crew in vter3(playerShip.vCrewList) do
+				--print('test2='..crew.blueprint.name)
+				--print(crew.blueprint.name..','..tostring(crew:IsDrone()))
+				if crew.bMindControlled == true then
+					if crew.extend:GetDefinition().noAI == true then
+						crew.extend:GetDefinition().noAI = false
+						--print('restored ai board')
+					end
+				elseif crew:IsDrone() == false and crew.intruder == true then
+					--print('test3')
+					if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "osae" and crew.blueprint.name ~= "alien" and crew.blueprint.name ~= "gus" and crew.blueprint.name ~= "gusq" then
+						--print('test4')
+						--абордажники на корабле игрока
+						--if Hyperspace.metaVariables['enemy_has_advanced_ai'] == 1 then
+							if crew.crewAnim.bPlayer == false and GSIp ~= nil then
+								
+								--print(crew.blueprint.name..tostring(crew.extend:GetDefinition().noAI))
+								
+								if crew.extend:GetDefinition().noAI == false then
+									crew.extend:GetDefinition().noAI = true --полностью забираем контроль над этим экипажем в луа
+								end
+								
+								if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+									crew:MoveToRoom(varr.universal_iRoom_targ[crew.extend.selfId], 0, false)
+									--print(crew.blueprint.name..'>> move to room >>'..varr.universal_iRoom_targ[crew.extend.selfId])
+									
+									local bFightttttt = false
+									for crew2 in vter2(playerShip.vCrewList) do
+										if crew ~= crew2 and crew2.iRoomId == crew.iRoomId and crew2.crewAnim.bPlayer ~= crew.crewAnim.bPlayer and crew2:OutOfGame() == false and crew2.health.first > 0.0 then
+											bFightttttt = true
+										end
+									end
+									
+									local bFoundPlayerCrewInTargRoom = there_is_player_crew_in_room(varr.universal_iRoom_targ[crew.extend.selfId])
+									local sysy = playerShip:GetSystemInRoom(crew.iRoomId)
+									local sysy_targ = playerShip:GetSystemInRoom(varr.universal_iRoom_targ[crew.extend.selfId]) 
+									
+									if crew.iRoomId == varr.universal_iRoom_targ[crew.extend.selfId] then
+										-- дошёл до цели
+										if bFightttttt == true then
+										
+										else
+											if crew:CanSuffocate() == true and crew.bSuffocating == true then --and playerShip:GetOxygenPercentage() > 0 and GSIp:GetRoomOxygen(varr.universal_iRoom_targ[crew.extend.selfId]) < 10.0 then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											elseif crew.iOnFire > 0 and isCrewGorit(crew.blueprint.name) == true then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											elseif sysy == nil or sysy:CompletelyDestroyed() == true and bFoundPlayerCrewInTargRoom==false then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											end
+										end
+									else
+										--идёт к цели
+										if varr.micro_tick_counter31 == 0.0 and math.random(0,99)<10 then
+											--print('beep in brain2')
+											
+											
+											if sysy_targ ~= nil and sysy_targ:CompletelyDestroyed() == true and bFoundPlayerCrewInTargRoom==false then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											end
+										end
+										-- if crew:CanSuffocate()==true and crew.health.first/crew.health.second < 0.25 then
+											-- if crew.blockingDoor ~= nil then
+												
+												-- local id_room_of_otherside = crew.blockingDoor.iRoom1
+												-- if crew.blockingDoor.iRoom1 == crew.iRoomId then
+													-- id_room_of_otherside = crew.blockingDoor.iRoom2
+												-- end
+												-- if id_room_of_otherside ~= -1 then
+													-- if GSIp:GetRoomOxygen(id_room_of_otherside) < 15 then
+														-- varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
+														-- --varr.universal_iRoom_targ[crew.extend.selfId] = -1
+														-- print('room behind door is no oxy'..id_room_of_otherside)
+													-- end
+												-- end
+												
+												-- --print(crew.blockingDoor.iRoom1..','..crew.blockingDoor.iRoom2..','..GSIp:GetRoomOxygen(id_room_of_otherside))
+											-- end
+										-- end
+										
+										
+										if varr.iCurrentPlayerDoorLvl < 2 or isCrewHoditSkvozDveri(crew.blueprint.name) == true then
+											if sysy == nil then
+												--промежуточный пустой отсек сейчас. идём через него.
+											elseif sysy:CompletelyDestroyed() == true then
+												--сломанная система на пути к цели. не интересно идём дальше.
+											else
+												--несломанная система на пути к цели
+												if crew:CanSuffocate() == true and crew.bSuffocating == true then --and playerShip:GetOxygenPercentage() > 0 then-- and playerShip:GetOxygenPercentage() > 0 and GSIp:GetRoomOxygen(varr.universal_iRoom_targ[crew.extend.selfId]) < 10.0 then
+										
+												elseif crew.iOnFire > 0 and isCrewGorit(crew.blueprint.name) == true then
+													
+												else
+													varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
+													--отсек пригодный для жизни и с системой для разрушения - остаёмся тут.
+												end
+											end
+										else
+											if bFightttttt == true then
+												varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
+											else
+												if sysy ~= nil and sysy:CompletelyDestroyed() == false then
+													if crew:CanSuffocate() == true and crew.bSuffocating == true then -- and playerShip:GetOxygenPercentage() > 0 then
+													
+													elseif crew.iOnFire > 0 and isCrewGorit(crew.blueprint.name) == true then
+														
+													else
+														varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
+														--отсек пригодный для жизни и с системой для разрушения - остаёмся тут.
+													end
+												end
+											end
+										end
+									end
+								else
+									
+									local bFightttttt = false
+									local bNeededRetarg = false
+									local sysy = playerShip:GetSystemInRoom(crew.iRoomId)
+									
+									for crew2 in vter2(playerShip.vCrewList) do
+										if crew ~= crew2 and crew2.iRoomId == crew.iRoomId and crew2.crewAnim.bPlayer ~= crew.crewAnim.bPlayer and crew2:OutOfGame() == false and crew2.health.first > 0.0 then
+											bFightttttt = true
+										end
+									end
+																		
+									if varr.iCurrentPlayerDoorLvl < 2 or isCrewHoditSkvozDveri(crew.blueprint.name) == true then
+										-- режим у игрока плохие двери или абордажник проходит сквозь них
+										if sysy ~= nil and sysy:CompletelyDestroyed() == false then
+											if crew:CanSuffocate() == true and crew.bSuffocating == true and playerShip:GetOxygenPercentage() > 1 then
+												bNeededRetarg = true
+											elseif crew.iOnFire > 0 and isCrewGorit(crew.blueprint.name) == true then
+												bNeededRetarg = true
+											else
+												bNeededRetarg = false
+												--varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
+												--отсек пригодный для жизни и с системой для разрушения - остаёмся тут.
+											end
+										else
+											bNeededRetarg = true
+										end
+									else
+										-- режим у игрока хорошие двери и абордажник не проходит сквозь них
+										if bFightttttt == true then
+											bNeededRetarg = false
+											--varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
+										else
+											if sysy ~= nil and sysy:CompletelyDestroyed() == false then
+												if crew:CanSuffocate() == true and crew.bSuffocating == true and playerShip:GetOxygenPercentage() > 1 then
+													bNeededRetarg = true
+												elseif crew.iOnFire > 0 and isCrewGorit(crew.blueprint.name) == true then
+													bNeededRetarg = true
+												else
+													--varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
+													bNeededRetarg = false
+													--отсек пригодный для жизни и с системой для разрушения - остаёмся тут.
+												end
+											else
+												bNeededRetarg = true
+											end
+										end
+									end
+									
+									if sysy ~= nil and sysy:CompletelyDestroyed() == false and sysy.fDamageOverTime > 66.0 then
+										bNeededRetarg = false--если система почти доломана любой ценой будут держать отсек
+									end
+									
+									if bNeededRetarg == true then
+										varr.universal_iRoom_targ[crew.extend.selfId] = math.random(0, GSIp:RoomCount() - 1)
+										if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+											-- комната уже полная народу
+											if playerShip.ship:FullRoom(varr.universal_iRoom_targ[crew.extend.selfId], crew.intruder) == true then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											end
+										end
+										
+										local bFoundPlayerCrewInTargRoom = there_is_player_crew_in_room(varr.universal_iRoom_targ[crew.extend.selfId])
+										
+										if playerShip:GetOxygenPercentage() <= 1 and crew:CanSuffocate() == true then
+											-- if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+												-- -- в комнате нет О2
+												-- if GSIp:GetRoomOxygen(varr.universal_iRoom_targ[crew.extend.selfId]) < 10.0 then
+													-- varr.universal_iRoom_targ[crew.extend.selfId] = -1
+												-- end
+											-- end
+											
+											if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+												-- комната горит
+												if playerShip:GetFireCount(varr.universal_iRoom_targ[crew.extend.selfId]) > 0 and isCrewGorit(crew.blueprint.name) == true then
+													varr.universal_iRoom_targ[crew.extend.selfId] = -1
+												end
+											end
+											
+											if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+												if playerShip:GetSystemInRoom(varr.universal_iRoom_targ[crew.extend.selfId]) == nil then
+													-- нет системы в комнате
+													varr.universal_iRoom_targ[crew.extend.selfId] = -1
+												elseif playerShip:GetSystemInRoom(varr.universal_iRoom_targ[crew.extend.selfId]):CompletelyDestroyed()==true then
+													-- система есть, но она уничтожена полностью
+													varr.universal_iRoom_targ[crew.extend.selfId] = -1
+												end
+											end
+											
+										else
+											if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+												-- в комнате нет О2
+												if crew:CanSuffocate() == true then
+													if GSIp:GetRoomOxygen(varr.universal_iRoom_targ[crew.extend.selfId]) < 10.0 then
+														varr.universal_iRoom_targ[crew.extend.selfId] = -1
+													end
+												end
+											end
+											
+											if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+												-- комната горит
+												if playerShip:GetFireCount(varr.universal_iRoom_targ[crew.extend.selfId]) > 0 and isCrewGorit(crew.blueprint.name) == true then
+													varr.universal_iRoom_targ[crew.extend.selfId] = -1
+												end
+											end
+											
+											if varr.micro_tick_counter31 == 0.0 and math.random(0,99)<5 then
+												--print('beep in brain')
+												if bFightttttt == true then
+													varr.universal_iRoom_targ[crew.extend.selfId] = -1
+												end
+											elseif varr.micro_tick_counter31 == 0.0 and crew:CanSuffocate() == true and crew.bSuffocating == true then
+												--print('beep in brain3')
+												if bFightttttt == true then
+													varr.universal_iRoom_targ[crew.extend.selfId] = -1
+												end
+											else
+												if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+													if bFoundPlayerCrewInTargRoom == true then
+														--если в комнате есть экипаж игрока это основание туда идти
+													else
+														if playerShip:GetSystemInRoom(varr.universal_iRoom_targ[crew.extend.selfId]) == nil then
+															-- нет системы в комнате
+															varr.universal_iRoom_targ[crew.extend.selfId] = -1
+														elseif playerShip:GetSystemInRoom(varr.universal_iRoom_targ[crew.extend.selfId]):CompletelyDestroyed()==true then
+															-- система есть, но она уничтожена полностью
+															varr.universal_iRoom_targ[crew.extend.selfId] = -1
+														end
+													end
+												end
+											end
+										end
+										
+										if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+											if math.random(0,99)<97 then
+												sysy_targ = playerShip:GetSystemInRoom(varr.universal_iRoom_targ[crew.extend.selfId]) 
+												bFoundPlayerCrewInTargRoom = there_is_player_crew_in_room(varr.universal_iRoom_targ[crew.extend.selfId])
+												if sysy_targ ~= nil and sysy_targ:CompletelyDestroyed() == true and bFoundPlayerCrewInTargRoom==false then
+													--print('nerhen tam delat'..varr.universal_iRoom_targ[crew.extend.selfId])
+													varr.universal_iRoom_targ[crew.extend.selfId] = -1
+												end
+											end
+										end
+										--print(crew.blueprint.name..'>> retarg >>'..varr.universal_iRoom_targ[crew.extend.selfId])
+										--print('retarg='..varr.universal_iRoom_targ[crew.extend.selfId])
+									end
+								end
+							end
+						-- else
+							
+							-- --дефолтное поведение абордажников на корабле игрока
+							-- if crew.extend:GetDefinition().noAI == true then
+								-- crew.extend:GetDefinition().noAI = false
+								-- --print('restored ai board')
+							-- end
+						-- end
+					end
+				end
+			end
+		end
+		
+		
+		
 		
 		
 		
@@ -5599,6 +7121,17 @@ function check_arsenal_on_tick_processes()
 				end
 			end
 			
+			-- varr.bEnemyHasIonizedSysShields = false
+			-- if enemyShip:GetSystem(0) and enemyShip:GetSystem(0).healthState.second >= 2 then
+				-- if enemyShip:GetSystem(0).iLockCount > 0 then
+					-- if enemyShip and enemyShip.shieldSystem and enemyShip.shieldSystem.shields then
+						-- --if enemyShip.shieldSystem.shields.power.first == 0 then
+						-- --if enemyShip.shieldSystem.shields.power.first enemyShip.shieldSystem.shields.power.first then
+							-- varr.bEnemyHasIonizedSysShields = true
+						-- --end
+					-- end
+				-- end
+			-- end
 			
 			--исправление поведения, в режиме невидимости враг не имея скрытых орудий стрелял в игрока из маскировки. фуу.
 			if enemyShip:GetSystem(10)~=nil then
@@ -5617,7 +7150,7 @@ function check_arsenal_on_tick_processes()
 				end
 			end
 			
-			-- исправление залипания зарядных орудий
+			-- исправление залипания зарядных орудий, фикс застряло орудие, зависало
 			if not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
 				if enemyShip and playerShip and enemyShip.ship.bCloaked == false and playerShip.ship.bCloaked == false then
 					if enemyShip.weaponSystem ~= nil then
@@ -5627,25 +7160,28 @@ function check_arsenal_on_tick_processes()
 						local iChargeLevel_mem = 0
 						for pf in vter(enemyShip.weaponSystem.weapons) do
 							if pf.powered == true then
-								if pf.blueprint.typeName == "LASER" or pf.blueprint.typeName == "BURST" then
-									if pf.chargeLevel > 1 then
-										if pf.cooldown.first == pf.cooldown.second then
-											varr.micro_tick_counter_zalip[en_slot] = varr.micro_tick_counter_zalip[en_slot] + 60.0*Hyperspace.FPS.SpeedFactor
-											if varr.micro_tick_counter_zalip[en_slot] > 5000.0 then --время в миллисекундах до признания орудия залипшим --было 6000 мсек
-												--print('zaliplo orudie suka slot='..en_slot)
-												iChargeLevel_mem = pf.chargeLevel
-												local rem_weap_name = pf.blueprint.name
-												local rem_weap_slot = en_slot
-												--enemyShip:RemoveItem(rem_weap_name, false)
-												enemyShip:AddWeapon(Hyperspace.Blueprints:GetWeaponBlueprint(rem_weap_name), en_slot)--это работает как замена орудия в слоте
-												bRestoredWeap = true
-												en_slot_mem = en_slot
+								--if pf.fireWhenReady == true then --test
+									if pf.blueprint.typeName == "LASER" or pf.blueprint.typeName == "BURST" then
+										if pf.chargeLevel > 1 then
+											if pf.cooldown.first == pf.cooldown.second then
+												varr.micro_tick_counter_zalip[en_slot] = varr.micro_tick_counter_zalip[en_slot] + 60.0*Hyperspace.FPS.SpeedFactor
+												--if varr.micro_tick_counter_zalip[en_slot] > 5000.0 then --время в миллисекундах до признания орудия залипшим --было 6000 мсек
+												if varr.micro_tick_counter_zalip[en_slot] > 2500.0 then --время в миллисекундах до признания орудия залипшим
+													--print('zaliplo orudie suka slot='..en_slot)
+													iChargeLevel_mem = pf.chargeLevel
+													local rem_weap_name = pf.blueprint.name
+													local rem_weap_slot = en_slot
+													--enemyShip:RemoveItem(rem_weap_name, false)
+													enemyShip:AddWeapon(Hyperspace.Blueprints:GetWeaponBlueprint(rem_weap_name), en_slot)--это работает как замена орудия в слоте
+													bRestoredWeap = true
+													en_slot_mem = en_slot
+												end
+											else
+												varr.micro_tick_counter_zalip[en_slot] = 0.0
 											end
-										else
-											varr.micro_tick_counter_zalip[en_slot] = 0.0
 										end
 									end
-								end
+								--end
 							end
 							en_slot = en_slot + 1
 						end
@@ -5704,6 +7240,15 @@ function check_arsenal_on_tick_processes()
 				end
 			end
 			
+			if Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] ~= 0 then
+				if Hyperspace.Global.GetInstance():GetCApp().gui.combatControl.boss_visual == true then
+					--визуал босса, значит отключаем улучш. беспилотности
+					Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] = 0
+				end
+			end
+			
+			
+			
 			
 			if Hyperspace.metaVariables['enemy_has_advanced_ai'] == 1 then
 				
@@ -5753,7 +7298,14 @@ function check_arsenal_on_tick_processes()
 							end
 							
 							for doory in vter2(enemyShip.ship.vDoorList) do
-								if doory.iHacked == 0 then--чтобы взломанные игроком двери не открывались/закрывались ИИ
+								--print(doory.iHacked)
+								local hackakaha_room_of_enemy = -50
+								if playerShip and playerShip.hackingSystem and playerShip.hackingSystem.currentSystem ~= nil then
+									hackakaha_room_of_enemy = playerShip.hackingSystem.currentSystem:GetRoomId()
+								end
+								--print(hackakaha_room_of_enemy)
+								if doory.iRoom1 ~= hackakaha_room_of_enemy and doory.iRoom2 ~= hackakaha_room_of_enemy then
+								--if doory.iHacked == 0 then--чтобы взломанные игроком двери не открывались/закрывались ИИ
 									if bNeededOpenAllDoor == false then
 										if doory.bOpen == true then
 											doory.bOpen = false --это лишь дача команды на закрытие. т.е. дверь фактически закроется лишь когда восстановит хп
@@ -5771,6 +7323,10 @@ function check_arsenal_on_tick_processes()
 											--print('doorbetween open='..doory.iRoom1..'='..doory.iRoom2)
 										end
 									end
+								else
+									doory.bOpen = false
+									--print(doory.health..'/'..doory.baseHealth..','..doory.iBlast..','..doory.fakeOpenTimer)
+									--print('hacked door close'..math.random(0,10))
 								end
 							end
 						end
@@ -5842,9 +7398,9 @@ function check_arsenal_on_tick_processes()
 				local bPlayerHasBypass = hasAnyAugmentationOfList(playerShip, {"ZOLTAN_BYPASS", "HID_ZOLTAN_BYPASS", "ENERGY_SHIELD_ZOLTAN_BYPASS"})
 				
 				
-				local room_danger_arr = {[0]=0}
+				varr.room_danger_arr = {[0]=0}
 				for i = 0, 30 do --подразумеваю что не будет у врага больше 30 комнат...
-					room_danger_arr[i] = 0
+					varr.room_danger_arr[i] = 0
 				end
 				local projs = Hyperspace.App.world.space.projectiles
 				for i = 0, projs:size() - 1 do
@@ -5852,14 +7408,14 @@ function check_arsenal_on_tick_processes()
 					local projName = tostring(projectile.extend.name)
 					if not (projName == "" or projName == "nil" or projName == "PDS_SHOT") then
 						--if projectile.ownerId == 0 then
-						if projectile.ownerId == 0 and projectile.destinationSpace == 1 then
+						if projectile.ownerId == 0 and projectile.destinationSpace == 1 then --владелец игрок, целевое пространство - окно врага.
 							if projectile.missed == false and projectile.dead == false and projectile.passedTarget == false then-- and projectile.hitTarget == false then
 								if (projectile.damage.iDamage > 0) or (projectile.damage.iShieldPiercing > 0) or (projectile.damage.fireChance > 0.0) or(projectile.damage.breachChance > 0.0) or (projectile.damage.stunChance > 0.0) or (projectile.damage.iIonDamage > 0) or (projectile.damage.iSystemDamage > 0) or (projectile.damage.iPersDamage > 0) or (projectile.damage.bLockdown == true) or (projectile.damage.iStun > 0) then
 									if projectile.speed_magnitude > 10 or (projectile.speed_magnitude <= 10 and projectile.currentSpace == 1) then
 										local trid = GetRoomAtLocation(enemyShip, projectile.target, true) 
 										if trid ~= -1 then
-											if room_danger_arr[trid] == nil then
-												room_danger_arr[trid] = 1
+											if varr.room_danger_arr[trid] == nil then
+												varr.room_danger_arr[trid] = 1
 											else
 												
 												local bThereIsRealDangerToCrew = false
@@ -5878,7 +7434,7 @@ function check_arsenal_on_tick_processes()
 														varr.count_of_current_danger_player_projectiles = varr.count_of_current_danger_player_projectiles + 1
 														if enemy_zoltan_shield_counter == 0 or bPlayerHasBypass==true or projectile.superShieldBypass==true then
 															if bThereIsRealDangerToCrew == true then
-																room_danger_arr[trid] = 10--6
+																varr.room_danger_arr[trid] = 10--6
 															end
 															varr.bEnemyHullInDanger = true
 														end
@@ -5891,7 +7447,7 @@ function check_arsenal_on_tick_processes()
 															-- НЕТ ЩИТОВ НИКАКИХ
 															varr.count_of_current_danger_player_projectiles = varr.count_of_current_danger_player_projectiles + 1
 															if bThereIsRealDangerToCrew == true then
-																room_danger_arr[trid] = room_danger_arr[trid] + 1
+																varr.room_danger_arr[trid] = varr.room_danger_arr[trid] + 1
 															end
 															varr.bEnemyHullInDanger = true
 															--print('1')
@@ -5899,7 +7455,7 @@ function check_arsenal_on_tick_processes()
 															-- ПРОНИКНОВЕНИЕ СНАРЯДА БОЛЬШЕ КОЛ-ВА ЩИТОВ
 															varr.count_of_current_danger_player_projectiles = varr.count_of_current_danger_player_projectiles + 1
 															if bThereIsRealDangerToCrew == true then
-																room_danger_arr[trid] = 6
+																varr.room_danger_arr[trid] = 6
 															end
 															varr.bEnemyHullInDanger = true
 															--print('2')
@@ -5907,14 +7463,14 @@ function check_arsenal_on_tick_processes()
 															varr.count_of_current_danger_player_projectiles = varr.count_of_current_danger_player_projectiles + 1
 															if projectile.damage.iDamage > 0 then
 																if bThereIsRealDangerToCrew == true then
-																	room_danger_arr[trid] = room_danger_arr[trid] + 1
+																	varr.room_danger_arr[trid] = varr.room_danger_arr[trid] + 1
 																end
 															end
 															--print('3')
 														end
 														if projectile.damage.iShieldPiercing >= 5 then
 															if bThereIsRealDangerToCrew == true then
-																room_danger_arr[trid] = 6
+																varr.room_danger_arr[trid] = 6
 															end
 															varr.bEnemyHullInDanger = true
 															--print('4')
@@ -5925,7 +7481,7 @@ function check_arsenal_on_tick_processes()
 															-- НЕТ ОБЫЧНОГО ЩИТА
 															varr.count_of_current_danger_player_projectiles = varr.count_of_current_danger_player_projectiles + 1
 															if bThereIsRealDangerToCrew == true then
-																room_danger_arr[trid] = room_danger_arr[trid] + 1
+																varr.room_danger_arr[trid] = varr.room_danger_arr[trid] + 1
 															end
 															if varr.count_of_current_danger_player_projectiles > enemy_standart_shield_counter then
 																varr.bEnemyHullInDanger = true
@@ -5935,7 +7491,7 @@ function check_arsenal_on_tick_processes()
 															-- ПРОНИКНОВЕНИЕ СНАРЯДА БОЛЬШЕ КОЛ-ВА ЩИТОВ
 															varr.count_of_current_danger_player_projectiles = varr.count_of_current_danger_player_projectiles + 1
 															if bThereIsRealDangerToCrew == true then
-																room_danger_arr[trid] = room_danger_arr[trid] + 1
+																varr.room_danger_arr[trid] = varr.room_danger_arr[trid] + 1
 															end
 															if varr.count_of_current_danger_player_projectiles > enemy_zoltan_shield_counter then
 																varr.bEnemyHullInDanger = true
@@ -5945,7 +7501,7 @@ function check_arsenal_on_tick_processes()
 															varr.count_of_current_danger_player_projectiles = varr.count_of_current_danger_player_projectiles + 1
 															if projectile.damage.iDamage > 0 then
 																if bThereIsRealDangerToCrew == true then
-																	room_danger_arr[trid] = room_danger_arr[trid] + 1
+																	varr.room_danger_arr[trid] = varr.room_danger_arr[trid] + 1
 																end
 															end
 															--print('3e')
@@ -5953,7 +7509,7 @@ function check_arsenal_on_tick_processes()
 														if projectile.damage.iShieldPiercing >= 5 then
 															if varr.count_of_current_danger_player_projectiles > enemy_zoltan_shield_counter then
 																if bThereIsRealDangerToCrew == true then
-																	room_danger_arr[trid] = 6
+																	varr.room_danger_arr[trid] = 6
 																end
 																varr.bEnemyHullInDanger = true
 																--print('4e')
@@ -6000,17 +7556,8 @@ function check_arsenal_on_tick_processes()
 					end
 				end
 				
-				for crew in vter3(playerShip.vCrewList) do
-					if crew:IsDrone() == false and crew.intruder == true then
-						if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "osae" and crew.blueprint.name ~= "alien" then
-							--абордажники на корабле игрока ведут себя по умолчанию.
-							if crew.extend:GetDefinition().noAI == true then
-								crew.extend:GetDefinition().noAI = false
-								--print('restored ai board')
-							end
-						end
-					end
-				end
+				
+				
 				--print(varr.micro_tick_counter21)
 				if varr.count_of_current_danger_player_projectiles == 0 then -- нет опасных снарядов игрока летящих во вражеский корабль
 					if isEnemyHopelessBoarded() == true and isThereMinimalSenseToEvadeBattle() == true then
@@ -6226,6 +7773,53 @@ function check_arsenal_on_tick_processes()
 									end
 								end
 							end
+						-- elseif varr.bEnemyHasIonizedSysShields == true and enemyShip:GetSystem(0)~= nil then
+							-- --print('needed de ion shields mode'..math.random(0,10)) -- не идут суки
+							-- --щиты ионизированы бежим к ним
+							-- local free_zolt = 0
+							
+							-- for crew in vter16(enemyShip.vCrewList) do
+								-- if crew.bMindControlled == false and crew.bDead == false and crew.bOutOfGame == false and crew.crewAnim.bPlayer == false then
+									-- if crew.blueprint.name:find("energy") ~= nil then
+										-- if crew.iManningId ~= 6 and crew.iManningId ~= 3 then --работающий сейчас. ему не надо бежать
+											-- free_zolt = free_zolt + 1
+										-- end
+									-- end
+								-- end
+							-- end
+							
+							-- if free_zolt >= 2 then
+								-- local room_id_of_sys = enemyShip:GetSystem(0):GetRoomId()
+								-- --print('free='..free_zolt)
+								-- for crew in vter16(enemyShip.vCrewList) do
+									-- if crew.bMindControlled == false and crew.bDead == false and crew.bOutOfGame == false and crew.crewAnim.bPlayer == false then
+										-- if crew.blueprint.name:find("energy") ~= nil then
+											-- if crew.iManningId ~= 6 and crew.iManningId ~= 3 then --работающий сейчас. ему не надо бежать
+												-- crew.extend:GetDefinition().noAI = true -- забираем дефолтный мозг у таких врагов
+												-- if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+													-- --print('2')
+													-- crew:MoveToRoom(varr.universal_iRoom_targ[crew.extend.selfId], 0, false)
+													-- if varr.universal_iRoom_targ[crew.extend.selfId] == crew.iRoomId then
+														-- varr.universal_iRoom_targ[crew.extend.selfId] = -1
+														-- --print('2 prishel')
+													-- end
+												-- else
+													-- --print('3')
+													-- --print(crew.iManningId)
+													-- if crew.iRoomId ~= room_id_of_sys then
+														
+														
+														-- if enemyShip.ship:FullRoom(room_id_of_sys, crew.intruder) == false then
+															-- varr.universal_iRoom_targ[crew.extend.selfId] = room_id_of_sys
+															-- --print('3 otpravka')
+														-- end
+													-- end
+												-- end
+											-- end
+										-- end
+									-- end
+								-- end
+							-- end
 						else
 							--print('free mode')
 							if varr.micro_tick_counter21 == 0.0 then
@@ -6251,12 +7845,12 @@ function check_arsenal_on_tick_processes()
 					for crew in vter3(enemyShip.vCrewList) do
 						if crew.blueprint.name ~= "egg" then
 							if crew:IsDrone() == false and crew.intruder == false and crew.bMindControlled == false and bNeededToEvadeProjectileThisCrew(crew)==true then
-								if enemyShip:GetSystemInRoom(crew.iRoomId) ~= nil and enemyShip:GetDodgeFactor() > 5.0 and enemyShip:GetSystemInRoom(crew.iRoomId):GetId()==6 and enemyShip:GetSystemInRoom(crew.iRoomId):Functioning()==true and crew.bActiveManning == true and room_danger_arr[crew.iRoomId]<10 then
+								if enemyShip:GetSystemInRoom(crew.iRoomId) ~= nil and enemyShip:GetDodgeFactor() > 5.0 and enemyShip:GetSystemInRoom(crew.iRoomId):GetId()==6 and enemyShip:GetSystemInRoom(crew.iRoomId):Functioning()==true and crew.bActiveManning == true and varr.room_danger_arr[crew.iRoomId]<10 then
 									--не уходим с рубки пилота если есть возможность уклонения
 									--print('pil')
 									crew.extend:GetDefinition().noAI = true
 									varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
-								elseif enemyShip:GetSystemInRoom(crew.iRoomId) ~= nil and crew.health.first > 50 and enemyShip:GetDodgeFactor() > 20.0 and enemyShip:GetSystemInRoom(crew.iRoomId):GetId()==1 and enemyShip:GetSystemInRoom(crew.iRoomId):Functioning()==true and crew.bActiveManning == true and room_danger_arr[crew.iRoomId]<10 then
+								elseif enemyShip:GetSystemInRoom(crew.iRoomId) ~= nil and crew.health.first > 50 and enemyShip:GetDodgeFactor() > 20.0 and enemyShip:GetSystemInRoom(crew.iRoomId):GetId()==1 and enemyShip:GetSystemInRoom(crew.iRoomId):Functioning()==true and crew.bActiveManning == true and varr.room_danger_arr[crew.iRoomId]<10 then
 									--не уходим с двигателя если есть значимая возможность уклонения
 									--print('eng')
 									crew.extend:GetDefinition().noAI = true
@@ -6272,8 +7866,8 @@ function check_arsenal_on_tick_processes()
 											elseif GSIe:GetRoomOxygen(crew.iRoomId) < 10.0 and crew:CanSuffocate() == true then
 												varr.universal_iRoom_targ[crew.extend.selfId] = -1
 												--print('reason1'..crew.blueprint.crewNameLong.data)
-											--elseif room_danger_arr[crew.iRoomId] > enemy_standart_shield_counter + enemy_zoltan_shield_counter and varr.micro_tick_counter21 == 0.0 then
-											elseif room_danger_arr[crew.iRoomId] > 0 and varr.bEnemyHullInDanger == true and varr.micro_tick_counter21 == 0.0 then
+											--elseif varr.room_danger_arr[crew.iRoomId] > enemy_standart_shield_counter + enemy_zoltan_shield_counter and varr.micro_tick_counter21 == 0.0 then
+											elseif varr.room_danger_arr[crew.iRoomId] > 0 and varr.bEnemyHullInDanger == true and varr.micro_tick_counter21 == 0.0 then
 												varr.universal_iRoom_targ[crew.extend.selfId] = -1
 												--print('dang'..crew.blueprint.crewNameLong.data)
 											elseif crew.bFighting == false and varr.micro_tick_counter21 == 0.0 then
@@ -6281,7 +7875,7 @@ function check_arsenal_on_tick_processes()
 												--print('doshel i vse'..crew.blueprint.crewNameLong.data)
 											end
 										else
-											if room_danger_arr[crew.iRoomId] == 0 then -- если комната безопасна, то нет смысла бежать дальше в общем-то.
+											if varr.room_danger_arr[crew.iRoomId] == 0 then -- если комната безопасна, то нет смысла бежать дальше в общем-то.
 												varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
 												--print('retarg'..varr.universal_iRoom_targ[crew.extend.selfId])
 											end
@@ -6290,17 +7884,18 @@ function check_arsenal_on_tick_processes()
 										end
 									else
 										--print('targ = -1'..crew.blueprint.crewNameLong.data)
-										--if room_danger_arr[crew.iRoomId] > enemy_standart_shield_counter + enemy_zoltan_shield_counter then
-										if room_danger_arr[crew.iRoomId] > 0 and varr.bEnemyHullInDanger == true then
-											if crew:GetMoveSpeedMultiplier() > 0.55 or room_danger_arr[crew.iRoomId] > 6 or enemyShip:HasAugmentation("CREW_STIMS") > 0 then --нет смысла бежать из отсека если у тебя скорость ниже рока
+										--if varr.room_danger_arr[crew.iRoomId] > enemy_standart_shield_counter + enemy_zoltan_shield_counter then
+										if varr.room_danger_arr[crew.iRoomId] > 0 and varr.bEnemyHullInDanger == true then
+											if crew:GetMoveSpeedMultiplier() > 0.55 or varr.room_danger_arr[crew.iRoomId] > 6 or enemyShip:HasAugmentation("CREW_STIMS") > 0 then --нет смысла бежать из отсека если у тебя скорость ниже рока
+												--print(crew.blueprint.name..','..crew:GetMoveSpeedMultiplier()..','..enemyShip:HasAugmentation("CREW_STIMS"))
 												-- рок=0,6, человек=1,0, мантис=1,2
 												varr.universal_iRoom_targ[crew.extend.selfId] = math.random(0, GSIe:RoomCount() - 1)
 												if varr.universal_iRoom_targ[crew.extend.selfId] == crew.iRoomId then
 													varr.universal_iRoom_targ[crew.extend.selfId] = -1
 												end
 												if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
-													if room_danger_arr[varr.universal_iRoom_targ[crew.extend.selfId]] ~= nil and room_danger_arr[crew.iRoomId] ~= nil then
-														if room_danger_arr[varr.universal_iRoom_targ[crew.extend.selfId]] >= room_danger_arr[crew.iRoomId] then
+													if varr.room_danger_arr[varr.universal_iRoom_targ[crew.extend.selfId]] ~= nil and varr.room_danger_arr[crew.iRoomId] ~= nil then
+														if varr.room_danger_arr[varr.universal_iRoom_targ[crew.extend.selfId]] >= varr.room_danger_arr[crew.iRoomId] then
 															varr.universal_iRoom_targ[crew.extend.selfId] = -1
 															--print('тоже опасная комната же, че бежать туда?')
 														end
@@ -6333,7 +7928,7 @@ function check_arsenal_on_tick_processes()
 												end
 												
 											end
-										elseif room_danger_arr[crew.iRoomId] == 0 then
+										elseif varr.room_danger_arr[crew.iRoomId] == 0 then
 											varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
 											-- если комната безопасна, стой в ней
 										end
@@ -6549,6 +8144,39 @@ function check_arsenal_on_tick_processes()
 							end
 						end
 						
+						
+						--анализ ситуаций когда у игрок абордажит врага и имеет лоу-хп экипаж
+						--пытаемся подловить не давая эвакуировать
+						if needed_cloak_blocking == true then
+							if playerShip and playerShip.teleportSystem then
+								local bThereIsSenseToCatchCrew = false
+								if playerShip:GetSystem(13) == nil then
+									bThereIsSenseToCatchCrew = true
+								elseif playerShip:GetSystem(13):CompletelyDestroyed() == true or enemyShip:GetSystem(13).iLockCount >= 3 then
+									bThereIsSenseToCatchCrew = true
+								elseif playerShip:GetSystem(13).bOnFire == true and playerShip:GetSystem(13).healthState.first < 2 and hasAnyAugmentationOfList(playerShip, {"FIRE_EXTINGUISHERS", "HID_FIRE_EXTINGUISHERS", "SLUG_GEL_FIRE_EXTINGUISHERS"}) == false then
+									bThereIsSenseToCatchCrew = true
+								end
+								if bThereIsSenseToCatchCrew == true then
+									local bFoundTargCrew = false
+									for crew in vter (enemyShip.vCrewList) do
+										--print(crew.health.first/crew.health.second)
+										if crew.crewAnim.bPlayer == true and (crew.health.first/crew.health.second) < 0.30 then
+											if crew:IsDrone()==false and crew.extend.deathTimer == nil and crew.health.first > 0.0 and crew.bMindControlled == false then
+												bFoundTargCrew = true
+											end
+										end
+									end
+									if bFoundTargCrew == true then
+										needed_cloak_blocking = false
+										--print('haha, player will lose a crew')
+									end
+								end
+							end
+						end
+						
+						
+						
 						if needed_cloak_blocking == true then
 							enemyShip:GetSystem(10):SetPowerCap(0)
 						else
@@ -6560,10 +8188,10 @@ function check_arsenal_on_tick_processes()
 				-- воровство подконтрольных разумом экипажей игрока. крадёт, ворует, похищает
 				if enemyShip.teleportSystem and varr.micro_tick_counter_crewsteal > 1600.0 then -- после прилёта на маяк пока не пройдёт 1.6 секунды не воруем
 					--if varr.bWillSaveMyCrewFromMindSteal == false then
-					if varr.iWillSaveMyCrewFromMindSteal > 4 then --если условно 1 секунду нет защиты от похищений, то воруем
+					if varr.iWillSaveMyCrewFromMindSteal > 6 then --если условно 1.5 секунду нет защиты от похищений, то воруем
 						--тут были условия типа хитрого использования воровства, убрано... воруем как можно чаще теперь
 						--if playerShip.teleportSystem == nil or (enemyShip:GetOxygenPercentage() < 10 and hasAnyAugmentationOfList(playerShip, {"O2_MASKS", "HID_O2_MASKS", "O2_MASKS_CREW_STIMS"})==false) then
-						if enemyShip.teleportSystem:GetLocked() == false then
+						if enemyShip.teleportSystem:GetLocked() == false and enemyShip:GetSystem(9)~= nil and enemyShip:GetSystem(9):CompletelyDestroyed()==false then
 							local iFoundMindControlledTargRoom = -1
 							for crew in vter(playerShip.vCrewList) do
 								if crew:IsDrone()==false and crew.health.first > 0.0 and crew.crewAnim.bPlayer==true and not crew.extend.deathTimer and crew.bMindControlled == true then
@@ -6975,10 +8603,13 @@ function check_arsenal_on_tick_processes()
 					end
 				end
 				
-				-- лучи на выжидании, выжидание лучами
-				-- этот блок даёт врагам возможность разумно использовать лучи и не стрелять ими в щиты игрока когда в этом нет смысла
+				varr.iEnemyCountOfWaitingPP = 0
 				varr.iEnemyCountOfWaitingBeams = 0
 				if diff == '2' or Hyperspace.metaVariables['challenge_noai'] == 1 then
+					-- /////////////////////////////////////////////////
+					-- лучи на выжидании, выжидание лучами
+					-- этот блок даёт врагам возможность разумно использовать лучи и не стрелять ими в щиты игрока когда в этом нет смысла
+					-- /////////////////////////////////////////////////
 					for enweap in vter(enemyShip:GetWeaponList()) do
 						if enweap then
 							if enweap.blueprint.typeName == "BEAM" then
@@ -6986,7 +8617,12 @@ function check_arsenal_on_tick_processes()
 								--print('animbl='..enweap.weaponVisual.boostLevel)
 								--print('num frames='..enweap.weaponVisual.boostAnim.info.numFrames)
 								if playerShip.shieldSystem then
-									-- -5+2
+									-- if enweap.weaponVisual.boostAnim.info.numFrames > 0  then
+										-- print(enweap.blueprint.name)
+										-- print("enweap.weaponVisual.boostLevel"..enweap.weaponVisual.boostLevel)
+										-- print("enweap.weaponVisual.boostAnim.info.numFrames"..enweap.weaponVisual.boostAnim.info.numFrames)
+										-- print("enweap.blueprint.boostPower.count"..enweap.blueprint.boostPower.count)
+									-- end
 									if enweap.blueprint.damage.iShieldPiercing + enweap.blueprint.damage.iDamage > playerShip.shieldSystem.shields.power.first then
 										enweap.fireWhenReady = true
 									elseif enweap.blueprint.damage.iIonDamage > 0 then
@@ -6995,7 +8631,10 @@ function check_arsenal_on_tick_processes()
 										enweap.fireWhenReady = true
 									elseif playerShip.shieldSystem.shields.power.first == 0 then
 										enweap.fireWhenReady = true
-									elseif enweap.weaponVisual.boostAnim.info.numFrames > 0 and enweap.weaponVisual.boostLevel < enweap.weaponVisual.boostAnim.info.numFrames then
+									elseif enweap.weaponVisual.boostAnim.info.numFrames > 0 and enweap.weaponVisual.boostLevel < (enweap.weaponVisual.boostAnim.info.numFrames - 1) then
+									-- elseif enweap.weaponVisual.boostAnim.info.numFrames > 0	then							
+										--enweap.weaponVisual.boostLevel начинается с -1 и повышается с каждым уровнем на 1 вверх.
+										--enweap.weaponVisual.boostAnim.info.numFrames это кол-во уровней бустов
 										enweap.fireWhenReady = true --обеспечение стрельбы в любом случае для адаптации лучей адаптивных до максимума
 									else
 										enweap.fireWhenReady = false
@@ -7013,47 +8652,59 @@ function check_arsenal_on_tick_processes()
 					-- /////////////////////////////////////////////////
 					if playerShip.ship.hullIntegrity.first >= 12 then
 						if enemyShip:HasAugmentation("CLOAK_FIRE") == 0 and enemyShip:GetSystem(10) == nil then --невидимость
+							
+							--print(playerShip:GetSystem(3).fRepairOverTime)--состояние ремонта от 0 до 100% вверх
+							--print(playerShip:GetSystem(3).fDamageOverTime)--состояние ломания/сгорания от 0 до 100% вверх
+							
 							--print('beg')
 							local bAllowedWeaponArrAttack = false
 							if playerShip:GetSystem(0)~=nil and playerShip:GetSystem(0):GetEffectivePower() >= 2 then
 								bAllowedWeaponArrAttack = true
 								--print('1')
 							end
-							if varr.micro_tick_counter28 <= 65000.0 then--200000.0 условно время работы в этом режиме около 70% от всего времени игры
+							if varr.micro_tick_counter28 <= 45000.0 then--200000.0 условно время работы в этом режиме около 70% от всего времени игры
 								bAllowedWeaponArrAttack = false
 								--print('2')
 							end
 							if varr.count_of_current_danger_player_projectiles >= 1 and varr.bEnemyHullInDanger == true then
-								bAllowedWeaponArrAttack = false--это место для того чтобы избегать урона в оружейку от игрока, чтобы сбить заряженное орудие
-								--print('3')
-								--print('no parirovanie!')
+								if enemyShip:GetSystem(3) ~= nil then
+									local wrid = enemyShip:GetSystem(3):GetRoomId()
+									if varr.room_danger_arr[wrid] > 0 then
+										bAllowedWeaponArrAttack = false--это место для того чтобы избегать урона в оружейку от игрока, чтобы сбить заряженное орудие
+										--print('3')
+										--print('игрок стреляет мне в оружейку!')
+									end
+									
+									if enemyShip:GetSystem(3).bOccupied == true or enemyShip:GetSystem(3).bOnFire == true then
+										if enemyShip:GetSystem(3).fDamageOverTime > 85.0 then
+											bAllowedWeaponArrAttack = false
+											--print('оружейка вот-вот сломается!')
+										end
+									end
+								end
 							end
 							if playerShip and playerShip.shieldSystem and playerShip.shieldSystem.shields and playerShip.shieldSystem.shields.power.super.first > 0 then
 								bAllowedWeaponArrAttack = false--если есть у игрока золтанский щит - не использовать залпы
 								--print('4')
 							end
-							-- if playerShip:GetSystem(10)~= nil then 
-								-- if playerShip:GetSystem(10):GetEffectivePower() > 0 and playerShip:GetSystem(10):GetLocked() == false then
-									-- bAllowedWeaponArrAttack = false --игрок имеет готовую маскировку к использованию
-								-- end
-							-- end
 							if bAllowedWeaponArrAttack == true then
-								--print('zalp'..math.random(0,100))
+								--print('можно залп!! '..math.random(0,100))
 								--если текущее кол-во опасных снарядов игрока = 0
 								local bThereIsOtherAlmostReadyWeap = false
 								local bPreviousWeapIsWaits = false
 								for enweap in vter(enemyShip:GetWeaponList()) do
 									if enweap.powered == true then --убраны цепные/затяжные, убраны ракеты, лучи, ионки, бомбы, проникающие лазеры и с малым кулдауном автолазеры.
-										if (enweap.blueprint.typeName == "LASER" or enweap.blueprint.typeName == "BURST") and enweap.blueprint.name:find("CHAIN")==nil and enweap.blueprint.damage.iShieldPiercing == 0 and enweap.blueprint.damage.iDamage > 0 and enweap.cooldown.second > 4.0 then-- .iIonDamage
+										if (enweap.blueprint.typeName == "LASER" or enweap.blueprint.typeName == "BURST") and enweap.cooldown.second > 5.0 and enweap.blueprint.damage.iShieldPiercing == 0 and enweap.blueprint.damage.iDamage > 0 then-- and enweap.blueprint.name:find("CHAIN")==nil then
 											local needed_block_weap = false
 											if bThereIsOtherAlmostReadyWeap == true and enweap.cooldown.second - enweap.cooldown.first < 0.2 then
 												--если уже тру, значит предыдущий ствол почти готов и можно было бы подождать чуток
 												enweap.fireWhenReady = false
-												--print('wait'..enweap.blueprint.name..math.random(0,500))
+												--print('орудие ждёт='..enweap.blueprint.name..math.random(0,5))
 												needed_block_weap = true
 												bPreviousWeapIsWaits = true
 											end
-											if enweap.cooldown.second - enweap.cooldown.first < 3.5 and (enweap.cooldown.second ~= enweap.cooldown.first or bPreviousWeapIsWaits == true) then
+											--if enweap.cooldown.second - enweap.cooldown.first < 3.5 and (enweap.cooldown.second ~= enweap.cooldown.first or bPreviousWeapIsWaits == true) then
+											if enweap.cooldown.second - enweap.cooldown.first < 4.5 and (enweap.cooldown.second ~= enweap.cooldown.first or bPreviousWeapIsWaits == true) then
 												bThereIsOtherAlmostReadyWeap = true
 											else
 												bThereIsOtherAlmostReadyWeap = false
@@ -7066,7 +8717,7 @@ function check_arsenal_on_tick_processes()
 								end
 							else
 								for enweap in vter(enemyShip:GetWeaponList()) do
-									if (enweap.blueprint.typeName == "LASER" or enweap.blueprint.typeName == "BURST") and enweap.blueprint.name:find("CHAIN")==nil and enweap.blueprint.damage.iShieldPiercing == 0 and enweap.blueprint.damage.iDamage > 0 and enweap.cooldown.second > 4.0 then-- .iIonDamage
+									if (enweap.blueprint.typeName == "LASER" or enweap.blueprint.typeName == "BURST") and enweap.cooldown.second > 5.0 and enweap.blueprint.damage.iShieldPiercing == 0 and enweap.blueprint.damage.iDamage > 0 then-- and enweap.blueprint.name:find("CHAIN")==nil then
 										enweap.fireWhenReady = true
 									end
 								end
@@ -7074,9 +8725,120 @@ function check_arsenal_on_tick_processes()
 						end
 					end
 					
+					-- /////////////////////////////////////////////////
+					-- противопехи на выжидании. не стреляет ими, если не могут принести вред
+					-- /////////////////////////////////////////////////
+					for enweap in vter(enemyShip:GetWeaponList()) do
+						if enweap then
+							if enweap.blueprint.typeName == "LASER" or enweap.blueprint.typeName == "BURST" then
+								if enweap.blueprint.damage.iPersDamage >= 1 and enweap.blueprint.damage.iDamage == 0 then
+									if enweap.blueprint.damage.iIonDamage == 0 then
+										if playerShip.shieldSystem then
+											if enweap.blueprint.damage.iShieldPiercing >= playerShip.shieldSystem.shields.power.first then
+												enweap.fireWhenReady = true
+											elseif playerShip.shieldSystem.shields.power.first == 0 then
+												enweap.fireWhenReady = true
+											else
+												--print('protivopeh stoi='..enweap.blueprint.name)
+												enweap.fireWhenReady = false
+												varr.iEnemyCountOfWaitingPP = varr.iEnemyCountOfWaitingPP + 1
+											end
+										else
+											enweap.fireWhenReady = true
+										end
+									end
+								end
+							end
+						end
+					end
+					
+					
+					
 				end
 			end
 		end
+		
+		
+		
+		
+		
+		-- фикс телепорта который переставал работать
+		-- было выявлено на стриме у флагмана, +мной на тестах золтанцев ещё
+		if enemyShip and playerShip and GSIp and enemyShip._targetable.hostile == true then
+			if enemyShip:GetSystem(9) ~= nil then
+				
+				local rrid = enemyShip:GetSystem(9):GetRoomId()
+				local bThereIsEnemyInTP = false
+				for crew in vter(enemyShip.vCrewList) do
+					if crew:IsDrone() == false and crew.iRoomId == rrid then
+						if crew.bOutOfGame == false and crew.health.first > 0.0 then
+							if crew.bMindControlled == false and crew.bDead == false and crew.crewAnim.bPlayer == false then
+								bThereIsEnemyInTP = true
+							end
+						end
+					end
+				end
+				if bThereIsEnemyInTP then
+					--print('lock='..enemyShip:GetSystem(9).iLockCount)
+					if enemyShip:GetSystem(9).iLockCount == 0 and enemyShip:GetSystem(9):CompletelyDestroyed() == false and enemyShip:GetSystem(9):GetEffectivePower() > 0 then
+						--условия возможности телепортации на корабль игрока
+						local bCanSend = true
+						if playerShip and playerShip.shieldSystem and playerShip.shieldSystem.shields and playerShip.shieldSystem.shields.power.super.first > 0 then
+							bCanSend = false
+							if enemyShip:HasAugmentation("ZOLTAN_BYPASS") > 0 then
+								bCanSend = true
+							end
+						end
+						if playerShip.ship.bCloaked == true then
+							bCanSend = false
+						end
+						if bCanSend == true then
+							
+							if gui and not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
+								varr.count_of_tick_tp_waiter = varr.count_of_tick_tp_waiter + 60.0*Hyperspace.FPS.SpeedFactor
+							end
+							
+							if (varr.count_of_tick_tp_waiter >= 3000.0) then
+								--print('tp dont work. needed prinuditelno')
+								local target_idr = GSIp.rooms[math.random(0, GSIp.rooms:size()-1)].iRoomId
+								for crew in vter(enemyShip.vCrewList) do
+									-- строку ниже я конечно забыл тогда дописать, вот и тп-хало всех, также добавлен фильтр чтобы дронов не трогало.
+									if crew:IsDrone() == false and crew.iRoomId == rrid then
+										if crew.bOutOfGame == false and crew.health.first > 0.0 then
+											if crew.bMindControlled == false and crew.bDead == false and crew.crewAnim.bPlayer == false then
+												crew.extend:InitiateTeleport(0, target_idr, -1)
+												Hyperspace.Sounds:PlaySoundMix('teleport', 9, false)
+											end
+										end
+									end
+								end
+								-- вот место которое обеспечивает ионизацию системы при воровстве. оно работает я проверил и не раз уже...
+								if enemyShip.teleportSystem.powerState.first == 1 then
+									enemyShip.teleportSystem:LockSystem(4)
+								elseif enemyShip.teleportSystem.powerState.first == 2 then
+									enemyShip.teleportSystem:LockSystem(3)
+								elseif enemyShip.teleportSystem.powerState.first == 3 then
+									enemyShip.teleportSystem:LockSystem(2)
+								else
+									enemyShip.teleportSystem:LockSystem(2)
+								end
+								varr.count_of_tick_tp_waiter = 0.0
+							end
+						end
+					else
+						varr.count_of_tick_tp_waiter = 0.0
+					end
+				end
+				
+			end
+		else
+			varr.count_of_tick_tp_waiter = 0.0
+		end
+		
+		
+		
+		
+		
 		
 		-- механизм возврата экипажа с корабля противника (возвращает экипаж)
 		if not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
@@ -7109,7 +8871,7 @@ function check_arsenal_on_tick_processes()
 			end
 		end
 		
-		
+		--реализация радиоактивности через луа. периодически делает преобразования экипажа в другой тип
 		if playerShip and hasAnyAugmentationOfList(playerShip, {"RADIOACTIVE", "MARKER_RADIOACTIVE", "HID_RADIOACTIVE"}) == true then
 			if not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
 				varr.micro_tick_counter23 = varr.micro_tick_counter23 + 60.0*Hyperspace.FPS.SpeedFactor
@@ -7256,11 +9018,27 @@ function check_arsenal_on_tick_processes()
 			end
 		end
 		
-		
-		-- if playerShip then
-			-- playerShip.ship:EmptySlots(math.random(0,10))
-			-- print('dodo')
-		-- end
+		--легендарный магмен создаёт огонь тут
+		if not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
+			if playerShip and varr.micro_tick_counter25 == 0.0 and math.random(0,100)<40 then
+				for crew in vter(playerShip.vCrewList) do
+					if crew.blueprint.name == "magman_legendary" then
+						if crew.health.first > 0.0 and crew.bOutOfGame == false then
+							playerShip:StartFire(crew.iRoomId)
+						end
+					end
+				end
+			end
+			if enemyShip and varr.micro_tick_counter25 == 0.0 and math.random(0,100)<40 then
+				for crew in vter(enemyShip.vCrewList) do
+					if crew.blueprint.name == "magman_legendary" then
+						if crew.health.first > 0.0 and crew.bOutOfGame == false then
+							enemyShip:StartFire(crew.iRoomId)
+						end
+					end
+				end
+			end
+		end
 		
 		--продлевает длительность работы контроля разума
 		if playerShip and hasAnyAugmentationOfList(playerShip, {"MIND_ORDER", "HID_MIND_ORDER"}) == true then
@@ -7640,6 +9418,123 @@ function check_arsenal_on_tick_processes()
 			
 		
 		
+		-- это усиление превратит в предателя одного из команды
+		if varr.micro_tick_counter29 == 0.0 then --1 раз в 2 сек
+			if enemyShip and playerShip and enemyShip.ship.hullIntegrity.first > 0 and enemyShip._targetable.hostile == true then
+				if enemyShip.bJumping == false and playerShip.bJumping == false then
+					if enemyShip:HasAugmentation("TRAITORATOR") > 0 then
+						if hasAnyAugmentationOfList(playerShip, {"MIND_ORDER", "HID_MIND_ORDER"}) == true and playerShip.mindSystem and playerShip.mindSystem:GetEffectivePower() > 0 then
+							--блокирует
+						else
+							if Hyperspace.metaVariables['traitor_is_done'] == 0 then
+								local count_of_player_crew = 0
+								if playerShip:HasSystem(13) == true then
+									for crew in vter (Hyperspace.CrewFactory:GetCloneReadyList(true)) do --player clones это работает наконец-то
+										count_of_player_crew = count_of_player_crew + 1
+									end
+								end
+								for crew in vter (playerShip.vCrewList) do
+									if crew:IsDrone() == false and crew.crewAnim.bPlayer==true and crew.bOutOfGame == false and crew.bDead == false then
+										count_of_player_crew = count_of_player_crew + 1
+									end
+								end
+								--print('needed trait')
+								Hyperspace.metaVariables['traitor_is_done'] = 1
+								if count_of_player_crew > 1 then
+									add_to_LaunchOrder("BOSS_MAKES_A_TRAITOR")
+								end
+							end
+						end
+					end
+					
+					if playerShip:HasAugmentation("TRAITORATOR") > 0 then
+						if enemyShip:HasAugmentation("MIND_ORDER") > 0 and enemyShip.mindSystem and enemyShip.mindSystem:GetEffectivePower() > 0 then
+							--блокирует
+						else
+							if Hyperspace.metaVariables['traitor_is_done_player'] == 0 then
+								
+								local count_of_enemy_crew = 0
+								for crew in vter (enemyShip.vCrewList) do
+									if crew:IsDrone()==false and crew.extend.deathTimer == nil and crew.health.first > 0.0 and crew.bMindControlled == false then
+										count_of_enemy_crew = count_of_enemy_crew + 1
+									end
+								end
+								
+								--print(playerShip:IsCrewFull())
+								if playerShip:IsCrewFull() == false then
+									if count_of_enemy_crew > 1 then
+										local crew = nil
+										local antifreez = 0
+										local is_crew_copyed = false
+										while is_crew_copyed == false and antifreez < 30 do
+											antifreez = antifreez + 1
+											crew = enemyShip.vCrewList[math.random(0, enemyShip.vCrewList:size() - 1)]
+											if crew:IsDrone()==false and crew.extend.deathTimer == nil and crew.health.first > 0.0 and crew.bMindControlled == false then
+												local posyposy = crew:GetPosition()
+												local iroomid_mem = crew.iRoomId
+												local slot_mem = crew.currentSlot.slotId
+												local hp_percent = crew.health.first/crew.health.second
+												local temporal_crew = enemyShip:AddCrewMemberFromString(crew.blueprint.crewNameLong.data, crew.blueprint.name, true, -1, true, crew.stats.male)
+												temporal_crew.health.first = temporal_crew.health.second*hp_percent
+												Hyperspace.playerVariables['counter_rad_crew'] = Hyperspace.playerVariables['counter_rad_crew'] + 1
+												CopyAllCrewSkillsFromTo(crew, temporal_crew)
+												temporal_crew.crewAnim.layerColors = crew.crewAnim.layerColors
+												crew:Kill(true)
+												temporal_crew:SetPosition(posyposy)
+												temporal_crew:MoveToRoom(iroomid_mem, slot_mem, false)
+												is_crew_copyed = true
+												--print('copyed='..temporal_crew.blueprint.name)
+												--Hyperspace.Sounds:PlaySoundMix('egg_open1', 10, false)
+											end
+										end
+									end
+								end
+								Hyperspace.metaVariables['traitor_is_done_player'] = 1
+							end
+						end
+					end
+				end
+			end
+		end
+		
+		if varr.micro_tick_counter29 == 0.0 then --1 раз в 2 сек
+			if enemyShip and playerShip and enemyShip.ship.hullIntegrity.first > 0 and enemyShip._targetable.hostile == true then
+				if enemyShip.bJumping == false and playerShip.bJumping == false then
+					if enemyShip:HasAugmentation("PDS_ASSIST") > 0 then
+						if Hyperspace.metaVariables['pds_is_done'] == 0 then
+							Hyperspace.metaVariables['pds_is_done'] = 1
+							if enemyShip.myBlueprint.blueprintName ~= "BOSS_4_PHASE" then
+								add_to_LaunchOrder("BOSS_CALLS_PDS")
+							end
+						end
+					elseif playerShip:HasAugmentation("PDS_ASSIST") > 0 then
+						if Hyperspace.metaVariables['pds_is_done_player'] == 0 then
+							local nm = enemyShip.myBlueprint.blueprintName
+							if Hyperspace.App.world.space.bNebula == true or Hyperspace.App.world.space.bStorm == true then
+								--флот федерации не полетит в туман/шторм
+							elseif nm == "BOSS_3_EASY_DLC" or nm == "BOSS_3_NORMAL_DLC" or nm == "BOSS_3_HARD_DLC" or nm == "BOSS_3_EASY" or nm == "BOSS_3_NORMAL" or nm == "BOSS_3_HARD" then
+								--флот федерации не хочет драться если враг-босс
+							elseif nm == "BOSS_2_EASY_DLC" or nm == "BOSS_2_NORMAL_DLC" or nm == "BOSS_2_HARD_DLC" or nm == "BOSS_2_EASY" or nm == "BOSS_2_NORMAL" or nm == "BOSS_2_HARD" then
+							
+							elseif nm == "BOSS_1_EASY_DLC" or nm == "BOSS_1_NORMAL_DLC" or nm == "BOSS_1_HARD_DLC" or nm == "BOSS_1_EASY" or nm == "BOSS_1_NORMAL" or nm == "BOSS_1_HARD" then
+							
+							elseif nm == "BOSS_4_PHASE" or nm == "BOSS_BLACK_WING" then
+							
+							elseif isReallyDangerousEnvironment() == true then
+								--флот федерации не полетит к опасному маяку
+							else
+								--ну так уж и быть, уговорил, поможем в этот раз
+								Hyperspace.metaVariables['pds_is_done_player'] = 1
+								Hyperspace.Sounds:PlaySoundMix('jumpLeave', 4, false)
+								add_to_LaunchOrder("PLAYER_CALLS_PDS")
+							end
+						end
+					end
+				end
+			end
+		end
+		
+		
 		
 		
 		-- это усиление демаскирует другой корабль. работает у врага и игрока
@@ -7725,7 +9620,9 @@ function check_arsenal_on_tick_processes()
 			Hyperspace.playerVariables['soulreaper_in_slots'] = 0
 			Hyperspace.playerVariables['soulreaper_panel_opened'] = 0
 		end
-
+		
+		
+		
 		-- отслеживает состояние врага и отражает это в переменной. 0 - нету, 1 - есть, друг, 2 - есть, враг
 		if enemyShip then
 			local nm = enemyShip.myBlueprint.blueprintName
@@ -7777,25 +9674,71 @@ function check_arsenal_on_tick_processes()
 				
 				
 				if nm == "BOSS_1_HARD_DLC" or nm == "BOSS_2_HARD_DLC" or nm == "BOSS_3_HARD_DLC" or nm == "BOSS_4_PHASE" then
-					if Hyperspace.metaVariables['additional_flagship_augment'] ~= 0 then
-						local aug_boss_name = varr.full_list_of_game_equipment[math.floor(Hyperspace.metaVariables['additional_flagship_augment'])]
-						--print('boss aug = '..aug_boss_name)
-						if Hyperspace.Blueprints:GetAugmentBlueprint(aug_boss_name).desc.cost == 0 then
+					if diff == '2' then--только на сложном даём ауги
+						
+						
+						
+						--восстановитель количества экипажа флагмана. нужен на 2,3 стадии
+						if nm == "BOSS_1_HARD_DLC" or nm == "BOSS_2_HARD_DLC" or nm == "BOSS_3_HARD_DLC" then
+							if varr.bDoneCrewRestoreCheck == false then
+								varr.bDoneCrewRestoreCheck = true
+								--print('try restore crew='..nm)
+								local ccountmini = 0
+								if enemyShip then
+									for crew in vter(enemyShip.vCrewList) do
+										if crew:IsDrone() == false then
+											ccountmini = ccountmini + 1
+										end
+									end
+									if ccountmini < Hyperspace.metaVariables['flagship_crew_count'] then
+										local delta = Hyperspace.metaVariables['flagship_crew_count'] - ccountmini
+										for i=1, delta do
+											local room_target_ide = -1
+											if GSIe then
+												room_target_ide = GSIe.rooms[math.random(0, GSIe.rooms:size()-1)].iRoomId
+											end
+											enemyShip:AddCrewMemberFromString('', 'human', false, room_target_ide, true, true)
+											--print('add crew')
+										end
+									elseif ccountmini > Hyperspace.metaVariables['flagship_crew_count'] then
+										local delta = ccountmini - Hyperspace.metaVariables['flagship_crew_count']
+										for crew in vter(enemyShip.vCrewList) do
+											if crew:IsDrone() == false then
+												if delta > 0 then
+													crew:Kill(true)
+													--print('remove crew')
+													delta = delta - 1
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+						
+						
+						
+						
+						
+						if Hyperspace.metaVariables['additional_flagship_augment'] ~= 0 then
+							local aug_boss_name = varr.full_list_of_game_equipment[math.floor(Hyperspace.metaVariables['additional_flagship_augment'])]
+							--print('boss aug = '..aug_boss_name)
+							if Hyperspace.Blueprints:GetAugmentBlueprint(aug_boss_name).desc.cost == 0 then
+								define_additional_flagship_augment()
+								print('boss aug redefined from...'..tostring(aug_boss_name))--заглушка на случай если босс не получит почему-то аугмент. хоть причину узнаем если вылезет...
+								aug_boss_name = varr.full_list_of_game_equipment[math.floor(Hyperspace.metaVariables['additional_flagship_augment'])]							
+							end
+							if enemyShip:HasAugmentation(aug_boss_name) == 0 then
+								enemyShip:AddAugmentation(aug_boss_name)
+								print('[style[color:FFFFFF00]]aug boss = '..tostring(aug_boss_name)..'[[/style]]')--скрытый вывод в лог выданного боссу усиления
+								--print('added='..aug_boss_name)
+							end
+						else
+							--у босса сбросило на 0 переменную доп.усиления. чиним...
 							define_additional_flagship_augment()
-							print('boss aug redefined from...'..tostring(aug_boss_name))--заглушка на случай если босс не получит почему-то аугмент. хоть причину узнаем если вылезет...
-							aug_boss_name = varr.full_list_of_game_equipment[math.floor(Hyperspace.metaVariables['additional_flagship_augment'])]							
+							print('boss aug redefined from 0..')--заглушка
 						end
-						if enemyShip:HasAugmentation(aug_boss_name) == 0 then
-							enemyShip:AddAugmentation(aug_boss_name)
-							print('[style[color:FFFFFF00]]aug boss = '..tostring(aug_boss_name)..'[[/style]]')--скрытый вывод в лог выданного боссу усиления
-							--print('added='..aug_boss_name)
-						end
-					else
-						--у босса сбросило на 0 переменную доп.усиления. чиним...
-						define_additional_flagship_augment()
-						print('boss aug redefined from 0..')--заглушка
 					end
-					
 				end
 				
 				if nm == "BOSS_1_EASY_DLC" or nm == "BOSS_1_NORMAL_DLC" or nm == "BOSS_1_HARD_DLC" or nm == "BOSS_BLACK_WING" then
@@ -7834,9 +9777,12 @@ function check_arsenal_on_tick_processes()
 			
 			if enemyShip.bJumping == true then
 				for crew in vter(enemyShip.vCrewList) do
-					if crew.intruder == true then
-						Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_JUMPEDWITH", false)
-						--print('work')
+					--fix ach, работало с призраком дрона-абордажника игрока на корабле врага.
+					if crew:IsDrone() == false and crew.bOutOfGame == false and crew.health.first > 0.0 and crew.bDead == false and crew.crewAnim.bPlayer == true then
+						if crew.intruder == true then
+							Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_JUMPEDWITH", false)
+							--print('work')
+						end
 					end
 				end
 			end
@@ -8115,6 +10061,9 @@ function check_arsenal_on_tick_processes()
 						if Hyperspace.playerVariables['counter_number_of_sector'] == 8 then
 							add_to_LaunchOrder("EVENT_SPECIAL_MUSIC_CHECK")-- если рестартить 8 сектор то музыка возвращалась на базовую, вот доп.проверялка
 						end
+						
+						
+						update_max_hull_player()
 					end
 					--print('continue sec num='..Hyperspace.playerVariables['counter_number_of_sector'])
 					
@@ -8126,7 +10075,11 @@ function check_arsenal_on_tick_processes()
 						Hyperspace.playerVariables['dont_remember_last_sector'] = 0
 						
 						if varr.playerHasGlifInSlots == true then
-							try_to_clear_a_brocken_g_point()
+							try_to_clear_a_brocken_g_point(1)
+							
+							if hasAnyAugmentationOfList(playerShip, {"GLIF_REPAIR", "HID_GLIF_REPAIR"}) == true then 
+								try_to_clear_a_brocken_g_point(2)
+							end
 						end
 						
 						-- при переходе из второго в третий сектор определяем id аугмента для флагмана
@@ -8244,12 +10197,31 @@ function check_arsenal_on_tick_processes()
 					end
 					
 					
+					
+					--при переходе между секторами будет менять редкость орудий в зависимости есть ли у игрока нужное оборудование
 					if playerHasSoulReaperInSlots == true then
 						Hyperspace.Blueprints:GetAugmentBlueprint("SOUL_MAGNIT").desc.rarity = 3
 					else
 						Hyperspace.Blueprints:GetAugmentBlueprint("SOUL_MAGNIT").desc.rarity = 0
 					end
-					--print('rar='..Hyperspace.Blueprints:GetAugmentBlueprint("SOUL_MAGNIT").desc.rarity)
+					if varr.playerHasGlifInSlots == true then
+						Hyperspace.Blueprints:GetAugmentBlueprint("GLIF_REPAIR").desc.rarity = 3
+					else
+						Hyperspace.Blueprints:GetAugmentBlueprint("GLIF_REPAIR").desc.rarity = 0
+					end
+					
+					local bFoundAnyArt = false
+					if playerShip.artillerySystems ~= nil then
+						for i = 0, playerShip.artillerySystems:size() - 1 do
+							bFoundAnyArt = true
+						end
+					end
+					if bFoundAnyArt == true then
+						Hyperspace.Blueprints:GetAugmentBlueprint("ART_ACCURACY").desc.rarity = 3
+					else
+						Hyperspace.Blueprints:GetAugmentBlueprint("ART_ACCURACY").desc.rarity = 0
+					end
+					--print('rar art='..Hyperspace.Blueprints:GetAugmentBlueprint("ART_ACCURACY").desc.rarity)
 					
 					
 					set_filtration()
@@ -8455,19 +10427,26 @@ function check_arsenal_on_tick_processes()
 					--чуть изменил, шанс целей дронов чуть меняется в зависимости от хп игрока.
 					--дроны больше атакуют фул-хп корабль и меньше повреждённый.
 					if playerShip.ship.hullIntegrity.first > 20 then
-						if math.random(0,100)<57 then
+						if math.random(0,99)<57 then
 							add_to_LaunchOrder("DRONE_FIELD_1E")-- атакуют игрока
 						else
 							add_to_LaunchOrder("DRONE_FIELD_1")-- атакуют врага
 						end
+					elseif playerShip.ship.hullIntegrity.first < 5 then --отдельно тут, просто чтобы дроны пореже добивали игрока. это обидно.
+						if math.random(0,99)<30 then
+							add_to_LaunchOrder("DRONE_FIELD_1E")-- атакуют игрока
+						else
+							add_to_LaunchOrder("DRONE_FIELD_1")-- атакуют врага
+							--print('attack enemy')
+						end
 					elseif playerShip.ship.hullIntegrity.first < 10 then
-						if math.random(0,100)<46 then
+						if math.random(0,99)<46 then
 							add_to_LaunchOrder("DRONE_FIELD_1E")-- атакуют игрока
 						else
 							add_to_LaunchOrder("DRONE_FIELD_1")-- атакуют врага
 						end
 					else
-						if math.random(0,100)<50 then
+						if math.random(0,99)<50 then
 							add_to_LaunchOrder("DRONE_FIELD_1")
 						else
 							add_to_LaunchOrder("DRONE_FIELD_1E")
@@ -8502,8 +10481,13 @@ function check_arsenal_on_tick_processes()
 			end
 		end
 		
+		
+		if varr.micro_tick_counter25 == 0.0 then--дополнительный метод, если карта вкл, то регулярно чистит состояние ос
+			if map and map.bOpen == true and map.bChoosingNewSector == false then
+				reset_osa_activity(false)
+			end
+		end
 		if not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
-			--if playerShip.bJumping == false
 			varr.micro_tick_counter8 = varr.micro_tick_counter8 + 60.0*Hyperspace.FPS.SpeedFactor
 			if varr.micro_tick_counter8 >= 5050.0 then
 				varr.micro_tick_counter8 = 0.0
@@ -8512,10 +10496,14 @@ function check_arsenal_on_tick_processes()
 			if varr.micro_tick_counter8 >= 5000.0 then
 				varr.micro_tick_counter8 = 5049.9
 				--varr.micro_tick_counter8 = 0.2
-				
-				reset_osa_activity(true) -- если не возвращать их в игру сразу же, то похоже есть риск вылета из игры при прыжке с выведенной из игры осой
+				if playerShip and playerShip.bJumping == false then
+					reset_osa_activity(true)
+					--внимание опасная команда!
+					--если не возвращать их в игру сразу же, то похоже есть риск вылета из игры при прыжке с выведенной из игры осой
+				end
 			end
 		end
+		
 		
 		
 		if not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then	
@@ -8920,13 +10908,25 @@ function check_arsenal_on_tick_processes()
 									varr.universal_iRoom_targ[crew.extend.selfId] = -1
 								end
 								local bFightttttt = false
+								local bFightOnlyMyCrewMC = false
 								for crew2 in vter2(enemyShip.vCrewList) do
-									if crew ~= crew2 and crew2.iRoomId == crew.iRoomId and crew2.crewAnim.bPlayer ~= crew.crewAnim.bPlayer and crew2:OutOfGame() == false and crew2.health.first > 0.0 then
-										bFightttttt = true
+									if crew ~= crew2 and crew2.iRoomId == crew.iRoomId and crew2:OutOfGame() == false and crew2.health.first > 0.0 then
+										if crew2.crewAnim.bPlayer ~= crew.crewAnim.bPlayer then
+											bFightttttt = true
+										end
+										if crew2.crewAnim.bPlayer == crew.crewAnim.bPlayer and crew2.bMindControlled == true then
+											bFightOnlyMyCrewMC = true
+										end
 									end
 								end
 								if bFightttttt == true then
 									varr.universal_iRoom_targ[crew.extend.selfId] = crew.iRoomId
+								elseif bFightOnlyMyCrewMC == true then
+									if Hyperspace.metaVariables['enemy_has_advanced_ai'] == 1 then
+										-- не даёт защитному дрону противника стрелять по союзному экипажу под МК
+										crew.crewAnim.shootTimer.currTime = 0.0
+										crew.crewAnim.punchTimer.currTime = 0.0
+									end
 								end
 							else
 								local bFightttttt = false
@@ -9080,6 +11080,45 @@ function check_arsenal_on_tick_processes()
 						end
 					end
 					
+					if crew.blueprint.name == "protector_beam" or crew.blueprint.name == "protector_beam2" then -- на корабле врага
+						--защитник дрон врага на его корабле
+						if crew.intruder == false and crew.crewAnim.bPlayer == false and GSIe ~= nil and crew:Functional() == true then
+							if crew.extend:GetDefinition().noAI == false then
+								crew.extend:GetDefinition().noAI = true --полностью забираем контроль над этим дроном в луа
+							end
+							
+							if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+								crew:MoveToRoom(varr.universal_iRoom_targ[crew.extend.selfId], 0, false)
+								if crew.iRoomId == varr.universal_iRoom_targ[crew.extend.selfId] then
+									varr.universal_iRoom_targ[crew.extend.selfId] = -1
+								end
+							else
+								if crew.health.first/crew.health.second < 0.5 then
+									if enemyShip:GetSystem(4) ~= nil then
+										varr.universal_iRoom_targ[crew.extend.selfId] = enemyShip:GetSystem(4):GetRoomId()
+									end
+								else
+									if enemyShip:GetSystem(4) ~= nil and enemyShip:GetSystemInRoom(crew.iRoomId) == enemyShip:GetSystem(4) and crew.health.first/crew.health.second < 1.0 then
+										--стоим в дронной комнате и ремонтируемся
+									else
+										if enemyShip:GetSystemInRoom(crew.iRoomId) ~= nil then
+											varr.universal_iRoom_targ[crew.extend.selfId] = math.random(0, GSIe:RoomCount() - 1)
+											if enemyShip:GetFireCount(varr.universal_iRoom_targ[crew.extend.selfId]) > 0 then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											elseif enemyShip.ship:FullRoom(varr.universal_iRoom_targ[crew.extend.selfId], crew.intruder) == true then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											elseif enemyShip:GetSystemInRoom(varr.universal_iRoom_targ[crew.extend.selfId]) ~= nil then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+					
+					
+					
 					
 					if crew.intruder == false and crew:IsDrone()==false then
 						--if (crew.extend:CalculateStat(Hyperspace.CrewStat.SUFFOCATION_MODIFIER) > 0.2 and crew.health.first < 75.0) or crew.health.first < 30.0 then
@@ -9158,6 +11197,20 @@ function check_arsenal_on_tick_processes()
 			
 			for crew in vter(playerShip.vCrewList) do		
 				if crew.bOutOfGame == false then
+					
+					-- автозамена имени лег.морфа на корабле игрока
+					-- if crew.blueprint.name == "morph_legendary" and crew.crewAnim.bPlayer == false then
+						-- local TS = crew.blueprint.crewNameLong
+						-- if TS.data ~= varr.legendary_morph_name then
+							-- TS.data = varr.legendary_morph_name
+							-- crew:SetName(TS, true)
+							-- --print('name changed!')
+						-- end
+					-- end
+					
+					
+					
+					
 					if crew.blueprint.name:find("lady_legendary") ~= nil then -- ИИ лег.человека на корабле игрока
 						if ((crew.crewAnim.bPlayer == false and crew.bMindControlled == false) or (crew.crewAnim.bPlayer == true and crew.bMindControlled == true)) and crew.extend.customTele.teleporting == false then
 						--if crew.crewAnim.bPlayer==false and crew.extend.customTele.teleporting == false then
@@ -9204,7 +11257,7 @@ function check_arsenal_on_tick_processes()
 								end
 								local px2 = gui.shipPosition.x + crew.x - 17
 								local py2 = gui.shipPosition.y + crew.y - 17
-								table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("people/alien_gone.png"), time_length = 1000.0, time_length_mem = 1000.0, x = px2, y = py2, w=280, h=35, fw=35, fh=35, layer = "SPACE_STATUS"})
+								table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("people/alien_gone.png"), time_length = 1000.0, time_length_mem = 1000.0, x = px2, y = py2, w=280, h=35, fw=35, fh=35, layer = "SPACE_STATUS"})
 								
 								local roomshape = GSIp:GetRoomShape(crew.iRoomId)
 								varr.x_off, varr.y_off = GetXYOffsetsForSlotWH(crew.currentSlot.slotId, roomshape.w, roomshape.h)
@@ -9275,7 +11328,8 @@ function check_arsenal_on_tick_processes()
 									end
 								end
 							else
-								if varr.micro_tick_counter9 < 80000 and crew.health.first > 10.0 then --нормальный режим ос
+								if varr.micro_tick_counter9 < 80000 and crew.health.first > 10.0 and hasAnyAugmentationOfList(playerShip, {"SHELL_GAS", "SHELL_GAS_2", "SHELL_GAS_3", "SHELL_GAS_4", "SHELL_GAS_5", "NANOBOT_DEFENSE_SYSTEM", "HID_NANOBOT_DEFENSE_SYSTEM", "NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY"}) == false then --and varr.count_of_player_crew_no_osa > 0 then
+									--нормальный режим ос
 									--print('targ'..varr.universal_iRoom_targ[crew.extend.selfId])
 									if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
 										crew:MoveToRoom(varr.universal_iRoom_targ[crew.extend.selfId], 0, false)
@@ -9291,7 +11345,8 @@ function check_arsenal_on_tick_processes()
 											varr.universal_iRoom_targ[crew.extend.selfId] = math.random(0, GSIp:RoomCount() - 1)
 										end
 									end
-								else --режим бесилова по кораблю.
+								else
+									--режим бесилова по кораблю.
 									--print('targ-free'..varr.universal_iRoom_targ[crew.extend.selfId])
 									if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
 										crew:MoveToRoom(varr.universal_iRoom_targ[crew.extend.selfId], 0, false)
@@ -9313,30 +11368,27 @@ function check_arsenal_on_tick_processes()
 								crew:ActivatePower()
 								--print('cold-->hot')
 							end
-							if crew.health.first < 28.0 and playerShip:GetFireCount(crew.iRoomId) == 0 then
-								if playerShip:GetSystem(8) == nil or playerShip:GetSystem(8).powerState.first < 2 then
-									-- if varr.universal_iRoom_targ[crew.extend.selfId] == nil then
-										-- varr.universal_iRoom_targ[crew.extend.selfId] = -1
+							-- if crew.health.first < 28.0 and playerShip:GetFireCount(crew.iRoomId) == 0 then
+								-- if playerShip:GetSystem(8) == nil or playerShip:GetSystem(8).powerState.first < 2 then
+									-- if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+										-- if GSIp then
+											-- crew:MoveToRoom(varr.universal_iRoom_targ[crew.extend.selfId], 0, false)
+											-- if playerShip:GetFireCount(varr.universal_iRoom_targ[crew.extend.selfId]) == 0 then
+												-- varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											-- end
+										-- end
+									-- else
+										-- varr.universal_iRoom_targ[crew.extend.selfId] = math.random(0, GSIp:RoomCount() - 1)
+										-- if playerShip:GetFireCount(varr.universal_iRoom_targ[crew.extend.selfId]) == 0 then
+											-- varr.universal_iRoom_targ[crew.extend.selfId] = -1
+										-- elseif playerShip.ship:FullRoom(varr.universal_iRoom_targ[crew.extend.selfId], crew.intruder) == true then
+											-- varr.universal_iRoom_targ[crew.extend.selfId] = -1
+										-- elseif GSIp and GSIp:GetRoomOxygen(varr.universal_iRoom_targ[crew.extend.selfId]) < 10 then --was error here...
+											-- varr.universal_iRoom_targ[crew.extend.selfId] = -1
+										-- end
 									-- end
-									if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
-										if GSIp then
-											crew:MoveToRoom(varr.universal_iRoom_targ[crew.extend.selfId], 0, false)
-											if playerShip:GetFireCount(varr.universal_iRoom_targ[crew.extend.selfId]) == 0 then
-												varr.universal_iRoom_targ[crew.extend.selfId] = -1
-											end
-										end
-									else
-										varr.universal_iRoom_targ[crew.extend.selfId] = math.random(0, GSIp:RoomCount() - 1)
-										if playerShip:GetFireCount(varr.universal_iRoom_targ[crew.extend.selfId]) == 0 then
-											varr.universal_iRoom_targ[crew.extend.selfId] = -1
-										elseif playerShip.ship:FullRoom(varr.universal_iRoom_targ[crew.extend.selfId], crew.intruder) == true then
-											varr.universal_iRoom_targ[crew.extend.selfId] = -1
-										elseif GSIp and GSIp:GetRoomOxygen(varr.universal_iRoom_targ[crew.extend.selfId]) < 10 then --was error here...
-											varr.universal_iRoom_targ[crew.extend.selfId] = -1
-										end
-									end
-								end
-							end
+								-- end
+							-- end
 						end
 					elseif crew.blueprint.name:find("biopreserver") ~= nil then -- новый ИИ биохранителей
 						if Hyperspace.metaVariables['enable_auto_drone_work'] == 1 and crew:Functional() == true then
@@ -9731,6 +11783,41 @@ function check_arsenal_on_tick_processes()
 								end
 							end
 						end
+					elseif crew.blueprint.name == "protector_beam" or crew.blueprint.name == "protector_beam2" then -- на корабле игрока
+						--защитник дрон игрока на его корабле
+						if crew.intruder == false and crew.crewAnim.bPlayer == true and crew.extend:GetDefinition().controllable == false and GSIp ~= nil and crew:Functional() == true then
+							if crew.extend:GetDefinition().noAI == false then
+								crew.extend:GetDefinition().noAI = true --полностью забираем контроль над этим дроном в луа
+							end
+							
+							if varr.universal_iRoom_targ[crew.extend.selfId] ~= -1 then
+								crew:MoveToRoom(varr.universal_iRoom_targ[crew.extend.selfId], 0, false)
+								if crew.iRoomId == varr.universal_iRoom_targ[crew.extend.selfId] then
+									varr.universal_iRoom_targ[crew.extend.selfId] = -1
+								end
+							else
+								if crew.health.first/crew.health.second < 0.5 then
+									if playerShip:GetSystem(4) ~= nil then
+										varr.universal_iRoom_targ[crew.extend.selfId] = playerShip:GetSystem(4):GetRoomId()
+									end
+								else
+									if playerShip:GetSystem(4) ~= nil and playerShip:GetSystemInRoom(crew.iRoomId) == playerShip:GetSystem(4) and crew.health.first/crew.health.second < 1.0 then
+										--стоим в дронной комнате и ремонтируемся
+									else
+										if playerShip:GetSystemInRoom(crew.iRoomId) ~= nil then
+											varr.universal_iRoom_targ[crew.extend.selfId] = math.random(0, GSIp:RoomCount() - 1)
+											if playerShip:GetFireCount(varr.universal_iRoom_targ[crew.extend.selfId]) > 0 then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											elseif playerShip.ship:FullRoom(varr.universal_iRoom_targ[crew.extend.selfId], crew.intruder) == true then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											elseif playerShip:GetSystemInRoom(varr.universal_iRoom_targ[crew.extend.selfId]) ~= nil then
+												varr.universal_iRoom_targ[crew.extend.selfId] = -1
+											end
+										end
+									end
+								end
+							end
+						end
 					end
 					
 					--crew.extend:CalculateStat(Hyperspace.CrewStat.SUFFOCATION_MODIFIER) вот эта структура вызывала замедление ускорения игры на большом кол-ве экипажа
@@ -9848,79 +11935,79 @@ function check_arsenal_on_tick_processes()
 	
 	-- блок запуска событий запланированных на истечение тиков в массиве тиков-событий
 	if not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
-		if #micro_tick_array > 0 and playerShip then
-			for i = 1, #micro_tick_array do
-				if micro_tick_array[i].time_delay > 0.0 then
-					micro_tick_array[i].time_delay = micro_tick_array[i].time_delay - 60.0*Hyperspace.FPS.SpeedFactor
-					if micro_tick_array[i].time_delay <= 0.0 then
-						micro_tick_array[i].time_delay = 0.0
+		if #varr.micro_tick_array > 0 and playerShip then
+			for i = 1, #varr.micro_tick_array do
+				if varr.micro_tick_array[i].time_delay > 0.0 then
+					varr.micro_tick_array[i].time_delay = varr.micro_tick_array[i].time_delay - 60.0*Hyperspace.FPS.SpeedFactor
+					if varr.micro_tick_array[i].time_delay <= 0.0 then
+						varr.micro_tick_array[i].time_delay = 0.0
 						-- если что - проверка на уход в минус лома проведена - не уходит.
-						if micro_tick_array[i].ev_name == "MISSILES_DRILL_1P" then
+						if varr.micro_tick_array[i].ev_name == "MISSILES_DRILL_1P" then
 							Hyperspace.Sounds:PlaySoundMix('gold', 10, false)
 							playerShip:ModifyScrapCount(math.random(1, 2), false)
-						elseif micro_tick_array[i].ev_name == "MISSILES_DRILL_1E" then
+						elseif varr.micro_tick_array[i].ev_name == "MISSILES_DRILL_1E" then
 							Hyperspace.Sounds:PlaySoundMix('gold', 10, false)
 							playerShip:ModifyScrapCount(math.random(-2, -1), false)
-						elseif micro_tick_array[i].ev_name == "MISSILES_DRILL_2P" then
+						elseif varr.micro_tick_array[i].ev_name == "MISSILES_DRILL_2P" then
 							Hyperspace.Sounds:PlaySoundMix('gold', 10, false)
 							playerShip:ModifyScrapCount(math.random(2, 3), false)
-						elseif micro_tick_array[i].ev_name == "MISSILES_DRILL_2E" then
+						elseif varr.micro_tick_array[i].ev_name == "MISSILES_DRILL_2E" then
 							Hyperspace.Sounds:PlaySoundMix('gold', 10, false)
 							playerShip:ModifyScrapCount(math.random(-3, -2), false)
-						elseif micro_tick_array[i].ev_name == "MISSILES_DRILL_3P" then
+						elseif varr.micro_tick_array[i].ev_name == "MISSILES_DRILL_3P" then
 							Hyperspace.Sounds:PlaySoundMix('gold', 10, false)
 							playerShip:ModifyScrapCount(math.random(3, 4), false)
-						elseif micro_tick_array[i].ev_name == "MISSILES_DRILL_3E" then
+						elseif varr.micro_tick_array[i].ev_name == "MISSILES_DRILL_3E" then
 							Hyperspace.Sounds:PlaySoundMix('gold', 10, false)
 							playerShip:ModifyScrapCount(math.random(-4, -3), false)
-						elseif micro_tick_array[i].ev_name == "MISSILES_VAMPIRE_1P" then
+						elseif varr.micro_tick_array[i].ev_name == "MISSILES_VAMPIRE_1P" then
 							playerShip:DamageHull(-1, true)
-						elseif micro_tick_array[i].ev_name == "MISSILES_VAMPIRE_2P" then
+						elseif varr.micro_tick_array[i].ev_name == "MISSILES_VAMPIRE_2P" then
 							playerShip:DamageHull(-2, true)
-						elseif micro_tick_array[i].ev_name == "MISSILES_VAMPIRE_1E" and enemyShip and enemyShip.bDestroyed == false then
+						elseif varr.micro_tick_array[i].ev_name == "MISSILES_VAMPIRE_1E" and enemyShip and enemyShip.bDestroyed == false then
 							enemyShip:DamageHull(-1, true)
-						elseif micro_tick_array[i].ev_name == "MISSILES_VAMPIRE_2E" and enemyShip and enemyShip.bDestroyed == false then
+						elseif varr.micro_tick_array[i].ev_name == "MISSILES_VAMPIRE_2E" and enemyShip and enemyShip.bDestroyed == false then
 							enemyShip:DamageHull(-2, true)
-						elseif micro_tick_array[i].ev_name == "RICOCHET_P3" and enemyShip and enemyShip.bDestroyed == false then
+						elseif varr.micro_tick_array[i].ev_name == "RICOCHET_P3" and enemyShip and enemyShip.bDestroyed == false then
 							play_random_underhull_punch_sound()
 							local dam = Hyperspace.Damage()
 							dam.breachChance = 10
 							dam.iShieldPiercing = 10
 							dam.iSystemDamage = 1
 							enemyShip:DamageArea(enemyShip:GetRandomRoomCenter(), dam, true)
-							table.insert(micro_tick_array, {ev_name = "RICOCHET_P2", time_delay = math.random(800, 1000)})
-						elseif micro_tick_array[i].ev_name == "RICOCHET_E3" and playerShip.bDestroyed == false then
+							table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_P2", time_delay = math.random(800, 1000)})
+						elseif varr.micro_tick_array[i].ev_name == "RICOCHET_E3" and playerShip.bDestroyed == false then
 							play_random_underhull_punch_sound()
 							local dam = Hyperspace.Damage()
 							dam.breachChance = 10
 							dam.iShieldPiercing = 10
 							dam.iSystemDamage = 1
 							playerShip:DamageArea(playerShip:GetRandomRoomCenter(), dam, true)
-							table.insert(micro_tick_array, {ev_name = "RICOCHET_E2", time_delay = math.random(800, 1000)})
-						elseif micro_tick_array[i].ev_name == "RICOCHET_P2" and enemyShip and enemyShip.bDestroyed == false then
+							table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_E2", time_delay = math.random(800, 1000)})
+						elseif varr.micro_tick_array[i].ev_name == "RICOCHET_P2" and enemyShip and enemyShip.bDestroyed == false then
 							play_random_underhull_punch_sound()
 							local dam = Hyperspace.Damage()
 							dam.breachChance = 10
 							dam.iShieldPiercing = 10
 							dam.iSystemDamage = 1
 							enemyShip:DamageArea(enemyShip:GetRandomRoomCenter(), dam, true)
-							table.insert(micro_tick_array, {ev_name = "RICOCHET_P1", time_delay = math.random(800, 1000)})
-						elseif micro_tick_array[i].ev_name == "RICOCHET_E2" and playerShip.bDestroyed == false then
+							table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_P1", time_delay = math.random(800, 1000)})
+						elseif varr.micro_tick_array[i].ev_name == "RICOCHET_E2" and playerShip.bDestroyed == false then
 							play_random_underhull_punch_sound()
 							local dam = Hyperspace.Damage()
 							dam.breachChance = 10
 							dam.iShieldPiercing = 10
 							dam.iSystemDamage = 1
 							playerShip:DamageArea(playerShip:GetRandomRoomCenter(), dam, true)
-							table.insert(micro_tick_array, {ev_name = "RICOCHET_E1", time_delay = math.random(800, 1000)})
-						elseif micro_tick_array[i].ev_name == "RICOCHET_P1" and enemyShip and enemyShip.bDestroyed == false then
+							table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_E1", time_delay = math.random(800, 1000)})
+						elseif varr.micro_tick_array[i].ev_name == "RICOCHET_P1" and enemyShip and enemyShip.bDestroyed == false then
 							play_random_underhull_punch_sound()
 							local dam = Hyperspace.Damage()
 							dam.breachChance = 10
 							dam.iShieldPiercing = 10
 							dam.iSystemDamage = 1
 							enemyShip:DamageArea(enemyShip:GetRandomRoomCenter(), dam, true)
-						elseif micro_tick_array[i].ev_name == "RICOCHET_E1" and playerShip.bDestroyed == false then
+						elseif varr.micro_tick_array[i].ev_name == "RICOCHET_E1" and playerShip.bDestroyed == false then
 							play_random_underhull_punch_sound()
 							local dam = Hyperspace.Damage()
 							dam.breachChance = 10
@@ -9948,7 +12035,7 @@ function check_arsenal_on_tick_processes()
 				Hyperspace.Sounds:PlaySoundMix('jumpLeave', 4, false)--jumpLeave--jumpArrive
 				varr.orchid_fleet_x = math.random(20, 110)
 				varr.orchid_fleet_y = math.random(115, 550)
-				table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/ship_arrives.png"), time_length = 400.0, time_length_mem = 400.0, x = varr.orchid_fleet_x+10, y = varr.orchid_fleet_y-10, w=1500, h=128, fw=150, fh=128, layer = "SPACE_STATUS"})--LAYER_BACKGROUND
+				table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/ship_arrives.png"), time_length = 400.0, time_length_mem = 400.0, x = varr.orchid_fleet_x+10, y = varr.orchid_fleet_y-10, w=1500, h=128, fw=150, fh=128, layer = "SPACE_STATUS"})--LAYER_BACKGROUND
 			end
 			if varr.micro_tick_counter5 >= 4400.0 and varr.micro_tick_counter5 <= 4490.0 then
 				varr.micro_tick_counter5 = 4491.0
@@ -9957,7 +12044,7 @@ function check_arsenal_on_tick_processes()
 			if varr.micro_tick_counter5 >= 15900.0 and varr.micro_tick_counter5 <= 15990.0 then
 				varr.micro_tick_counter5 = 15991.0
 				Hyperspace.Sounds:PlaySoundMix('warning', 5, false)
-				table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/fleet_1_orchid_warning.png"), time_length = 3000.0, time_length_mem = 3000.0, x = varr.orchid_fleet_x-30, y = varr.orchid_fleet_y-40, w=1500, h=150, fw=250, fh=150, layer = "SPACE_STATUS"})
+				table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/fleet_1_orchid_warning.png"), time_length = 3000.0, time_length_mem = 3000.0, x = varr.orchid_fleet_x-30, y = varr.orchid_fleet_y-40, w=1500, h=150, fw=250, fh=150, layer = "SPACE_STATUS"})
 			end
 			if varr.micro_tick_counter5 >= 20000.0 and varr.micro_tick_counter5 <= 20090.0 then
 				varr.micro_tick_counter5 = 20091.0
@@ -10054,8 +12141,8 @@ function check_arsenal_on_tick_processes()
 	end
 	
 	
-	varr.bIsOpenBuyMenu = false
-	
+	-- varr.bIsOpenBuyMenu = false
+	-- varr.bIsOpenSellMenu = false
 	
 	-- выполнение команды на замену описания орудия
 	if varr.strNeededSpecialReplacingTooltip ~= "" then
@@ -10486,7 +12573,7 @@ end
 
 
 script.on_render_event(Defines.RenderEvents.SHIP_STATUS, function() 
-
+		
 end, function()--над слоем UI хп корабля
 	
 	if Hyperspace.metaVariables['challenge_nohull'] == 1 then
@@ -10500,18 +12587,118 @@ end, function()--над слоем UI хп корабля
 	if Hyperspace.App.menu.shipBuilder.bOpen == true or Hyperspace.App.menu.bOpen == true then -- останавливаем выполнение всех тик-процессов
 		-- НИЧЕГО НЕ ДЕЛАТЬ ТУТ
 	else
+		
+		
+		
+		
+		--блок выводит информацию о ДПС корабля на постоянку внизу под орудиями
+		-- varr.dps_switch_ready = false
+		-- if playerShip and playerShip:HasSystem(3) then --weapons system
+			-- if gui then --and gui.menu_pause == false then
+				-- local color_curx = varr.color_white
+				-- --Graphics.CSurface.GL_SetColor(varr.color_white)
+				-- print(tostring(gui.menu_pause)..','..tostring(varr.bOpenedTabPanelNow))
+				
+				-- if gui.menu_pause == true or varr.bOpenedTabPanelNow == true then --or varr.bIsOpenBuyMenu == true or varr.bIsOpenSellMenu == true or varr.bOpenedTabPanelNow then
+					-- Graphics.CSurface.GL_SetColor(varr.color_gray_for_pauses)
+					-- color_curx = varr.color_gray_for_pauses
+					-- --print('tab gray'..math.random(0,8))
+				-- else
+					-- Graphics.CSurface.GL_SetColor(varr.color_white)
+				-- end
+				-- -- if gui.menu_pause == false and varr.bIsOpenBuyMenu == false and varr.bIsOpenSellMenu == false then
+					-- -- Graphics.CSurface.GL_SetColor(varr.color_white)
+				-- -- else
+					-- -- Graphics.CSurface.GL_SetColor(varr.color_gray_for_pauses)
+					-- -- color_curx = varr.color_gray_for_pauses
+				-- -- end
+				
+				-- if Hyperspace.metaVariables['dps_panel_state'] == 1 then
+					-- Graphics.CSurface.GL_PushMatrix()
+					-- Graphics.CSurface.GL_Translate(varr.x_offset_of_tips_weapon_system + 106, 663)
+					-- --Graphics.CSurface.GL_RenderPrimitive(varr.dps_panel)
+					-- Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.dps_panel, color_curx)
+					-- Graphics.CSurface.GL_PopMatrix()
+				-- end
+				
+				-- Graphics.CSurface.GL_PushMatrix()
+				-- Graphics.CSurface.GL_Translate(varr.x_offset_of_tips_weapon_system + 103, 669)
+				-- --Graphics.CSurface.GL_RenderPrimitive(varr.dps_icon)
+				-- Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.dps_icon, color_curx)
+				-- Graphics.CSurface.GL_PopMatrix()
+				-- if mouseInside({x = varr.x_offset_of_tips_weapon_system + 103, y = 669, w = 8, h = 8}) and gui and gui.menu_pause == false then
+					-- Hyperspace.Mouse:InstantTooltip()
+					-- Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_dps_switcher'))
+					-- varr.dps_switch_ready = true
+				-- end
+				
+				-- if Hyperspace.metaVariables['dps_panel_state'] == 1 then
+					-- local dps = 0
+					-- local damage_summary = 0
+					-- local biggest_cooldown = 0
+					-- local count_of_powered_pf = 0
+					-- dps, damage_summary, biggest_cooldown, count_of_powered_pf = calculate_dps_paremeters()
+					-- if biggest_cooldown > 0 then
+						-- Graphics.freetype.easy_printCenter(6, varr.x_offset_of_tips_weapon_system + 127, 672, tostring((math.floor(100.0*(damage_summary/biggest_cooldown)))/100.0))
+					-- else
+						-- Graphics.freetype.easy_printCenter(6, varr.x_offset_of_tips_weapon_system + 127, 672, '0.0')
+					-- end
+					-- Graphics.freetype.easy_printCenter(6, varr.x_offset_of_tips_weapon_system + 157, 672, tostring((math.floor(100.0*dps))/100.0))
+					-- if mouseInside({x = varr.x_offset_of_tips_weapon_system + 112, y = 666, w = 29, h = 22}) and gui and gui.menu_pause == false then
+						-- Hyperspace.Mouse:InstantTooltip()
+						-- Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_dps_sim'))
+					-- elseif mouseInside({x = varr.x_offset_of_tips_weapon_system + 142, y = 666, w = 29, h = 22}) and gui and gui.menu_pause == false then
+						-- Hyperspace.Mouse:InstantTooltip()
+						-- Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_dps_auto'))
+					-- end
+				-- end
+			-- end
+		-- end
+		
+		
+		
+		
+		
+		
 		-- иконка сообщения из магазина рядом, просто будет показана если он на соседнем маяке.
 		if varr.bShopIsClose == true then
 			Graphics.CSurface.GL_PushMatrix()
 			Graphics.CSurface.GL_Translate(varr.shop_is_closeBox.x, varr.shop_is_closeBox.y)
-			Graphics.CSurface.GL_RenderPrimitive(varr.shop_is_close)
+			if varr.bOpenedTabPanelNow == false then
+				Graphics.CSurface.GL_RenderPrimitive(varr.shop_is_close)
+			else
+				--Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.shop_is_close, varr.color_dark)
+				Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.shop_is_close, varr.color_gray)
+			end
 			Graphics.CSurface.GL_PopMatrix()
 			if mouseInside(varr.shop_is_closeBox) and gui and gui.menu_pause == false then
 				Hyperspace.Mouse:InstantTooltip()
 				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_tip_shop_is_close'))
 			end
 		end
+		
+		
+		--иконка подсказок по горячим клавишам "?"
+		Graphics.CSurface.GL_PushMatrix()
+		Graphics.CSurface.GL_Translate(varr.tip_topBox.x, varr.tip_topBox.y)
+		Graphics.CSurface.GL_RenderPrimitive(varr.tip_top)
+		Graphics.CSurface.GL_PopMatrix()
+		if mouseInside(varr.tip_topBox) and gui and gui.menu_pause == false then
+			local ttt_out = Hyperspace.Text:GetText('lua_tip_top')
+			--if core and core.settings and core.settings.language ~= nil then--идентификация подключённой "ультра консоли"
+			-- if core.settings.language ~= nil then--идентификация подключённой "ультра консоли"
+				-- --print('i see core'..math.random(0,10))
+				-- ttt_out = ttt_out..Hyperspace.Text:GetText('lua_tip_top_adder')
+			-- end
+			Hyperspace.Mouse:InstantTooltip()
+			Hyperspace.Mouse:SetTooltip(ttt_out)
+		end
+
+
+		
+		
 	end
+	varr.bOpenedTabPanelNow = false
 	
 	-- блок вывода информации о снижении наград ракет-дронов
 	Graphics.CSurface.GL_PushMatrix()
@@ -10575,20 +12762,37 @@ end, function()--над слоем UI хп корабля
 	end
 	
 	
-	--блок выводит информацию о ДПС корабля на постоянку внизу под орудиями
+	-- --блок выводит информацию о ДПС корабля на постоянку внизу под орудиями
 	varr.dps_switch_ready = false
 	if playerShip and playerShip:HasSystem(3) then --weapons system
 		if gui and gui.menu_pause == false then
+			--local color_curx = varr.color_white
+			--Graphics.CSurface.GL_SetColor(varr.color_white)
+			-- if gui.menu_pause == true or varr.bIsOpenBuyMenu == true or varr.bIsOpenSellMenu == true then
+				-- Graphics.CSurface.GL_SetColor(varr.color_gray_for_pauses)
+				-- color_curx = varr.color_gray_for_pauses
+			-- else
+				-- Graphics.CSurface.GL_SetColor(varr.color_white)
+			-- end
+			-- if gui.menu_pause == false and varr.bIsOpenBuyMenu == false and varr.bIsOpenSellMenu == false then
+				-- Graphics.CSurface.GL_SetColor(varr.color_white)
+			-- else
+				-- Graphics.CSurface.GL_SetColor(varr.color_gray_for_pauses)
+				-- color_curx = varr.color_gray_for_pauses
+			-- end
+			
 			if Hyperspace.metaVariables['dps_panel_state'] == 1 then
 				Graphics.CSurface.GL_PushMatrix()
 				Graphics.CSurface.GL_Translate(varr.x_offset_of_tips_weapon_system + 106, 663)
 				Graphics.CSurface.GL_RenderPrimitive(varr.dps_panel)
+				--Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.dps_panel, color_curx)
 				Graphics.CSurface.GL_PopMatrix()
 			end
 			
 			Graphics.CSurface.GL_PushMatrix()
 			Graphics.CSurface.GL_Translate(varr.x_offset_of_tips_weapon_system + 103, 669)
 			Graphics.CSurface.GL_RenderPrimitive(varr.dps_icon)
+			--Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.dps_icon, color_curx)
 			Graphics.CSurface.GL_PopMatrix()
 			if mouseInside({x = varr.x_offset_of_tips_weapon_system + 103, y = 669, w = 8, h = 8}) and gui and gui.menu_pause == false then
 				Hyperspace.Mouse:InstantTooltip()
@@ -10619,6 +12823,11 @@ end, function()--над слоем UI хп корабля
 		end
 	end
 	
+	varr.bIsOpenBuyMenu = false
+	varr.bIsOpenSellMenu = false
+	
+	
+	
 	if playerShip and playerShip:GetSystem(7)~=nil and playerShip:GetSystem(7).iHackEffect ~= 2 and playerShip:GetSystem(7):GetLocked()==false then
 		if playerShip:GetSystem(7):GetEffectivePower() > 0 then
 			if Hyperspace.playerVariables['alien_count_inside_hull'] > 0 then
@@ -10638,6 +12847,21 @@ end, function()--над слоем UI хп корабля
 			end
 		end
 	end
+	
+	if playerShip and playerShip:HasAugmentation("PDS_ASSIST")>0 then
+		if Hyperspace.metaVariables['pds_is_done_player'] == 1 then
+			if Hyperspace.Mouse.tooltip:find(Hyperspace.Text:GetText('lua_pds_from_planet_marker'))~=nil then
+			--if Hyperspace.Mouse.tooltip:find("Противокорабельная батарея с планеты")~=nil then
+				Hyperspace.Mouse:InstantTooltip()
+				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_pds_fed_fleet'))
+			end
+		end
+	end
+	
+	
+	
+	
+	
 	
 	--визуальные эффекты на взлом сенсоров, такое...
 	if playerShip and playerShip:GetSystem(7)~=nil and playerShip:GetSystem(7).iHackEffect == 2 then
@@ -10677,35 +12901,7 @@ end, function()--над слоем UI хп корабля
 			end
 		end
 		--print('sens hacked now'..math.random(0,100))
-		
-		
-		-- Graphics.CSurface.GL_PushMatrix()
-		-- Graphics.CSurface.GL_Translate(377, 0)
-		-- Graphics.CSurface.GL_RenderPrimitive(varr.top_scrap_red)
-		-- Graphics.CSurface.GL_PopMatrix()
-		
-		-- Graphics.CSurface.GL_PushMatrix()
-		-- Graphics.CSurface.GL_Translate(258, 43)
-		-- Graphics.CSurface.GL_RenderPrimitive(varr.top_drones_on_red)
-		-- Graphics.CSurface.GL_PopMatrix()
-		
-		-- Graphics.CSurface.GL_PushMatrix()
-		-- Graphics.CSurface.GL_Translate(188, 43)
-		-- Graphics.CSurface.GL_RenderPrimitive(varr.top_missiles_on_red)
-		-- Graphics.CSurface.GL_PopMatrix()
-		
-		-- Graphics.CSurface.GL_PushMatrix()
-		-- Graphics.CSurface.GL_Translate(122, 43)
-		-- Graphics.CSurface.GL_RenderPrimitive(varr.top_fuel_on_red)
-		-- Graphics.CSurface.GL_PopMatrix()
-		
-		
-		
-		-- Graphics.CSurface.GL_PushMatrix()
-		-- Graphics.CSurface.GL_Translate(0, 43)
-		-- Graphics.CSurface.GL_RenderPrimitive(varr.top_shields4_red)
-		-- Graphics.CSurface.GL_PopMatrix()
-		
+
 		Graphics.CSurface.GL_PushMatrix()
 		Graphics.CSurface.GL_Translate(23, 43)
 		Graphics.CSurface.GL_RenderPrimitive(varr.top_shields4_purple)
@@ -10822,6 +13018,7 @@ end, function()--над слоем UI хп корабля
 			end
 			hack_sys_off_x = hack_sys_off_x + 54
 		end
+		
 		if playerShip:HasSystem(10) then
 			local lvl = playerShip:GetSystem(10).healthState.second
 			local off_y_shi = 0
@@ -10832,6 +13029,7 @@ end, function()--над слоем UI хп корабля
 			end
 			hack_sys_off_x = hack_sys_off_x + 54
 		end
+		
 		if playerShip.artillerySystems ~= nil then
 			local vSystemList = playerShip.artillerySystems
 			for j = 0, vSystemList:size() - 1 do
@@ -10887,11 +13085,12 @@ end, function()--над слоем UI хп корабля
 				Graphics.CSurface.GL_DrawRect(hack_sys_off_x, 667 + off_y_shi, 16, 6, needed_color)
 				Graphics.CSurface.GL_DrawRectOutline(hack_sys_off_x, 667 + off_y_shi, 16, 6, needed_color_border, 1)
 			end
-			--hack_sys_off_x = hack_sys_off_x + playerShip.weaponSystem.slot_count*95--0--54
-			if playerShip.weaponSystem.slot_count == 2 then
-				hack_sys_off_x = hack_sys_off_x + 242--337
+			if playerShip.weaponSystem.slot_count == 1 then
+				hack_sys_off_x = hack_sys_off_x + 145
+			elseif playerShip.weaponSystem.slot_count == 2 then
+				hack_sys_off_x = hack_sys_off_x + 242
 			elseif playerShip.weaponSystem.slot_count == 3 then
-				hack_sys_off_x = hack_sys_off_x + 339--was 380
+				hack_sys_off_x = hack_sys_off_x + 339
 			elseif playerShip.weaponSystem.slot_count == 4 then
 				hack_sys_off_x = hack_sys_off_x + 436
 			else
@@ -10907,7 +13106,6 @@ end, function()--над слоем UI хп корабля
 				Graphics.CSurface.GL_DrawRect(hack_sys_off_x, 667 + off_y_shi, 16, 6, needed_color)
 				Graphics.CSurface.GL_DrawRectOutline(hack_sys_off_x, 667 + off_y_shi, 16, 6, needed_color_border, 1)
 			end
-			--hack_sys_off_x = hack_sys_off_x + playerShip.weaponSystem.slot_count*95--0--54
 		end
 		
 		
@@ -10985,7 +13183,6 @@ end, function()--над слоем UI хп корабля
 			end
 		end
 		
-		
 		if Hyperspace.Mouse.tooltip ~= '' then
 			Hyperspace.Mouse:InstantTooltip()
 			Hyperspace.Mouse:SetTooltip("???")
@@ -11002,8 +13199,81 @@ script.on_render_event(Defines.RenderEvents.FTL_BUTTON, function()
 end, function() 
 	
 	
+
+
 	
 	
+	
+	
+	--кнопка вкл/выкл таймера зарядки фтл привода
+	Graphics.CSurface.GL_PushMatrix()
+	Graphics.CSurface.GL_Translate(varr.button_microswitcher_Box.x, varr.button_microswitcher_Box.y)
+	if mouseInside(varr.button_microswitcher_Box) then
+		varr.show_ftl_timer_ready = true
+		Hyperspace.Mouse:InstantTooltip()
+		if Hyperspace.metaVariables['show_ftl_timer'] == 1 then
+			Graphics.CSurface.GL_RenderPrimitive(varr.button_microswitcher_1_select2)
+			if varr.bOpenedTabPanelNow == false then
+				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_show_ftl_timer_on'))
+			end
+		else
+			Graphics.CSurface.GL_RenderPrimitive(varr.button_microswitcher_0_select2)
+			if varr.bOpenedTabPanelNow == false then
+				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_show_ftl_timer_off'))
+			end
+		end
+		varr.mouse_inside_mem2 = 888
+	else
+		if Hyperspace.metaVariables['show_ftl_timer'] == 1 then
+			Graphics.CSurface.GL_RenderPrimitive(varr.button_microswitcher_1_on)
+		else
+			Graphics.CSurface.GL_RenderPrimitive(varr.button_microswitcher_0_on)
+		end
+	end
+	Graphics.CSurface.GL_PopMatrix()
+	
+	--участок выводит цифры для оценки сколько осталось до зарядки фтл привода
+	if Hyperspace.metaVariables['show_ftl_timer'] == 1 then
+		if playerShip and Hyperspace.App.world.bStartedGame and not playerShip.bJumping and not playerShip.lastJumpReady and isInDangerTimer() then
+			if playerShip:GetSystem(1) ~= nil and playerShip:GetSystem(6) ~=nil then
+				local timer = 0.8*(playerShip.jump_timer.second - playerShip.jump_timer.first)
+				local manning_powers = {[0]=1,1.1,1.17,1.25}
+				--local engine_lvl = playerShip:GetSystem(1).powerState.first
+				local engine_lvl = playerShip:GetSystem(1):GetEffectivePower()
+				
+				local manning_lvl = playerShip:GetSystem(1).iActiveManned
+				local aug_value = 0.0
+				
+				--playerShip:GetAugmentationValue("FTL_BOOSTER")
+				if hasAnyAugmentationOfList(playerShip, {"FTL_BOOSTER", "HID_FTL_BOOSTER", "FTL_BOOSTER_FTL_JAMMER"}) == true then
+					aug_value = 10.0
+				end
+				if engine_lvl < 1 then 
+					engine_lvl = 1
+				end
+				local time_display = timer*(1/((1+aug_value)*manning_powers[manning_lvl]*(0.72+0.28*engine_lvl)))
+				if timer > 0 then
+					local color = varr.ftl_timer_jtq_textColor
+					if playerShip:GetSystem(1):CompletelyDestroyed() then
+						color = varr.ftl_timer_jtq_textNoEnginesColor
+					elseif not playerShip:GetSystem(1):Functioning() or playerShip:GetSystem(1).iHackEffect > 0 or not playerShip:GetSystem(6).bManned then
+						color = varr.ftl_timer_jtq_textNoChargeColor
+					end
+					Graphics.CSurface.GL_PushMatrix()
+					Graphics.CSurface.GL_Translate(0, 0)
+					Graphics.CSurface.GL_Translate(varr.ftl_timer_jtq_backgroundX, varr.ftl_timer_jtq_backgroundY)
+					Graphics.CSurface.GL_RenderPrimitive(varr.timerBox)
+					Graphics.CSurface.GL_PopMatrix()
+					
+					
+					Graphics.freetype.easy_printCenter(1, varr.ftl_timer_jtq_textX, varr.ftl_timer_jtq_textY, string.format("[style[color:" .. color .. "]]%.1f[[/style]]", time_display))
+				
+					
+					--Graphics.freetype.easy_printCenter(varr.ftl_timer_jtq_textFont, varr.ftl_timer_jtq_textX, varr.ftl_timer_jtq_textY, string.format("[style[color:" .. color .. "]]%.1f[[/style]]", time_display))
+				end
+			end
+		end
+	end
 	
 	
 	if varr.bSensorsHackedNow == true then
@@ -11066,6 +13336,9 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 	
 	
 	
+	
+	
+	
 	--Hyperspace.TutorialArrow(Hyperspace.Pointf(100.0,math.random(-200.0,200.0)), 0.0)
 	
 	
@@ -11080,6 +13353,31 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 	if Hyperspace.App.menu.shipBuilder.bOpen == true or Hyperspace.App.menu.bOpen == true then -- останавливаем выполнение всех тик-процессов
 		-- НИЧЕГО НЕ ДЕЛАТЬ ТУТ
 	else
+		
+		
+		
+		-- показать радиус действия дронов лучевых защитников
+		if varr.bPressedBACKSPACE == true then
+			if playerShip then
+				for crew in vter(playerShip.vCrewList) do
+					if crew.blueprint.name == "protector_beam" then
+						if crew:Functional() == true and crew:IsDrone() == true and crew.fStunTime <= 0.0 then
+							if crew.bOutOfGame == false and crew.health.first > 0.0 and crew.bDead == false and crew.crewAnim.bPlayer == true then
+								Graphics.CSurface.GL_DrawCircle(gui.shipPosition.x + crew:GetPosition().x, gui.shipPosition.y + crew:GetPosition().y, varr.radius_target_locking, varr.color_opac_red)--color_red_targ2_opaced
+							end
+						end
+					end
+					if crew.blueprint.name == "protector_beam2" then
+						if crew:Functional() == true and crew:IsDrone() == true and crew.fStunTime <= 0.0 then
+							if crew.bOutOfGame == false and crew.health.first > 0.0 and crew.bDead == false and crew.crewAnim.bPlayer == true then
+								Graphics.CSurface.GL_DrawCircle(gui.shipPosition.x + crew:GetPosition().x, gui.shipPosition.y + crew:GetPosition().y, varr.radius_target_locking2, varr.color_opac_red)--color_red_targ2_opaced
+							end
+						end
+					end
+				end
+			end
+		end
+		
 		
 		
 		if enemyShip then
@@ -11176,29 +13474,10 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 			end
 		end
 		
-		
-		-- if GSIe ~= nil then
-			-- print('gsie'..math.random(0,1000))
-		-- end
-		--print(enemyShip._targetable:ValidTarget())
-		--print('targ'..tostring(enemyShip._targetable.type))
-		--print(tostring(enemyShip._targetable:GetRandomTargettingPoint(true).x))
-		--print('y'..tostring(enemyShip._targetable:GetRandomTargettingPoint(true).y))
-		
-		
-		
-		
-		
-		
-		
-		
 		if playerShip and playerShip:GetSystem(7)~=nil then
-			
 			if playerShip:GetSystem(7):GetEffectivePower() >= 2 then
 				if enemyShip and enemyShip.ship.hullIntegrity.first > 0 and enemyShip.bJumping == false and playerShip.bJumping == false then
 					if enemyShip:GetSystem(0) ~= nil then
-						--if enemyShip._targetable:ValidTarget() == true then
-						--if Hyperspace.metaVariables['enemy_state'] ~= 0 then
 						local shields_en_lvl = enemyShip:GetSystem(0).healthState.second
 						if shields_en_lvl == 1 or shields_en_lvl == 3 or shields_en_lvl == 5 or shields_en_lvl == 7 or shields_en_lvl == 9 then
 							local x_off_shield_plus = 885
@@ -11216,7 +13495,6 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 							Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.shield_plus, varr.color_green_bright)
 							Graphics.CSurface.GL_PopMatrix()
 						end
-						--end
 					end
 				end
 			end
@@ -11244,6 +13522,9 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		
 		
 		
+		
+		
+		
 		varr.x_offset_of_tips_artillery_system = 0
 		-- считаем сдвиг подсказки от наличия систем. телепорт и инвиз дают больший сдвиг.
 		if playerShip then
@@ -11253,6 +13534,17 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				end
 				if system:GetId() == 10 or system:GetId() == 9 then
 					varr.x_offset_of_tips_artillery_system = varr.x_offset_of_tips_artillery_system + 54
+				end
+			end
+			
+			-- добавляет пояснение при наведении на систему невидимости что она заблокирована усилением врага
+			if playerShip:HasSystem(10)==true and enemyShip and enemyShip:HasAugmentation("ANTICLOAK_FIELD")>0 then
+				--Graphics.CSurface.GL_DrawRect(varr.x_offset_of_tips_artillery_system+22, 669, 28, 28, varr.color_red)
+				if mouseInside({x = varr.x_offset_of_tips_artillery_system+23, y = 670, w = 27, h = 27}) then
+					if Hyperspace.Mouse.tooltip ~= '' then
+						Hyperspace.Mouse:InstantTooltip()
+						Hyperspace.Mouse:SetTooltip(Hyperspace.Mouse.tooltip..'\n'..Hyperspace.Text:GetText('lua_tip_cloak_blocked'))
+					end
 				end
 			end
 			
@@ -11374,7 +13666,7 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				
 				
 				
-				--режим автоматического использования мк в защиту
+				--режим автоматического использования мк, контроля разума в защиту
 				
 				Graphics.CSurface.GL_PushMatrix()
 				Graphics.CSurface.GL_Translate(92 + varr.x_offset_of_tips_artillery_system, 688)
@@ -11443,6 +13735,7 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				varr.x_offset_of_tips_weapon_system = varr.x_offset_of_tips_drone_system
 				
 				-- блок кода даёт отображение количества выстреливаемых снарядов рядом с панелью орудий, подсказка
+				-- снаряды, иконка, количество
 				local i_nnn = 0
 				for pf in vter2(playerShip.weaponSystem.weapons) do
 					local numynumy = -1
@@ -11498,20 +13791,10 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 								end
 							end
 						elseif pf.blueprint.chargeLevels == 1 then
-							
 							if pf.blueprint.typeName == "BURST" then
-								--print('aaa'..math.random(0,100))
 								str_oooo = tostring(math.floor(pf.numShots*varr.full_list_of_burst_weapon_proj_count[pf.blueprint.name]))
-								-- if pf.numShots*varr.full_list_of_burst_weapon_proj_count[pf.blueprint.name] < 10 then
-									-- width_sqrt = width_sqrt+8
-								-- elseif pf.numShots*varr.full_list_of_burst_weapon_proj_count[pf.blueprint.name] < 100 then
-									-- width_sqrt = width_sqrt+13
-								-- else
-									-- width_sqrt = width_sqrt+18
-								-- end
 							end
 						end
-						
 						if pf.blueprint.name:find("SHOTGUN_RAND3")~=nil then
 							str_oooo = "3-7"
 							width_sqrt = 21
@@ -11522,19 +13805,15 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 							str_oooo = "1-5"
 							width_sqrt = 19
 						end
-						
 						if varr.bSensorsHackedNow == true then
 							str_oooo = "?"
 							width_sqrt = 9
 						end
-						
-						
 						if pf.powered == true then-- -126
 							Graphics.CSurface.GL_PushMatrix()
 							Graphics.CSurface.GL_Translate(varr.x_offset_of_tips_drone_system + 106 + 97*i_nnn, 604)
 							Graphics.CSurface.GL_RenderPrimitiveWithAlpha(varr.icon_proj, 1.0)
 							Graphics.CSurface.GL_PopMatrix()
-							
 							Graphics.CSurface.GL_DrawRectOutline(varr.x_offset_of_tips_drone_system + 110 + 97*i_nnn, 604, width_sqrt, 11, varr.color_cyanbezh, 1)
 							Graphics.freetype.easy_print(6, varr.x_offset_of_tips_drone_system + 113 + 97*i_nnn, 601, '[style[color:FFFFFFDD]]'..str_oooo..'[[/style]]')
 						else
@@ -11542,7 +13821,6 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 							Graphics.CSurface.GL_Translate(varr.x_offset_of_tips_drone_system + 106 + 97*i_nnn, 604)
 							Graphics.CSurface.GL_RenderPrimitiveWithAlpha(varr.icon_proj, 0.5)
 							Graphics.CSurface.GL_PopMatrix()
-							
 							Graphics.CSurface.GL_DrawRectOutline(varr.x_offset_of_tips_drone_system + 110 + 97*i_nnn, 604, width_sqrt, 11, varr.color_gray, 1)
 							Graphics.freetype.easy_print(6, varr.x_offset_of_tips_drone_system + 113 + 97*i_nnn, 601, '[style[color:A0A0A0AA]]'..str_oooo..'[[/style]]')
 						end
@@ -11952,7 +14230,7 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 			if varr.micro_tick_counter13 >= 980.0 then 
 				varr.micro_tick_counter13 = 0.0
 				if Hyperspace.metaVariables['fishing_beacon'] == 1 then
-					table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("fishing/fishing_window.png"), time_length = 1000.0, time_length_mem = 1000.0, x = 1040, y = 150, w=960, h=360, fw=240, fh=360, layer = "SPACE_STATUS"})
+					table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("fishing/fishing_window.png"), time_length = 1000.0, time_length_mem = 1000.0, x = 1040, y = 150, w=960, h=360, fw=240, fh=360, layer = "SPACE_STATUS"})
 					varr.is_enabled_monitor_to_planet = true
 				end
 			end
@@ -11965,7 +14243,7 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 					if varr.micro_tick_counter14 >= 12500.0 then 
 						varr.micro_tick_counter14 = math.random(0, 7000)
 						if Hyperspace.playerVariables['fishing_remaining'] > 0 then
-							table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("fishing/waves.png"), time_length = 1000.0, time_length_mem = 1000.0, x = 1120, y = 465, w=125, h=14, fw=20, fh=14, layer = "SPACE_STATUS_up"})
+							table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("fishing/waves.png"), time_length = 1000.0, time_length_mem = 1000.0, x = 1120, y = 465, w=125, h=14, fw=20, fh=14, layer = "SPACE_STATUS_up"})
 							varr.micro_tick_fish_on_kruchok = 1200.0
 							Hyperspace.playerVariables['fishing_remaining'] = Hyperspace.playerVariables['fishing_remaining'] - 1
 							
@@ -12175,7 +14453,7 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 					end
 					if varr.sunduk_progress > 100.0 then
 						varr.sunduk_progress = 100.0
-						table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("fishing/sunduk_catched.png"), time_length = 500.0, time_length_mem = 500.0, x = 1006, y = 197 + varr.sunduk_y, w=320, h=36, fw=32, fh=36, layer = "SPACE_STATUS_up"})
+						table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("fishing/sunduk_catched.png"), time_length = 500.0, time_length_mem = 500.0, x = 1006, y = 197 + varr.sunduk_y, w=320, h=36, fw=32, fh=36, layer = "SPACE_STATUS_up"})
 						varr.sunduk_y = 999
 						--varr.bSundukCatchedThisTime = true
 						Hyperspace.playerVariables['fishing_sunduk_reward'] = 1
@@ -12360,6 +14638,7 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 	
 	varr.button_g_onoff_ready = false
 	varr.button_g_clear_ready = false
+	varr.button_lastg_clear_ready = false
 	
 	if varr.playerHasGlifInSlots == true then
 		local glifTipBox = {x = 1217,y = 621,w = 33,h = 33}
@@ -12421,6 +14700,19 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				end
 			end
 			Graphics.CSurface.GL_PopMatrix()
+			
+			
+			--моргающая стрелка из туториала, пока хоть раз не откроешь панель, будет мозолить глаза
+			if Hyperspace.metaVariables['glif_opened_once'] == 0 then
+				if varr.micro_tick_counter29 > 1000.0 then
+					Graphics.CSurface.GL_PushMatrix()
+					Graphics.CSurface.GL_Translate(glifTipBox.x-167, glifTipBox.y-4)
+					Graphics.CSurface.GL_RenderPrimitive(varr.tutorial_arrow)
+					Graphics.CSurface.GL_PopMatrix()
+				end
+			end
+			
+			
 		else
 			if varr.bOpenedGlifPanel == true then
 				varr.bOpenedGlifPanel = false
@@ -12434,6 +14726,11 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 	
 	
 	if varr.bOpenedGlifPanel == true then
+		
+		if Hyperspace.metaVariables['glif_opened_once'] == 0 then
+			Hyperspace.metaVariables['glif_opened_once'] = 1
+		end
+		
 		varr.strFullGlifLine = ""
 		
 		local count_of_active_sublines = 0
@@ -12458,7 +14755,12 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		--local glif_desc = Hyperspace.Text:GetText("lua_info_glif_desc").."\n"
 		local glif_desc = varr.info_glif_desc.."\n"
 		glif_desc = glif_desc.."\n"..Hyperspace.Text:GetText("lua_info_charact")..":"
-		glif_desc = glif_desc.."\n"..Hyperspace.Text:GetText("lua_info_power")..": 3"
+		--glif_desc = glif_desc.."\n"..Hyperspace.Text:GetText("lua_info_power")..": 2"
+		
+		if varr.full_list_of_game_equipment_power["GLIF_GUN"]~=nil then
+			glif_desc = glif_desc.."\n"..Hyperspace.Text:GetText("lua_info_power")..": "..tostring(varr.full_list_of_game_equipment_power["GLIF_GUN"])
+			--чтобы не обновлять тут, возьмёт из блюпринта
+		end
 		glif_desc = glif_desc.."\n"..Hyperspace.Text:GetText("lua_info_cooldown")..": 12 "..Hyperspace.Text:GetText("lua_info_sec")
 		
 		
@@ -12476,6 +14778,14 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		if cnt > 0 then
 			hdamage = hdamage + cnt
 		end
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_DAMAGE02", "ADD_DAMAGE02"))
+		if cnt > 0 then
+			hdamage = hdamage + cnt*2
+		end
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "REMOVE_HDAMAGE01", "REMOVE_HDAMAGE01"))
+		if cnt > 0 then
+			hdamage = hdamage - cnt
+		end
 		if hdamage ~= 1 then
 			glif_desc = glif_desc.."\n\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_hulldamage")..": "..tostring(hdamage).."[[/style]]"
 		else
@@ -12491,14 +14801,36 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		if cnt > 0 then
 			sdamage = sdamage + cnt*2
 		end
-		
-		
-		
-		if hdamage ~= 1 or sdamage ~= 0 then
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "REMOVE_HDAMAGE01", "REMOVE_HDAMAGE01"))
+		if cnt > 0 then
+			sdamage = sdamage + cnt
+		end
+		--if hdamage ~= 1 or sdamage ~= 0 then
+		if hdamage + sdamage ~= 1 then
 			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_sysdamage")..": "..math.floor(hdamage + sdamage).."[[/style]]"
 		else
 			glif_desc = glif_desc.."\n"..Hyperspace.Text:GetText("lua_info_sysdamage")..": "..math.floor(hdamage + sdamage)
 		end
+		
+		
+		local evasion_local = 0
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_EVASION10", "ADD_EVASION10"))
+		if cnt > 0 then
+			evasion_local = evasion_local + cnt*10
+		end
+		if evasion_local > 0 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_evasion")..": +"..math.floor(evasion_local).."[[/style]]"
+		end
+		
+		local bomb_local = 0
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_SMALL_BOMB", "ADD_SMALL_BOMB"))
+		if cnt > 0 then
+			bomb_local = bomb_local + cnt
+		end
+		if bomb_local > 0 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_bomb")..": "..math.floor(bomb_local).."[[/style]]"
+		end
+		
 		
 		
 		local pers_damage = 15*hdamage
@@ -12513,6 +14845,10 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_PERS_DAMAGE45", "ADD_PERS_DAMAGE45"))
 		if cnt > 0 then
 			pers_damage = pers_damage + cnt*45
+		end
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "REMOVE_HDAMAGE01", "REMOVE_HDAMAGE01"))
+		if cnt > 0 then
+			pers_damage = pers_damage + cnt*15
 		end
 		if pers_damage > 15 then--15 then
 			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_crewdamage")..": "..math.floor(pers_damage).."[[/style]]"
@@ -12603,7 +14939,13 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		if cnt > 0 then
 			add_sp = add_sp + math.floor(cnt*2)
 		end
-		if add_sp > 0 then
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "SET_SP10", "SET_SP10"))
+		if cnt > 0 then
+			add_sp = 10
+		end
+		if add_sp == 10 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_spall").."[[/style]]"
+		elseif add_sp > 0 then
 			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_sp")..": "..math.floor(add_sp).."[[/style]]"
 		end
 		
@@ -12661,6 +15003,41 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_erosion").."[[/style]]"
 		end
 		
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "OXYGEN_FILL", "OXYGEN_FILL"))
+		if cnt > 0 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_oxygen_fill").."[[/style]]"
+		end
+		
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_ASIN", "ADD_ASIN"))
+		if cnt > 0 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_asin").."[[/style]]"
+		end
+		
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_TAU", "ADD_TAU"))
+		if cnt > 0 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_tau").."[[/style]]"
+		end
+		
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_EMPTY_TELEPORT", "ADD_EMPTY_TELEPORT"))
+		if cnt > 0 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_empty_teleport").."[[/style]]"
+		end
+		
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "SPAWN_MANTIS", "SPAWN_MANTIS"))
+		if cnt > 0 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_spawn_mantis").."[[/style]]"
+		end
+		
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_MIND_CONTROL", "ADD_MIND_CONTROL"))
+		if cnt > 0 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_add_mc").."[[/style]]"
+		end
+		
+		cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_HACKING", "ADD_HACKING"))
+		if cnt > 0 then
+			glif_desc = glif_desc.."\n[style[color:00FF00FF]]"..Hyperspace.Text:GetText("lua_info_add_hack").."[[/style]]"
+		end
+		
 		
 		--вывод панели за описанием орудия
 		Graphics.CSurface.GL_PushMatrix()
@@ -12675,8 +15052,9 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		Graphics.freetype.easy_printAutoNewlines(10, 611, 143, 285, glif_desc)
 		
 		
-		-- кнопка стирания всех глифов
+		
 		if count_of_active_sublines > 0 then
+			-- кнопка стирания всех глифов
 			if mouseInside({x = 918, y = 142, w = 72, h = 37}) then
 				Graphics.CSurface.GL_PushMatrix()
 				Graphics.CSurface.GL_Translate(918, 142)
@@ -12692,7 +15070,25 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				Graphics.CSurface.GL_RenderPrimitive(varr.glif_clear_on)
 				Graphics.CSurface.GL_PopMatrix()
 			end
+			
+			-- кнопка стирания последнего глифа
+			if mouseInside({x = 993, y = 142, w = 72, h = 37}) then
+				Graphics.CSurface.GL_PushMatrix()
+				Graphics.CSurface.GL_Translate(993, 142)
+				Graphics.CSurface.GL_RenderPrimitive(varr.glif_lastclear_select2)
+				Graphics.CSurface.GL_PopMatrix()
+				varr.button_lastg_clear_ready = true
+				mouse_inside_mem = 999
+				Hyperspace.Mouse:InstantTooltip()
+				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_lastclear_glif_panel'))
+			else
+				Graphics.CSurface.GL_PushMatrix()
+				Graphics.CSurface.GL_Translate(993, 142)
+				Graphics.CSurface.GL_RenderPrimitive(varr.glif_lastclear_on)
+				Graphics.CSurface.GL_PopMatrix()
+			end
 		else
+			-- кнопка стирания всех глифов
 			Graphics.CSurface.GL_PushMatrix()
 			Graphics.CSurface.GL_Translate(918, 142)
 			Graphics.CSurface.GL_RenderPrimitive(varr.glif_clear_off)
@@ -12701,7 +15097,19 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				Hyperspace.Mouse:InstantTooltip()
 				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_clear_glif_panel_no'))
 			end
+			
+			-- кнопка стирания последнего глифа
+			Graphics.CSurface.GL_PushMatrix()
+			Graphics.CSurface.GL_Translate(993, 142)
+			Graphics.CSurface.GL_RenderPrimitive(varr.glif_lastclear_off)
+			Graphics.CSurface.GL_PopMatrix()
+			if mouseInside({x = 993, y = 142, w = 72, h = 37}) then
+				Hyperspace.Mouse:InstantTooltip()
+				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_clear_glif_panel_no'))
+			end
 		end
+		
+		
 		
 		--панель рисования точек
 		Graphics.CSurface.GL_PushMatrix()
@@ -12747,9 +15155,6 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		
 		
 		
-		--Graphics.CSurface.GL_DrawRect(varr.panel_g_x, varr.panel_g_y, varr.panel_g_w, varr.panel_g_h, varr.color_dark)
-		--Graphics.CSurface.GL_DrawRectOutline(varr.panel_g_x, varr.panel_g_y, varr.panel_g_w, varr.panel_g_h, varr.color_orange_bright, 2)
-		
 		
 		local result_text = ""
 		
@@ -12764,13 +15169,42 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		
 		
 		--глиф памяти
+		--схема кодировок направлений
+		--      6   1
+		--       \ /
+		--    5-— . —-2
+		--       / \
+		--      4   3
+
+
+		
 		if Hyperspace.metaVariables['glif_start_soon_showed'] < 1000 then
 			local strLine = tostring(math.floor(Hyperspace.metaVariables['glif_start']))
-			local i_off = select(2, string.gsub(strLine, "5", "5")) - select(2, string.gsub(strLine, "2", "2"))
+			
+			local first_symbol = string.sub(strLine, 1, 1)
+			--print(first_symbol)
+			local left_border = 0
+			if first_symbol == "6" or first_symbol == "4" or first_symbol == "5" then
+				left_border = 1
+			end
+			-- i = x
+			-- j = y
+			local i_off = select(2, string.gsub(strLine, "5", "5")) + select(2, string.gsub(strLine, "46", "46")) + select(2, string.gsub(strLine, "64", "64"))
+			i_off = i_off - select(2, string.gsub(strLine, "2", "2")) - select(2, string.gsub(strLine, "13", "13")) - select(2, string.gsub(strLine, "31", "31"))
 			local j_off = select(2, string.gsub(strLine, "6", "6")) + select(2, string.gsub(strLine, "1", "1")) - select(2, string.gsub(strLine, "4", "4")) - select(2, string.gsub(strLine, "3", "3"))
 			
 			local i_sh = 3 + i_off
+			if i_sh < left_border then
+				i_sh = left_border
+			elseif i_sh > 6 then
+				i_sh = 6
+			end
 			local j_sh = 3 + j_off
+			if j_sh < 0 then
+				j_sh = 0
+			elseif j_sh > 6 then
+				j_sh = 6
+			end
 			local loc2_x = varr.panel_g_x + 50 + i_sh*varr.panel_g_step
 			local loc2_y = varr.panel_g_y + 50 + j_sh*varr.panel_g_step
 			if j_sh%2 == 0 then
@@ -12787,18 +15221,22 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				--Hyperspace.metaVariables['glif_y_'..tostring(math.floor(k))] = varr.fCurrentStartPointY
 				--Hyperspace.metaVariables['glif_s_'..tostring(math.floor(k))] = varr.strCurrentNumberLine
 				draw_itterator(Hyperspace.metaVariables['glif_x_'..tostring(math.floor(k))], Hyperspace.metaVariables['glif_y_'..tostring(math.floor(k))], tostring(math.floor(Hyperspace.metaVariables['glif_s_'..tostring(math.floor(k))])), true, varr.color_yellow)
+				--print('2')
 			end
 		end
 		
 		if varr.bDrawLineMode == true then
 			if varr.strCurrentNumberLine ~= "" then
 				draw_itterator(varr.fCurrentStartPointX, varr.fCurrentStartPointY, varr.strCurrentNumberLine, false, varr.color_yellow)
+				--print('3')
 			end
 		end
 		
 		g_mouse_pos = Hyperspace.Mouse.position
 		
 		local point_id = 0
+		
+		local bNeededDecreasingTimer = false
 		
 		for i = 0, varr.panel_g_array_w_count do
 			for j = 0, varr.panel_g_array_h_count do
@@ -12927,16 +15365,23 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 					Graphics.CSurface.GL_DrawCircle(loc_x, loc_y, 4.0, varr.color_gray)
 				end
 				
+				
 				if varr.iNeededMorganieID == point_id then
 					if varr.iNeededMorganieTimer > 0 then
-						varr.iNeededMorganieTimer = varr.iNeededMorganieTimer - 1
+						bNeededDecreasingTimer = true
 						if (varr.micro_tick_counter25 > 500.0) then
 							Graphics.CSurface.GL_DrawCircle(loc_x, loc_y, 6.0, varr.color_cyan)
 							Graphics.CSurface.GL_DrawCircle(loc_x, loc_y, 3.0, varr.color_dark)
 						end
-					else
-						varr.iNeededMorganieID = -1
-						varr.iNeededMorganieTimer = 0
+					end
+				end
+				if varr.iNeededMorganieID2 == point_id then
+					if varr.iNeededMorganieTimer > 0 then
+						bNeededDecreasingTimer = true
+						if (varr.micro_tick_counter25 > 500.0) then
+							Graphics.CSurface.GL_DrawCircle(loc_x, loc_y, 6.0, varr.color_cyan)
+							Graphics.CSurface.GL_DrawCircle(loc_x, loc_y, 3.0, varr.color_dark)
+						end
 					end
 				end
 				
@@ -12948,6 +15393,19 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				end
 			end
 		end
+		
+		if bNeededDecreasingTimer == true then
+			if varr.iNeededMorganieTimer > 0 then
+				varr.iNeededMorganieTimer = varr.iNeededMorganieTimer - 1
+			else
+				varr.iNeededMorganieID = -1
+				varr.iNeededMorganieID2 = -1
+				varr.iNeededMorganieTimer = 0
+			end
+		end
+	else
+		--панель закрыта = чистим память
+		varr.strCurrentNumberLine = ""
 	end
 	
 	varr.bPressedLMB_previous = varr.bPressedLMB
@@ -13012,6 +15470,22 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 					end
 				end
 				Graphics.CSurface.GL_PopMatrix()
+				
+				--моргающая стрелка из туториала, пока хоть раз не откроешь панель, будет мозолить глаза
+				if Hyperspace.playerVariables['soulreaper_panel_opened'] == 0 then
+					if Hyperspace.metaVariables['soul_opened_once'] == 0 then
+						if varr.micro_tick_counter29 > 1000.0 then
+							Graphics.CSurface.GL_PushMatrix()
+							Graphics.CSurface.GL_Translate(soulreaperTipBox.x-167, soulreaperTipBox.y-4)
+							Graphics.CSurface.GL_RenderPrimitive(varr.tutorial_arrow)
+							Graphics.CSurface.GL_PopMatrix()
+						end
+					end
+				else
+					if Hyperspace.metaVariables['soul_opened_once'] == 0 then
+						Hyperspace.metaVariables['soul_opened_once'] = 1
+					end
+				end
 				
 			end
 		end
@@ -13184,36 +15658,34 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 		end
 		
 		for i = 1, 13 do
-			if mouseInside(sr_b[i]) and bToolTipShown == false then
+			if mouseInside(varr.sr_b[i]) and bToolTipShown == false then
 				Graphics.CSurface.GL_PushMatrix()
-				Graphics.CSurface.GL_Translate(sr_b[i].x - 12, sr_b[i].y - 10)
+				Graphics.CSurface.GL_Translate(varr.sr_b[i].x - 12, varr.sr_b[i].y - 10)
 				if arr_allowed_soulbuy[i] == 1 then
-					Graphics.CSurface.GL_RenderPrimitive(soulreaper_b_select2[i])
+					Graphics.CSurface.GL_RenderPrimitive(varr.soulreaper_b_select2[i])
 				else
-					Graphics.CSurface.GL_RenderPrimitive(soulreaper_b_off[i])
+					Graphics.CSurface.GL_RenderPrimitive(varr.soulreaper_b_off[i])
 				end
 				Graphics.CSurface.GL_PopMatrix()
 				if gui and gui.menu_pause == false then
 					Hyperspace.Mouse:InstantTooltip()
 					if arr_allowed_soulbuy[i] == 1 then
-						Hyperspace.Mouse:SetTooltip(sr_b[i].text_on)
+						Hyperspace.Mouse:SetTooltip(varr.sr_b[i].text_on)
 					elseif arr_allowed_soulbuy[i] == 0 then
-						--Hyperspace.Mouse:SetTooltip(sr_b[i].text_on.."\nДостигнут предел развития.")
-						Hyperspace.Mouse:SetTooltip(sr_b[i].text_on..'\n'..Hyperspace.Text:GetText('lua_sr_up_limit'))
+						Hyperspace.Mouse:SetTooltip(varr.sr_b[i].text_on..'\n'..Hyperspace.Text:GetText('lua_sr_up_limit'))
 					else
-						--Hyperspace.Mouse:SetTooltip(sr_b[i].text_on.."\nНе хватает душ.")
-						Hyperspace.Mouse:SetTooltip(sr_b[i].text_on..'\n'..Hyperspace.Text:GetText('lua_sr_no_soul'))
+						Hyperspace.Mouse:SetTooltip(varr.sr_b[i].text_on..'\n'..Hyperspace.Text:GetText('lua_sr_no_soul'))
 					end
 					bToolTipShown = true
 					mouse_inside_mem = i
 				end
 			else
 				Graphics.CSurface.GL_PushMatrix()
-				Graphics.CSurface.GL_Translate(sr_b[i].x - 12, sr_b[i].y - 10)
+				Graphics.CSurface.GL_Translate(varr.sr_b[i].x - 12, varr.sr_b[i].y - 10)
 				if arr_allowed_soulbuy[i] == 1 then
-					Graphics.CSurface.GL_RenderPrimitive(soulreaper_b_on[i])
+					Graphics.CSurface.GL_RenderPrimitive(varr.soulreaper_b_on[i])
 				else
-					Graphics.CSurface.GL_RenderPrimitive(soulreaper_b_off[i])
+					Graphics.CSurface.GL_RenderPrimitive(varr.soulreaper_b_off[i])
 				end
 				Graphics.CSurface.GL_PopMatrix()
 			end
@@ -13267,27 +15739,27 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 			Graphics.CSurface.GL_SetColor(varr.color_cyanbezh)
 			if i == 1 then
 				if Hyperspace.playerVariables['soulreaper_power'] == 2 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "5")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 83, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "5")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."Требует энергии: 2"
 					soul_desc = soul_desc..Hyperspace.Text:GetText('lua_sr_req_pow')..' 2'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 1[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_power'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "7")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "7")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."Требует энергии: 1"
 					soul_desc = soul_desc..Hyperspace.Text:GetText('lua_sr_req_pow')..' 1'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 0[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_power'] == 0 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green)
 					--soul_desc = soul_desc.."Не требует питания"
 					soul_desc = soul_desc..Hyperspace.Text:GetText('lua_sr_noreq_pow')
 				end
@@ -13295,209 +15767,148 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				
 				--5-7-8-10)Согласен на 15-13-11-9-7. ок. сделаю.
 				if Hyperspace.playerVariables['soulreaper_cooldown'] == 15 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "5")
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "5")
 					
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+43, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					
-					-- Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
-					--soul_desc = soul_desc.."\nВремя зарядки: 15 сек."
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_cooldown')..' 15 '..Hyperspace.Text:GetText('lua_sr_sec')
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 13 сек.[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_cooldown'] == 13 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "7")
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "7")
 					
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+43, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					
-					-- Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
-					--soul_desc = soul_desc.."\nВремя зарядки: 13 сек."
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_cooldown')..' 13 '..Hyperspace.Text:GetText('lua_sr_sec')
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 11 сек.[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_cooldown'] == 11 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "8")
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "8")
 					
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+43, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					
-					-- Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
-					--soul_desc = soul_desc.."\nВремя зарядки: 11 сек."
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_cooldown')..' 11 '..Hyperspace.Text:GetText('lua_sr_sec')
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 9 сек.[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_cooldown'] == 9 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "10")
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "10")
 					
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+43, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					
-					-- Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
-					--soul_desc = soul_desc.."\nВремя зарядки: 9 сек."
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_cooldown')..' 9 '..Hyperspace.Text:GetText('lua_sr_sec')
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 7 сек.[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_cooldown'] == 7 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
 					
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+43, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+129, sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green)
 					
-					
-					-- Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRect(684+114, sr_b[i].y+7, 55, 23, varr.color_green)
-					--soul_desc = soul_desc.."\nВремя зарядки: 7 сек."
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_cooldown')..' 7 '..Hyperspace.Text:GetText('lua_sr_sec')
 				end
-				
-				
-				-- if Hyperspace.playerVariables['soulreaper_cooldown'] == 14 then
-					-- Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "5")
-					-- Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
-					-- --soul_desc = soul_desc.."\nВремя зарядки: 14 сек."
-					-- soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_cooldown')..' 14 '..Hyperspace.Text:GetText('lua_sr_sec')
-					-- if mouse_inside_mem == i then
-						-- soul_desc = soul_desc.."[style[color:00FF00FF]] >> 12 сек.[[/style]]"
-					-- end
-				-- elseif Hyperspace.playerVariables['soulreaper_cooldown'] == 12 then
-					-- Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "7")
-					-- Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
-					-- --soul_desc = soul_desc.."\nВремя зарядки: 12 сек."
-					-- soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_cooldown')..' 12 '..Hyperspace.Text:GetText('lua_sr_sec')
-					-- if mouse_inside_mem == i then
-						-- soul_desc = soul_desc.."[style[color:00FF00FF]] >> 10 сек.[[/style]]"
-					-- end
-				-- elseif Hyperspace.playerVariables['soulreaper_cooldown'] == 10 then
-					-- Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "10")
-					-- Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
-					-- --soul_desc = soul_desc.."\nВремя зарядки: 10 сек."
-					-- soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_cooldown')..' 10 '..Hyperspace.Text:GetText('lua_sr_sec')
-					-- if mouse_inside_mem == i then
-						-- soul_desc = soul_desc.."[style[color:00FF00FF]] >> 8 сек.[[/style]]"
-					-- end
-				-- elseif Hyperspace.playerVariables['soulreaper_cooldown'] == 8 then
-					-- Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					-- Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					-- Graphics.CSurface.GL_DrawRect(684+114, sr_b[i].y+7, 55, 23, varr.color_green)
-					-- --soul_desc = soul_desc.."\nВремя зарядки: 8 сек."
-					-- soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_cooldown')..' 8 '..Hyperspace.Text:GetText('lua_sr_sec')
-				-- end
 			elseif i == 3 then
 				if Hyperspace.playerVariables['soulreaper_shots'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+43, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."\n\nВыстрелов за заряд: 1"
 					soul_desc = soul_desc..'\n\n'..Hyperspace.Text:GetText('lua_sr_shots')..' 1'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 2[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_shots'] == 2 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "5")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+43, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "5")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."\n\nВыстрелов за заряд: 2"
 					soul_desc = soul_desc..'\n\n'..Hyperspace.Text:GetText('lua_sr_shots')..' 2'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 3[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_shots'] == 3 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "7")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+43, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "7")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."\n\nВыстрелов за заряд: 3"
 					soul_desc = soul_desc..'\n\n'..Hyperspace.Text:GetText('lua_sr_shots')..' 3'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 4[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_shots'] == 4 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "10")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+43, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "10")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."\n\nВыстрелов за заряд: 4"
 					soul_desc = soul_desc..'\n\n'..Hyperspace.Text:GetText('lua_sr_shots')..' 4'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 5[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_shots'] == 5 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+43, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+129, sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green)
 					--soul_desc = soul_desc.."\n\nВыстрелов за заряд: 5"
 					soul_desc = soul_desc..'\n\n'..Hyperspace.Text:GetText('lua_sr_shots')..' 5'
 				end
 			elseif i == 4 then
 				if Hyperspace.playerVariables['soulreaper_iDamage'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "7")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 83, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "7")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."\n\nУрон по корпусу: 1"
 					soul_desc = soul_desc..'\n\n'..Hyperspace.Text:GetText('lua_sr_damagehull')..' 1'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 2[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iDamage'] == 2 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "10")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "10")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."\n\nУрон по корпусу: 2"
 					soul_desc = soul_desc..'\n\n'..Hyperspace.Text:GetText('lua_sr_damagehull')..' 2'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 3[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iDamage'] == 3 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green)
 					--soul_desc = soul_desc.."\n\nУрон по корпусу: 3"
 					soul_desc = soul_desc..'\n\n'..Hyperspace.Text:GetText('lua_sr_damagehull')..' 3'
 				end
 			elseif i == 5 then
 				if Hyperspace.playerVariables['soulreaper_iSystemDamage'] == 0 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "5")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 83, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "5")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					local sysdam = tonumber(Hyperspace.playerVariables['soulreaper_iDamage'])
 					--soul_desc = soul_desc.."\nУрон по системам: "..math.floor(sysdam)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_damagesys')..' '..math.floor(sysdam)
@@ -13505,9 +15916,9 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> "..math.floor(sysdam+1).."[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iSystemDamage'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "7")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "7")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					local sysdam = tonumber(Hyperspace.playerVariables['soulreaper_iDamage'])
 					--soul_desc = soul_desc.."\nУрон по системам: "..math.floor(sysdam+1)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_damagesys')..' '..math.floor(sysdam+1)
@@ -13515,9 +15926,9 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> "..math.floor(sysdam+2).."[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iSystemDamage'] == 2 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green)
 					local sysdam = tonumber(Hyperspace.playerVariables['soulreaper_iDamage'])
 					--soul_desc = soul_desc.."\nУрон по системам: "..math.floor(sysdam+2)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_damagesys')..' '..math.floor(sysdam+2)
@@ -13527,9 +15938,9 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				end
 			elseif i == 6 then
 				if Hyperspace.playerVariables['soulreaper_iPersDamage'] == 0 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 83, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					local persdam = 15*tonumber(Hyperspace.playerVariables['soulreaper_iDamage'])
 					--soul_desc = soul_desc.."\nУрон по экипажу: "..math.floor(persdam)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_damagecrew')..' '..math.floor(persdam)
@@ -13537,9 +15948,9 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> "..math.floor(persdam+15).."[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iPersDamage'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "5")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "5")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					local persdam = 15*tonumber(Hyperspace.playerVariables['soulreaper_iDamage'])
 					--soul_desc = soul_desc.."\nУрон по экипажу: "..math.floor(persdam+15)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_damagecrew')..' '..math.floor(persdam+15)
@@ -13547,9 +15958,9 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> "..math.floor(persdam+30).."[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iPersDamage'] == 2 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green)
 					local persdam = 15*tonumber(Hyperspace.playerVariables['soulreaper_iDamage'])
 					--soul_desc = soul_desc.."\nУрон по экипажу: "..math.floor(persdam+30)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_damagecrew')..' '..math.floor(persdam+30)
@@ -13559,10 +15970,10 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 				end
 			elseif i == 7 then
 				if Hyperspace.playerVariables['soulreaper_iIonDamage'] == 0 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "5")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "5")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 54, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green, 2)
 					if mouse_inside_mem == i then
 						--soul_desc = soul_desc.."\n[style[color:00FF00FF]]Ионный урон: 1[[/style]]"
 						soul_desc = soul_desc..'\n[style[color:00FF00FF]]'..Hyperspace.Text:GetText('lua_sr_damageion')..' 1[[/style]]'
@@ -13570,40 +15981,40 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 						soul_desc = soul_desc.."\n"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iIonDamage'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "6")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "6")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."\nИонный урон: 1"
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_damageion')..' 1'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 2[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iIonDamage'] == 2 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "7")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "7")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green, 2)
 					--soul_desc = soul_desc.."\nИонный урон: 2"
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_damageion')..' 2'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 3[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iIonDamage'] == 3 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+114, sr_b[i].y+7, 55, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green)
 					--soul_desc = soul_desc.."\nИонный урон: 3"
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_damageion')..' 3'
 				end
 			elseif i == 8 then
 				if Hyperspace.playerVariables['soulreaper_iShieldPiercing'] == 0 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "1")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+43, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "1")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					if mouse_inside_mem == i then
 						--soul_desc = soul_desc.."\n[style[color:00FF00FF]]Пробивает щитов: 1[[/style]]"
 						soul_desc = soul_desc..'\n[style[color:00FF00FF]]'..Hyperspace.Text:GetText('lua_sr_spierce')..' 1[[/style]]'
@@ -13611,50 +16022,50 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 						soul_desc = soul_desc.."\n"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iShieldPiercing'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+43, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_spierce')..' 1'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 2[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iShieldPiercing'] == 2 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "5")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+43, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 40, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "5")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_spierce')..' 2'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 3[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iShieldPiercing'] == 3 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "7")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+43, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+129, sr_b[i].y+7, 40, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "7")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green, 2)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_spierce')..' 3'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 4[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_iShieldPiercing'] == 4 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+43, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 40, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+129, sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+43, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 40, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+129, varr.sr_b[i].y+7, 40, 23, varr.color_green)
 					--soul_desc = soul_desc..'\nПробивает щитов: 4'
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_spierce')..' 4'
 				end
 			elseif i == 9 then
 				if Hyperspace.playerVariables['soulreaper_breachChance'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 54, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green, 2)
 					soul_desc_temp = soul_desc_temp..'\n'..Hyperspace.Text:GetText('lua_sr_bc')..' '..math.floor(real_bc)..'%'
 					if mouse_inside_mem == i then
 						soul_desc_temp = soul_desc_temp.."[style[color:00FF00FF]] >> "..math.floor(plusb_real_bc).."%[[/style]]"
@@ -13662,10 +16073,10 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 						soul_desc_temp = soul_desc_temp.."[style[color:FF0000FF]] >> "..math.floor(plusf_real_bc).."%[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_breachChance'] == 4 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green, 2)
 					soul_desc_temp = soul_desc_temp..'\n'..Hyperspace.Text:GetText('lua_sr_bc')..' '..math.floor(real_bc)..'%'
 					if mouse_inside_mem == i then
 						soul_desc_temp = soul_desc_temp.."[style[color:00FF00FF]] >> "..math.floor(plusb_real_bc).."%[[/style]]"
@@ -13673,10 +16084,10 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 						soul_desc_temp = soul_desc_temp.."[style[color:FF0000FF]] >> "..math.floor(plusf_real_bc).."%[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_breachChance'] == 7 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green, 2)
 					soul_desc_temp = soul_desc_temp..'\n'..Hyperspace.Text:GetText('lua_sr_bc')..' '..math.floor(real_bc)..'%'
 					if mouse_inside_mem == i then
 						soul_desc_temp = soul_desc_temp.."[style[color:00FF00FF]] >> "..math.floor(plusb_real_bc).."%[[/style]]"
@@ -13684,10 +16095,10 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 						soul_desc_temp = soul_desc_temp.."[style[color:FF0000FF]] >> "..math.floor(plusf_real_bc).."%[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_breachChance'] == 10 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+114, sr_b[i].y+7, 55, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green)
 					soul_desc_temp = soul_desc_temp..'\n'..Hyperspace.Text:GetText('lua_sr_bc')..' '..math.floor(real_bc)..'%'
 					if (mouse_inside_mem == 10 and arr_allowed_soulbuy[10] ~= 0) then
 						soul_desc_temp = soul_desc_temp.."[style[color:FF0000FF]] >> "..math.floor(plusf_real_bc).."%[[/style]]"
@@ -13696,89 +16107,89 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 			elseif i == 10 then
 				--soul_desc = soul_desc.."\n"
 				if Hyperspace.playerVariables['soulreaper_fireChance'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 54, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green, 2)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_fc')..' '..math.floor(real_fc)..'%'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> "..math.floor(plusf_real_fc).."%[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_fireChance'] == 4 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+57, sr_b[i].y+7, 54, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green, 2)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_fc')..' '..math.floor(real_fc)..'%'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> "..math.floor(plusf_real_fc).."%[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_fireChance'] == 7 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+114, sr_b[i].y+7, 55, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green, 2)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_fc')..' '..math.floor(real_fc)..'%'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> "..math.floor(plusf_real_fc).."%[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_fireChance'] == 10 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+57, sr_b[i].y+7, 54, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+114, sr_b[i].y+7, 55, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+57, varr.sr_b[i].y+7, 54, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+114, varr.sr_b[i].y+7, 55, 23, varr.color_green)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_fc')..' '..math.floor(real_fc)..'%'
 				end
 				soul_desc = soul_desc..soul_desc_temp
 			elseif i == 11 then
 				if Hyperspace.playerVariables['soulreaper_bLockdown'] == 0 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "7")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 169, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "7")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 169, 23, varr.color_green, 2)
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc..'\n[style[color:00FF00FF]]'..Hyperspace.Text:GetText('lua_sr_lockroom')..'[[/style]]'
 					else
 						soul_desc = soul_desc.."\n"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_bLockdown'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 169, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 169, 23, varr.color_green)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_lockroom')
 				end
 			elseif i == 12 then
 				if Hyperspace.playerVariables['soulreaper_bHullBuster'] == 0 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "5")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 169, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "5")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 169, 23, varr.color_green, 2)
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc..'\n[style[color:00FF00FF]]'..Hyperspace.Text:GetText('lua_sr_ddnosysroom')..'[[/style]]'
 					else
 						soul_desc = soul_desc.."\n"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_bHullBuster'] == 1 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 169, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 169, 23, varr.color_green)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_ddnosysroom')
 				end
 			elseif i == 13 then
 				if Hyperspace.playerVariables['soulreaper_capacity'] == 5 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "2")
-					Graphics.CSurface.GL_DrawRectOutline(684, sr_b[i].y+7, 83, 23, varr.color_green, 2)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "2")
+					Graphics.CSurface.GL_DrawRectOutline(684, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_capacity')..' 5'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 7[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_capacity'] == 7 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "3")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRectOutline(684+86, sr_b[i].y+7, 83, 23, varr.color_green, 2)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "3")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRectOutline(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green, 2)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_capacity')..' 7'
 					if mouse_inside_mem == i then
 						soul_desc = soul_desc.."[style[color:00FF00FF]] >> 10[[/style]]"
 					end
 				elseif Hyperspace.playerVariables['soulreaper_capacity'] == 10 then
-					Graphics.freetype.easy_printRightAlign(18, sr_b[i].x + minishift_x, sr_b[i].y + minishift_y, "MAX")
-					Graphics.CSurface.GL_DrawRect(684, sr_b[i].y+7, 83, 23, varr.color_green)
-					Graphics.CSurface.GL_DrawRect(684+86, sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.freetype.easy_printRightAlign(18, varr.sr_b[i].x + minishift_x, varr.sr_b[i].y + minishift_y, "MAX")
+					Graphics.CSurface.GL_DrawRect(684, varr.sr_b[i].y+7, 83, 23, varr.color_green)
+					Graphics.CSurface.GL_DrawRect(684+86, varr.sr_b[i].y+7, 83, 23, varr.color_green)
 					soul_desc = soul_desc..'\n'..Hyperspace.Text:GetText('lua_sr_capacity')..' 10'
 				end
 			end
@@ -13825,6 +16236,14 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 	
 	
 	
+	-- if Hyperspace.metaVariables['target_point_y'] ~= 0 then
+		-- Graphics.CSurface.GL_DrawRect(0, Hyperspace.metaVariables['target_point_y'], 1280, 2, varr.color_red)
+	-- end
+	
+	
+	
+	
+	
 	if mouse_inside_mem_prev == -1 and mouse_inside_mem ~= -1 then
 		Hyperspace.Sounds:PlaySoundMix('hoverBeep', 7, false)
 		--print('beep')
@@ -13860,6 +16279,17 @@ function press_waiting_button()
 		end
 	end
 	--print('pressed')
+end
+
+
+function press_show_ftl_timer_ready()
+	if Hyperspace.metaVariables['show_ftl_timer'] == 1 then
+		Hyperspace.metaVariables['show_ftl_timer'] = 0
+		Hyperspace.Sounds:PlaySoundMix('moreInfoOff', 10, false)
+	else
+		Hyperspace.metaVariables['show_ftl_timer'] = 1
+		Hyperspace.Sounds:PlaySoundMix('moreInfoOn', 10, false)
+	end
 end
 
 function press_dps_switch_button()
@@ -14018,7 +16448,7 @@ function press_button_fish()
 		elseif varr.udochka_status == 1 then
 			varr.off_x_fish = 0
 			varr.udochka_status = 0 --падение в воду, вызываем анимацию круговых волн
-			table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("fishing/waves.png"), time_length = 1000.0, time_length_mem = 1000.0, x = 1120, y = 465, w=125, h=14, fw=20, fh=14, layer = "SPACE_STATUS_up"})
+			table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("fishing/waves.png"), time_length = 1000.0, time_length_mem = 1000.0, x = 1120, y = 465, w=125, h=14, fw=20, fh=14, layer = "SPACE_STATUS_up"})
 			Hyperspace.Sounds:PlaySoundMix('fishing_bulp_1', 10, false)
 		elseif varr.udochka_status == 2 then
 			varr.schkala_move_speed = varr.schkala_move_speed - 6.5
@@ -14080,7 +16510,7 @@ local function isShipStable(ship) --проверяет что нет огня и
 	if ship.fireSpreader.count > 0 then
 		return false
 	end
-	if ship:HasSystem(2) and ship:GetSystem(2):CompletelyDestroyed() then
+	if ship:HasSystem(2) and ship:GetSystem(2):CompletelyDestroyed() then -- системы кислорода или нет, или не полностью сломана
 		return false
 	end
 	return true
@@ -14161,6 +16591,11 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipMgr)
 	
 	if shipMgr then
 		local otherShip = Hyperspace.Global.GetInstance():GetShipManager(1 - shipMgr.iShipId)--Hyperspace.ships(1 - shipMgr.iShipId)
+		
+		
+		
+		
+		
 		
 		--управление артиллерией экипажем
 		auxManning(shipMgr)
@@ -14293,16 +16728,16 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipMgr)
 			
 			
 			-- это переносит блокировки с последней (самой правой) системы артиллерии на остальные (если несколько артиллерий)
-			lastArtilleryCap = -1
+			varr.lastArtilleryCap = -1
 			for i = 0, vSystemList:size() - 1 do
-				lastArtilleryCap = vSystemList[vSystemList:size() - 1]:GetPowerCap()
-				if lastArtilleryCap == vSystemList[i].powerState.second then
-					lastArtilleryCap = 100
+				varr.lastArtilleryCap = vSystemList[vSystemList:size() - 1]:GetPowerCap()
+				if varr.lastArtilleryCap == vSystemList[i].powerState.second then
+					varr.lastArtilleryCap = 100
 				end
 			end
-			if lastArtilleryCap ~= -1 then
+			if varr.lastArtilleryCap ~= -1 then
 				for i = 0, vSystemList:size() - 1 do
-					vSystemList[i]:SetPowerCap(lastArtilleryCap)
+					vSystemList[i]:SetPowerCap(varr.lastArtilleryCap)
 				end
 			end
 		end
@@ -14508,46 +16943,80 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipMgr)
 		
 		
 		
-		--АВТО ИСЦЕЛЕНИЕ
-		if gui then
+		--АВТО ИСЦЕЛЕНИЕ, авто-лечение, автолечение, автохил, авто-хил, исцеление, исцелён
+		if shipMgr.iShipId == 0 and gui then
+		--if gui then
 			if not Hyperspace.App.world.space.gamePaused and not gui.bAutoPaused and not gui.bPaused and not gui.menu_pause then
 				varr.micro_tick_counter20 = varr.micro_tick_counter20 + 60.0*Hyperspace.FPS.SpeedFactor
 			end
-			if (varr.micro_tick_counter20 >= 700.0) then--период исполнения проверки скрипта авто-лечения в миллисекундах
+			if (varr.micro_tick_counter20 >= 550.0) then--период исполнения проверки скрипта авто-лечения в миллисекундах
+				--print('check heal now'..math.random(0,10))
 				varr.micro_tick_counter20 = 0.0
 				
+				--если есть хоть один враждебный экипаж, то не должно работать автолечение (даже если от сейчас временно под контролем разума)
+				local bThereIsAnyEnemyCrew = false
+				for crew in vter4(shipMgr.vCrewList) do
+					if crew:OutOfGame() == false and crew.health.first > 0.0 and crew.crewAnim.bPlayer == false then
+						bThereIsAnyEnemyCrew = true
+					end
+				end
+				
 				-- блок авто-лечения экипажа игрока
-				if shipMgr.iShipId == 0 and gui and gui.upgradeButton.bActive and not gui.event_pause and varr.enemy_osa_on_playership == false and Hyperspace.playerVariables['bShowOrchidFleet'] ~= 1 then
+				if bThereIsAnyEnemyCrew == false and gui.upgradeButton.bActive and not gui.event_pause and varr.enemy_osa_on_playership == false and Hyperspace.playerVariables['bShowOrchidFleet'] ~= 1 then
+				--if shipMgr.iShipId == 0 and gui.upgradeButton.bActive and not gui.event_pause and varr.enemy_osa_on_playership == false and Hyperspace.playerVariables['bShowOrchidFleet'] ~= 1 then
+					
+					if playerShip.mindSystem and playerShip.mindSystem:Functioning() == true and playerShip.mindSystem.iLockCount > 0 then
+						playerShip.mindSystem.iLockCount = 0
+						--print('reset mc')
+					end
 					
 					local oxy_contition = hasAnyAugmentationOfList(shipMgr, {"O2_MASKS", "HID_O2_MASKS", "O2_MASKS_CREW_STIMS"})--чтоб не спрашивать много раз ввёл переменную
 					local oxygen_percentage = shipMgr:GetOxygenPercentage()
-					--if crew.blueprint.name:find('ghost') == nil then
-												
+					
+					--лечение клон-отсеком с резервным банком днк (типа поубивали и без последствий восстановили)
 					if shipMgr:HasSystem(13) and shipMgr:GetSystem(13):GetEffectivePower() > 0 and isShipStable(shipMgr) then -- 13 is clonebay
 						
-						if shipMgr.cloneSystem.fTimeToClone ~= 0.0 then
-							shipMgr.cloneSystem.fTimeToClone = shipMgr.cloneSystem.fTimeGoal
-							varr.micro_tick_counter20 = 700.0
+						local bFastAutoClone = true
+						--быстрое клонирование не должно работать если на корабле мало кислорода и в клонаторе удушаемый экипаж
+						if oxygen_percentage <= 10 then
+							for crew in vter4 (Hyperspace.CrewFactory:GetCloneReadyList(true)) do --player clones
+								if crew:CanSuffocate() == true then
+									--print('no O2'..math.random(0,10))
+									bFastAutoClone = false
+								end
+							end
 						end
+						
+						if bFastAutoClone == true then
+							if shipMgr.cloneSystem.fTimeToClone ~= 0.0 then
+								shipMgr.cloneSystem.fTimeToClone = shipMgr.cloneSystem.fTimeGoal
+								varr.micro_tick_counter20 = 700.0
+							end
+						end
+						
 						-- если есть усиления убирающие потерю опыта при клонировании, чтобы не душить и воскрешать просто даём хил.
 						if hasAnyAugmentationOfList(shipMgr, {"BACKUP_DNA", "HID_BACKUP_DNA", "BACKUP_DNA_TELEPORT_HEAL"}) == true then
 							for crew in vter4(shipMgr.vCrewList) do
-								if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "gus" and crew.blueprint.name ~= "gusq" and crew.blueprint.name:find('ghost') == nil and crew.blueprint.name:find('egg') == nil and crew.blueprint.name:find('alien') == nil then
-									if crew:IsDrone() == false then
-										if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and (countOfCrewHealerOfOther(shipMgr) > 0 or (shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
-											crew:DirectModifyHealth(999)
+								if crew.crewAnim.bPlayer == true then
+									if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "gus" and crew.blueprint.name ~= "gusq" and crew.blueprint.name:find('ghost') == nil and crew.blueprint.name:find('egg') == nil and crew.blueprint.name:find('alien') == nil then
+										if crew:IsDrone() == false then
+											if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and (countOfCrewHealerOfOther(shipMgr) > 0 or (shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
+												crew:DirectModifyHealth(999)
+											end
 										end
 									end
 								end
 							end
 						else
 							for crew in vter4(shipMgr.vCrewList) do
-								if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "gus" and crew.blueprint.name ~= "gusq" and crew.blueprint.name:find('ghost') == nil and crew.blueprint.name:find('egg') == nil and crew.blueprint.name:find('alien') == nil then
-									-- для рас не теряющих опыт при клонировании, просто хил, если нет угрозы жизни.
-									if crew:IsDrone() == false then
-										if crew.extend:GetDefinition().cloneLoseSkills == false then
-											if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and (countOfCrewHealerOfOther(shipMgr) > 0 or (shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
-												crew:DirectModifyHealth(999)
+								if crew.crewAnim.bPlayer == true then
+									if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "gus" and crew.blueprint.name ~= "gusq" and crew.blueprint.name:find('ghost') == nil and crew.blueprint.name:find('egg') == nil and crew.blueprint.name:find('alien') == nil then
+										-- для рас не теряющих опыт при клонировании, просто хил, если нет угрозы жизни.
+										if crew:IsDrone() == false then
+											if crew.extend:GetDefinition().cloneLoseSkills == false then
+												if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and (countOfCrewHealerOfOther(shipMgr) > 0 or (shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
+													crew:DirectModifyHealth(999)
+												end
 											end
 										end
 									end
@@ -14560,19 +17029,23 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipMgr)
 					if isShipSuperStable(shipMgr) or (isShipStable(shipMgr) and isAllCrewAnaerobic(shipMgr)) then
 						if countOfCrewHealerOfOther(shipMgr) == 1 then
 							for crew in vter4(shipMgr.vCrewList) do
-								if isHealerOfOther(crew.blueprint.name) == false then
-									if crew:IsDrone() == false then
-										if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and (countOfCrewHealerOfOther(shipMgr) > 0 or (shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
-											crew:DirectModifyHealth(999)
+								if crew.crewAnim.bPlayer == true then
+									if isHealerOfOther(crew.blueprint.name) == false then
+										if crew:IsDrone() == false then
+											if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and (countOfCrewHealerOfOther(shipMgr) > 0 or (shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
+												crew:DirectModifyHealth(999)
+											end
 										end
 									end
 								end
 							end
 						elseif countOfCrewHealerOfOther(shipMgr) >= 2 then
 							for crew in vter4(shipMgr.vCrewList) do
-								if crew:IsDrone() == false then
-									if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and (countOfCrewHealerOfOther(shipMgr) > 0 or (shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
-										crew:DirectModifyHealth(999) -- лекарей 2 и более = все хилятся
+								if crew.crewAnim.bPlayer == true then
+									if crew:IsDrone() == false then
+										if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and (countOfCrewHealerOfOther(shipMgr) > 0 or (shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
+											crew:DirectModifyHealth(999) -- лекарей 2 и более = все хилятся
+										end
 									end
 								end
 							end
@@ -14582,11 +17055,13 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipMgr)
 					--авто-лечение дронов
 					if shipMgr:HasSystem(4) and isShipStable(shipMgr) then -- 4 is drones
 						for crew in vter4(shipMgr.vCrewList) do
-							if crew:IsDrone() == true then
-								if shipMgr:GetSystem(4):CompletelyDestroyed() == false then
-									if shipMgr:GetSystem(4):GetEffectivePower() > 0 or crew.blueprint.name ~= 'repair_hal' or crew.blueprint.name ~= 'battle_hal' then
-										if crew:Functional()==true and not crew.extend.deathTimer then
-											crew:DirectModifyHealth(999)
+							if crew.crewAnim.bPlayer == true then
+								if crew:IsDrone() == true then
+									if shipMgr:GetSystem(4):CompletelyDestroyed() == false then
+										if shipMgr:GetSystem(4):GetEffectivePower() > 0 or crew.blueprint.name ~= 'repair_hal' or crew.blueprint.name ~= 'battle_hal' then
+											if crew:Functional()==true and not crew.extend.deathTimer then
+												crew:DirectModifyHealth(999)
+											end
 										end
 									end
 								end
@@ -14598,10 +17073,12 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipMgr)
 					if isShipSuperStable(shipMgr) or (isShipStable(shipMgr) and isAllCrewAnaerobic(shipMgr)) then
 						if shipMgr:HasSystem(5) and shipMgr:GetSystem(5):GetEffectivePower() > 0 then -- 5 is medbay
 							for crew in vter4(shipMgr.vCrewList) do
-								if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "gus" and crew.blueprint.name ~= "gusq" and crew.blueprint.name:find('egg') == nil and crew.blueprint.name:find('alien') == nil then
-									if crew:IsDrone() == false then
-										if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and ((shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
-											crew:DirectModifyHealth(999)
+								if crew.crewAnim.bPlayer == true then
+									if crew.blueprint.name ~= "osa" and crew.blueprint.name ~= "gus" and crew.blueprint.name ~= "gusq" and crew.blueprint.name:find('egg') == nil and crew.blueprint.name:find('alien') == nil then
+										if crew:IsDrone() == false then
+											if ((((not crew.bSuffocating) and oxygen_percentage >= 75 and ((shipMgr:HasSystem(2) and shipMgr:GetSystem(2):GetEffectivePower() > 0) or oxy_contition == true)) or crewCanSurviveNoOxygen(crew))) and not crew.extend.deathTimer then
+												crew:DirectModifyHealth(999)
+											end
 										end
 									end
 								end
@@ -14650,15 +17127,13 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
 		if trid ~= -1 then
 			if shipManager:GetSystemInRoom(trid) ~= nil then
 				damage.iSystemDamage = damage.iDamage
+				damage.iPersDamage = damage.iDamage
 				damage.iDamage = 0
 			end
 		end
 	end
 	
-	
-	
 	if projectile.extend.name:find("BEAM_ANNIHILATOR") ~= nil and beamHitType == Defines.BeamHit.NEW_ROOM then
-	
 	--print('loc'..location.x..','..location.y)
 	--print('ptarg'..projectile.target.x..','..projectile.target.y)
 	
@@ -14669,13 +17144,32 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
         if gui and gui.event_pause == false and Hyperspace.App.world then
 			if shipManager == Hyperspace.ships.player then
 				if enemyShip and GSIe then
+					
+					local targ_room_id = -1
+					if projectile.extend.name == "FRS_BOSS_BEAM_ANNIHILATOR" then
+						--print('1!')
+						if enemyShip.artillerySystems then
+							local vSystemList = enemyShip.artillerySystems
+							for i=0, vSystemList:size()-1 do
+								--print('2!')
+								local pfnm = vSystemList[i].projectileFactory.blueprint.name
+								if pfnm:find("FRS_BOSS_BEAM_ANNIHILATOR") ~= nil then
+									targ_room_id = vSystemList[i]:GetRoomId()
+									--print('3!')
+								end
+							end
+						end
+					else
+						targ_room_id = enemyShip.weaponSystem:GetRoomId()
+					end
+					--print(targ_room_id)
 					local dam = Hyperspace.Damage()
 					dam.iDamage = 0
 					dam.iSystemDamage = 1
 					dam.iPersDamage = 0
 					dam.fireChance = 10
 					dam.breachChance = 0
-					enemyShip:DamageArea(GSIe:GetRoomCenter(enemyShip.weaponSystem:GetRoomId()), dam, true)
+					enemyShip:DamageArea(GSIe:GetRoomCenter(targ_room_id), dam, true)
 					
 					local dam2 = Hyperspace.Damage()
 					dam2.iDamage = 0
@@ -14683,7 +17177,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
 					dam2.iPersDamage = 0
 					dam2.fireChance = 0
 					dam2.breachChance = 10
-					enemyShip:DamageArea(GSIe:GetRoomCenter(enemyShip.weaponSystem:GetRoomId()), dam2, true)
+					enemyShip:DamageArea(GSIe:GetRoomCenter(targ_room_id), dam2, true)
 					
 					if location.x == projectile.target1.x and location.y == projectile.target1.y then
 						-- сработает только в точке входа первого отсека
@@ -14699,7 +17193,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
 						end
 						dam3.fireChance = 0
 						dam3.breachChance = 0
-						enemyShip:DamageArea(GSIe:GetRoomCenter(enemyShip.weaponSystem:GetRoomId()), dam3, true)
+						enemyShip:DamageArea(GSIe:GetRoomCenter(targ_room_id), dam3, true)
 					end
 					--add_to_LaunchOrder("EVENT_CREW_DEATH_DAMAGE_TO_ENEMY")--checked ok
 				end
@@ -14745,16 +17239,22 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
 		end
     end
 	
-	if projectile.ownerId == 0 and playerShip:HasAugmentation('ION_RESONATOR') > 0 then
-		if projectile.damage.iIonDamage > 0 then
-			if projectile.damage.iDamage <= 0 and projectile.damage.iSystemDamage <= 0 then
-				projectile.damage.iSystemDamage = projectile.damage.iSystemDamage + 1
-			end
-		end
-	elseif projectile.ownerId == 1 and enemyShip:HasAugmentation('ION_RESONATOR') > 0 then
-		if projectile.damage.iIonDamage > 0 then
-			if projectile.damage.iDamage <= 0 and projectile.damage.iSystemDamage <= 0 then
-				projectile.damage.iSystemDamage = projectile.damage.iSystemDamage + 1
+	
+	-- ионный резонатор + ионные лучи
+	if beamHitType == Defines.BeamHit.NEW_ROOM then
+		if math.random(0,99)<75 then --тут задаётся шанс срабатывания
+			if projectile.ownerId == 0 and playerShip:HasAugmentation('ION_RESONATOR') > 0 then
+				if projectile.damage.iIonDamage > 0 then
+					if projectile.damage.iDamage <= 0 and projectile.damage.iSystemDamage <= 0 then
+						projectile.damage.iSystemDamage = projectile.damage.iSystemDamage + 1
+					end
+				end
+			elseif projectile.ownerId == 1 and enemyShip:HasAugmentation('ION_RESONATOR') > 0 then
+				if projectile.damage.iIonDamage > 0 then
+					if projectile.damage.iDamage <= 0 and projectile.damage.iSystemDamage <= 0 then
+						projectile.damage.iSystemDamage = projectile.damage.iSystemDamage + 1
+					end
+				end
 			end
 		end
 	end
@@ -14770,6 +17270,23 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
 			--print('tst')
 		end
 	end
+	
+	-- переход луча в новый отсек теперь тоже вызывает поджог радиоактивности
+	if projectile and beamHitType == Defines.BeamHit.NEW_ROOM then
+		if projectile.damage.iDamage > 0 then
+			if shipManager.iShipId == 0 then -- hit to player
+				if hasAnyAugmentationOfList(shipManager, {"RADIOACTIVE", "MARKER_RADIOACTIVE", "HID_RADIOACTIVE"}) == true then
+					radioactivity_firedamage(1)
+				end
+			else -- hit to enemy
+				if hasAnyAugmentationOfList(shipManager, {"RADIOACTIVE", "MARKER_RADIOACTIVE", "HID_RADIOACTIVE"}) == true then
+					radioactivity_firedamage(0)
+				end
+			end
+		end
+	end
+	
+	
 end)
 
 
@@ -14795,6 +17312,9 @@ end)
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(shipManager, projectile, location, damage, evasion, friendlyfire) 
 	--мгновение до попадания снаряда в корпус цели.
 	
+	
+	
+	
 	-- блок реализует работу дронов АЛАЗ
 	-- эффект нескольких дронов умножается!
 	if enemyShip and playerShip and Hyperspace.metaVariables['enemy_state'] == 2 and projectile~=nil then
@@ -14805,109 +17325,111 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(shipManage
 		
 		--ниже задаются условия срабатывания отражения
 		if weap_type == "LASER" or (weap_type == "BURST" and (projName:find("LASER")~=nil or projName:find("ORDEN_PROTOTYPE")~=nil or projName:find("ARTILLERY_PL_HEAVY")~=nil)) then --or projName:find("PHOTO")~=nil
-			if projectile.damage.iDamage <= 3 and projectile.damage.iIonDamage <= 0 then
-				local drone_alas_pos = nil
-				local iPlayerAlasCounter = 0
-				local iEnemyAlasCounter = 0
-				local max_alas_quality = 1
-				if projectile.ownerId == 1 then
-					if enemyShip:HasAugmentation('DEFENSE_SCRAMBLER') == 0 then
-						for combatdrone in vter(playerShip.spaceDrones) do
-							if combatdrone and combatdrone.blueprint and combatdrone.bDead==false then
-								if combatdrone.blueprint.name:find("DE_DRONE_DEFENSE_ALAS")~=nil and combatdrone.deployed == true and combatdrone.powered == true and combatdrone.iHackLevel~=2 then
-									iPlayerAlasCounter = iPlayerAlasCounter + 1
-									if drone_alas_pos == nil then
-										drone_alas_pos = combatdrone.lastLocation
-									elseif math.random(0,100)<40 then
-										drone_alas_pos = combatdrone.lastLocation
+			if projName:find("PLASM") == nil then--исключает все плазменные снаряды
+				if projectile.damage.iDamage <= 3 and projectile.damage.iIonDamage <= 0 then
+					local drone_alas_pos = nil
+					local iPlayerAlasCounter = 0
+					local iEnemyAlasCounter = 0
+					local max_alas_quality = 1
+					if projectile.ownerId == 1 then
+						if enemyShip:HasAugmentation('DEFENSE_SCRAMBLER') == 0 then
+							for combatdrone in vter(playerShip.spaceDrones) do
+								if combatdrone and combatdrone.blueprint and combatdrone.bDead==false then
+									if combatdrone.blueprint.name:find("DE_DRONE_DEFENSE_ALAS")~=nil and combatdrone.deployed == true and combatdrone.powered == true and combatdrone.iHackLevel~=2 then
+										iPlayerAlasCounter = iPlayerAlasCounter + 1
+										if drone_alas_pos == nil then
+											drone_alas_pos = combatdrone.lastLocation
+										elseif math.random(0,100)<40 then
+											drone_alas_pos = combatdrone.lastLocation
+										end
+										
+										if combatdrone.blueprint.name == "DE_DRONE_DEFENSE_ALAS2" then
+											max_alas_quality = 2
+										end
+									end
+								end
+							end
+							if iPlayerAlasCounter > 0 then
+								local dam = projectile.damage.iDamage
+								local chance = calc_alas_work_chance(dam, max_alas_quality, iPlayerAlasCounter)
+								if math.random(0,100) < chance then
+									evasion = Defines.Evasion.MISS
+									local px = gui.shipPosition.x + projectile.position.x
+									local py = gui.shipPosition.y + projectile.position.y
+									table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/krs_explosion_singularity.png"), time_length = 800.0, time_length_mem = 800.0, x = px-38, y = py-38, w=640, h=64, fw=64, fh=64, layer = "SPACE_STATUS_up"})
+									Hyperspace.Sounds:PlaySoundMix('resend_proj', 10, false)
+									
+									
+									
+									local laser_proj = nil
+									if Hyperspace.Blueprints:GetWeaponBlueprint(projName).typeName == "BURST" then
+										laser_proj = Hyperspace.App.world.space:CreateBurstProjectile(Hyperspace.Blueprints:GetWeaponBlueprint(projName), projectile.flight_animation.animName, false, drone_alas_pos, 0, 0, Hyperspace.ships.player:GetRandomRoomCenter(), 1, 0.0)
+									else
+										laser_proj = Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint(projName),  drone_alas_pos, 0, 0, Hyperspace.ships.player:GetRandomRoomCenter(), 1, 0.0)
 									end
 									
-									if combatdrone.blueprint.name == "DE_DRONE_DEFENSE_ALAS2" then
-										max_alas_quality = 2
+									
+									-- учитывает отражение снарядов душегуба, применяя к каждому их свойства
+									if projName:find("SOULREAPER") ~= nil then
+										apply_to_projectile_soul_properties(laser_proj)
 									end
+									
+									if projName:find("GLIF_GUN") ~= nil then
+										apply_to_projectile_glif_properties(nil, laser_proj, varr.enemy_strFullGlifLine)
+									end
+									
+									
+									projectile:Kill()
+									laser_proj.damage.iDamage = dam
 								end
 							end
 						end
-						if iPlayerAlasCounter > 0 then
-							local dam = projectile.damage.iDamage
-							local chance = calc_alas_work_chance(dam, max_alas_quality, iPlayerAlasCounter)
-							if math.random(0,100) < chance then
-								evasion = Defines.Evasion.MISS
-								local px = gui.shipPosition.x + projectile.position.x
-								local py = gui.shipPosition.y + projectile.position.y
-								table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/krs_explosion_singularity.png"), time_length = 800.0, time_length_mem = 800.0, x = px-38, y = py-38, w=640, h=64, fw=64, fh=64, layer = "SPACE_STATUS_up"})
-								Hyperspace.Sounds:PlaySoundMix('resend_proj', 10, false)
-								
-								
-								
-								local laser_proj = nil
-								if Hyperspace.Blueprints:GetWeaponBlueprint(projName).typeName == "BURST" then
-									laser_proj = Hyperspace.App.world.space:CreateBurstProjectile(Hyperspace.Blueprints:GetWeaponBlueprint(projName), projectile.flight_animation.animName, false, drone_alas_pos, 0, 0, Hyperspace.ships.player:GetRandomRoomCenter(), 1, 0.0)
-								else
-									laser_proj = Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint(projName),  drone_alas_pos, 0, 0, Hyperspace.ships.player:GetRandomRoomCenter(), 1, 0.0)
-								end
-								
-								
-								-- учитывает отражение снарядов душегуба, применяя к каждому их свойства
-								if projName:find("SOULREAPER") ~= nil then
-									apply_to_projectile_soul_properties(laser_proj)
-								end
-								
-								if projName:find("GLIF_GUN") ~= nil then
-									apply_to_projectile_glif_properties(nil, laser_proj, varr.enemy_strFullGlifLine)
-								end
-								
-								
-								projectile:Kill()
-								laser_proj.damage.iDamage = dam
-							end
-						end
-					end
-				elseif projectile.ownerId == 0 then
-					if hasAnyAugmentationOfList(playerShip, {"DEFENSE_SCRAMBLER", "HID_DEFENSE_SCRAMBLER", "DEFENSE_SCRAMBLER_HACKING_STUN"}) == false then
-						for combatdrone in vter(enemyShip.spaceDrones) do
-							if combatdrone and combatdrone.blueprint and combatdrone.bDead==false then
-								if combatdrone.blueprint.name:find("DE_DRONE_DEFENSE_ALAS")~=nil and combatdrone.deployed == true and combatdrone.powered == true and combatdrone.iHackLevel~=2 then
-									iEnemyAlasCounter = iEnemyAlasCounter + 1
-									if drone_alas_pos == nil then
-										drone_alas_pos = combatdrone.lastLocation
-									elseif math.random(0,100)<40 then
-										drone_alas_pos = combatdrone.lastLocation
-									end
-									if combatdrone.blueprint.name == "DE_DRONE_DEFENSE_ALAS2" then
-										max_alas_quality = 2
+					elseif projectile.ownerId == 0 then
+						if hasAnyAugmentationOfList(playerShip, {"DEFENSE_SCRAMBLER", "HID_DEFENSE_SCRAMBLER", "DEFENSE_SCRAMBLER_HACKING_STUN"}) == false then
+							for combatdrone in vter(enemyShip.spaceDrones) do
+								if combatdrone and combatdrone.blueprint and combatdrone.bDead==false then
+									if combatdrone.blueprint.name:find("DE_DRONE_DEFENSE_ALAS")~=nil and combatdrone.deployed == true and combatdrone.powered == true and combatdrone.iHackLevel~=2 then
+										iEnemyAlasCounter = iEnemyAlasCounter + 1
+										if drone_alas_pos == nil then
+											drone_alas_pos = combatdrone.lastLocation
+										elseif math.random(0,100)<40 then
+											drone_alas_pos = combatdrone.lastLocation
+										end
+										if combatdrone.blueprint.name == "DE_DRONE_DEFENSE_ALAS2" then
+											max_alas_quality = 2
+										end
 									end
 								end
 							end
-						end
-						if iEnemyAlasCounter > 0 then
-							local dam = projectile.damage.iDamage--этой строки не было ((
-							local chance = calc_alas_work_chance(dam, max_alas_quality, iEnemyAlasCounter)
-							if math.random(0,100) < chance then
-								evasion = Defines.Evasion.MISS
-								local px = gui.combatControl.targetPosition.x+gui.combatControl.position.x + projectile.position.x
-								local py = gui.combatControl.targetPosition.y+gui.combatControl.position.y + projectile.position.y
-								table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/krs_explosion_singularity.png"), time_length = 800.0, time_length_mem = 800.0, x = px-38, y = py-38, w=640, h=64, fw=64, fh=64, layer = "SPACE_STATUS_up"})
-								Hyperspace.Sounds:PlaySoundMix('resend_proj', 10, false)
-								
-								local laser_proj = nil
-								if Hyperspace.Blueprints:GetWeaponBlueprint(projName).typeName == "BURST" then
-									laser_proj = Hyperspace.App.world.space:CreateBurstProjectile(Hyperspace.Blueprints:GetWeaponBlueprint(projName), projectile.flight_animation.animName, false, drone_alas_pos, 1, 1, Hyperspace.ships.player:GetRandomRoomCenter(), 0, -90.0)
-								else
-									laser_proj = Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint(projName),  drone_alas_pos, 1, 1, Hyperspace.ships.player:GetRandomRoomCenter(), 0, -90.0)
+							if iEnemyAlasCounter > 0 then
+								local dam = projectile.damage.iDamage--этой строки не было ((
+								local chance = calc_alas_work_chance(dam, max_alas_quality, iEnemyAlasCounter)
+								if math.random(0,100) < chance then
+									evasion = Defines.Evasion.MISS
+									local px = gui.combatControl.targetPosition.x+gui.combatControl.position.x + projectile.position.x
+									local py = gui.combatControl.targetPosition.y+gui.combatControl.position.y + projectile.position.y
+									table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/krs_explosion_singularity.png"), time_length = 800.0, time_length_mem = 800.0, x = px-38, y = py-38, w=640, h=64, fw=64, fh=64, layer = "SPACE_STATUS_up"})
+									Hyperspace.Sounds:PlaySoundMix('resend_proj', 10, false)
+									
+									local laser_proj = nil
+									if Hyperspace.Blueprints:GetWeaponBlueprint(projName).typeName == "BURST" then
+										laser_proj = Hyperspace.App.world.space:CreateBurstProjectile(Hyperspace.Blueprints:GetWeaponBlueprint(projName), projectile.flight_animation.animName, false, drone_alas_pos, 1, 1, Hyperspace.ships.player:GetRandomRoomCenter(), 0, -90.0)
+									else
+										laser_proj = Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint(projName),  drone_alas_pos, 1, 1, Hyperspace.ships.player:GetRandomRoomCenter(), 0, -90.0)
+									end
+									
+									-- учитывает отражение снарядов душегуба, применяя к каждому их свойства
+									if projName:find("SOULREAPER") ~= nil then
+										apply_to_projectile_soul_properties(laser_proj)
+									end
+									
+									if projName:find("GLIF_GUN") ~= nil then
+										apply_to_projectile_glif_properties(nil, laser_proj, varr.strFullGlifLine)
+									end
+									
+									projectile:Kill()
+									laser_proj.damage.iDamage = dam
 								end
-								
-								-- учитывает отражение снарядов душегуба, применяя к каждому их свойства
-								if projName:find("SOULREAPER") ~= nil then
-									apply_to_projectile_soul_properties(laser_proj)
-								end
-								
-								if projName:find("GLIF_GUN") ~= nil then
-									apply_to_projectile_glif_properties(nil, laser_proj, varr.strFullGlifLine)
-								end
-								
-								projectile:Kill()
-								laser_proj.damage.iDamage = dam
 							end
 						end
 					end
@@ -14961,7 +17483,12 @@ end
 
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location, damage, shipFriendlyFire)
-    if projectile then
+    
+	
+	
+	
+	
+	if projectile then
 		local weaponName = projectile.extend.name
 		
 		if weaponName:find("BLOOD") ~= nil or projectile.extend.name:find("BLOOD")~=nil then
@@ -14977,10 +17504,22 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipMa
 		end
 		
 		
+		
+		if projectile.extend.name:find("OXYGEN_FILL")~=nil then
+			local iRoomTarg = get_room_at_location(shipManager, location, true)
+			shipManager.oxygenSystem:ModifyRoomOxygen(iRoomTarg, 100.0)
+			Hyperspace.Sounds:PlaySoundMix('airLoss', 3, false)
+			--print('o2'..iRoomTarg)
+		end
+		
+		
+		
 		if projectile.ownerId == 0 and enemyShip and enemyShip._targetable:IsCloaked() == true then
 			Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_HIT_CLOAKED", false)
 		end
 		
+		
+		--работа радиоктивности при попадании снарядов
 		if damage.iDamage > 0 then
 			if shipManager.iShipId == 0 then -- hit to player
 				if hasAnyAugmentationOfList(shipManager, {"RADIOACTIVE", "MARKER_RADIOACTIVE", "HID_RADIOACTIVE"}) == true then
@@ -14998,33 +17537,33 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipMa
 			if weaponName:find("MISSILES_DRILL") ~= nil then
 				if shipManager.iShipId == 0 then -- hit to player
 					if weaponName:find("MISSILES_DRILL_2_M_UNI") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_3E", time_delay = 1400.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_3E", time_delay = 1400.0})
 					elseif weaponName:find("MISSILES_DRILL_2_UNI") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_3E", time_delay = 1400.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_3E", time_delay = 1400.0})
 					elseif weaponName:find("MISSILES_DRILL_1_M_UNI") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_2E", time_delay = 1400.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_2E", time_delay = 1400.0})
 					elseif weaponName:find("MISSILES_DRILL_1_UNI") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_2E", time_delay = 1400.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_2E", time_delay = 1400.0})
 					elseif weaponName:find("MISSILES_DRILL_1") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_1E", time_delay = 1400.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_1E", time_delay = 1400.0})
 					elseif weaponName:find("MISSILES_DRILL_2") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_2E", time_delay = 1400.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_2E", time_delay = 1400.0})
 					end
 				else -- hit to enemy
 					if math.random(0,100) < varr.current_beacon_drillwork_chance then
 						varr.current_beacon_drillwork_chance = varr.current_beacon_drillwork_chance - 10
 						if weaponName:find("MISSILES_DRILL_2_M_UNI") ~= nil then
-							table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_3P", time_delay = 1400.0})
+							table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_3P", time_delay = 1400.0})
 						elseif weaponName:find("MISSILES_DRILL_2_UNI") ~= nil then
-							table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_3P", time_delay = 1400.0})
+							table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_3P", time_delay = 1400.0})
 						elseif weaponName:find("MISSILES_DRILL_1_M_UNI") ~= nil then
-							table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_2P", time_delay = 1400.0})
+							table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_2P", time_delay = 1400.0})
 						elseif weaponName:find("MISSILES_DRILL_1_UNI") ~= nil then
-							table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_2P", time_delay = 1400.0})
+							table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_2P", time_delay = 1400.0})
 						elseif weaponName:find("MISSILES_DRILL_1") ~= nil then
-							table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_1P", time_delay = 1400.0})
+							table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_1P", time_delay = 1400.0})
 						elseif weaponName:find("MISSILES_DRILL_2") ~= nil then
-							table.insert(micro_tick_array, {ev_name = "MISSILES_DRILL_2P", time_delay = 1400.0})
+							table.insert(varr.micro_tick_array, {ev_name = "MISSILES_DRILL_2P", time_delay = 1400.0})
 						end
 					end
 				end
@@ -15033,19 +17572,19 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipMa
 			if weaponName:find("MISSILES_VAMPIRE") ~= nil then
 				if shipManager.iShipId == 0 then -- hit to player
 					if weaponName:find("MISSILES_VAMPIRE_UNI") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_VAMPIRE_2E", time_delay = 100.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_VAMPIRE_2E", time_delay = 100.0})
 					elseif weaponName:find("MISSILES_VAMPIRE_M_UNI") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_VAMPIRE_2E", time_delay = 100.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_VAMPIRE_2E", time_delay = 100.0})
 					else
-						table.insert(micro_tick_array, {ev_name = "MISSILES_VAMPIRE_1E", time_delay = 100.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_VAMPIRE_1E", time_delay = 100.0})
 					end
 				else -- hit to enemy
 					if weaponName:find("MISSILES_VAMPIRE_UNI") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_VAMPIRE_2P", time_delay = 100.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_VAMPIRE_2P", time_delay = 100.0})
 					elseif weaponName:find("MISSILES_VAMPIRE_M_UNI") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "MISSILES_VAMPIRE_2P", time_delay = 100.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_VAMPIRE_2P", time_delay = 100.0})
 					else
-						table.insert(micro_tick_array, {ev_name = "MISSILES_VAMPIRE_1P", time_delay = 100.0})
+						table.insert(varr.micro_tick_array, {ev_name = "MISSILES_VAMPIRE_1P", time_delay = 100.0})
 					end
 				end
 			end
@@ -15053,19 +17592,19 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipMa
 			if weaponName:find("RICOCHET_GUN") ~= nil then
 				if shipManager.iShipId == 0 then -- hit to player
 					if weaponName:find("RICOCHET_GUN_1") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "RICOCHET_E1", time_delay = math.random(800, 1000)})
+						table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_E1", time_delay = math.random(800, 1000)})
 					elseif weaponName:find("RICOCHET_GUN_2") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "RICOCHET_E2", time_delay = math.random(800, 1000)})
+						table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_E2", time_delay = math.random(800, 1000)})
 					elseif weaponName:find("RICOCHET_GUN_3") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "RICOCHET_E3", time_delay = math.random(800, 1000)})
+						table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_E3", time_delay = math.random(800, 1000)})
 					end
 				else -- hit to enemy
 					if weaponName:find("RICOCHET_GUN_1") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "RICOCHET_P1", time_delay = math.random(800, 1000)})
+						table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_P1", time_delay = math.random(800, 1000)})
 					elseif weaponName:find("RICOCHET_GUN_2") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "RICOCHET_P2", time_delay = math.random(800, 1000)})
+						table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_P2", time_delay = math.random(800, 1000)})
 					elseif weaponName:find("RICOCHET_GUN_3") ~= nil then
-						table.insert(micro_tick_array, {ev_name = "RICOCHET_P3", time_delay = math.random(800, 1000)})
+						table.insert(varr.micro_tick_array, {ev_name = "RICOCHET_P3", time_delay = math.random(800, 1000)})
 					end
 				end
 			end
@@ -15113,8 +17652,8 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipMa
 			
 			
 			
-			
-			if weaponName:find("BA_MISSILES_ASIN") ~= nil then
+			if weaponName:find("BA_MISSILES_ASIN") ~= nil or projectile.extend.name:find("ASIN")~=nil then
+			--if weaponName:find("BA_MISSILES_ASIN") ~= nil then
 				for crew in vter(shipManager.vCrewList) do
 					if crew:IsDrone() == true or crew.blueprint.name:find("engi") ~= nil or crew.blueprint.name:find("ghost") ~= nil or crew.blueprint.name:find("morph") ~= nil then
 						if crew.health.first > 0.0 and crew.bOutOfGame == false then
@@ -15125,7 +17664,9 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipMa
 				end
 				Hyperspace.Sounds:PlaySoundMix('ionHit1', 2, false)
 			end
-			if weaponName:find("BA_MISSILES_TAU") ~= nil then
+			
+			if weaponName:find("BA_MISSILES_TAU") ~= nil or projectile.extend.name:find("TAU")~=nil then
+			--if weaponName:find("BA_MISSILES_TAU") ~= nil then
 				if shipManager:HasSystem(6) then
 					shipManager:GetSystem(6):IonDamage(1)
 					Hyperspace.Sounds:PlaySoundMix('ionHit1', 2, false)
@@ -15138,6 +17679,75 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipMa
 					end
 				end
 			end
+			
+			if projectile.extend.name:find("EMPTY_TELEPORT")~=nil then
+				if shipManager.iShipId == 0 then -- hit to player
+					for crew in vter(enemyShip.vCrewList) do
+						if crew:IsDrone() == false and crew.crewAnim.bPlayer == true and crew.bMindControlled == false then
+							if crew.health.first > 0.0 and crew.bOutOfGame == false then
+								if enemyShip:GetSystemInRoom(crew.iRoomId) == nil then
+									if crew.extend.customTele.teleporting == false then
+										local _, can_tele = crew.extend:CalculateStat(Hyperspace.CrewStat.CAN_TELEPORT)
+										if can_tele == true then
+											crew.extend:InitiateTeleport(0, -1, -1)
+										end
+									end
+								end
+							end
+						end
+					end
+				else
+					-- hit to enemy
+					for crew in vter(playerShip.vCrewList) do
+						if crew:IsDrone() == false and crew.crewAnim.bPlayer == true and crew.bMindControlled == false then
+							if crew.health.first > 0.0 and crew.bOutOfGame == false then
+								if playerShip:GetSystemInRoom(crew.iRoomId) == nil then
+									if crew.extend.customTele.teleporting == false then
+										local _, can_tele = crew.extend:CalculateStat(Hyperspace.CrewStat.CAN_TELEPORT)
+										if can_tele == true then
+											crew.extend:InitiateTeleport(1, -1, -1)
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+			
+			
+			if projectile.extend.name:find("SPAWN_MANTIS")~=nil then
+				local iRoomTarg = get_room_at_location(shipManager, location, true)
+				local temporal_crew = shipManager:AddCrewMemberFromString('', 'mantis_mad', true, iRoomTarg, true, true)
+				temporal_crew.extend.deathTimer = Hyperspace.TimerHelper(false)
+				temporal_crew.extend.deathTimer:Start(30.0)
+			end
+			
+			if projectile.extend.name:find("MIND_CONTROL")~=nil then
+				-- не требуются дополнительные проверки работы MIND_ORDER т.к. он сам при соблюдении условий выдаёт надпись ОТРАЗИЛ фиолетовую
+				local iRoomTarg = get_room_at_location(shipManager, location, true)
+				if projectile.ownerId == 1 then
+					--enemy proj
+					Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint('ULTRA_FAST_LUA_MC_LASER'),  projectile.position, 0, 1, shipManager:GetRoomCenter(iRoomTarg), 0, -90.0)
+				else
+					--player proj
+					Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint('ULTRA_FAST_LUA_MC_LASER'),  projectile.position, 1, 0, shipManager:GetRoomCenter(iRoomTarg), 1, 0.0)
+				end
+			end
+			
+			if projectile.extend.name:find("HACKING")~=nil then
+				local iRoomTarg = get_room_at_location(shipManager, location, true)
+				if hasAnyAugmentationOfList(shipManager, {"ANTIHACKER", "HID_ANTIHACKER"}) == false then
+					if projectile.ownerId == 1 then
+						--enemy proj
+						Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint('ULTRA_FAST_LUA_HACK'),  projectile.position, 0, 1, shipManager:GetRoomCenter(iRoomTarg), 0, -90.0)
+					else
+						--player proj
+						Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint('ULTRA_FAST_LUA_HACK'),  projectile.position, 1, 0, shipManager:GetRoomCenter(iRoomTarg), 1, 0.0)
+					end
+				end
+			end
+			
 			
 		end
 	end
@@ -15190,7 +17800,10 @@ function create_choise_injector_injecting(locname, event, type_of_inj)
 	if Hyperspace.Blueprints:GetWeaponBlueprint(locname..type_of_inj).desc.cost > 0 then
 		local cEvent = Hyperspace.Event:GetBaseEvent("EMPTY_EVENT", Hyperspace.App.world.starMap.worldLevel, false, Hyperspace.Global.currentSeed)
 		cEvent.text.data = Hyperspace.Text:GetText('lua_inj_add1')
-		cEvent.stuff.removeItem = locname
+		
+		--cEvent.stuff.removeItem = locname
+		cEvent.eventName = "REMOVE_EQUIPMENT_WITH_LUA_"..locname
+		
 		cEvent.stuff.weapon = Hyperspace.Blueprints:GetWeaponBlueprint(locname..type_of_inj)
 		c2Event = Hyperspace.Event:GetBaseEvent("EMPTY_EVENT", Hyperspace.App.world.starMap.worldLevel, false, Hyperspace.Global.currentSeed)
 		cEvent.text.data = Hyperspace.Text:GetText('lua_inj_add2')
@@ -15201,7 +17814,93 @@ function create_choise_injector_injecting(locname, event, type_of_inj)
 	end
 end
 
+script.on_internal_event(Defines.InternalEvents.POST_CREATE_CHOICEBOX, function(choiceBox, event)
+	
+	
+	if event.eventName == "START_BEACON" then
+		--стартовое кол-во экипажа флагмана = 11
+		Hyperspace.metaVariables['flagship_crew_count'] = 11
+		
+		Hyperspace.metaVariables['ship_hull_max'] = 30
+		Hyperspace.metaVariables['ship_hull_cur'] = Hyperspace.metaVariables['ship_hull_max']
+	end
+	
+end)
+
+
+
 script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(event)
+	
+	
+	-- if event.eventName:find("NEBULA_SLUG_DISTRESS_RESCUE")~=nil then	
+		-- --varr.sloknog_layerColors = crew.crewAnim.layerColors
+		-- for i = 0, event:GetChoices():size()-1 do
+			-- local cho = event:GetChoices()[i]
+			-- if cho ~= nil and cho.event ~= nil then
+				-- if cho.event and cho.event.stuff and cho.event.stuff.crewBlue ~= nil then
+					-- varr.sloknog_layerColors = cho.event.stuff.crewBlue.colorLayers
+					-- print('remembed skin')
+				-- end
+			-- end
+		-- end
+	-- end
+	-- if event.eventName:find("SLUG_DISTRESS_RESCUE_LIST")~=nil then	
+		-- --varr.sloknog_layerColors = crew.crewAnim.layerColors
+		-- for i = 0, event:GetChoices():size()-1 do
+			-- local cho = event:GetChoices()[i]
+			-- if cho ~= nil and cho.event ~= nil then
+				-- if cho.event and cho.event.stuff and cho.event.stuff.crewBlue ~= nil then
+					-- if varr.sloknog_layerColors ~= nil then
+						-- cho.event.stuff.crewBlue.colorLayers = varr.sloknog_layerColors 
+						-- print('restored skin')
+					-- end
+				-- end
+			-- end
+		-- end
+	-- end
+	
+	
+	
+	if event.eventName:find("CONTR_FIGHT")~=nil then	
+		MakeDeepAdaptiveShip()
+	end
+	
+	
+	
+	--если у игрока не было топлива и он побеждал флагман 1,2 фаз, то ему не давали награду. нехорошо.
+	--исправляем разделяя события когда флагман действительно сбежал
+	if event.eventName == "BOSS_STALEMATE" then
+		--print(event.eventName)
+		if enemyShip and enemyShip.ship.hullIntegrity.first <= 0 then
+			if event.stuff then
+				if event.stuff.scrap == 0.0 then
+					event.stuff.scrap = 10 + math.random(2,15)
+					if math.random(0,99)<33 then
+						event.stuff.missiles = math.random(1,3)
+						event.stuff.drones = math.random(1,3)
+					elseif math.random(0,99)<50 then
+						event.stuff.fuel = math.random(1,3)
+						event.stuff.drones = math.random(1,3)
+					else
+						event.stuff.fuel = math.random(1,3)
+						event.stuff.missiles = math.random(1,3)
+					end
+					event.text.data = event.text.data..' '..Hyperspace.Text:GetText('lua_flagman_sbezhal')
+				end
+			end
+		end
+	end
+	
+	
+	
+	if event.eventName == "BOSS_TEXT_1" then	
+		if Hyperspace.metaVariables['this_run_flagship_steal_annihilator'] == 1 then
+			event.text.data = event.text.data..' '..Hyperspace.Text:GetText('lua_annihilator_text_adder')
+		end
+	end
+	
+
+	
 	
 	if event.eventName == "MIRROR_FIGHT" then	
 		copy_player_artillery_to_mirror_ship()
@@ -15287,7 +17986,8 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 	if event.eventName:find("COPY_WEAPON_IN_SLOTS") ~= nil then
 		if playerShip and playerShip.weaponSystem then
 			for weap in vter (playerShip.weaponSystem.weapons) do
-				if weap.blueprint.name:find('SOULREAPER')==nil and weap.blueprint.name:find('COPY_MASHINE')==nil and weap.blueprint.name:find('GLIF_GUN')==nil then
+				if isAllowedToCopy(weap.blueprint.name) == true then
+				--if weap.blueprint.name:find('SOULREAPER')==nil and weap.blueprint.name:find('COPY_MASHINE')==nil and weap.blueprint.name:find('GLIF_GUN')==nil and weap.blueprint.name:find('CYCLED_WEAPON')==nil then
 					local cEvent = Hyperspace.Event:GetBaseEvent("EMPTY_EVENT", Hyperspace.App.world.starMap.worldLevel, false, Hyperspace.Global.currentSeed)
 					cEvent.text.data = Hyperspace.Text:GetText('lua_copyed_weapon')
 					cEvent.stuff.removeItem = "COPY_MASHINE"
@@ -15297,7 +17997,8 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 			end
 			
 			for carg in vter (gui.equipScreen:GetCargoHold()) do
-				if carg:find('SOULREAPER')==nil and carg:find('COPY_MASHINE')==nil and carg:find('GLIF_GUN')==nil then
+				if isAllowedToCopy(carg) == true then
+				--if carg:find('SOULREAPER')==nil and carg:find('COPY_MASHINE')==nil and carg:find('GLIF_GUN')==nil and carg:find('CYCLED_WEAPON')==nil then
 					if Hyperspace.Blueprints:GetWeaponBlueprint(carg).desc.cost ~= nil and Hyperspace.Blueprints:GetWeaponBlueprint(carg).desc.cost > 0 then
 						local cEvent = Hyperspace.Event:GetBaseEvent("EMPTY_EVENT", Hyperspace.App.world.starMap.worldLevel, false, Hyperspace.Global.currentSeed)
 						cEvent.text.data = Hyperspace.Text:GetText('lua_copyed_weapon')
@@ -15310,12 +18011,100 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 		end
 	end
 	
+	--если имя ивента будет содержать эту запись, то удалит оборудование (из трюма тоже работает)
+	if event.eventName:find("REMOVE_EQUIPMENT_WITH_LUA_") ~= nil then
+		if playerShip then
+			local target_eq_name = string.gsub(event.eventName, "REMOVE_EQUIPMENT_WITH_LUA_", "")
+			--print(target_eq_name)
+			playerShip:RemoveItem(target_eq_name, true)
+		end
+	end
+	
+	--создаёт чойзы автоматически
+	if event.eventName:find("EVENT_CORE_INST") ~= nil then
+		--print('event')
+		if playerShip and playerShip.weaponSystem then
+			for pf in vter (playerShip.weaponSystem.weapons) do
+				local pf_blue_name = pf.blueprint.name
+				local next_blue_name = ""
+				if pf_blue_name:find("_LVL") ~= nil then
+					if pf_blue_name:find("_LVL0") ~= nil then
+						next_blue_name = string.gsub(pf_blue_name, "_LVL0", "_LVL1")	
+					elseif pf_blue_name:find("_LVL1") ~= nil then
+						next_blue_name = string.gsub(pf_blue_name, "_LVL1", "_LVL2")
+					elseif pf_blue_name:find("_LVL2") ~= nil then
+						next_blue_name = string.gsub(pf_blue_name, "_LVL2", "_LVL3")
+					elseif pf_blue_name:find("_LVL3") ~= nil then
+						next_blue_name = string.gsub(pf_blue_name, "_LVL3", "_LVL4")
+					end
+					if next_blue_name ~= "" and Hyperspace.Blueprints:GetWeaponBlueprint(next_blue_name).desc.cost > 0 then
+						local cEvent = Hyperspace.Event:GetBaseEvent("EMPTY_EVENT", Hyperspace.App.world.starMap.worldLevel, false, Hyperspace.Global.currentSeed)
+						cEvent.text.data = Hyperspace.Text:GetText('lua_install_core')
+						--cEvent.text.data = "Вы успешно устанавливаете ядро в орудие через специальный разъём-соединитель.\n"
+						--cEvent.stuff.removeItem = pf_blue_name
+						cEvent.eventName = "REMOVE_EQUIPMENT_WITH_LUA_"..pf_blue_name
+						cEvent.stuff.weapon = Hyperspace.Blueprints:GetWeaponBlueprint(next_blue_name)
+						
+						local cEvent2 = Hyperspace.Event:GetBaseEvent("EMPTY_EVENT", Hyperspace.App.world.starMap.worldLevel, false, Hyperspace.Global.currentSeed)
+						cEvent2.text.data = Hyperspace.Text:GetText('lua_container_broke')
+						--cEvent2.text.data = "Контейнер хранения ядра вы успешно разбираете на лом..."
+						cEvent2.stuff.removeItem = "KOMAROV_CORE"
+						cEvent2.stuff.scrap = 1
+						
+						local cho = cEvent:GetChoices()[0]
+						cho.hiddenReward = true
+						cho.event = cEvent2
+						event:AddChoice(cEvent, Hyperspace.Text:GetText('lua_get_this_weapon'), Hyperspace.ChoiceReq(), false)
+						--event:AddChoice(cEvent, "Получить это орудие.", Hyperspace.ChoiceReq(), false)
+					end
+				end
+			end
+		end
+		if gui then
+			for carg in vter (gui.equipScreen:GetCargoHold()) do
+				local pf_blue_name = carg
+				local next_blue_name = ""
+				if pf_blue_name:find("_LVL") ~= nil then
+					if pf_blue_name:find("_LVL0") ~= nil then
+						next_blue_name = string.gsub(pf_blue_name, "_LVL0", "_LVL1")	
+					elseif pf_blue_name:find("_LVL1") ~= nil then
+						next_blue_name = string.gsub(pf_blue_name, "_LVL1", "_LVL2")
+					elseif pf_blue_name:find("_LVL2") ~= nil then
+						next_blue_name = string.gsub(pf_blue_name, "_LVL2", "_LVL3")
+					elseif pf_blue_name:find("_LVL3") ~= nil then
+						next_blue_name = string.gsub(pf_blue_name, "_LVL3", "_LVL4")
+					end
+					if next_blue_name ~= "" and Hyperspace.Blueprints:GetWeaponBlueprint(next_blue_name).desc.cost > 0 then
+						local cEvent = Hyperspace.Event:GetBaseEvent("EMPTY_EVENT", Hyperspace.App.world.starMap.worldLevel, false, Hyperspace.Global.currentSeed)
+						cEvent.text.data = Hyperspace.Text:GetText('lua_install_core')
+						--cEvent.text.data = "Вы успешно устанавливаете ядро в орудие через специальный разъём-соединитель.\n"
+						--cEvent.stuff.removeItem = pf_blue_name
+						cEvent.eventName = "REMOVE_EQUIPMENT_WITH_LUA_"..pf_blue_name
+						cEvent.stuff.weapon = Hyperspace.Blueprints:GetWeaponBlueprint(next_blue_name)
+						
+						local cEvent2 = Hyperspace.Event:GetBaseEvent("EMPTY_EVENT", Hyperspace.App.world.starMap.worldLevel, false, Hyperspace.Global.currentSeed)
+						cEvent2.text.data = Hyperspace.Text:GetText('lua_container_broke')
+						--cEvent2.text.data = "Контейнер хранения ядра вы успешно разбираете на лом..."
+						cEvent2.stuff.removeItem = "KOMAROV_CORE"
+						cEvent2.stuff.scrap = 1
+						
+						local cho = cEvent:GetChoices()[0]
+						cho.hiddenReward = true
+						cho.event = cEvent2
+						event:AddChoice(cEvent, Hyperspace.Text:GetText('lua_get_this_weapon'), Hyperspace.ChoiceReq(), false)
+						--event:AddChoice(cEvent, "Получить это орудие.", Hyperspace.ChoiceReq(), false)
+					end
+				end
+			end
+		end
+	end
 	
 
 	-- этот блок отслеживает встраивание усилений. проверяет только те, что включены в список "CAN_BE_HIDDEN_AUGS"
 	-- присваивает переменной значение 1, если встроено.
 	if event.eventName:find("STORE_INSTALL_") ~= nil then
-		for augs in vter2 (Hyperspace.Blueprints:GetBlueprintList("CAN_BE_HIDDEN_AUGS")) do
+		--for augs in vter2 (Hyperspace.Blueprints:GetBlueprintList("CAN_BE_HIDDEN_AUGS")) do
+		for augs in vter2 (varr.local_list_CAN_BE_HIDDEN_AUGS) do
 			if event.eventName == "STORE_INSTALL_"..augs then
 				Hyperspace.playerVariables['installed_'..augs] = 1
 				--print('installation!'..augs)
@@ -15327,6 +18116,9 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 		--print('installation!'..augs)
 	end
 
+	
+	
+	--челлендж где запрещено встраивать усиления. убираем чойз
 	if Hyperspace.metaVariables['challenge_noinst'] == 1 then
 		if event.eventName == "EVENT_CARGO_BUTTON" then
 			for i = 0, event:GetChoices():size()-1 do
@@ -15339,6 +18131,49 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 			end
 		end
 	end
+	
+	--автоматически уберёт чойз если нет уже инжектированных орудий и, очевидно, нельзя удалить инжектор из них.
+	if event.eventName == "EVENT_CARGO_BUTTON" then
+		local bFoundInjWeap = false
+		if gui then
+			for carg in vter (gui.equipScreen:GetCargoHold()) do
+				if bFoundInjWeap == false then
+					for j=0,#types_of_injectors do
+						if carg:find(types_of_injectors[j])~=nil then
+							bFoundInjWeap = true
+							--print('found carg='..carg)
+						end
+					end
+				end
+			end
+		end
+		if playerShip and playerShip.weaponSystem then
+			for pf in vter (playerShip.weaponSystem.weapons) do
+				if bFoundInjWeap == false then
+					local pf_blue_name = pf.blueprint.name
+					for j=0,#types_of_injectors do
+						if pf_blue_name:find(types_of_injectors[j])~=nil then
+							bFoundInjWeap = true
+							--print('found weap='..pf_blue_name)
+						end
+					end
+				end
+			end	
+		end
+		if bFoundInjWeap == false then
+			for i = 0, event:GetChoices():size()-1 do
+				local cho = event:GetChoices()[i]
+				if cho ~= nil and cho.event ~= nil and cho.text.data:find(Hyperspace.Text:GetText('lua_event_text_marker_11')) ~= nil then
+					event:RemoveChoice(i)
+					--print('remove')
+					break
+				end
+			end
+		end
+	end
+	
+	
+	
 	-- <choice hidden="false" req="CAN_BE_HIDDEN_AUGS" blue="false">
 		-- <text color="violet">Встроить усиление в конструкции корабля, освободив слот для других усилений. Недоступно для усилений, которые можно хранить в нескольких экземплярах, сдвоенных усилений и для усилений, которые могут быть улучшены.</text>
 		-- <event><queueEvent>EVENT_CARGO_INST</queueEvent></event>
@@ -15376,6 +18211,21 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 				end
 			end
 		end
+		
+		
+		if playerShip and playerShip.bAutomated == false then
+			--for i = 0, event:GetChoices():size()-1 do
+			for i = event:GetChoices():size()-1, 0, -1 do
+				local cho = event:GetChoices()[i]
+				if cho ~= nil and cho.event ~= nil and cho.requirement.object == "ai_adv_pilot" then
+					event:RemoveChoice(i) -- убираем чойз
+					--print('done'..i)
+					break
+				end
+			end
+		end
+		
+		
 	end
 	
 	
@@ -15405,6 +18255,10 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 					event.text.data = string.gsub(event.text.data,Hyperspace.Text:GetText('lua_event_text_marker_5'), Hyperspace.Text:GetText('lua_event_text_marker_9'))
 					event.text.data = string.gsub(event.text.data,Hyperspace.Text:GetText('lua_event_text_marker_6'), Hyperspace.Text:GetText('lua_event_text_marker_10'))
 				end
+				
+				--if Hyperspace.metaVariables['flagship_wave'] ~= 0 then 
+				event.text.data = event.text.data..' '..Hyperspace.Text:GetText('lua_event_text_vspishka'..tostring(math.floor(Hyperspace.metaVariables['flagship_wave'])))
+				--end
 			end
 		end
 		-- if event.text.data:find("Ультранасосы")~=nil then
@@ -15680,7 +18534,8 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 	if event then
 		--к сведению: если ивент является подивентом внутри чойза основного ивента он будет иметь имя вида "EVENT_MAIN 10766", т.е. добавка некого числа через пробел
 		local bUseThisEvent = true
-		for marker in vter(Hyperspace.Blueprints:GetBlueprintList("LIST_OF_EVENT_MARKERS_DONT_USE_AUTOREPLACE")) do
+		--for marker in vter(Hyperspace.Blueprints:GetBlueprintList("LIST_OF_EVENT_MARKERS_DONT_USE_AUTOREPLACE")) do
+		for marker in vter(varr.local_list_LIST_OF_EVENT_MARKERS_DONT_USE_AUTOREPLACE) do
 			if event.eventName:find(marker) ~= nil then
 				bUseThisEvent = false
 				-- <<<<<<<<<<<<<<<<<<<<-- добавить сюда необходимые ивенты где НЕ НУЖНА АВТОЗАМЕНА
@@ -15717,7 +18572,7 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 							bWasReplacedEvEq = true
 						end
 						if bWasReplacedEvEq == true then
-							--print(cho.stuff.weapon.blueprint.name)
+							--print('replaced'..cho.event.stuff.weapon.name)
 							cho.event.stuff.weapon = Hyperspace.Blueprints:GetWeaponBlueprint(eqnm)
 							-- ПОДМЕНА ОРУДИЯ В ЧОЙЗЕ!
 						end
@@ -15738,8 +18593,9 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 							bWasReplacedEvEq = true
 						end
 						if bWasReplacedEvEq == true then
-							--print(cho.stuff.weapon.blueprint.name)
+							--print('replaced'..cho.event.stuff.drone.name)
 							cho.event.stuff.drone = Hyperspace.Blueprints:GetDroneBlueprint(eqnm)
+							-- ПОДМЕНА ДРОНА В ЧОЙЗЕ!
 						end
 					end
 					
@@ -15758,8 +18614,9 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 							bWasReplacedEvEq = true
 						end
 						if bWasReplacedEvEq == true then
-							--print(cho.stuff.weapon.blueprint.name)
+							--print(cho.event.stuff.augment.name)
 							cho.event.stuff.augment = Hyperspace.Blueprints:GetAugmentBlueprint(eqnm)
+							-- ПОДМЕНА УСИЛЕНИЯ В ЧОЙЗЕ!
 						end
 					end
 				end
@@ -15778,6 +18635,11 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
 					if cho and cho.text and cho.text.data ~= nil then
 						cho.text.isLiteral = true
 						cho.text.data = replaceTextAbracadabra(cho.text.data)
+						
+						if cho.requirement.blue == true then
+							cho.requirement.blue = false
+							--print('blue removed')
+						end
 					end
 				end
 			end
@@ -15788,9 +18650,28 @@ end)
 
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(projectile, weap_bp)
+	
+	
+	--благодаря этому блоку стреляет именно большой корабль флота а не из пустоты летит ПКБ. фикс чьего-то косяка...
+	if playerShip and playerShip:HasAugmentation("PDS_ASSIST")>0 then
+		if Hyperspace.metaVariables['pds_is_done_player'] == 1 then
+			projectile.startPoint = Hyperspace.Pointf(800-gui.shipPosition.x, 520-gui.shipPosition.y)
+			projectile.position = Hyperspace.Pointf(800-gui.shipPosition.x, 520-gui.shipPosition.y)
+			--print('rechanged start point')
+			projectile:ComputeHeading()
+		end
+	end
+	
+	
+	
 	-- этот участок позволяет при активном орудии PDS_AIMER не промахиваться ПКБ союзной. работает у врага и игрока.
 	if projectile.extend.name == "PDS_SHOT" then --"PDS_SHOT" then
 		if projectile.destinationSpace == 1 then --пкб во врага
+			
+			
+			
+			
+			
 			-- все снаряды этого блока реальные (не пристрелочные)
 			local bNeededAccBuff = false
 			if playerShip and playerShip.weaponSystem and playerShip.ship.hullIntegrity.first > 0 then
@@ -15841,21 +18722,107 @@ end)
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projectile, proj_factory) --не обрабатывает пкб если что
 	
+	--суперщит золтан уходит в неуязвимость где-то на 0.3 сек после получения урона бомбой для последующих бомб
+	--этот участок даёт принудительную дополнительную задержку срабатывания бомб, чтобы избежать проглатывания урона бомб
+	if projectile.ownerId == 0 and playerShip then
+		if hasAnyAugmentationOfList(playerShip, {"ZOLTAN_BYPASS", "HID_ZOLTAN_BYPASS", "ENERGY_SHIELD_ZOLTAN_BYPASS"}) == false then
+			if enemyShip and enemyShip.shieldSystem and enemyShip.shieldSystem.shields and enemyShip.shieldSystem.shields.power and enemyShip.shieldSystem.shields.power.first > 0 then
+				if proj_factory.blueprint.typeName == "BOMB" then
+					if varr.micro_tick_supershield_cooler > 0.0 then
+						projectile.explosiveDelay = projectile.explosiveDelay + 0.001*varr.micro_tick_supershield_cooler
+					end
+					varr.micro_tick_supershield_cooler = varr.micro_tick_supershield_cooler + 300.0 --milliseconds
+					--print(projectile.explosiveDelay)
+				end
+			end
+		end
+	end
+	if projectile.ownerId == 1 and enemyShip then
+		if hasAnyAugmentationOfList(enemyShip, {"ZOLTAN_BYPASS", "HID_ZOLTAN_BYPASS", "ENERGY_SHIELD_ZOLTAN_BYPASS"}) == false then
+			if playerShip and playerShip.shieldSystem and playerShip.shieldSystem.shields and playerShip.shieldSystem.shields.power and playerShip.shieldSystem.shields.power.first > 0 then
+				if proj_factory.blueprint.typeName == "BOMB" then
+					if varr.micro_tick_supershield_cooler_e > 0.0 then
+						projectile.explosiveDelay = projectile.explosiveDelay + 0.001*varr.micro_tick_supershield_cooler_e
+					end
+					varr.micro_tick_supershield_cooler_e = varr.micro_tick_supershield_cooler_e + 300.0 --milliseconds
+					--print('enemy test='..projectile.explosiveDelay)
+				end
+			end
+		end
+	end
 	
+	
+	
+	if proj_factory.blueprint.name:find("BAK_LASER_LVL2") ~= nil or proj_factory.blueprint.name:find("BAK_LASER_LVL3") ~= nil then
+		projectile.extend.name = projectile.extend.name.."_MIND_CONTROL"
+	end
+	if proj_factory.blueprint.name:find("BAK_LASER_LVL3") ~= nil then
+		projectile.extend.name = projectile.extend.name.."_HACKING"
+	end
+
+	
+	
+	if proj_factory.blueprint.name:find("BAK_BOMB_LVL3") ~= nil then
+		
+		local root_name = string.gsub(proj_factory.blueprint.name, "LVL3", "LVL2")
+		if Hyperspace.Blueprints:GetWeaponBlueprint(root_name).desc.cost == 0 then
+			print('wrong root shoot bomb='..root_name)
+			return
+		end
+		if projectile.ownerId == 1 then
+			-- enemy
+			-- враг стреляет в игрока
+			for i=1, 2 do
+				Hyperspace.App.world.space:CreateBomb(Hyperspace.Blueprints:GetWeaponBlueprint(root_name), 1, playerShip:GetRandomRoomCenter(), 0)
+			end
+		else
+			-- player
+			-- игрок стреляет во врага
+			for i=1, 2 do
+				Hyperspace.App.world.space:CreateBomb(Hyperspace.Blueprints:GetWeaponBlueprint(root_name), 0, enemyShip:GetRandomRoomCenter(), 1)
+			end
+		end
+	end
 	
 	if proj_factory.blueprint.name:find("GLIF_GUN") ~= nil then
 		local temp_strFullGlifLine = varr.strFullGlifLine
-		if projectile.ownerId == 1 then --enemy
+		if projectile.ownerId == 1 then
+			-- enemy
+			-- враг стреляет в игрока
 			if varr.enemy_strFullGlifLine == "" then
 				redefine_enemy_strFullGlifLine()
 			end
 			temp_strFullGlifLine = varr.enemy_strFullGlifLine
+			
+			local bomb_local = 0
+			cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_SMALL_BOMB", "ADD_SMALL_BOMB"))
+			if cnt > 0 then
+				bomb_local = bomb_local + cnt
+			end
+			if bomb_local > 0 then
+				for i=1, bomb_local do
+					Hyperspace.App.world.space:CreateBomb(Hyperspace.Blueprints:GetWeaponBlueprint('BA_BOMB_CLUSTER_1'), 1, playerShip:GetRandomRoomCenter(), 0)
+				end
+			end
+			
 			--print(local_strFullGlifLine)
 		else
-			--player
+			-- player
+			-- игрок стреляет во врага
 			if varr.strFullGlifLine == "" then
 				update_player_strFullGlifLine()
 				temp_strFullGlifLine = varr.strFullGlifLine
+			end
+			
+			local bomb_local = 0
+			cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_SMALL_BOMB", "ADD_SMALL_BOMB"))
+			if cnt > 0 then
+				bomb_local = bomb_local + cnt
+			end
+			if bomb_local > 0 then
+				for i=1, bomb_local do
+					Hyperspace.App.world.space:CreateBomb(Hyperspace.Blueprints:GetWeaponBlueprint('BA_BOMB_CLUSTER_1'), 0, enemyShip:GetRandomRoomCenter(), 1)
+				end
 			end
 		end
 		apply_to_projectile_glif_properties(proj_factory, projectile, temp_strFullGlifLine)
@@ -15864,7 +18831,9 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 	
 	
 	
-	if proj_factory.blueprint.name:find("HYBRYD_LASER_BURST") ~= nil then
+	if proj_factory.blueprint.name:find("HYBRYD_LASER_BURST") ~= nil
+		or proj_factory.blueprint.name:find("BAK_MISSILES_LVL2") ~= nil
+		or proj_factory.blueprint.name:find("BAK_MISSILES_LVL3") ~= nil then
 		if proj_factory.powered == true and proj_factory.cooldown.first < 0.22 then --первый выстрел в среднем на 0.15 идёт
 			--print(proj_factory.cooldown.first)
 			local chance_of_cd_update = 25
@@ -15917,17 +18886,19 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 		end
 	end
 	
-	
-	if projectile.ownerId == 0 and hasAnyAugmentationOfList(playerShip, {"ION_RESONATOR", "HID_ION_RESONATOR"}) == true then
-		if projectile.damage.iIonDamage > 0 then
-			if projectile.damage.iDamage <= 0 and projectile.damage.iSystemDamage <= 0 then
-				projectile.damage.iSystemDamage = projectile.damage.iSystemDamage + 1
+	-- ионный резонатор + ионные снаряды
+	if math.random(0,99)<75 then -- шанс срабатывания
+		if projectile.ownerId == 0 and hasAnyAugmentationOfList(playerShip, {"ION_RESONATOR", "HID_ION_RESONATOR"}) == true then
+			if projectile.damage.iIonDamage > 0 then
+				if projectile.damage.iDamage <= 0 and projectile.damage.iSystemDamage <= 0 then
+					projectile.damage.iSystemDamage = projectile.damage.iSystemDamage + 1
+				end
 			end
-		end
-	elseif projectile.ownerId == 1 and enemyShip:HasAugmentation('ION_RESONATOR') > 0 then
-		if projectile.damage.iIonDamage > 0 then
-			if projectile.damage.iDamage <= 0 and projectile.damage.iSystemDamage <= 0 then
-				projectile.damage.iSystemDamage = projectile.damage.iSystemDamage + 1
+		elseif projectile.ownerId == 1 and enemyShip:HasAugmentation('ION_RESONATOR') > 0 then
+			if projectile.damage.iIonDamage > 0 then
+				if projectile.damage.iDamage <= 0 and projectile.damage.iSystemDamage <= 0 then
+					projectile.damage.iSystemDamage = projectile.damage.iSystemDamage + 1
+				end
 			end
 		end
 	end
@@ -15952,7 +18923,6 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 		end
 		
 		
-		
 		--обеспечивает искажение второй точки прицеливания лучом если экипаж игрока пьян
 		if bFoundAlive == true then
 			if proj_factory.blueprint.typeName == "BEAM" then
@@ -15971,11 +18941,6 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 				--print('dru2')
 			end
 		end
-		
-		
-		
-		
-		
 	elseif projectile.ownerId == 1 and enemyShip:HasAugmentation('DRUNK_CREW') > 0 then
 		local bFoundAlive = false
 		if enemyShip then
@@ -15995,6 +18960,29 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 	if bDrunkCondition == true and math.random(0,100)<60 then
 		projectile.extend.customDamage.accuracyMod = -150
 	end
+	
+	
+	
+	if proj_factory.blueprint.name:find("BAK_SHOTGUN_LVL3") ~= nil then
+		if projectile.damage.iDamage > 0 then -- только реальные снаряды (боевые)
+			local mem_entryAngle = projectile.entryAngle--math.random(0,360)
+			if projectile.ownerId == 0 then
+				local targ_mem = projectile.target
+				local burst = Hyperspace.App.world.space:CreateBurstProjectile(Hyperspace.Blueprints:GetWeaponBlueprint("BA_SHOTGUN_ION_1"), 'ba_shotgun_ion_shot_1', false, projectile.position, 0, 0, GetRandomPointShift(Hyperspace.Pointf(tonumber(targ_mem.x), tonumber(targ_mem.y)), math.random(0,proj_factory.radius)), 1, 0.0)
+				burst.entryAngle = mem_entryAngle
+				burst.extend.customDamage.accuracyMod = projectile.extend.customDamage.accuracyMod
+			else
+				local targ_mem = projectile.target
+				local burst = Hyperspace.App.world.space:CreateBurstProjectile(Hyperspace.Blueprints:GetWeaponBlueprint("BA_SHOTGUN_ION_1"), 'ba_shotgun_ion_shot_1', false, projectile.position, 1, 1, GetRandomPointShift(Hyperspace.Pointf(tonumber(targ_mem.x), tonumber(targ_mem.y)), math.random(0,proj_factory.radius)), 0, -90.0)
+				burst.entryAngle = mem_entryAngle
+				burst.extend.customDamage.accuracyMod = projectile.extend.customDamage.accuracyMod
+			end
+		end
+	end
+	
+	
+	
+	
 	
 	--ауг повышение точности артиллерии. у врага/игрока работает
 	if proj_factory.isArtillery == true then
@@ -16023,11 +19011,11 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 		if Hyperspace.playerVariables['soulreaper_bLockdown'] == 1 and gui then
 			--пусковик произвольной анимации в нужной точке экрана, аееееее. нам больше не нужны махинации vertex модуля.
 			--вопрос лишь в нахождении координат на экране, остальное в анимациях берётся
-			table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/explosion_crystal_2.png"), time_length = 500.0, time_length_mem = 500.0, x = px-13, y = py-24, w=336, h=48, fw=48, fh=48, layer = "SPACE_STATUS"})
+			table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/explosion_crystal_2.png"), time_length = 500.0, time_length_mem = 500.0, x = px-13, y = py-24, w=336, h=48, fw=48, fh=48, layer = "SPACE_STATUS"})
 		end
 		
 		if Hyperspace.playerVariables['soulreaper_iIonDamage'] > 0 and gui then
-			table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/stun_computer.png"), time_length = 1000.0, time_length_mem = 1000.0, x = px-10, y = py-10, w=245, h=35, fw=35, fh=35, layer = "SPACE_STATUS"})
+			table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/stun_computer.png"), time_length = 1000.0, time_length_mem = 1000.0, x = px-10, y = py-10, w=245, h=35, fw=35, fh=35, layer = "SPACE_STATUS"})
 		end
 	end
 	
@@ -16125,7 +19113,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 				if varr.numbers_img[count_of_needed_proj]~=nil then
 					px = gui.shipPosition.x + projectile.position.x
 					py = gui.shipPosition.y + projectile.position.y
-					table.insert(anim_tick_array, {texture = varr.numbers_img[count_of_needed_proj], time_length = 1700.0, time_length_mem = 1700.0, x = px-35, y = py-55, w=64, h=32, fw=64, fh=32, layer = "SPACE_STATUS"})
+					table.insert(varr.anim_tick_array, {texture = varr.numbers_img[count_of_needed_proj], time_length = 1700.0, time_length_mem = 1700.0, x = px-35, y = py-55, w=64, h=32, fw=64, fh=32, layer = "SPACE_STATUS"})
 				end
 			else
 				local targ_mem = playerShip:GetRandomRoomCenter()
@@ -16144,7 +19132,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 				if varr.numbers_img[count_of_needed_proj]~=nil then
 					px = gui.combatControl.targetPosition.x+gui.combatControl.position.x + projectile.position.x
 					py = gui.combatControl.targetPosition.y+gui.combatControl.position.y + projectile.position.y
-					table.insert(anim_tick_array, {texture = varr.numbers_img[count_of_needed_proj], time_length = 1700.0, time_length_mem = 1700.0, x = px-33, y = py-35, w=64, h=32, fw=64, fh=32, layer = "SPACE_STATUS"})
+					table.insert(varr.anim_tick_array, {texture = varr.numbers_img[count_of_needed_proj], time_length = 1700.0, time_length_mem = 1700.0, x = px-33, y = py-35, w=64, h=32, fw=64, fh=32, layer = "SPACE_STATUS"})
 				end
 			end
 			projectile:Kill()
@@ -16175,15 +19163,258 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 
 	if projectile.ownerId == 1 then
 		diff = tostring(math.floor(Hyperspace.Settings.difficulty))
+		local pbfnm = proj_factory.blueprint.name
 		--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 		--улучшенное целеуказание для орудий врагов
 		--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-		if Hyperspace.metaVariables['enemy_has_advanced_ai'] == 1 or proj_factory.blueprint.name:find("BOMB_TELE")~=nil then
-			if proj_factory.blueprint.typeName ~= "BEAM" and proj_factory.blueprint.typeName ~= "BURST" then
-			--с лучами сложно, не лезем в целеуказание, а обработка BURST идёт отдельно поснарядно, в итоге разлёт на корабль размером...
-				if diff == '2' and GSIp and playerShip.ship.hullIntegrity.first >= 12 and math.random(0,100) < 70 then
+		if Hyperspace.metaVariables['enemy_has_advanced_ai'] == 1 or proj_factory.blueprint.name:find("BOMB_TELE")~=nil or pbfnm:find("LINE_TARG") ~= nil then
+			if diff == '2' and GSIp and playerShip.ship.hullIntegrity.first >= 12 and math.random(0,100) < 70 then
+			--if diff == '2' and GSIp then -- ТОЛЬКО ДЛЯ ТЕСТОВ, НЕ ЗАБУДЬ ПЕРЕКЛЮЧИТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+				if proj_factory.blueprint.typeName == "BEAM" then
+					--///////////////////////////////////////////////
+					--/////С ЛУЧАМИ СЛОЖНО, ЛЕЗЕМ В ЦЕЛЕУКАЗАНИЕ///// лезем!
+					--///////////////////////////////////////////////
+					if proj_factory.blueprint.length > 0 and proj_factory.isArtillery == false then -- >3
+						--if pbfnm:find("LINE_TARG") == nil
+						 
+						if pbfnm:find("BEAM_PRISM") == nil
+						and pbfnm:find("BEAM_VILKA") == nil
+						and pbfnm:find("BAK_BEAM") == nil then--исключения
+							local damdam = proj_factory.blueprint.damage
+							local retargeting_mode = "MAX_SYSTEMS"
+							local real_sys_dam = damdam.iDamage + damdam.iSystemDamage
+							if real_sys_dam <= 0 or damdam.breachChance > 3 or damdam.fireChance > 3 or damdam.bLockdown == true or damdam.bHullBuster == true then
+								retargeting_mode = "MAX_ANY_ROOMS"
+							end
+							if damdam.iDamage == 0 and (damdam.iPersDamage > 0 or damdam.stunChance > 0.0 or damdam.iStun > 0) then
+								retargeting_mode = "MAX_CREW"
+							end
+							if damdam.iIonDamage > 0 then
+								retargeting_mode = "MAX_SYSTEMS"
+							end
+							
+							if pbfnm:find("LINE_TARG") == nil then
+								retargeting_mode = "MAX_SYSTEMS"
+							end
+							
+							--print(pbfnm)
+							
+							local anglee = 0
+							local count_of_hitted_rooms = 0
+							local count_of_hitted_systems = 0
+							local count_of_hitted_crew = 0
+							local best_count_of_hitted_rooms = 0
+							local best_count_of_hitted_systems = 0
+							local best_count_of_hitted_crew = 0
+							
+							local current_point_room_id = -1
+							local previous_point_room_id = -1
+							local start_point = nil
+							local finish_point = nil
+							local best_start_point = nil
+							local best_finish_point = nil
+							local lenn = proj_factory.blueprint.length
+							local lenn_growing = 0.0
+							
+							
+							for i=0, 55 do --тут регулируется уровень настойчивости поиска оптимального луча (количество попыток)
+								varr.hitted_crew_arr = {}
+								
+								--случайный отсек, случайная точка в этом отсеке (внутри строго)
+								local room_target_idp = GSIp.rooms[math.random(0, GSIp.rooms:size()-1)].iRoomId
+								local roomshape = GSIp:GetRoomShape(room_target_idp)
+								local x_shift_loc = (roomshape.w//2) - 2--roomshape.w, roomshape.h, roomshape.x, roomshape.y
+								local y_shift_loc = (roomshape.h//2) - 2
+								start_point = playerShip:GetRoomCenter(room_target_idp)
+								
+								if lenn == 1 then
+									if roomshape.w == 35 then
+										x_shift_loc = 0
+									elseif roomshape.w == 70 then
+										if math.random(0,99)<50 then
+											x_shift_loc = -17
+										else
+											x_shift_loc = 17
+										end
+									elseif roomshape.w == 105 then
+										if math.random(0,99)<33 then
+											x_shift_loc = -35
+										elseif math.random(0,99)<50 then
+											x_shift_loc = 0
+										else
+											x_shift_loc = 35
+										end
+									elseif roomshape.w == 140 then
+										if math.random(0,99)<25 then
+											x_shift_loc = -17
+										elseif math.random(0,99)<33 then
+											x_shift_loc = -52
+										elseif math.random(0,99)<50 then
+											x_shift_loc = 52
+										else
+											x_shift_loc = 17
+										end
+									elseif roomshape.w == 175 then
+										if math.random(0,99)<20 then
+											x_shift_loc = -70
+										elseif math.random(0,99)<25 then
+											x_shift_loc = -35
+										elseif math.random(0,99)<33 then
+											x_shift_loc = 0
+										elseif math.random(0,99)<50 then
+											x_shift_loc = 35
+										else
+											x_shift_loc = 70
+										end
+									end
+									
+									if roomshape.h == 35 then
+										y_shift_loc = 0
+									elseif roomshape.h == 70 then
+										if math.random(0,99)<50 then
+											y_shift_loc = -17
+										else
+											y_shift_loc = 17
+										end
+									elseif roomshape.h == 105 then
+										if math.random(0,99)<33 then
+											y_shift_loc = -35
+										elseif math.random(0,99)<50 then
+											y_shift_loc = 0
+										else
+											y_shift_loc = 35
+										end
+									elseif roomshape.h == 140 then
+										if math.random(0,99)<25 then
+											y_shift_loc = -17
+										elseif math.random(0,99)<33 then
+											y_shift_loc = -52
+										elseif math.random(0,99)<50 then
+											y_shift_loc = 52
+										else
+											y_shift_loc = 17
+										end
+									elseif roomshape.h == 175 then
+										if math.random(0,99)<20 then
+											y_shift_loc = -70
+										elseif math.random(0,99)<25 then
+											y_shift_loc = -35
+										elseif math.random(0,99)<33 then
+											y_shift_loc = 0
+										elseif math.random(0,99)<50 then
+											y_shift_loc = 35
+										else
+											y_shift_loc = 70
+										end
+									end
+									--print(x_shift_loc..','..y_shift_loc)
+									start_point = Hyperspace.Pointf(start_point.x + x_shift_loc, start_point.y + y_shift_loc)
+								else
+									start_point = Hyperspace.Pointf(start_point.x + math.random(-x_shift_loc, x_shift_loc), start_point.y + math.random(-y_shift_loc, y_shift_loc))
+								end
+								--случайная точка финиша луча, случ.угол, предпочтительно в отсеке тоже, чтоб выход был
+								local trid_finish = -1
+								local antifreeze = 0
+								while antifreeze < 40 and trid_finish == -1 do
+									antifreeze = antifreeze + 1
+									anglee = math.random(0, 360)
+									finish_point = Hyperspace.Pointf(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
+									trid_finish = GetRoomAtLocation(playerShip, finish_point, false)
+								end
+								
+								--анализ прохода луча по линии, теоретический
+								current_point_room_id = -1
+								previous_point_room_id = -1
+								count_of_hitted_rooms = 0
+								count_of_hitted_systems = 0
+								count_of_hitted_crew = 0
+								lenn_growing = 0.0
+								
+								antifreeze = 0
+								local check_point = nil
+								while lenn_growing <= lenn and antifreeze < 1000 do
+									antifreeze = antifreeze + 1
+									check_point = Hyperspace.Pointf(start_point.x + lenn_growing*math.cos(math.pi*anglee/180), start_point.y - lenn_growing*math.sin(math.pi*anglee/180))
+									current_point_room_id = GetRoomAtLocation(playerShip, check_point, false)
+									if current_point_room_id ~= -1 and current_point_room_id ~= previous_point_room_id then
+										count_of_hitted_rooms = count_of_hitted_rooms + 1
+										if playerShip:GetSystemInRoom(current_point_room_id)~=nil then
+											if playerShip:GetSystemInRoom(current_point_room_id):CompletelyDestroyed() == false then
+												count_of_hitted_systems = count_of_hitted_systems + 1
+											end
+										end
+										
+										if retargeting_mode == "MAX_CREW" then
+											for crew in vter(playerShip.vCrewList) do
+												if there_is_crew_in_hitted_crew_arr(crew) == false then
+													if crew.bOutOfGame == false and crew.health.first > 0.0 and crew.bDead == false and crew.crewAnim.bPlayer == true then
+														if math.abs(crew:GetPosition().x - check_point.x) < 15.0 and math.abs(crew:GetPosition().y - check_point.y) < 15.0 then
+															add_crew_to_hitted_crew_arr(crew)
+															count_of_hitted_crew = count_of_hitted_crew + 1
+														end
+													end
+												end
+											end
+										end
+									end
+									previous_point_room_id = current_point_room_id
+									lenn_growing = lenn_growing + 5.0
+								end
+								if antifreeze > 999 then
+									print('alarm, antifreeze > 999! weap='..pbfnm)
+								end
+								
+								--если результат лучше, запоминаем
+								if retargeting_mode == "MAX_SYSTEMS" then
+									if count_of_hitted_systems > best_count_of_hitted_systems then
+										best_count_of_hitted_systems = count_of_hitted_systems
+										best_start_point = start_point
+										best_finish_point = finish_point
+									end
+								elseif retargeting_mode == "MAX_ANY_ROOMS" then
+									if count_of_hitted_rooms > best_count_of_hitted_rooms then
+										best_count_of_hitted_rooms = count_of_hitted_rooms
+										best_start_point = start_point
+										best_finish_point = finish_point
+									end
+								elseif retargeting_mode == "MAX_CREW" then
+									if count_of_hitted_crew > best_count_of_hitted_crew then
+										best_count_of_hitted_crew = count_of_hitted_crew
+										best_start_point = start_point
+										best_finish_point = finish_point
+									end
+								else
+									if count_of_hitted_systems > best_count_of_hitted_systems then
+										best_count_of_hitted_systems = count_of_hitted_systems
+										best_start_point = start_point
+										best_finish_point = finish_point
+									end
+								end
+							end
+							
+							-- print('mode='..retargeting_mode)
+							-- print('rooms='..best_count_of_hitted_rooms)
+							-- print('sys='..best_count_of_hitted_systems)
+							-- print('crew='..best_count_of_hitted_crew)
+							
+							if best_start_point ~= nil and best_finish_point ~= nil then
+								--varr.test_point_player = best_start_point
+								--varr.test_point_player2 = best_finish_point
+								projectile.target = best_start_point
+								projectile.target1 = best_start_point
+								projectile.target2 = best_finish_point
+								projectile.length = lenn
+								--print(projectile.target1.x..','..projectile.target1.y..'=>'..projectile.target2.x..','..projectile.target2.y)
+							end
+						end
+					end
+				elseif proj_factory.blueprint.typeName == "BURST" then
+					--обработка BURST идёт отдельно поснарядно, в итоге разлёт на корабль размером...
+				else
 					local targ_id1 = -1
-					
+					--////////////////////////////////
+					--////// СНАРЯДНЫЕ ОРУДИЯ ////////
+					--////////////////////////////////
 					-- выцеливает клон-отсек если там кто-то есть =(o\_/o)=
 					if targ_id1 == -1 and playerShip:HasSystem(13) and playerShip:GetSystem(13):CompletelyDestroyed() == false and math.random(0,100) < 30 then
 						if projectile.damage.iDamage > 0 or projectile.damage.iIonDamage > 0 or projectile.damage.iSystemDamage > 0 then
@@ -16212,7 +19443,22 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 						end
 					end
 					
-					if varr.iEnemyCountOfWaitingBeams > 0 then
+					if proj_factory.blueprint.name:find("LASER_MC")~=nil or proj_factory.blueprint.name:find("MIND")~=nil then
+						if targ_id1 == -1 then
+							if playerShip then
+								for crew in vter(playerShip.vCrewList) do
+									if crew.intruder == false and crew.blueprint.name ~= "alien" and crew.blueprint.name ~= "osae" then
+										if crew.health.first > 0.0 and math.random(0,100) < 11 then
+											targ_id1 = crew.iRoomId
+											--print('retarg mind control laser shots to crew')
+										end
+									end
+								end
+							end
+						end
+					end
+					
+					if varr.iEnemyCountOfWaitingBeams > 0 or varr.iEnemyCountOfWaitingPP > 0 then
 						--print('луч ждёт! огонь в щиты ещё чаще!!!')
 						if targ_id1 == -1 and playerShip:HasSystem(0) and playerShip:GetSystem(0).shields and playerShip:GetSystem(0).shields.power.first >= 1 and math.random(0,100) < 68 then--50
 							targ_id1 = playerShip:GetSystemRoom(0) -- shields
@@ -16374,7 +19620,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 					local px = gui.shipPosition.x + projectile.position.x
 					local py = gui.shipPosition.y + projectile.position.y
 					-- if proj_factory.mount.mirror == true then
-					table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/talk_weapon_"..tostring(math.random(0,7))..".png"), time_length = 1800.0, time_length_mem = 1800.0, x = px+6, y = py-45, w=250, h=50, fw=250, fh=50, layer = "SPACE_STATUS"})
+					table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/talk_weapon_"..tostring(math.random(0,7))..".png"), time_length = 1800.0, time_length_mem = 1800.0, x = px+6, y = py-45, w=250, h=50, fw=250, fh=50, layer = "SPACE_STATUS"})
 					varr.micro_tick_counter6 = 2000.0
 				end
 				projectile.extend.customDamage.accuracyMod = projectile.extend.customDamage.accuracyMod - 10
@@ -16392,7 +19638,13 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 					--блинки тоже в исключения для орудия
 					--по идее у него нет отсеков на экране в которые целиться можно, но мало ли кто-то поставит это орудие в арту или дрона...
 					Hyperspace.Sounds:PlaySoundMix('wrong', 7, false)
-					proj_factory.powered = false
+					if proj_factory.powered == true and proj_factory.iBonusPower == 0 then --если будут золтанцы или орудие уже отключено, то не надо авто-откл. делать
+						proj_factory.powered = false
+						if playerShip.weaponSystem then
+							playerShip.weaponSystem.powerState.first = playerShip.weaponSystem.powerState.first - proj_factory.blueprint.power
+						end
+						--print('auto disable weap')
+					end
 				else
 					local sdr = nil
 					local inum = 0
@@ -16414,13 +19666,19 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 					
 					local px = gui.combatControl.targetPosition.x+gui.combatControl.position.x + sdr.currentLocation.x
 					local py = gui.combatControl.targetPosition.y+gui.combatControl.position.y + sdr.currentLocation.y
-					table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/drone_launcher_effect.png"), time_length = 200.0, time_length_mem = 200.0, x = px-15, y = py-15, w=240, h=30, fw=30, fh=30, layer = "SPACE_STATUS_up"})
+					table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/drone_launcher_effect.png"), time_length = 200.0, time_length_mem = 200.0, x = px-15, y = py-15, w=240, h=30, fw=30, fh=30, layer = "SPACE_STATUS_up"})
 					
 					Hyperspace.Sounds:PlaySoundMix('droneLaunch', 7, false)
 				end
 			else
 				Hyperspace.Sounds:PlaySoundMix('wrong', 7, false)
-				proj_factory.powered = false
+				if proj_factory.powered == true and proj_factory.iBonusPower == 0 then
+					proj_factory.powered = false
+					if playerShip.weaponSystem then
+						playerShip.weaponSystem.powerState.first = playerShip.weaponSystem.powerState.first - proj_factory.blueprint.power
+					end
+					--print('auto disable weap')
+				end
 			end
 		else
 			--враг стреляет
@@ -16450,7 +19708,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 				
 				local px = gui.shipPosition.x + sdr.currentLocation.x
 				local py = gui.shipPosition.y + sdr.currentLocation.y
-				table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/drone_launcher_effect.png"), time_length = 200.0, time_length_mem = 200.0, x = px-15, y = py-15, w=240, h=30, fw=30, fh=30, layer = "SPACE_STATUS_up"})
+				table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/drone_launcher_effect.png"), time_length = 200.0, time_length_mem = 200.0, x = px-15, y = py-15, w=240, h=30, fw=30, fh=30, layer = "SPACE_STATUS_up"})
 				
 				Hyperspace.Sounds:PlaySoundMix('droneLaunch', 7, false)
 			end
@@ -16464,14 +19722,114 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
 		-- end
 	-- end
 
+	if projectile ~= nil and proj_factory.blueprint.name=="MAGMAN_GIGAART" then
+		if projectile.ownerId == 1 then --enemy
+			if playerShip and gui then
+				local x_offset_giga = 0
+				if Hyperspace.Global.GetInstance():GetCApp().gui.combatControl.boss_visual == true then
+					if varr.bMod_itbui == true then
+						x_offset_giga = -528
+					else
+						x_offset_giga = -524
+					end
+					
+				else
+					if varr.bMod_itbui == true then
+						x_offset_giga = -408
+					else
+						x_offset_giga = -398
+					end
+				end
+				
+				table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/magman_gigaart_beam.png"), time_length = 400.0, time_length_mem = 400.0, x = x_offset_giga, y = Hyperspace.metaVariables['target_point_y']-26, w=1280, h=52, fw=1280, fh=52, layer = "SPACE_STATUS"})
+				
+				--Hyperspace.Sounds:PlaySoundMix('woopwoop', 7, false)
+				Hyperspace.Sounds:PlaySoundMix('gigaart_zoop', 10, false)
+				for crew in vter(playerShip.vCrewList) do
+					if crew.health.first > 0.0 and crew.bOutOfGame == false then
+						if math.abs(gui.shipPosition.y + crew:GetPosition().y - Hyperspace.metaVariables['target_point_y']) < 16 then
+							
+							--это чтобы не было бессмысленной пищалки что хп низкие. это уже не важно, луч - попал.
+							Hyperspace.StatBoostManager.GetInstance():CreateTimedAugmentBoost(Hyperspace.StatBoost(varr.def_no_low_hp_signal), crew)
+								
+							crew:DirectModifyHealth(-999999)
+							
+							--print('K.I.A')
+						end
+					end
+				end
+			end
+		end
+		projectile:Kill()
+	end
+	
+	
+	--если корабль-цель имеет ауг на иммун к контролю разума, то идёт подмена снарядов на не имеющие эффект мк
+	--причина фикса - MIND_ORDER сам не блокирует почему-то контроль разума через снаряды с мк... хз хз...
+	--ФИКС НЕ ТРЕБУЕТСЯ РАБОТАЕТ ВСЁ И ТАК!
+	-- if projectile ~= nil and proj_factory.blueprint.name:find("LASER_MC") ~= nil then
+		-- if projectile.ownerId == 1 then
+			-- --enemy proj
+			-- if playerShip and hasAnyAugmentationOfList(playerShip, {"MIND_ORDER", "HID_MIND_ORDER"}) == true then
+				-- Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint('LASER_MC_EMPTY'),  projectile.position, 1, 1, Hyperspace.ships.player:GetRandomRoomCenter(), 0, -90.0)
+				-- projectile:Kill()
+				-- --print('replaced proj e')
+			-- end
+		-- else
+			-- --player proj
+			-- if enemyShip and enemyShip:HasAugmentation("MIND_ORDER") > 0 then
+				-- Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint('LASER_MC_EMPTY'),  projectile.position, 0, 0, projectile.target, 1, 0.0)
+				-- projectile:Kill()
+				-- --print('replaced proj p')
+			-- end
+		-- end
+		-- --LASER_MC_EMPTY
+	-- end
 	
 	
 end)
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(projectile, weaponBlueprint)
+	
+	if enemyShip and enemyShip.myBlueprint.blueprintName == "BOSS_3_HARD_DLC" then
+		--print(projectile.extend.name)
+		if projectile.extend.name == "LASER_HEAVY_1" then
+			if Hyperspace.metaVariables['flagship_wave'] ~= 0 then
+				if Hyperspace.metaVariables['flagship_wave'] == 1 then
+					Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint('LASER_MC_1'),  projectile.position, 1, 1, Hyperspace.ships.player:GetRandomRoomCenter(), 0, math.random(0, 360))
+					projectile:Kill()
+				elseif Hyperspace.metaVariables['flagship_wave'] == 2 then
+					Hyperspace.App.world.space:CreateMissile(Hyperspace.Blueprints:GetWeaponBlueprint('BA_MINES_SMALL'),  projectile.position, 1, 1, Hyperspace.ships.player:GetRandomRoomCenter(), 0, math.random(0, 360))
+					projectile:Kill()
+				elseif Hyperspace.metaVariables['flagship_wave'] == 3 then
+					Hyperspace.App.world.space:CreateLaserBlast(Hyperspace.Blueprints:GetWeaponBlueprint('LASER_HEAVY_2'),  projectile.position, 1, 1, Hyperspace.ships.player:GetRandomRoomCenter(), 0, math.random(0, 360))
+					projectile:Kill()
+					--print('really heavy')
+				end
+			else
+				--default boss proj
+				projectile.flight_animation = Hyperspace.Animations:GetAnimation("laser_light1")
+				projectile.death_animation = Hyperspace.Animations:GetAnimation("explosion1")
+				--print('repl')
+			end
+		end
+	end
+	
 	if weaponBlueprint.name:find("BA_BEAM_VILKA_V") ~= nil then
+		
+		local def_weap_name = 'BA_BEAM_VILKA_DEF'
+		if weaponBlueprint.name:find("_UNI") ~= nil then
+			def_weap_name = 'BA_BEAM_VILKA_DEF_UNI'
+		end
+		if weaponBlueprint.name:find("_BRC") ~= nil then
+			def_weap_name = 'BA_BEAM_VILKA_DEF_BRC'
+		end
+		if weaponBlueprint.name:find("_PRC") ~= nil then
+			def_weap_name = 'BA_BEAM_VILKA_DEF_PRC'
+		end
+		
 		local beam_dist = 1200.0
 		local corrected_targ = projectile.target
-		local wbp = Hyperspace.Blueprints:GetWeaponBlueprint('BA_BEAM_VILKA_DEF')
+		local wbp = Hyperspace.Blueprints:GetWeaponBlueprint(def_weap_name)
 		local beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, corrected_targ, Hyperspace.Pointf(corrected_targ.x, corrected_targ.y + 1), projectile.destinationSpace, 1, projectile.heading)--projectile.heading
 		beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
 	    beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
@@ -16489,9 +19847,21 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(
 		projectile:Kill()
 	end
 	if weaponBlueprint.name:find("BA_BEAM_VILKA_G") ~= nil then
+		
+		local def_weap_name = 'BA_BEAM_VILKA_DEF'
+		if weaponBlueprint.name:find("_UNI") ~= nil then
+			def_weap_name = 'BA_BEAM_VILKA_DEF_UNI'
+		end
+		if weaponBlueprint.name:find("_BRC") ~= nil then
+			def_weap_name = 'BA_BEAM_VILKA_DEF_BRC'
+		end
+		if weaponBlueprint.name:find("_PRC") ~= nil then
+			def_weap_name = 'BA_BEAM_VILKA_DEF_PRC'
+		end
+		
 		local beam_dist = 1200.0
 		local corrected_targ = projectile.target
-		local wbp = Hyperspace.Blueprints:GetWeaponBlueprint('BA_BEAM_VILKA_DEF')
+		local wbp = Hyperspace.Blueprints:GetWeaponBlueprint(def_weap_name)
 		local beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, corrected_targ, Hyperspace.Pointf(corrected_targ.x, corrected_targ.y + 1), projectile.destinationSpace, 1, projectile.heading)--projectile.heading
 		beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
 	    beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
@@ -16508,6 +19878,424 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(
 		
 		projectile:Kill()
 	end
+	
+	
+	
+	if weaponBlueprint.name:find("BA_BEAM_VILKA_ADV") ~= nil then
+		
+		local def_weap_name = 'BA_BEAM_VILKA_DEF'
+		if weaponBlueprint.name:find("_UNI") ~= nil then
+			def_weap_name = 'BA_BEAM_VILKA_DEF_UNI'
+		end
+		if weaponBlueprint.name:find("_BRC") ~= nil then
+			def_weap_name = 'BA_BEAM_VILKA_DEF_BRC'
+		end
+		if weaponBlueprint.name:find("_PRC") ~= nil then
+			def_weap_name = 'BA_BEAM_VILKA_DEF_PRC'
+		end
+		
+		
+		local wide_of_clap = 35
+		local beam_dist = 1200.0
+		local corrected_targ1 = projectile.target1
+		local corrected_targ2 = projectile.target2
+		
+		-- default_beam
+		local dx = corrected_targ2.x - corrected_targ1.x
+		local dy = corrected_targ2.y - corrected_targ1.y
+		local lenn = projectile.length
+		local coeff = (math.sqrt(dx*dx+dy*dy))/lenn -- вынужденный коэффициент, нужен для врагов. т.к. их целеуказание берёт не точки начало-конец луча, а точки корабля 
+		local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+		if dy > 0 then
+			anglee = -anglee
+		end
+		--anglee = anglee
+		if anglee > 180 then
+			anglee = anglee - 360
+		elseif anglee < -180 then
+			anglee = anglee + 360
+		end
+		corrected_targ2.x = corrected_targ1.x + lenn*math.cos(math.pi*anglee/180)
+		corrected_targ2.y = corrected_targ1.y - lenn*math.sin(math.pi*anglee/180)
+		local wbp = Hyperspace.Blueprints:GetWeaponBlueprint(def_weap_name)
+		local beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, corrected_targ1, Hyperspace.Pointf(corrected_targ1.x, corrected_targ1.y+0.8), projectile.destinationSpace, projectile.length, projectile.heading)--projectile.heading
+		beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
+	    beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
+		beam.position = Hyperspace.Pointf(beam.position.x, beam.position.y)
+		
+		
+		anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+		if dy > 0 then
+			anglee = -anglee
+		end
+		anglee = anglee + 90
+		if anglee > 180 then
+			anglee = anglee - 360
+		elseif anglee < -180 then
+			anglee = anglee + 360
+		end
+		
+		local new_start_point_x = projectile.target1.x + wide_of_clap*math.cos(math.pi*anglee/180)
+		local new_start_point_y = projectile.target1.y - wide_of_clap*math.sin(math.pi*anglee/180)
+		beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, Hyperspace.Pointf(new_start_point_x, new_start_point_y), Hyperspace.Pointf(new_start_point_x, new_start_point_y+0.8), projectile.destinationSpace, projectile.length, projectile.heading)--projectile.heading
+		beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
+	    beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
+		beam.position = Hyperspace.Pointf(beam.position.x, beam.position.y)
+		
+		
+		anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+		if dy > 0 then
+			anglee = -anglee
+		end
+		anglee = anglee - 90
+		if anglee > 180 then
+			anglee = anglee - 360
+		elseif anglee < -180 then
+			anglee = anglee + 360
+		end
+		
+		new_start_point_x = projectile.target1.x + wide_of_clap*math.cos(math.pi*anglee/180)
+		new_start_point_y = projectile.target1.y - wide_of_clap*math.sin(math.pi*anglee/180)
+		beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, Hyperspace.Pointf(new_start_point_x, new_start_point_y), Hyperspace.Pointf(new_start_point_x, new_start_point_y+0.8), projectile.destinationSpace, projectile.length, projectile.heading)--projectile.heading
+		beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
+	    beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
+		beam.position = Hyperspace.Pointf(beam.position.x, beam.position.y)
+		
+		
+		projectile:Kill()
+	end
+	
+	
+	
+	 
+	if weaponBlueprint.name:find("_LINE_TARG") ~= nil then
+		--находим корневой блюпринт
+		local root_weapbluename_local = "GRENADE_LAUNCHER_MAIN"
+		if weaponBlueprint.name:find("_GRENADE_LAUNCHER") ~= nil then
+			root_weapbluename_local = "GRENADE_LAUNCHER_MAIN"
+		end
+		
+		local bAllowedShot = false
+		--if spend_miss == true then
+		if projectile.ownerId == 0 and playerShip and playerShip:GetMissileCount()>0 then
+			bAllowedShot = true
+			playerShip:ModifyMissileCount(-1)
+		elseif projectile.ownerId == 1 and enemyShip and enemyShip:GetMissileCount()>0 then
+			bAllowedShot = true
+			enemyShip:ModifyMissileCount(-1)
+		end
+		
+		
+		local wbp = Hyperspace.Blueprints:GetWeaponBlueprint(root_weapbluename_local)
+		if wbp.desc.cost == 0 then
+			print('wrong root fix it pls='..root_weapbluename_local)
+			bAllowedShot = false
+		end
+		--print(bAllowedShot)
+		if bAllowedShot == true then
+			local mem_entryAngle = math.random(0,360)
+			
+			local count_of_targ_circles = 2
+			if weaponBlueprint.name:find("GRENADE_LAUNCHER1") ~= nil then
+				count_of_targ_circles = 2
+			elseif weaponBlueprint.name:find("GRENADE_LAUNCHER2") ~= nil then
+				count_of_targ_circles = 3
+			elseif weaponBlueprint.name:find("GRENADE_LAUNCHER3") ~= nil then
+				count_of_targ_circles = 4
+			end
+			
+			local corrected_targ1 = projectile.target1
+			local corrected_targ2 = projectile.target2
+			
+			local dx = corrected_targ2.x - corrected_targ1.x
+			local dy = corrected_targ2.y - corrected_targ1.y
+			local lenn = projectile.length
+			local coeff = (math.sqrt(dx*dx+dy*dy))/lenn -- вынужденный коэффициент, нужен для врагов. т.к. их целеуказание берёт не точки начало-конец луча, а точки корабля 
+			local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+			if dy > 0 then
+				anglee = -anglee
+			end
+			--anglee = anglee
+			if anglee > 180 then
+				anglee = anglee - 360
+			elseif anglee < -180 then
+				anglee = anglee + 360
+			end
+			
+			if projectile.ownerId == 1 then
+				--для противников выстрел идёт по дефолтным значениям длины. а не ту что игрок выставил для себя локально
+				local len_max = 100
+				local len_min = 50
+				len_min, len_max = get_len_min_max(weaponBlueprint.name)
+				lenn = math.random(len_min, len_max)
+				--print('enemy len='..lenn)
+			elseif projectile.ownerId == 0 then
+				lenn = math.sqrt(dx*dx+dy*dy)
+				--print('player len='..lenn)
+			end
+			
+			corrected_targ2.x = corrected_targ1.x + lenn*math.cos(math.pi*anglee/180)
+			corrected_targ2.y = corrected_targ1.y - lenn*math.sin(math.pi*anglee/180)
+			
+			local x_off = 0
+			local y_off = 0
+			if projectile.ownerId == 0 then
+				x_off = 1
+			else
+				y_off = 1
+			end
+			
+			--start
+			local missile = Hyperspace.App.world.space:CreateMissile(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, projectile.target1, projectile.destinationSpace, projectile.heading)
+			missile.entryAngle = mem_entryAngle
+			apply_to_projectile_injector_properties(missile, weaponBlueprint.name)
+			
+			--finish
+			missile = Hyperspace.App.world.space:CreateMissile(wbp, Hyperspace.Pointf(projectile.position.x+math.random(-5,5)*x_off, projectile.position.y+math.random(-5,5)*y_off), projectile.currentSpace, projectile.ownerId, Hyperspace.Pointf(corrected_targ2.x, corrected_targ2.y), projectile.destinationSpace, projectile.heading)
+			missile.entryAngle = mem_entryAngle
+			apply_to_projectile_injector_properties(missile, weaponBlueprint.name)
+			
+			if count_of_targ_circles == 3 then
+				corrected_targ2.x = corrected_targ1.x + 0.5*lenn*math.cos(math.pi*anglee/180)
+				corrected_targ2.y = corrected_targ1.y - 0.5*lenn*math.sin(math.pi*anglee/180)
+				missile = Hyperspace.App.world.space:CreateMissile(wbp, Hyperspace.Pointf(projectile.position.x+math.random(-5,5)*x_off, projectile.position.y+math.random(-5,5)*y_off), projectile.currentSpace, projectile.ownerId, Hyperspace.Pointf(corrected_targ2.x, corrected_targ2.y), projectile.destinationSpace, projectile.heading)
+				missile.entryAngle = mem_entryAngle
+				apply_to_projectile_injector_properties(missile, weaponBlueprint.name)
+			elseif count_of_targ_circles == 4 then
+				corrected_targ2.x = corrected_targ1.x + 0.33*lenn*math.cos(math.pi*anglee/180)
+				corrected_targ2.y = corrected_targ1.y - 0.33*lenn*math.sin(math.pi*anglee/180)
+				missile = Hyperspace.App.world.space:CreateMissile(wbp, Hyperspace.Pointf(projectile.position.x+math.random(-5,5)*x_off, projectile.position.y+math.random(-5,5)*y_off), projectile.currentSpace, projectile.ownerId, Hyperspace.Pointf(corrected_targ2.x, corrected_targ2.y), projectile.destinationSpace, projectile.heading)
+				missile.entryAngle = mem_entryAngle
+				apply_to_projectile_injector_properties(missile, weaponBlueprint.name)
+				
+				corrected_targ2.x = corrected_targ1.x + 0.66*lenn*math.cos(math.pi*anglee/180)
+				corrected_targ2.y = corrected_targ1.y - 0.66*lenn*math.sin(math.pi*anglee/180)
+				missile = Hyperspace.App.world.space:CreateMissile(wbp, Hyperspace.Pointf(projectile.position.x+math.random(-5,5)*x_off, projectile.position.y+math.random(-5,5)*y_off), projectile.currentSpace, projectile.ownerId, Hyperspace.Pointf(corrected_targ2.x, corrected_targ2.y), projectile.destinationSpace, projectile.heading)
+				missile.entryAngle = mem_entryAngle
+				apply_to_projectile_injector_properties(missile, weaponBlueprint.name)
+			end
+			
+		else
+			Hyperspace.Sounds:PlaySoundMix('wrong', 7, false)
+		end
+		projectile:Kill()
+	end
+	
+	
+	if weaponBlueprint.name:find("BA_BEAM_TRI") ~= nil then
+		
+		local wide_of_clap = 45
+		local beam_dist = 1200.0
+		local memory_targ1 = projectile.target1
+		local memory_targ2 = projectile.target2
+		local corrected_targ1 = memory_targ1
+		local corrected_targ2 = memory_targ2
+		
+		-- default_beam
+		local dx = corrected_targ2.x - corrected_targ1.x
+		local dy = corrected_targ2.y - corrected_targ1.y
+		local lenn = projectile.length
+		local coeff = (math.sqrt(dx*dx+dy*dy))/lenn -- вынужденный коэффициент, нужен для врагов. т.к. их целеуказание берёт не точки начало-конец луча, а точки корабля 
+		local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+		if dy > 0 then
+			anglee = -anglee
+		end
+		--anglee = anglee
+		if anglee > 180 then
+			anglee = anglee - 360
+		elseif anglee < -180 then
+			anglee = anglee + 360
+		end
+		corrected_targ2.x = corrected_targ1.x + lenn*math.cos(math.pi*anglee/180)
+		corrected_targ2.y = corrected_targ1.y - lenn*math.sin(math.pi*anglee/180)
+		local wbp = Hyperspace.Blueprints:GetWeaponBlueprint('BA_BEAM_SUB_TRI')
+		local beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, corrected_targ1, corrected_targ2, projectile.destinationSpace, projectile.length, projectile.heading)--projectile.heading
+		beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
+	    beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
+		beam.position = Hyperspace.Pointf(beam.position.x, beam.position.y)
+		--print(beam.start_heading)
+		--print(beam.heading)
+		
+		--add beam 1
+		anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+		if dy > 0 then
+			anglee = -anglee
+		end
+		anglee = anglee - 90
+		if anglee > 180 then
+			anglee = anglee - 360
+		elseif anglee < -180 then
+			anglee = anglee + 360
+		end
+		
+		local new_start_point_x = corrected_targ1.x + wide_of_clap*math.cos(math.pi*anglee/180)
+		local new_start_point_y = corrected_targ1.y - wide_of_clap*math.sin(math.pi*anglee/180)
+		
+		anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+		if dy > 0 then
+			anglee = -anglee
+		end
+		--anglee = anglee + 30
+		if anglee > 180 then
+			anglee = anglee - 360
+		elseif anglee < -180 then
+			anglee = anglee + 360
+		end
+		local new_start_point_x2 = new_start_point_x + lenn*math.cos(math.pi*anglee/180)
+		local new_start_point_y2 = new_start_point_y - lenn*math.sin(math.pi*anglee/180)
+		wbp = Hyperspace.Blueprints:GetWeaponBlueprint('BA_BEAM_SUB_TRI')
+		beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, Hyperspace.Pointf(new_start_point_x, new_start_point_y), Hyperspace.Pointf(new_start_point_x2, new_start_point_y2), projectile.destinationSpace, projectile.length, projectile.heading)--projectile.heading
+		beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
+		beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
+		beam.position = Hyperspace.Pointf(beam.position.x-11, beam.position.y-11)
+		--print(beam.start_heading)
+		--print(beam.heading)
+		
+		--add beam 2
+		anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+		if dy > 0 then
+			anglee = -anglee
+		end
+		anglee = anglee + 90
+		if anglee > 180 then
+			anglee = anglee - 360
+		elseif anglee < -180 then
+			anglee = anglee + 360
+		end
+		
+		new_start_point_x = corrected_targ1.x + wide_of_clap*math.cos(math.pi*anglee/180)
+		new_start_point_y = corrected_targ1.y - wide_of_clap*math.sin(math.pi*anglee/180)
+		
+		anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+		if dy > 0 then
+			anglee = -anglee
+		end
+		--anglee = anglee + 30
+		if anglee > 180 then
+			anglee = anglee - 360
+		elseif anglee < -180 then
+			anglee = anglee + 360
+		end
+		new_start_point_x2 = new_start_point_x + lenn*math.cos(math.pi*anglee/180)
+		new_start_point_y2 = new_start_point_y - lenn*math.sin(math.pi*anglee/180)
+		wbp = Hyperspace.Blueprints:GetWeaponBlueprint('BA_BEAM_SUB_TRI')
+		beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, Hyperspace.Pointf(new_start_point_x, new_start_point_y), Hyperspace.Pointf(new_start_point_x2, new_start_point_y2), projectile.destinationSpace, projectile.length, projectile.heading)--projectile.heading
+		beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
+		beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
+		beam.position = Hyperspace.Pointf(beam.position.x+11, beam.position.y+11)
+		--print(beam.heading)
+		--print(beam.start_heading)
+		
+		projectile:Kill()
+	end
+	
+	
+	
+	
+	
+	
+	if weaponBlueprint.name:find("BAK_BEAM_LVL1") ~= nil or weaponBlueprint.name:find("BAK_BEAM_LVL2") ~= nil or weaponBlueprint.name:find("BAK_BEAM_LVL3") ~= nil then
+		
+		local chance_of_additional_beam = 50
+		if weaponBlueprint.name:find("BAK_BEAM_LVL3") ~= nil then
+			chance_of_additional_beam = 75
+		end
+		
+		local weapbluename_local = weaponBlueprint.name
+		
+		--находим корневой блюпринт
+		local root_weapbluename_local = weapbluename_local
+		root_weapbluename_local = string.gsub(root_weapbluename_local, "LVL1", "LVL0")
+		root_weapbluename_local = string.gsub(root_weapbluename_local, "LVL2", "LVL0")
+		root_weapbluename_local = string.gsub(root_weapbluename_local, "LVL3", "LVL0")
+		
+		if Hyperspace.Blueprints:GetWeaponBlueprint(root_weapbluename_local).desc.cost == 0 then
+			print('wrong root='..root_weapbluename_local)
+			return
+		end
+		
+		
+		local beam_dist = 1200.0
+		local memory_targ1 = projectile.target1
+		local memory_targ2 = projectile.target2
+		local corrected_targ1 = memory_targ1
+		local corrected_targ2 = memory_targ2
+		
+		-- default_beam
+		local dx = corrected_targ2.x - corrected_targ1.x
+		local dy = corrected_targ2.y - corrected_targ1.y
+		local lenn = projectile.length
+		local coeff = (math.sqrt(dx*dx+dy*dy))/lenn -- вынужденный коэффициент, нужен для врагов. т.к. их целеуказание берёт не точки начало-конец луча, а точки корабля 
+		local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+		if dy > 0 then
+			anglee = -anglee
+		end
+		anglee = anglee
+		if anglee > 180 then
+			anglee = anglee - 360
+		elseif anglee < -180 then
+			anglee = anglee + 360
+		end
+		corrected_targ2.x = corrected_targ1.x + lenn*math.cos(math.pi*anglee/180)
+		corrected_targ2.y = corrected_targ1.y - lenn*math.sin(math.pi*anglee/180)
+		--local wbp = Hyperspace.Blueprints:GetWeaponBlueprint('BAK_BEAM_LVL0')
+		local wbp = Hyperspace.Blueprints:GetWeaponBlueprint(root_weapbluename_local)
+		local beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, corrected_targ1, corrected_targ2, projectile.destinationSpace, projectile.length, projectile.heading)--projectile.heading
+		beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
+	    beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
+		beam.position = Hyperspace.Pointf(beam.position.x, beam.position.y)
+		
+		--add beam 1
+		if math.random(0,99)<chance_of_additional_beam then
+			if weapbluename_local:find("BAK_BEAM_LVL1") ~= nil or weapbluename_local:find("BAK_BEAM_LVL2") ~= nil or weapbluename_local:find("BAK_BEAM_LVL3") ~= nil then
+				anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+				if dy > 0 then
+					anglee = -anglee
+				end
+				anglee = anglee + 30
+				if anglee > 180 then
+					anglee = anglee - 360
+				elseif anglee < -180 then
+					anglee = anglee + 360
+				end
+				corrected_targ2.x = corrected_targ1.x + lenn*math.cos(math.pi*anglee/180)
+				corrected_targ2.y = corrected_targ1.y - lenn*math.sin(math.pi*anglee/180)
+				--wbp = Hyperspace.Blueprints:GetWeaponBlueprint('BAK_BEAM_LVL0')
+				wbp = Hyperspace.Blueprints:GetWeaponBlueprint(root_weapbluename_local)
+				beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, corrected_targ1, corrected_targ2, projectile.destinationSpace, projectile.length, projectile.heading)--projectile.heading
+				beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
+				beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
+				beam.position = Hyperspace.Pointf(beam.position.x-2, beam.position.y-2)
+			end
+		end
+		
+		-- add beam 2
+		if math.random(0,99)<chance_of_additional_beam then
+			if weapbluename_local:find("BAK_BEAM_LVL2") ~= nil or weapbluename_local:find("BAK_BEAM_LVL3") ~= nil then
+				anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+				if dy > 0 then
+					anglee = -anglee
+				end
+				anglee = anglee - 30
+				if anglee > 180 then
+					anglee = anglee - 360
+				elseif anglee < -180 then
+					anglee = anglee + 360
+				end
+				corrected_targ2.x = corrected_targ1.x + lenn*math.cos(math.pi*anglee/180)
+				corrected_targ2.y = corrected_targ1.y - lenn*math.sin(math.pi*anglee/180)
+				--wbp = Hyperspace.Blueprints:GetWeaponBlueprint('BAK_BEAM_LVL0')
+				wbp = Hyperspace.Blueprints:GetWeaponBlueprint(root_weapbluename_local)
+				beam = Hyperspace.App.world.space:CreateBeam(wbp, projectile.position, projectile.currentSpace, projectile.ownerId, corrected_targ1, corrected_targ2, projectile.destinationSpace, projectile.length, projectile.heading)--projectile.heading
+				beam.sub_start.x = beam_dist*math.cos(projectile.entryAngle)
+				beam.sub_start.y = beam_dist*math.sin(projectile.entryAngle)
+				beam.position = Hyperspace.Pointf(beam.position.x+2, beam.position.y+2)
+			end
+		end
+		
+		projectile:Kill()
+	end
+	
 	
 	
 	--print (math.deg(3.14))--180 -- перевод длины окружности в градусы, не нужно в этот раз...
@@ -16533,7 +20321,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(
 		if dy > 0 then
 			anglee = -anglee
 		end
-		anglee = anglee + 53
+		anglee = anglee + 51
 		if anglee > 180 then
 			anglee = anglee - 360
 		elseif anglee < -180 then
@@ -16551,7 +20339,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(
 		if dy > 0 then
 			anglee = -anglee
 		end
-		anglee = anglee + 106
+		anglee = anglee + 102
 		if anglee > 180 then
 			anglee = anglee - 360
 		elseif anglee < -180 then
@@ -16569,7 +20357,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(
 		if dy > 0 then
 			anglee = -anglee
 		end
-		anglee = anglee + 159--53--106
+		anglee = anglee + 153--53--106
 		if anglee > 180 then
 			anglee = anglee - 360
 		elseif anglee < -180 then
@@ -16587,7 +20375,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(
 		if dy > 0 then
 			anglee = -anglee
 		end
-		anglee = anglee - 159
+		anglee = anglee - 153
 		if anglee > 180 then
 			anglee = anglee - 360
 		elseif anglee < -180 then
@@ -16605,7 +20393,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(
 		if dy > 0 then
 			anglee = -anglee
 		end
-		anglee = anglee - 106
+		anglee = anglee - 102
 		if anglee > 180 then
 			anglee = anglee - 360
 		elseif anglee < -180 then
@@ -16623,7 +20411,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(
 		if dy > 0 then
 			anglee = -anglee
 		end
-		anglee = anglee - 53
+		anglee = anglee - 51
 		if anglee > 180 then
 			anglee = anglee - 360
 		elseif anglee < -180 then
@@ -16800,12 +20588,126 @@ end)
 
 script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() 
 	
-end, function(ship)
+end, function()--function(ship)
+	
 	
 	--Hyperspace.metaVariables['rec_sector_statistic'] = 1
 	if Hyperspace.App.menu.shipBuilder.bOpen == true or Hyperspace.App.menu.bOpen == true then -- останавливаем выполнение всех тик-процессов
 		-- НИЧЕГО НЕ ДЕЛАТЬ ТУТ
 	else
+		
+		
+		--БЛОК ИНДИКАЦИИ КОЛИЧЕСТВА СВОБОДНОГО РЕАКТОРА СЛЕВА СНИЗУ
+		--playerShip:GetAvailablePower().first = maximum power
+		--playerShip:GetAvailablePower().second = avaiable power
+		--Hyperspace.PowerManager.GetPowerManager(0).batteryPower.second = max battery power
+		--Hyperspace.PowerManager.GetPowerManager(0).batteryPower.first = USED battery power
+		if playerPowerManager == nil then
+			if Hyperspace.PowerManager then
+				playerPowerManager = Hyperspace.PowerManager.GetPowerManager(0)
+			end
+		end
+		
+		if playerPowerManager then
+			
+			--print('tpc='..playerPowerManager.iTempPowerCap)--1000
+			--print('tpl='..playerPowerManager.iTempPowerLoss)--0
+			--print('tdp='..playerPowerManager.iTempDividePower)--1
+			
+			--print('cp='..playerPowerManager.currentPower.first..','..playerPowerManager.currentPower.second)
+			--playerPowerManager.currentPower.first -использовано на системы, не учитывает батарею, не учитывает потерю энергии эвентов
+			--playerPowerManager.currentPower.second -доступно всего, не учитывает батарею, не учитывает потерю энергии эвентов
+			
+			local battery_energy_max = 0
+			local battery_energy_avaiable = 0
+			
+			if playerShip and playerShip.batterySystem ~= nil and playerShip.batterySystem.bTurnedOn == true then
+				if playerShip.batterySystem:GetEffectivePower() == 2 then
+					battery_energy_max = 4
+				else
+					battery_energy_max = 2
+				end
+				
+				local battery_used_bars = 0
+				for system in vter(playerShip.vSystemList) do
+					if system:GetId() == 11 then --artillery. если несколько артиллерий, то будет несколько system, но с одинаковым Id, равным 11...
+						battery_used_bars = battery_used_bars + system.iBatteryPower
+					else
+						battery_used_bars = battery_used_bars + system.iBatteryPower
+					end
+				end
+				battery_energy_avaiable = battery_energy_max - battery_used_bars
+			end
+			
+			
+			local reactor_lvl_max = playerShip:GetAvailablePower().first
+			local reactor_lvl_avaiable = playerShip:GetAvailablePower().second
+			
+			local reactor_tpc = playerPowerManager.iTempPowerCap
+			local reactor_delta = 0
+			
+			if Hyperspace.App.world.space.bStorm == true then--т.к. это отдельно работает, то пришлось вручную вынести расчёт
+				reactor_tpc = reactor_lvl_max//2 + reactor_lvl_max%2
+				--print(reactor_tpc)
+			end
+			
+			--print(reactor_tpc)
+			if reactor_tpc > 0 and reactor_tpc < 70 then
+				if reactor_lvl_max > reactor_tpc then
+					reactor_delta = reactor_lvl_max - reactor_tpc
+					reactor_lvl_max = reactor_tpc
+				end
+			end
+			
+			
+			
+			
+			if reactor_delta > 0 then
+				reactor_lvl_avaiable = reactor_lvl_avaiable - reactor_delta
+			end
+			
+			if battery_energy_max > 0 then
+				reactor_lvl_max = reactor_lvl_max + battery_energy_max
+				reactor_lvl_avaiable = reactor_lvl_avaiable + battery_energy_avaiable
+			end
+			
+			Graphics.CSurface.GL_SetColor(varr.color_white)
+			if hasAnyAugmentationOfList(playerShip, {"PROJECTILE_EATER", "HID_PROJECTILE_EATER"}) == true then
+				Graphics.freetype.easy_printCenter(5, 61, 709, math.floor(reactor_lvl_avaiable)..'/'..math.floor(reactor_lvl_max))
+			else
+				Graphics.freetype.easy_printCenter(5, 26, 692, math.floor(reactor_lvl_avaiable)..'/'..math.floor(reactor_lvl_max))
+			end
+		end
+		
+		
+		
+		--индикация вражеского взлома - цель система будет указана
+		--целевая система взлома, индикатор, хак летит, взломщик, хак-дрон
+		if enemyShip and playerShip and gui and GSIp and enemyShip.hackingSystem and enemyShip.hackingSystem.drone~=nil and enemyShip.hackingSystem.drone.arrived == false then
+			if playerShip:GetSystem(7) and playerShip:GetSystem(7):GetEffectivePower() >= 3 then
+				if enemyShip:GetSystem(15) and enemyShip:GetSystem(15):GetEffectivePower() > 0 then
+					local systtt = nil
+					if enemyShip.hackingSystem.queuedSystem ~= nil then
+						systtt = enemyShip.hackingSystem.queuedSystem
+					end
+					if enemyShip.hackingSystem.currentSystem ~= nil then
+						systtt = enemyShip.hackingSystem.currentSystem
+					end
+					if systtt~=nil then
+						local idroo = systtt:GetRoomId()
+						local tposps = playerShip:GetRoomCenter(idroo)
+						Graphics.CSurface.GL_PushMatrix()
+						Graphics.CSurface.GL_Translate(tposps.x + gui.shipPosition.x - 3, tposps.y + gui.shipPosition.y - 45)
+						if varr.micro_tick_counter25 > 500.0 then
+							Graphics.CSurface.GL_RenderPrimitive(varr.enemy_hack_target)
+						else
+							Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.enemy_hack_target, varr.color_transp)
+						end
+						Graphics.CSurface.GL_PopMatrix()
+					end
+				end
+			end
+		end
 		
 		
 		
@@ -16855,6 +20757,8 @@ end, function(ship)
 			Hyperspace.metaVariables['challenge_noevd'] == 1 or
 			Hyperspace.metaVariables['challenge_noorc'] == 1 or
 			Hyperspace.metaVariables['challenge_notxt'] == 1 or
+			Hyperspace.metaVariables['challenge_notmr'] == 1 or
+			Hyperspace.metaVariables['challenge_nogus'] == 1 or
 			Hyperspace.metaVariables['challenge_nostor'] == 1 then
 			
 			Graphics.CSurface.GL_PushMatrix()
@@ -16892,21 +20796,16 @@ end, function(ship)
 		
 		--показывает иконку капсулы как напоминание если находит её в слотах орудий или трюме
 		if gui and gui.upgradeButton.bActive == true and Hyperspace.playerVariables['is_really_safe_place'] == 1 then
+			
 			local bFoundCapsule = false
 			if playerShip and playerShip.weaponSystem then
 				for pf in vter(playerShip.weaponSystem.weapons) do
-					
-					-- pf.blueprint.desc.title.data = "Хрень собачья"
-					-- pf.blueprint.desc.shortTitle.data = "Хрень 2"
-					-- pf.blueprint.desc.description.data = "блаблабла"
-					
 					if pf.blueprint.name == "CAPSULE_FED" then
 						bFoundCapsule = true
 						break
 					end
 				end
 			end
-			
 			if bFoundCapsule == false then
 				for carg in vter (gui.equipScreen:GetCargoHold()) do
 					if carg == "CAPSULE_FED" then
@@ -16915,24 +20814,66 @@ end, function(ship)
 					end
 				end
 			end
+			
+			local bFoundBarrel = false
+			if playerShip and playerShip.weaponSystem then
+				for pf in vter(playerShip.weaponSystem.weapons) do
+					if pf.blueprint.name == "BARREL_FUEL" then
+						bFoundBarrel = true
+						break
+					end
+				end
+			end
+			if bFoundBarrel == false then
+				for carg in vter (gui.equipScreen:GetCargoHold()) do
+					if carg == "BARREL_FUEL" then
+						bFoundBarrel = true
+						break
+					end
+				end
+			end
+			
+			local x_off_cap = 736
+			local x_off_bar = 736
+			if bFoundBarrel == true and bFoundCapsule == true then
+				x_off_cap = 724
+				x_off_bar = 748
+			end
+			
 			if bFoundCapsule == true then
 				Graphics.CSurface.GL_PushMatrix()
-				Graphics.CSurface.GL_Translate(736, 1)
+				Graphics.CSurface.GL_Translate(x_off_cap, 1)
 				if Hyperspace.playerVariables['counter_number_of_sector'] == 7 then
 					if varr.micro_tick_counter22 > 1000.0 then
 						Graphics.CSurface.GL_RenderPrimitive(varr.icon_capsule)
 					else
-						--Graphics.CSurface.GL_RenderPrimitive(varr.icon_capsule)
 						Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.icon_capsule,varr.color_green_bright)
 					end
 				else
 					Graphics.CSurface.GL_RenderPrimitive(varr.icon_capsule)
 				end
-				
 				Graphics.CSurface.GL_PopMatrix()
-				if mouseInside({x = 736, y = 1, w = 24, h = 24}) then
+				if mouseInside({x = x_off_cap, y = 1, w = 24, h = 24}) then
 					Hyperspace.Mouse:InstantTooltip()
 					Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_capsule'))
+				end
+			end
+			if bFoundBarrel == true then
+				Graphics.CSurface.GL_PushMatrix()
+				Graphics.CSurface.GL_Translate(x_off_bar, 1)
+				if playerShip.fuel_count == 0 then--Hyperspace.playerVariables['counter_number_of_sector'] == 7 then
+					if varr.micro_tick_counter22 > 1000.0 then
+						Graphics.CSurface.GL_RenderPrimitive(varr.icon_barrel)
+					else
+						Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.icon_barrel,varr.color_green_bright)
+					end
+				else
+					Graphics.CSurface.GL_RenderPrimitive(varr.icon_barrel)
+				end
+				Graphics.CSurface.GL_PopMatrix()
+				if mouseInside({x = x_off_bar, y = 1, w = 24, h = 24}) then
+					Hyperspace.Mouse:InstantTooltip()
+					Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_barrel'))
 				end
 			end
 		end
@@ -16970,7 +20911,413 @@ end, function(ship)
 	
 	-- дополнение обычного прицела точечного луча для этих спецорудий
 	if gui and gui.combatControl and gui.combatControl.weapControl and gui.combatControl.weapControl.armedWeapon then
-		if gui.combatControl.weapControl.armedWeapon.blueprint.name:find("BA_BEAM_VILKA_G") ~= nil then
+		local awb_name = gui.combatControl.weapControl.armedWeapon.blueprint.name
+		
+		if awb_name:find("_LINE_TARG") ~= nil then
+			--блок прицеливания по линии
+			for t_point in vter(gui.combatControl.aimingPoints) do
+				if gui.combatControl.potentialAiming ~= nil then
+					if gui.combatControl.potentialAiming.x ~= -1 or gui.combatControl.potentialAiming.y ~= -1 then
+						
+						local count_of_targ_circles = 2
+						local len_max = 100
+						local len_min = 50
+						len_min, len_max = get_len_min_max(awb_name)
+						if awb_name:find("GRENADE_LAUNCHER1") ~= nil then
+							count_of_targ_circles = 2
+						elseif awb_name:find("GRENADE_LAUNCHER2") ~= nil then
+							count_of_targ_circles = 3
+						elseif awb_name:find("GRENADE_LAUNCHER3") ~= nil then
+							count_of_targ_circles = 4
+						end
+						
+						--хаха, регулирует длину луча через колёсико мыши
+						if varr.scroll_mouse_detector ~= 0 then
+							local lenval = Hyperspace.Blueprints:GetWeaponBlueprint(awb_name).length
+							lenval = lenval + varr.scroll_mouse_detector*5.0
+							if lenval > len_max then
+								lenval = len_max
+							elseif lenval < len_min then
+								lenval = len_min
+							end
+							Hyperspace.Blueprints:GetWeaponBlueprint(awb_name).length = lenval
+							--print(lenval)
+							varr.scroll_mouse_detector = 0
+						end
+						
+						local circle_radius = 7.0
+						
+						local start_point = Hyperspace.Pointf(gui.combatControl.targetPosition.x+gui.combatControl.position.x+t_point.x, gui.combatControl.targetPosition.y+gui.combatControl.position.y+t_point.y)
+						local dx = gui.combatControl.potentialAiming.x - t_point.x
+						local dy = gui.combatControl.potentialAiming.y - t_point.y
+						
+						local lenn = Hyperspace.Blueprints:GetWeaponBlueprint(awb_name).length--projectile.length
+						local coeff = (math.sqrt(dx*dx+dy*dy))/lenn 
+						
+						local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						--anglee = anglee
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						
+						--start
+						Graphics.CSurface.GL_DrawCircle(start_point.x, start_point.y, circle_radius, varr.color_red_targ2_opaced)
+						
+						--finish
+						local x_tt = start_point.x + lenn*math.cos(math.pi*anglee/180)
+						local y_tt = start_point.y - lenn*math.sin(math.pi*anglee/180)
+						Graphics.CSurface.GL_DrawCircle(x_tt, y_tt, circle_radius, varr.color_red_targ2_opaced)
+						
+						if count_of_targ_circles == 3 then
+							x_tt = start_point.x + 0.5*lenn*math.cos(math.pi*anglee/180)
+							y_tt = start_point.y - 0.5*lenn*math.sin(math.pi*anglee/180)
+							Graphics.CSurface.GL_DrawCircle(x_tt, y_tt, circle_radius, varr.color_red_targ2_opaced)
+						elseif count_of_targ_circles == 4 then
+							x_tt = start_point.x + 0.33*lenn*math.cos(math.pi*anglee/180)
+							y_tt = start_point.y - 0.33*lenn*math.sin(math.pi*anglee/180)
+							Graphics.CSurface.GL_DrawCircle(x_tt, y_tt, circle_radius, varr.color_red_targ2_opaced)
+							
+							x_tt = start_point.x + 0.66*lenn*math.cos(math.pi*anglee/180)
+							y_tt = start_point.y - 0.66*lenn*math.sin(math.pi*anglee/180)
+							Graphics.CSurface.GL_DrawCircle(x_tt, y_tt, circle_radius, varr.color_red_targ2_opaced)
+						end
+						
+					end
+				end
+			end
+		elseif awb_name:find("BA_BEAM_TRI") ~= nil then
+			for t_point in vter(gui.combatControl.aimingPoints) do
+				if gui.combatControl.potentialAiming ~= nil then
+					if gui.combatControl.potentialAiming.x ~= -1 or gui.combatControl.potentialAiming.y ~= -1 then
+						local color_main = nil
+						local color_submain = nil
+						
+						if varr.bPressedLCtrl == false then
+							if gui.combatControl.weapControl.autoFiring == false then
+								color_main = varr.color_red_targ_soft
+								color_submain = varr.color_red_targ_opaced
+							else
+								color_main = varr.color_yellow_bright_minibright
+								color_submain = varr.color_yellow_bright_opaced
+							end
+						else
+							if gui.combatControl.weapControl.autoFiring == false then
+								color_main = varr.color_yellow_bright_minibright
+								color_submain = varr.color_yellow_bright_opaced
+							else
+								color_main = varr.color_red_targ_soft
+								color_submain = varr.color_red_targ_opaced
+							end
+						end
+						
+						local wide_of_clap = 45
+						
+						local start_point = Hyperspace.Pointf(gui.combatControl.targetPosition.x+gui.combatControl.position.x+t_point.x, gui.combatControl.targetPosition.y+gui.combatControl.position.y+t_point.y)
+						local dx = gui.combatControl.potentialAiming.x - t_point.x
+						local dy = gui.combatControl.potentialAiming.y - t_point.y
+						
+						local lenn = Hyperspace.Blueprints:GetWeaponBlueprint(awb_name).length--projectile.length
+						local coeff = (math.sqrt(dx*dx+dy*dy))/lenn 
+						local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee + 90
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						
+						
+						
+						local new_start_point_x = start_point.x + wide_of_clap*math.cos(math.pi*anglee/180)
+						local new_start_point_y = start_point.y - wide_of_clap*math.sin(math.pi*anglee/180)
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						--anglee = anglee + 90
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						
+						local x_tt = new_start_point_x + lenn*math.cos(math.pi*anglee/180)
+						local y_tt = new_start_point_y - lenn*math.sin(math.pi*anglee/180)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 12.0, color_submain)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 8.0, color_submain)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 6.0, color_submain)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 4.0, varr.color_dark)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 2.0, color_main)
+						
+						
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee - 90
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						
+						
+						
+						new_start_point_x = start_point.x + wide_of_clap*math.cos(math.pi*anglee/180)
+						new_start_point_y = start_point.y - wide_of_clap*math.sin(math.pi*anglee/180)
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						--anglee = anglee + 90
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						
+						x_tt = new_start_point_x + lenn*math.cos(math.pi*anglee/180)
+						y_tt = new_start_point_y - lenn*math.sin(math.pi*anglee/180)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 12.0, color_submain)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 8.0, color_submain)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 6.0, color_submain)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 4.0, varr.color_dark)
+						Graphics.CSurface.GL_DrawLine(new_start_point_x, new_start_point_y, x_tt, y_tt, 2.0, color_main)
+					end
+				end
+			end
+		elseif awb_name:find("BAK_BEAM_LVL") ~= nil then
+			for t_point in vter(gui.combatControl.aimingPoints) do
+				if gui.combatControl.potentialAiming ~= nil then
+					if gui.combatControl.potentialAiming.x ~= -1 or gui.combatControl.potentialAiming.y ~= -1 then
+						local color_main = nil
+						local color_submain = nil
+						
+						if varr.bPressedLCtrl == false then
+							if gui.combatControl.weapControl.autoFiring == false then
+								color_main = varr.color_red_targ_soft
+								color_submain = varr.color_red_targ_opaced
+							else
+								color_main = varr.color_yellow_bright_minibright
+								color_submain = varr.color_yellow_bright_opaced
+							end
+						else
+							if gui.combatControl.weapControl.autoFiring == false then
+								color_main = varr.color_yellow_bright_minibright
+								color_submain = varr.color_yellow_bright_opaced
+							else
+								color_main = varr.color_red_targ_soft
+								color_submain = varr.color_red_targ_opaced
+							end
+						end
+						
+						--local bnameloc = gui.combatControl.weapControl.armedWeapon.blueprint.name
+						
+						--local start_point = Hyperspace.Pointf(gui.combatControl.targetPosition.x+gui.combatControl.position.x+t_point.x-27, gui.combatControl.targetPosition.y+gui.combatControl.position.y+t_point.y-27)
+						local start_point = Hyperspace.Pointf(gui.combatControl.targetPosition.x+gui.combatControl.position.x+t_point.x, gui.combatControl.targetPosition.y+gui.combatControl.position.y+t_point.y)
+						local dx = gui.combatControl.potentialAiming.x - t_point.x
+						local dy = gui.combatControl.potentialAiming.y - t_point.y
+						
+						local lenn = Hyperspace.Blueprints:GetWeaponBlueprint(awb_name).length--projectile.length
+						local coeff = (math.sqrt(dx*dx+dy*dy))/lenn 
+						local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee + 30
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						
+						local chance_of_additional_beam = 50
+						if awb_name:find("BAK_BEAM_LVL3") ~= nil then
+							chance_of_additional_beam = 75
+						end
+						
+						if awb_name:find("BAK_BEAM_LVL1") ~= nil or awb_name:find("BAK_BEAM_LVL2") ~= nil or awb_name:find("BAK_BEAM_LVL3") ~= nil then
+							local x_tt = start_point.x + lenn*math.cos(math.pi*anglee/180)
+							local y_tt = start_point.y - lenn*math.sin(math.pi*anglee/180)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 12.0, color_submain)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 8.0, color_submain)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 6.0, color_submain)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 4.0, varr.color_dark)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 2.0, color_main)
+							
+							x_tt = start_point.x + 0.5*lenn*math.cos(math.pi*anglee/180)
+							y_tt = start_point.y - 0.5*lenn*math.sin(math.pi*anglee/180)
+							Graphics.CSurface.GL_SetColor(varr.color_dark)
+							Graphics.freetype.easy_printCenter(8, x_tt+1, y_tt+1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt+1, y_tt, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt+1, y_tt-1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt, y_tt+1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt, y_tt-1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt-1, y_tt+1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt-1, y_tt, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt-1, y_tt-1, chance_of_additional_beam.."%")
+							Graphics.CSurface.GL_SetColor(color_main)
+							Graphics.freetype.easy_printCenter(8, x_tt, y_tt, chance_of_additional_beam.."%")
+						end
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee - 30
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						
+						if awb_name:find("BAK_BEAM_LVL2") ~= nil or awb_name:find("BAK_BEAM_LVL3") ~= nil then
+							local x_tt = start_point.x + lenn*math.cos(math.pi*anglee/180)
+							local y_tt = start_point.y - lenn*math.sin(math.pi*anglee/180)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 12.0, color_submain)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 8.0, color_submain)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 6.0, color_submain)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 4.0, varr.color_dark)
+							Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 2.0, color_main)
+							
+							x_tt = start_point.x + 0.5*lenn*math.cos(math.pi*anglee/180)
+							y_tt = start_point.y - 0.5*lenn*math.sin(math.pi*anglee/180)
+							Graphics.CSurface.GL_SetColor(varr.color_dark)
+							Graphics.freetype.easy_printCenter(8, x_tt+1, y_tt+1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt+1, y_tt, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt+1, y_tt-1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt, y_tt+1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt, y_tt-1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt-1, y_tt+1, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt-1, y_tt, chance_of_additional_beam.."%")
+							Graphics.freetype.easy_printCenter(8, x_tt-1, y_tt-1, chance_of_additional_beam.."%")
+							Graphics.CSurface.GL_SetColor(color_main)
+							Graphics.freetype.easy_printCenter(8, x_tt, y_tt, chance_of_additional_beam.."%")
+						end
+					end
+				end
+			end
+		elseif awb_name:find("BA_BEAM_VILKA_ADV") ~= nil then
+			
+			
+			
+			for t_point in vter(gui.combatControl.aimingPoints) do
+				if gui.combatControl.potentialAiming ~= nil then
+					if gui.combatControl.potentialAiming.x ~= -1 or gui.combatControl.potentialAiming.y ~= -1 then
+						
+						local wide_of_clap = 35
+						
+						local start_point = Hyperspace.Pointf(gui.combatControl.targetPosition.x+gui.combatControl.position.x+t_point.x, gui.combatControl.targetPosition.y+gui.combatControl.position.y+t_point.y)
+						
+						Graphics.CSurface.GL_PopMatrix()
+						Graphics.CSurface.GL_PushMatrix()
+						Graphics.CSurface.GL_Translate(start_point.x-27, start_point.y-27)
+						if varr.bPressedLCtrl == false then
+							if gui.combatControl.weapControl.autoFiring == false then
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_r)
+							else
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_y)
+							end
+						else
+							if gui.combatControl.weapControl.autoFiring == false then
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_y)
+							else
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_r)
+							end
+						end
+						Graphics.CSurface.GL_PopMatrix()
+						
+						
+						
+						local dx = gui.combatControl.potentialAiming.x - t_point.x
+						local dy = gui.combatControl.potentialAiming.y - t_point.y
+						
+						local lenn = Hyperspace.Blueprints:GetWeaponBlueprint(awb_name).length--projectile.length
+						local coeff = (math.sqrt(dx*dx+dy*dy))/lenn 
+						
+						local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee + 90
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						
+						local new_start_point_x = start_point.x + wide_of_clap*math.cos(math.pi*anglee/180)
+						local new_start_point_y = start_point.y - wide_of_clap*math.sin(math.pi*anglee/180)
+						
+						Graphics.CSurface.GL_PopMatrix()
+						Graphics.CSurface.GL_PushMatrix()
+						Graphics.CSurface.GL_Translate(new_start_point_x-27, new_start_point_y-27)
+						if varr.bPressedLCtrl == false then
+							if gui.combatControl.weapControl.autoFiring == false then
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_r)
+							else
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_y)
+							end
+						else
+							if gui.combatControl.weapControl.autoFiring == false then
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_y)
+							else
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_r)
+							end
+						end
+						Graphics.CSurface.GL_PopMatrix()
+						
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee - 90
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						
+						new_start_point_x = start_point.x + wide_of_clap*math.cos(math.pi*anglee/180)
+						new_start_point_y = start_point.y - wide_of_clap*math.sin(math.pi*anglee/180)
+						
+						Graphics.CSurface.GL_PopMatrix()
+						Graphics.CSurface.GL_PushMatrix()
+						Graphics.CSurface.GL_Translate(new_start_point_x-27, new_start_point_y-27)
+						if varr.bPressedLCtrl == false then
+							if gui.combatControl.weapControl.autoFiring == false then
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_r)
+							else
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_y)
+							end
+						else
+							if gui.combatControl.weapControl.autoFiring == false then
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_y)
+							else
+								Graphics.CSurface.GL_RenderPrimitive(varr.mini_target_r)
+							end
+						end
+						Graphics.CSurface.GL_PopMatrix()
+					end
+				end
+			end
+			
+			
+			
+		
+		elseif awb_name:find("BA_BEAM_VILKA_G") ~= nil then
 			local posy_targ = Hyperspace.Mouse.position
 			Graphics.CSurface.GL_PushMatrix()
 			Graphics.CSurface.GL_Translate(Hyperspace.Mouse.position.x-35-27, Hyperspace.Mouse.position.y-27)
@@ -17004,7 +21351,7 @@ end, function(ship)
 				end
 			end
 			Graphics.CSurface.GL_PopMatrix()
-		elseif gui.combatControl.weapControl.armedWeapon.blueprint.name:find("BA_BEAM_VILKA_V") ~= nil then
+		elseif awb_name:find("BA_BEAM_VILKA_V") ~= nil then
 			local posy_targ = Hyperspace.Mouse.position
 			Graphics.CSurface.GL_PushMatrix()
 			Graphics.CSurface.GL_Translate(Hyperspace.Mouse.position.x-27, Hyperspace.Mouse.position.y-35-27)
@@ -17038,105 +21385,151 @@ end, function(ship)
 				end
 			end
 			Graphics.CSurface.GL_PopMatrix()
-		elseif gui.combatControl.weapControl.armedWeapon.blueprint.name:find("BA_BEAM_PRISM_MAIN") ~= nil then
+		elseif awb_name:find("BA_BEAM_PRISM_MAIN") ~= nil then
 			for t_point in vter(gui.combatControl.aimingPoints) do
 				if gui.combatControl.potentialAiming ~= nil then
-					
-					local start_point = Hyperspace.Pointf(gui.combatControl.targetPosition.x+gui.combatControl.position.x+t_point.x-27, gui.combatControl.targetPosition.y+gui.combatControl.position.y+t_point.y-27)
-					local dx = gui.combatControl.potentialAiming.x - t_point.x
-					local dy = gui.combatControl.potentialAiming.y - t_point.y
-					
-					local lenn = Hyperspace.Blueprints:GetWeaponBlueprint(gui.combatControl.weapControl.armedWeapon.blueprint.name).length--projectile.length
-					local coeff = (math.sqrt(dx*dx+dy*dy))/lenn 
-					local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
-					if dy > 0 then
-						anglee = -anglee
+					if gui.combatControl.potentialAiming.x ~= -1 or gui.combatControl.potentialAiming.y ~= -1 then
+						--local start_point = Hyperspace.Pointf(gui.combatControl.targetPosition.x+gui.combatControl.position.x+t_point.x-27, gui.combatControl.targetPosition.y+gui.combatControl.position.y+t_point.y-27)
+						local start_point = Hyperspace.Pointf(gui.combatControl.targetPosition.x+gui.combatControl.position.x+t_point.x, gui.combatControl.targetPosition.y+gui.combatControl.position.y+t_point.y)
+						local dx = gui.combatControl.potentialAiming.x - t_point.x
+						local dy = gui.combatControl.potentialAiming.y - t_point.y
+						
+						local lenn = Hyperspace.Blueprints:GetWeaponBlueprint(awb_name).length--projectile.length
+						local coeff = (math.sqrt(dx*dx+dy*dy))/lenn 
+						local anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee + 51
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						-- Graphics.CSurface.GL_PushMatrix()
+						-- Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
+						-- Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_orange)
+						-- Graphics.CSurface.GL_PopMatrix()
+						
+						local x_tt = start_point.x + lenn*math.cos(math.pi*anglee/180)
+						local y_tt = start_point.y - lenn*math.sin(math.pi*anglee/180)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 12.0, varr.color_orange_bright_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 8.0, varr.color_orange_bright_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 6.0, varr.color_orange_bright_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 4.0, varr.color_dark)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 2.0, varr.color_orange_bright)
+						
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee + 102
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						-- Graphics.CSurface.GL_PushMatrix()
+						-- Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
+						-- Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_yellow)
+						-- Graphics.CSurface.GL_PopMatrix()
+						x_tt = start_point.x + lenn*math.cos(math.pi*anglee/180)
+						y_tt = start_point.y - lenn*math.sin(math.pi*anglee/180)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 12.0, varr.color_yellow_bright_opaced)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 8.0, varr.color_yellow_bright_opaced)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 6.0, varr.color_yellow_bright_opaced)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 4.0, varr.color_dark)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 2.0, varr.color_yellow_bright_minibright)
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee + 153
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						-- Graphics.CSurface.GL_PushMatrix()
+						-- Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
+						-- Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_green_nashishenniy)
+						-- Graphics.CSurface.GL_PopMatrix()
+						x_tt = start_point.x + lenn*math.cos(math.pi*anglee/180)
+						y_tt = start_point.y - lenn*math.sin(math.pi*anglee/180)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 12.0, varr.color_green_nashishenniy_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 8.0, varr.color_green_nashishenniy_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 6.0, varr.color_green_nashishenniy_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 4.0, varr.color_dark)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 2.0, varr.color_green_nashishenniy)
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee - 153
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						-- Graphics.CSurface.GL_PushMatrix()
+						-- Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
+						-- Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_cyan)
+						-- Graphics.CSurface.GL_PopMatrix()
+						x_tt = start_point.x + lenn*math.cos(math.pi*anglee/180)
+						y_tt = start_point.y - lenn*math.sin(math.pi*anglee/180)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 12.0, varr.color_cyan_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 8.0, varr.color_cyan_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 6.0, varr.color_cyan_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 4.0, varr.color_dark)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 2.0, varr.color_cyan)
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee - 102
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						-- Graphics.CSurface.GL_PushMatrix()
+						-- Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
+						-- Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_blue)
+						-- Graphics.CSurface.GL_PopMatrix()
+						x_tt = start_point.x + lenn*math.cos(math.pi*anglee/180)
+						y_tt = start_point.y - lenn*math.sin(math.pi*anglee/180)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 12.0, varr.color_blue_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 8.0, varr.color_blue_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 6.0, varr.color_blue_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 4.0, varr.color_dark)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 2.0, varr.color_blue)
+						
+						anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
+						if dy > 0 then
+							anglee = -anglee
+						end
+						anglee = anglee - 51
+						if anglee > 180 then
+							anglee = anglee - 360
+						elseif anglee < -180 then
+							anglee = anglee + 360
+						end
+						-- Graphics.CSurface.GL_PushMatrix()
+						-- Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
+						-- Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_violet)
+						-- Graphics.CSurface.GL_PopMatrix()
+						x_tt = start_point.x + lenn*math.cos(math.pi*anglee/180)
+						y_tt = start_point.y - lenn*math.sin(math.pi*anglee/180)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 12.0, varr.color_violet_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 8.0, varr.color_violet_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 6.0, varr.color_violet_opac)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 4.0, varr.color_dark)
+						Graphics.CSurface.GL_DrawLine(start_point.x, start_point.y, x_tt, y_tt, 2.0, varr.color_violet)
 					end
-					anglee = anglee + 53
-					if anglee > 180 then
-						anglee = anglee - 360
-					elseif anglee < -180 then
-						anglee = anglee + 360
-					end
-					Graphics.CSurface.GL_PushMatrix()
-					Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
-					Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_orange)
-					Graphics.CSurface.GL_PopMatrix()
-					
-					anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
-					if dy > 0 then
-						anglee = -anglee
-					end
-					anglee = anglee + 106
-					if anglee > 180 then
-						anglee = anglee - 360
-					elseif anglee < -180 then
-						anglee = anglee + 360
-					end
-					Graphics.CSurface.GL_PushMatrix()
-					Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
-					Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_yellow)
-					Graphics.CSurface.GL_PopMatrix()
-					
-					anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
-					if dy > 0 then
-						anglee = -anglee
-					end
-					anglee = anglee + 159
-					if anglee > 180 then
-						anglee = anglee - 360
-					elseif anglee < -180 then
-						anglee = anglee + 360
-					end
-					Graphics.CSurface.GL_PushMatrix()
-					Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
-					Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_green_nashishenniy)
-					Graphics.CSurface.GL_PopMatrix()
-					
-					anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
-					if dy > 0 then
-						anglee = -anglee
-					end
-					anglee = anglee - 159
-					if anglee > 180 then
-						anglee = anglee - 360
-					elseif anglee < -180 then
-						anglee = anglee + 360
-					end
-					Graphics.CSurface.GL_PushMatrix()
-					Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
-					Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_cyan)
-					Graphics.CSurface.GL_PopMatrix()
-					
-					anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
-					if dy > 0 then
-						anglee = -anglee
-					end
-					anglee = anglee - 106
-					if anglee > 180 then
-						anglee = anglee - 360
-					elseif anglee < -180 then
-						anglee = anglee + 360
-					end
-					Graphics.CSurface.GL_PushMatrix()
-					Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
-					Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_blue)
-					Graphics.CSurface.GL_PopMatrix()
-					
-					anglee = (180*math.acos(dx/(lenn*coeff)))/math.pi
-					if dy > 0 then
-						anglee = -anglee
-					end
-					anglee = anglee - 53
-					if anglee > 180 then
-						anglee = anglee - 360
-					elseif anglee < -180 then
-						anglee = anglee + 360
-					end
-					Graphics.CSurface.GL_PushMatrix()
-					Graphics.CSurface.GL_Translate(start_point.x + lenn*math.cos(math.pi*anglee/180), start_point.y - lenn*math.sin(math.pi*anglee/180))
-					Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.mini_target_prism, varr.color_violet)
-					Graphics.CSurface.GL_PopMatrix()
 				end
 			end
 		end
@@ -17456,6 +21849,7 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 		end
 	end
 	
+	varr.bOpenedTabPanelNow = true
 	
 	if current_tab_name == "crew" then
 		varr.count_of_tick_na_paneli_crew = varr.count_of_tick_na_paneli_crew + 1
@@ -17465,7 +21859,7 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 		if playerShip then
 			
 			
-				
+			--выгоняние экипажа, выгнать
 			--структура отслеживания какой именно тип экипажа мы выбрасываем в космос в этом меню
 			for crew_type_name in vter (Hyperspace.Blueprints:GetBlueprintList("CREW_ALL_ABSOLUTELY_FULL")) do
 				varr.crew_array[crew_type_name] = 0
@@ -17489,7 +21883,6 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 			for crew in vter (playerShip.vCrewList) do
 				if crew:IsDrone() == false and crew.crewAnim.bPlayer==true and crew.bOutOfGame == false and crew.bDead == false then
 					if varr.crew_array[crew.blueprint.name] ~= nil then
-						--varr.crew_array[crew_type_name] = varr.crew_array[crew_type_name] + 1
 						if crew.blueprint.name == "human" then
 							if crew.crewAnim.bMale == true then
 								varr.crew_array[crew.blueprint.name] = varr.crew_array[crew.blueprint.name] + 1
@@ -17502,6 +21895,24 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 					end
 				end
 			end
+			if enemyShip then
+				for crew in vter (enemyShip.vCrewList) do
+					if crew:IsDrone() == false and crew.crewAnim.bPlayer==true and crew.bOutOfGame == false and crew.bDead == false then
+						if varr.crew_array[crew.blueprint.name] ~= nil then
+							if crew.blueprint.name == "human" then
+								if crew.crewAnim.bMale == true then
+									varr.crew_array[crew.blueprint.name] = varr.crew_array[crew.blueprint.name] + 1
+								else
+									varr.crew_array["human_woman"] = varr.crew_array["human_woman"] + 1
+								end
+							else
+								varr.crew_array[crew.blueprint.name] = varr.crew_array[crew.blueprint.name] + 1
+							end
+						end
+					end
+				end
+			end
+			
 			for crew_type_name in vter (Hyperspace.Blueprints:GetBlueprintList("CREW_ALL_ABSOLUTELY_FULL")) do
 				if varr.count_of_tick_na_paneli_crew == 1 then
 					-- в первый тик когда смотрим на панель невозможно выкинуть никого, просто восстанавливаем данные
@@ -17530,7 +21941,11 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 			
 			-- для достижения выкидывания
 			if previous_overfullcrew == true and Hyperspace.ships.player:IsCrewOverFull() == false then
-				Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_GO_AWAY", false)
+				-- if Hyperspace.metaVariables['iwanttohearscreams'] == 1 then
+					-- --ачивка сработает только если включён режим выбрасывания экипажа в космос
+					-- Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_GO_AWAY", false)
+					-- print('gone to space')
+				-- end
 			end
 			previous_overfullcrew = Hyperspace.ships.player:IsCrewOverFull()
 		end
@@ -17594,14 +22009,14 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 		else
 			text_out = text_out..'\n'..Hyperspace.Text:GetText('lua_cur_sector_rew')..' '..tostring(math.floor(costy_pot - iBeginSectorCostP))..' ~'
 		end
-		Graphics.freetype.easy_print(11, 317+offs_x, 143, text_out)
+		Graphics.freetype.easy_print(11, 317+varr.offs_x, 143, text_out)
 		text_out = Hyperspace.Text:GetText('lua_cur_count')--'Текущий счёт:'
-		Graphics.freetype.easy_printCenter(11, 800+offs_x, 145, text_out)
+		Graphics.freetype.easy_printCenter(11, 800+varr.offs_x, 145, text_out)
 		text_out = tostring(math.floor(Hyperspace.Score.currentScore.score))
-		Graphics.freetype.easy_printCenter(16, 800+offs_x, 162, text_out)
+		Graphics.freetype.easy_printCenter(16, 800+varr.offs_x, 162, text_out)
 		diff = tostring(math.floor(Hyperspace.Settings.difficulty))
 		Graphics.CSurface.GL_PushMatrix()
-		Graphics.CSurface.GL_Translate(634+offs_x, 136)
+		Graphics.CSurface.GL_Translate(634+varr.offs_x, 136)
 		if diff == '0' then
 			Graphics.CSurface.GL_RenderPrimitive(varr.stat_0)
 		elseif diff == '1' then
@@ -17610,7 +22025,7 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 			Graphics.CSurface.GL_RenderPrimitive(varr.stat_2)
 		end
 		Graphics.CSurface.GL_PopMatrix()
-		if mouseInside({x = 634+offs_x, y = 136, w = 80, h = 80}) then
+		if mouseInside({x = 634+varr.offs_x, y = 136, w = 80, h = 80}) then
 			Hyperspace.Mouse:InstantTooltip()
 			-- if diff == '0' then
 				-- Hyperspace.Mouse:SetTooltip("Статистика секторов для лёгкого режима")
@@ -17635,7 +22050,7 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 				x_shiftt = 290
 				y_shiftt = -19*15
 			end
-			x_shiftt = x_shiftt + offs_x
+			x_shiftt = x_shiftt + varr.offs_x
 			
 			if mouseInside({x = 310+x_shiftt, y = start_y_off+i*15+y_shiftt, w = 280, h = 15}) then
 				
@@ -17644,8 +22059,8 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 				else
 					Graphics.freetype.easy_printCenter(11, 450+x_shiftt, start_y_off+i*15+y_shiftt, '[style[color:f3f132FF]]'..Hyperspace.Text:GetText('sectorname_short_'..sector_arr[i].inner_name)..'[[/style]]')
 				end
-				sector_text_out = '[style[color:f3f132]]'..Hyperspace.Text:GetText('sectorname_short_'..sector_arr[i].inner_name)..'[[/style]]'
-				sector_text_out = sector_text_out..'\n'..Hyperspace.Text:GetText('lua_statistic_poppyhatty')--'\nНомер   Ср.доход   Посещено'
+				varr.sector_text_out = '[style[color:f3f132]]'..Hyperspace.Text:GetText('sectorname_short_'..sector_arr[i].inner_name)..'[[/style]]'
+				varr.sector_text_out = varr.sector_text_out..'\n'..Hyperspace.Text:GetText('lua_statistic_poppyhatty')--'\nНомер   Ср.доход   Посещено'
 				if sector_arr[i].inner_name == 'FINAL' then
 					local j = 8
 					sd = ''
@@ -17658,7 +22073,7 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 					if j == Hyperspace.playerVariables['counter_number_of_sector'] then
 						sd = '[style[color:f3f132]]'..sd..'[[/style]]'
 					end
-					sector_text_out = sector_text_out..sd
+					varr.sector_text_out = varr.sector_text_out..sd
 				elseif sector_arr[i].inner_name == 'STANDARD_SPACE' then
 					local j = 1
 					sd = ''
@@ -17671,7 +22086,7 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 					if j == Hyperspace.playerVariables['counter_number_of_sector'] then
 						sd = '[style[color:f3f132]]'..sd..'[[/style]]'
 					end
-					sector_text_out = sector_text_out..sd
+					varr.sector_text_out = varr.sector_text_out..sd
 				else
 					for j = 2, 7 do -- было 1-7
 						sd = ''
@@ -17685,11 +22100,11 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 						if j == Hyperspace.playerVariables['counter_number_of_sector'] then
 							sd = '[style[color:f3f132]]'..sd..'[[/style]]'
 						end
-						sector_text_out = sector_text_out..sd
+						varr.sector_text_out = varr.sector_text_out..sd
 					end
 				end
 				Hyperspace.Mouse:InstantTooltip()
-				Hyperspace.Mouse:SetTooltip(sector_text_out)
+				Hyperspace.Mouse:SetTooltip(varr.sector_text_out)
 			else
 				if sector_arr[i].inner_name == map.currentSector.description.type or (i==1 and Hyperspace.playerVariables['counter_number_of_sector'] == 1) or (Hyperspace.playerVariables['counter_number_of_sector'] ~= 1 and map.currentSector.description.type=='CIVILIAN_SECTOR' and sector_arr[i].inner_name == 'TRUE_CIVILIAN_SECTOR') then
 					Graphics.freetype.easy_printCenter(11, 450+x_shiftt, start_y_off+i*15+y_shiftt, '[style[color:'..sector_arr[i].map_color..'FF]]*'..Hyperspace.Text:GetText('sectorname_short_'..sector_arr[i].inner_name)..'*[[/style]]')
@@ -17701,15 +22116,15 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 		-- работают цвета тут! [style[color:FF0000FF]] >> [[/style]]")
 	
 		Graphics.CSurface.GL_PushMatrix()
-		Graphics.CSurface.GL_Translate(button_clearstatBox.x, button_clearstatBox.y)
-		if mouseInside(button_clearstatBox) then
+		Graphics.CSurface.GL_Translate(varr.button_clearstatBox.x, varr.button_clearstatBox.y)
+		if mouseInside(varr.button_clearstatBox) then
 			varr.mouse_inside_mem2 = 999
-			Graphics.CSurface.GL_RenderPrimitive(button_clearstat_select2)
+			Graphics.CSurface.GL_RenderPrimitive(varr.button_clearstat_select2)
 			Hyperspace.Mouse:InstantTooltip()
 			--Hyperspace.Mouse:SetTooltip("Очистить статистику полётов")
 			Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_statistic_clearstat'))
 		else
-			Graphics.CSurface.GL_RenderPrimitive(button_clearstat_on)
+			Graphics.CSurface.GL_RenderPrimitive(varr.button_clearstat_on)
 		end
 		Graphics.CSurface.GL_PopMatrix()
 		
@@ -17730,25 +22145,25 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 		
 		
 		Graphics.CSurface.GL_PushMatrix()
-		Graphics.CSurface.GL_Translate(button_recBox.x, button_recBox.y)
-		if mouseInside(button_recBox) then
+		Graphics.CSurface.GL_Translate(varr.button_recBox.x, varr.button_recBox.y)
+		if mouseInside(varr.button_recBox) then
 			varr.mouse_inside_mem2 = 999
 			if Hyperspace.metaVariables['rec_sector_statistic'] == 1 then
-				Graphics.CSurface.GL_RenderPrimitive(button_recOn_select2)
+				Graphics.CSurface.GL_RenderPrimitive(varr.button_recOn_select2)
 				Hyperspace.Mouse:InstantTooltip()
 				--Hyperspace.Mouse:SetTooltip("Вкл./выкл. запись статистики доходности секторов\n[style[color:86c946]]Запись включена[[/style]]")
 				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_statistic_recon'))
 			else
-				Graphics.CSurface.GL_RenderPrimitive(button_recOff_select2)
+				Graphics.CSurface.GL_RenderPrimitive(varr.button_recOff_select2)
 				Hyperspace.Mouse:InstantTooltip()
 				--Hyperspace.Mouse:SetTooltip("Вкл./выкл. запись статистики доходности секторов\n[style[color:d93130]]Запись выключена[[/style]]")
 				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_statistic_recoff'))
 			end
 		else
 			if Hyperspace.metaVariables['rec_sector_statistic'] == 1 then
-				Graphics.CSurface.GL_RenderPrimitive(button_recOn_on)
+				Graphics.CSurface.GL_RenderPrimitive(varr.button_recOn_on)
 			else
-				Graphics.CSurface.GL_RenderPrimitive(button_recOff_on)
+				Graphics.CSurface.GL_RenderPrimitive(varr.button_recOff_on)
 			end
 		end
 		Graphics.CSurface.GL_PopMatrix()
@@ -18610,6 +23025,39 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 		Graphics.CSurface.GL_PopMatrix()
 		
 		
+		Graphics.CSurface.GL_PushMatrix()
+		Graphics.CSurface.GL_Translate(varr.button_notmr_Box.x - 40, varr.button_notmr_Box.y)
+		if Hyperspace.metaVariables['challenge_notmr'] == 1 then
+			Graphics.CSurface.GL_RenderPrimitive(varr.chall_on)
+		else
+			Graphics.CSurface.GL_RenderPrimitive(varr.chall_off)
+		end
+		Graphics.CSurface.GL_PopMatrix()
+		if Hyperspace.metaVariables['challenge_notmr_win'..diff] > 0 then
+			Graphics.CSurface.GL_PushMatrix()
+			Graphics.CSurface.GL_Translate(varr.button_notmr_Box.x + 29, varr.button_notmr_Box.y + 19)
+			Graphics.CSurface.GL_RenderPrimitive(varr.done_arrow)
+			Graphics.CSurface.GL_PopMatrix()
+		end
+		Graphics.CSurface.GL_PushMatrix()
+		Graphics.CSurface.GL_Translate(varr.button_notmr_Box.x, varr.button_notmr_Box.y)
+		if mouseInside(varr.button_notmr_Box) then
+			varr.button_notmr_ready = true
+			Graphics.CSurface.GL_RenderPrimitive(varr.button_notmr_select2)
+			Hyperspace.Mouse:InstantTooltip()
+			if Hyperspace.metaVariables['challenge_notmr'] == 1 then
+				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_chall_notmr_on')..get_toolchall_adder('notmr'))
+			else
+				Hyperspace.Mouse:SetTooltip(Hyperspace.Text:GetText('lua_chall_notmr_off')..get_toolchall_adder('notmr'))
+			end
+			varr.mouse_inside_mem2 = 888
+		else
+			Graphics.CSurface.GL_RenderPrimitive(varr.button_notmr_on)
+		end
+		Graphics.CSurface.GL_PopMatrix()
+		
+		
+		
 		
 		Graphics.CSurface.GL_PushMatrix()
 		Graphics.CSurface.GL_Translate(varr.button_resetchall_Box.x, varr.button_resetchall_Box.y)
@@ -18664,12 +23112,12 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 			--varr.button_nopause_ready = false
 			--varr.button_nofuel_ready = false
 			--varr.button_nobrain_ready = false
-			Graphics.freetype.easy_printAutoNewlines(12, 340+offs_x_panel, 150, 525, Hyperspace.Text:GetText('lua_chall_infousage2'))
+			Graphics.freetype.easy_printAutoNewlines(12, 340+varr.offs_x_panel, 150, 525, Hyperspace.Text:GetText('lua_chall_infousage2'))
 		else
-			Graphics.freetype.easy_printAutoNewlines(12, 340+offs_x_panel, 150, 525, Hyperspace.Text:GetText('lua_chall_infousage'))
+			Graphics.freetype.easy_printAutoNewlines(12, 340+varr.offs_x_panel, 150, 525, Hyperspace.Text:GetText('lua_chall_infousage'))
 		end
 		
-		Graphics.freetype.easy_printAutoNewlines(10, 340+offs_x_panel, 508, 525, Hyperspace.Text:GetText('lua_chall_help'))
+		Graphics.freetype.easy_printAutoNewlines(10, 340+varr.offs_x_panel, 508, 525, Hyperspace.Text:GetText('lua_chall_help'))
 		
 	end
 	
@@ -18687,7 +23135,7 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 		varr.bIsOpenBuyMenu = true
 	end
 	if current_tab_name == "sell" then
-		
+		varr.bIsOpenSellMenu = true
 	end
 	
 	
@@ -18956,6 +23404,15 @@ function press_button_notxt()
 		Hyperspace.Sounds:PlaySoundMix('moreInfoOff', 10, false)
 	else
 		Hyperspace.metaVariables['challenge_notxt'] = 1
+		Hyperspace.Sounds:PlaySoundMix('moreInfoOn', 10, false)
+	end
+end
+function press_button_notmr()
+	if Hyperspace.metaVariables['challenge_notmr'] == 1 then
+		Hyperspace.metaVariables['challenge_notmr'] = 0
+		Hyperspace.Sounds:PlaySoundMix('moreInfoOff', 10, false)
+	else
+		Hyperspace.metaVariables['challenge_notmr'] = 1
 		Hyperspace.Sounds:PlaySoundMix('moreInfoOn', 10, false)
 	end
 end
@@ -19474,8 +23931,8 @@ end)
 
 script.on_render_event(Defines.RenderEvents.GUI_CONTAINER, function() 
 	--этот блок отрисовки до ГУИ походу вообще бессмысленный т.к. всё что тут не отображается никак
-end, function()
 	
+end, function()
 	
 	-- фуф, чертовски баговылетный блок кода, но кажется привёл в стабильное состояние.
 	-- обеспечивает челлендж с заменой стандартных магазинов на встречу-бой с мотыльками-беспилотниками.
@@ -19631,6 +24088,33 @@ end, function()
 					end
 				end
 			end
+			
+			if map.locations[i].event.eventName:find("PSEVDO_MAGAZIN_")~=nil then
+				if map.locations[i].visited == 0 then
+					if map.locations[i] ~= map.currentLoc then
+						local bConn = false
+						if hasAnyAugmentationOfList(playerShip, {"ADV_SCANNERS", "HID_ADV_SCANNERS", "ADV_SCANNERS_LIFE_SCANNER"}) == true then 
+							bConn = true
+						else
+							for locs2 in vter6(map.currentLoc.connectedLocations) do
+								if locs2 == map.locations[i] then
+									bConn = true
+								end
+							end
+						end
+						if bConn == true then
+							Graphics.CSurface.GL_PushMatrix()
+							Graphics.CSurface.GL_Translate(map.locations[i].loc.x + 386, map.locations[i].loc.y + 89)
+							local alpha = 0.75 + 0.25*math.sin(0.019*varr.micro_tick_counter_psevdomagazin)--регулировка миганий тут
+							Graphics.CSurface.GL_RenderPrimitiveWithColor(varr.store_imitation, Graphics.GL_Color(1.0, 1.0, 1.0, alpha))
+							Graphics.CSurface.GL_PopMatrix()
+						end
+					end
+				end
+			end
+			
+			
+			
 		end
 
 		
@@ -19972,10 +24456,22 @@ script.on_internal_event(Defines.InternalEvents.ON_KEY_DOWN, function(key)
 	if key == Defines.SDL.KEY_LCTRL then
 		varr.bPressedLCtrl = true
 	end
+	if key == Defines.SDL.KEY_RCTRL then
+		varr.bPressedRCtrl = true
+	end
+	if key == Defines.SDL.KEY_BACKSPACE then
+		varr.bPressedBACKSPACE = true
+	end
 	if not isWork then
 		return
 	end
-    if key == Defines.SDL.KEY_RIGHTBRACKET then
+    
+	if key == Defines.SDL.KEY_ESCAPE then
+		if varr.bOpenedGlifPanel == true then
+			varr.bOpenedGlifPanel = false
+		end	
+	end
+	if key == Defines.SDL.KEY_RIGHTBRACKET then
 		if key == Defines.SDL.KEY_RIGHTBRACKET then
 			if Hyperspace.FPS.speedLevel == -2 then
 				Hyperspace.FPS.speedLevel=0
@@ -20031,6 +24527,13 @@ script.on_internal_event(Defines.InternalEvents.ON_KEY_UP, function(key)
 	if key == Defines.SDL.KEY_LCTRL then
 		varr.bPressedLCtrl = false
 	end
+	if key == Defines.SDL.KEY_RCTRL then
+		varr.bPressedRCtrl = false
+	end
+	if key == Defines.SDL.KEY_BACKSPACE then
+		varr.bPressedBACKSPACE = false
+	end
+	
 end)
 
 -- при создании корабля противника, если ещё можно добавляет усиление титановое покрытие
@@ -20346,6 +24849,16 @@ function victory_checks()
 		end
 		count_of_challenges_active = count_of_challenges_active + 1
 	end
+	
+	--введена дополнительная проверка на 3,4 фазу битвы с флагманом
+	--непосредственно перед засчитыванием выполненного испытания
+	--будет проверка на живую королеву-гусеницу на борту игрока. если нет, то нет!
+	if Hyperspace.metaVariables['challenge_nogus'] == 1 then
+		if count_of_gusq_on_player_ship() == 0 then
+			Hyperspace.metaVariables['challenge_nogus'] = 0
+			--print('королева гусениц отсутствует на корабле')
+		end
+	end
 	if Hyperspace.metaVariables['challenge_nogus'] == 1 then
 		if diff == '2' then
 			Hyperspace.metaVariables['challenge_nogus_win2'] = 1
@@ -20411,7 +24924,19 @@ function victory_checks()
 		end
 		count_of_challenges_active = count_of_challenges_active + 1
 	end
-	
+	if Hyperspace.metaVariables['challenge_notmr'] == 1 then
+		if diff == '2' then
+			Hyperspace.metaVariables['challenge_notmr_win2'] = 1
+			Hyperspace.metaVariables['challenge_notmr_win1'] = 1
+			Hyperspace.metaVariables['challenge_notmr_win0'] = 1
+		elseif diff == '1' then
+			Hyperspace.metaVariables['challenge_notmr_win1'] = 1
+			Hyperspace.metaVariables['challenge_notmr_win0'] = 1
+		else
+			Hyperspace.metaVariables['challenge_notmr_win0'] = 1
+		end
+		count_of_challenges_active = count_of_challenges_active + 1
+	end
 	
 	if count_of_challenges_active >= 3 then
 		Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_3_CHALLENGE", false)
@@ -20650,10 +25175,10 @@ script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, function() end, functi
 			end
 			
 			local strFishAugsDesc = ''
-			for augs in vter(Hyperspace.Blueprints:GetBlueprintList("CAN_BE_HIDDEN_AUGS")) do
+			--for augs in vter(Hyperspace.Blueprints:GetBlueprintList("CAN_BE_HIDDEN_AUGS")) do
+			for augs in vter(varr.local_list_CAN_BE_HIDDEN_AUGS) do
 				if Hyperspace.playerVariables['installed_'..augs] == 1 then
 					search_word = augs
-					
 					if augs:find('FISH_BUFF') == nil then
 						Graphics.CSurface.GL_PushMatrix()
 						--Graphics.CSurface.GL_LoadIdentity()
@@ -20950,6 +25475,8 @@ end
 
 
 script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(shipMgr, projectile, damage, collresponse)
+	-- не фиксирует бомбы, даже если по факту они взовались на золт.щите
+	
 	--print(tostring(projectile.extend.name)..','..projectile:GetType())
 	local projName = projectile.extend.name
 	if not (projName == "" or projName == "nil" or projName == "PDS_SHOT") then
@@ -20961,7 +25488,7 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(s
 						if shipMgr.shieldSystem.shields.power.super.first == 0 then
 							local px = gui.shipPosition.x + projectile.position.x
 							local py = gui.shipPosition.y + projectile.position.y
-							table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/asteroidExplosion.png"), time_length = 800.0, time_length_mem = 800.0, x = px-16, y = py-16, w=192, h=32, fw=32, fh=32, layer = "SPACE_STATUS_up"})
+							table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/asteroidExplosion.png"), time_length = 800.0, time_length_mem = 800.0, x = px-16, y = py-16, w=192, h=32, fw=32, fh=32, layer = "SPACE_STATUS_up"})
 							Hyperspace.Sounds:PlaySoundMix('reflect_projectile', 10, false)
 							projectile:Kill()
 							return Defines.Chain.PREEMPT
@@ -20974,7 +25501,7 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(s
 						if shipMgr.shieldSystem.shields.power.super.first == 0 then
 							local px = gui.combatControl.targetPosition.x+gui.combatControl.position.x + projectile.position.x
 							local py = gui.combatControl.targetPosition.y+gui.combatControl.position.y + projectile.position.y
-							table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/asteroidExplosion.png"), time_length = 800.0, time_length_mem = 800.0, x = px-16, y = py-16, w=192, h=32, fw=32, fh=32, layer = "SPACE_STATUS_up"})
+							table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/asteroidExplosion.png"), time_length = 800.0, time_length_mem = 800.0, x = px-16, y = py-16, w=192, h=32, fw=32, fh=32, layer = "SPACE_STATUS_up"})
 							Hyperspace.Sounds:PlaySoundMix('reflect_projectile', 10, false)
 							projectile:Kill()
 							return Defines.Chain.PREEMPT
@@ -20989,15 +25516,11 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(s
 	return Defines.Chain.CONTINUE
 end)
 
---script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(shipMgr, projectile, damage, collresponse)
-	--print('coll shield')
-	--print('ship'..shipMgr.iShipId)
---	return Defines.Chain.CONTINUE
---end)
-
 --script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipMgr, projectile, damage, collresponse)
-	-- print('coll shield'..shipMgr.iShipId)
+	--не фиксирует попадания бомб!
 	
+	--print('coll shield'..shipMgr.iShipId)
+	--print(tostring(projectile.extend.name)..','..projectile:GetType())
 	-- print('ss='..shipMgr.shieldSystem.shields.power.super.first)
 	-- print('s='..shipMgr.shieldSystem.shields.power.first)
 	-- print('coll type = '..collresponse.collision_type)
@@ -21065,6 +25588,15 @@ function make_full_list_of_game_equipment()
 					-- print('zero energy weapon = '..wnamelocal)
 				-- end
 			end
+			
+			
+			-- помнит тип
+			local nodetypelocal = Node:first_node("type")
+			if nodetypelocal ~= nil then
+				varr.full_list_of_game_equipment_type[wnamelocal] = tonumber(nodetypelocal:value())
+				--print(wnamelocal..','..nodetypelocal:value())
+			end
+			
 			
 			-- помнит редкость
 			local noderaritylocal = Node:first_node("rarity")
@@ -21183,6 +25715,7 @@ function define_additional_flagship_augment()
 	--local baug = boss_aug_arr[math.random(0, boss_aug_arr:size()-1)]--полностью случайный выбор усиления на флагман
 	--baug = "ION_RESONATOR"
 	--baug = "BONUS_SHIELD_PLUS"
+	--baug = "PDS_ASSIST"
 	
 	Hyperspace.metaVariables['additional_flagship_augment'] = 0
 	for i = 1, #varr.full_list_of_game_equipment do
@@ -21278,7 +25811,7 @@ end
 	-- --print('false')
 	-- return false
 -- end
-function isThereMinimalSenseToEvadeBattle()
+function isThereMinimalSenseToEvadeBattle()--reason, Reason
 	if isPhisycallyDangerousEnvironment() == true then
 		return true
 	end
@@ -21297,8 +25830,10 @@ function isThereMinimalSenseToEvadeBattle()
 	if enemyShip.droneSystem then
 		local drones = enemyShip.droneSystem.drones
 		for i = 0, drones:size() - 1 do
-			if drones[i].powered == true or drones[i].powerRequired == 0 then
-				return true
+			if drones[i].blueprint.typeName == "COMBAT" then--учитывает боевые космические атакующие дроны
+				if drones[i].powered == true or drones[i].powerRequired == 0 then
+					return true
+				end
 			end
 		end
 	end
@@ -21467,7 +26002,9 @@ script.on_internal_event(Defines.InternalEvents.CREW_LOOP, function(crew)
 									varr.previous_crew_intruder_state_arr[temporal_crew.extend.selfId] = true
 									temporal_crew.extend.deathTimer = Hyperspace.TimerHelper(false)
 									temporal_crew.extend.deathTimer:Start(30.0)
-									Hyperspace.Sounds:PlaySoundMix('teleport_multi_works', 8, false)
+									add_to_SoundOrder('teleport_multi_works')
+									--PlaySoundMix_delayed ('teleport_multi_works', 8, 100.0)
+									--Hyperspace.Sounds:PlaySoundMix('teleport_multi_works', 8, false)
 									CopyAllCrewSkillsFromTo(crew, temporal_crew)
 									--print(temporal_crew.blueprint.name)
 								elseif crew.iShipId == 1 and enemyShip and hasAnyAugmentationOfList(enemyShip, {"TELEPORT_MULTI"}) == true then
@@ -21480,7 +26017,9 @@ script.on_internal_event(Defines.InternalEvents.CREW_LOOP, function(crew)
 									varr.previous_crew_intruder_state_arr[temporal_crew.extend.selfId] = true
 									temporal_crew.extend.deathTimer = Hyperspace.TimerHelper(false)
 									temporal_crew.extend.deathTimer:Start(30.0)
-									Hyperspace.Sounds:PlaySoundMix('teleport_multi_works', 8, false)
+									--PlaySoundMix_delayed ('teleport_multi_works', 8, 100.0)
+									add_to_SoundOrder('teleport_multi_works')
+									--Hyperspace.Sounds:PlaySoundMix('teleport_multi_works', 8, false)
 									CopyAllCrewSkillsFromTo(crew, temporal_crew)
 									--print(temporal_crew.blueprint.name)
 								end
@@ -21541,7 +26080,8 @@ end
 
 function copy_anyone_in_player_teleporter()
     if playerShip and Hyperspace.App.world then
-		if playerShip.teleportSystem == nil or playerShip.teleportSystem:Functioning()==false then
+		--if playerShip.teleportSystem == nil or playerShip:GetSystem(9):CompletelyDestroyed() == true then --or playerShip.teleportSystem:Functioning()==false then
+		if playerShip:GetSystem(9) == nil or playerShip:GetSystem(9):CompletelyDestroyed() == true or playerShip:GetSystem(9).iLockCount > 0 then --or playerShip.teleportSystem:Functioning()==false then
 			add_to_LaunchOrder("EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_NOFUNCTIONTELE")-- checked ok
 		elseif (math.random(0,100)<25) then
 			add_to_LaunchOrder("EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_EXPLOSION")-- checked ok
@@ -21883,15 +26423,41 @@ function fire_universal_definer(fire, bAnaerobicFires)
 end
 
 function redefine_enemy_ai_lamp()
+	diff = tostring(math.floor(Hyperspace.Settings.difficulty))
 	local chance_of_AI = (Hyperspace.playerVariables['counter_number_of_sector'] - 1.0)*5.0
-	if Hyperspace.metaVariables['challenge_noai'] == 1 then
+	
+	if diff ~= '2' then -- теперь лампы работают только на сложном режиме
+		chance_of_AI = 0
+	end
+	
+	if Hyperspace.metaVariables['challenge_noai'] == 1 then --если включён челлендж, то можно на любой сложности давать лампы
 		chance_of_AI = 146
 	end
+	
+	
+	
 	if math.random(0,100) < chance_of_AI then -- шанс продвинутого ИИ у вражеских кораблей
 		Hyperspace.metaVariables['enemy_has_advanced_ai'] = 1
 	else
 		Hyperspace.metaVariables['enemy_has_advanced_ai'] = 0
 	end
+	
+	
+	local chance_of_NOCREWAI = (Hyperspace.playerVariables['counter_number_of_sector'] - 1.0)*5.0
+	if Hyperspace.metaVariables['challenge_noexp'] == 1 then
+		chance_of_NOCREWAI = 146
+	end
+	if math.random(0,100) < chance_of_NOCREWAI then -- шанс улучшенного экипажа у вражеских кораблей-беспилотников
+		if math.random(0,99)<25 then
+			Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] = 2
+		else
+			Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] = 1
+		end
+	else
+		Hyperspace.metaVariables['enemy_has_advanced_nocrewai'] = 0
+	end
+	
+	
 	--print('[style[color:FFFFFF00]]ai = '..tostring(Hyperspace.metaVariables['enemy_has_advanced_ai'])..'[[/style]]')
 end
 
@@ -22207,7 +26773,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_SYSTEM, function(ship, pr
 					damage.iSystemDamage = 0
 					local px = gui.shipPosition.x + turtle_to_get_damage.x
 					local py = gui.shipPosition.y + turtle_to_get_damage.y
-					table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/block_sys_damage.png"), time_length = 800.0, time_length_mem = 800.0, x = px-38, y = py-38, w=814, h=74, fw=74, fh=74, layer = "SPACE_STATUS_up"})
+					table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/block_sys_damage.png"), time_length = 800.0, time_length_mem = 800.0, x = px-38, y = py-38, w=814, h=74, fw=74, fh=74, layer = "SPACE_STATUS_up"})
 					Hyperspace.Sounds:PlaySoundMix('turtle_resist', 10, false)
 					
 					result_sys_damage = 0
@@ -22237,7 +26803,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_SYSTEM, function(ship, pr
 					damage.iSystemDamage = 0
 					local px = gui.combatControl.targetPosition.x+gui.combatControl.position.x + turtle_to_get_damage.x
 					local py = gui.combatControl.targetPosition.y+gui.combatControl.position.y + turtle_to_get_damage.y
-					table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/block_sys_damage.png"), time_length = 800.0, time_length_mem = 800.0, x = px-38, y = py-38, w=814, h=74, fw=74, fh=74, layer = "SPACE_STATUS_up"})
+					table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/block_sys_damage.png"), time_length = 800.0, time_length_mem = 800.0, x = px-38, y = py-38, w=814, h=74, fw=74, fh=74, layer = "SPACE_STATUS_up"})
 					Hyperspace.Sounds:PlaySoundMix('turtle_resist', 10, false)
 					
 					result_sys_damage = 0
@@ -22246,7 +26812,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_SYSTEM, function(ship, pr
 		end
 	end
 	
-	
+	--система, сломана, ремонт
 	-- этот участок позволяет наносить урон в ещё сломанную, но ремонтируемую систему если починена на 50% и больше
 	if result_sys_damage > 0 then
 		--print(result_sys_damage)
@@ -22347,9 +26913,11 @@ script.on_game_event("EVENT_DRONE_SURGE_LAUNCH_END_GREAT", false, make_special_s
 
 function count_of_gusq_on_player_ship()
 	local count_loc = 0
-	for crew in vter(playerShip.vCrewList) do
-		if crew.blueprint.name == "gusq" then
-			count_loc = count_loc + 1
+	if playerShip then
+		for crew in vter(playerShip.vCrewList) do
+			if crew.blueprint.name == "gusq" then
+				count_loc = count_loc + 1
+			end
 		end
 	end
 	return count_loc
@@ -22403,7 +26971,7 @@ function make_enemy_same_as_player()
 			local anim_time = math.random(400, 1700)
 			local px = gui.combatControl.targetPosition.x+gui.combatControl.position.x + posy.x + math.random(-25,25)
 			local py = gui.combatControl.targetPosition.y+gui.combatControl.position.y + posy.y + math.random(-25,25)
-			table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/transformation_effect.png"), time_length = anim_time, time_length_mem = anim_time, x = px-46, y = py-46, w=1012, h=92, fw=92, fh=92, layer = "SPACE_STATUS_up"})
+			table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/transformation_effect.png"), time_length = anim_time, time_length_mem = anim_time, x = px-46, y = py-46, w=1012, h=92, fw=92, fh=92, layer = "SPACE_STATUS_up"})
 		end
 		
 		
@@ -22566,7 +27134,7 @@ function crew_add_skill_parser(crew)
 	if diff == '2' or Hyperspace.metaVariables['challenge_noexp'] == 1 then
 		if crew.bOutOfGame == false and crew.health.first > 0.0 and crew.crewAnim.bPlayer == false and crew.extend.deathTimer == nil and crew:IsDrone() == false then
 			local crewbluename = crew.blueprint.name
-			if crewbluename ~= "osa" and crewbluename~= "osae" and crewbluename ~= "gus" and crewbluename ~= "gusq" and crewbluename ~= "alien" and crewbluename ~= "egg" then
+			if crewbluename ~= "osa" and crewbluename~= "osae" and crewbluename ~= "gus" and crewbluename ~= "gusq" and crewbluename ~= "alien" and crewbluename ~= "egg" and crewbluename ~= "anomaly" then
 				--local chance_of_skill_add = (Hyperspace.playerVariables['counter_number_of_sector'] - 1.0)*5.0
 				local chance_of_skill_add = (Hyperspace.playerVariables['counter_number_of_sector'] - 1.0)*4.0 --5 многовато вроде...
 				--print(chance_of_skill_add)
@@ -22575,21 +27143,6 @@ function crew_add_skill_parser(crew)
 					if math.random(0,100) < 20 then
 						-- профи (жёлтый)
 						Hyperspace.StatBoostManager.GetInstance():CreateTimedAugmentBoost(Hyperspace.StatBoost(varr.def_skilled_crew_y), crew)
-						-- if crewbluename:find("human")~=nil or crewbluename == "lady_legendary" then
-							-- crew:SetSkillProgress(0, 14)
-							-- crew:SetSkillProgress(1, 14)
-							-- crew:SetSkillProgress(2, 54)
-							-- crew:SetSkillProgress(3, 64)
-							-- crew:SetSkillProgress(4, 18)
-							-- crew:SetSkillProgress(5, 8)
-						-- else
-							-- crew:SetSkillProgress(0, 30)
-							-- crew:SetSkillProgress(1, 30)
-							-- crew:SetSkillProgress(2, 110)
-							-- crew:SetSkillProgress(3, 130)
-							-- crew:SetSkillProgress(4, 36)
-							-- crew:SetSkillProgress(5, 16)
-						-- end
 						for i = 0, 5 do
 							crew:MasterSkill(i)
 						end
@@ -22599,22 +27152,6 @@ function crew_add_skill_parser(crew)
 						for i = 0, 5 do
 							crew:SetSkillProgress(i, crew:GetSkillProgress(i).second)
 						end
-						--print('enemy skilled='..crewbluename)
-						-- if crewbluename:find("human")~=nil or crewbluename == "lady_legendary" then
-							-- crew:SetSkillProgress(0, 7)
-							-- crew:SetSkillProgress(1, 7)
-							-- crew:SetSkillProgress(2, 27)
-							-- crew:SetSkillProgress(3, 32)
-							-- crew:SetSkillProgress(4, 9)
-							-- crew:SetSkillProgress(5, 4)
-						-- else
-							-- crew:SetSkillProgress(0, 15)
-							-- crew:SetSkillProgress(1, 15)
-							-- crew:SetSkillProgress(2, 55)
-							-- crew:SetSkillProgress(3, 65)
-							-- crew:SetSkillProgress(4, 18)
-							-- crew:SetSkillProgress(5, 8)
-						-- end
 					end
 				end
 			end
@@ -22729,6 +27266,69 @@ function resuffle_player_weapons_itteration()
 		end
 	end
 end
+
+script.on_game_event("RESUFFLE_ONLY_ONE_PLAYER_WEAPON", false, function()
+	resuffle_only_one_player_weapon()
+end)
+function resuffle_only_one_player_weapon()
+	if playerShip and playerShip.weaponSystem then
+		
+		local pl_slot = 0
+		for pf in vter(playerShip.weaponSystem.weapons) do
+			pl_slot = pl_slot + 1
+		end
+		if pl_slot > 0 then
+			local targ_slot = math.random(0, pl_slot-1)
+			local targ_power = 1
+			pl_slot = 0
+			for pf in vter(playerShip.weaponSystem.weapons) do
+				if pl_slot == targ_slot then
+					targ_power = pf.blueprint.power
+				end
+				pl_slot = pl_slot + 1
+			end
+			
+			--print('slot='..targ_slot..', pow='..targ_power)
+			
+			local weapnamy = ''
+			if targ_power == 0 then -- замена орудия за 0 энергии. случайное из списка
+				local arr_weaps = Hyperspace.Blueprints:GetBlueprintList("ZERO_ENERGY_WEAPONS_ALLOWED")
+				weapnamy = arr_weaps[math.random(0, arr_weaps:size()-1)]
+			else
+				while weapnamy == '' do
+					weapnamy = varr.full_list_of_game_equipment[math.random(0, #varr.full_list_of_game_equipment)]
+					if varr.full_list_of_game_equipment_power[weapnamy] == nil then
+						weapnamy = ''
+					elseif varr.full_list_of_game_equipment_power[weapnamy] ~= targ_power then
+						weapnamy = ''
+					elseif varr.full_list_of_game_equipment_rarity[weapnamy] == nil then
+						weapnamy = ''
+					elseif varr.full_list_of_game_equipment_rarity[weapnamy] == 0 then
+						weapnamy = ''
+					end
+					if Hyperspace.Blueprints:GetWeaponBlueprint(weapnamy).desc.cost == 0 then
+						weapnamy = ''
+					end
+				end
+			end
+			playerShip:AddWeapon(Hyperspace.Blueprints:GetWeaponBlueprint(weapnamy), targ_slot)--это работает как замена орудия в слоте
+			-- pl_slot = 0
+			-- for weap_slot in vter(playerShip.ship.weaponMounts) do
+				-- if pl_slot == targ_slot then
+					-- local posy = weap_slot.position
+					-- local anim_time = math.random(400, 1700)
+					-- local px = gui.shipPosition.x + posy.x
+					-- local py = gui.shipPosition.y + posy.y
+					-- table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/transformation_effect.png"), time_length = anim_time, time_length_mem = anim_time, x = px-46, y = py-46, w=1012, h=92, fw=92, fh=92, layer = "SPACE_STATUS_up"})
+				-- end
+				-- pl_slot = pl_slot + 1
+			-- end
+			--print(weapnamy)
+		end
+	end
+end
+
+
 
 
 script.on_game_event("TEACH_RANDOM_CREW_ALL_SKILLS", false, function()
@@ -22891,7 +27491,7 @@ function deionizator_ability(crew, ship_manager_local)
 										px = gui.shipPosition.x + crew.x
 										py = gui.shipPosition.y + crew.y
 									end
-									table.insert(anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/stun_computer.png"), time_length = 500.0, time_length_mem = 500.0, x = px-15, y = py-5, w=245, h=35, fw=35, fh=35, layer = "SPACE_STATUS"})
+									table.insert(varr.anim_tick_array, {texture = Hyperspace.Resources:GetImageId("effects/stun_computer.png"), time_length = 500.0, time_length_mem = 500.0, x = px-15, y = py-5, w=245, h=35, fw=35, fh=35, layer = "SPACE_STATUS"})
 								end
 							end
 						end
@@ -22953,8 +27553,8 @@ end
 	-- -- Graphics.CSurface.GL_RenderPrimitive(varr.s_bigslug)
 	-- -- Graphics.CSurface.GL_PopMatrix()
 -- end)
--- script.on_render_event(Defines.RenderEvents.SHIP_BREACHES, function(ship) 
-	-- --над оборудованием комнат, но под иконкой системы
+script.on_render_event(Defines.RenderEvents.SHIP_BREACHES, function(ship) 
+	--над оборудованием комнат, но под иконкой системы
 	-- -- Graphics.CSurface.GL_PushMatrix()
 	-- -- Graphics.CSurface.GL_Translate(175, 215)
 	-- -- Graphics.CSurface.GL_RenderPrimitive(varr.s_bigslug)
@@ -22969,23 +27569,135 @@ end
 	-- -- Graphics.CSurface.GL_Translate(75, 215)
 	-- -- Graphics.CSurface.GL_RenderPrimitive(varr.s_bigslug)
 	-- -- Graphics.CSurface.GL_PopMatrix()
--- end, function(ship)
-	-- --над оборудованием комнат, но под иконкой системы
-	-- -- Graphics.CSurface.GL_PushMatrix()
-	-- -- Graphics.CSurface.GL_Translate(175, 215)
-	-- -- Graphics.CSurface.GL_RenderPrimitive(varr.s_bigslug)
-	-- -- Graphics.CSurface.GL_PopMatrix()
+end, function(ship)
+	--над оборудованием комнат, но под иконкой системы
 	
-	-- -- Graphics.CSurface.GL_PushMatrix()
-	-- -- Graphics.CSurface.GL_Translate(105, 215)
-	-- -- Graphics.CSurface.GL_RenderPrimitive(varr.s_bigslug)
-	-- -- Graphics.CSurface.GL_PopMatrix()
 	
-	-- -- Graphics.CSurface.GL_PushMatrix()
-	-- -- Graphics.CSurface.GL_Translate(75, 215)
-	-- -- Graphics.CSurface.GL_RenderPrimitive(varr.s_bigslug)
-	-- -- Graphics.CSurface.GL_PopMatrix()
--- end)
+	
+	
+	--этот блок даёт именно жёлтое свечение компьютеров противника имеющих 3 уровень управления (экспертный)
+	--без этого и продвинутый и экспертный светит зелёным, нехорошо. у игрока не так ведь...
+	--жёлтый, жёлтые, желтый, желтые, компьютер, пк, монитор
+	if ship.iShipId == 1 and enemyShip and GSIe then
+		local slot = -1
+		local direction = -1
+		for system in vter(enemyShip.vSystemList) do
+			if system:GetId() == 11 then
+				local art_systems = enemyShip.artillerySystems
+				for i = 0, art_systems:size() - 1 do
+					OperateEnemySystem(art_systems[i])
+				end
+			else
+				if system.iActiveManned == 3 then
+					OperateEnemySystem(system)
+				end
+			end
+		end
+	end
+	
+	
+	
+end)
+function OperateEnemySystem(system)
+	--slots
+	-- 0 1
+	-- 2 3
+	
+	--directions DOWN=0,RIGHT=1,UP=2,LEFT=3
+	
+	--использовать исходные блюпринты нельзя, т.к. почти у всех кораблей врагов не заданы конкретные расположения
+	--и направления панелей компьютеров, поэтому основываемся на экипаже контролирующем их в данный момент
+	slot = -1
+	direction = -1
+	local race_anomaly = "anomaly"--"human"
+	
+	if varr.enemy_slot_arr[system.name] ~= nil and varr.enemy_dir_arr[system.name] ~= nil then
+		slot = varr.enemy_slot_arr[system.name]
+		direction = varr.enemy_dir_arr[system.name]
+		if varr.micro_tick_counter25 == 0.0 then
+			for crew in vter2(enemyShip.vCrewList) do
+				if crew.blueprint.name == race_anomaly then
+					crew:Kill(true)
+				end
+			end
+		end
+	else
+		if enemyShip and enemyShip.bAutomated == true then
+			if varr.micro_tick_counter25 == 0.0 then
+				local bFoundOtherCrewHere = false
+				for crew in vter2(enemyShip.vCrewList) do
+					if crew.iRoomId == system:GetRoomId() then
+						bFoundOtherCrewHere = true
+					end
+				end
+				if bFoundOtherCrewHere == false then
+					local tempcrew = enemyShip:AddCrewMemberFromString("Аномалия", race_anomaly, false, system:GetRoomId(), false, false)
+					for i = 0, 5 do
+						tempcrew:MasterSkill(i)
+					end
+				end
+			end
+		end
+		for crew in vter2(enemyShip.vCrewList) do--vter2 т.к. вложенность vter'ов один в другом.
+			if crew.iRoomId == system:GetRoomId() then
+				if crew.bOutOfGame == false and crew.health.first > 0.0 and crew.bDead == false and crew.bActiveManning == true then
+					if varr.micro_tick_counter_sound_launcher == 0.0 then
+						slot = crew.currentSlot.slotId
+						direction = crew.crewAnim.direction
+						varr.enemy_slot_arr[system.name] = slot
+						varr.enemy_dir_arr[system.name] = direction
+						--print('crew saved slotdir '..system.name..','..slot..','..direction)
+					end
+				end
+			end
+		end
+	end
+	
+	
+	
+	
+	-- if slot == -1 and direction == -1 then
+		-- print(system.name..','..system.interiorImageName)--.computerLevel)
+		-- -- enemyShip.myBlueprint.systemInfo[system:GetId()]
+		
+		-- -- int slot
+		-- -- int direction
+	-- end
+	
+	if slot ~= -1 and direction ~= -1 then
+		local roomshape = GSIe:GetRoomShape(system:GetRoomId())
+		local x_off_calc = 0
+		local y_off_calc = 0
+		x_off_calc, y_off_calc = GetXYOffsetsForSlotWH(slot, roomshape.w, roomshape.h)
+		x_off_calc = x_off_calc*35
+		y_off_calc = y_off_calc*35
+		--print(system.name..', slot='..slot..', dir='..direction)
+		if direction == 0 then
+			Graphics.CSurface.GL_PushMatrix()
+			Graphics.CSurface.GL_Translate(system.pLoc.x+35+x_off_calc, system.pLoc.y+35+y_off_calc)
+			Graphics.CSurface.GL_Rotate(180, 0, 0, 1)
+			Graphics.CSurface.GL_RenderPrimitive(varr.computer1_glow3)
+			Graphics.CSurface.GL_PopMatrix()
+		elseif direction == 1 then
+			Graphics.CSurface.GL_PushMatrix()
+			Graphics.CSurface.GL_Translate(system.pLoc.x+35+x_off_calc, system.pLoc.y+y_off_calc)
+			Graphics.CSurface.GL_Rotate(90, 0, 0, 1)
+			Graphics.CSurface.GL_RenderPrimitive(varr.computer1_glow3)
+			Graphics.CSurface.GL_PopMatrix()
+		elseif direction == 2 then
+			Graphics.CSurface.GL_PushMatrix()
+			Graphics.CSurface.GL_Translate(system.pLoc.x+x_off_calc, system.pLoc.y+y_off_calc)
+			Graphics.CSurface.GL_RenderPrimitive(varr.computer1_glow3)
+			Graphics.CSurface.GL_PopMatrix()
+		elseif direction == 3 then
+			Graphics.CSurface.GL_PushMatrix()
+			Graphics.CSurface.GL_Translate(system.pLoc.x+x_off_calc, system.pLoc.y+35+y_off_calc)
+			Graphics.CSurface.GL_Rotate(270, 0, 0, 1)
+			Graphics.CSurface.GL_RenderPrimitive(varr.computer1_glow3)
+			Graphics.CSurface.GL_PopMatrix()
+		end
+	end
+end
 -- script.on_render_event(Defines.RenderEvents.SHIP_SPARKS, function(ship) 
 	-- -- видно над чернотой отсека если он скрыт. всё ещё под иконкой системы
 	-- -- Graphics.CSurface.GL_PushMatrix()
@@ -23026,7 +27738,46 @@ end
 	-- -- Graphics.CSurface.GL_RenderPrimitive(varr.s_bigslug)
 	-- -- Graphics.CSurface.GL_PopMatrix()
 -- end)
+
+
 -- script.on_render_event(Defines.RenderEvents.SHIP_MANAGER, function(ship, bShowInterior, bDoorControlMode) 
+	-- local stencil_mode = {ignore = 0, set = 1, use = 2}
+	-- varr.eff_time = varr.eff_time + 0.5--math.random(0,100)
+	-- local width = 100 * (1 + varr.eff_time)
+	-- local speed = 0.5
+	-- local location = Hyperspace.Pointf(100.0, 200.0)
+	-- Graphics.CSurface.GL_PushStencilMode()
+	-- Graphics.CSurface.GL_SetStencilMode(stencil_mode.set, 1, 1)
+	-- Graphics.CSurface.GL_DrawRect(
+		-- -1280, 
+		-- -720, 
+		-- 1280*3, 
+		-- 720*3, 
+		-- varr.color_white
+	-- )
+	-- for i = 0, math.floor(width/2) - 5, 2 do
+		-- local new_width_inner = (varr.eff_time * speed) + i - width
+		-- local new_width_outer = (varr.eff_time * speed) - i
+		-- if new_width_inner > 0 then
+			-- Graphics.CSurface.GL_SetStencilMode(stencil_mode.set, 0, 1)
+			-- Graphics.CSurface.GL_DrawCircle(location.x, location.y, new_width_inner, varr.color_white)
+		-- end
+		-- if new_width_outer > 0 then
+			-- Graphics.CSurface.GL_SetStencilMode(stencil_mode.use, 1, 1)
+			-- Graphics.CSurface.GL_DrawCircle(location.x, location.y, new_width_outer, varr.color_red)
+		-- end
+	-- end
+	-- Graphics.CSurface.GL_SetStencilMode(stencil_mode.set, 0, 1)
+	-- Graphics.CSurface.GL_DrawRect(
+		-- -1280, 
+		-- -720, 
+		-- 1280*3, 
+		-- 720*3, 
+		-- varr.color_white
+	-- )
+	-- Graphics.CSurface.GL_PopStencilMode()
+	
+	
 	-- --позади имг корабля
 	-- -- Graphics.CSurface.GL_PushMatrix()
 	-- -- Graphics.CSurface.GL_Translate(175, 215)
@@ -23042,17 +27793,21 @@ end
 	-- -- Graphics.CSurface.GL_Translate(75, 215)
 	-- -- Graphics.CSurface.GL_RenderPrimitive(varr.s_bigslug)
 	-- -- Graphics.CSurface.GL_PopMatrix()
--- end, function() end)
+--end, function() end)
 
 
 
 function CheckConnectedBeaconsOnShop()
-	if map and map.currentLoc and map.currentLoc.event then
-		for locsss in vter6(map.currentLoc.connectedLocations) do
-			if locsss.event and (locsss.event.store == true or IsEventContainShop(locsss.event.eventName) == true) and locsss.visited == 0 and locsss.fleetChanging == false then
-				Hyperspace.Sounds:PlaySoundMix('shop_is_close', 10, false)
-				varr.bShopIsClose = true
-				break
+	if Hyperspace.metaVariables['challenge_nostor'] == 1 then
+		--в испытании с инсекторами сожравшими магазины не должно работать
+	else
+		if map and map.currentLoc and map.currentLoc.event then
+			for locsss in vter6(map.currentLoc.connectedLocations) do
+				if locsss.event and (locsss.event.store == true or IsEventContainShop(locsss.event.eventName) == true) and locsss.visited == 0 and locsss.fleetChanging == false then
+					Hyperspace.Sounds:PlaySoundMix('shop_is_close', 10, false)
+					varr.bShopIsClose = true
+					break
+				end
 			end
 		end
 	end
@@ -23064,6 +27819,11 @@ function IsEventContainShop(event_name_local)
 			return true
 		end
 	end
+	
+	if event_name_local:find("PSEVDO_MAGAZIN_")~=nil then
+		return true --обманный магазин. пришлёт смс-ку, но магазина там нет.
+	end
+	
 	--print('no')
 	return false
 end
@@ -23165,7 +27925,7 @@ function calc_alas_work_chance(dam, max_alas_quality, iAlasCounter)
 	return chance
 end
 
-function calculate_dps_paremeters()
+function calculate_dps_paremeters()--DPS, dps, damage per second
 	local dps = 0
 	local damage_summary = 0
 	local biggest_cooldown = 0
@@ -23190,7 +27950,7 @@ function calculate_dps_paremeters()
 			--if pf.blueprint.name~="GLIF_GUN" then
 				-- исключены орудия с ограниченным кол-вом снарядов (все ОЗУ и пятизарядный лазер)
 				-- исключены орудия с уроном 0 и меньше
-				if pf.powered == true and varr.full_list_of_game_equipment_shotlimit[pf.blueprint.name] == nil and pf.blueprint.damage.iDamage > 0 then
+				if pf.powered == true and varr.full_list_of_game_equipment_shotlimit[pf.blueprint.name] == nil and (pf.blueprint.damage.iDamage > 0 or pf.blueprint.name:find("GRENADE_LAUNCHER") ~= nil) then
 					local pf_cd_second_real = pf.cooldown.second*cd_mod
 					count_of_powered_pf = count_of_powered_pf + 1
 					local i_damage = pf.blueprint.damage.iDamage
@@ -23200,6 +27960,14 @@ function calculate_dps_paremeters()
 						cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_DAMAGE01", "ADD_DAMAGE01"))
 						if cnt > 0 then
 							i_damage = i_damage + cnt
+						end
+						cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_DAMAGE02", "ADD_DAMAGE02"))
+						if cnt > 0 then
+							i_damage = i_damage + cnt*2
+						end
+						cnt = select(2, string.gsub(varr.strFullGlifLine, "REMOVE_HDAMAGE01", "REMOVE_HDAMAGE01"))
+						if cnt > 0 then
+							i_damage = i_damage - cnt
 						end
 						cnt = select(2, string.gsub(varr.strFullGlifLine, "ADD_HULLBUSTER", "ADD_HULLBUSTER"))
 						if cnt > 0 then
@@ -23212,6 +27980,10 @@ function calculate_dps_paremeters()
 						i_damage = i_damage*1.5 --по заявкам изменено
 					end
 					if pf.blueprint.typeName == "BEAM" then
+						
+						
+						
+						
 						local room_max_count = math.floor(pf.blueprint.length/35.0)
 						if pf.blueprint.length <= 2 then
 							room_max_count = 1
@@ -23222,6 +27994,22 @@ function calculate_dps_paremeters()
 						end
 						if pf.blueprint.name:find("BA_BEAM_VILKA")~=nil then
 							room_max_count = 3
+						end
+						if pf.blueprint.name:find("BA_BEAM_TRI") ~= nil then
+							room_max_count = room_max_count * 2
+						end
+						if pf.blueprint.name:find("GRENADE_LAUNCHER") ~= nil then
+							if pf.blueprint.name:find("GRENADE_LAUNCHER1") ~= nil then
+								room_max_count = 2
+							elseif pf.blueprint.name:find("GRENADE_LAUNCHER2") ~= nil then
+								room_max_count = 3
+							elseif pf.blueprint.name:find("GRENADE_LAUNCHER3") ~= nil then
+								room_max_count = 4
+							end
+							i_damage = 1
+							if pf.blueprint.name:find("_UNI") ~= nil then
+								i_damage = i_damage + 1
+							end
 						end
 						--print(room_max_count)
 						dps = dps + room_max_count*i_damage/pf_cd_second_real
@@ -23459,6 +28247,7 @@ function define_flagship_artillery()
 	end
 	
 	
+	
 	--если у флагмана ионный резонатор, то особенный подход. одно из 2 основных орудий будет обязательно заменено на ионку для резонатора
 	local boss_aug_local = varr.full_list_of_game_equipment[math.floor(Hyperspace.metaVariables['additional_flagship_augment'])]
 	if boss_aug_local == "ION_RESONATOR" then
@@ -23487,7 +28276,22 @@ function define_flagship_artillery()
 	end
 	
 	
+	--FRS_BOSS_BEAM_ANNIHILATOR
+	if Hyperspace.metaVariables['this_run_flagship_steal_annihilator'] == 1 then
+		if math.random(0,99)<25 then
+			Hyperspace.metaVariables['frs_art_1'] = 27
+		elseif math.random(0,99)<33 then
+			Hyperspace.metaVariables['frs_art_2'] = 27
+		elseif math.random(0,99)<50 then
+			Hyperspace.metaVariables['frs_art_3'] = 27
+		else
+			Hyperspace.metaVariables['frs_art_4'] = 27
+		end
+	end
 	
+	
+	
+	--ниже передвижение систем по отсекам флагмана
 	if math.random(0,99)<25 then--мед
 		Hyperspace.metaVariables['frs_med_1'] = 4
 		Hyperspace.metaVariables['frs_med_2'] = 4
@@ -23687,12 +28491,19 @@ function update_flagship_blue_and_replace_arts()
 	shipblue.systemInfo[4].location[0] = Hyperspace.metaVariables['frs_drones_3']
 	shipblue.systemInfo[2].location[0] = Hyperspace.metaVariables['frs_oxy_3']
 	
-	
-	
 	--4 фаза
 	shipblue = Hyperspace.Blueprints:GetShipBlueprint("BOSS_4_PHASE", 1)
-	shipblue.systemInfo[11].weapon[0] = varr.frs_weapon_arr[Hyperspace.metaVariables['frs_art_1']].blue
-	shipblue.systemInfo[11].weapon[1] = varr.frs_weapon_arr[Hyperspace.metaVariables['frs_art_2']].blue
+	
+	if diff == '2' then
+		shipblue.systemInfo[11].weapon[0] = varr.frs_weapon_arr[Hyperspace.metaVariables['frs_art_1']].blue
+		shipblue.systemInfo[11].weapon[1] = varr.frs_weapon_arr[Hyperspace.metaVariables['frs_art_2']].blue
+	elseif diff == '1' then
+		shipblue.systemInfo[11].weapon[0] = "ARTILLERY_BOSS_1_HARD"
+		shipblue.systemInfo[11].weapon[1] = "ARTILLERY_BOSS_2_HARD_R"
+	else
+		shipblue.systemInfo[11].weapon[0] = "ARTILLERY_BOSS_1_EASY"
+		shipblue.systemInfo[11].weapon[1] = "ARTILLERY_BOSS_2_EASY"
+	end
 	
 	shipblue.systemInfo[4].location[0] = Hyperspace.metaVariables['frs_drones_4']
 	shipblue.systemInfo[10].location[0] = Hyperspace.metaVariables['frs_cloak_4']
@@ -23957,6 +28768,9 @@ function end_draw()
 	varr.strCurrentNumberLine = ""
 end
 function draw_itterator(startX, startY, strLine, bBlockPoints, color_current)
+	
+	--print('draw'..strLine)
+	
 	local temp_strCurrentNumberLine = strLine
 	local localStartPointX = startX
 	local localStartPointY = startY
@@ -24013,14 +28827,47 @@ script.on_game_event("START_BEACON", false, function()
 	clear_all_player_glif() --на старте новой игры всегда забываем глифы игрока
 	set_brocken_g_point_ids()
 	redefine_start_glif()
+	
+	-- тут задаётся шанс, что флагман украл аннигилятор в этом забеге
+	if math.random(0,99)<4 then --4
+		Hyperspace.metaVariables['this_run_flagship_steal_annihilator'] = 1
+	else
+		Hyperspace.metaVariables['this_run_flagship_steal_annihilator'] = 0
+	end
+	
+	-- тут задаётся вспышка флагмана
+	if math.random(0,99)<50 then --50
+		Hyperspace.metaVariables['flagship_wave'] = 0
+	else
+		if math.random(0,50)<10 then
+			Hyperspace.metaVariables['flagship_wave'] = 3
+		else
+			if math.random(0,20)<40 then
+				Hyperspace.metaVariables['flagship_wave'] = 1
+			else
+				Hyperspace.metaVariables['flagship_wave'] = 2
+			end
+		end
+	end
+	
 end)
 function press_g_clear_button()
 	Hyperspace.Sounds:PlaySoundMix('clear_points_on_map', 7, false)
 	clear_all_player_glif()
 end
+function press_lastg_clear_button()
+	Hyperspace.Sounds:PlaySoundMix('clear_points_on_map', 7, false)
+	clear_last_player_glif()
+end
 function redefine_start_glif()
-	Hyperspace.metaVariables['glif_start'] = varr.line_base[math.random(0,#varr.line_base)].code
+	
+	
+	--Hyperspace.metaVariables['glif_start'] = varr.line_base[math.random(0,#varr.line_base)].code
+	--Hyperspace.metaVariables['glif_start_soon_showed'] = 0
+	
+	Hyperspace.metaVariables['glif_start'] = varr.arr_of_glif_effects[math.random(0,#varr.arr_of_glif_effects)].code
 	Hyperspace.metaVariables['glif_start_soon_showed'] = 0
+	
 	--print(Hyperspace.metaVariables['glif_start'])
 end
 function clear_all_player_glif()
@@ -24031,6 +28878,20 @@ function clear_all_player_glif()
 	end
 	--print('clean all glifs')
 end
+
+function clear_last_player_glif()
+	local bDone = false
+	for k = 10, 0, -1 do
+		if bDone == false and Hyperspace.metaVariables['glif_s_'..tostring(math.floor(k))]~=0 then
+			Hyperspace.metaVariables['glif_x_'..tostring(math.floor(k))] = 0
+			Hyperspace.metaVariables['glif_y_'..tostring(math.floor(k))] = 0
+			Hyperspace.metaVariables['glif_s_'..tostring(math.floor(k))] = 0
+			--print('clean last glif')
+			bDone = true
+		end
+	end
+end
+
 
 function press_g_onoff_button()
 	if varr.bOpenedGlifPanel == true then
@@ -24071,18 +28932,15 @@ end
 
 
 function replaceTextAbracadabra(inp2)
-	-- if inp2 =="continue" then
-		-- return inp2
-	-- end
-	
-	--print(Hyperspace.Settings.language)
-	
-	
 	--print('before='..inp2)
 	if inp2 ~= nil then
 		local total_length = string.len(inp2)
+		if math.random(0,99)<3 and total_length < 30 then --иногда сможет увеличить вдвое маленький текст
+			inp2 = inp2..inp2
+			--print('doubled'..inp2)
+			total_length = string.len(inp2)
+		end
 		itteration_count = total_length*1.6
-		
 		if total_length > 2 then
 			if Hyperspace.Text:GetText('continue'):find('и')== nil then --русской и нету в текущем продолжить значит англ. язык
 			--if inp2:find('a') ~= nil or inp2:find('e') ~= nil or inp2:find('i') ~= nil or inp2:find('u') ~= nil or inp2:find('o') ~= nil or inp2:find('A') ~= nil or inp2:find('E') ~= nil or inp2:find('I') ~= nil or inp2:find('U') ~= nil or inp2:find('O') ~= nil then
@@ -24164,19 +29022,34 @@ function replaceTextAbracadabra(inp2)
 	return inp2
 end
 function redefine_enemy_strFullGlifLine()
-	--if varr.enemy_strFullGlifLine == "" or math.random(0,99)<50 then
 	varr.enemy_strFullGlifLine = ""
-	local count_of_glif = math.random(2,6)
+	local count_of_glif = math.random(3,7)
 	for i=1, count_of_glif do
 		varr.enemy_strFullGlifLine = varr.enemy_strFullGlifLine..varr.line_base[math.random(0,#varr.line_base)].adder..','
 	end
-	--end
-	
 	varr.bNeededChangeEnemyGlifLine = false
-	print('redefined to ='..varr.enemy_strFullGlifLine)
+	
+	local cnt = select(2, string.gsub(varr.enemy_strFullGlifLine, "ADD_PROJECTILE1", "ADD_PROJECTILE1"))
+	--print(cnt)
+	if cnt <= 1 then
+		if math.random(0,99)<70 then
+			varr.enemy_strFullGlifLine = varr.enemy_strFullGlifLine..'ADD_PROJECTILE1,'
+		end
+		if math.random(0,99)<5 then
+			varr.enemy_strFullGlifLine = varr.enemy_strFullGlifLine..'ADD_PROJECTILE1,'
+		end
+	elseif cnt >= 4 then
+		--невозможно, стираем нафиг
+		--провёл исследование, на миллион генераций не попалась ни разу такая ситуация.
+		--print('impossible fix bef = '..varr.enemy_strFullGlifLine)
+		varr.enemy_strFullGlifLine = string.gsub(varr.enemy_strFullGlifLine, "ADD_PROJECTILE1,", "")
+		--print('impossible fix aft = '..varr.enemy_strFullGlifLine)
+	end
+	
+	--print('redefined to ='..varr.enemy_strFullGlifLine)
 end
 
-function try_to_clear_a_brocken_g_point()
+function try_to_clear_a_brocken_g_point(loc_num)
 	--print('clear brocken')
 	local bThereIsABrockenPoint = false
 	--for i = 1, 5 do
@@ -24186,43 +29059,48 @@ function try_to_clear_a_brocken_g_point()
 		end
 	end
 	if bThereIsABrockenPoint == true then
-		local check_id = math.random(1,varr.iMaxCountOfBrockenGlifPoints)
+		local check_id = 1--math.random(1,varr.iMaxCountOfBrockenGlifPoints)
 		local work_done = false
 		local antifrzaa = 0
-		while work_done == false and antifrzaa < 30 do
+		while work_done == false and antifrzaa < 100 do
+			check_id = math.random(1,varr.iMaxCountOfBrockenGlifPoints)
 			if Hyperspace.metaVariables['glif_brocken_'..tostring(check_id)] ~= 0 then
+				if loc_num == 1 then
+					varr.iNeededMorganieID = Hyperspace.metaVariables['glif_brocken_'..tostring(check_id)]
+				else
+					varr.iNeededMorganieID2 = Hyperspace.metaVariables['glif_brocken_'..tostring(check_id)]
+				end
 				Hyperspace.metaVariables['glif_brocken_'..tostring(check_id)] = 0
+				
 				work_done = true
 			end
 			antifrzaa = antifrzaa + 1
-			check_id = math.random(1,varr.iMaxCountOfBrockenGlifPoints)
 		end
-		varr.iNeededMorganieID = check_id
-		varr.iNeededMorganieTimer = 1500
+		varr.iNeededMorganieTimer = 750
+		--print(varr.iNeededMorganieID)
 	end
 end
 function set_brocken_g_point_ids()
-	--local cur_meta_id = 1
-	--for i = 1, 5 do
 	for i = 1, varr.iMaxCountOfBrockenGlifPoints do
 		Hyperspace.metaVariables['glif_brocken_'..tostring(i)] = 0
 	end
 	local total_id_count = (varr.panel_g_array_h_count+1)*(varr.panel_g_array_w_count+1)
-	--for i = 1, 5 do
+	--print('total_id_count='..total_id_count)--42
 	for i = 1, varr.iMaxCountOfBrockenGlifPoints do
 		local setted_id = 1
 		local checked_num_is_good = false
 		while checked_num_is_good == false do
 			setted_id = math.random(1, total_id_count)
 			checked_num_is_good = true
-			for k = 1, 5 do
+			--for k = 1, 5 do
+			for k = 1, varr.iMaxCountOfBrockenGlifPoints do
 				if Hyperspace.metaVariables['glif_brocken_'..tostring(k)] == setted_id then
 					checked_num_is_good = false
 				end
 			end
 		end
 		Hyperspace.metaVariables['glif_brocken_'..tostring(i)] = setted_id
-		--print(setted_id)
+		--print('broke='..setted_id)
 	end
 end
 function bIsGlifBrocken(num)
@@ -24246,6 +29124,16 @@ function apply_to_projectile_glif_properties(proj_factory, projectile, temp_strF
 	if cnt > 0 then
 		hdamage = hdamage + cnt
 	end
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_DAMAGE02", "ADD_DAMAGE02"))
+	if cnt > 0 then
+		hdamage = hdamage + cnt*2
+	end
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "REMOVE_HDAMAGE01", "REMOVE_HDAMAGE01"))
+	if cnt > 0 then
+		hdamage = hdamage - cnt
+	end
+	
+	
 	if hdamage ~= 1 then
 		projectile.damage.iDamage = hdamage
 	end
@@ -24258,6 +29146,10 @@ function apply_to_projectile_glif_properties(proj_factory, projectile, temp_strF
 	cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_SYSDAMAGE2", "ADD_SYSDAMAGE2"))
 	if cnt > 0 then
 		sdamage = sdamage + cnt*2
+	end
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "REMOVE_HDAMAGE01", "REMOVE_HDAMAGE01"))
+	if cnt > 0 then
+		sdamage = sdamage + cnt
 	end
 	if sdamage > 0 then
 		projectile.damage.iSystemDamage = sdamage
@@ -24275,6 +29167,10 @@ function apply_to_projectile_glif_properties(proj_factory, projectile, temp_strF
 	cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_PERS_DAMAGE45", "ADD_PERS_DAMAGE45"))
 	if cnt > 0 then
 		pers_damage = pers_damage + cnt*45
+	end
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "REMOVE_HDAMAGE01", "REMOVE_HDAMAGE01"))
+	if cnt > 0 then
+		pers_damage = pers_damage + cnt*15
 	end
 	if pers_damage ~= 0 then
 		projectile.damage.iPersDamage = pers_damage/15
@@ -24365,9 +29261,14 @@ function apply_to_projectile_glif_properties(proj_factory, projectile, temp_strF
 	if cnt > 0 then
 		add_sp = add_sp + math.floor(cnt*2)
 	end
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "SET_SP10", "SET_SP10"))
+	if cnt > 0 then
+		add_sp = 10
+	end
 	if add_sp > 0 then
 		projectile.damage.iShieldPiercing = math.floor(add_sp)
 	end
+	
 	
 	local add_fc = 0
 	cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_FIRECH10", "ADD_FIRECH10"))
@@ -24398,7 +29299,8 @@ function apply_to_projectile_glif_properties(proj_factory, projectile, temp_strF
 		add_bc = 100
 	end
 	if add_bc > 0 then
-		projectile.damage.fireChance = math.floor(add_bc/10)
+		--projectile.damage.fireChance = math.floor(add_bc/10) --это конечно косяк
+		projectile.damage.breachChance = math.floor(add_bc/10)
 	end
 	
 	
@@ -24454,6 +29356,41 @@ function apply_to_projectile_glif_properties(proj_factory, projectile, temp_strF
 		projectile.extend.customDamage.def.erosionChance = 10
 	end
 	
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "OXYGEN_FILL", "OXYGEN_FILL"))
+	if cnt > 0 then
+		projectile.extend.name = projectile.extend.name.."_OXYGEN_FILL"
+	end
+	
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_ASIN", "ADD_ASIN"))
+	if cnt > 0 then
+		projectile.extend.name = projectile.extend.name.."_ASIN"
+	end
+	
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_TAU", "ADD_TAU"))
+	if cnt > 0 then
+		projectile.extend.name = projectile.extend.name.."_TAU"
+	end
+	
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_EMPTY_TELEPORT", "ADD_EMPTY_TELEPORT"))
+	if cnt > 0 then
+		projectile.extend.name = projectile.extend.name.."_EMPTY_TELEPORT"
+	end
+	
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "SPAWN_MANTIS", "SPAWN_MANTIS"))
+	if cnt > 0 then
+		projectile.extend.name = projectile.extend.name.."_SPAWN_MANTIS"
+	end
+	
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_MIND_CONTROL", "ADD_MIND_CONTROL"))
+	if cnt > 0 then
+		projectile.extend.name = projectile.extend.name.."_MIND_CONTROL"
+	end
+	
+	cnt = select(2, string.gsub(temp_strFullGlifLine, "ADD_HACKING", "ADD_HACKING"))
+	if cnt > 0 then
+		projectile.extend.name = projectile.extend.name.."_HACKING"
+	end
+	
 	--визуальные изменения снарядов в зависимости от свойств
 	if hdamage == 1 then
 		if add_ion > 0 then
@@ -24470,13 +29407,29 @@ function apply_to_projectile_glif_properties(proj_factory, projectile, temp_strF
 			projectile.death_animation = Hyperspace.Animations:GetAnimation("ba_explosion_laser_hit_heavy")
 			projectile.flight_animation = Hyperspace.Animations:GetAnimation("glif_laser_2")
 		end
-	elseif hdamage >= 3 then
+	elseif hdamage == 3 then
 		if add_ion > 0 then
 			projectile.death_animation = Hyperspace.Animations:GetAnimation("ba_explosion_ion_hit_heavy")
 			projectile.flight_animation = Hyperspace.Animations:GetAnimation("glif_laser_3i")
 		else
 			projectile.death_animation = Hyperspace.Animations:GetAnimation("ba_explosion_laser_hit_heavy")
 			projectile.flight_animation = Hyperspace.Animations:GetAnimation("glif_laser_3")
+		end
+	elseif hdamage == 4 then
+		if add_ion > 0 then
+			projectile.death_animation = Hyperspace.Animations:GetAnimation("explosion_big1")
+			projectile.flight_animation = Hyperspace.Animations:GetAnimation("glif_laser_4i")
+		else
+			projectile.death_animation = Hyperspace.Animations:GetAnimation("explosion_big1")
+			projectile.flight_animation = Hyperspace.Animations:GetAnimation("glif_laser_4")
+		end
+	elseif hdamage >= 5 then
+		if add_ion > 0 then
+			projectile.death_animation = Hyperspace.Animations:GetAnimation("ce_explosion_really_big_strip10")
+			projectile.flight_animation = Hyperspace.Animations:GetAnimation("glif_laser_4i")
+		else
+			projectile.death_animation = Hyperspace.Animations:GetAnimation("ce_explosion_really_big_strip10")
+			projectile.flight_animation = Hyperspace.Animations:GetAnimation("glif_laser_4")
 		end
 	end
 	if add_ion > 0 then
@@ -24509,7 +29462,7 @@ function press_button_switch_screams()
 	end
 end
 function gone_to_space_this_crew_type(crew_type_name)
-	--print(crew_type_name)
+	--print(crew_type_name..' ушёл по делам...')
 	if Hyperspace.metaVariables['iwanttohearscreams'] == 0 then
 		Hyperspace.Sounds:PlaySoundMix('airLoss', 3, false)
 		PlaySoundMix_delayed ('chelnok_otpravka', 10, 500.0)
@@ -24550,7 +29503,7 @@ function gone_to_space_this_crew_type(crew_type_name)
 			PlaySoundMix_delayed ('crystalDeath', 7, 700.0)
 		elseif crew_type_name:find("anaerobic")~=nil then
 			Hyperspace.Sounds:PlaySoundMix('airLoss', 3, false)
-			PlaySoundMix_delayed ('shrikeDeath', 7, 700.0)
+			--молча дохнет ТЕПЕРЬ, ИСПРАВЛЕНО
 		elseif crew_type_name:find("ghost")~=nil then
 			Hyperspace.Sounds:PlaySoundMix('airLoss', 3, false)
 			--молча дохнет
@@ -24567,6 +29520,10 @@ function gone_to_space_this_crew_type(crew_type_name)
 			Hyperspace.Sounds:PlaySoundMix('airLoss', 3, false)
 			--без звука. для всех кто улетает в космос молча.
 		end
+		
+		--ачивка сработает только если включён режим выбрасывания экипажа в космос
+		Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_GO_AWAY", false)
+		--print('gone to space')
 	end
 end
 
@@ -24574,4 +29531,598 @@ function PlaySoundMix_delayed (str, volume, timer)--time in milliseconds
 	varr.PlaySoundMix_volume = volume
 	varr.PlaySoundMix_string = str
 	varr.PlaySoundMix_timer = timer
+end
+
+
+--записывает в мета-переменную целеуказания X,Y координаты где должен пойти луч.
+function redefine_target_point_to_gigabeam()
+	local targ_room_id = GetRoomAtLocation(playerShip, playerShip:GetRandomRoomCenter(), true) 
+	for room in vter14(playerShip.ship.vRoomList) do
+		if targ_room_id == room.iRoomId then
+			local shape = room.rect
+			local startX = shape.x // 35
+			local startY = shape.y // 35
+			local endX = startX + (shape.w // 35) - 1
+			local endY = startY + (shape.h // 35) - 1
+			local targY = math.random(startY, endY)
+			local targX = math.random(startX, endX)
+			Hyperspace.metaVariables['target_point_y'] = gui.shipPosition.y + targY*35 + 17
+			Hyperspace.metaVariables['target_point_x'] = gui.shipPosition.x + targX*35 + 17
+		end
+	end
+	--print(Hyperspace.metaVariables['target_point_y'])
+end
+
+
+-- function isCrewReallyCanSuffocate(crew_local)
+	-- if crew:CanSuffocate()==false then
+		
+	-- end
+	-- if crew_blue_name_local:find("magman") ~= nil or crew_blue_name_local:find("rock") ~= nil or crew_blue_name_local:find("ghost") ~= nil then
+		-- return false
+	-- end
+	-- return true
+-- end
+function isCrewGorit(crew_blue_name_local)
+	if crew_blue_name_local:find("magman") ~= nil or crew_blue_name_local:find("rock") ~= nil or crew_blue_name_local:find("ghost") ~= nil then
+		return false
+	end
+	return true
+end
+function isCrewHoditSkvozDveri(crew_blue_name_local)
+	if crew_blue_name_local:find("ghost") ~= nil then
+		return true
+	end
+	return false
+end
+
+
+function isAllowedToCopy(name_local)
+	--for eq_name_loc in vter98 (Hyperspace.Blueprints:GetBlueprintList("WEAPONS_DONT_ALLOW_TO_COPY")) do
+	for eq_name_loc in vter98 (varr.local_list_WEAPONS_DONT_ALLOW_TO_COPY) do
+		--if eq_name_loc:find(name_local) ~= nil then
+		if name_local:find(eq_name_loc) ~= nil then
+			--print('dont copy ='..name_local)
+			return false
+		end
+	end
+	--print('true='..name_local)
+	return true
+end
+function isNeededToHideChargeBarWeapon(name_local)
+	--for eq_name_loc in vter97 (Hyperspace.Blueprints:GetBlueprintList("WEAPONS_HIDE_CHARGE_BAR")) do
+	for eq_name_loc in vter97 (varr.local_list_WEAPONS_HIDE_CHARGE_BAR) do
+		--if eq_name_loc:find(name_local) ~= nil then
+		if name_local:find(eq_name_loc) ~= nil then
+			--print('hide charge bar='..name_local)
+			return true
+		end
+	end
+	return false
+end
+
+
+--отдельный механизм анализа корабля игрока, чтобы подобрать ему контру
+function MakeDeepAdaptiveShip()
+	--print('redo inessa')
+	local shipblue = Hyperspace.Blueprints:GetShipBlueprint("JELLY_TRUFFLE_AD_DEFAULT1", 1)
+	if playerShip then
+		--defaults
+		shipblue.augments:clear()
+		shipblue.originalCrewCount = 4
+		shipblue.maxCrew = 7
+		shipblue.loadWeapons = "WEAPONS_JELLY"
+		shipblue.loadDrones = "DRONES_COMBAT_PROJECTILE"
+		shipblue.defaultCrew:clear()
+		for i=1, 4 do
+			shipblue.defaultCrew:push_back("random")
+		end
+		
+		--анализ игрока
+		local count_of_player_crew_local = 0
+		local enemy_aug_counter = 0
+		for crew in vter (playerShip.vCrewList) do
+			if crew:IsDrone() == false and crew.crewAnim.bPlayer==true and crew.bOutOfGame == false and crew.bDead == false then
+				count_of_player_crew_local = count_of_player_crew_local + 1
+			end
+		end
+		local iNumShostTotal = 0
+		local iIonTotal = 0
+		local iFireTotal = 0
+		local iBreachTotal = 0
+		local iCountLASER = 0
+		local iCountMISSILE = 0
+		for weap in vter(playerShip:GetWeaponList()) do
+			if weap.blueprint.typeName ~= "BEAM" then
+				iNumShostTotal = iNumShostTotal + weap.blueprint.shots
+			end
+			iIonTotal = iIonTotal + weap.blueprint.damage.iIonDamage
+			iFireTotal = iFireTotal + weap.blueprint.damage.fireChance
+			iBreachTotal = iBreachTotal + weap.blueprint.damage.breachChance
+			if weap.blueprint.typeName == "LASER" then
+				if weap.blueprint.damage.iDamage <= 3 and weap.blueprint.damage.iIonDamage <= 0 then
+					iCountLASER = iCountLASER + 1
+				end
+			elseif weap.blueprint.typeName == "MISSILE" then
+				iCountMISSILE = iCountMISSILE + 1
+			end
+		end
+		local iCountDefenceDrones = 0
+		if playerShip.droneSystem then
+			for drone in vter(playerShip.droneSystem.drones) do
+				if drone.blueprint.typeName == "DEFENSE" then
+					iCountDefenceDrones = iCountDefenceDrones + 1
+				end
+			end
+		end
+		--контра абордажных команд с телепортом
+		if count_of_player_crew_local >= 4 and playerShip:HasSystem(9)==true then -- teleport
+			if hasAnyAugmentationOfList(playerShip, {"ZOLTAN_BYPASS", "HID_ZOLTAN_BYPASS", "ENERGY_SHIELD_ZOLTAN_BYPASS"}) == true then
+				shipblue.loadDrones = "DRONES_BATTLE"
+				shipblue.defaultCrew:clear()
+				for i=1, 4 do
+					shipblue.defaultCrew:push_back("mantis")
+				end
+				--print('boarding crew, has bypass')
+			else
+				if enemy_aug_counter < 3 then
+					shipblue.augments:push_back("ENERGY_SHIELD")
+					enemy_aug_counter = enemy_aug_counter + 1
+				end
+				--print('boarding crew, no bypass')
+			end
+		end
+		if playerShip:HasSystem(9)==false and playerShip:HasSystem(4)==false then
+			shipblue.defaultCrew:clear()
+			for i=1, 4 do
+				shipblue.defaultCrew:push_back("engi")
+			end
+			--print('no tele, no drones')
+		end
+		if count_of_player_crew_local < 5 and playerShip:HasSystem(15)==false then
+			shipblue.loadDrones = "DRONES_BOARDER"
+			--print('low crew, no hack')
+		end
+		if iCountLASER > 2 and iNumShostTotal > 4 then
+			shipblue.loadDrones = "DRONES_ALAS_ONLY"
+			--print('lasers, much shots')
+		elseif iCountMISSILE > 0 then 
+			shipblue.loadDrones = "DRONES_DEFENSE_LIST"
+			--print('missile found')
+		end
+		--контра владельцев невидимости
+		if playerShip:HasSystem(10)==true then
+			if enemy_aug_counter < 3 then
+				shipblue.augments:push_back("ANTICLOAK_FIELD")
+				enemy_aug_counter = enemy_aug_counter + 1
+				--print('player has cloak')
+			end
+		end
+		--контра владельцев взлома
+		if playerShip.hackingSystem then
+			if enemy_aug_counter < 3 then
+				shipblue.augments:push_back("ANTIHACKER")
+				enemy_aug_counter = enemy_aug_counter + 1
+				--print('player has hacking')
+			end
+		end
+		--контра кораблей без щитов, даём лучи
+		if playerShip:GetSystem(0) == nil or playerShip:GetSystem(0).healthState.first < 2 then
+			shipblue.loadWeapons = "WEAPONS_REBEL"
+			shipblue.loadDrones = "DRONES_BEAM_ONLY"
+			--print('player no shields')
+		end
+		if iCountDefenceDrones > 0 then
+			if enemy_aug_counter < 3 then
+				shipblue.augments:push_back("DEFENSE_SCRAMBLER")
+				enemy_aug_counter = enemy_aug_counter + 1
+				--print('player has def drone')
+			end
+		end
+		if hasAnyAugmentationOfList(playerShip, {"ENERGY_SHIELD", "HID_ENERGY_SHIELD", "ENERGY_SHIELD_ZOLTAN_BYPASS"}) == true then
+			shipblue.loadWeapons = "WEAPONS_ZOLTAN"
+			if enemy_aug_counter < 3 then
+				shipblue.augments:push_back("ZOLTAN_BYPASS")
+				enemy_aug_counter = enemy_aug_counter + 1
+				--print('player has energy shield')
+			end
+		end
+		if hasAnyAugmentationOfList(playerShip, {"ION_ARMOR", "HID_ION_ARMOR", "SYSTEM_CASING_ION_ARMOR"}) == true then
+			shipblue.loadWeapons = "WEAPONS_ROCK"
+		end
+		if iCountLASER > 2 and iNumShostTotal > 5 then
+			if enemy_aug_counter < 3 then
+				shipblue.augments:push_back("SHIELD_RECHARGE")
+				enemy_aug_counter = enemy_aug_counter + 1
+				--print('player has much shots')
+			end
+		end
+		--контра кораблей с мк
+		if playerShip:HasSystem(14)==true then
+			--print('player has mc')
+			shipblue.defaultCrew:clear()
+			for i=1, 4 do
+				shipblue.defaultCrew:push_back("slug")
+			end
+		end
+		if iIonTotal > 1 then
+			if enemy_aug_counter < 3 then
+				shipblue.augments:push_back("ION_ARMOR")
+				enemy_aug_counter = enemy_aug_counter + 1
+				--print('player has much ions')
+			end
+		end
+		if iFireTotal > 7 then
+			if enemy_aug_counter < 3 then
+				shipblue.augments:push_back("FIRE_EXTINGUISHERS")
+				enemy_aug_counter = enemy_aug_counter + 1
+				--print('player has much fire')
+			end
+		end
+		if iBreachTotal > 7 then
+			if enemy_aug_counter < 3 then
+				shipblue.augments:push_back("SLUG_GEL")
+				enemy_aug_counter = enemy_aug_counter + 1
+				--print('player has much breach')
+			end
+		end
+		--если остались свободные слоты усилений - заполняем
+		if enemy_aug_counter < 3 then
+			shipblue.augments:push_back("AUTO_COOLDOWN")
+			enemy_aug_counter = enemy_aug_counter + 1
+			--print('free aug place1')
+		end
+		if enemy_aug_counter < 3 then
+			shipblue.augments:push_back("ROCK_ARMOR")
+			enemy_aug_counter = enemy_aug_counter + 1
+			--print('free aug place2')
+		end
+		if enemy_aug_counter < 3 then
+			shipblue.augments:push_back("NANO_MEDBAY")
+			enemy_aug_counter = enemy_aug_counter + 1
+			--print('free aug place3')
+		end
+	end
+end
+
+
+--отдельная проверялка для таймера фтл привода, решил не трогать пока что...
+function isInDangerTimer()
+	if (enemyShip and enemyShip._targetable.hostile) or Hyperspace.App.world.space:DangerousEnvironment() or Hyperspace.ships.player.iIntruderCount ~= 0 then
+		return true
+	end
+	return false
+end
+
+
+script.on_game_event("CHECK_WINDOW_WEAPON_AUTOREPLACER", false, function()
+	--print('begin')
+	if playerShip and gui then
+		local bFound = false
+		if playerShip.weaponSystem then
+			for weap in vter (playerShip.weaponSystem.weapons) do
+				if weap.blueprint.name == "MISSILES_PIRATE_BIGBIG_FOR_EVENT_WINDOW" then
+					bFound = true
+				end
+			end
+		end
+		for carg in vter (gui.equipScreen:GetCargoHold()) do
+			if carg == "MISSILES_PIRATE_BIGBIG_FOR_EVENT_WINDOW" then
+				bFound = true
+			end
+		end
+		if bFound == true then
+			playerShip:RemoveItem("MISSILES_PIRATE_BIGBIG_FOR_EVENT_WINDOW", true)
+			gui.equipScreen:AddWeapon(Hyperspace.Blueprints:GetWeaponBlueprint("MISSILES_PIRATE_BIGBIG"), true, false)
+			--print('done')
+		end
+	end
+end)
+
+
+-- ВРАЩЕНИЕ, КРУЧЕНИЕ, крутим, вращается, вращение
+-- A_____
+-- |  .  |
+-- |_____|
+--       B
+--local Ax_new, Ay_new = RotatorOfObjects(500, 100, varr.cur_angle, 25, 30)
+-- Graphics.CSurface.GL_PushMatrix()
+-- Graphics.CSurface.GL_Translate(Ax_new, Ay_new, 0)
+-- Graphics.CSurface.GL_Rotate(varr.cur_angle, 0, 0, 1)--именно с 4 аргументом = 1. это критически важно.
+-- --Graphics.CSurface.GL_DrawRect(0, 0, 30, 30, varr.color_red)
+-- Graphics.CSurface.GL_RenderPrimitive(varr.shop_is_close)
+-- Graphics.CSurface.GL_PopMatrix()
+-- --Graphics.CSurface.GL_DrawCircle(Ax, Ay, 2, varr.color_cyan)
+--предельно ублюдский механизм вращения объектов.
+--убить мало того кто этот Rotate сделал вращающимся так (крутится относительно точки А)...
+--имея входные данные координаты центра, угол поворота(в градусах), ширину, высоту
+--выдаст новые координаты центра объекта имитирующие вращение вокруг центра объекта
+function RotatorOfObjects(Ax, Ay, angle_grad, w_size, h_size)
+	local angle_rad = math.pi*(angle_grad)/180
+	local B2x = w_size*math.cos(angle_rad) - h_size*math.sin(angle_rad)
+	local B2y = w_size*math.sin(angle_rad) + h_size*math.cos(angle_rad)
+	return Ax - (B2x/2.0), Ay - (B2y/2.0)
+end
+
+
+
+
+
+
+
+--блок воспроизведения цепочки звуков
+function clear_SoundOrder()
+	--print('clean')
+	for i = 0, 100 do
+		varr.sound_order_caller[i] = ""
+	end
+end
+function add_to_SoundOrder(sound_name_loc)
+	for i = 0, 100 do
+		if varr.sound_order_caller[i] == "" then
+			varr.sound_order_caller[i] = sound_name_loc
+			--print('added'..ev_name_loc)
+			return
+		end
+	end
+end
+function try_zero_in_SoundOrder()
+	if varr.sound_order_caller[0] ~= "" then
+		Hyperspace.Sounds:PlaySoundMix(varr.sound_order_caller[0], 8, false)
+		--print('launch'..varr.sound_order_caller[0])
+		varr.sound_order_caller[0] = ""
+		for i = 0, 99 do
+			varr.sound_order_caller[i] = varr.sound_order_caller[i+1]
+		end
+		varr.sound_order_caller[100] = ""
+	end
+end
+
+
+
+--блок сохранения и загрузки хп корабля игрока, теперь максимум может изменён в течении полёта
+script.on_game_event("EVENT_ENGI_GIVE_MAX_HULL_OPERATOR02", false, function()
+	--print('begin')
+	climb_up_max_hull_player()
+end)
+function climb_up_max_hull_player()
+	local memory_hull_player = playerShip.ship.hullIntegrity.first
+	local selector = Hyperspace.CustomShipSelect.GetInstance()
+	local defineShip = playerShip.myBlueprint and selector and selector:GetDefinition(playerShip.myBlueprint.blueprintName) or nil
+	if defineShip then
+		Hyperspace.metaVariables['ship_hull_max'] = Hyperspace.metaVariables['ship_hull_max'] + 2
+		defineShip.hpCap = Hyperspace.metaVariables['ship_hull_max']
+		--defineShip.systemLimit = 0
+	end
+	playerShip.ship.hullIntegrity.second = Hyperspace.metaVariables['ship_hull_max']
+	playerShip.ship.hullIntegrity.first = Hyperspace.metaVariables['ship_hull_max']
+	
+	playerShip.ship.hullIntegrity.first = memory_hull_player
+	--print('up max to='..Hyperspace.metaVariables['ship_hull_max'])
+end
+function update_max_hull_player()
+	--local memory_hull_player = playerShip.ship.hullIntegrity.first
+	local selector = Hyperspace.CustomShipSelect.GetInstance()
+	local defineShip = playerShip.myBlueprint and selector and selector:GetDefinition(playerShip.myBlueprint.blueprintName) or nil
+	if defineShip then
+		defineShip.hpCap = Hyperspace.metaVariables['ship_hull_max']
+	end
+	playerShip.ship.hullIntegrity.second = Hyperspace.metaVariables['ship_hull_max']
+	playerShip.ship.hullIntegrity.first = Hyperspace.metaVariables['ship_hull_max']
+	
+	if Hyperspace.metaVariables['ship_hull_cur'] == 0 then
+		Hyperspace.metaVariables['ship_hull_cur'] = Hyperspace.metaVariables['ship_hull_max']
+	end
+	playerShip.ship.hullIntegrity.first = Hyperspace.metaVariables['ship_hull_cur'] --memory_hull_player
+end
+
+
+
+
+
+
+
+
+
+--ТАЙМЕР РЕШЕНИЕ ОТЛОЖЕНО...
+local function time_increment3(useSpeed)
+	if useSpeed or useSpeed == nil then
+		return Hyperspace.FPS.SpeedFactor/16
+	elseif Hyperspace.FPS.NumFrames ~= 0 then
+		return 1/Hyperspace.FPS.NumFrames
+	else
+		return 0
+	end
+end
+-- local gameOver = false
+-- local timer_real = 0
+-- local timer_real_saved = 0
+-- local timer_ingame = 0
+-- local timer_ingame_saved = 0
+script.on_init(function(newGame)
+	if newGame then
+		gameOver = false
+		timer_real = 0
+		timer_real_saved = 0
+		timer_ingame = 0
+		timer_ingame_saved = 0
+		Hyperspace.metaVariables.speedrun_timer_real = 0
+		Hyperspace.metaVariables.speedrun_timer_ingame = 0
+	else
+		timer_real = Hyperspace.metaVariables.speedrun_timer_real + 1
+		timer_ingame = Hyperspace.metaVariables.speedrun_timer_ingame + 1
+	end
+end)
+script.on_internal_event(Defines.InternalEvents.ON_TICK, function()
+	if Hyperspace.App.world.bStartedGame and not gameOver then
+		timer_real = timer_real + time_increment3(false)
+		if timer_real >= timer_real_saved + 1 then
+			Hyperspace.metaVariables.speedrun_timer_real = math.floor(timer_real)
+			timer_real_saved = Hyperspace.metaVariables.speedrun_timer_real
+		end
+
+		local commandGui = Hyperspace.App.gui
+		if not (commandGui.bPaused or commandGui.event_pause or commandGui.bAutoPaused or commandGui.menu_pause) then
+			timer_ingame = timer_ingame + time_increment3(false)
+			if timer_ingame >= timer_ingame_saved + 1 then
+				Hyperspace.metaVariables.speedrun_timer_ingame = math.floor(timer_ingame)
+				timer_ingame_saved = Hyperspace.metaVariables.speedrun_timer_ingame
+			end
+		end
+	end
+end)
+local function split_time(time)
+	local hours = math.floor(time // 3600)
+	local minutes = math.floor((time // 60) % 60)
+	local seconds = math.floor(time % 60)
+	local millis = math.floor((time * 1000) % 1000)
+	return hours, minutes, seconds, millis
+end
+local x = 1240
+local hours_x = -93
+local minutes_x = -45
+local y = -3
+local millis_y = 12
+local ingame_y = 25
+local box_x = -143
+local box_y = 10
+local box_w = 179
+local box_h = 50
+local box_colour = Graphics.GL_Color(0, 0, 0, 0.5)
+local active_colour = Graphics.GL_Color(1, 1, 1, 1)
+local gameOver_colour = Graphics.GL_Color(0.25, 1, 0.25, 1)
+local white_colour = Graphics.GL_Color(1, 1, 1, 1)
+-- script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL, function()
+	-- if Hyperspace.App.world.bStartedGame or gameOver then
+		-- Graphics.CSurface.GL_DrawRect(
+			-- x + box_x, 
+			-- box_y, 
+			-- box_w, 
+			-- box_h, 
+			-- box_colour
+			-- )
+		-- if gameOver then
+			-- Graphics.CSurface.GL_SetColor(gameOver_colour)
+		-- else
+			-- Graphics.CSurface.GL_SetColor(active_colour)
+		-- end
+		-- local hours, minutes, seconds, millis = split_time(timer_real)
+		-- Graphics.freetype.easy_printRightAlign(24, x + hours_x, y, string.format("%02d:", hours))
+		-- Graphics.freetype.easy_printRightAlign(24, x + minutes_x, y, string.format("%02d:", minutes))
+		-- Graphics.freetype.easy_printRightAlign(24, x, y, string.format("%02d.", seconds))
+		-- Graphics.freetype.easy_print(14, x, y + millis_y, string.format("%03d", millis))
+		
+		-- hours, minutes, seconds, millis = split_time(timer_ingame)
+		-- Graphics.freetype.easy_printRightAlign(24, x + hours_x, y + ingame_y, string.format("%02d:", hours))
+		-- Graphics.freetype.easy_printRightAlign(24, x + minutes_x, y + ingame_y, string.format("%02d:", minutes))
+		-- Graphics.freetype.easy_printRightAlign(24, x, y + ingame_y, string.format("%02d.", seconds))
+		-- Graphics.freetype.easy_print(14, x, y + ingame_y + millis_y, string.format("%03d", millis))
+		-- Graphics.CSurface.GL_SetColor(white_colour)
+	-- end
+	-- return Defines.Chain.CONTINUE
+-- end, function() end)
+local gameOver_events = {}
+gameOver_events["default_victory"] = true
+gameOver_events["BOSS_DESTROYED"] = true
+-- gameOver_events["FREE_WIN"] = true
+for event, _ in pairs(gameOver_events) do
+	script.on_game_event(event, false, function()
+		gameOver = true
+	end)
+end
+
+
+
+
+
+function remove_random_item_from_player_cargo()
+	if gui then
+		local removable_item_name = ""
+		if gui.equipScreen:GetCargoHold():size()>0 then
+			removable_item_name = gui.equipScreen:GetCargoHold()[math.random(0, gui.equipScreen:GetCargoHold():size()-1)]
+		end
+		--print('=>'..removable_item_name)
+		if removable_item_name ~= "" then
+			playerShip:RemoveItem(removable_item_name, true)
+		end
+	end
+end
+script.on_game_event("REMOVE_RANDOM_ITEM_FROM_PLAYER_CARGO", false, remove_random_item_from_player_cargo)
+
+
+
+
+
+function there_is_player_crew_in_room(i_room_targ)
+	if playerShip then
+		for crew in vter19(playerShip.vCrewList) do
+			if crew.iRoomId == i_room_targ then
+				if crew.crewAnim.bPlayer == true and crew:OutOfGame() == false and crew.health.first > 0.0 then
+					return true
+				end
+			end
+		end
+	end
+	return false
+end
+
+function apply_to_projectile_injector_properties(proj_local, propStringName)
+	if propStringName:find("_BRC")~=nil then
+		proj_local.damage.breachChance = proj_local.damage.breachChance + 4
+		if proj_local.damage.breachChance > 10 then
+			proj_local.damage.breachChance = 10
+		end
+	elseif propStringName:find("_FRC")~=nil then
+		proj_local.damage.fireChance = proj_local.damage.fireChance + 4
+		if proj_local.damage.fireChance > 10 then
+			proj_local.damage.fireChance = 10
+		end
+	elseif propStringName:find("_ACC")~=nil then
+		projectile.extend.customDamage.accuracyMod = projectile.extend.customDamage.accuracyMod + 100
+	elseif propStringName:find("_UNI")~=nil then
+		proj_local.damage.iDamage = proj_local.damage.iDamage + 1
+	elseif propStringName:find("_PRC")~=nil then
+		proj_local.damage.iShieldPiercing = proj_local.damage.iShieldPiercing + 1
+		if proj_local.damage.iShieldPiercing > 10 then
+			proj_local.damage.iShieldPiercing = 10
+		end
+	end
+end
+
+
+script.on_internal_event(Defines.InternalEvents.ON_MOUSE_SCROLL, function(direction)
+	--Detect mouse scrolling. direction will be 1.0 when scrolling down, -1.0 when scrolling up.
+	varr.scroll_mouse_detector = direction
+	--print('dir'..direction)
+end)
+
+function get_len_min_max(weap_name_loc)
+	local len_max = 100
+	local len_min = 50
+	if weap_name_loc:find("GRENADE_LAUNCHER1") ~= nil then
+		len_max = 100
+	elseif weap_name_loc:find("GRENADE_LAUNCHER2") ~= nil then
+		len_max = 150
+	elseif weap_name_loc:find("GRENADE_LAUNCHER3") ~= nil then
+		len_max = 200
+	end
+	if weap_name_loc:find("_UNI") ~= nil then
+		len_max = len_max*1.25
+	end
+	return len_min, len_max
+end
+
+
+
+function add_crew_to_hitted_crew_arr(crew_loc)
+	--print(#varr.hitted_crew_arr)
+	varr.hitted_crew_arr[#varr.hitted_crew_arr] = crew_loc
+end
+function there_is_crew_in_hitted_crew_arr(crew_loc)
+	for i = 0, #varr.hitted_crew_arr do
+		if crew_loc == varr.hitted_crew_arr[i] then
+			return true
+		end
+	end
+	return false
 end

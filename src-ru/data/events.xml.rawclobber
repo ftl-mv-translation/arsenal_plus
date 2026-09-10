@@ -145,6 +145,11 @@ STORE		   Open a store							   Usage: STORE
 <!-- Для тестов на стартовом маяке -->
 
 <event name="START_BEACON"><!-- 1.3 -->
+	<metaVariable name="ai_adv_pilot" op="set" val="0"/><!-- 1.36 -->
+	<metaVariable name="ai_adv_engines" op="set" val="0"/><!-- 1.36 -->
+	<metaVariable name="ai_adv_shields" op="set" val="0"/><!-- 1.36 -->
+	<metaVariable name="ai_adv_weapons" op="set" val="0"/><!-- 1.36 -->
+	<variable name="keeper_gift_on_waiting" op="set" val="0"/><!-- 1.36 -->
 	<metaVariable name="slurm_available" op="set" val="0"/><!-- 1.32 -->
 	<metaVariable name="in_store_now" op="set" val="0"/><!-- 1.34 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
@@ -153,6 +158,7 @@ STORE		   Open a store							   Usage: STORE
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<metaVariable name="coeff_missiles" op="set" val="100"/><!-- 1.35 -->
 	<metaVariable name="coeff_drones" op="set" val="100"/><!-- 1.35 -->
+	<metaVariable name="was_collected_this_run_BEAM_ANNIHILATOR" op="set" val="0"/><!-- 1.36 -->
 	<queueEvent seeded="false">TRIGGER_ON_HULL_WAS_AT_1</queueEvent>
 	<queueEvent seeded="false">TRIGGER_ON_HULL_LOWER_15</queueEvent>
 	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
@@ -175,6 +181,7 @@ STORE		   Open a store							   Usage: STORE
 	<queueEvent>START_CHECK_ULEI</queueEvent><!-- 1.33 -->
 	<queueEvent>START_CHECK_WEAPONS_COUNT</queueEvent><!-- 1.34 -->
 	<queueEvent>START_CHECK_RESET_CHALLENGES</queueEvent><!-- 1.34 -->
+	<queueEvent>START_CHECK_MAGMAN_EXTINGUISHERS</queueEvent><!-- 1.36 -->
 	<!-- <queueEvent>RECALC_PREIGNITER_ANTIABUSE_VAR</queueEvent> --><!-- 1.34 -->
 	<!-- <triggeredEvent event="ANTICLOAK_FIELD_JUMPCHECKS" seeded="false" loops="999999999" jumps="1"/> --><!-- 1.32 --><!-- 1.33 -->
 	<img back="HANGAR_PNG" planet="NONE"/><!-- 1.5 -->
@@ -307,6 +314,7 @@ STORE		   Open a store							   Usage: STORE
 			<metaVariable name="challenge_noevd" op="set" val="0"/><!-- 1.35 -->
 			<metaVariable name="challenge_noorc" op="set" val="0"/><!-- 1.35 -->
 			<metaVariable name="challenge_notxt" op="set" val="0"/><!-- 1.35 -->
+			<metaVariable name="challenge_notmr" op="set" val="0"/><!-- 1.36 -->
 		</event>
 		<event/>
 	</loadEventList>
@@ -324,6 +332,104 @@ STORE		   Open a store							   Usage: STORE
 </event>
 <event name="UPDATE_CARGO_SLOT3"><!-- 1.35 -->
 	<hiddenAug>CARGO_SLOT</hiddenAug>
+</event>
+
+<event name="START_CHECK_MAGMAN_EXTINGUISHERS"><!-- 1.36 -->
+	<loadEventList seeded="false" first="true">
+		<event req="MAGMAN_EXTINGUISHERS">
+			<variable name="installed_MAGMAN_EXTINGUISHERS" op="set" val="1"/>
+		</event>
+		<event/>
+	</loadEventList>
+</event>
+
+<!-- кары, можно дополнить, только зерно поправь тоже) --><!-- 1.36 -->
+<event name="RESUFFLE_ONLY_ONE_PLAYER_WEAPON">
+	<text>Кто-то из команды говорит, что вроде у вас только что были другие орудия. Он сошёл с ума?..</text>
+	<playSound>evilLaugh2</playSound>
+	<!-- тех.эвент -->
+</event>
+<event name="REMOVE_RANDOM_ITEM_FROM_PLAYER_CARGO">
+	<text>Кто-то из команды, проверяя трюм, заметил, что чего-то не хватает... Может ему показалось?</text>
+	<playSound>evilLaugh</playSound>
+	<!-- тех.эвент -->
+</event>
+<event name="CURSED_TIMER_EVENT_CHALLENGE">
+	<metaVariable name="rand_seed" op="set" min="0" max="10"/>
+	<loadEventList seeded="false" first="true" generate="false">
+		<event req="rand_seed" lvl="10">
+			<text>Вы ожидаете чего-то плохого, когда раздаётся дьявольский смех. Кажется, ничего не случилось...</text>
+			<playSound>evilLaugh</playSound>
+		</event>
+		<event req="rand_seed" lvl="9">
+			<text>Кто-то из команды заметил утечку кислорода. Откуда-то в корпусе появились пробоины!</text>
+			<damage amount="0" system="random" effect="breach"/>
+			<damage amount="0" system="random" effect="breach"/>
+			<damage amount="0" system="room" effect="breach"/>
+			<damage amount="0" system="random" effect="breach"/>
+			<damage amount="0" system="random" effect="breach"/>
+			<damage amount="0" system="room" effect="breach"/>
+			<playSound>soul_start_beacon_4</playSound>
+		</event>
+		<event load="RESUFFLE_ONLY_ONE_PLAYER_WEAPON" req="rand_seed" lvl="8"/>
+		<event load="REMOVE_RANDOM_ITEM_FROM_PLAYER_CARGO" req="rand_seed" lvl="7"/>
+		<event req="rand_seed" lvl="6">
+			<text>Кто-то из команды чувствует запах гари. Кажется, закоротила плохая проводка...</text>
+			<damage amount="0" system="random" effect="fire"/>
+			<damage amount="0" system="random" effect="fire"/>
+			<damage amount="0" system="random" effect="fire"/>
+			<damage amount="0" system="room" effect="fire"/>
+			<playSound>soul_start_beacon_3</playSound>
+		</event>
+		<event req="rand_seed" lvl="5">
+			<text>Кажется, неупокоенные души обрели физическую форму и решили забрать у вас корабль...</text>
+			<boarders min="1" max="5" class="ghost"/>
+			<playSound>soul_start_beacon_2</playSound>
+		</event>
+		<event req="rand_seed" lvl="4">
+			<text>Кажется, шёпот призраков на вашем корабле свёл с ума одного из команды...</text>
+			<crewMember amount="-1" class="traitor"/>
+			<playSound>evilLaugh2</playSound>
+		</event>
+		<event req="rand_seed" lvl="3">
+			<text>Кажется, неупокоенные души на вашем корабле вырвали кусок обшивки и унесли её в космос...</text>
+			<damage amount="2"/>
+			<playSound>soul_start_beacon_1</playSound>
+		</event>
+		<event req="rand_seed" lvl="3">
+			<text>Кажется, неупокоенные души на вашем корабле вырвали кусок обшивки и унесли её в космос...</text>
+			<damage amount="1"/>
+			<playSound>soul_start_beacon_1</playSound>
+		</event>
+		<event req="rand_seed" lvl="2">
+			<text>Кажется, проклятая дверь трюма вашего корабля оказалась приоткрыта, и что-то потерялось...</text>
+			<item_modify steal="true">
+				<item type="scrap" min="-55" max="-25"/>
+			</item_modify>
+			<playSound>chest2</playSound>
+		</event>
+		<event req="rand_seed" lvl="1">
+			<text>Кажется, проклятая дверь трюма вашего корабля оказалась приоткрыта, и что-то потерялось...</text>
+			<item_modify steal="true">
+				<item type="missiles" min="-10" max="-2"/>
+			</item_modify>
+			<playSound>chest2</playSound>
+		</event>
+		<event>
+			<text>Кажется, проклятая дверь трюма вашего корабля оказалась приоткрыта, и что-то потерялось...</text>
+			<item_modify steal="true">
+				<item type="drones" min="-10" max="-2"/>
+			</item_modify>
+			<playSound>chest2</playSound>
+		</event>
+		<event>
+			<text>Кажется, проклятая дверь трюма вашего корабля оказалась приоткрыта, и что-то потерялось...</text>
+			<item_modify steal="true">
+				<item type="fuel" min="-10" max="-2"/>
+			</item_modify>
+			<playSound>chest2</playSound>
+		</event>
+	</loadEventList>
 </event>
 
 <event name="START_CHECK_WEAPONS_COUNT">
@@ -625,7 +731,7 @@ STORE		   Open a store							   Usage: STORE
 		<event/>
 	</loadEventList>
 </event> --><!-- 1.35 -->
-<event name="PROJECTILE_EATER_LAUNCH"> <!-- bamalf кнопка DELETE запускает этот эвент в любой ситуации, поэтому проверки тут -->
+<event name="PROJECTILE_EATER_LAUNCH"> <!-- кнопка DELETE запускает этот эвент в любой ситуации, поэтому проверки тут -->
 	<variable name="counter_projectiles_eated" op="set" val="0"/>
 	<loadEventList seeded="false" first="true">
 		<event req="PROJECTILE_EATER" lvl="1">
@@ -1434,6 +1540,11 @@ High Average=	140%
 	<crewMember amount="-1" class="traitor"/>
 </event>
 
+<event name="TEST_GLYPH">
+	<text>Among the scrap, you find a strange weapon. It looks like a special touch panel is used to control it. You turn on the screen, and a glyph flashes on it for a couple of seconds. You try to memorize the pattern—it must mean something...</text>
+	<weapon name="GLIF_GUN"/>
+</event>
+
 <event name="TEST_EVENT6">
 	<text>Выглядит неплохо...</text>
 	<augment name="REPAIR_ARM"/>
@@ -2188,7 +2299,7 @@ High Average=	140%
 </event>
 
 <event name="AUTOSHIP_TALK"> <!-- 1.4 -->
-	<text>Здесь не с кем разговаривать. Однако, можно произвести некоторую модернизацию вашего беспилотника.</text>
+	<text>Здесь не с кем разговаривать. Однако можно произвести некоторую модернизацию вашего беспилотника.</text>
 	<!-- <choice req="HID_SLUG_GEL" lvl="1" max_group="0" blue="false" hidden="true"> 
 		<text>Внутреннее усиление: Ремонтный гель слагов.</text>
 		<event load="NOT_AVAILABLE"/>
@@ -2317,8 +2428,15 @@ High Average=	140%
 		<text load="NOTHING_SHIPRADAR2_TEXT"/>
 	</event>
 	<event>
-		<text>Анализатор не находит ничего полезного поблизости. Однако он смог составить карту ближайших маяков.</text>
-		<reveal_map/>
+		<loadEventList seeded="false" first="true">
+			<event req="player_has_sector_map" lvl="1">
+				<text>Анализатор не находит ничего полезного поблизости. Однако он смог ещё раз составить карту ближайших маяков, в ещё более высоком разрешении, чем раньше.</text> <!-- 1.36 -->
+			</event>
+			<event>
+				<text>Анализатор не находит ничего полезного поблизости. Однако он смог составить карту ближайших маяков.</text>
+				<reveal_map/>
+			</event>
+		</loadEventList>
 	</event>
 </eventList>
 <textList name="NOTHING_SHIPRADAR2_TEXT">
@@ -2448,8 +2566,15 @@ High Average=	140%
 			<text load="NOTHING2_HUMAN_M_TEXT"/>
 		</event>
 		<event>
-			<text load="NOTHING2_HUMAN_M_GOOD_TEXT"/>
-			<reveal_map/>
+			<loadEventList seeded="false" first="true"><!-- 1.36 -->
+				<event req="player_has_sector_map" lvl="1">
+					<text load="NOTHING2_HUMAN_M_TEXT"/>
+				</event>
+				<event>
+					<text load="NOTHING2_HUMAN_M_GOOD_TEXT"/>
+					<reveal_map/>
+				</event>
+			</loadEventList>
 		</event>
 	</loadEventList>
 </event>
@@ -2461,8 +2586,15 @@ High Average=	140%
 			<text load="NOTHING2_HUMAN_M_TEXT"/>
 		</event>
 		<event>
-			<text load="NOTHING2_HUMAN_M_GOOD_TEXT"/>
-			<reveal_map/>
+			<loadEventList seeded="false" first="true"><!-- 1.36 -->
+				<event req="player_has_sector_map" lvl="1">
+					<text load="NOTHING2_HUMAN_M_TEXT"/>
+				</event>
+				<event>
+					<text load="NOTHING2_HUMAN_M_GOOD_TEXT"/>
+					<reveal_map/>
+				</event>
+			</loadEventList>
 		</event>
 	</loadEventList>
 </event>
@@ -2485,8 +2617,15 @@ High Average=	140%
 			<text load="NOTHING2_HUMAN_Mb_TEXT"/>
 		</event>
 		<event>
-			<text load="NOTHING2_HUMAN_Mb_GOOD_TEXT"/>
-			<reveal_map/>
+			<loadEventList seeded="false" first="true"><!-- 1.36 -->
+				<event req="player_has_sector_map" lvl="1">
+					<text load="NOTHING2_HUMAN_Mb_TEXT"/>
+				</event>
+				<event>
+					<text load="NOTHING2_HUMAN_Mb_GOOD_TEXT"/>
+					<reveal_map/>
+				</event>
+			</loadEventList>
 		</event>
 	</loadEventList>
 </event>
@@ -2498,8 +2637,15 @@ High Average=	140%
 			<text load="NOTHING2_HUMAN_Mb_TEXT"/>
 		</event>
 		<event>
-			<text load="NOTHING2_HUMAN_Mb_GOOD_TEXT"/>
-			<reveal_map/>
+			<loadEventList seeded="false" first="true"><!-- 1.36 -->
+				<event req="player_has_sector_map" lvl="1">
+					<text load="NOTHING2_HUMAN_Mb_TEXT"/>
+				</event>
+				<event>
+					<text load="NOTHING2_HUMAN_Mb_GOOD_TEXT"/>
+					<reveal_map/>
+				</event>
+			</loadEventList>
 		</event>
 	</loadEventList>
 </event>
@@ -2958,7 +3104,7 @@ High Average=	140%
 	<text>Вы находите инжи в отсеке двигателей. Он утверждает, что оптимизировал некоторые цепи, и теперь двигатели выдают меньше отходов в окружающее космическое пространство.</text>
 	<text>Вы отправляетесь к инжи, но в отсеке никого нет. Внезапно стоящее неподалёку кресло начинает трансформироваться, и инжи принимает свою обычную форму. Изрядно испугавшись, вы просите его больше так не делать.</text>
 	<!-- 1.25 -->
-	<text>Инжи утверждает, что провёл анализ последних событий и нашёл коренную причину всех проблем на корабле. Однако, модуль этики не позволяет ему озвучить её.</text>
+	<text>Инжи утверждает, что провёл анализ последних событий и нашёл коренную причину всех проблем на корабле. Однако модуль этики не позволяет ему озвучить её.</text>
 	<text>Вы заходите в отсек к инжи и застаёте его за просмотром видеоархива последних сражений. Он даёт вам пару рекомендаций, и вы уходите обратно.</text>
 	<text>Инжи задаёт вам серию стандартных вопросов из своего внутреннего каталога для общения с гуманоидами. Вы отвечаете на них, и, видимо, это можно считать состоявшейся беседой.</text>
 	<!-- 1.27 -->
@@ -3017,7 +3163,7 @@ High Average=	140%
 	<text>Вы находите морфа в оружейном отсеке. Он уверяет вас, что подправил систему наведения, и теперь орудия будут точнее попадать в цель.</text>
 	<text>Вы находите морфа в отсеке двигателей. Он утверждает, что оптимизировал некоторые цепи, и теперь двигатели выдают меньше отходов в окружающее космическое пространство.</text>
 	<text>Вы отправляетесь к морфу, но в отсеке никого нет. Внезапно стоящее неподалёку кресло начинает трансформироваться, и морф принимает свою обычную форму. Изрядно испугавшись, вы просите его больше так не делать.</text>
-	<text>Морф утверждает, что провёл анализ последних событий и нашёл коренную причину всех проблем на корабле. Однако, модуль этики не позволяет ему озвучить её.</text>
+	<text>Морф утверждает, что провёл анализ последних событий и нашёл коренную причину всех проблем на корабле. Однако модуль этики не позволяет ему озвучить её.</text>
 	<text>Вы заходите в отсек к морфу и застаёте его за просмотром видеоархива последних сражений. Он даёт вам пару рекомендаций, и вы уходите обратно.</text>
 	<text>Морф задаёт вам серию стандартных вопросов из своего внутреннего каталога для общения с гуманоидами. Вы отвечаете на них, и, видимо, это можно считать состоявшейся беседой.</text>
 	<text>Морф докладывает вам: "01001000 01101001 00101100 00100000 01100011 01100001 01110000 01110100 00101110". Вы делаете вид, что всё поняли, и уходите обратно.</text>
@@ -4457,9 +4603,17 @@ High Average=	140%
 </event>
 <eventList name="RANDOM_GIFT">  <!-- JUSTIN — ADD STUFF-->
 	<event>	
-		<text>«Огромное спасибо! Мы можем поделиться результатами сканирования сектора и дать вам немного лома». Ваша карта обновлена.</text><!-- 1.25 -->
-		<autoReward level="LOW">scrap_only</autoReward><!-- 1.25 -->
-		<reveal_map/>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>«Огромное спасибо! У нас есть лишь немного лома для вас и карта сектора. Но вам она, наверное, уже не нужна».</text>
+				<autoReward level="LOW">scrap_only</autoReward>
+			</event>
+			<event>
+				<text>«Огромное спасибо! Мы можем поделиться результатами сканирования сектора и дать вам немного лома». Ваша карта обновлена.</text><!-- 1.25 -->
+				<autoReward level="LOW">scrap_only</autoReward><!-- 1.25 -->
+				<reveal_map/>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>«Спасибо. Примите в качестве благодарности немного лома».</text>
@@ -5755,7 +5909,7 @@ High Average=	140%
 </event>	
 <eventList name="STATION_SICK_SCANNER"> <!--DLC-->
 	<event>
-		<text>Сенсоры показывают рассеянные признаки жизни, невзирая на то, что большинство экипажа погибло. Однако, их характеристика показывает, что они сильные и нестабильные. Вы решаете, что лучше уйти, чем рисковать, привлекая внимание оставшегося экипажа.</text>
+		<text>Сенсоры показывают рассеянные признаки жизни, невзирая на то, что большинство экипажа погибло. Однако их характеристика показывает, что они сильные и нестабильные. Вы решаете, что лучше уйти, чем рисковать, привлекая внимание оставшегося экипажа.</text>
 	</event>
 	<event>
 		<text>На корабле не было обнаружено признаков жизни, но, кажется, весь экипаж там мёртв. Внутри не наблюдается никаких воздушных инфекционных заболеваний, поэтому ваша команда быстро собирает всё, что может, прежде чем двигаться дальше. Вы можете только гадать, что постигло эту станцию.</text>
@@ -5935,7 +6089,7 @@ High Average=	140%
 	<choice req="pilot" lvl="2" hidden="true"> 
 		<text>(Улучшенная рубка управления) Приказать вашему пилоту маневрировать между астероидами.</text>
 		<event>
-			<text>Благодаря вашему пилоту, вы успешно маневрируете между астероидов. Однако, пучок яркого света преследует ваш корабль, призраки на борту!</text>
+			<text>Благодаря вашему пилоту, вы успешно маневрируете между астероидов. Однако пучок яркого света преследует ваш корабль, призраки на борту!</text>
 			<boarders min="2" max="3" class="ghost"/><!-- 1.22 -->
 		</event>
 	</choice>  
@@ -6051,6 +6205,16 @@ High Average=	140%
 	<text>Оказавшись в системе, вы замечаете неподалёку корабль Федерации. Сканеры показывают отсутствие экипажа, а единственная находка на борту - запечатанный топливный бак. Никаких следов или подсказок, объясняющих исчезновение команды, не обнаружено.</text>
 	<text>Прямо по курсу дрейфует топливный бак. Вы аккуратно доставляете его на борт.</text>
 	<text>Вы случайно наткнулись на обломки космической станции. В основном всё разграблено, но вы находите топливный бак внутри.</text>
+</textList>
+
+<event name="FREE_KOMAROV_CORE" unique="true"> <!-- 1.36 -->
+	<text load="FREE_KOMAROV_CORE"/>
+	<weapon name="KOMAROV_CORE"/>
+</event>
+<textList name="FREE_KOMAROV_CORE">
+	<text>Оказавшись в системе, вы замечаете неподалёку корабль Федерации. Сканеры показывают отсутствие экипажа, а единственная находка на борту - ядро Комарова. Никаких следов или подсказок, объясняющих исчезновение команды, не обнаружено.</text>
+	<text>Прямо по курсу дрейфует ядро Комарова. Вы аккуратно доставляете его на борт.</text>
+	<text>Вы случайно наткнулись на обломки космической станции. В основном всё разграблено, но вы находите ядро Комарова внутри.</text>
 </textList>
 
 <event name="FUEL_FOR_DRONE">
@@ -7327,7 +7491,7 @@ High Average=	140%
 
 		
 <event name="QUEST_MANTIS_INVASION_START" unique="true">
-	<text>Вы получаете запрос: «Все наши военные корабли были повреждены или уничтожены во время восстания. Однако, у нас есть сведения о военном лагере мантисов на расстоянии нескольких прыжков от нас. Вы можете помочь?»</text>
+	<text>Вы получаете запрос: «Все наши военные корабли были повреждены или уничтожены во время восстания. Однако у нас есть сведения о военном лагере мантисов на расстоянии нескольких прыжков от нас. Вы можете помочь?»</text>
 	<choice hidden="true">
 		<text>Обещать, что сделаете всё, что сможете.</text>
 		<event>
@@ -9417,7 +9581,7 @@ High Average=	140%
 		
 <eventList name="CIRCLE_PRO_TALK">
 	<event>
-		<text>Вы отправляете своего инжи на станцию, чтобы уговорить их передать прототип орудия вам для борьбы с повстанцами. Похоже, что инжи тоже не жалуют их, так как вскоре с вами связываются и спрашивают, куда установить орудие. Однако, ваш инжи пожелал остаться на станции и заниматься исследованиями со своими собратьями, так что придётся оставить его здесь. Вы считаете, что это справедливая плата за такое мощное орудие.</text>
+		<text>Вы отправляете своего инжи на станцию, чтобы уговорить их передать прототип орудия вам для борьбы с повстанцами. Похоже, что инжи тоже не жалуют их, так как вскоре с вами связываются и спрашивают, куда установить орудие. Однако ваш инжи пожелал остаться на станции и заниматься исследованиями со своими собратьями, так что придётся оставить его здесь. Вы считаете, что это справедливая плата за такое мощное орудие.</text>
 		<variable name="counter_usage_engi" op="add" val="1"/>
 		<weapon name="OMICRON_IMPACT_ION_BEAM_1"/>
 		<removeCrew class="engi">
@@ -18213,9 +18377,17 @@ High Average=	140%
 
 <eventList name="ZOLTAN_FLEET_ZOLTALKS">
 	<event>
-		<text>Золтанец увлечённо болтает с товарищами на самые разные темы и, в итоге, выпрашивает лицензию на пролёт, карту сектора и одно орудие.</text>
-		<weapon name="RANDOM"/>
-		<reveal_map/>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Золтанец увлечённо болтает с товарищами на самые разные темы и, в итоге, выпрашивает лицензию на пролёт и одно орудие.</text>
+				<weapon name="RANDOM"/>
+			</event>
+			<event>
+				<text>Золтанец увлечённо болтает с товарищами на самые разные темы и, в итоге, выпрашивает лицензию на пролёт, карту сектора и одно орудие.</text>
+				<weapon name="RANDOM"/>
+				<reveal_map/>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Золтанец взывает к пункту 155.17.8 абсолютного кодекса золтанского союза о критических ситуациях военного времени. Командиры флота нехотя соглашаются с ним и, согласно инструкции 155.17.8b, высылают вам 5 топливных ячеек.</text> <!-- 1.25 -->
@@ -18558,12 +18730,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Человек скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Человек находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Человек скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Человек находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -18665,12 +18848,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Человек скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Человек находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Человек скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Человек находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -18771,12 +18965,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Человек скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Человек находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Человек скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Человек находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -18878,13 +19083,25 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Инжи скрытно скачивает карту сектора и возвращается обратно.</text>
-		<variable name="counter_usage_engi" op="add" val="1"/>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Инжи находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<variable name="counter_usage_engi" op="add" val="1"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Инжи скрытно скачивает карту сектора и возвращается обратно.</text>
+				<variable name="counter_usage_engi" op="add" val="1"/>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Инжи находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -18992,12 +19209,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Морф скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Морф находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Морф скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Морф находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -19100,13 +19328,25 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтанец скрытно скачивает карту сектора и возвращается обратно.</text>
-		<variable name="counter_usage_energy" op="add" val="1"/>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Золтанец находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<variable name="counter_usage_energy" op="add" val="1"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Золтанец скрытно скачивает карту сектора и возвращается обратно.</text>
+				<variable name="counter_usage_energy" op="add" val="1"/>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Золтанец находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -19214,13 +19454,25 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтанец скрытно скачивает карту сектора и возвращается обратно.</text>
-		<variable name="counter_usage_energy" op="add" val="1"/>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Золтанец находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<variable name="counter_usage_energy" op="add" val="1"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Золтанец скрытно скачивает карту сектора и возвращается обратно.</text>
+				<variable name="counter_usage_energy" op="add" val="1"/>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Золтанец находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -19327,12 +19579,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтонец скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Золтонец находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Золтонец скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Золтонец находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -19433,12 +19696,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтонец скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Золтонец находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Золтонец скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Золтонец находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -19539,12 +19813,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Рок скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Рок находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Рок скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Рок находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -19661,12 +19946,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Магмен скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Магмен находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Магмен скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Магмен находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -19783,12 +20079,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Ланиус скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Ланиус находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Ланиус скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Ланиус находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -19891,13 +20198,25 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Кристалин скрытно скачивает карту сектора и возвращается обратно.</text>
-		<variable name="counter_usage_crystal" op="add" val="1"/>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Кристалин находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<variable name="counter_usage_crystal" op="add" val="1"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Кристалин скрытно скачивает карту сектора и возвращается обратно.</text>
+				<variable name="counter_usage_crystal" op="add" val="1"/>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Кристалин находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -19983,12 +20302,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Аватар скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Аватар находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Аватар скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Аватар находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -20069,13 +20399,25 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Орхид скрытно скачивает карту сектора и возвращается обратно.</text>
-		<variable name="counter_usage_orchid" op="add" val="1"/>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Орхид находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<variable name="counter_usage_orchid" op="add" val="1"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Орхид скрытно скачивает карту сектора и возвращается обратно.</text>
+				<variable name="counter_usage_orchid" op="add" val="1"/>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Орхид находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -20161,12 +20503,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Машрум скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Машрум находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Машрум скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Машрум находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -20246,12 +20599,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Броненосец скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Броненосец находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Броненосец скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Броненосец находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -20331,12 +20695,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Панцерон скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Панцерон находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Панцерон скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Панцерон находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -20416,12 +20791,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Мантис скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Мантис находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Мантис скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Мантис находит склад с оружием, но незаметно вынести ничего не может.</text>
@@ -20512,12 +20898,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Слаг скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Слаг находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Слаг скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Слаг находит склад с оружием.</text>
@@ -20573,12 +20970,23 @@ High Average=	140%
 		</choice>
 	</event>
 	<event>
-		<text>Слёрм скрытно скачивает карту сектора и возвращается обратно.</text>
-		<reveal_map/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="RADAR_REBEL_RETURN"/>
-		</choice>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Слёрм находит лишь бесполезные данные о маяках сектора и возвращается обратно.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+			<event>
+				<text>Слёрм скрытно скачивает карту сектора и возвращается обратно.</text>
+				<reveal_map/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Слёрм находит склад с оружием.</text>
@@ -22089,6 +22497,22 @@ High Average=	140%
 		<text>(Целеуказатель дронов) Попробовать улучшить систему дронов, используя целеуказатель.</text>
 		<event load="AIM_DRONES_LIST_PREPARE"/>
 	</choice>
+	<choice req="DOOR_WORM" hidden="true"><!-- 1.36 -->
+		<text>(Шлюзовой червь) Попробовать улучшить систему взломщика, используя шлюзового червя.</text>
+		<event load="DOOR_WORM_LIST_PREPARE"/>
+	</choice>
+	<choice req="ai_adv_pilot" lvl="2" hidden="true" max_group="0" blue="false"><!-- 1.36 -->
+		<text>(Беспилотный корабль) Автоматическое управление корабля улучшено максимально.</text>
+		<event load="NOT_AVAILABLE"/>
+	</choice>
+	<choice req="ai_adv_pilot" lvl="1" hidden="true" max_group="0" blue="true"><!-- 1.36 -->
+		<text>(Беспилотный корабль) Попытаться улучшить ИИ всех автоматических операторов.</text>
+		<event load="EVENT_AI_ADV_UPGRADE_ALL"/>
+	</choice>
+	<choice req="ai_adv_pilot" lvl="0" hidden="true" max_group="0" blue="true"><!-- 1.36 -->
+		<text>(Беспилотный корабль) Попытаться улучшить ИИ всех автоматических операторов.</text>
+		<event load="EVENT_AI_ADV_UPGRADE_ALL"/>
+	</choice>
 	
 	<choice hidden="true" req="pilot" max_group="100" blue="false"><!-- 1.33 --><!-- 1.34 -->
 		<text>Поговорить с экипажем, пока заряжается FTL-привод.</text>
@@ -22131,10 +22555,50 @@ High Average=	140%
 	
 <!--xxxxxx  ЛИСТЫ СОБЫТИЙ СТАРТОВЫХ МАЯКОВ ххххх-->
 
+<!-- 1.36 -->
+
+<event name="EVENT_AI_ADV_UPGRADE_ALL">
+	<metaVariable name="rand_seed" op="set" min="0" max="4"/>
+	<loadEventList seeded="false" first="true" generate="false">
+		<event req="rand_seed" lvl="4">
+			<text>Вам удалось улучшить автоматическое управление!</text>
+			<metaVariable name="ai_adv_pilot" op="add" val="1"/>
+			<metaVariable name="ai_adv_engines" op="add" val="1"/>
+			<metaVariable name="ai_adv_shields" op="add" val="1"/>
+			<metaVariable name="ai_adv_weapons" op="add" val="1"/>
+		</event>
+		<event req="rand_seed" lvl="3">
+			<text>Вам удалось улучшить автоматическое управление!</text>
+			<metaVariable name="ai_adv_pilot" op="add" val="1"/>
+			<metaVariable name="ai_adv_engines" op="add" val="1"/>
+			<metaVariable name="ai_adv_shields" op="add" val="1"/>
+			<metaVariable name="ai_adv_weapons" op="add" val="1"/>
+		</event>
+		<event req="rand_seed" lvl="2">
+			<text>Вам удалось улучшить автоматическое управление! Однако это заняло немало времени, и флот повстанцев приблизился.</text>
+			<metaVariable name="ai_adv_pilot" op="add" val="1"/>
+			<metaVariable name="ai_adv_engines" op="add" val="1"/>
+			<metaVariable name="ai_adv_shields" op="add" val="1"/>
+			<metaVariable name="ai_adv_weapons" op="add" val="1"/>
+			<modifyPursuit amount="1"/>
+		</event>
+		<event req="rand_seed" lvl="1" load="EVENT_AI_ADV_UPGRADE_NOTHING"/>
+		<event req="rand_seed" lvl="0" load="EVENT_AI_ADV_UPGRADE_BAD"/>
+	</loadEventList>
+</event>
+<event name="EVENT_AI_ADV_UPGRADE_NOTHING">
+	<text>Ваши попытки доработать автоматическое управление безуспешны, вы не можете больше терять время на этом маяке.</text>
+</event>
+<event name="EVENT_AI_ADV_UPGRADE_BAD">
+	<text>Ваши попытки доработать автоматическое управление безуспешны, а за потраченное время флот повстанцев нагоняет вас.</text>
+	<modifyPursuit amount="1"/>
+</event>
+
 <!-- 1.35 -->
 
 <eventList name="EVENT_TRY_TO_REMOVE_HIVE">
 	<event load="TRY_TO_REMOVE_HIVE_GOOD"/>
+	<event load="TRY_TO_REMOVE_HIVE_GOOD"/><!-- 1.36 -->
 	<event load="TRY_TO_REMOVE_HIVE_GOOD_AND_BAD"/>
 	<event load="TRY_TO_REMOVE_HIVE_NOTHING"/>
 	<event load="TRY_TO_REMOVE_HIVE_BAD"/>
@@ -22208,6 +22672,46 @@ High Average=	140%
 		<queueEvent>ULEI_EVENT_ENEMY</queueEvent>
 	</event>
 </eventList>
+<!-- 1.36 -->
+<event name="DOOR_WORM_LIST_PREPARE"> 
+    <text>Вы отправляете команду оптимизировать вашу систему взломщика.</text>
+    <choice hidden="true" req="hacking" blue="false">
+        <text id="continue"/>
+        <event load="DOOR_WORM_LIST"/>
+    </choice>
+    <choice hidden="true" req="hacking" lvl="0" max_lvl="0" blue="false">
+        <text>К сожалению, без системы взломщика это невозможно сделать.</text>
+        <event/>
+    </choice>
+</event>
+<eventList name="DOOR_WORM_LIST">
+	<event load="DOOR_WORM_LIST_NOTHING"/>
+	<event load="DOOR_WORM_LIST_NOTHING"/>
+	<event load="DOOR_WORM_LIST_GOOD"/>
+	<event load="DOOR_WORM_LIST_GOOD"/>
+	<event load="DOOR_WORM_LIST_GOOD"/>
+	<event load="DOOR_WORM_LIST_GOOD_2"/>
+	<event load="DOOR_WORM_LIST_BAD"/>
+</eventList>
+
+<event name="DOOR_WORM_LIST_NOTHING">
+	<text>Ваша команда не может справиться с настройкой системы взломщика. Вы больше не можете терять время и готовитесь к прыжку.</text>	
+</event>
+<event name="DOOR_WORM_LIST_GOOD">
+	<text>Ваша команда оптимизирует работу системы взломщика совместно с шлюзовым червем. Взломщик получает улучшение.</text>
+	<upgrade amount="1" system="hacking"/>
+</event>
+<event name="DOOR_WORM_LIST_GOOD_2">
+	<text>Ваша команда оптимизирует работу системы взломщика совместно с шлюзовым червем слишком долго. Взломщик получает улучшение, но флот повстанцев приблизился за это время.</text>
+	<upgrade amount="1" system="hacking"/>
+	<modifyPursuit amount="1"/>
+</event>
+<event name="DOOR_WORM_LIST_BAD">
+	<text>Во время процесса оптимизации происходит взрыв в системе взломщика! Что-то пошло не так...</text>
+	<damage amount="1" system="hacking" effect="fire"/>
+	<damage amount="1" system="hacking" effect="breach"/>
+	<damage amount="1" system="hacking" effect="breach"/>
+</event>
 
 <!-- 1.34 -->
 
@@ -22245,7 +22749,7 @@ High Average=	140%
 	<modifyPursuit amount="1"/>
 </event>
 <event name="AIM_DRONES_LIST_BAD">
-	<text>Во время процесса оптимизации проиходит взрыв в системе дронов! Что-то пошло не так...</text>
+	<text>Во время процесса оптимизации происходит взрыв в системе дронов! Что-то пошло не так...</text>
 	<damage amount="1" system="drones" effect="fire"/>
 	<damage amount="1" system="drones" effect="breach"/>
 	<damage amount="1" system="drones" effect="breach"/>
@@ -22285,7 +22789,7 @@ High Average=	140%
 	<modifyPursuit amount="1"/>
 </event>
 <event name="ART_ACCURACY_LIST_BAD">
-	<text>Во время процесса оптимизации проиходит взрыв в системе артиллерии! Что-то пошло не так...</text>
+	<text>Во время процесса оптимизации происходит взрыв в системе артиллерии! Что-то пошло не так...</text>
 	<damage amount="1" system="artillery" effect="fire"/>
 	<damage amount="1" system="artillery" effect="breach"/>
 	<damage amount="1" system="artillery" effect="breach"/>
@@ -24787,7 +25291,7 @@ High Average=	140%
 	<queueEvent seeded="false">PROJECTILE_EATER_ADD_LVL</queueEvent>
 </event>
 <textList name="PROJECTILE_EATER_LIST_GOOD_AND_BAD"><!-- 1.33 -->
-	<text>Ваша команда долго бьётся над алгоритмами, но у них получается! Уничтожитель снарядов получает дополнительный заряд применения. Однако, флот повстанцев приблизился за это время.</text>
+	<text>Ваша команда долго бьётся над алгоритмами, но у них получается! Уничтожитель снарядов получает дополнительный заряд применения. Однако флот повстанцев приблизился за это время.</text>
 </textList>
 
 <eventList name="AUTO_REPAIR_LIST"> <!-- 1.33 -->
@@ -24818,7 +25322,7 @@ High Average=	140%
 	<queueEvent seeded="false">EVENT_ADD_AUTO_REPAIR_SPEED</queueEvent>
 </event>
 <textList name="AUTO_REPAIR_LIST_GOOD_AND_BAD"><!-- 1.33 -->
-	<text>Ваша команда долго бьётся над алгоритмами, но у них получается! Авторемонт систем теперь будет быстрее на 100% от базовой скорости. Однако, флот повстанцев приблизился за это время.</text>
+	<text>Ваша команда долго бьётся над алгоритмами, но у них получается! Авторемонт систем теперь будет быстрее на 100% от базовой скорости. Однако флот повстанцев приблизился за это время.</text>
 </textList>
 
 <eventList name="ROCK_ARMOR_LIST"> 
@@ -27130,7 +27634,7 @@ High Average=	140%
 </event>
 <event name="001011">
 	<text>Рядом с маяком закрытый контейнер с пиратскими знаками. Вы вскрываете его — внутри рабочий дрон.</text>
-	<weapon name="DRONES_STANDARD_PLAYER"/>
+	<drone name="DRONES_STANDARD_PLAYER"/><!-- 1.36 -->
 </event>
 <event name="001010">
 	<text>Возле маяка болтается спасательная капсула. Она оказывается повреждена, запирающий механизм заклинило. Возможно, кто-то другой поможет вам её открыть.</text>
@@ -31698,7 +32202,7 @@ High Average=	140%
 		<choice hidden="true" req="slug_crew">
 			<text>(Член экипажа слаг) Попытаться связаться телепатически.</text>
 			<event>
-				<text>Через некоторое время слаг докладывает вам, что это простые существа, живущие мирной жизнью. Однако, это не первый раз, когда здесь приземлился корабль. Они информируют вас, что недалеко находится место крушения.</text>
+				<text>Через некоторое время слаг докладывает вам, что это простые существа, живущие мирной жизнью. Однако это не первый раз, когда здесь приземлился корабль. Они информируют вас, что недалеко находится место крушения.</text>
 				<choice hidden="true">
 					<text id="continue"/>
 					<event>
@@ -32107,7 +32611,7 @@ High Average=	140%
 		<crewMember amount="1" class="human">Киселев</crewMember> <!-- 1.25 --><!-- Kiselev -->
 	</event>
 	<event>
-		<text>Вы объясняете исследователю ситуацию, в которой Федерация находится в данный момент. Однако, он предан своему делу и, не желая бросать свой корабль, остаётся на планете.</text>
+		<text>Вы объясняете исследователю ситуацию, в которой Федерация находится в данный момент. Однако он предан своему делу и, не желая бросать свой корабль, остаётся на планете.</text>
 	</event>
 	<event>
 		<text>Вы объясняете исследователю ситуацию, в которой Федерация находится в данный момент. Внимательно выслушав вас, он отказывается вступить в экипаж, даёт вам пару банок паштета и желает удачи в миссии по спасению мира.</text>
@@ -34516,6 +35020,7 @@ High Average=	140%
 		<text>Записаться в добровольный отряд по очистке орбиты от пиратов.</text>
 		<event>
 			<text>Спустя несколько минут вы засекаете пиратский корабль. Со станции на планете по нему открывают огонь. Это явно будет легко.</text>
+			<noASBPlanet/><!-- 1.36 -->
 			<environment type="PDS" target="enemy"/>
 			<ship load="PIRATE" hostile="true"/>
 		</event>
@@ -34695,7 +35200,7 @@ High Average=	140%
 		<text>Ваша команда весело проводит время с местными танцовщицами. Отдохнув, все возвращаются на борт по своим отсекам.</text>
 	</event>
 	<event>
-		<text>Ваша команда весело проводит время с местными танцовщицами. Однако, вы замечаете, что кто-то из команды надолго пропал! Поиски и расспросы местных ничего не дали...</text>
+		<text>Ваша команда весело проводит время с местными танцовщицами. Однако вы замечаете, что кто-то из команды надолго пропал! Поиски и расспросы местных ничего не дали...</text>
 		<removeCrew>
 			<clone>true</clone>
 			<text>Вы с надеждой идёте в клон-отсек, и, к вашему облегчению, клон потерянного члена экипажа уже готов. На ваши расспросы он отвечает, что ничего не помнит.</text>
@@ -44685,7 +45190,7 @@ High Average=	140%
 </textList>
 
 <event name="ENGI_EVO" unique="true"><!-- 1.23 -->
-	<text>На первый взгляд маяк пуст. Однако, вскоре с вами связывается скрытая станция инжи, опознав вас как союзника Федерации. Вы получаете приглашение пристыковаться.</text>
+	<text>На первый взгляд маяк пуст. Однако вскоре с вами связывается скрытая станция инжи, опознав вас как союзника Федерации. Вы получаете приглашение пристыковаться.</text>
 	<choice hidden="true"> 
 		<text>Принять приглашение.</text>
 		<event load="ENGI_EVO_ENTER"/>
@@ -45028,9 +45533,17 @@ High Average=	140%
 	<item_modify><item type="scrap" min="1" max="1"/></item_modify>
 </event>
 <event name="EVENT_ZOLTAN_CODEX_END">
-	<text>Вы нажимаете белую кнопку на коробке, и устройство начинает передавать карту сектора в ваш навигатор. Когда процесс завершается, вы разбираете коробку на лом.</text>
-	<item_modify><item type="scrap" min="1" max="1"/></item_modify>
-	<reveal_map/>
+	<loadEventList seeded="false" first="true"><!-- 1.36 -->
+		<event req="player_has_sector_map" lvl="1">
+			<text>Вы нажимаете белую кнопку на коробке, и устройство начинает передавать карту сектора в ваш навигатор. Вряд ли это полезно, так эти данные уже там есть... Когда процесс завершается, вы разбираете коробку на лом.</text>
+			<item_modify><item type="scrap" min="1" max="1"/></item_modify>
+		</event>
+		<event>
+			<text>Вы нажимаете белую кнопку на коробке, и устройство начинает передавать карту сектора в ваш навигатор. Когда процесс завершается, вы разбираете коробку на лом.</text>
+			<item_modify><item type="scrap" min="1" max="1"/></item_modify>
+			<reveal_map/>
+		</event>
+	</loadEventList>
 </event>
 
 <event name="EVENT_ZOLTAN_CODEX_3"><!-- dont touch this format please -->
@@ -45097,9 +45610,17 @@ High Average=	140%
 	<choice hidden="true"><text>Нажать красную кнопку...</text><event load="EVENT_ZOLTAN_CODEX_S2"/></choice>
 </event>
 <event name="EVENT_ZOLTAN_CODEX_S2">
-	<text>Вы нажимаете красную кнопку на коробке, и устройство начинает передавать карту сектора в ваш навигатор. Когда процесс завершается, вы разбираете коробку на лом.</text>
-	<item_modify><item type="scrap" min="1" max="1"/></item_modify>
-	<reveal_map/>
+	<loadEventList seeded="false" first="true"><!-- 1.36 -->
+		<event req="player_has_sector_map" lvl="1">
+			<text>Вы нажимаете красную кнопку на коробке, и устройство начинает передавать карту сектора в ваш навигатор. Вряд ли это полезно, так эти данные уже там есть... Когда процесс завершается, вы разбираете коробку на лом.</text>
+			<item_modify><item type="scrap" min="1" max="1"/></item_modify>
+		</event>
+		<event>
+			<text>Вы нажимаете красную кнопку на коробке, и устройство начинает передавать карту сектора в ваш навигатор. Когда процесс завершается, вы разбираете коробку на лом.</text>
+			<item_modify><item type="scrap" min="1" max="1"/></item_modify>
+			<reveal_map/>
+		</event>
+	</loadEventList>
 </event>
 <event name="EVENT_ZOLTAN_CODEX_END2">
 	<text>Вы нажимаете белую кнопку на коробке, и внутри что-то сгорает. Теперь это просто очередной кусок лома.</text>
@@ -47395,7 +47916,7 @@ High Average=	140%
 			</event>
 		</choice>
 	</event>
-	<event>
+	<!-- <event>
 		<text>Спасённые гражданские оказались ремонтным судном. Они предлагают бесплатно починить ваш корабль либо дать немного припасов в дорогу.</text>
 		<choice hidden="false">
 			<text>Запросить ремонт [15 $].</text>
@@ -47451,7 +47972,7 @@ High Average=	140%
 				</item_modify>
 			</event>
 		</choice>
-	</event>
+	</event> --><!-- 1.36 -->
 	<event><!-- 1.27.1 -->
 		<text>Спасённые гражданские оказались ремонтным судном. Они предлагают бесплатно починить ваш корабль либо дать немного припасов в дорогу.</text>
 		<choice hidden="false">
@@ -47668,6 +48189,7 @@ High Average=	140%
 								<text>Среди лома вы находите какое-то странное орудие. Похоже, для управления им используется специальная сенсорная панель. Вы включаете экран, и на нём на пару секунд вспыхивает какой-то глиф. Вы стараетесь запомнить рисунок, наверняка он что-то означает...</text>
 								<weapon name="GLIF_GUN"/>
 								<achievement silent="false">ACH_GLIF_GUN</achievement>
+								<variable name="player_got_glifgun_this_run" op="set" val="1"/> <!-- 1.36 -->
 							</event>
 						</loadEventList>
 					</event>
@@ -49069,47 +49591,64 @@ High Average=	140%
 </eventList>
 
 <!-- 1.5 -->
-
+<!-- talk with keeper updated --><!-- 1.36 -->
+<textList name="NOTHING2_KEEPER_TEXT_NONONO">
+	<text>Вы заходите к хранителю, и он вам говорит, что беседа с ним бессмысленна на данный момент.</text>
+	<text>Вы заходите к хранителю, и он вам говорит, что вы зря зашли сейчас, вам следует ждать некое неизбежное событие.</text>
+	<text>Вы заходите к хранителю, но он выпроваживает вас в дверь, сказав, что нужно набраться терпения.</text>
+</textList>
 <eventList name="NOTHING2_KEEPER">
 	<event>
-		<text load="NOTHING2_KEEPER_TEXT"/>
-		<variable name="counter_talk_keeper" op="add" val="1"/><!-- 1.32 -->
-		<triggeredEvent event="KEEPER_GIFT" seeded="false" minTime="180.0" maxTime="600.0"/>
+		<loadEventList seeded="false" first="true" generate="true">
+			<event req="keeper_gift_on_waiting" lvl="1">
+				<text load="NOTHING2_KEEPER_TEXT_NONONO"/>
+			</event>
+			<event>
+				<text load="NOTHING2_KEEPER_TEXT"/>
+				<variable name="counter_talk_keeper" op="add" val="1"/><!-- 1.32 -->
+				<variable name="keeper_gift_on_waiting" op="set" val="1"/>
+				<triggeredEvent event="KEEPER_GIFT" seeded="false" minTime="180.0" maxTime="600.0"/>
+			</event>
+		</loadEventList>
 	</event>
 </eventList>
-
 <eventList name="NOTHING2_KEEPER2">
 	<event>
-		<text load="NOTHING2_KEEPER_TEXT"/>
-		<variable name="counter_talk_keeper" op="add" val="1"/><!-- 1.32 -->
-		<triggeredEvent event="KEEPER_GIFT2" seeded="false" minTime="90.0" maxTime="300.0"/>
+		<loadEventList seeded="false" first="true" generate="true">
+			<event req="keeper_gift_on_waiting" lvl="1">
+				<text load="NOTHING2_KEEPER_TEXT_NONONO"/>
+			</event>
+			<event>
+				<text load="NOTHING2_KEEPER_TEXT"/>
+				<variable name="counter_talk_keeper" op="add" val="1"/><!-- 1.32 -->
+				<variable name="keeper_gift_on_waiting" op="set" val="1"/>
+				<triggeredEvent event="KEEPER_GIFT2" seeded="false" minTime="90.0" maxTime="300.0"/>
+			</event>
+		</loadEventList>
 	</event>
 </eventList>
-
-
 <textList name="NOTHING2_KEEPER_TEXT">
 	<text>Вы заходите к хранителю, и он с увлечением рассказывает вам о тайном смысле времени. Вы мало что поняли из этого, но он намекнул, что в ближайшем будущем вас ждёт сюрприз. В конце он добавляет, что он не сможет сделать больше, пока это событие не произойдёт.</text>
 	<text>Вы заходите к хранителю, и он с увлечением рассказывает вам о возможностях перемещений во времени. Вы сделали вид, что всё поняли, и он намекнул, что в ближайшем будущем вас ждёт сюрприз. В конце он добавляет, что он не сможет сделать больше, пока это событие не произойдёт.</text>
 	<text>Вы заходите к хранителю, чтобы поговорить о его способностях управления временем. Он соглашается продемонстрировать их и говорит, что запросил поддержку у вашего корабля из будущего. В конце он добавляет, что он не сможет сделать больше, пока это событие не произойдёт.</text>
 	<text>Вы заходите к хранителю и просите его продемонстрировать свои способности управлять временем. Он соглашается запросить некоторую помощь у будущего вас. В конце он добавляет, что он не сможет сделать больше, пока это событие не произойдёт.</text>
 </textList>
-
 <event name="KEEPER_GIFT">
+	<variable name="keeper_gift_on_waiting" op="set" val="0"/>
 	<text>Внезапно прямо посреди корабля материализуются какие-то ящики! Видимо, это тот самый подарок от хранителя... Вы приказываете открыть ящики.</text>
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="KEEPER_GIFT_RANDOM"/>
 	</choice>
 </event>
-
 <event name="KEEPER_GIFT2">
+	<variable name="keeper_gift_on_waiting" op="set" val="0"/>
 	<text>Внезапно прямо посреди корабля материализуются какие-то ящики! Видимо, это тот самый подарок от хранителя... Вы приказываете открыть ящики.</text>
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="KEEPER_GIFT_RANDOM2"/>
 	</choice>
 </event>
-
 <eventList name="KEEPER_GIFT_RANDOM">
 	<event>
 		<text load="KEEPER_GIFT_GOOD"/>
@@ -49123,7 +49662,6 @@ High Average=	140%
 		<text load="KEEPER_GIFT_BAD"/>
 	</event>
 </eventList>
-
 <eventList name="KEEPER_GIFT_RANDOM2">
 	<event>
 		<text load="KEEPER_GIFT_GOOD"/>
@@ -49134,13 +49672,11 @@ High Average=	140%
 		<autoReward level="RANDOM">standard</autoReward>
 	</event>
 </eventList>
-
 <textList name="KEEPER_GIFT_GOOD">
 	<text>Внутри вы находите кучу припасов. Так приятно получать подарки из будущего!</text>
 	<text>Внутри вы находите полезные материалы. Интересно, нам придётся в будущем отправить всё это назад, чтобы избежать временного парадокса?</text>
 	<text>Внутри вы находите кое-что полезное. Вы всё ещё гадаете, не вы ли из будущего отправили это?</text>
 </textList>
-
 <textList name="KEEPER_GIFT_BAD">
 	<text>Ящики пусты. Должно быть это какая-то ошибка?</text>
 	<text>Как только команда прикасается к ящикам, они тут же исчезают! Что бы ни было внутри, вероятно, Вселенная избегает временного парадокса таким образом...</text>
@@ -49167,11 +49703,15 @@ High Average=	140%
 
 <event name="EVENT_CARGO_BUTTON">
 	<text>Что будем делать?</text>
+	<choice hidden="false" req="KOMAROV_CORE" blue="false">
+		<text color="olive">Установить ядро в орудие (ядро нельзя будет извлечь обратно!).</text>
+		<event><queueEvent>EVENT_CORE_INST</queueEvent></event>
+	</choice><!-- 1.36 -->
 	<choice hidden="false" req="INJECTOR_RANDOM" blue="false">
 		<text color="blue">Вставить ваш инжектор в подходящее оружие.</text>
 		<event><queueEvent>EVENT_CARGO_INJ</queueEvent></event><!-- 1.33 -->
 	</choice>
-	<choice hidden="false" req="INJECTOR_WEAPONS" blue="false">
+	<choice hidden="false" blue="false"><!-- 1.36 -->
 		<text color="red">Очистить оружие от установленного инжектора (это уничтожит инжектор!).</text><!-- 1.34 -->
 		<event><queueEvent>INJECTOR_WEAPONS_CLEAR</queueEvent></event><!-- 1.33 -->
 	</choice>
@@ -49236,6 +49776,16 @@ High Average=	140%
 		<event><queueEvent>SYSTEM_REMOVE</queueEvent></event>
 	</choice>
 	<choice req="pilot" hidden="true" max_group="100" blue="false"><!-- 1.32 -->
+		<text>Закрыть трюм.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="EVENT_CORE_INST"><!-- 1.36 -->
+	<text>Вы осматриваете трюм в поисках орудия для установки ядра...</text>
+	<!-- lua создаёт чойзы самостоятельно, если есть подходящие орудия.
+	имя должно содержать _LVL и существовать блюпринт ненулевой стоимости след.номера для прокачки _LVL0>>_LVL1 -->
+	<choice hidden="true">
 		<text>Закрыть трюм.</text>
 		<event/>
 	</choice>
@@ -50761,7 +51311,40 @@ High Average=	140%
 				<event load="STORE_INSTALL_ANTIHACKER"/>
 			</choice>
 		</event>
+	</choice><!-- 1.36 -->
+		<choice req="HID_GLIF_REPAIR" lvl="1" max_group="59" blue="false" hidden="true">
+		<text>Внутреннее усиление: Глиф-восстановитель.</text>
+		<event load="NOT_AVAILABLE"/>
 	</choice>
+	<choice req="GLIF_REPAIR" lvl="1" max_group="59" blue="true" hidden="false"><!-- 1.36 -->
+		<text>(Глиф-восстановитель) Встроить это усиление в конструкции корабля, освободив слот усилений.</text>
+		<event>
+			<text load="STORE_AUG_INSTALLED"/>
+			<playSound>upgradeSystem</playSound>
+			<remove name="GLIF_REPAIR"/>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="STORE_INSTALL_GLIF_REPAIR"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="HID_DOOR_WORM" lvl="1" max_group="60" blue="false" hidden="true">
+		<text>Внутреннее усиление: Шлюзовой червь.</text>
+		<event load="NOT_AVAILABLE"/>
+	</choice>
+	<choice req="DOOR_WORM" lvl="1" max_group="60" blue="true" hidden="false">
+		<text>(Шлюзовой червь) Встроить это усиление в конструкции корабля, освободив слот усилений.</text>
+		<event>
+			<text load="STORE_AUG_INSTALLED"/>
+			<playSound>upgradeSystem</playSound>
+			<remove name="DOOR_WORM"/>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="STORE_INSTALL_DOOR_WORM"/>
+			</choice>
+		</event>
+	</choice>	
+
 	<choice hidden="true">
 		<text>Закрыть трюм и вернуть потраченный лом.</text><!-- 1.32 -->
 		<event load="RETURN_MY_SCRAP"/><!-- 1.32 -->
@@ -50836,7 +51419,10 @@ High Average=	140%
 	</loadEventList>
 </event>
 
-
+<event name="STORE_INSTALL_DOOR_WORM"><!-- 1.36 -->
+	<variable name="counter_augments_installed" op="add" val="1"/> 
+	<event/>
+</event>
 <event name="STORE_INSTALL_O2_MASKS">
 	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.31 -->
 	<event/>
@@ -51009,7 +51595,10 @@ High Average=	140%
 	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.31 -->
 	<event/>
 </event>
-
+<event name="STORE_INSTALL_GLIF_REPAIR"><!-- 1.36 -->
+	<variable name="counter_augments_installed" op="add" val="1"/> 
+	<event/>
+</event>
 
 
 <event name="SELL_RESOURCES_IN_STORE">
@@ -51046,6 +51635,44 @@ High Average=	140%
 
 <event name="SELL_FUEL_IN_STORE">
 	<text>Сколько топлива продать?</text>
+	<choice><!-- 1.36 -->
+		<text>1.</text>
+		<event>
+			<disableScrapAugments/> 
+			<text>Вы совершаете сделку.</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+				<item type="scrap" min="2" max="2"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Продать другие ресурсы.</text>
+				<event load="SELL_RESOURCES_IN_STORE"/>
+			</choice>
+			<choice hidden="true">
+				<text>Вернуться в магазин.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice><!-- 1.36 -->
+		<text>5.</text>
+		<event>
+			<disableScrapAugments/> 
+			<text>Вы совершаете сделку.</text>
+			<item_modify>
+				<item type="fuel" min="-5" max="-5"/>
+				<item type="scrap" min="10" max="10"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Продать другие ресурсы.</text>
+				<event load="SELL_RESOURCES_IN_STORE"/>
+			</choice>
+			<choice hidden="true">
+				<text>Вернуться в магазин.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
 	<choice>
 		<text>10.</text>
 		<event>
@@ -51116,6 +51743,44 @@ High Average=	140%
 
 <event name="SELL_MISSILES_IN_STORE">
 	<text>Сколько боеприпасов продать?</text>
+	<choice><!-- 1.36 -->
+		<text>1.</text>
+		<event>
+			<disableScrapAugments/> 
+			<text>Вы совершаете сделку.</text>
+			<item_modify>
+				<item type="missiles" min="-1" max="-1"/>
+				<item type="scrap" min="1" max="1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Продать другие ресурсы.</text>
+				<event load="SELL_RESOURCES_IN_STORE"/>
+			</choice>
+			<choice hidden="true">
+				<text>Вернуться в магазин.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice><!-- 1.36 -->
+		<text>5.</text>
+		<event>
+			<disableScrapAugments/> 
+			<text>Вы совершаете сделку.</text>
+			<item_modify>
+				<item type="missiles" min="-5" max="-5"/>
+				<item type="scrap" min="5" max="5"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Продать другие ресурсы.</text>
+				<event load="SELL_RESOURCES_IN_STORE"/>
+			</choice>
+			<choice hidden="true">
+				<text>Вернуться в магазин.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
 	<choice>
 		<text>10.</text>
 		<event>
@@ -51185,6 +51850,44 @@ High Average=	140%
 
 <event name="SELL_DRONES_IN_STORE">
 	<text>Сколько деталей дронов продать?</text>
+	<choice> <!-- 1.36 -->
+		<text>2.</text>
+		<event>
+			<disableScrapAugments/>
+			<text>Вы совершаете сделку.</text>
+			<item_modify>
+				<item type="drones" min="-2" max="-2"/>
+				<item type="scrap" min="3" max="3"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Продать другие ресурсы.</text>
+				<event load="SELL_RESOURCES_IN_STORE"/>
+			</choice>
+			<choice hidden="true">
+				<text>Вернуться в магазин.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice> <!-- 1.36 -->
+		<text>6.</text>
+		<event>
+			<disableScrapAugments/>
+			<text>Вы совершаете сделку.</text>
+			<item_modify>
+				<item type="drones" min="-6" max="-6"/>
+				<item type="scrap" min="9" max="9"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Продать другие ресурсы.</text>
+				<event load="SELL_RESOURCES_IN_STORE"/>
+			</choice>
+			<choice hidden="true">
+				<text>Вернуться в магазин.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
 	<choice>
 		<text>10.</text>
 		<event>
@@ -54358,7 +55061,7 @@ High Average=	140%
 			<choice hidden="true">
 				<text id="continue"/>
 				<event>
-					<text>Вы решаете оставить эти корабли инжи заниматься своим "делом". Однако, спросив вашего члена экипажа инжи, вы собираете весь лом с периметра, до которого можете дотянуться, пусть даже у вас и остаётся неприятное ощущение от этого действия.</text>
+					<text>Вы решаете оставить эти корабли инжи заниматься своим "делом". Однако спросив вашего члена экипажа инжи, вы собираете весь лом с периметра, до которого можете дотянуться, пусть даже у вас и остаётся неприятное ощущение от этого действия.</text>
 					<autoReward level="MEDIUM">stuff</autoReward>
 				</event>
 			</choice>
@@ -54461,57 +55164,89 @@ High Average=	140%
 	<event load="MORPH_PRO_EVENT_NOZLT"/>
 	<event load="MORPH_PRO_EVENT_NOSLG"/>
 </eventList>
-<event name="MORPH_PRO_EVENT_NOMAN">
-	<text load="MORPH_PRO_EVENT_NOMAN_RANDOM"/>
-	<quest event="MORPH_PRO_EVENT_NOMAN2"/>
+<event name="MORPH_PRO_EVENT_NOMAN"><!-- 1.36 --> <!-- квест не должен быть в корне события, чтобы избежать задваивания квеста при возвращении к маяку -->
+	<loadEventList seeded="true" first="true" generate="false">
+		<event>
+			<text load="MORPH_PRO_EVENT_NOMAN_RANDOM"/>
+			<quest event="MORPH_PRO_EVENT_NOMAN2"/>
+		</event>
+	</loadEventList>
 </event>
 <textList name="MORPH_PRO_EVENT_NOMAN_RANDOM">
 	<text>Корабль принадлежал золтанцам. Судно, уничтожившее золтанцев, оставило сигнатуры своего FTL-привода. Похоже, что это довольно крупный корабль...</text>
 	<text>Корабль принадлежал слагам. Судно, уничтожившее слагов, оставило сигнатуры своего FTL-привода. Похоже, что это довольно крупный корабль...</text>
 </textList>
-<event name="MORPH_PRO_EVENT_NORCK">
-	<text load="MORPH_PRO_EVENT_NORCK_RANDOM"/>
-	<quest event="MORPH_PRO_EVENT_NORCK2"/>
+<event name="MORPH_PRO_EVENT_NORCK"><!-- 1.36 -->
+	<loadEventList seeded="true" first="true" generate="false">
+		<event>
+			<text load="MORPH_PRO_EVENT_NORCK_RANDOM"/>
+			<quest event="MORPH_PRO_EVENT_NORCK2"/>
+		</event>
+	</loadEventList>
 </event>
 <textList name="MORPH_PRO_EVENT_NORCK_RANDOM">
 	<text>Корабль принадлежал мантисам. Судно, уничтожившее мантисов, оставило сигнатуры своего FTL-привода. Похоже, что это довольно крупный корабль...</text>
 	<text>Корабль принадлежал слагам. Судно, уничтожившее слагов, оставило сигнатуры своего FTL-привода. Похоже, что это довольно крупный корабль...</text>
 </textList>
-<event name="MORPH_PRO_EVENT_NOZLT">
-	<text load="MORPH_PRO_EVENT_NOZLT_RANDOM"/>
-	<quest event="MORPH_PRO_EVENT_NOZLT2"/>
+<event name="MORPH_PRO_EVENT_NOZLT"><!-- 1.36 -->
+	<loadEventList seeded="true" first="true" generate="false">
+		<event>
+			<text load="MORPH_PRO_EVENT_NOZLT_RANDOM"/>
+			<quest event="MORPH_PRO_EVENT_NOZLT2"/>
+		</event>
+	</loadEventList>
 </event>
 <textList name="MORPH_PRO_EVENT_NOZLT_RANDOM">
 	<text>Корабль принадлежал мантисам. Судно, уничтожившее мантисов, оставило сигнатуры своего FTL-привода. Похоже, что это довольно крупный корабль...</text>
 	<text>Корабль принадлежал рокам. Судно, уничтожившее роков, оставило сигнатуры своего FTL-привода. Похоже, что это довольно крупный корабль...</text>
 </textList>
-<event name="MORPH_PRO_EVENT_NOSLG">
-	<text load="MORPH_PRO_EVENT_NOSLG_RANDOM"/>
-	<quest event="MORPH_PRO_EVENT_NOSLG2"/>
+<event name="MORPH_PRO_EVENT_NOSLG"><!-- 1.36 -->
+	<loadEventList seeded="true" first="true" generate="false">
+		<event>
+			<text load="MORPH_PRO_EVENT_NOSLG_RANDOM"/>
+			<quest event="MORPH_PRO_EVENT_NOSLG2"/>
+		</event>
+	</loadEventList>
 </event>
 <textList name="MORPH_PRO_EVENT_NOSLG_RANDOM">
 	<text>Корабль принадлежал золтанцам. Судно, уничтожившее золтанцев, оставило сигнатуры своего FTL-привода. Похоже, что это довольно крупный корабль...</text>
 	<text>Корабль принадлежал рокам. Судно, уничтожившее роков, оставило сигнатуры своего FTL-привода. Похоже, что это довольно крупный корабль...</text>
 </textList>
-<event name="MORPH_PRO_EVENT_NOMAN2">
-	<text>Вместо корабля вы снова находите лишь обломки крейсера. На этот раз жертва — роки. Вы легко находите FTL-след этого "уничтожителя".</text>
-	<autoReward level="LOW">standard</autoReward>
-	<quest event="MORPH_PRO_EVENT_NOMAN3"/>
+<event name="MORPH_PRO_EVENT_NOMAN2"><!-- 1.36 -->
+	<loadEventList seeded="true" first="true" generate="false">
+		<event>
+			<text>Вместо корабля вы снова находите лишь обломки крейсера. На этот раз жертва — роки. Вы легко находите FTL-след этого "уничтожителя".</text>
+			<autoReward level="LOW">standard</autoReward>
+			<quest event="MORPH_PRO_EVENT_NOMAN3"/>
+		</event>
+	</loadEventList>
 </event>
-<event name="MORPH_PRO_EVENT_NORCK2">
-	<text>Вместо корабля вы снова находите лишь обломки крейсера. На этот раз жертва — золтанцы. Вы легко находите FTL-след этого "уничтожителя".</text>
-	<autoReward level="LOW">standard</autoReward>
-	<quest event="MORPH_PRO_EVENT_NORCK3"/>
+<event name="MORPH_PRO_EVENT_NORCK2"><!-- 1.36 -->
+	<loadEventList seeded="true" first="true" generate="false">
+		<event>
+			<text>Вместо корабля вы снова находите лишь обломки крейсера. На этот раз жертва — золтанцы. Вы легко находите FTL-след этого "уничтожителя".</text>
+			<autoReward level="LOW">standard</autoReward>
+			<quest event="MORPH_PRO_EVENT_NORCK3"/>
+		</event>
+	</loadEventList>
 </event>
-<event name="MORPH_PRO_EVENT_NOZLT2">
-	<text>Вместо корабля вы снова находите лишь обломки крейсера. На этот раз жертва — слаги. Вы легко находите FTL-след этого "уничтожителя".</text>
-	<autoReward level="LOW">standard</autoReward>
-	<quest event="MORPH_PRO_EVENT_NOZLT3"/>
+<event name="MORPH_PRO_EVENT_NOZLT2"><!-- 1.36 -->
+	<loadEventList seeded="true" first="true" generate="false">
+		<event>
+			<text>Вместо корабля вы снова находите лишь обломки крейсера. На этот раз жертва — слаги. Вы легко находите FTL-след этого "уничтожителя".</text>
+			<autoReward level="LOW">standard</autoReward>
+			<quest event="MORPH_PRO_EVENT_NOZLT3"/>
+		</event>
+	</loadEventList>
 </event>
-<event name="MORPH_PRO_EVENT_NOSLG2">
-	<text>Вместо корабля вы снова находите лишь обломки крейсера. На этот раз жертва — мантисы. Вы легко находите FTL-след этого "уничтожителя".</text>
-	<autoReward level="LOW">standard</autoReward>
-	<quest event="MORPH_PRO_EVENT_NOSLG3"/>
+<event name="MORPH_PRO_EVENT_NOSLG2"><!-- 1.36 -->
+	<loadEventList seeded="true" first="true" generate="false">
+		<event>
+			<text>Вместо корабля вы снова находите лишь обломки крейсера. На этот раз жертва — мантисы. Вы легко находите FTL-след этого "уничтожителя".</text>
+			<autoReward level="LOW">standard</autoReward>
+			<quest event="MORPH_PRO_EVENT_NOSLG3"/>
+		</event>
+	</loadEventList>
 </event>
 <textList name="MORPH_BOSS_TEXT">
 	<text>Возле маяка находится огромный корабль, состоящий из обломков разных цветов. Флагман морфов нацеливает на вас свой прототип...</text>
@@ -54753,7 +55488,7 @@ High Average=	140%
 		<queueEvent seeded="false">CHECKCHAIN_PLAYER_SHIP_ENERGY_DLC4_3</queueEvent>
 	</destroyed>
 	<deadCrew>
-		<text>Всех пираты мертвы, больше они никого не побеспокоят. Вы грабите их трюмы.</text>
+		<text>Все пираты мертвы, больше они никого не побеспокоят. Вы грабите их трюмы.</text><!-- 1.36 -->
 		<autoReward level="HIGH">standard</autoReward>
 		<unlockCustomShip silent="false">PLAYER_SHIP_ENERGY_DLC4_3</unlockCustomShip><!-- 1.31 -->
 		<queueEvent seeded="false">CHECKCHAIN_PLAYER_SHIP_ENERGY_DLC4_3</queueEvent>
@@ -57069,8 +57804,15 @@ High Average=	140%
 				<choice hidden="true">
 					<text>Нам нужна информация об этом секторе.</text>
 					<event>
-						<text>Они загружают в вашу базу данных информацию, после чего у капитана их корабля происходит короткое замыкание, и они отключают связь.</text>
-						<reveal_map/>
+						<loadEventList seeded="false" first="true"><!-- 1.36 -->
+							<event req="player_has_sector_map" lvl="1">
+								<text>Они загружают в вашу базу данных информацию о секторе, перезаписывая уже имеющиеся такие же данные, после чего у капитана их корабля происходит короткое замыкание, и они отключают связь.</text>
+							</event>
+							<event>
+								<text>Они загружают в вашу базу данных информацию, после чего у капитана их корабля происходит короткое замыкание, и они отключают связь.</text>
+								<reveal_map/>
+							</event>
+						</loadEventList>
 					</event>
 				</choice>
 				<choice hidden="true">
@@ -57464,8 +58206,15 @@ High Average=	140%
 		<ship hostile="true"/>
 	</event>
 	<event>
-		<text>Всей командой вы выпиваете с вашим новым другом и делитесь интересными историями. Во время попойки вы также узнаёте у него информацию об окружающих маяках.</text>
-		<reveal_map/>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Всей командой вы выпиваете с вашим новым другом и делитесь интересными историями. После очередной истории вы вырубаетесь и очухиваетесь уже на своём корабле в полном порядке.</text>
+			</event>
+			<event>
+				<text>Всей командой вы выпиваете с вашим новым другом и делитесь интересными историями. Во время попойки вы также узнаёте у него информацию об окружающих маяках.</text>
+				<reveal_map/>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Всей командой вы выпиваете с вашим новым другом и делитесь интересными историями. После попойки он даёт вам орудие и желает удачного пути.</text>
@@ -57960,9 +58709,17 @@ High Average=	140%
 		<ship hostile="true"/>
 	</event>
 	<event>
-		<text>Кристалины относятся к ситуации с пониманием и отправляют вам полезный лом. Кроме того, они дают карту своего сектора, чтобы вы быстрее добрались до цели.</text>
-		<autoReward level="HIGH">scrap_only</autoReward>
-		<reveal_map/>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Кристалины относятся к ситуации с пониманием и отправляют вам полезный лом. Они предлагают вам карту своего сектора, но вы отказываетесь - она уже у вас есть.</text>
+				<autoReward level="HIGH">scrap_only</autoReward>
+			</event>
+			<event>
+				<text>Кристалины относятся к ситуации с пониманием и отправляют вам полезный лом. Кроме того, они дают карту своего сектора, чтобы вы быстрее добрались до цели.</text>
+				<autoReward level="HIGH">scrap_only</autoReward>
+				<reveal_map/>
+			</event>
+		</loadEventList>
 	</event>
 </eventList>
 <ship name="CRYSTAL_DREDNOUT_SHIP" auto_blueprint="CRYSTAL_DREDNOUT">
@@ -59431,6 +60188,7 @@ High Average=	140%
 	<variable name="calc_human" op="add" var="order_human_legendary"/><!-- 1.33 -->
 	<variable name="calc_magman" op="add" var="magman_a"/>
 	<variable name="calc_magman" op="add" var="magman_b"/>
+	<variable name="calc_magman" op="add" var="magman_legendary"/><!-- 1.36 -->
 	<variable name="calc_mushroom" op="add" var="mushroom"/>
 	<variable name="calc_mushroom" op="add" var="mushroom_b"/>
 	<variable name="calc_mushroom" op="add" var="mushroom_f"/>
@@ -59449,6 +60207,7 @@ High Average=	140%
 	<variable name="calc_keeper" op="add" var="keeper_legendary"/><!-- 1.34 -->
 	<variable name="calc_blinker" op="add" var="blinker"/><!-- 1.32 --><!-- 1.34 -->
 	<variable name="calc_morph" op="add" var="morph"/>
+	<variable name="calc_morph" op="add" var="morph_legendary"/> <!-- 1.36 -->
 	<variable name="calc_crystal" op="add" var="crystal"/>
 	
 	<variable name="calc_all" op="add" var="calc_engi"/>
@@ -63421,9 +64180,11 @@ High Average=	140%
 		<event>
 			<text>На связь выходит какая-то женщина: «Приветствую! Меня зовут Инесса, и я предлагаю вам сразиться с моим особым кораблём, подготовленным к битве с вами. Если победите - обещаю орудие из моего трюма. Ну что, начнём?»</text>
 			<variable name="inessa_promise_to_give_weapon" op="set" val="1"/>
-			<choice hidden="true">
+			<choice hidden="true"><!-- 1.36 -->
 				<text>Согласиться.</text>
-				<event load="CONTR_FIGHT_PREANALISE"/>
+				<event>
+					<ship load="CONTR_SHIPS_PARAM_DEFAULT" hostile="true"/>
+				</event>
 			</choice>
 			<choice hidden="true">
 				<text>Отказаться и поговорить с экипажем.</text>
@@ -63433,204 +64194,22 @@ High Average=	140%
 		<event>
 			<text>Вблизи маяка сначала довольно тихо, но вскоре вы засекаете, что сюда приближается какой-то враждебный корабль.</text>
 			<variable name="inessa_promise_to_give_weapon" op="set" val="0"/>
-			<choice hidden="true">
+			<choice hidden="true"><!-- 1.36 -->
 				<text>Продолжить...</text>
-				<event load="CONTR_FIGHT_PREANALISE"/>
+				<event>
+					<ship load="CONTR_SHIPS_PARAM_DEFAULT" hostile="true"/>
+				</event>
 			</choice>
 		</event>
 	</loadEventList>
 </event>
-<event name="CONTR_FIGHT_PREANALISE">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event>
-			<queueEvent seeded="false">CALCULATE_REAL_CREW</queueEvent>
-			<queueEvent seeded="false">CONTR_FIGHT_ANALISE</queueEvent>
-		</event>
-	</loadEventList>
-</event>
 
-<event name="CONTR_FIGHT_ANALISE">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event name="CONTR_FIGHT_ANALISE_T1" req="teleporter" lvl="1"/>
-		<event name="CONTR_FIGHT_ANALISE2" req="calc_all" lvl="3"/>
-		<event name="CONTR_FIGHT_ANALISE_LC1" req="calc_all" lvl="2"/>
-		<event name="CONTR_FIGHT_ANALISE_LC1" req="calc_all" lvl="1"/>
-		<event name="CONTR_FIGHT_ANALISE_LC1" req="calc_all" lvl="0"/>
-	</loadEventList>
-</event>
-<event name="CONTR_FIGHT_ANALISE2">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event name="CONTR_FIGHT_ANALISE3" req="shields" lvl="2"/>
-		<event name="CONTR_FIGHT_ANALISE_LS1" req="shields" lvl="1"/>
-		<event name="CONTR_FIGHT_ANALISE_LS1" req="shields" lvl="0"/>
-	</loadEventList>
-</event>
-<event name="CONTR_FIGHT_ANALISE3">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event name="CONTR_FIGHT_ANALISE_M1" req="WEAPONS_CLASS_MISSILE_HIGH"/>
-		<event name="CONTR_FIGHT_ANALISE_C1" req="AUTO_COOLDOWN"/>
-		<event name="CONTR_FIGHT_ANALISE_I1" req="WEAPONS_CLASS_ION_HIGH"/>
-		<event name="CONTR_FIGHT_ANALISE_WO1" req="WEAPONS_ORDEN"/>
-		<event name="CONTR_FIGHT_ANALISE_AAD1" req="DRONES_COMBAT_EVENTS"/>
-		<event name="CONTR_FIGHT_ANALISE_L1" req="WEAPONS_CLASS_LASER_HIGH"/>
-		<event name="CONTR_FIGHT_ANALISE_DEFAULT"/>
-	</loadEventList>
-</event>
-
-<event name="CONTR_FIGHT_ANALISE_T1">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event name="CONTR_FIGHT_ANALISE_T2" req="calc_all" lvl="4"/>
-		<event name="CONTR_FIGHT_ANALISE_T2" req="calc_crystal" lvl="2"/>
-		<event name="CONTR_FIGHT_ANALISE_T2" req="calc_mantis" lvl="2"/>
-		<event name="CONTR_FIGHT_ANALISE_DEFAULT"/>
-	</loadEventList>
-</event>
-<event name="CONTR_FIGHT_ANALISE_T2">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event req="ZOLTAN_BYPASS" lvl="1">
-			<ship load="CONTR_SHIPS_PARAM_ANTITELE_NOZLTSHIELD" hostile="true"/>
-		</event>
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_ANTITELE_WITHZLTSHIELD" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-
-<event name="CONTR_FIGHT_ANALISE_M1">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_ANTIMISSILE" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-
-<event name="CONTR_FIGHT_ANALISE_I1">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_ANTIION" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-
-<event name="CONTR_FIGHT_ANALISE_WO1">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_ANTIFIRE" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-
-<event name="CONTR_FIGHT_ANALISE_L1">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_ANTILASER" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-
-<event name="CONTR_FIGHT_ANALISE_AAD1">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_ANTIATTACKDRONES" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-
-<event name="CONTR_FIGHT_ANALISE_C1">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_ANTIAUTOCOOLDOWN" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-
-<event name="CONTR_FIGHT_ANALISE_LS1">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_ANTINOSHIELD" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-
-<event name="CONTR_FIGHT_ANALISE_LC1">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event req="ENERGY_SHIELD" lvl="1">
-			<ship load="CONTR_SHIPS_PARAM_ANTILOWCREW_WITHBYPASS" hostile="true"/>
-		</event>
-		<event req="ION_ARMOR" lvl="1">
-			<ship load="CONTR_SHIPS_PARAM_ANTILOWCREW_NOION" hostile="true"/>
-		</event>
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_ANTILOWCREW" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-
-
-<event name="CONTR_FIGHT_ANALISE_DEFAULT">
-	<loadEventList seeded="false" first="true" generate="false">
-		<event>
-			<ship load="CONTR_SHIPS_PARAM_DEFAULT" hostile="true"/>
-		</event>
-	</loadEventList>
-</event>
-<ship name="CONTR_SHIPS_PARAM_DEFAULT" auto_blueprint="JELLY_TRUFFLE_AD_DEFAULT"> 
+<ship name="CONTR_SHIPS_PARAM_DEFAULT" auto_blueprint="JELLY_TRUFFLE_AD_DEFAULT"> <!-- 1.36 --> <!-- остальное ушло в Lua -->
 	<destroyed load="CONTR_FIGHT_REWARD"/>
 	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
 </ship>
-<ship name="CONTR_SHIPS_PARAM_ANTITELE_NOZLTSHIELD" auto_blueprint="JELLY_TRUFFLE_AD_ANTITELE_NOZLTSHIELD"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTITELE_WITHZLTSHIELD" auto_blueprint="JELLY_TRUFFLE_AD_ANTITELE_WITHZLTSHIELD"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTIMISSILE" auto_blueprint="JELLY_TRUFFLE_AD_ANTIMISSILE"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTIION" auto_blueprint="JELLY_TRUFFLE_AD_ANTIION"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTILASER" auto_blueprint="JELLY_TRUFFLE_AD_ANTILASER"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTIAUTOCOOLDOWN" auto_blueprint="JELLY_TRUFFLE_AD_ANTIAUTOCOOLDOWN"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTILOWCREW" auto_blueprint="JELLY_TRUFFLE_AD_ANTILOWCREW"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTILOWCREW_NOION" auto_blueprint="JELLY_TRUFFLE_AD_ANTILOWCREW_NOION"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTILOWCREW_WITHBYPASS" auto_blueprint="JELLY_TRUFFLE_AD_ANTILOWCREW_WITHBYPASS"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTINOSHIELD" auto_blueprint="JELLY_TRUFFLE_AD_ANTINOSHIELD"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTIFIRE" auto_blueprint="JELLY_TRUFFLE_AD_ANTIFIRE"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-<ship name="CONTR_SHIPS_PARAM_ANTIATTACKDRONES" auto_blueprint="JELLY_TRUFFLE_AD_ANTIATTACKDRONES"> 
-	<destroyed load="CONTR_FIGHT_REWARD"/>
-	<deadCrew load="CONTR_FIGHT_REWARD_DEAD_CREW"/>
-</ship>
-
-
 
 <event name="CONTR_FIGHT_REWARD">
-	
 	<loadEventList seeded="false" first="true" generate="true">
 		<event req="inessa_promise_to_give_weapon" lvl="1">
 			<text>Инесса снова выходит на связь: «Вы сделали это! Вот то орудие, которое вы заслужили».</text><!-- 1.33 -->
@@ -63643,7 +64222,6 @@ High Average=	140%
 	</loadEventList>
 </event>
 <event name="CONTR_FIGHT_REWARD_DEAD_CREW">
-	
 	<loadEventList seeded="false" first="true" generate="true">
 		<event req="inessa_promise_to_give_weapon" lvl="1">
 			<text>Инесса снова выходит на связь: «Вы сделали это! Вот то орудие, которое вы заслужили».</text><!-- 1.33 -->
@@ -63714,6 +64292,9 @@ High Average=	140%
 <!-- begin event --><!-- 1.32 -->
 <event name="NOTHING_WITH_CHANCE_ANNIHILATOR_CHECK">
 	<loadEventList seeded="false" first="true" generate="true">
+		<event load="NOTHING_REAL" req="was_collected_this_run_BEAM_ANNIHILATOR" lvl="1"/><!-- 1.36 -->
+		<event load="NOTHING_REAL" req="this_run_flagship_steal_annihilator" lvl="1"/><!-- 1.36 -->
+		
 		<event load="NOTHING_REAL" req="BEAM_ANNIHILATOR"/>
 		<event load="NOTHING_WITH_CHANCE_ANNIHILATOR_CHECK1" req="BEAM_ANNIHILATOR_P1"/>
 		<event load="NOTHING_WITH_CHANCE_ANNIHILATOR_CHECK2" req="BEAM_ANNIHILATOR_P2"/>
@@ -63867,6 +64448,7 @@ High Average=	140%
 									<text>Вам удалось собрать новое орудие!</text>
 									<weapon name="BEAM_ANNIHILATOR"/>
 									<achievement silent="false">ACH_ANNIHILATOR</achievement><!-- 1.33 -->
+									<metaVariable name="was_collected_this_run_BEAM_ANNIHILATOR" op="set" val="1"/><!-- 1.36 -->
 								</event>
 							</loadEventList>
 						</event>
@@ -67209,9 +67791,36 @@ High Average=	140%
 <event name="EVENT_BATTLE_OR_PRAZDNIK">
 	<text load="NOTHING"/>
 	<choice hidden="true">
-		<text>Поговорить с экипажем пока заряжается FTL-привод.</text>
+		<text>Поговорить с экипажем, пока заряжается FTL-привод.</text>
 		<event>
 			<loadEventList seeded="false" first="true" generate="false">
+				<event req="prazdnik" lvl="4"><!-- масленица 25.02-03.03 --><!-- 1.36 -->
+					<loadEventList seeded="false" first="false" generate="false">
+						<event>
+							<text>Странноватый корабль выходит из FTL-прыжка поблизости. Он кажется покрытым скользским маслом.</text>
+							<ship load="JELLY_PRAZDNIK4_PARAMETERS" hostile="false"/>
+							<choice>
+								<text id="continue"/>
+								<event>
+									<text>...ещё до того как вы решили, что с ним делать, странный корабль начал зарядку орудий!</text>
+									<ship hostile="true"/>
+								</event>
+							</choice>
+						</event>
+					</loadEventList>
+				</event>
+				<event req="prazdnik" lvl="3"><!-- день победы 01.05-20.05 -->
+					<loadEventList seeded="false" first="false" generate="false">
+						<event>
+							<text>Странноватый корабль выходит из FTL-прыжка поблизости. Он нападает неожиданно, без объявления войны.</text>
+							<ship load="JELLY_PRAZDNIK3_PARAMETERS" hostile="true"/>
+							<choice>
+								<text id="continue"/>
+								<event/>
+							</choice>
+						</event>
+					</loadEventList>
+				</event><!-- 1.36 -->
 				<event req="prazdnik" lvl="2"><!-- новый год 20.12-10.01 -->
 					<loadEventList seeded="false" first="false" generate="false">
 						<event>
@@ -67303,8 +67912,26 @@ High Average=	140%
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>
-
-
+<ship name="JELLY_PRAZDNIK3_PARAMETERS" auto_blueprint="JELLY_PRAZDNIK3_SHIPS"> <!-- 1.36 -->
+	<destroyed>
+		<text>Останки корабля разваливаются на части, а вы радуетесь победе...</text>
+		<autoReward level="HIGH">stuff</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Вы бегло осматриваете трюмы корабля и собираете ценное с мыслями о всех погибших в этой войне...</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+<ship name="JELLY_PRAZDNIK4_PARAMETERS" auto_blueprint="JELLY_PRAZDNIK4_SHIPS"> <!-- 1.36 -->
+	<destroyed>
+		<text>Останки корабля разваливаются на части, а ваша команда собирает их, немного ругаясь на прилипающее масло...</text>
+		<autoReward level="MED">stuff</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Вы бегло осматриваете трюмы корабля и собираете ценное. А кто-то из команды принялся отковыривать странное маслянисто-сахарное покрытие корабля...</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
 
 
 
@@ -67389,6 +68016,7 @@ High Average=	140%
 <event name="EVENT_LEGENDAGY_KEEPER">
 	<text>Из появившейся на корабле пентаграммы сияет ослепительный свет, раздаётся грохот и откуда-то появляется новый член экипажа...</text>
 	<crewMember amount="1" all_skills="2" class="keeper_legendary">Дуриэль</crewMember>
+	<achievement silent="false">ACH_KEEPER_LEGENDARY</achievement><!-- 1.36 -->
 	<playSound>legendary</playSound>
 	<damage amount="1"/>
 	<damage amount="1" system="random" effect="breach"/>
@@ -67576,7 +68204,7 @@ High Average=	140%
 			<text load="EVENT_GUS_WRONGBEACON_TEXT"/>
 			<quest event="EVENT_GUS3"/>
 			<choice>
-				<text>Поговорить с экипажем пока заряжается FTL-привод.</text>
+				<text>Поговорить с экипажем, пока заряжается FTL-привод.</text>
 				<event load="TALK_WITH_CREW"/>
 			</choice>
 		</event>
@@ -68052,7 +68680,7 @@ High Average=	140%
 				<event load="ACTIVATE_MIRROR"/>
 			</choice>
 			<choice hidden="true">
-				<text>Поговорить с экипажем пока заряжается FTL-привод.</text>
+				<text>Поговорить с экипажем, пока заряжается FTL-привод.</text>
 				<event load="TALK_WITH_CREW"/>
 			</choice>
 		</event>
@@ -68275,6 +68903,7 @@ High Average=	140%
 	<crewMember amount="1" class="alien_in_box">Чужой</crewMember>
 	<quest event="EVENT_ALIEN_IN_BOX2"/>
 	<queueEvent seeded="false">EVENT_ALIEN_IN_BOX_CHANGE_POSITION</queueEvent>
+	<achievement silent="false">ACH_ALIEN</achievement><!-- 1.36 -->
 </event>
 <event name="EVENT_ALIEN_IN_BOX2">
 	<img planet="PLANET_POPULATED"/>
@@ -68313,6 +68942,151 @@ High Average=	140%
 	<variable name="alien_count_inside_hull" op="set" val="0"/>
 	<item_modify><item type="scrap" min="5" max="45"/></item_modify>
 </event>
+<!-- 1.36 -->
+<textList name="BOSS_MAKES_A_TRAITOR_TEXT">
+	<text>Похоже, что усиление противника полностью захватило разум кого-то из вашей команды!</text>
+	<text>Противник дистанционно промывает мозги кому-то из вашей команды, заставляя его встать на свою сторону.</text>
+	<text>Промыватель врага делает своё дело, и один из вашей команды становится врагом.</text>
+</textList>
+<event name="BOSS_MAKES_A_TRAITOR">
+	<text load="BOSS_MAKES_A_TRAITOR_TEXT"/>
+	<crewMember amount="-1" class="traitor"/>
+</event>
 
+<event name="BOSS_CALLS_PDS">
+	<environment type="PDS" target="player"/>
+	<fleet>rebel</fleet>
+	<noASBPlanet/>
+</event>
+<event name="PLAYER_CALLS_PDS">
+	<noASBPlanet/> <!-- эта херь не работает как я вижу -->
+	<environment type="PDS" target="enemy"/>
+	<customFleet right="true" firing="true" autoDarkening="true">CUSTOM_FLEET_FED</customFleet>
+</event>
+
+<event name="EVENT_LEGENDARY_MAGMAN">
+	<text>Вы находите необычного магмена, кажется, он светится ярче и гораздо горячее собратьев...</text>
+	<crewMember amount="1" all_skills="2" class="magman_legendary">Пароген</crewMember>
+	<playSound>legendary</playSound>
+</event>
+
+<!-- злое событие с пиратом продающим ультимативное усиление задорого. основная цель показать его игроку до встречи с флагманом -->
+<!-- если купить может развлечь постоянным потоком экипажа, также даёт инфу о противодействии -->
+<!-- также событие является косвенным наказанием тех кто бездумно атакует всё живое -->
+<event name="EVENT_PIRATE_SELLS_TRAITORATOR" unique="true">
+	<text load="PIRATE_SELLS_TRAITORATOR_TEXT"/>
+	<ship load="PIRATE_SELLS_TRAITORATOR_SHIP" hostile="false"/>
+	<choice hidden="true">
+		<text>Атаковать пирата.</text>
+		<event>
+			<text>Пират в ответ на вашу агрессию активирует своё оборудование.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Купить оборудование.</text>
+		<event>
+			<text>Вы производите оплату и устанавливаете промыватель.</text>
+			<augment name="TRAITORATOR"/>
+			<item_modify>
+				<item type="scrap" min="-400" max="-50"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Отказаться и поговорить с экипажем, пока заряжается FTL-привод.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
+</event>
+<textList name="PIRATE_SELLS_TRAITORATOR_TEXT">
+	<text>Пират возле маяка выходит на связь и предлагает вам купить уникальное оборудование...</text>
+	<text>Корабль возле маяка предлагает вам купить редчайшее оборудование...</text>
+	<text>Пират-торговец говорит, что ему удалось украсть у повстанцев какое-то редкое усиление...</text>
+</textList>
+<ship name="PIRATE_SELLS_TRAITORATOR_SHIP" auto_blueprint="SHIPS_PIRATE_TRAITORATOR">
+	<destroyed>
+		<text>Вы собираете обломки. К сожалению, уникальное усиление не уцелело в бою.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Вы обчищаете трюмы и замечаете, что уникальное усиление пирата разломано на части.</text>
+		<autoReward level="RANDOM">standard</autoReward>
+	</deadCrew>
+</ship>
+
+
+<event name="CHECK_WINDOW_WEAPON_AUTOREPLACER">
+	<!-- технический эвент через луа проводит проверку и заменяет орудия которые нужны чисто для окошек ивентов на нормальные версии -->
+</event>
+
+<event name="RADIO_TRANSPORT" unique="true">
+	<text>Вблизи маяка висит транспортник федерации. Он приветствует вас: «Мы наслышаны о вашей миссии, вот, у нас совсем немного припасов, но это поможет в пути!».</text>
+	<ship load="FED_TRRAD_PARAMETERS" hostile="false"/>
+	<choice hidden="false">
+		<text>Принять помощь и отправиться дальше.</text>
+		<event load="RADIO_TRANSPORT_HELP"/>
+	</choice>
+	<choice hidden="false">
+		<text>Атаковать их.</text>
+		<event>
+			<text>У них наверняка найдётся больше. Вы отключаете каналы связи и говитесь к бою.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Отказаться и поговорить с экипажем пока заряжается FTL-привод.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
+</event>
+<eventList name="RADIO_TRANSPORT_HELP"> 
+	<event>
+		<text>Вы грузите помощь и готовитесь отправляться дальше.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Вы грузите помощь и готовитесь отправляться дальше.</text>
+		 <autoReward level="LOW">stuff</autoReward>
+	</event>
+	<event>
+		<text>Вы грузите помощь и готовитесь отправляться дальше.</text>
+		<autoReward level="LOW">fuel</autoReward>
+	</event>
+</eventList>
+<ship name="FED_TRRAD_PARAMETERS" auto_blueprint="FED_TRRAD_SHIPS">
+	<escape timer="60" min="30" max="30">
+		<text>Похоже, корабль пытается скрыться.</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway>
+		<text>Корабль покинул маяк...</text>
+	</gotaway>
+	<destroyed>
+		<text>Цель уничтожена, и вы собираете всё, что уцелело. Собрав кучу лома, вы понимаете, что ваш корабль безнадёжно загрязнился радиоактивными веществами, и отмыть их не удастся...</text>
+		<augment name="RADIO_AUG"/>
+		<autoReward level="LOW">standard</autoReward>
+		<hiddenAug>RADIOACTIVE</hiddenAug>
+		<variable name="installed_RADIOACTIVE" op="set" val="1"/>
+	</destroyed>
+	<deadCrew>
+		<text>Экипаж мёртв, но кто-то из команды предупреждает, что этот транспортник заражён радиацией, и если просто перетащить всё в трюм, то ваш корабль тоже будет радиоактивен.</text>
+		<choice hidden="true">
+			<text>Забрать абсолютно всё.</text>
+			<event>
+				<text>Собрав кучу лома, вы понимаете, что ваш корабль безнадёжно загрязнился радиоактивными веществами, и отмыть их не удастся...</text>				
+				<augment name="RADIO_AUG"/>
+				<autoReward level="HIGH">standard</autoReward>
+				<hiddenAug>RADIOACTIVE</hiddenAug>
+				<variable name="installed_RADIOACTIVE" op="set" val="1"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Собрать только чистые материалы.</text>
+			<event>
+				<text>Вы тщательно отбираете только чистые материалы.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
 
 </FTL>

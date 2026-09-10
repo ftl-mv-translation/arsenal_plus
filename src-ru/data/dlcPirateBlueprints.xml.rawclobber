@@ -209,7 +209,7 @@ JELLY PIRATE SHIPS
 	<crewCount amount="4" max="7" class="random"/> <!--CHANGED was 4/6-->
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SLUG_GEL"/>
-	<cloakImage>jelly_truffle</cloakImage>
+	<!-- <cloakImage>jelly_truffle</cloakImage> --><!-- 1.36 -->
 </shipBlueprint>
 
  <shipBlueprint name="JELLY_TRUFFLE_P_DLC" layout="jelly_truffle_pirate" img="jelly_truffle_pirate">
@@ -232,7 +232,7 @@ JELLY PIRATE SHIPS
 	<crewCount amount="4" max="8" class="random"/> <!--CHANGED was 4/6-->
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SLUG_GEL"/>
-	<cloakImage>jelly_truffle</cloakImage>
+	<!-- <cloakImage>jelly_truffle</cloakImage> --><!-- 1.36 -->
 </shipBlueprint>
 
 

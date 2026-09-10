@@ -6226,6 +6226,12 @@ ENGINEER ANIMATIONS
 	<chargeImage>weapons/ion_vulkan_glow.png</chargeImage>
 </weaponAnim>
 
+<animSheet name="ba_ion_vulkan_shot" w="336" h="42" fw="42" fh="42">weapons/ba_ion_vulkan_shot_strip8.png</animSheet><!-- 1.36 -->
+<anim name="ba_ion_vulkan_shot"><!-- 1.36 -->
+	<sheet>ba_ion_vulkan_shot</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>1</time>
+</anim>
 
 <animSheet name="ion_vulkan_charge" w="224" h="83" fw="32" fh="83">weapons/ba_ion_vulkan_charge.png</animSheet>
 <anim name="ion_vulkan_charge">
@@ -24256,5 +24262,894 @@ MORPH ANIMATIONS
 <animSheet name="glif_laser_2i" w="200" h="20" fw="50" fh="20">weapons/glif_laser_2i.png</animSheet><anim name="glif_laser_2i"><sheet>glif_laser_2i</sheet><desc length="4" x="0" y="0"/><time>0.4</time></anim>
 <animSheet name="glif_laser_3" w="200" h="20" fw="50" fh="20">weapons/glif_laser_3.png</animSheet><anim name="glif_laser_3"><sheet>glif_laser_3</sheet><desc length="4" x="0" y="0"/><time>0.4</time></anim>
 <animSheet name="glif_laser_3i" w="200" h="20" fw="50" fh="20">weapons/glif_laser_3i.png</animSheet><anim name="glif_laser_3i"><sheet>glif_laser_3i</sheet><desc length="4" x="0" y="0"/><time>0.4</time></anim>
+<animSheet name="glif_laser_4" w="200" h="20" fw="50" fh="20">weapons/glif_laser_4.png</animSheet><anim name="glif_laser_4"><sheet>glif_laser_4</sheet><desc length="4" x="0" y="0"/><time>0.4</time></anim><!-- 1.36 -->
+<animSheet name="glif_laser_4i" w="200" h="20" fw="50" fh="20">weapons/glif_laser_4i.png</animSheet><anim name="glif_laser_4i"><sheet>glif_laser_4i</sheet><desc length="4" x="0" y="0"/><time>0.4</time></anim><!-- 1.36 -->
 
+
+<!-- 1.36 -->
+
+<animSheet name="magman_gigaart" w="384" h="500" fw="48" fh="500">weapons/magman_gigaart.png</animSheet>
+<weaponAnim name="magman_gigaart">
+	<sheet>magman_gigaart</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="24" y="446"/>
+	<mountPoint x="10" y="466"/>
+	<delayChargeAnim>0.98</delayChargeAnim>
+</weaponAnim>
+
+<!-- magman_legendary -->
+<animSheet name="magman_legendary" w="280" h="490" fw="35" fh="35">people/magman_legendary_base.png</animSheet>
+<anim name="magman_legendary_clone">
+	<sheet>magman_legendary</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>0.75</time>
+</anim>
+<anim name="magman_legendary_death_right">
+	<sheet>magman_legendary</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="magman_legendary_death_left">
+	<sheet>magman_legendary</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="magman_legendary_walk_down">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="0" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_walk_right">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="4" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_walk_up">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_walk_left">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_shoot_down">
+	<sheet>magman_legendary</sheet>
+	<desc length="3" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_shoot_right">
+	<sheet>magman_legendary</sheet>
+	<desc length="3" x="3" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_shoot_up">
+	<sheet>magman_legendary</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_shoot_left">
+	<sheet>magman_legendary</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_fire_down">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_fire_right">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_fire_up">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_fire_left">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_repair">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="3" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_punch_up">
+	<sheet>magman_legendary</sheet>
+	<desc length="6" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_punch_down">
+	<sheet>magman_legendary</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="magman_legendary_teleport">
+	<sheet>magman_legendary</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="magman_legendary_type_right">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="magman_legendary_type_left">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="magman_legendary_type_up">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="magman_legendary_type_down">
+	<sheet>magman_legendary</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="magman_legendary_portrait">
+	<sheet>magman_legendary</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="laser_mc_1" w="208" h="80" fw="26" fh="80">weapons/laser_mc_1.png</animSheet>
+<weaponAnim name="laser_mc_1">
+	<sheet>laser_mc_1</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="15" y="7"/>
+	<mountPoint x="4" y="63"/>
+	<chargeImage>weapons/laser_mc_1_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="laser_mc_2" w="208" h="80" fw="26" fh="80">weapons/laser_mc_2.png</animSheet>
+<weaponAnim name="laser_mc_2">
+	<sheet>laser_mc_2</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="15" y="7"/>
+	<mountPoint x="4" y="63"/>
+	<chargeImage>weapons/laser_mc_2_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="laser_mc_3" w="208" h="82" fw="26" fh="82">weapons/laser_mc_3.png</animSheet>
+<weaponAnim name="laser_mc_3">
+	<sheet>laser_mc_3</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="15" y="7"/>
+	<mountPoint x="4" y="63"/>
+	<chargeImage>weapons/laser_mc_3_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="mind_projectile" w="200" h="20" fw="50" fh="20">weapons/mind_projectile.png</animSheet>
+<anim name="mind_projectile">
+	<sheet>mind_projectile</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.4</time>
+</anim>
+
+<animSheet name="frs_annihilator" w="792" h="65" fw="33" fh="65">weapons/frs_annihilator.png</animSheet>
+<weaponAnim name="frs_annihilator">
+	<sheet>frs_annihilator</sheet>
+	<desc length="24" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>16</fireFrame>
+	<firePoint  x="16" y="21"/>
+	<mountPoint x="0" y="0"/>
+	<chargeImage>weapons/frs_annihilator_glow.png</chargeImage>
+</weaponAnim>
+
+
+<!--	MORPH LEGENDARY -->
+<animSheet name="morph_legendary" w="315" h="455" fw="35" fh="35">people/morph_legendary_base.png</animSheet>
+<anim name="morph_legendary_clone">
+	<sheet>morph_legendary</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_death_right">
+	<sheet>morph_legendary</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_death_left">
+	<sheet>morph_legendary</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_walk_down">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_walk_right">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_walk_up">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_walk_left">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_shoot_down">
+	<sheet>morph_legendary</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_shoot_right">
+	<sheet>morph_legendary</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_shoot_up">
+	<sheet>morph_legendary</sheet>
+	<desc length="3" x="6" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_shoot_left">
+	<sheet>morph_legendary</sheet>
+	<desc length="3" x="6" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_fire_down">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_fire_right">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_fire_up">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_fire_left">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_repair">
+	<sheet>morph_legendary</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_punch_up">
+	<sheet>morph_legendary</sheet>
+	<desc length="6" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_punch_down">
+	<sheet>morph_legendary</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="morph_legendary_teleport">
+	<sheet>morph_legendary</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="morph_legendary_type_right">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="morph_legendary_type_left">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="morph_legendary_type_up">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="morph_legendary_type_down">
+	<sheet>morph_legendary</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="morph_legendary_portrait">
+	<sheet>morph_legendary</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
+<animSheet name="komarov_core" w="120" h="50" fw="40" fh="50">weapons/komarov_core.png</animSheet>
+<weaponAnim name="komarov_core">
+	<sheet>komarov_core</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="1" y="1"/>
+	<mountPoint x="12" y="28"/>
+</weaponAnim>
+
+
+<animSheet name="bak_missiles_lvl0" w="150" h="55" fw="50" fh="55">weapons/bak_missiles_lvl0.png</animSheet>
+<weaponAnim name="bak_missiles_lvl0">
+	<sheet>bak_missiles_lvl0</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="35" y="17"/>
+	<mountPoint x="2" y="39"/>
+	<chargeImage>weapons/bak_missiles_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_missiles_lvl1" w="150" h="55" fw="50" fh="55">weapons/bak_missiles_lvl1.png</animSheet>
+<weaponAnim name="bak_missiles_lvl1">
+	<sheet>bak_missiles_lvl1</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="35" y="17"/>
+	<mountPoint x="2" y="39"/>
+	<chargeImage>weapons/bak_missiles_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_missiles_lvl2" w="150" h="55" fw="50" fh="55">weapons/bak_missiles_lvl2.png</animSheet>
+<weaponAnim name="bak_missiles_lvl2">
+	<sheet>bak_missiles_lvl2</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="35" y="17"/>
+	<mountPoint x="2" y="39"/>
+	<chargeImage>weapons/bak_missiles_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_missiles_lvl3" w="150" h="55" fw="50" fh="55">weapons/bak_missiles_lvl3.png</animSheet>
+<weaponAnim name="bak_missiles_lvl3">
+	<sheet>bak_missiles_lvl3</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="35" y="17"/>
+	<mountPoint x="2" y="39"/>
+	<chargeImage>weapons/bak_missiles_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_missiles_proj" w="256" h="80" fw="40" fh="80">weapons/bak_missiles_proj.png</animSheet>
+<anim name="bak_missiles_proj">
+	<sheet>bak_missiles_proj</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="bak_missiles_proj_ion" w="256" h="80" fw="40" fh="80">weapons/bak_missiles_proj_ion.png</animSheet>
+<anim name="bak_missiles_proj_ion">
+	<sheet>bak_missiles_proj_ion</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+
+
+
+<animSheet name="bak_beam_lvl0" w="500" h="70" fw="50" fh="70">weapons/bak_beam_lvl0.png</animSheet>
+<weaponAnim name="bak_beam_lvl0">
+	<sheet>bak_beam_lvl0</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="35" y="45"/>
+	<mountPoint x="2" y="39"/>
+	<chargeImage>weapons/bak_beam_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_beam_lvl1" w="500" h="70" fw="50" fh="70">weapons/bak_beam_lvl1.png</animSheet>
+<weaponAnim name="bak_beam_lvl1">
+	<sheet>bak_beam_lvl1</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="35" y="45"/>
+	<mountPoint x="2" y="39"/>
+	<chargeImage>weapons/bak_beam_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_beam_lvl2" w="500" h="70" fw="50" fh="70">weapons/bak_beam_lvl2.png</animSheet>
+<weaponAnim name="bak_beam_lvl2">
+	<sheet>bak_beam_lvl2</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="35" y="45"/>
+	<mountPoint x="2" y="39"/>
+	<chargeImage>weapons/bak_beam_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_beam_lvl3" w="500" h="70" fw="50" fh="70">weapons/bak_beam_lvl3.png</animSheet>
+<weaponAnim name="bak_beam_lvl3">
+	<sheet>bak_beam_lvl3</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="35" y="45"/>
+	<mountPoint x="2" y="39"/>
+	<chargeImage>weapons/bak_beam_glow.png</chargeImage>
+</weaponAnim>
+
+
+
+<animSheet name="bak_bomb_lvl0" w="850" h="70" fw="50" fh="70">weapons/bak_bomb_lvl0.png</animSheet>
+<weaponAnim name="bak_bomb_lvl0">
+	<sheet>bak_bomb_lvl0</sheet>
+	<desc length="17" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>16</fireFrame>
+	<firePoint x="35" y="45"/>
+	<mountPoint x="2" y="39"/>
+	<delayChargeAnim>0.98</delayChargeAnim>
+	<chargeImage>weapons/bak_bomb_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_bomb_lvl1" w="850" h="70" fw="50" fh="70">weapons/bak_bomb_lvl1.png</animSheet>
+<weaponAnim name="bak_bomb_lvl1">
+	<sheet>bak_bomb_lvl1</sheet>
+	<desc length="17" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>16</fireFrame>
+	<firePoint x="35" y="45"/>
+	<mountPoint x="2" y="39"/>
+	<delayChargeAnim>0.98</delayChargeAnim>
+	<chargeImage>weapons/bak_bomb_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_bomb_lvl2" w="850" h="70" fw="50" fh="70">weapons/bak_bomb_lvl2.png</animSheet>
+<weaponAnim name="bak_bomb_lvl2">
+	<sheet>bak_bomb_lvl2</sheet>
+	<desc length="17" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>16</fireFrame>
+	<firePoint x="35" y="45"/>
+	<mountPoint x="2" y="39"/>
+	<delayChargeAnim>0.98</delayChargeAnim>
+	<chargeImage>weapons/bak_bomb_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_bomb_lvl3" w="850" h="70" fw="50" fh="70">weapons/bak_bomb_lvl3.png</animSheet>
+<weaponAnim name="bak_bomb_lvl3">
+	<sheet>bak_bomb_lvl3</sheet>
+	<desc length="17" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>16</fireFrame>
+	<firePoint x="35" y="45"/>
+	<mountPoint x="2" y="39"/>
+	<delayChargeAnim>0.98</delayChargeAnim>
+	<chargeImage>weapons/bak_bomb_glow.png</chargeImage>
+</weaponAnim>
+
+	
+
+<animSheet name="bak_shotgun_lvl0" w="480" h="70" fw="60" fh="70">weapons/bak_shotgun_lvl0.png</animSheet>
+<weaponAnim name="bak_shotgun_lvl0">
+	<sheet>bak_shotgun_lvl0</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint x="38" y="18"/>
+	<mountPoint x="2" y="47"/>
+	<chargeImage>weapons/bak_shotgun_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_shotgun_lvl1" w="480" h="70" fw="60" fh="70">weapons/bak_shotgun_lvl1.png</animSheet>
+<weaponAnim name="bak_shotgun_lvl1">
+	<sheet>bak_shotgun_lvl1</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint x="38" y="18"/>
+	<mountPoint x="2" y="47"/>
+	<chargeImage>weapons/bak_shotgun_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_shotgun_lvl2" w="480" h="70" fw="60" fh="70">weapons/bak_shotgun_lvl2.png</animSheet>
+<weaponAnim name="bak_shotgun_lvl2">
+	<sheet>bak_shotgun_lvl2</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint x="38" y="18"/>
+	<mountPoint x="2" y="47"/>
+	<chargeImage>weapons/bak_shotgun_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bak_shotgun_lvl3" w="480" h="70" fw="60" fh="70">weapons/bak_shotgun_lvl3.png</animSheet>
+<weaponAnim name="bak_shotgun_lvl3">
+	<sheet>bak_shotgun_lvl3</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint x="38" y="18"/>
+	<mountPoint x="2" y="47"/>
+	<chargeImage>weapons/bak_shotgun_glow.png</chargeImage>
+</weaponAnim>
+
+
+<animSheet name="bak_laser_lvl0" w="600" h="70" fw="50" fh="70">weapons/bak_laser_lvl0.png</animSheet>
+<weaponAnim name="bak_laser_lvl0">
+	<sheet>bak_laser_lvl0</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint x="39" y="12"/>
+	<mountPoint x="6" y="48"/>
+</weaponAnim>
+<animSheet name="bak_laser_lvl1" w="600" h="70" fw="50" fh="70">weapons/bak_laser_lvl1.png</animSheet>
+<weaponAnim name="bak_laser_lvl1">
+	<sheet>bak_laser_lvl1</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint x="39" y="12"/>
+	<mountPoint x="6" y="48"/>
+</weaponAnim>
+<animSheet name="bak_laser_lvl2" w="600" h="70" fw="50" fh="70">weapons/bak_laser_lvl2.png</animSheet>
+<weaponAnim name="bak_laser_lvl2">
+	<sheet>bak_laser_lvl2</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint x="39" y="12"/>
+	<mountPoint x="6" y="48"/>
+</weaponAnim>
+<animSheet name="bak_laser_lvl3" w="600" h="70" fw="50" fh="70">weapons/bak_laser_lvl3.png</animSheet>
+<weaponAnim name="bak_laser_lvl3">
+	<sheet>bak_laser_lvl3</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint x="39" y="12"/>
+	<mountPoint x="6" y="48"/>
+</weaponAnim>
+
+<animSheet name="ba_beam_tri" w="450" h="70" fw="45" fh="70">weapons/ba_beam_tri.png</animSheet>
+<weaponAnim name="ba_beam_tri">
+	<sheet>ba_beam_tri</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="26" y="42"/>
+	<mountPoint x="3" y="48"/>
+	<chargeImage>weapons/ba_beam_tri_glow.png</chargeImage>
+</weaponAnim>
+
+
+<animSheet name="ba_beam_vilka_u" w="340" h="60" fw="34" fh="60">weapons/ba_beam_vilka_u.png</animSheet>
+<weaponAnim name="ba_beam_vilka_u">
+	<sheet>ba_beam_vilka_u</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="19" y="23"/>
+	<mountPoint x="5" y="40"/>
+	<chargeImage>weapons/ba_beam_vilka_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="ba_grenade_launcher1" w="138" h="65" fw="46" fh="65">weapons/ba_grenade_launcher1.png</animSheet>
+<weaponAnim name="ba_grenade_launcher1">
+	<sheet>ba_grenade_launcher1</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="23" y="26"/>
+	<mountPoint x="4" y="40"/>
+	<chargeImage>weapons/ba_grenade_launcher1_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="ba_grenade_launcher2" w="138" h="65" fw="46" fh="65">weapons/ba_grenade_launcher2.png</animSheet>
+<weaponAnim name="ba_grenade_launcher2">
+	<sheet>ba_grenade_launcher2</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="23" y="26"/>
+	<mountPoint x="4" y="40"/>
+	<chargeImage>weapons/ba_grenade_launcher2_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="ba_grenade_launcher3" w="138" h="65" fw="46" fh="65">weapons/ba_grenade_launcher3.png</animSheet>
+<weaponAnim name="ba_grenade_launcher3">
+	<sheet>ba_grenade_launcher3</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="23" y="26"/>
+	<mountPoint x="4" y="40"/>
+	<chargeImage>weapons/ba_grenade_launcher3_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="ba_grenade" w="30" h="50" fw="30" fh="50">weapons/ba_grenade.png</animSheet>
+<anim name="ba_grenade">
+	<sheet>ba_grenade</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<!-- PROTECTOR BEAM -->
+<!-- PROTECTOR BEAM -->
+<animSheet name="protector_beam" w="280" h="210" fw="35" fh="35">people/protector_beam_base.png</animSheet>
+<animSheet name="protector_beam_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="protector_beam_death_right">
+	<sheet>protector_beam_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_death_left">
+	<sheet>protector_beam_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_walk_down">
+	<sheet>protector_beam</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_walk_right">
+	<sheet>protector_beam</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_walk_up">
+	<sheet>protector_beam</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_walk_left">
+	<sheet>protector_beam</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_shoot_down">
+	<sheet>protector_beam</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_shoot_right">
+	<sheet>protector_beam</sheet>
+	<desc length="3" x="3" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_shoot_up">
+	<sheet>protector_beam</sheet>
+	<desc length="3" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_shoot_left">
+	<sheet>protector_beam</sheet>
+	<desc length="3" x="5" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_power_down">
+	<sheet>protector_beam</sheet>
+	<desc length="7" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_power_up">
+	<sheet>protector_beam</sheet>
+	<desc length="7" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam_portrait">
+	<sheet>protector_beam</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="protector_beam_fly">
+	<sheet>protector_beam</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<!-- mod2 -->
+<animSheet name="protector_beam2" w="280" h="210" fw="35" fh="35">people/protector_beam2_base.png</animSheet>
+<animSheet name="protector_beam2_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="protector_beam2_death_right">
+	<sheet>protector_beam2_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_death_left">
+	<sheet>protector_beam2_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_walk_down">
+	<sheet>protector_beam2</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_walk_right">
+	<sheet>protector_beam2</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_walk_up">
+	<sheet>protector_beam2</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_walk_left">
+	<sheet>protector_beam2</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_shoot_down">
+	<sheet>protector_beam2</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_shoot_right">
+	<sheet>protector_beam2</sheet>
+	<desc length="3" x="3" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_shoot_up">
+	<sheet>protector_beam2</sheet>
+	<desc length="3" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_shoot_left">
+	<sheet>protector_beam2</sheet>
+	<desc length="3" x="5" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_power_down">
+	<sheet>protector_beam2</sheet>
+	<desc length="7" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_power_up">
+	<sheet>protector_beam2</sheet>
+	<desc length="7" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="protector_beam2_portrait">
+	<sheet>protector_beam2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="protector_beam2_fly">
+	<sheet>protector_beam2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ba_shotgun_scatter_mini" w="168" h="51" fw="28" fh="51">weapons/ba_shotgun_scatter_mini.png</animSheet>
+<weaponAnim name="ba_shotgun_scatter_mini">
+	<sheet>ba_shotgun_scatter_mini</sheet>
+	<desc length="6" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="15" y="21"/>
+	<mountPoint x="4" y="35"/>
+	<chargeImage>weapons/ba_shotgun_scatter_mini_glow.png</chargeImage>
+</weaponAnim>
+
+<!-- ANOMALY -->
+<animSheet name="anomaly" w="315" h="455" fw="35" fh="35">people/anomaly_base.png</animSheet>
+<anim name="anomaly_clone">
+	<sheet>anomaly</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="anomaly_death_right">
+	<sheet>anomaly</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="anomaly_death_left">
+	<sheet>anomaly</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="anomaly_walk_down">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_walk_right">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_walk_up">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_walk_left">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_shoot_down">
+	<sheet>anomaly</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_shoot_right">
+	<sheet>anomaly</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_shoot_up">
+	<sheet>anomaly</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_shoot_left">
+	<sheet>anomaly</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_fire_down">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_fire_right">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_fire_up">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_fire_left">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_repair">
+	<sheet>anomaly</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_punch_up">
+	<sheet>anomaly</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_punch_down">
+	<sheet>anomaly</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="anomaly_teleport">
+	<sheet>anomaly</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="anomaly_type_right">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="anomaly_type_left">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="anomaly_type_up">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="anomaly_type_down">
+	<sheet>anomaly</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="anomaly_portrait">
+	<sheet>anomaly</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
 </FTL>

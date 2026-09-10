@@ -214,6 +214,11 @@
 		<combat>Mara_Battle.ogg</combat>
 	</track>	
 	<track>
+		<name>Machines</name>
+		<explore>Machines_explore.ogg</explore>
+		<combat>Machines_battle.ogg</combat>
+	</track> <!-- 1.36 -->
+	<track>
 		<name>Traders</name>
 		<explore>Traders_Explore.ogg</explore>
 		<combat>Traders_Battle.ogg</combat>
@@ -828,7 +833,7 @@
 <pony_mine_falls volume="8">ui/pony_mine_falls.ogg</pony_mine_falls>
 <pony_boss_hit volume="8">ui/pony_boss_hit.ogg</pony_boss_hit>
 <!-- 1.33 -->
-<projectile_eater volume="8">ui/projectile_eater.ogg</projectile_eater>
+<projectile_eater volume="4">ui/projectile_eater.ogg</projectile_eater><!-- 1.36 -->
 <alien_appears volume="8">aliens/alien_appears.ogg</alien_appears>
 <alien_wounded volume="8">aliens/alien_wounded.ogg</alien_wounded>
 <FireIonBoarder volume="2">dlc/FireIonBoarder.ogg</FireIonBoarder>
@@ -873,5 +878,9 @@
 <chelnok_otpravka volume="10">aliens/chelnok_otpravka.ogg</chelnok_otpravka>
 <woman_scream1 volume="7">aliens/woman_scream1.ogg</woman_scream1>
 <woman_scream2 volume="7">aliens/woman_scream2.ogg</woman_scream2>
-
+<!-- 1.36 -->
+<gigaart_loading volume="6">weapons/gigaart_loading.ogg</gigaart_loading>
+<gigaart_zoop volume="10">weapons/gigaart_zoop.ogg</gigaart_zoop>
+<def_beam_drone volume="10">weapons/def_beam_drone.ogg</def_beam_drone>
+<chest2 volume="10">weapons/HangarDoorOpen1.ogg</chest2>
 </FTL>

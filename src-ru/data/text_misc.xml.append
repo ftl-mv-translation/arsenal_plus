@@ -335,15 +335,15 @@
 <text name="defeated_stat">Побед над кораблями</text>
 <text name="beacons_stat">Маяков посещено</text>
 <text name="scrap_stat">Собрано лома</text>
-<text name="crew_stat">Нанято экипажа</text>
+<text name="crew_stat">Получено экипажа</text> <!-- 1.36 -->
 <text name="most_defeated_stat">Максимум побед над кораблями</text>
 <text name="most_beacons_stat">Максимум маяков посещено</text>
 <text name="most_scrap_stat">Максимум собрано лома</text>
-<text name="most_crew_stat">Максимум нанято экипажа</text>
+<text name="most_crew_stat">Максимум получено экипажа</text> <!-- 1.36 -->
 <text name="total_defeated_stat">Всего побед над кораблями</text>
 <text name="total_beacons_stat">Всего маяков посещено</text>
 <text name="total_scrap_stat">Всего собрано лома</text>
-<text name="total_crew_stat">Всего нанято экипажа</text>
+<text name="total_crew_stat">Всего получено экипажа</text> <!-- 1.36 -->
 
 <text name="crew_evasions">Управляемых уворотов</text>
 <text name="crew_repairs">Починок</text>
@@ -931,7 +931,7 @@
 
 <text name="sensor_1">Интерьер вашего корабля</text>
 <text name="sensor_2">Интерьер корабля врага, щиты+</text><!-- 1.35 -->
-<text name="sensor_3">|, }, уворот, О2 и орудия врага</text><!-- 1.31 -->
+<text name="sensor_3">|, }, уворот, О2, взлом и орудия</text><!-- 1.31 --><!-- 1.36 -->
 <text name="sensor_4">Энергия корабля врага</text>
 
 <text name="cloak">Маскировка: \1 секунд</text>  <!-- \1: cloak duration -->
@@ -1120,6 +1120,7 @@
 <text name="tip_drone_warning">Предупреждение: У вас нет системы управления дронами. Приобретите её!</text>
 <text name="tip_drone_drag">Совет: Находится в грузовом отсеке. Для использования перетащите в доступный слот дронов.</text>
 <text name="tip_weapon_drag">Совет: Находится в грузовом отсеке. Для использования или просмотра шансов поджога/пробоя перетащите в доступный слот оружия.</text>
+<text name="tip_deionizator">Совет: Может помочь для противодействия вражеским ионным орудиям или ускорить перезарядку систем корабля. Лучше показывает себя в недолгих битвах.</text><!-- 1.36 -->
 
 <text name="required_power">Требует энергии: \1</text>  <!-- Also used for drones. \1: required power -->
 <text name="boost_power_speed">С каждым выстрелом перезарядка быстрее</text>
@@ -1549,7 +1550,7 @@
 
 <text name="gameover_crew">Экипаж мёртв. Ваш корабль будет вечно дрейфовать по просторам космоса. Или попадётся мародёрам.</text>
 <text name="gameover_blowup">И последний взрыв стал для вас роковым, разнеся ваш корабль на части.</text>
-<text name="gameover_fedbase">Корабль повстанцев уничтожил базу Федерации. Всё кончено, они выиграли.</text>
+<text name="gameover_fedbase">Флагман повстанцев уничтожил базу Федерации. Всё кончено, они выиграли.</text><!-- 1.36 -->
 <text name="gameover_tutorial">Каким-то образом вы погибли во время обучающих миссий. Вы можете попробовать снова, но это не сулит ничего хорошего вашей миссии.</text>
 
 <text name="tooltip_jump_noJump">Корабль противника отключил ваш FTL-привод. Выхода нет, вы должны победить вражеский корабль, если хотите выжить!</text> <!-- The enemy ship has disabled your FTL drive. There is no escape; you must defeat the enemy ship if you want to survive! --><!-- 1.6 -->
@@ -1675,6 +1676,28 @@ DarkGamer, DemiSir, Evil PepperPlayz, Fotos, GianTell, Gigaxp, Harpuae, Katabati
 
 <text name="confirm_buy_clonebay">Вы уверены?\nКлон-отсек заменит ваш медотсек.</text>  <!-- Displayed when attempting to buy a clonebay when a medbay is already installed. Note that line breaks in confirmation dialogs are optional (text will auto-wrap) and are used in English for aesthetic reasons. -->
 <text name="confirm_buy_last_system">Это последний системный слот на вашем корабле.\nВы уверены?</text>  <!-- Displayed when attempting to buy the eighth system on the ship -->
+
+
+<!--Crash Report window--><!-- 1.36 -->
+<text name="confirm_report_crash">В ходе предыдущего игрового сеанса был обнаружен сбой мода Hyperspace.\n\nХотите создать отчёт об ошибке с вашими сохраненными данными и логами?</text>
+<text name="confirm_report_bug">Хотите создать отчёт об ошибке с вашими сохраненными данными и логами?</text>
+<text name="confirm_report_create">Создать отчёт об ошибке</text>
+<text name="confirm_report_skip">Нет</text>
+<text name="confirm_report_where">Отчёт об ошибке успешно создан!\n\nКуда вы хотите отправить этот отчёт?</text>
+<text name="confirm_report_discord">Сообщить в Discord</text>
+<text name="confirm_report_github">Создать проблему на GitHub</text>
+<text name="confirm_report_instructions_discord">Пожалуйста, сообщите об ошибке на сервере Discord FTL: Arsenal+.\n\nМестоположение отчёта об ошибке:\n\1</text>
+<text name="confirm_report_instructions_github">Пожалуйста, создайте проблему на GitHub по адресу:\ngithub.com/FTL-Hyperspace/FTL-Hyperspace/issues\n\nМестоположение отчёта об ошибке:\n\1</text>
+<text name="confirm_report_view">Открыть папку с отчётами об ошибках</text>
+<text name="confirm_report_done">Пропустить</text>
+<text name="confirm_report_failed">Не удалось создать отчёт об ошибке.\n\nПожалуйста, проверьте логи для получения подробной информации.</text>
+<text name="confirm_report_failed_okay">ОК</text>
+<!-- <text name="confirm_report_failed_no" language="ru"> </text> -->
+
+<text name="tooltip_supergrid">Расширенный просмотр узлов: \nПоказать все соединения на карте маяков.</text>
+
+<text name="tooltip_bugreport">Нажмите, чтобы сообщить об ошибке.</text>
+
 <text name="confirm_buy_medbay">Вы уверены?\nМедотсек заменит ваш клон-отсек.</text>  <!-- Displayed when attempting to buy a medbay when a clonebay is already installed -->
 <text name="confirm_dismiss">Член экипажа\nбудет потерян\nнавсегда.\nВы уверены?</text>  <!-- Displayed after clicking the DISMISS button for a crewmember on the crew manifest -->
 <text name="confirm_end_game">Вы уверены?\nПрогресс полёта будет потерян.</text>  <!-- Displayed after clicking the HANGAR or RESTART button on the in-game menu -->
@@ -1957,7 +1980,7 @@ DarkGamer, DemiSir, Evil PepperPlayz, Fotos, GianTell, Gigaxp, Harpuae, Katabati
 <text name="lua_chall_nostor_off">Магазины встречаются как обычно.</text>
 <text name="lua_chall_nowst_on">Каждый прыжок или ожидание на маяке орудия будут заменены на случайные с той же энергией.</text><!-- 1.35 -->
 <text name="lua_chall_nowst_off">Орудия не меняются во время прыжков или ожидания на маяке.</text>
-<text name="lua_chall_noevd_on">Все противники будут иметь повышенную точность.</text><!-- 1.35 -->
+<text name="lua_chall_noevd_on">Все противники будут иметь повышенную точность (Модификатор точности: +50).</text><!-- 1.35 --><!-- 1.36 -->
 <text name="lua_chall_noevd_off">Враги будут иметь обычную точность.</text><!-- 1.35 -->
 <text name="lua_chall_noorc_on">За вами устроит погоню фрегат орхидов, не надейтесь убежать.</text><!-- 1.35 -->
 <text name="lua_chall_noorc_off">Никаких дополнительных погонь.</text><!-- 1.35 -->
@@ -1970,12 +1993,14 @@ DarkGamer, DemiSir, Evil PepperPlayz, Fotos, GianTell, Gigaxp, Harpuae, Katabati
 <text name="lua_chall_rew_off">Награда за пройденные испытания отключена.</text>
 <text name="lua_chall_nobf_on">Битва с флагманом повстанцев будет иметь дополнительную фазу.</text>
 <text name="lua_chall_nobf_off">Битва с флагманом повстанцев пройдёт как обычно.</text>
+<text name="lua_chall_notmr_on">После первого прыжка каждые 5 минут реального времени призраки на корабле будут делать нехорошие вещи.</text><!-- 1.36 -->
+<text name="lua_chall_notmr_off">Никаких неупокоенных призраков на корабле.</text><!-- 1.36 -->
 <text name="lua_chall_done_easy">(Пройдено на лёгком режиме)</text>
 <text name="lua_chall_done_med">(Пройдено на среднем режиме)</text>
 <text name="lua_chall_done_hard">(Пройдено на сложном режиме)</text>
 <text name="lua_arty_tip_auto">Артиллерия будет стрелять автоматически после зарядки в случайный отсек.</text>
 <text name="lua_arty_tip_hand">Артиллерия будет стрелять в ручном режиме в выбранный отсек.</text>
-<text name="lua_fish_tip">Кнопка для заброса удочки, подсекания и вытаскивания рыбы (Горячая клавиша: RIGHT CTRL).</text>
+<text name="lua_fish_tip">Кнопка для заброса удочки, подсекания и вытаскивания рыбы (Горячая клавиша: RIGHT CTRL).\n\nЧтобы поймать рыбу, удерживайте её в ограниченной области, пока шкала слева не заполнится.</text> <!-- 1.36 -->
 <text name="lua_fish_aug_main_name">Рыбные ароматы (влияют на экипаж).</text>
 <text name="lua_cancel_mindcontrol">Отменить действие контроля разума.</text>
 <text name="lua_nocancel_mindcontrol">Сейчас нельзя отменить действие контроля разума.</text>
@@ -1991,6 +2016,7 @@ DarkGamer, DemiSir, Evil PepperPlayz, Fotos, GianTell, Gigaxp, Harpuae, Katabati
 <text name="credit_victory_4_phase_end">Вы оказываетесь прямо рядом с базой Федерации, на которую напали повстанцы. Закалённые в бою, вы уничтожаете повстанцев, даже не почувствовав их сопротивления. Федерации больше ничто не угрожает, а вас навсегда запомнят как героев.</text>
 <text name="lua_tip_aim_drones">Левой кнопкой мыши выбирайте первую цель, правой кнопкой мыши - вторую. Кнопка X слева для отмены целей. Кнопка с изображением курсора для режима выбора отсека. Для лучевых дронов, если выбраны две цели, след луча начнётся с первой цели и пройдёт через вторую цель. Если две цели одинаковы или выбрана только одна цель, вторая цель будет случайной. Для других типов боевых дронов при выборе двух целей приоритет будет отдан системам, которые не уничтожены полностью. Если обе системы полностью уничтожены, дроны случайным образом нацелятся на одну из двух выбранных целей.</text>
 <text name="lua_capsule">На вашем корабле есть спасательная капсула, которую можно использовать для задержки преследующего вас флота.</text>
+<text name="lua_barrel">На вашем корабле есть дополнительный топливный бак, который можно использовать для получения топлива.</text><!-- 1.36 -->
 <text name="lua_engi_monster_text_replacer">Похоже, чудовище затихает, а враждебные микроорганизмы перестали на вас нападать. Успокоившись, вы осматриваетесь и находите рядом с маяком топливо. Время убираться отсюда...</text>
 <text name="lua_draw">Вкл./выкл. режим рисования маршрута по карте сектора (используйте правую кнопку мыши на карте, чтобы добавить точки).</text>
 <text name="lua_clear_draw">Убрать нарисованные точки.</text>
@@ -2033,7 +2059,7 @@ DarkGamer, DemiSir, Evil PepperPlayz, Fotos, GianTell, Gigaxp, Harpuae, Katabati
 <text name="lua_reward_coeff_drns">Награды деталями дронов снижены на VAL%, поскольку они не использовались в сражениях.</text>
 <text name="lua_reward_coeff_msls_zero">Награды боеприпасами не снижены.</text>
 <text name="lua_reward_coeff_drns_zero">Награды деталями дронов не снижены.</text>
-<text name="lua_ai_ship">Этот корабль имеет внутренний искуственный интеллект. Если весь экипаж погибнет, это не завершит полёт.</text>
+<text name="lua_ai_ship">Этот корабль имеет внутренний искусственный интеллект. Если весь экипаж погибнет, это не завершит полёт.</text><!-- 1.36 -->
 <text name="lua_tip_shop_is_close">Магазин на ближайшем маяке отправил приветственное сообщение.</text>
 <text name="alas_friendly">Ваш защитный дрон-отражатель: \nПеренаправляет лазерные снаряды в противника. Будет работать, пока не будет уничтожен, или вы не совершите прыжок.</text>
 <text name="alas_enemy">Дрон-отражатель: \nПеренаправляет лазерные снаряды в ваш корабль. Может быть отключён повреждением вражеской системы управления дронами.</text>
@@ -2047,8 +2073,9 @@ DarkGamer, DemiSir, Evil PepperPlayz, Fotos, GianTell, Gigaxp, Harpuae, Katabati
 <text name="lua_mc_tip_hand">Контроль разума не использует авто-режим.</text>
 <text name="needed_change_language">Внимание! Смените в настройках язык на "Русский (Arsenal +)"</text>
 
-<text name="lua_onoff_glif_panel">Вкл./выкл. панель управления Глифганом.</text>
+<text name="lua_onoff_glif_panel">Вкл./выкл. панель управления глифганом.</text>
 <text name="lua_clear_glif_panel">Очистить все глифы.</text>
+<text name="lua_lastclear_glif_panel">Очистить последний глиф.</text><!-- 1.36 -->
 <text name="lua_tip_glif">Информация об этом орудии недоступна.</text>
 <text name="lua_clear_glif_panel_no">Нет глифов для очистки.</text>
 <text name="lua_info_acc">Модификатор точности</text>
@@ -2073,8 +2100,80 @@ DarkGamer, DemiSir, Evil PepperPlayz, Fotos, GianTell, Gigaxp, Harpuae, Katabati
 <text name="lua_info_stealcrew">Снаряд при попадании телепортирует экипаж в отсеке на другой корабль</text>
 <text name="lua_info_blood">Снаряд при попадании вызывает кровотечение</text>
 <text name="lua_info_erosion">Снаряд при попадании вызывает эрозию</text>
+<!-- 1.36 -->
+<text name="lua_info_evasion">Дополнительное уклонение корабля</text>
+<text name="lua_info_bomb">Каждый выстрел дополнительно запускает неприцельные бомбы</text>
+<text name="lua_info_oxygen_fill">Попадание заполняет отсек кислородом до 100%</text>
+<text name="lua_info_spall">Пробивает все щиты</text>
+<text name="lua_info_asin">Дополнительно 30 урона всем корабельным дронам, инжи, морфам и аватарам + оглушение на 3 секунды.</text>
+<text name="lua_info_tau">Ионизирует рубку пилота и оглушает экипаж в ней на 3 секунды</text>
+<text name="lua_info_empty_teleport">Отправляет союзный экипаж из пустых отсеков на абордаж</text>
+<text name="lua_info_spawn_mantis">Снаряд создаёт временного союзного мантиса</text>
+<text name="lua_info_add_mc">Берёт под контроль 1 противника в отсеке</text>
+<text name="lua_info_add_hack">Взламывает систему на 5 секунд</text>
 
-<text name="lua_switch_screams_on">Уволенный экипаж будет выброшен в космос.</text>
-<text name="lua_switch_screams_off">Уволенный экипаж отправится на мини-челноке к ближайшей планете или станции.</text>
+<!-- <text name="lua_onoff_glif_panel">Turn on/off the Glyphgun control panel.</text>
+<text name="lua_clear_glif_panel">Clear all glyphs.</text>
+<text name="lua_tip_glif">Information about this weapon is unavailable.</text>
+<text name="lua_clear_glif_panel_no">No glyphs to clear.</text>
+<text name="lua_info_acc">Accuracy modifier</text>
+<text name="lua_info_iondamage">Ion damage</text>
+<text name="lua_info_crewdamage">Crew damage</text>
+<text name="lua_info_sysdamage">System damage</text>
+<text name="lua_info_hulldamage">Hull damage</text>
+<text name="lua_info_shots">Shots per charge</text>
+<text name="lua_info_cooldown">Cooldown</text>
+<text name="lua_info_sec">sec.</text>
+<text name="lua_info_charact">Characteristics</text>
+<text name="lua_info_power">Requires power</text>
+<text name="lua_info_speed">Projectile speed</text>
+<text name="lua_info_resetcd">After firing, it will reload for</text>
+<text name="lua_info_freeze">Locks target room</text>
+<text name="lua_info_hullbst">x2 damage to empty rooms</text>
+<text name="lua_info_stun">Stun</text>
+<text name="lua_info_sp">Shield pierce</text>
+<text name="lua_info_fc">Fire chance</text>
+<text name="lua_info_bc">Breach chance</text>
+<text name="lua_info_copycdnext">When firing, charges the weapon to the right up to its own cooldown level</text>
+<text name="lua_info_stealcrew">On hit, the projectile teleports room crew to another ship</text>
+<text name="lua_info_blood">On hit, the projectile causes bleeding</text>
+<text name="lua_info_erosion">On hit, the projectile causes erosion</text> -->
+
+<text name="lua_switch_screams_on">Уволенный экипаж будет выброшен в космос</text>
+<text name="lua_switch_screams_off">Уволенный экипаж отправится на мини-челноке к ближайшей планете или станции</text>
+<text name="lua_tip_cloak_blocked">Заблокировано усилением противника</text>
+<!-- 1.36 -->
+<text name="lua_pds_from_planet_marker">Противокорабельная батарея с планеты</text>
+<text name="lua_pds_fed_fleet">Противокорабельная батарея союзного флота наводится на вашего противника</text>
+
+<text name="tip_mc_weapon">Система контроля разума не требуется для работы этого орудия</text>
+
+<text name="lua_annihilator_text_adder">Похоже, что флагман вооружён каким-то [style[color:ff6e6e]]огромным лучевым орудием[[/style]], состоящим из трёх компонентов. Это объясняет, почему они не попадались вам в этом полёте...</text>
+
+<text name="lua_show_ftl_timer_on">Таймер зарядки FTL-привода включён</text>
+<text name="lua_show_ftl_timer_off">Таймер зарядки FTL-привода выключен</text>
+
+
+<text name="lua_get_this_weapon">Получить это орудие.</text>
+<text name="lua_container_broke">От контейнера хранения ядра остаётся лишь пустая оболочка...</text>
+<text name="lua_install_core">Вы успешно устанавливаете ядро в орудие через специальный соединительный разъём.\n</text>
+
+<text name="lua_event_text_marker_11">Очистить оружие</text>
+
+<text name="lua_tip_top">Нажмите HOME, чтобы узнать боевую стоимость кораблей на экране (в скобках стоимость с перевозимым грузом) и ваш текущий урон в секунду. Рядом с орудиями есть небольшой "+", если нужно постоянное отображение.\n\nНажмите END, чтобы узнать номер сектора и возможные награды ломом.\n\nНажмите INS, чтобы узнать номера отсеков.</text>
+
+<text name="lua_flagman_sbezhal">Вы быстро грузите в трюм уцелевшие части флагмана.</text> <!-- ванильный баг, когда при 0 топлива побеждаешь флагман, награду не выдавали, пофикшено в луа -->
+
+<text name="lua_legendary_morph_name">Коротыш</text>
+
+<text name="lua_event_text_vspishka0">А ещё он тихо бормочет про какое-то супер орудие с обычными лазерами.</text>
+<text name="lua_event_text_vspishka1">А ещё он тихо бормочет про какое-то супер орудие с контролем разума.</text>
+<text name="lua_event_text_vspishka2">А ещё он тихо бормочет про какое-то супер орудие с минами.</text>
+<text name="lua_event_text_vspishka3">А ещё он тихо бормочет про какое-то супер орудие с тяжёлыми лазерами.</text>
+
+<text name="ce_tip_grenades">Совет: Гранатомёты имеют гибкую систему прицеливания. Используйте колёсико мыши для регулировки длины.</text>
+<text name="tip_protector_beam">Совет: Располагайте его поближе к важным системам. Нажмите BACKSPACE, чтобы показать радиус работы дрона. Несколько таких дронов атакуют только по очереди.</text>
 
 </FTL>
+
+

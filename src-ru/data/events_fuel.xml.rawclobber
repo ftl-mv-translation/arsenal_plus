@@ -43,13 +43,45 @@ Sector Specific:
 	<fleet>rebel</fleet>
 </event>
 
+<!-- тут именно нужен generate="true", иначе не рандомит как надо --><!-- 1.36 -->
 <event name="NO_FUEL_FLEET_DLC"><!-- 1.31 -->
-	<loadEventList seeded="false" first="false" generate="true"> <!-- тут именно нужен generate="true", иначе не рандомит как надо -->
+	<loadEventList seeded="false" first="true" generate="true">
+		<event req="map_nebula_beacon" lvl="1"> <!-- мета получаем через луа на ожидании, она и разделяет 2 ветки событий -->
+			<loadEventList seeded="false" first="false" generate="true">
+				<event name="NEBULA_NO_FUEL_FLEET_DLC_CLASSIC"/>
+				<event name="NEBULA_NO_FUEL_FLEET_DLC_CLASSIC"/>
+				<event name="NEBULA_NO_FUEL_FLEET_DLC_CLASSIC"/>
+				<event name="NEBULA_NO_FUEL_FLEET_DLC_BAD"/>
+			</loadEventList>
+		</event>
+		<event>
+			<loadEventList seeded="false" first="false" generate="true">
+				<event name="NO_FUEL_FLEET_DLC_CLASSIC"/>
+				<event name="NO_FUEL_FLEET_DLC_CLASSIC"/>
+				<event name="NO_FUEL_FLEET_DLC_CLASSIC"/>
+				<event name="NO_FUEL_FLEET_DLC_BAD"/>
+			</loadEventList>
+		</event>
+	</loadEventList>
+	<!-- <loadEventList seeded="false" first="false" generate="true">
 		<event name="NO_FUEL_FLEET_DLC_CLASSIC"/>
 		<event name="NO_FUEL_FLEET_DLC_CLASSIC"/>
 		<event name="NO_FUEL_FLEET_DLC_CLASSIC"/>
 		<event name="NO_FUEL_FLEET_DLC_BAD"/>
-	</loadEventList>
+	</loadEventList> -->
+</event>
+
+<event name="NEBULA_NO_FUEL_FLEET_DLC_CLASSIC"><!-- 1.36 -->
+	<text load="NO_FUEL_FLEET_DLC_CLASSIC_TEXT"/>
+	<ship load="REBEL_FLEET_FUEL" hostile="true"/>
+	<fleet>rebel</fleet>
+	<environment type="nebula"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event>
+			<environment type="PDS" target="player"/>
+		</event>
+	</choice>
 </event>
 <event name="NO_FUEL_FLEET_DLC_CLASSIC">
 	<text load="NO_FUEL_FLEET_DLC_CLASSIC_TEXT"/>
@@ -62,6 +94,14 @@ Sector Specific:
 	<text>Вы фиксируете зарядку мощных артиллерийских батарей тяжёлых кораблей повстанцев, а один из разведчиков мчится на перехват.</text>
 	<text>Флот повстанцев всё прибывает. Возможно вам удастся выбить топливо из какого-нибудь корабля, чтобы сбежать...</text>
 </textList>
+<event name="NEBULA_NO_FUEL_FLEET_DLC_BAD"><!-- 1.36 -->
+	<text load="NO_FUEL_FLEET_DLC_BAD_TEXT"/>
+	<environment type="nebula"/>
+	<choice hidden="true">
+		<text>Поговорить с экипажем.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
+</event>
 <event name="NO_FUEL_FLEET_DLC_BAD">
 	<text load="NO_FUEL_FLEET_DLC_BAD_TEXT"/>
 	<choice hidden="true"><!-- 1.34 -->
@@ -95,6 +135,8 @@ Beacon Off.....
 <event name="NO_FUEL_LIE"> <!-- когда топливо на самом деле ещё есть -->
 	<loadEventList seeded="false" first="false" generate="true">
 		<event load="FUEL_NOTHING"/>
+		<event load="FUEL_NOTHING"/> <!-- 1.36 -->
+		<event load="FUEL_NOTHING"/> <!-- 1.36 -->
 		<event load="FUEL_TRADER"/>
 		<event load="STUFF_EXPLORE"/>
 		<event load="STUFF_APPROACH"/>
@@ -105,6 +147,8 @@ Beacon Off.....
 	<loadEventList seeded="false" first="false" generate="true">
 		<event load="FUEL_FLEET_DELAY"/>
 		<event load="FUEL_NOTHING"/>
+		<event load="FUEL_NOTHING"/> <!-- 1.36 -->
+		<event load="FUEL_NOTHING"/> <!-- 1.36 -->
 		<event load="FUEL_TRADER"/>
 		<event load="FUEL_EXPLORE"/>
 		<event load="FUEL_APPROACH"/>
@@ -489,6 +533,7 @@ Beacon On!!!!
 	<loadEventList seeded="false" first="false" generate="true">
 		<event load="FUEL_NOTHING_DISTRESS"/>
 		<event load="FUEL_NOTHING_DISTRESS"/>
+		<event load="FUEL_NOTHING_DISTRESS"/> <!-- 1.36 -->
 		<event load="STUFF_EXPLORE"/>
 		<event load="STUFF_APPROACH"/>
 		<event load="FUEL_ON_SLUG_OVERPRICED"/>
@@ -502,6 +547,7 @@ Beacon On!!!!
 	<loadEventList seeded="false" first="false" generate="true">
 		<event load="FUEL_NOTHING_DISTRESS"/>
 		<event load="FUEL_NOTHING_DISTRESS"/>
+		<event load="FUEL_NOTHING_DISTRESS"/> <!-- 1.36 -->
 		<event load="FUEL_SELLER_DISTRESS"/>
 		<event load="FUEL_TRADER_DISTRESS"/>
 		<event load="FUEL_EXPLORE"/>
@@ -899,9 +945,17 @@ Beacon On!!!!
 		<autoReward level="MED">missiles</autoReward>
 	</event>
 	<event>
-		<text>Один из членов экипажа сообщает, что главный компьютер находится в этой секции и до сих пор функционирует, хотя и не полностью. Он в состоянии загрузить местную телеметрию, а также расположение резервного склада с топливом! Ваша карта была обновлена.</text>
-		<reveal_map/>
-		<autoReward level="MED">fuel_only</autoReward>
+		<loadEventList seeded="false" first="true"><!-- 1.36 -->
+			<event req="player_has_sector_map" lvl="1">
+				<text>Один из членов экипажа сообщает, что главный компьютер находится в этой секции и до сих пор функционирует, хотя и не полностью. Он в состоянии узнать расположение резервного склада с топливом!</text>
+				<autoReward level="MED">fuel_only</autoReward>
+			</event>
+			<event>
+				<text>Один из членов экипажа сообщает, что главный компьютер находится в этой секции и до сих пор функционирует, хотя и не полностью. Он в состоянии загрузить местную телеметрию, а также расположение резервного склада с топливом! Ваша карта была обновлена.</text>
+				<reveal_map/>
+				<autoReward level="MED">fuel_only</autoReward>
+			</event>
+		</loadEventList>
 	</event>
 	<event>
 		<text>Команда вернулась назад ощутимо раньше, нежели ожидалось. Оказывается, как только они подлетели к фрегату, его аварийная ячейка с топливом неожиданно проплыла мимо!</text>
@@ -1029,7 +1083,7 @@ Beacon On!!!!
 </event>
 <eventList name="FUEL_ON_SLUG_CHUCKLE_LIST">
 	<event>
-		<text>Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как заключить сделку. Однако, вы совершаете обмен без происшествий.</text>
+		<text>Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как заключить сделку. Однако вы совершаете обмен без происшествий.</text>
 		<item_modify>
 			<item type="scrap" min="-20" max="-20"/><!-- 1.29 -->
 			<item type="fuel" min="5" max="5"/>
@@ -1046,7 +1100,7 @@ Beacon On!!!!
 		</choice>
 	</event>
 	<event>
-		<text>Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как заключить сделку. Однако, вы совершаете обмен без происшествий.</text>
+		<text>Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как заключить сделку. Однако вы совершаете обмен без происшествий.</text>
 		<item_modify>
 			<item type="scrap" min="-20" max="-20"/><!-- 1.29 -->
 			<item type="fuel" min="5" max="5"/>

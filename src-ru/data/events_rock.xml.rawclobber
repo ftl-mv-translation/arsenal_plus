@@ -1122,6 +1122,8 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 <!-- MAGMAN SECTOR -->
 <eventList name="HOSTILE_MAGMAN">
 	<event load="ULTRA_SUN_FIGHT"/><!-- 1.33 -->
+	<event load="EVENT_MAGMAN_ART"/><!-- 1.36 -->
+	<event load="EVENT_DOUBLE_BATTLE"/><!-- 1.36 -->
 	<!-- <event load="MAGMAN_PIRATE"/> -->
 	<!-- <event load="MAGMAN_FIGHT_ASTEROID"/> -->
 	<!-- <event load="MAGMAN_PIRATE_ASTEROID"/> -->
@@ -1149,9 +1151,9 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 </eventList>
 
 <eventList name="BOARDERS_MAGMAN">
-	<!-- <event load="MAGMAN_BOARDERS_SHIP"/> -->
-	<!-- <event load="MAGMAN_BOARDERS_ASTEROID"/> -->
-	<!-- <event load="MAGMAN_BOARDERS_SUN"/> -->
+	<event load="MAGMAN_BOARDERS_SUN"/><!-- 1.36 -->
+	<event load="MAGMAN_BOARDERS_SHIP"/><!-- 1.36 -->
+	<event load="MAGMAN_BOARDERS_ASTEROID"/><!-- 1.36 -->
 </eventList>
 
 <eventList name="DISTRESS_BEACON_MAGMAN">
@@ -1198,29 +1200,23 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 		<event load="AUGMENTS_ON_START_BEACON"/>
 	</choice>
 </event>
-<textList name="START_BEACON_MAGMAN">
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
+<textList name="START_BEACON_MAGMAN"><!-- 1.36 -->
+	<text>Сектор магменов... Гражданские корабли обычно стараются избегать его, но некоторые уверенные в себе торговцы срезают здесь путь...</text>
+	<text>Согласно справочнику Федерации, магмены появились на планете наполовину покрытой расплавленной лавой.</text>
+	<text>Многие планеты в этом секторе признаны слишком горячими и непригодными для жизни. А вот для магменов они оказались вполне комфортными.</text>
+	<text>Существует версия, что корабли магменов такие тёмные, потому что они сразу после сборки прогорают дотла.</text>
+	<text>В этом секторе замечены случаи обратного терраформинга - магмены превращают цветущие зелёные миры в адские пустоши с помощью своих пироформеров.</text>
+	<text>В Федерации введён негласный запрет на провоз орхидов через секторы магменов. Оно и понятно, учитывая сколько живых растений здесь уже было потеряно.</text>
 </textList>
 
 <event name="STORE_MAGMAN">
 	<text load="STORE_MAGMAN"/>
 	<store/>
 </event>
-<textList name="STORE_MAGMAN">
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
+<textList name="STORE_MAGMAN"><!-- 1.36 -->
+	<text>Предприниматель на этом маяке держит магазин, замаскированный в крупном астероиде. Вот хитрец!</text>
+	<text>Торговец приглашает вас посмотреть на его товары. Кажется, что он как-то "договорился" с местными магменами, чтобы его не трогали.</text>
+	<text>Возле маяка вы находите торговую станцию. Её двери открыты, и вы заглядываете осмотреть ассортимент.</text>
 </textList>
 
 <event name="NOTHING_MAGMAN">
@@ -1230,16 +1226,105 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
-<textList name="NOTHING_MAGMAN">
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
-	<text></text>
+<textList name="NOTHING_MAGMAN"><!-- 1.36 -->
+	<text>Маяк, возле которого вы появляетесь, выглядит обугленным, но функционирующим. Видимо, тот, кто прокладывал местные прыжковые маршруты, делал свою работу на совесть.</text>
+	<text>На пределе работы ваших сенсоров мелькнул корабль магменов и пропал. Больше ничего интересного не происходит.</text>
+	<text>Возле маяка вы фиксируете останки былого сражения. Видимо, какой-то корабль был разломан и обчищен магменами. Ничего полезного не осталось.</text>
 </textList>
 
+<textList name="EVENT_MAGMAN_ART_TEXT"><!-- 1.36 -->
+	<text>Возле маяка вы встречаете артиллерию магменов. Кто-то из вашей команды говорит, что он её уже видел и чудом пережил ту встречу...</text>
+	<text>После прыжка на вас летит корабль магменов. Похоже, боя не избежать.</text>
+</textList>
+<event name="EVENT_MAGMAN_ART" unique="true"><!-- 1.36 -->
+	<text load="EVENT_MAGMAN_ART_TEXT"/>
+	<img planet="PLANET_POPULATED"/>
+	<ship load="EVENT_MAGMAN_ART_PARAMETERS" hostile="true"/>
+</event>
+<ship name="EVENT_MAGMAN_ART_PARAMETERS" auto_blueprint="MAGMAN_ARTILLERY_SHIPS"> <!-- 1.36 -->
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+<!-- 1.36 -->
+<event name="MAGMAN_BOARDERS_SUN" unique="true">
+	<text load="MAGMAN_BOARDERS_SUN_TEXT"/>	
+	<environment type="sun"/>
+	<variable name="counter_meet_sun" op="add" val="1"/>
+	<boarders min="2" max="4" class="magman"/>
+	<triggeredEvent name="BOARDERS_DEFEATED" event="BOARDERS_CLEARED" enemyCrew="0" clearOnJump="true">
+		<enemyCrew amount="0" includeClonebay="false"/>
+	</triggeredEvent>
+</event>
+<textList name="MAGMAN_BOARDERS_SUN_TEXT">
+	<text>Выйдя из прыжка возле активной звезды, вы замечаете моргающую красную лампу на приборной панели. Похоже, что на борту чужаки!</text>
+	<text>Магмены решили напасть на вас возле активной звезды, они хотят воспользоваться своим главным преимуществом.</text>
+	<text>Магмены известны своей привычкой держаться там, где потеплее, их нападение сейчас яркое подтверждение этого.</text>
+</textList>
+
+<event name="MAGMAN_BOARDERS_SHIP" unique="true">
+	<text load="MAGMAN_BOARDERS_SHIP_TEXT"/>	
+	<boarders min="2" max="4" class="magman"/>
+	<ship load="MAGMAN_PARAM" hostile="true"/>
+</event>
+<textList name="MAGMAN_BOARDERS_SHIP_TEXT">
+	<text>К вам на борт телепортируются магмены, а на хвост вам садится их корабль.</text>
+	<text>Звук телепорта раздаётся по пустынным коридорам вашего корабля - это абордаж магменов с кораблём поддержки.</text>
+	<text>Вы уже собирались хлебнуть остывающий напиток в кружке на приборной панели, как откуда-то телепортировалась группа агрессивных магменов с корабля поблизости.</text>
+</textList>
+
+<event name="MAGMAN_BOARDERS_ASTEROID" unique="true">
+	<text load="MAGMAN_BOARDERS_ASTEROID_TEXT"/>	
+	<boarders min="2" max="3" class="magman"/>
+	<environment type="asteroid"/>
+	<variable name="counter_meet_asteroid" op="add" val="1"/>
+	<ship load="MAGMAN_PARAM" hostile="true"/>
+</event>
+<textList name="MAGMAN_BOARDERS_ASTEROID_TEXT">
+	<text>Вы прибываете в поле астероидов и сразу же фиксируете телепортацию магменов с одного из астеродиов. В поддержку им откуда-то вынырнул чёрный корабль.</text>
+	<text>Пока вы уклонялись от астероидов этого маяка, кто-то из команды рапортует, что обнаружил захватчиков. Нужно дать им отпор!</text>
+</textList>
+
+<!-- двойная битва. последовательная. косяков вообще не выявил. просто всё работает сразу... -->
+<!-- из ньюансов, если первый корабль был захвачен и есть экипаж игрока на борту, -->
+<!-- то при открытии второго корабля экипаж возвращается сразу обратно в район рубки пилота -->
+<event name="EVENT_DOUBLE_BATTLE" unique="true">
+	<text>На вас мчится агрессивно настроенный корабль магменов. Боя не избежать!</text>
+	<img planet="PLANET_POPULATED"/>
+	<ship load="DOUBLE_BATTLE_PARAMETERS1" hostile="true"/>
+	<choice>
+		<text id="continue"/>
+		<event/>
+	</choice>
+</event>
+<ship name="DOUBLE_BATTLE_PARAMETERS1" auto_blueprint="MAGMAN_SHIPS"> 
+	<destroyed>
+		<text>Только вы начали собрать обломки побеждённого корабля, как внезапно появляется ещё один!</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+		<queueEvent>EVENT_DOUBLE_BATTLE2</queueEvent>
+	</destroyed>
+	<deadCrew>
+		<autoReward level="MED">scrap_only</autoReward>
+		<text>Только вы начали обчищать захваченный корабль, как внезапно появляется ещё один!</text>
+		<queueEvent>EVENT_DOUBLE_BATTLE2</queueEvent>
+	</deadCrew>
+</ship>
+<event name="EVENT_DOUBLE_BATTLE2">
+	<loadEventList seeded="false" first="true">
+		<event>
+			<ship load="DOUBLE_BATTLE_PARAMETERS2" hostile="true"/>
+		</event>
+	</loadEventList>
+</event>
+<ship name="DOUBLE_BATTLE_PARAMETERS2" auto_blueprint="MAGMAN_SHIPS"> 
+	<destroyed>
+		<text>Теперь всё спокойно, и вы собираете то, что осталось от обоих кораблей.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Теперь всё спокойно, и вы собираете то, что уцелело после битвы.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
 
 <!-- 1.33 -->
 <!-- Обломок с резервным банком ДНК -->
@@ -1308,18 +1393,18 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Однако, один оказывается здоров. Вместе с вашей командой он собирает уцелевшее с обломка корабля...</text>
+		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Однако один оказывается здоров. Вместе с вашей командой он собирает уцелевшее с обломка корабля...</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<crewMember amount="1" class="magman"/>
 	</event>
 	<event>
-		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Однако, двое оказываются здоровыми. Вместе с вашей командой они помогают собрать уцелевшее с обломка корабля...</text>
+		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Однако двое оказываются здоровыми. Вместе с вашей командой они помогают собрать уцелевшее с обломка корабля...</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<crewMember amount="1" class="magman"/>
 		<queueEvent>ADD_MAGMAN</queueEvent>
 	</event>
 	<event>
-		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Однако, двое оказываются здоровыми. Вместе с вашей командой они помогают собрать уцелевшее с обломка корабля...</text>
+		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Однако двое оказываются здоровыми. Вместе с вашей командой они помогают собрать уцелевшее с обломка корабля...</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<crewMember amount="1" class="magman"/>
 		<queueEvent>ADD_MAGMAN</queueEvent>
