@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_engixmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_engi.xml.rawclobber:158
 msgid ""
@@ -7662,9 +7669,12 @@ msgid ""
 msgstr "问他们需要什么。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9346
+#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS\"]/choice[1]/event/text"
-msgstr "兰花族告知：“我们收集了一大批生物样本，现在想把容器送到母星。但我们也需要在这里完成研究。您能帮忙运送这批具有生物价值的货物吗？”"
+msgstr ""
+"兰花族告知：“我们收集了一大批生物样本，现在想把容器送到母星。但我们也需要在这"
+"里完成研究。您能帮忙运送这批具有生物价值的货物吗？”"
 
 #: src-ru/data/events_engi.xml.rawclobber:9348
 msgid ""
