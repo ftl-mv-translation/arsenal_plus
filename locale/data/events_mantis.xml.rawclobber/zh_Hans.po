@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_mantisxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_mantis.xml.rawclobber:124
 msgid ""
@@ -174,9 +181,12 @@ msgid ""
 msgstr "当气闸的内门关闭、太空准备接纳他时，这只螳螂登舰兵没有流露出丝毫恐惧。你按下按钮，他消失了，融入了广袤的虚空。"
 
 #: src-ru/data/events_mantis.xml.rawclobber:219
+#, fuzzy
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_KILL\"]/event[2]/text"
-msgstr "在对付螳螂之前，你从那艘半械族飞船上搜刮了所有能拿的东西。然而，登舰兵立刻明白了你的意图，发起了攻击！"
+msgstr ""
+"在对付螳螂之前，你从那艘半械族飞船上搜刮了所有能拿的东西。然而，登舰兵立刻明"
+"白了你的意图，发起了攻击！"
 
 #: src-ru/data/events_mantis.xml.rawclobber:228
 msgid ""
