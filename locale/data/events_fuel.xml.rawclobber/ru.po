@@ -1311,7 +1311,7 @@ msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[1]/text"
 msgstr ""
 "Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как "
-"заключить сделку. Однако, вы совершаете обмен без происшествий."
+"заключить сделку. Однако вы совершаете обмен без происшествий."
 
 #: src-ru/data/events_fuel.xml.rawclobber:1094
 msgid ""
@@ -1326,7 +1326,7 @@ msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[2]/text"
 msgstr ""
 "Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как "
-"заключить сделку. Однако, вы совершаете обмен без происшествий."
+"заключить сделку. Однако вы совершаете обмен без происшествий."
 
 #: src-ru/data/events_fuel.xml.rawclobber:1112
 msgid ""

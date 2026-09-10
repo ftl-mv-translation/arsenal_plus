@@ -258,7 +258,7 @@ msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_KILL\"]/event[2]/text"
 msgstr ""
 "Вы снимаете с корабля инжи всё, что можете, перед тем, как приняться за "
-"мантиса. Однако, десантник мгновенно понимает ваши намерения и нападает!"
+"мантиса. Однако десантник мгновенно понимает ваши намерения и нападает!"
 
 #: src-ru/data/events_mantis.xml.rawclobber:228
 msgid ""

@@ -5,124 +5,124 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src-ru/data/newEvents.xml.rawclobber:359
+#: src-ru/data/newEvents.xml.rawclobber:361
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[1]"
 msgstr ""
 "TIP: Accuracy Injector — enemy evasion against weapons with this injector is"
 " reduced by 100. Using cloaking, the enemy still has a small chance to "
 "evade."
 
-#: src-ru/data/newEvents.xml.rawclobber:361
+#: src-ru/data/newEvents.xml.rawclobber:363
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[2]"
 msgstr ""
 "Tip: Death - Remember, defeat is also part of the fun! ... No, seriously ..."
 
-#: src-ru/data/newEvents.xml.rawclobber:362
+#: src-ru/data/newEvents.xml.rawclobber:364
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[3]"
 msgstr ""
 "Tip: stripping sectors - from each sector it is worth taking everything "
 "possible for the development of the ship, since each next sector is more "
 "complicated than the previous one."
 
-#: src-ru/data/newEvents.xml.rawclobber:363
+#: src-ru/data/newEvents.xml.rawclobber:365
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[4]"
 msgstr ""
 "Tip: exits - rushing to the exit from the sector - tempting, but research is"
 " the only way to improve your ship.Try to squeeze everything out of each "
 "sector that is possible."
 
-#: src-ru/data/newEvents.xml.rawclobber:364
+#: src-ru/data/newEvents.xml.rawclobber:366
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[5]"
 msgstr ""
 "Tip: goals - set the priority of goals in battle.Weapons and shields, as a "
 "rule, are the best choice, but when the enemy is going to run away, hit the "
 "engines or control control to prevent escape."
 
-#: src-ru/data/newEvents.xml.rawclobber:365
+#: src-ru/data/newEvents.xml.rawclobber:367
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[6]"
 msgstr ""
 "Tip: Hidden choice - when in the event you see an answer, illuminated by "
 "blue, this is a special option that has become available thanks to your "
 "equipment.But this choice is not always the best or safe."
 
-#: src-ru/data/newEvents.xml.rawclobber:366
+#: src-ru/data/newEvents.xml.rawclobber:368
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[7]"
 msgstr ""
 "Tip: damage to the system-if, due to a fire or boarding, the system "
 "completely fails, then the case also receives a unit of damage."
 
-#: src-ru/data/newEvents.xml.rawclobber:367
+#: src-ru/data/newEvents.xml.rawclobber:369
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[8]"
 msgstr ""
 "Tip: power cells - improved systems can be useful, even if you do not have "
 "enough reactor energy to use them;They still absorb 1 damage."
 
-#: src-ru/data/newEvents.xml.rawclobber:368
+#: src-ru/data/newEvents.xml.rawclobber:370
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[9]"
 msgstr ""
 "Tip: tools - you can put a shot in line before the gun is charged.It will "
 "shoot as soon as it charges."
 
-#: src-ru/data/newEvents.xml.rawclobber:369
+#: src-ru/data/newEvents.xml.rawclobber:371
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[10]"
 msgstr ""
 "Tip: disguise - masking will not only allow you to avoid damage from enemy’s"
 " shots, but also stops charging his guns.It also increases your deviation by"
 " 60."
 
-#: src-ru/data/newEvents.xml.rawclobber:370
+#: src-ru/data/newEvents.xml.rawclobber:372
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[11]"
 msgstr ""
 "Tip: boarding - if you are taken on boarding, fight in the medical "
 "compartment.If nothing helps, depressurize the compartments of the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:371
+#: src-ru/data/newEvents.xml.rawclobber:373
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[12]"
 msgstr ""
 "Tip: oxygen - if the compartment of the ship is painted red, this means that"
 " you lose oxygen.The crew will receive damage, and the fire will stop "
 "burning in compartments with a red level of oxygen."
 
-#: src-ru/data/newEvents.xml.rawclobber:372
+#: src-ru/data/newEvents.xml.rawclobber:374
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[13]"
 msgstr ""
 "Tip: breaking the shield - missiles ignore the shield.Use missiles to damage"
 " the shields on powerful ships.Just remember that protective drones can "
 "shoot down missiles!"
 
-#: src-ru/data/newEvents.xml.rawclobber:373
+#: src-ru/data/newEvents.xml.rawclobber:375
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[14]"
 msgstr ""
 "Tip: choice - each of your choice has several options for consequences.You "
 "can never be sure that it can happen."
 
-#: src-ru/data/newEvents.xml.rawclobber:374
+#: src-ru/data/newEvents.xml.rawclobber:376
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[15]"
 msgstr ""
 "Tip: Auto-Fire-Automatic Fire will allow you to continuously fire for once "
 "specified by you.But pay attention to what you fire from.If weapons use "
 "rockets, then follow their number."
 
-#: src-ru/data/newEvents.xml.rawclobber:375
+#: src-ru/data/newEvents.xml.rawclobber:377
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[16]"
 msgstr ""
 "Tip: evasion - evasion of enemy’s shots - this is important, but requires "
 "functioning engines and control cutting.The use of someone from the crew on "
 "the engines also increases evasion."
 
-#: src-ru/data/newEvents.xml.rawclobber:376
+#: src-ru/data/newEvents.xml.rawclobber:378
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[17]"
 msgstr ""
 "Tip: sensors - if the ship plunges into darkness, do not panic.Just repair "
 "the sensors subsystem."
 
-#: src-ru/data/newEvents.xml.rawclobber:377
+#: src-ru/data/newEvents.xml.rawclobber:379
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[18]"
 msgstr ""
 "Tip: Drones - if you are attacking enemy drones, then you kiss their drones "
 "system to temporarily turn them off."
 
-#: src-ru/data/newEvents.xml.rawclobber:378
+#: src-ru/data/newEvents.xml.rawclobber:380
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[19]"
 msgstr ""
 "Tip: Rays - radiation weapons are caused by damage based on the number of "
@@ -130,100 +130,97 @@ msgstr ""
 "damage.Therefore, it is best to use radiation weapons when the enemy’s "
 "shield is disabled."
 
-#: src-ru/data/newEvents.xml.rawclobber:379
+#: src-ru/data/newEvents.xml.rawclobber:381
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[20]"
 msgstr ""
 "Tip: Fire - if the fire spreads, you can open the gateways and doors to "
 "release oxygen from the parts of your ship.Without oxygen, the fire will "
 "quickly go out."
 
-#: src-ru/data/newEvents.xml.rawclobber:380
+#: src-ru/data/newEvents.xml.rawclobber:382
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[21]"
 msgstr ""
 "Tip: Health - Follow the health of the crew!Use a honeycock to restore it."
 
-#: src-ru/data/newEvents.xml.rawclobber:381
+#: src-ru/data/newEvents.xml.rawclobber:383
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[22]"
 msgstr ""
 "Tip: Improvement - do not forget to improve your ship!Most often, the "
 "shields are priority, but do not underestimate the usefulness of subsystems."
 
-#: src-ru/data/newEvents.xml.rawclobber:382
+#: src-ru/data/newEvents.xml.rawclobber:384
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[23]"
 msgstr ""
 "Tip: Fuel - each jump consumes one unit of fuel, so follow your reserves.Buy"
 " fuel in stores so as not to be in a difficult position."
 
-#: src-ru/data/newEvents.xml.rawclobber:383
+#: src-ru/data/newEvents.xml.rawclobber:385
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[24]"
 msgstr ""
 "Tip: Sound - adjust the volume of sounds and music in the settings menu."
 
-#: src-ru/data/newEvents.xml.rawclobber:384
+#: src-ru/data/newEvents.xml.rawclobber:386
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[25]"
 msgstr ""
 "Tip: Asteroids - to fight in the asteroid field is dangerous, but use it in "
 "your favor.Bow the enemy shields and let the stones make the rest for you."
 
-#: src-ru/data/newEvents.xml.rawclobber:385
+#: src-ru/data/newEvents.xml.rawclobber:387
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[26]"
 msgstr ""
 "Tip: Number - entering the nebula will temporarily slow down the advance of "
 "the rebel fleet, but they also have their own unique dangers."
 
-#: src-ru/data/newEvents.xml.rawclobber:386
+#: src-ru/data/newEvents.xml.rawclobber:388
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[27]"
 msgstr ""
 "Tip: Solar outbreaks - solar outbreaks damage the case and set fire to.Make "
 "sure your shields are turned on to reduce this effect."
 
-#: src-ru/data/newEvents.xml.rawclobber:387
+#: src-ru/data/newEvents.xml.rawclobber:389
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[28]"
 msgstr ""
 "Tip: The score - your account is based on how many ships you won, the number"
 " of explored beacons and a total collected scrap."
 
-#: src-ru/data/newEvents.xml.rawclobber:388
+#: src-ru/data/newEvents.xml.rawclobber:390
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[29]"
 msgstr ""
 "Tip: APPLISE - your ship can only have 3 strengthening.They provide unique "
 "advantages for systems, crew or the entire ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:389
+#: src-ru/data/newEvents.xml.rawclobber:391
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[30]"
 msgstr ""
 "Tip: holes - if there is no oxygen in the breakdown compartment, try to open"
 " all the surrounding doors, this will make it less dangerous."
 
-#: src-ru/data/newEvents.xml.rawclobber:390
+#: src-ru/data/newEvents.xml.rawclobber:392
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[31]"
 msgstr ""
 "Tip: the fleet of the rebels - the fleet of the rebels (displayed by a red "
 "circle on the map) is approaching closer to your position every time you "
 "make a jump.Some events can slow down or increase its speed."
 
-#: src-ru/data/newEvents.xml.rawclobber:391
+#: src-ru/data/newEvents.xml.rawclobber:393
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[32]"
 msgstr ""
 "Tip: ion weapons - ion weapons discharge and blocks the systems for a "
 "while.If it falls into the shield, the system of shields itself receives "
 "ionization."
 
-#: src-ru/data/newEvents.xml.rawclobber:392
+#: src-ru/data/newEvents.xml.rawclobber:394
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[33]"
 msgstr ""
-"Tip: bombs - bombs teleport directly to one of two ships.They bypass shields"
-" and protective drones.However, they only affect the crew and systems "
-"without inflicting damage to the body."
 
-#: src-ru/data/newEvents.xml.rawclobber:393
+#: src-ru/data/newEvents.xml.rawclobber:395
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[34]"
 msgstr ""
 "Tip: Substruction Substruction - modernization of your doors will "
 "significantly reduce the likelihood of a fire between the rooms and will "
 "significantly slow down the movements of enemies."
 
-#: src-ru/data/newEvents.xml.rawclobber:394
+#: src-ru/data/newEvents.xml.rawclobber:396
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[35]"
 msgstr ""
 "Tip: Dialogs with a crew - if the sector in which you are in is a family for"
@@ -231,76 +228,76 @@ msgstr ""
 "chances for success.For people, relatives are civil sectors and rebel "
 "sectors."
 
-#: src-ru/data/newEvents.xml.rawclobber:395
+#: src-ru/data/newEvents.xml.rawclobber:397
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[36]"
 msgstr ""
 "Tip: shops - the number of lighthouses with shops in the sector depends on "
 "its color.In the green sectors there are 2-3 stores, in red-1-2, in purple "
 "1-3.There are no stores in the first sector."
 
-#: src-ru/data/newEvents.xml.rawclobber:396
+#: src-ru/data/newEvents.xml.rawclobber:398
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[37]"
 msgstr ""
 "Tip: The trading sector - there are 5 stores in the trading sector, and the "
 "number of dangerous lighthouses is less than in other sectors.There are also"
 " rumors about illegal equipment sold there."
 
-#: src-ru/data/newEvents.xml.rawclobber:397
+#: src-ru/data/newEvents.xml.rawclobber:399
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[38]"
 msgstr ""
 "Tip: Prototypes - prototypes are the most powerful tools that can only be "
 "obtained, but they often need support for other tools.To find prototypes, "
 "visit your own racial sectors."
 
-#: src-ru/data/newEvents.xml.rawclobber:398
+#: src-ru/data/newEvents.xml.rawclobber:400
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[39]"
 msgstr ""
 "Tip: The Home World of Crystalins - the native world of crystalins can be "
 "found in 6 or 7 sector on the map of sectors.It contains only the rarest "
 "types of guns, as well as unique guns and crystaline drones."
 
-#: src-ru/data/newEvents.xml.rawclobber:399
+#: src-ru/data/newEvents.xml.rawclobber:401
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[40]"
 msgstr ""
 "Tip: AI ships - Avatars ships are equipped with protection from ion weapons "
 "and unique prismatic lasers that cause ordinary and ion damage at the same "
 "time."
 
-#: src-ru/data/newEvents.xml.rawclobber:400
+#: src-ru/data/newEvents.xml.rawclobber:402
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[41]"
 msgstr ""
 "Tip: Special capabilities of strengthening-on the starting beacons of 2-7 "
 "sectors, you can apply special opportunities for the strengthening of the "
 "ship.Their use will not always be successful or safe."
 
-#: src-ru/data/newEvents.xml.rawclobber:401
+#: src-ru/data/newEvents.xml.rawclobber:403
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[42]"
 msgstr ""
 "Tip: Ancient weapons of Lanius - Laniuses have survived information about "
 "the old photon weapons.Although it does not differ in high accuracy, it "
 "still poses a great threat."
 
-#: src-ru/data/newEvents.xml.rawclobber:402
+#: src-ru/data/newEvents.xml.rawclobber:404
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[43]"
 msgstr ""
 "Tip: sectors of the order - flying through the sectors of the order can lead"
 " to burning your ship.Make sure that you have a fire extinguishing system."
 
-#: src-ru/data/newEvents.xml.rawclobber:403
+#: src-ru/data/newEvents.xml.rawclobber:405
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[44]"
 msgstr ""
 "Tip: Ships of the Order - Ships of the Order are equipped with incendiary "
 "weapons and fire extinguishing systems.Some classes also have improved "
 "engines."
 
-#: src-ru/data/newEvents.xml.rawclobber:404
+#: src-ru/data/newEvents.xml.rawclobber:406
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[45]"
 msgstr ""
 "Tip: unstable sectors - unstable sectors are known as one of the most "
 "dangerous sectors in the galaxy.Here they found the refuge of groups of "
 "hackers and pirates."
 
-#: src-ru/data/newEvents.xml.rawclobber:406
+#: src-ru/data/newEvents.xml.rawclobber:408
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[46]"
 msgstr ""
 "Tip: elite auto intelligence - elite auto intelligence agents are more "
@@ -308,49 +305,45 @@ msgstr ""
 "can repair holes, and their systems have an increased level of pumping.You "
 "can get a random weapon for the victory over them."
 
-#: src-ru/data/newEvents.xml.rawclobber:407
+#: src-ru/data/newEvents.xml.rawclobber:409
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[47]"
 msgstr ""
 "Tip: HAL ships - HAL drones do not have a gun system, but equipped with ion "
 "phase artillery that damages the crew.Their combat drones are protected "
 "using the interference generator."
 
-#: src-ru/data/newEvents.xml.rawclobber:408
+#: src-ru/data/newEvents.xml.rawclobber:410
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[48]"
 msgstr ""
-"Tip: on the on -board computer - when receiving HAL ships, it includes "
-"reserve power circuits, which allows you to increase the power of the "
-"reactor.However, sometimes the result can be fatal for an on -board "
-"computer."
 
-#: src-ru/data/newEvents.xml.rawclobber:409
+#: src-ru/data/newEvents.xml.rawclobber:411
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[49]"
 msgstr ""
 "Tip: HAL drones - Hal drones are the fastest and most destructive in the "
 "galaxy.A separate mention is a repairman of HAL systems, capable of working "
 "even with a destroyed drone system."
 
-#: src-ru/data/newEvents.xml.rawclobber:411
+#: src-ru/data/newEvents.xml.rawclobber:413
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[50]"
 msgstr ""
 "Tip: RAM - disposable volleys are found in purple sectors.They do not "
 "require energy, but shoot only once in battle."
 
-#: src-ru/data/newEvents.xml.rawclobber:412
+#: src-ru/data/newEvents.xml.rawclobber:414
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[51]"
 msgstr ""
 "Tip: The border sector - representatives of all races are found in the "
 "border sector.It is here that the main line of the front of the war with the"
 " rebels takes place."
 
-#: src-ru/data/newEvents.xml.rawclobber:413
+#: src-ru/data/newEvents.xml.rawclobber:415
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[52]"
 msgstr ""
 "Tip: Drones system - by purchasing a drone system in a store, you will "
 "receive as a gift to a random drone of one of the three categories - "
 "attacking, protective or auxiliary."
 
-#: src-ru/data/newEvents.xml.rawclobber:415
+#: src-ru/data/newEvents.xml.rawclobber:417
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[53]"
 msgstr ""
 "Tip: The Black Wing - the cruisers of the black wing are advanced cruisers "
@@ -358,14 +351,11 @@ msgstr ""
 "pursue your ship without covering the PKB.For their destruction, you can get"
 " a good reward."
 
-#: src-ru/data/newEvents.xml.rawclobber:416
+#: src-ru/data/newEvents.xml.rawclobber:418
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[54]"
 msgstr ""
-"Tip: Slomov’s ships - Slomov’s ships are almost impossible to take on "
-"boarding, as their cloning system is protected from direct damage.However, "
-"she is still vulnerable to fire."
 
-#: src-ru/data/newEvents.xml.rawclobber:417
+#: src-ru/data/newEvents.xml.rawclobber:419
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[55]"
 msgstr ""
 "Tip: In engine repair stations - in the Sectors of the engineering, repair "
@@ -373,7 +363,7 @@ msgstr ""
 " always a repair station.The stations provide repair services and supply "
 "supplies for a small fee."
 
-#: src-ru/data/newEvents.xml.rawclobber:418
+#: src-ru/data/newEvents.xml.rawclobber:420
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[56]"
 msgstr ""
 "Tip: The flagship of the rebels - the higher the complexity, the stronger "
@@ -382,21 +372,21 @@ msgstr ""
 "beam becomes longer.The strength of the flagship body and its coloring also "
 "depend on complexity."
 
-#: src-ru/data/newEvents.xml.rawclobber:419
+#: src-ru/data/newEvents.xml.rawclobber:421
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[57]"
 msgstr ""
 "Tip: Repair - the cost of repairing the ship in the store depends on the "
 "number of the sector.From 1 to 3 sector is 2 ~.From 4 to 6 sector - 3 "
 "~.Repair in 7 and 8 sector costs 4 ~."
 
-#: src-ru/data/newEvents.xml.rawclobber:421
+#: src-ru/data/newEvents.xml.rawclobber:423
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[58]"
 msgstr ""
 "Tip: Auto-Cracles-reinforcements are additionally installed on some "
 "drones.Auto-hackers use a paralyzing module, auto-aggressors-a car recovery,"
 " auto-destructors-two auto-resident."
 
-#: src-ru/data/newEvents.xml.rawclobber:423
+#: src-ru/data/newEvents.xml.rawclobber:425
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[59]"
 msgstr ""
 "TIP: Injectors — Injector augments can improve your weapon parameters. Keep "
@@ -404,7 +394,7 @@ msgstr ""
 "upgraded weapon or a weapon that is not compatible with that specific "
 "injector."
 
-#: src-ru/data/newEvents.xml.rawclobber:424
+#: src-ru/data/newEvents.xml.rawclobber:426
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[60]"
 msgstr ""
 "Tip: Zolton rays - Zolton rays one and a half times longer than usual and "
@@ -412,20 +402,20 @@ msgstr ""
 "necessary to have at least 30 missiles in the hold, but they are not spent "
 "with each ray shot.Rays on hostile ships can work without missiles."
 
-#: src-ru/data/newEvents.xml.rawclobber:425
+#: src-ru/data/newEvents.xml.rawclobber:427
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[61]"
 msgstr ""
 "Tip: Zolton ion guns - Zolton ion guns combine the properties of heavy and "
 "impulse ion guns."
 
-#: src-ru/data/newEvents.xml.rawclobber:426
+#: src-ru/data/newEvents.xml.rawclobber:428
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[62]"
 msgstr ""
 "Tip: UWB guns-UWB guns use smuggles to hide their guns that are inside these"
 " universal shells.There are no bombs inside the UWB.UWB also accelerates the"
 " reloading of the weapon inside by 10%."
 
-#: src-ru/data/newEvents.xml.rawclobber:427
+#: src-ru/data/newEvents.xml.rawclobber:429
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[63]"
 msgstr ""
 "Tip: Zolton ships - unlike the Zoltans, the Zolton people do not have a "
@@ -433,21 +423,21 @@ msgstr ""
 " damage, but fires and heavy ion guns can still damage them.Zolton ships are"
 " equipped with a weak reactor and a reserve battery."
 
-#: src-ru/data/newEvents.xml.rawclobber:428
+#: src-ru/data/newEvents.xml.rawclobber:430
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[64]"
 msgstr ""
 "Tip: Zolton drones - like the piloted ships of the Zoltons, the Zolton "
 "drones have invulnerable shields, a weak reactor and a reserve battery.They "
 "guard the nebula of the Zolton sectors."
 
-#: src-ru/data/newEvents.xml.rawclobber:429
+#: src-ru/data/newEvents.xml.rawclobber:431
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[65]"
 msgstr ""
 "Tip: Artillery - You can purchase an artillery system in a store.Its type "
 "will depend on the class of the ship on which you are flying.Acquired "
 "artillery will be immediately 2nd level."
 
-#: src-ru/data/newEvents.xml.rawclobber:431
+#: src-ru/data/newEvents.xml.rawclobber:433
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[66]"
 msgstr ""
 "Tip: a universal injector - its bonus depends on the type of weapon to which the injector is applied:\n"
@@ -458,122 +448,122 @@ msgstr ""
 "\tLong rays: +25% to the length and to the speed of the beam.\n"
 "\tPoint rays: +1 Damage by systems."
 
-#: src-ru/data/newEvents.xml.rawclobber:439
+#: src-ru/data/newEvents.xml.rawclobber:441
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[67]"
 msgstr ""
 "Tip: legendary weapons - legendary tools are very rare, they are found only "
 "in unique, \"domestic\" sectors (except for the trade, border and the "
 "monastery of the tears).These guns are incredibly powerful."
 
-#: src-ru/data/newEvents.xml.rawclobber:444
+#: src-ru/data/newEvents.xml.rawclobber:446
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST_PC\"]/text[2]"
 msgstr ""
 "Tip: Pause - to set the game pause, click the gap.During a pause, you can "
 "give orders and control the ship systems."
 
-#: src-ru/data/newEvents.xml.rawclobber:445
+#: src-ru/data/newEvents.xml.rawclobber:447
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST_PC\"]/text[3]"
 msgstr ""
 "Tip: trade - weapons, drones and amplifiers can be sold at 1/2 from the "
 "price in the store.Click on top to sell."
 
-#: src-ru/data/newEvents.xml.rawclobber:446
+#: src-ru/data/newEvents.xml.rawclobber:448
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST_PC\"]/text[4]"
 msgstr ""
 "Tip: Hot keys-you can power or choose weapons using the numbers: 1-4 on the "
 "keyboard-weapon slots, 5-7-drones (changes in the settings)."
 
-#: src-ru/data/newEvents.xml.rawclobber:447
+#: src-ru/data/newEvents.xml.rawclobber:449
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST_PC\"]/text[5]"
 msgstr ""
 "Tip: font size - pressing + / - (changes in the settings) will allow you to "
 "change the size of the text of the events."
 
-#: src-ru/data/newEvents.xml.rawclobber:448
+#: src-ru/data/newEvents.xml.rawclobber:450
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST_PC\"]/text[6]"
 msgstr ""
 "Tip: Weapon order - rearrange the weapon or drone scheme, simply dragging it"
 " to the desired position.The left slot will turn off last, if the system is "
 "damaged."
 
-#: src-ru/data/newEvents.xml.rawclobber:453
+#: src-ru/data/newEvents.xml.rawclobber:455
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST_IPAD\"]/text[2]"
 msgstr ""
 "Tip: pause - click the PAUSE button at any time to stop the game.You can "
 "give orders to the crew or control the power supply during a pause."
 
-#: src-ru/data/newEvents.xml.rawclobber:454
+#: src-ru/data/newEvents.xml.rawclobber:456
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST_IPAD\"]/text[3]"
 msgstr ""
 "Tip: Trade - weapons, drones and strengthening can be sold at half price in "
 "the store.Click the tab to sell at the top."
 
-#: src-ru/data/newEvents.xml.rawclobber:455
+#: src-ru/data/newEvents.xml.rawclobber:457
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST_IPAD\"]/text[4]"
 msgstr ""
 "Tip: The order of guns - rebuild the guns or drones by moving them to the "
 "desired position.The very first slot will be turned off the last if the "
 "system is damaged."
 
-#: src-ru/data/newEvents.xml.rawclobber:480
+#: src-ru/data/newEvents.xml.rawclobber:482
 msgid "data/newEvents.xml.rawclobber$//ship[@name=\"NEW_TESTS\"]/destroyed/text"
 msgstr "You can get scrap from the wreckage of the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:486
+#: src-ru/data/newEvents.xml.rawclobber:488
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"DEATH_TEST\"]/text"
 msgstr "Death test"
 
-#: src-ru/data/newEvents.xml.rawclobber:491
+#: src-ru/data/newEvents.xml.rawclobber:493
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"CREW_TEST\"]/text"
 msgstr "Carriage check"
 
-#: src-ru/data/newEvents.xml.rawclobber:504
+#: src-ru/data/newEvents.xml.rawclobber:506
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"STEALTH_1\"]/text"
 msgstr ""
 "This is a prototype of the ship that uses advanced masking technology.The "
 "disadvantage is the absence of shields or weapons.Use the ability to "
 "disguise so that enemy shots do not get on you."
 
-#: src-ru/data/newEvents.xml.rawclobber:508
+#: src-ru/data/newEvents.xml.rawclobber:510
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"STEALTH_2\"]/text"
 msgstr ""
 "This ship is based on a design that existed before the technology of "
 "shielding and was a standard for all ships.The armored body and increased "
 "mobility are its main advantage."
 
-#: src-ru/data/newEvents.xml.rawclobber:512
+#: src-ru/data/newEvents.xml.rawclobber:514
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"STEALTH_3\"]/text"
 msgstr ""
 "This ship of the Federation is designed to test the new advanced technology "
 "of reloading shields.Unfortunately, you were forced to test him alone."
 
-#: src-ru/data/newEvents.xml.rawclobber:516
+#: src-ru/data/newEvents.xml.rawclobber:518
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"STEALTH_4\"]/text"
 msgstr ""
 "This ship was intended to transfer troops to the rear of the enemy.As such, "
 "he is not equipped with default guns, but his crew is the best of the best."
 
-#: src-ru/data/newEvents.xml.rawclobber:520
+#: src-ru/data/newEvents.xml.rawclobber:522
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"STEALTH_5\"]/text"
 msgstr ""
 "This ship is a modified mining ship that contains advanced AI to control "
 "drones.He is not entirely ready for battle, but let's hope that the drones "
 "will cover his shortcomings."
 
-#: src-ru/data/newEvents.xml.rawclobber:524
+#: src-ru/data/newEvents.xml.rawclobber:526
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"STEALTH_6\"]/text"
 msgstr ""
 "Your new ship is equipped with modern robots and radiation weapons.It was "
 "difficult to find a full crew, since it was quite scary to work with robots"
 
-#: src-ru/data/newEvents.xml.rawclobber:528
+#: src-ru/data/newEvents.xml.rawclobber:530
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"STEALTH_7\"]/text"
 msgstr ""
 "An engineer who designed this ship clearly loved missiles.Only a few "
 "opponents will be able to withstand the barrage missiles of this vessel, but"
 " be sure that you have checked your ammunition reserves"
 
-#: src-ru/data/newEvents.xml.rawclobber:531
+#: src-ru/data/newEvents.xml.rawclobber:533
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"DEMO_END\"]/text"
 msgstr ""
 "Congratulations on the end of training!As the last lesson, you will "
@@ -583,76 +573,76 @@ msgstr ""
 " of the galaxy.And we also turned off your engines, so it makes no sense to "
 "try to run away."
 
-#: src-ru/data/newEvents.xml.rawclobber:537
+#: src-ru/data/newEvents.xml.rawclobber:539
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"IMPOSSIBLE_PIRATE\"]/destroyed/text"
 msgstr ""
 "Impossible!He had to be invincible!Even the creators of the simulation did "
 "not work out.Continue, you deserve it."
 
-#: src-ru/data/newEvents.xml.rawclobber:544
+#: src-ru/data/newEvents.xml.rawclobber:546
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"IMPOSSIBLE_PIRATE\"]/deadCrew/text"
 msgstr "It will never appear"
 
-#: src-ru/data/newEvents.xml.rawclobber:556
+#: src-ru/data/newEvents.xml.rawclobber:558
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"ASTEROID_TEST\"]/text"
 msgstr ""
 "We got into the asteroid field!We will have to wait for the charge of the "
 "FTL drive before we can get out of here.Let's hope that the ship will "
 "withstand."
 
-#: src-ru/data/newEvents.xml.rawclobber:561
+#: src-ru/data/newEvents.xml.rawclobber:563
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"CASH_IN_DRONE\"]/text"
 msgstr ""
 "Your ship has not yet been equipped with a drone system.You have processed "
 "the drone scheme for scrap."
 
-#: src-ru/data/newEvents.xml.rawclobber:569
+#: src-ru/data/newEvents.xml.rawclobber:571
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"UNLOCK_STEALTH\"]/text"
 msgstr ""
 "You came across a hidden research laboratory of the Federation!They "
 "experimented with some unique ships projects.You downloaded schemes and "
 "drawings for use in the future."
 
-#: src-ru/data/newEvents.xml.rawclobber:595
+#: src-ru/data/newEvents.xml.rawclobber:597
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TAVERN_HIRE\"]/choice[1]/text"
 msgstr "Hire a crew member."
 
-#: src-ru/data/newEvents.xml.rawclobber:604
+#: src-ru/data/newEvents.xml.rawclobber:606
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TAVERN_HIRE\"]/choice[2]/text"
 msgstr "Hire a crew member."
 
-#: src-ru/data/newEvents.xml.rawclobber:613
+#: src-ru/data/newEvents.xml.rawclobber:615
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TAVERN_HIRE\"]/choice[3]/text"
 msgstr "Hire a crew member."
 
-#: src-ru/data/newEvents.xml.rawclobber:622
+#: src-ru/data/newEvents.xml.rawclobber:624
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TAVERN_HIRE\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/newEvents.xml.rawclobber:627
+#: src-ru/data/newEvents.xml.rawclobber:629
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TAVERN_HIRE\"]/choice[4]/event/text"
 msgstr "You pay the training fee."
 
-#: src-ru/data/newEvents.xml.rawclobber:635
+#: src-ru/data/newEvents.xml.rawclobber:637
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TAVERN_HIRE\"]/choice[5]/text"
 msgstr "Just talk to the crew before the FTL drive charges."
 
-#: src-ru/data/newEvents.xml.rawclobber:641
+#: src-ru/data/newEvents.xml.rawclobber:643
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TEACH_RANDOM_CREW_ALL_SKILLS\"]/text"
 msgstr ""
 "It seems that one of your crew members is now perfectly trained in all "
 "skills. This should come in handy..."
 
-#: src-ru/data/newEvents.xml.rawclobber:645
+#: src-ru/data/newEvents.xml.rawclobber:647
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"TAVERN_HIRE_TEXT\"]/text[1]"
 msgstr ""
@@ -660,7 +650,7 @@ msgstr ""
 "lists, you find a tavern full of mercenaries.You are looking for potential "
 "crew members."
 
-#: src-ru/data/newEvents.xml.rawclobber:646
+#: src-ru/data/newEvents.xml.rawclobber:648
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"TAVERN_HIRE_TEXT\"]/text[2]"
 msgstr ""
@@ -668,7 +658,7 @@ msgstr ""
 "are looking for someone to hire yourself in the team, you arrived in the "
 "right place!”"
 
-#: src-ru/data/newEvents.xml.rawclobber:647
+#: src-ru/data/newEvents.xml.rawclobber:649
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"TAVERN_HIRE_TEXT\"]/text[3]"
 msgstr ""
@@ -676,28 +666,28 @@ msgstr ""
 "here you can find a crew ready to fight on your ship ... for a certain "
 "price."
 
-#: src-ru/data/newEvents.xml.rawclobber:654
+#: src-ru/data/newEvents.xml.rawclobber:656
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TRADER_UPGRADES_EXCHANGE\"]/choice[1]/text"
 msgstr "Agree to a deal."
 
-#: src-ru/data/newEvents.xml.rawclobber:658
+#: src-ru/data/newEvents.xml.rawclobber:660
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TRADER_UPGRADES_EXCHANGE\"]/choice[2]/text"
 msgstr "Politely refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:660
+#: src-ru/data/newEvents.xml.rawclobber:662
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TRADER_UPGRADES_EXCHANGE\"]/choice[2]/event/text"
 msgstr "You yourself need your supplies."
 
-#: src-ru/data/newEvents.xml.rawclobber:664
+#: src-ru/data/newEvents.xml.rawclobber:666
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TRADER_UPGRADES_EXCHANGE\"]/choice[@req=\"reactor\""
 " and @lvl=\"50\"]/text"
 msgstr "There is no need for this, our reactor is already the maximum level."
 
-#: src-ru/data/newEvents.xml.rawclobber:670
+#: src-ru/data/newEvents.xml.rawclobber:672
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"TRADER_UPGRADES_EXCHANGE_TEXT\"]/text[1]"
 msgstr ""
@@ -705,47 +695,47 @@ msgstr ""
 "engineer, and I could try to improve your reactor if you have additional "
 "reserves. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:671
+#: src-ru/data/newEvents.xml.rawclobber:673
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"TRADER_UPGRADES_EXCHANGE_TEXT\"]/text[2]"
 msgstr ""
 "You received a message from a small convoy.They need some military supplies,"
 " and in exchange they offer to improve your reactor."
 
-#: src-ru/data/newEvents.xml.rawclobber:676
+#: src-ru/data/newEvents.xml.rawclobber:678
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_EXCHANGE_LIST\"]/event[1]/text"
 msgstr ""
 "You exchange, and their team enters the board to improve your reactor."
 
-#: src-ru/data/newEvents.xml.rawclobber:684
+#: src-ru/data/newEvents.xml.rawclobber:686
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_EXCHANGE_LIST\"]/event[2]/text"
 msgstr ""
 "You exchange, and their team enters the board to improve your reactor."
 
-#: src-ru/data/newEvents.xml.rawclobber:692
+#: src-ru/data/newEvents.xml.rawclobber:694
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_EXCHANGE_LIST\"]/event[3]/text"
 msgstr ""
 "You exchange, and their team enters the board to improve your reactor."
 
-#: src-ru/data/newEvents.xml.rawclobber:705
+#: src-ru/data/newEvents.xml.rawclobber:707
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TRADER_UPGRADES\"]/choice[1]/text"
 msgstr "Ask about their specialization."
 
-#: src-ru/data/newEvents.xml.rawclobber:709
+#: src-ru/data/newEvents.xml.rawclobber:711
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TRADER_UPGRADES\"]/choice[2]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:711
+#: src-ru/data/newEvents.xml.rawclobber:713
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TRADER_UPGRADES\"]/choice[2]/event/text"
 msgstr "You thank them for their proposal, but get ready to move on."
 
-#: src-ru/data/newEvents.xml.rawclobber:716
+#: src-ru/data/newEvents.xml.rawclobber:718
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"TRADER_UPGRADES_TEXT\"]/text[1]"
 msgstr ""
@@ -753,21 +743,21 @@ msgstr ""
 "platform.“Welcome in the store of Uncle Joe“ Repair ”!Need adjustment?We "
 "will help! \""
 
-#: src-ru/data/newEvents.xml.rawclobber:717
+#: src-ru/data/newEvents.xml.rawclobber:719
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"TRADER_UPGRADES_TEXT\"]/text[2]"
 msgstr ""
 "In this district there are several private platforms for the assembly and "
 "repair of ships.You find free space in one of them for urgent maintenance."
 
-#: src-ru/data/newEvents.xml.rawclobber:718
+#: src-ru/data/newEvents.xml.rawclobber:720
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"TRADER_UPGRADES_TEXT\"]/text[3]"
 msgstr ""
 "You take an automatic message with a nearby space station.Local shipbuilders"
 " can perform emergency work on warships."
 
-#: src-ru/data/newEvents.xml.rawclobber:719
+#: src-ru/data/newEvents.xml.rawclobber:721
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"TRADER_UPGRADES_TEXT\"]/text[4]"
 msgstr ""
@@ -775,12 +765,12 @@ msgstr ""
 "be happy to help in your mission, but we almost have nothing to offer.Maybe "
 "if you have an unnecessary metal, would we be able to work on your ship? ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:724
+#: src-ru/data/newEvents.xml.rawclobber:726
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[1]/text"
 msgstr "They offer to improve your oxygen system in exchange for scrap."
 
-#: src-ru/data/newEvents.xml.rawclobber:726
+#: src-ru/data/newEvents.xml.rawclobber:728
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[1]/choice[@req=\"oxygen\""
 " and @lvl=\"0\"]/text"
@@ -788,83 +778,83 @@ msgstr ""
 "Seeing that you do not have this system, they offer to install it at a "
 "discount."
 
-#: src-ru/data/newEvents.xml.rawclobber:728
+#: src-ru/data/newEvents.xml.rawclobber:730
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[1]/choice[@req=\"oxygen\""
 " and @lvl=\"0\"]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:736
+#: src-ru/data/newEvents.xml.rawclobber:738
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[1]/choice[2]/text"
 msgstr "Agree to the exchange."
 
-#: src-ru/data/newEvents.xml.rawclobber:738
+#: src-ru/data/newEvents.xml.rawclobber:740
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[1]/choice[2]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:746
+#: src-ru/data/newEvents.xml.rawclobber:748
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[1]/choice[3]/text"
 msgstr "Agree to the exchange."
 
-#: src-ru/data/newEvents.xml.rawclobber:748
+#: src-ru/data/newEvents.xml.rawclobber:750
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[1]/choice[3]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:756
+#: src-ru/data/newEvents.xml.rawclobber:758
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[1]/choice[4]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:758
+#: src-ru/data/newEvents.xml.rawclobber:760
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[1]/choice[4]/event/text"
 msgstr "You thank them and get ready to leave."
 
-#: src-ru/data/newEvents.xml.rawclobber:763
+#: src-ru/data/newEvents.xml.rawclobber:765
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[2]/text"
 msgstr "They offer to improve your control in exchange for scrap."
 
-#: src-ru/data/newEvents.xml.rawclobber:765
+#: src-ru/data/newEvents.xml.rawclobber:767
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[2]/choice[1]/text"
 msgstr "Agree to the exchange."
 
-#: src-ru/data/newEvents.xml.rawclobber:767
+#: src-ru/data/newEvents.xml.rawclobber:769
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[2]/choice[1]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:775
+#: src-ru/data/newEvents.xml.rawclobber:777
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[2]/choice[2]/text"
 msgstr "Agree to the exchange."
 
-#: src-ru/data/newEvents.xml.rawclobber:777
+#: src-ru/data/newEvents.xml.rawclobber:779
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[2]/choice[2]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:785
+#: src-ru/data/newEvents.xml.rawclobber:787
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[2]/choice[3]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:787
+#: src-ru/data/newEvents.xml.rawclobber:789
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[2]/choice[3]/event/text"
 msgstr "You thank them and get ready to leave."
 
-#: src-ru/data/newEvents.xml.rawclobber:792
+#: src-ru/data/newEvents.xml.rawclobber:794
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[3]/text"
 msgstr "They offer to improve your gateway subsystem in exchange for scrap."
 
-#: src-ru/data/newEvents.xml.rawclobber:794
+#: src-ru/data/newEvents.xml.rawclobber:796
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[3]/choice[@req=\"doors\""
 " and @lvl=\"0\"]/text"
@@ -872,48 +862,48 @@ msgstr ""
 "Seeing that you do not have this system, they offer to install it at a "
 "discount."
 
-#: src-ru/data/newEvents.xml.rawclobber:796
+#: src-ru/data/newEvents.xml.rawclobber:798
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[3]/choice[@req=\"doors\""
 " and @lvl=\"0\"]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:804
+#: src-ru/data/newEvents.xml.rawclobber:806
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[3]/choice[2]/text"
 msgstr "Agree to the exchange."
 
-#: src-ru/data/newEvents.xml.rawclobber:806
+#: src-ru/data/newEvents.xml.rawclobber:808
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[3]/choice[2]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:814
+#: src-ru/data/newEvents.xml.rawclobber:816
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[3]/choice[3]/text"
 msgstr "Agree to the exchange."
 
-#: src-ru/data/newEvents.xml.rawclobber:816
+#: src-ru/data/newEvents.xml.rawclobber:818
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[3]/choice[3]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:824
+#: src-ru/data/newEvents.xml.rawclobber:826
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[3]/choice[4]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:826
+#: src-ru/data/newEvents.xml.rawclobber:828
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[3]/choice[4]/event/text"
 msgstr "You thank them and get ready to leave."
 
-#: src-ru/data/newEvents.xml.rawclobber:831
+#: src-ru/data/newEvents.xml.rawclobber:833
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[4]/text"
 msgstr "They offer to improve your sensors subsystem in exchange for scrap."
 
-#: src-ru/data/newEvents.xml.rawclobber:833
+#: src-ru/data/newEvents.xml.rawclobber:835
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[4]/choice[@req=\"sensors\""
 " and @lvl=\"0\"]/text"
@@ -921,68 +911,68 @@ msgstr ""
 "Seeing that you do not have this system, they offer to install it at a "
 "discount."
 
-#: src-ru/data/newEvents.xml.rawclobber:835
+#: src-ru/data/newEvents.xml.rawclobber:837
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[4]/choice[@req=\"sensors\""
 " and @lvl=\"0\"]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:843
+#: src-ru/data/newEvents.xml.rawclobber:845
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[4]/choice[2]/text"
 msgstr "Agree to the exchange."
 
-#: src-ru/data/newEvents.xml.rawclobber:845
+#: src-ru/data/newEvents.xml.rawclobber:847
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[4]/choice[2]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:853
+#: src-ru/data/newEvents.xml.rawclobber:855
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[4]/choice[3]/text"
 msgstr "Agree to the exchange."
 
-#: src-ru/data/newEvents.xml.rawclobber:855
+#: src-ru/data/newEvents.xml.rawclobber:857
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[4]/choice[3]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:863
+#: src-ru/data/newEvents.xml.rawclobber:865
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[4]/choice[4]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:865
+#: src-ru/data/newEvents.xml.rawclobber:867
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[4]/choice[4]/event/text"
 msgstr "You thank them and get ready to leave."
 
-#: src-ru/data/newEvents.xml.rawclobber:870
+#: src-ru/data/newEvents.xml.rawclobber:872
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[5]/text"
 msgstr "They offer to improve your reactor in exchange for scrap."
 
-#: src-ru/data/newEvents.xml.rawclobber:872
+#: src-ru/data/newEvents.xml.rawclobber:874
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[5]/choice[@req=\"reactor\"]/text"
 msgstr "Agree to the exchange."
 
-#: src-ru/data/newEvents.xml.rawclobber:874
+#: src-ru/data/newEvents.xml.rawclobber:876
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[5]/choice[@req=\"reactor\"]/event/text"
 msgstr "You let their brigade on board, and they quickly complete their work."
 
-#: src-ru/data/newEvents.xml.rawclobber:882
+#: src-ru/data/newEvents.xml.rawclobber:884
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[5]/choice[2]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:884
+#: src-ru/data/newEvents.xml.rawclobber:886
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"TRADER_UPGRADES_LIST\"]/event[5]/choice[2]/event/text"
 msgstr "You thank them and get ready to leave."
 
-#: src-ru/data/newEvents.xml.rawclobber:891
+#: src-ru/data/newEvents.xml.rawclobber:893
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"HELP_MINERS\"]/text"
 msgstr ""
 "You fly past the mining colony on an asteroid.They immediately send a "
@@ -990,40 +980,40 @@ msgstr ""
 "have ended since the rebels blocked the system.Do you have additional "
 "explosives? \""
 
-#: src-ru/data/newEvents.xml.rawclobber:893
+#: src-ru/data/newEvents.xml.rawclobber:895
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"HELP_MINERS\"]/choice[@req=\"WEAPONS_MISSILES_EVENTS\"]/text"
 msgstr ""
 "(Missile gun) to offer to solve their problem by launching the rocket."
 
-#: src-ru/data/newEvents.xml.rawclobber:897
+#: src-ru/data/newEvents.xml.rawclobber:899
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"HELP_MINERS\"]/choice[@req=\"WEAPONS_BREACH_BOMBS\"]/text"
 msgstr ""
 "(Armored bombs) to propose to solve their problem by teleporting the armored"
 " bomb."
 
-#: src-ru/data/newEvents.xml.rawclobber:901
+#: src-ru/data/newEvents.xml.rawclobber:903
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"HELP_MINERS\"]/choice[3]/text"
 msgstr "Give them the required 5 missiles."
 
-#: src-ru/data/newEvents.xml.rawclobber:905
+#: src-ru/data/newEvents.xml.rawclobber:907
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"HELP_MINERS\"]/choice[4]/text"
 msgstr "Give them 15 missiles."
 
-#: src-ru/data/newEvents.xml.rawclobber:909
+#: src-ru/data/newEvents.xml.rawclobber:911
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"HELP_MINERS\"]/choice[5]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:911
+#: src-ru/data/newEvents.xml.rawclobber:913
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"HELP_MINERS\"]/choice[5]/event/text"
 msgstr "\"I understand.Good luck.We will try to do with what we have. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:917
+#: src-ru/data/newEvents.xml.rawclobber:919
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_RAK\"]/event[1]/text"
 msgstr ""
@@ -1031,27 +1021,27 @@ msgstr ""
 "explosives on the work site.Shooting from a military gun to our mines is not"
 " quite what I would call \"friendly help.\""
 
-#: src-ru/data/newEvents.xml.rawclobber:919
+#: src-ru/data/newEvents.xml.rawclobber:921
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_RAK\"]/event[1]/choice[1]/text"
 msgstr "Give them the required 5 missiles."
 
-#: src-ru/data/newEvents.xml.rawclobber:923
+#: src-ru/data/newEvents.xml.rawclobber:925
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_RAK\"]/event[1]/choice[2]/text"
 msgstr "Give them 15 missiles."
 
-#: src-ru/data/newEvents.xml.rawclobber:927
+#: src-ru/data/newEvents.xml.rawclobber:929
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_RAK\"]/event[1]/choice[3]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:929
+#: src-ru/data/newEvents.xml.rawclobber:931
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_RAK\"]/event[1]/choice[3]/event/text"
 msgstr "\"I understand.Good luck.We will try to do with what we have. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:934
+#: src-ru/data/newEvents.xml.rawclobber:936
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_RAK\"]/event[2]/text"
 msgstr ""
@@ -1060,7 +1050,7 @@ msgstr ""
 "overwhelmed with crumbling soil!You make your legs from here before the "
 "miners remembered about you."
 
-#: src-ru/data/newEvents.xml.rawclobber:940
+#: src-ru/data/newEvents.xml.rawclobber:942
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_RAK\"]/event[3]/text"
 msgstr ""
@@ -1069,7 +1059,7 @@ msgstr ""
 "overwhelmed with crumbling soil!You make your legs from here before the "
 "miners remembered about you."
 
-#: src-ru/data/newEvents.xml.rawclobber:946
+#: src-ru/data/newEvents.xml.rawclobber:948
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_RAK\"]/event[4]/text"
 msgstr ""
@@ -1078,7 +1068,7 @@ msgstr ""
 "significantly after your \"friendly help.\"Grateful miners send you the gun "
 "as a gift, and their engineers improve the reactor of your ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:956
+#: src-ru/data/newEvents.xml.rawclobber:958
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_BREACH\"]/event[1]/text"
 msgstr ""
@@ -1086,27 +1076,27 @@ msgstr ""
 "explosives on the work site.Shooting from a military gun to our mines is not"
 " quite what I would call \"friendly help.\""
 
-#: src-ru/data/newEvents.xml.rawclobber:958
+#: src-ru/data/newEvents.xml.rawclobber:960
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_BREACH\"]/event[1]/choice[1]/text"
 msgstr "Give them the required 5 missiles."
 
-#: src-ru/data/newEvents.xml.rawclobber:962
+#: src-ru/data/newEvents.xml.rawclobber:964
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_BREACH\"]/event[1]/choice[2]/text"
 msgstr "Give them 15 missiles."
 
-#: src-ru/data/newEvents.xml.rawclobber:966
+#: src-ru/data/newEvents.xml.rawclobber:968
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_BREACH\"]/event[1]/choice[3]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:968
+#: src-ru/data/newEvents.xml.rawclobber:970
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_BREACH\"]/event[1]/choice[3]/event/text"
 msgstr "\"I understand.Good luck.We will try to do with what we have. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:979
+#: src-ru/data/newEvents.xml.rawclobber:981
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_BREACH\"]/event[2]/text"
 msgstr ""
@@ -1116,23 +1106,23 @@ msgstr ""
 "amplification for the ship as a gift, and their engineers improve the "
 "reactor of your ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:989
+#: src-ru/data/newEvents.xml.rawclobber:991
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_1\"]/event[1]/text"
 msgstr ""
 "They thank you for your generosity and offer a little scrap in return."
 
-#: src-ru/data/newEvents.xml.rawclobber:996
+#: src-ru/data/newEvents.xml.rawclobber:998
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_1\"]/event[2]/text"
 msgstr "They thank you and offer their engineers to repair your ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1003
+#: src-ru/data/newEvents.xml.rawclobber:1005
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_1\"]/event[3]/text"
 msgstr "They thank you and offer their engineers to improve your reactor."
 
-#: src-ru/data/newEvents.xml.rawclobber:1012
+#: src-ru/data/newEvents.xml.rawclobber:1014
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_2\"]/event[1]/text"
 msgstr ""
@@ -1140,14 +1130,14 @@ msgstr ""
 "”They get a little scrap, and their team is trying to repair part of the "
 "damage to the ship’s hull."
 
-#: src-ru/data/newEvents.xml.rawclobber:1020
+#: src-ru/data/newEvents.xml.rawclobber:1022
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_2\"]/event[2]/text"
 msgstr ""
 "\"Wow.This will help us significantly. ”They offer their engineers to repair"
 " the ship and improve your reactor."
 
-#: src-ru/data/newEvents.xml.rawclobber:1028
+#: src-ru/data/newEvents.xml.rawclobber:1030
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HELP_MINERS_2\"]/event[3]/text"
 msgstr ""
@@ -1156,7 +1146,7 @@ msgstr ""
 "you can install, and their engineers, meanwhile, repair the body of your "
 "ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1044
+#: src-ru/data/newEvents.xml.rawclobber:1046
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_GHOST\"]/text"
 msgstr ""
 "You came across a drifting ship of refugees.They probably fled from the "
@@ -1164,24 +1154,24 @@ msgstr ""
 "are not sure that there is someone on board.It seems that the connection is "
 "disabled."
 
-#: src-ru/data/newEvents.xml.rawclobber:1046
+#: src-ru/data/newEvents.xml.rawclobber:1048
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_GHOST\"]/choice[1]/text"
 msgstr "Prepare to land and explore."
 
-#: src-ru/data/newEvents.xml.rawclobber:1050
+#: src-ru/data/newEvents.xml.rawclobber:1052
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_GHOST\"]/choice[2]/text"
 msgstr "Ignore the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1057
+#: src-ru/data/newEvents.xml.rawclobber:1059
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_GHOST_LIST\"]/event[1]/text"
 msgstr ""
 "The ship is completely abandoned.No traces of a team or cargo.Puzzled, you "
 "leave the ghost ship and return to your business."
 
-#: src-ru/data/newEvents.xml.rawclobber:1060
+#: src-ru/data/newEvents.xml.rawclobber:1062
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_GHOST_LIST\"]/event[2]/text"
 msgstr ""
@@ -1189,7 +1179,7 @@ msgstr ""
 "team ended with food immediately after that.Despite this terrible scene, you"
 " can take some supplies from the cargo compartment."
 
-#: src-ru/data/newEvents.xml.rawclobber:1064
+#: src-ru/data/newEvents.xml.rawclobber:1066
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_GHOST_LIST\"]/event[3]/text"
 msgstr ""
@@ -1198,7 +1188,7 @@ msgstr ""
 "member of a team locked in a freezer, almost well-preserved and, apparently,"
 " missed from the view by a starving crew."
 
-#: src-ru/data/newEvents.xml.rawclobber:1068
+#: src-ru/data/newEvents.xml.rawclobber:1070
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_GHOST_LIST\"]/event[4]/text"
 msgstr ""
@@ -1208,7 +1198,7 @@ msgstr ""
 "clutches of the attackers, and you were forced to leave him so as not to "
 "lose the whole ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1074
+#: src-ru/data/newEvents.xml.rawclobber:1076
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_GHOST_LIST\"]/event[4]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
@@ -1216,7 +1206,7 @@ msgstr ""
 "The clone of the abandoned member of the team is waiting for your return on "
 "the ship and tries not to think about the fate of his predecessor."
 
-#: src-ru/data/newEvents.xml.rawclobber:1081
+#: src-ru/data/newEvents.xml.rawclobber:1083
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_GHOST_LIST\"]/event[4]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
@@ -1224,7 +1214,7 @@ msgstr ""
 "Since your ship is controlled by AI, you should not be afraid of the death "
 "of the entire crew."
 
-#: src-ru/data/newEvents.xml.rawclobber:1086
+#: src-ru/data/newEvents.xml.rawclobber:1088
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_GHOST_LIST\"]/event[5]/text"
 msgstr ""
@@ -1233,63 +1223,63 @@ msgstr ""
 "from a lack of food, they began to eat each other, and now you and your team"
 " are the following!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1100
+#: src-ru/data/newEvents.xml.rawclobber:1102
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS\"]/text"
 msgstr ""
 "You came across a drifting ship of refugees.It seems that they fled from the"
 " rebels and were lost in space.Their emergency lighthouse is active, but you"
 " are not sure that there is someone on board."
 
-#: src-ru/data/newEvents.xml.rawclobber:1102
+#: src-ru/data/newEvents.xml.rawclobber:1104
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS\"]/choice[1]/text"
 msgstr "Call them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1106
+#: src-ru/data/newEvents.xml.rawclobber:1108
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS\"]/choice[2]/text"
 msgstr "Do not pay attention to refugees."
 
-#: src-ru/data/newEvents.xml.rawclobber:1112
+#: src-ru/data/newEvents.xml.rawclobber:1114
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_NO_DISTRESS\"]/text"
 msgstr ""
 "Your sensors spotted refugees drifting through the system.Without a doubt, "
 "this is one of many ships escaping from the advancement of the rebels.They "
 "seem to have not found you ... or are trying to avoid attention."
 
-#: src-ru/data/newEvents.xml.rawclobber:1114
+#: src-ru/data/newEvents.xml.rawclobber:1116
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_NO_DISTRESS\"]/choice[1]/text"
 msgstr "Call them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1118
+#: src-ru/data/newEvents.xml.rawclobber:1120
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_NO_DISTRESS\"]/choice[2]/text"
 msgstr "Do not pay attention to refugees."
 
-#: src-ru/data/newEvents.xml.rawclobber:1123
+#: src-ru/data/newEvents.xml.rawclobber:1125
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_TRADER\"]/text"
 msgstr ""
 "The ship is glad to hear you.They end in consumables.They offer a deal."
 
-#: src-ru/data/newEvents.xml.rawclobber:1125
+#: src-ru/data/newEvents.xml.rawclobber:1127
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_TRADER\"]/choice[1]/text"
 msgstr "Trade with them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1129
+#: src-ru/data/newEvents.xml.rawclobber:1131
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_TRADER\"]/choice[2]/text"
 msgstr "Politely refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:1139
+#: src-ru/data/newEvents.xml.rawclobber:1141
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_HAIL_LIST\"]/event[5]/text"
 msgstr ""
 "As soon as you started to welcome the ship, they put forward their guns from"
 " the corps!This is a pirate ambush!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1143
+#: src-ru/data/newEvents.xml.rawclobber:1145
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_HAIL_LIST\"]/event[6]/text"
 msgstr ""
@@ -1298,14 +1288,14 @@ msgstr ""
 "transporting fugitives!Before you answer, they break off the connection and "
 "charge the guns!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1148
+#: src-ru/data/newEvents.xml.rawclobber:1150
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_HAIL_LIST\"]/event[7]/text"
 msgstr ""
 "As soon as you welcome the refugee ship, a pirate ship jumps into this "
 "system ... They used a ship of refugees as a bait!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1153
+#: src-ru/data/newEvents.xml.rawclobber:1155
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_HAIL_LIST\"]/event[8]/text"
 msgstr ""
@@ -1313,17 +1303,17 @@ msgstr ""
 "into this system ... It was a sports hunt for refugees, and now you are also"
 " as prey!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1160
+#: src-ru/data/newEvents.xml.rawclobber:1162
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ZOLTAN_REFUGEE\"]/destroyed/text"
 msgstr "The Zoltan ship breaks up to pieces, and you take everything you can."
 
-#: src-ru/data/newEvents.xml.rawclobber:1163
+#: src-ru/data/newEvents.xml.rawclobber:1165
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ZOLTAN_REFUGEE\"]/destroyed/choice/text"
 msgstr "Contact refugees ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1165
+#: src-ru/data/newEvents.xml.rawclobber:1167
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ZOLTAN_REFUGEE\"]/destroyed/choice/event/text"
 msgstr ""
@@ -1331,17 +1321,17 @@ msgstr ""
 "seeing how effectively you dealt with the enemy ship) offer you saved "
 "supplies."
 
-#: src-ru/data/newEvents.xml.rawclobber:1171
+#: src-ru/data/newEvents.xml.rawclobber:1173
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ZOLTAN_REFUGEE\"]/deadCrew/text"
 msgstr "Now the lifeless ship of the Zoltans will become easy prey."
 
-#: src-ru/data/newEvents.xml.rawclobber:1174
+#: src-ru/data/newEvents.xml.rawclobber:1176
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ZOLTAN_REFUGEE\"]/deadCrew/choice/text"
 msgstr "Contact refugees ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1176
+#: src-ru/data/newEvents.xml.rawclobber:1178
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ZOLTAN_REFUGEE\"]/deadCrew/choice/event/text"
 msgstr ""
@@ -1349,17 +1339,17 @@ msgstr ""
 "seeing how effectively you dealt with the enemy ship) offer you saved "
 "supplies."
 
-#: src-ru/data/newEvents.xml.rawclobber:1184
+#: src-ru/data/newEvents.xml.rawclobber:1186
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"PIRATE_REFUGEE\"]/destroyed/text"
 msgstr "A pirate ship is falling apart, you collect everything you can."
 
-#: src-ru/data/newEvents.xml.rawclobber:1187
+#: src-ru/data/newEvents.xml.rawclobber:1189
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"PIRATE_REFUGEE\"]/destroyed/choice/text"
 msgstr "Contact refugees ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1189
+#: src-ru/data/newEvents.xml.rawclobber:1191
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"PIRATE_REFUGEE\"]/destroyed/choice/event/text"
 msgstr ""
@@ -1367,17 +1357,17 @@ msgstr ""
 "seeing how effectively you dealt with the enemy ship) offer you saved "
 "supplies."
 
-#: src-ru/data/newEvents.xml.rawclobber:1195
+#: src-ru/data/newEvents.xml.rawclobber:1197
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"PIRATE_REFUGEE\"]/deadCrew/text"
 msgstr "Now the lifeless ship of the pirates will become easy prey."
 
-#: src-ru/data/newEvents.xml.rawclobber:1198
+#: src-ru/data/newEvents.xml.rawclobber:1200
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"PIRATE_REFUGEE\"]/deadCrew/choice/text"
 msgstr "Contact refugees ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1200
+#: src-ru/data/newEvents.xml.rawclobber:1202
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"PIRATE_REFUGEE\"]/deadCrew/choice/event/text"
 msgstr ""
@@ -1385,17 +1375,17 @@ msgstr ""
 "planet.And as a gesture of goodwill (and seeing how effectively you dealt "
 "with the enemy ship) offer you saved supplies."
 
-#: src-ru/data/newEvents.xml.rawclobber:1208
+#: src-ru/data/newEvents.xml.rawclobber:1210
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"SLUG_REFUGEE\"]/destroyed/text"
 msgstr "The ship is falling apart, you collect everything you can."
 
-#: src-ru/data/newEvents.xml.rawclobber:1211
+#: src-ru/data/newEvents.xml.rawclobber:1213
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"SLUG_REFUGEE\"]/destroyed/choice/text"
 msgstr "Contact refugees ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1213
+#: src-ru/data/newEvents.xml.rawclobber:1215
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"SLUG_REFUGEE\"]/destroyed/choice/event/text"
 msgstr ""
@@ -1403,16 +1393,16 @@ msgstr ""
 " as a gesture of goodwill (and seeing how effectively you dealt with the "
 "enemy ship) offer you saved supplies."
 
-#: src-ru/data/newEvents.xml.rawclobber:1219
+#: src-ru/data/newEvents.xml.rawclobber:1221
 msgid "data/newEvents.xml.rawclobber$//ship[@name=\"SLUG_REFUGEE\"]/deadCrew/text"
 msgstr "The lifeless ship of the slags has become easy prey."
 
-#: src-ru/data/newEvents.xml.rawclobber:1222
+#: src-ru/data/newEvents.xml.rawclobber:1224
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"SLUG_REFUGEE\"]/deadCrew/choice/text"
 msgstr "Contact refugees ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1224
+#: src-ru/data/newEvents.xml.rawclobber:1226
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"SLUG_REFUGEE\"]/deadCrew/choice/event/text"
 msgstr ""
@@ -1420,7 +1410,7 @@ msgstr ""
 " as a gesture of goodwill (and seeing how effectively you dealt with the "
 "enemy ship) offer you saved supplies."
 
-#: src-ru/data/newEvents.xml.rawclobber:1232
+#: src-ru/data/newEvents.xml.rawclobber:1234
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS_ZOLTAN\"]/text"
 msgstr ""
@@ -1428,17 +1418,17 @@ msgstr ""
 " rebels and were lost in space.Their emergency lighthouse is active, but you"
 " are not sure that there is someone on board."
 
-#: src-ru/data/newEvents.xml.rawclobber:1234
+#: src-ru/data/newEvents.xml.rawclobber:1236
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS_ZOLTAN\"]/choice[1]/text"
 msgstr "Call them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1238
+#: src-ru/data/newEvents.xml.rawclobber:1240
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS_ZOLTAN\"]/choice[2]/text"
 msgstr "Do not pay attention to refugees."
 
-#: src-ru/data/newEvents.xml.rawclobber:1244
+#: src-ru/data/newEvents.xml.rawclobber:1246
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_NO_DISTRESS_ZOLTAN\"]/text"
 msgstr ""
@@ -1446,17 +1436,17 @@ msgstr ""
 "this is one of many ships escaping from the advancement of the rebels.They "
 "seem to have not found you ... or are trying to avoid attention."
 
-#: src-ru/data/newEvents.xml.rawclobber:1246
+#: src-ru/data/newEvents.xml.rawclobber:1248
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_NO_DISTRESS_ZOLTAN\"]/choice[1]/text"
 msgstr "Call them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1250
+#: src-ru/data/newEvents.xml.rawclobber:1252
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_NO_DISTRESS_ZOLTAN\"]/choice[2]/text"
 msgstr "Do not pay attention to refugees."
 
-#: src-ru/data/newEvents.xml.rawclobber:1257
+#: src-ru/data/newEvents.xml.rawclobber:1259
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_HAIL_LIST_ZOLTAN\"]/event[2]/text"
 msgstr ""
@@ -1465,7 +1455,7 @@ msgstr ""
 "transporting fugitives!Before you answer, they break off the connection and "
 "charge the guns!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1264
+#: src-ru/data/newEvents.xml.rawclobber:1266
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS_PIRATE\"]/text"
 msgstr ""
@@ -1473,17 +1463,17 @@ msgstr ""
 " rebels and were lost in space.Their emergency lighthouse is active, but you"
 " are not sure that there is someone on board."
 
-#: src-ru/data/newEvents.xml.rawclobber:1266
+#: src-ru/data/newEvents.xml.rawclobber:1268
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS_PIRATE\"]/choice[1]/text"
 msgstr "Call them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1270
+#: src-ru/data/newEvents.xml.rawclobber:1272
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS_PIRATE\"]/choice[2]/text"
 msgstr "Do not pay attention to refugees."
 
-#: src-ru/data/newEvents.xml.rawclobber:1276
+#: src-ru/data/newEvents.xml.rawclobber:1278
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_NO_DISTRESS_PIRATE\"]/text"
 msgstr ""
@@ -1491,24 +1481,24 @@ msgstr ""
 "this is one of many ships escaping from the advancement of the rebels.They "
 "seem to have not found you ... or are trying to avoid attention."
 
-#: src-ru/data/newEvents.xml.rawclobber:1278
+#: src-ru/data/newEvents.xml.rawclobber:1280
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_NO_DISTRESS_PIRATE\"]/choice[1]/text"
 msgstr "Call them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1282
+#: src-ru/data/newEvents.xml.rawclobber:1284
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_NO_DISTRESS_PIRATE\"]/choice[2]/text"
 msgstr "Do not pay attention to refugees."
 
-#: src-ru/data/newEvents.xml.rawclobber:1289
+#: src-ru/data/newEvents.xml.rawclobber:1291
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_HAIL_LIST_PIRATE\"]/event[2]/text"
 msgstr ""
 "As soon as you welcome the refugee ship, a pirate ship jumps into this "
 "system ... They used a ship of refugees as a bait!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1296
+#: src-ru/data/newEvents.xml.rawclobber:1298
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS_SLUG\"]/text"
 msgstr ""
@@ -1516,17 +1506,17 @@ msgstr ""
 " rebels and were lost in space.Their emergency lighthouse is active, but you"
 " are not sure that there is someone on board."
 
-#: src-ru/data/newEvents.xml.rawclobber:1298
+#: src-ru/data/newEvents.xml.rawclobber:1300
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS_SLUG\"]/choice[1]/text"
 msgstr "Call them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1302
+#: src-ru/data/newEvents.xml.rawclobber:1304
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REFUGEE_DISTRESS_SLUG\"]/choice[2]/text"
 msgstr "Do not pay attention to refugees."
 
-#: src-ru/data/newEvents.xml.rawclobber:1308
+#: src-ru/data/newEvents.xml.rawclobber:1310
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"NEBULA_REFUGEE_NO_DISTRESS_SLUG\"]/text"
 msgstr ""
@@ -1534,65 +1524,65 @@ msgstr ""
 "this is one of many ships escaping from the advancement of the rebels.They "
 "seem to have not found you ... or are trying to avoid attention."
 
-#: src-ru/data/newEvents.xml.rawclobber:1312
+#: src-ru/data/newEvents.xml.rawclobber:1314
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"NEBULA_REFUGEE_NO_DISTRESS_SLUG\"]/choice[1]/text"
 msgstr "Call them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1316
+#: src-ru/data/newEvents.xml.rawclobber:1318
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"NEBULA_REFUGEE_NO_DISTRESS_SLUG\"]/choice[2]/text"
 msgstr "Do not pay attention to refugees."
 
-#: src-ru/data/newEvents.xml.rawclobber:1323
+#: src-ru/data/newEvents.xml.rawclobber:1325
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REFUGEE_HAIL_LIST_SLUG\"]/event[2]/text"
 msgstr ""
 "As soon as you welcome the refugee ship, a pirate ship jumps into this "
 "system ... They used a ship of refugees as a bait!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1342
+#: src-ru/data/newEvents.xml.rawclobber:1344
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"EMPTY_STATION2\"]/choice[1]/text"
 msgstr "Start studying the station."
 
-#: src-ru/data/newEvents.xml.rawclobber:1346
+#: src-ru/data/newEvents.xml.rawclobber:1348
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"EMPTY_STATION2\"]/choice[2]/text"
 msgstr "Stay next to the lighthouse."
 
-#: src-ru/data/newEvents.xml.rawclobber:1348
+#: src-ru/data/newEvents.xml.rawclobber:1350
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"EMPTY_STATION2\"]/choice[2]/event/text"
 msgstr "You decide that now is not the time for research."
 
-#: src-ru/data/newEvents.xml.rawclobber:1353
+#: src-ru/data/newEvents.xml.rawclobber:1355
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"EMPTY_STATION2_TEXT\"]/text[1]"
 msgstr "You find a small space station, it seems, abandoned."
 
-#: src-ru/data/newEvents.xml.rawclobber:1354
+#: src-ru/data/newEvents.xml.rawclobber:1356
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"EMPTY_STATION2_TEXT\"]/text[2]"
 msgstr ""
 "Upon arrival, you discover the lunar colony, but the scan shows that it is "
 "abandoned.You also find an abandoned station near the lighthouse."
 
-#: src-ru/data/newEvents.xml.rawclobber:1355
+#: src-ru/data/newEvents.xml.rawclobber:1357
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"EMPTY_STATION2_TEXT\"]/text[3]"
 msgstr ""
 "Apparently, there was a battle recently.The wreckage of ships is everywhere,"
 " but one station seems to be intact."
 
-#: src-ru/data/newEvents.xml.rawclobber:1359
+#: src-ru/data/newEvents.xml.rawclobber:1361
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[1]/text"
 msgstr ""
 "When approaching it, it becomes clear that the station is just an empty "
 "shell.All the useful has been stolen for a long time."
 
-#: src-ru/data/newEvents.xml.rawclobber:1362
+#: src-ru/data/newEvents.xml.rawclobber:1364
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[2]/text"
 msgstr ""
@@ -1600,26 +1590,26 @@ msgstr ""
 " recently.It seems that a small hotel was placed there.You fluently search "
 "the station and take everything useful that you can find."
 
-#: src-ru/data/newEvents.xml.rawclobber:1366
+#: src-ru/data/newEvents.xml.rawclobber:1368
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[3]/text"
 msgstr ""
 "On the next examination, it turns out that most of its corps is "
 "destroyed.You take the remaining items that you can find."
 
-#: src-ru/data/newEvents.xml.rawclobber:1370
+#: src-ru/data/newEvents.xml.rawclobber:1372
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[4]/text"
 msgstr ""
 "The station is defeated.You find a damaged cloning compartment, but it seems"
 " that it works."
 
-#: src-ru/data/newEvents.xml.rawclobber:1372
+#: src-ru/data/newEvents.xml.rawclobber:1374
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[4]/choice[@req=\"clonebay\"]/text"
 msgstr "(Klon-Oseck) look for the preserved DNA vaults."
 
-#: src-ru/data/newEvents.xml.rawclobber:1374
+#: src-ru/data/newEvents.xml.rawclobber:1376
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[4]/choice[@req=\"clonebay\"]/event/text"
 msgstr ""
@@ -1627,17 +1617,17 @@ msgstr ""
 "line for cloning.You transfer data to your cloning compartment and after a "
 "while you get the result."
 
-#: src-ru/data/newEvents.xml.rawclobber:1382
+#: src-ru/data/newEvents.xml.rawclobber:1384
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[4]/choice[2]/text"
 msgstr "Break the mechanism."
 
-#: src-ru/data/newEvents.xml.rawclobber:1384
+#: src-ru/data/newEvents.xml.rawclobber:1386
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[4]/choice[2]/event/text"
 msgstr "You take everything you can, and get ready to move on."
 
-#: src-ru/data/newEvents.xml.rawclobber:1390
+#: src-ru/data/newEvents.xml.rawclobber:1392
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[5]/text"
 msgstr ""
@@ -1645,7 +1635,7 @@ msgstr ""
 "air gateway, the pirates burst into your ship.At this time, scanners are "
 "noticed by a previously unnoticed pirate ship rushing into the attack!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1395
+#: src-ru/data/newEvents.xml.rawclobber:1397
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_LIST\"]/event[6]/text"
 msgstr ""
@@ -1654,34 +1644,34 @@ msgstr ""
 "signals arise on the bridge.The pirates activated the remote system of "
 "planetary defense, and it is aimed at your ship!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1405
+#: src-ru/data/newEvents.xml.rawclobber:1407
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_CLONE\"]/event[1]/text"
 msgstr ""
 "The clone is disoriented, but you bring him to life.Not seeing other "
 "options, he asks to take him to the team for a while."
 
-#: src-ru/data/newEvents.xml.rawclobber:1409
+#: src-ru/data/newEvents.xml.rawclobber:1411
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_CLONE\"]/event[2]/text"
 msgstr ""
 "The clone is disoriented, but, having gathered, picks himself together.Not "
 "seeing other options, he asks to take him to the team for a while."
 
-#: src-ru/data/newEvents.xml.rawclobber:1413
+#: src-ru/data/newEvents.xml.rawclobber:1415
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"EMPTY_STATION2_CLONE\"]/event[3]/text"
 msgstr ""
 "The clone falls into a crazy state and refuses to calm down.You have no "
 "choice but to fight."
 
-#: src-ru/data/newEvents.xml.rawclobber:1425
+#: src-ru/data/newEvents.xml.rawclobber:1427
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"WRECKAGE_EVENT\"]/choice[@req=\"sensors\""
 " and @lvl=\"2\"]/text"
 msgstr "(Improved sensors) use sensors to scan fragments."
 
-#: src-ru/data/newEvents.xml.rawclobber:1427
+#: src-ru/data/newEvents.xml.rawclobber:1429
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"WRECKAGE_EVENT\"]/choice[@req=\"sensors\""
 " and @lvl=\"2\"]/event/text"
@@ -1689,33 +1679,33 @@ msgstr ""
 "You view the battlefield and with the help of your sensors collect a small "
 "number of wreckage materials.Then prepare for the jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:1432
+#: src-ru/data/newEvents.xml.rawclobber:1434
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"WRECKAGE_EVENT\"]/choice[@req=\"sensors\""
 " and @lvl=\"3\"]/text"
 msgstr "(Advanced sensors) use sensors to scan fragments."
 
-#: src-ru/data/newEvents.xml.rawclobber:1436
+#: src-ru/data/newEvents.xml.rawclobber:1438
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"WRECKAGE_EVENT\"]/choice[@req=\"SHIPRADAR\"]/text"
 msgstr "(Directed scanner) use a directed scanner to scan fragments."
 
-#: src-ru/data/newEvents.xml.rawclobber:1440
+#: src-ru/data/newEvents.xml.rawclobber:1442
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"WRECKAGE_EVENT\"]/choice[@req=\"SHIPRADAR2\"]/text"
 msgstr "(Morphs analyzer) use the analyzer to scan fragments."
 
-#: src-ru/data/newEvents.xml.rawclobber:1444
+#: src-ru/data/newEvents.xml.rawclobber:1446
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"WRECKAGE_EVENT\"]/choice[5]/text"
 msgstr "Explore the battlefield."
 
-#: src-ru/data/newEvents.xml.rawclobber:1448
+#: src-ru/data/newEvents.xml.rawclobber:1450
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"WRECKAGE_EVENT\"]/choice[6]/text"
 msgstr "Ignore the debris and continue the flight."
 
-#: src-ru/data/newEvents.xml.rawclobber:1453
+#: src-ru/data/newEvents.xml.rawclobber:1455
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"WRECKAGE_TEXT\"]/text[1]"
 msgstr ""
 "The fact that at first seems to be a simple nebula, in fact, is an "
@@ -1724,7 +1714,7 @@ msgstr ""
 "depths of the nebula, hide from sight.It is difficult to determine without a"
 " thorough investigation who the rivals were."
 
-#: src-ru/data/newEvents.xml.rawclobber:1454
+#: src-ru/data/newEvents.xml.rawclobber:1456
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"WRECKAGE_TEXT\"]/text[2]"
 msgstr ""
 "You jumped to a place where the consequences of a cruel battle between "
@@ -1732,7 +1722,7 @@ msgstr ""
 " can still see the sparkling and collapsing remains of dying ships.It is "
 "difficult to determine without a thorough investigation who the rivals were."
 
-#: src-ru/data/newEvents.xml.rawclobber:1458
+#: src-ru/data/newEvents.xml.rawclobber:1460
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_SCANNED\"]/event[1]/text"
 msgstr ""
@@ -1740,7 +1730,7 @@ msgstr ""
 "collect a large number of wreckage materials.Having gained the hold well, "
 "you are preparing to jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:1462
+#: src-ru/data/newEvents.xml.rawclobber:1464
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_SCANNED\"]/event[2]/text"
 msgstr ""
@@ -1748,42 +1738,42 @@ msgstr ""
 "wreckage!The crew was killed, but their main weapon remained whole!You take "
 "it and return on board."
 
-#: src-ru/data/newEvents.xml.rawclobber:1469
+#: src-ru/data/newEvents.xml.rawclobber:1471
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[1]/text"
 msgstr ""
 "You scan the battlefield, but little is left here. Disappointed, you prepare"
 " to jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:1475
+#: src-ru/data/newEvents.xml.rawclobber:1477
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[2]/text"
 msgstr ""
 "You scan the battlefield, but little is left here. Disappointed, you prepare"
 " to jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:1481
+#: src-ru/data/newEvents.xml.rawclobber:1483
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[3]/text"
 msgstr ""
 "You scan the battlefield, but little is left here. Disappointed, you prepare"
 " to jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:1487
+#: src-ru/data/newEvents.xml.rawclobber:1489
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[4]/text"
 msgstr ""
 "You scan the battlefield, but little is left here. Disappointed, you prepare"
 " to jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:1493
+#: src-ru/data/newEvents.xml.rawclobber:1495
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[5]/text"
 msgstr ""
 "You scan the battlefield and collect a little useful materials from "
 "fragments."
 
-#: src-ru/data/newEvents.xml.rawclobber:1497
+#: src-ru/data/newEvents.xml.rawclobber:1499
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[6]/text"
 msgstr ""
@@ -1791,7 +1781,7 @@ msgstr ""
 "are reported ... They either felt prey or finish the work that their "
 "colleagues began."
 
-#: src-ru/data/newEvents.xml.rawclobber:1501
+#: src-ru/data/newEvents.xml.rawclobber:1503
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[7]/text"
 msgstr ""
@@ -1801,7 +1791,7 @@ msgstr ""
 " to explore the fragments in more detail, reinforcement of the rebels "
 "arrives in the system, they attack your ship!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1505
+#: src-ru/data/newEvents.xml.rawclobber:1507
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[8]/text"
 msgstr ""
@@ -1809,7 +1799,7 @@ msgstr ""
 "mistakenly takes you for one of the attackers, accuses you, as hostile "
 "aggressors, of violating the Zoltansky space and opens fire!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1509
+#: src-ru/data/newEvents.xml.rawclobber:1511
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[9]/text"
 msgstr ""
@@ -1818,57 +1808,57 @@ msgstr ""
 "and then disappears without saying a word.You resume scanning the system, "
 "referring to any other visitors."
 
-#: src-ru/data/newEvents.xml.rawclobber:1518
+#: src-ru/data/newEvents.xml.rawclobber:1520
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"FUELING_STATION\"]/text"
 msgstr ""
 "In the orbit of this lighthouse there is a small platform.She looks like a "
 "kind of gas station and cheerfully broadcasts low prices in a wide range of "
 "frequencies and languages."
 
-#: src-ru/data/newEvents.xml.rawclobber:1520
+#: src-ru/data/newEvents.xml.rawclobber:1522
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"FUELING_STATION\"]/choice[1]/text"
 msgstr "Combat the gas station."
 
-#: src-ru/data/newEvents.xml.rawclobber:1524
+#: src-ru/data/newEvents.xml.rawclobber:1526
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"FUELING_STATION\"]/choice[2]/text"
 msgstr "Ignore a refueling platform."
 
-#: src-ru/data/newEvents.xml.rawclobber:1530
+#: src-ru/data/newEvents.xml.rawclobber:1532
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_IGNORE\"]/event[1]/text"
 msgstr ""
 "When you are preparing to leave the system, a pirate ship suddenly appears "
 "on scanners - it seems that they used the platform as a bait!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1542
+#: src-ru/data/newEvents.xml.rawclobber:1544
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[1]/text"
 msgstr "The platform offers a deal."
 
-#: src-ru/data/newEvents.xml.rawclobber:1544
+#: src-ru/data/newEvents.xml.rawclobber:1546
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[1]/choice[1]/text"
 msgstr "Accept an offer."
 
-#: src-ru/data/newEvents.xml.rawclobber:1553
+#: src-ru/data/newEvents.xml.rawclobber:1555
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[1]/choice[2]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:1558
+#: src-ru/data/newEvents.xml.rawclobber:1560
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[2]/text"
 msgstr ""
 "The automated platform is damaged.You can steal as much fuel as it remains."
 
-#: src-ru/data/newEvents.xml.rawclobber:1560
+#: src-ru/data/newEvents.xml.rawclobber:1562
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[2]/choice[1]/text"
 msgstr "Rob."
 
-#: src-ru/data/newEvents.xml.rawclobber:1562
+#: src-ru/data/newEvents.xml.rawclobber:1564
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[2]/choice[1]/event/text"
 msgstr ""
@@ -1876,50 +1866,50 @@ msgstr ""
 "rebels.You violate the tightness of the tanks and gain access to the "
 "residues of fuel reserves."
 
-#: src-ru/data/newEvents.xml.rawclobber:1569
+#: src-ru/data/newEvents.xml.rawclobber:1571
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[2]/choice[2]/text"
 msgstr ""
 "The war does not justify the abandonment of its principles.You leave the "
 "platform alone."
 
-#: src-ru/data/newEvents.xml.rawclobber:1574
+#: src-ru/data/newEvents.xml.rawclobber:1576
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[3]/text"
 msgstr "The platform seems to be foster and can ignite at any time."
 
-#: src-ru/data/newEvents.xml.rawclobber:1576
+#: src-ru/data/newEvents.xml.rawclobber:1578
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[3]/choice[1]/text"
 msgstr "Famous and refuel quickly."
 
-#: src-ru/data/newEvents.xml.rawclobber:1580
+#: src-ru/data/newEvents.xml.rawclobber:1582
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_NORMAL_LIST\"]/event[3]/choice[2]/text"
 msgstr "Go away from the station to a safe distance."
 
-#: src-ru/data/newEvents.xml.rawclobber:1589
+#: src-ru/data/newEvents.xml.rawclobber:1591
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"FUELING_STATION_LEAVE\"]/text[1]"
 msgstr ""
 "You leave the station.After some time, several quiet explosions notify the "
 "destruction of depressurized tanks."
 
-#: src-ru/data/newEvents.xml.rawclobber:1590
+#: src-ru/data/newEvents.xml.rawclobber:1592
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"FUELING_STATION_LEAVE\"]/text[2]"
 msgstr ""
 "You leave the station, but it seems that everything is in order.You could "
 "probably refer for free, but excess risk is useless now."
 
-#: src-ru/data/newEvents.xml.rawclobber:1595
+#: src-ru/data/newEvents.xml.rawclobber:1597
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_BLOW\"]/event[1]/text"
 msgstr ""
 "You will have time to safely refuel and fly away to the explosion of the "
 "station."
 
-#: src-ru/data/newEvents.xml.rawclobber:1601
+#: src-ru/data/newEvents.xml.rawclobber:1603
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_BLOW\"]/event[2]/text"
 msgstr ""
@@ -1927,19 +1917,19 @@ msgstr ""
 "explodes.Your fuel reserves are ignited, you lose precious fuel and damage "
 "the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1610
+#: src-ru/data/newEvents.xml.rawclobber:1612
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_PIRATE_LIST\"]/event[1]/text"
 msgstr ""
 "You are attached and give a signal to the station employees to start a "
 "refueling fuel."
 
-#: src-ru/data/newEvents.xml.rawclobber:1612
+#: src-ru/data/newEvents.xml.rawclobber:1614
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_PIRATE_LIST\"]/event[1]/choice[1]/text"
 msgstr "Wait until they finish."
 
-#: src-ru/data/newEvents.xml.rawclobber:1614
+#: src-ru/data/newEvents.xml.rawclobber:1616
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_PIRATE_LIST\"]/event[1]/choice[1]/event/text"
 msgstr ""
@@ -1947,14 +1937,14 @@ msgstr ""
 "compartment!Warning signals light up on your ship, and suddenly a pirate "
 "detachment bursts on board from the station!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1623
+#: src-ru/data/newEvents.xml.rawclobber:1625
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_PIRATE_LIST\"]/event[1]/choice[@req=\"doors\"]/text"
 msgstr ""
 "(Fortified doors) block the fortified doors - it is better to be safe when "
 "the docking occurs."
 
-#: src-ru/data/newEvents.xml.rawclobber:1625
+#: src-ru/data/newEvents.xml.rawclobber:1627
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_PIRATE_LIST\"]/event[1]/choice[@req=\"doors\"]/event/text"
 msgstr ""
@@ -1962,7 +1952,7 @@ msgstr ""
 " the failed ambush turns into a close shootout.You capture the station and "
 "take fuel reserves."
 
-#: src-ru/data/newEvents.xml.rawclobber:1633
+#: src-ru/data/newEvents.xml.rawclobber:1635
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"FUELING_STATION_PIRATE_LIST\"]/event[2]/text"
 msgstr ""
@@ -1970,7 +1960,7 @@ msgstr ""
 "explosion takes place in your motor compartment!Assessing the damage, you "
 "are notifying a rapidly approaching pirate ship!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1649
+#: src-ru/data/newEvents.xml.rawclobber:1651
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/text"
 msgstr ""
@@ -1979,34 +1969,34 @@ msgstr ""
 " which was designed to deliver a large batch of building materials.Could you"
 " help us find out what happened to him? \""
 
-#: src-ru/data/newEvents.xml.rawclobber:1651
+#: src-ru/data/newEvents.xml.rawclobber:1653
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[1]/text"
 msgstr "Promise to help them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1653
+#: src-ru/data/newEvents.xml.rawclobber:1655
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[1]/event/text"
 msgstr ""
 "\"Fabulous.Thanks for your help.I will designate the last known coordinates "
 "and will send you some materials that will help you get there. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:1663
+#: src-ru/data/newEvents.xml.rawclobber:1665
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[2]/text"
 msgstr "Refuse."
 
-#: src-ru/data/newEvents.xml.rawclobber:1665
+#: src-ru/data/newEvents.xml.rawclobber:1667
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[2]/event/text"
 msgstr "\"I understand\".The transfer is stopped."
 
-#: src-ru/data/newEvents.xml.rawclobber:1669
+#: src-ru/data/newEvents.xml.rawclobber:1671
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[@req=\"anaerobic\"]/text"
 msgstr "(Crew member Lanius) offer the help of your Lanius."
 
-#: src-ru/data/newEvents.xml.rawclobber:1671
+#: src-ru/data/newEvents.xml.rawclobber:1673
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[@req=\"anaerobic\"]/event/text"
 msgstr ""
@@ -2014,18 +2004,18 @@ msgstr ""
 "details?It would help us a lot. ”Your Lanius checks the drawings and quickly"
 " converts metal blanks into special details."
 
-#: src-ru/data/newEvents.xml.rawclobber:1675
+#: src-ru/data/newEvents.xml.rawclobber:1677
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[@req=\"anaerobic\"]/event/choice/event/text"
 msgstr ""
 "“Amazing!This robot could save us a lot of time.Can I buy it from you? \""
 
-#: src-ru/data/newEvents.xml.rawclobber:1677
+#: src-ru/data/newEvents.xml.rawclobber:1679
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[@req=\"anaerobic\"]/event/choice/event/choice[1]/text"
 msgstr "Ask Lanius if he agrees to stay at the station."
 
-#: src-ru/data/newEvents.xml.rawclobber:1679
+#: src-ru/data/newEvents.xml.rawclobber:1681
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[@req=\"anaerobic\"]/event/choice/event/choice[1]/event/text"
 msgstr ""
@@ -2033,26 +2023,26 @@ msgstr ""
 " of ​​promoting construction in deep space.This is much safer.In return, you"
 " are offered an amplification for the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1683
+#: src-ru/data/newEvents.xml.rawclobber:1685
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[@req=\"anaerobic\"]/event/choice/event/choice[1]/event/removeCrew/text"
 msgstr ""
 "Your clone of the scheme, obviously, does not revive your crew member "
 "because it has not died."
 
-#: src-ru/data/newEvents.xml.rawclobber:1688
+#: src-ru/data/newEvents.xml.rawclobber:1690
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[@req=\"anaerobic\"]/event/choice/event/choice[2]/text"
 msgstr "Our team is not sold."
 
-#: src-ru/data/newEvents.xml.rawclobber:1690
+#: src-ru/data/newEvents.xml.rawclobber:1692
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"QUEST_CONSTRUCTIONYARD\"]/choice[@req=\"anaerobic\"]/event/choice/event/choice[2]/event/text"
 msgstr ""
 "“Sorry.As for payment, here is a little scrap metal in which we no longer "
 "need, since we have all the necessary details. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:1701
+#: src-ru/data/newEvents.xml.rawclobber:1703
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[1]/text"
 msgstr ""
@@ -2061,12 +2051,12 @@ msgstr ""
 "their own free will and are forced to \"sacrifice their supplies for "
 "military needs.\""
 
-#: src-ru/data/newEvents.xml.rawclobber:1703
+#: src-ru/data/newEvents.xml.rawclobber:1705
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[1]/choice[1]/text"
 msgstr "To attack the rebels to help them escape."
 
-#: src-ru/data/newEvents.xml.rawclobber:1705
+#: src-ru/data/newEvents.xml.rawclobber:1707
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[1]/choice[1]/event/text"
 msgstr ""
@@ -2074,17 +2064,17 @@ msgstr ""
 "them.Scanners discover the weapon of the anti -ship battery aimed at "
 "you.This becomes an concern!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1712
+#: src-ru/data/newEvents.xml.rawclobber:1714
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[1]/choice[2]/text"
 msgstr "Leave this place."
 
-#: src-ru/data/newEvents.xml.rawclobber:1714
+#: src-ru/data/newEvents.xml.rawclobber:1716
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[1]/choice[2]/event/text"
 msgstr "You apologize, but the attack on the rebels is not worth the risk."
 
-#: src-ru/data/newEvents.xml.rawclobber:1719
+#: src-ru/data/newEvents.xml.rawclobber:1721
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[2]/text"
 msgstr ""
@@ -2092,90 +2082,90 @@ msgstr ""
 "hold is empty, and there are no obvious signs that someone is inside the "
 "ship or station.Everything looks abandoned."
 
-#: src-ru/data/newEvents.xml.rawclobber:1721
+#: src-ru/data/newEvents.xml.rawclobber:1723
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[2]/choice[1]/text"
 msgstr "Start studying the station."
 
-#: src-ru/data/newEvents.xml.rawclobber:1725
+#: src-ru/data/newEvents.xml.rawclobber:1727
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[2]/choice[2]/text"
 msgstr "Stay next to the lighthouse."
 
-#: src-ru/data/newEvents.xml.rawclobber:1727
+#: src-ru/data/newEvents.xml.rawclobber:1729
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[2]/choice[2]/event/text"
 msgstr "You decide that now is not the time for research."
 
-#: src-ru/data/newEvents.xml.rawclobber:1732
+#: src-ru/data/newEvents.xml.rawclobber:1734
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[3]/text"
 msgstr ""
 "You find a lost cargo ship near the lighthouse.\"God bless!We drifted here "
 "after we spent our last fuel to escape from the pirates. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:1734
+#: src-ru/data/newEvents.xml.rawclobber:1736
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[3]/choice[1]/text"
 msgstr "Give them requested 4 fuels."
 
-#: src-ru/data/newEvents.xml.rawclobber:1736
+#: src-ru/data/newEvents.xml.rawclobber:1738
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[3]/choice[1]/event/text"
 msgstr ""
 "“Great, thank you.Here are a little scrap metal for your needs.Be careful. "
 "\""
 
-#: src-ru/data/newEvents.xml.rawclobber:1744
+#: src-ru/data/newEvents.xml.rawclobber:1746
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[3]/choice[2]/text"
 msgstr "Give them 1 fuel."
 
-#: src-ru/data/newEvents.xml.rawclobber:1746
+#: src-ru/data/newEvents.xml.rawclobber:1748
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[3]/choice[2]/event/text"
 msgstr ""
 "“Well, it's better than nothing.Thank you.I hope we find the station at the "
 "next lighthouse. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:1754
+#: src-ru/data/newEvents.xml.rawclobber:1756
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[3]/choice[3]/text"
 msgstr "Do not give them anything."
 
-#: src-ru/data/newEvents.xml.rawclobber:1756
+#: src-ru/data/newEvents.xml.rawclobber:1758
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/event[3]/choice[3]/event/text"
 msgstr "\"I understand...\""
 
-#: src-ru/data/newEvents.xml.rawclobber:1763
+#: src-ru/data/newEvents.xml.rawclobber:1765
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"QUEST_CONSTRUCTIONYARD_SHIP\"]/destroyed/text"
 msgstr "You quickly take everything you can from the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1766
+#: src-ru/data/newEvents.xml.rawclobber:1768
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"QUEST_CONSTRUCTIONYARD_SHIP\"]/destroyed/choice/text"
 msgstr "Contact a cargo ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1768
+#: src-ru/data/newEvents.xml.rawclobber:1770
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"QUEST_CONSTRUCTIONYARD_SHIP\"]/destroyed/choice/event/text"
 msgstr ""
 "Under the shelling of the anti -ship battery, the cargo ship was stripped of"
 " the station.They dropped a little scrap towards your ship before escaping."
 
-#: src-ru/data/newEvents.xml.rawclobber:1774
+#: src-ru/data/newEvents.xml.rawclobber:1776
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"QUEST_CONSTRUCTIONYARD_SHIP\"]/deadCrew/text"
 msgstr "You quickly take everything you can from the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1777
+#: src-ru/data/newEvents.xml.rawclobber:1779
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"QUEST_CONSTRUCTIONYARD_SHIP\"]/deadCrew/choice/text"
 msgstr "Contact a cargo ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1779
+#: src-ru/data/newEvents.xml.rawclobber:1781
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"QUEST_CONSTRUCTIONYARD_SHIP\"]/deadCrew/choice/event/text"
 msgstr ""
@@ -2183,36 +2173,36 @@ msgstr ""
 "from the station.They dropped a little scrap towards your ship before "
 "escaping."
 
-#: src-ru/data/newEvents.xml.rawclobber:1797
+#: src-ru/data/newEvents.xml.rawclobber:1799
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"NEBULA_ROCK_SLUG_ARGUMENT\"]/text"
 msgstr ""
 "You found several ships moving nearby at maximum speed, but you cannot see "
 "them through a thick nebula."
 
-#: src-ru/data/newEvents.xml.rawclobber:1799
+#: src-ru/data/newEvents.xml.rawclobber:1801
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"NEBULA_ROCK_SLUG_ARGUMENT\"]/choice[1]/text"
 msgstr "Come closer."
 
-#: src-ru/data/newEvents.xml.rawclobber:1803
+#: src-ru/data/newEvents.xml.rawclobber:1805
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"NEBULA_ROCK_SLUG_ARGUMENT\"]/choice[2]/text"
 msgstr "Fly by."
 
-#: src-ru/data/newEvents.xml.rawclobber:1812
+#: src-ru/data/newEvents.xml.rawclobber:1814
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"ROCK_SLUG_ARGUMENT\"]/text"
 msgstr ""
 "You distinguish between the cruiser and the ship of the rocks opposing each "
 "other, both are armed and ready to fight.You can intervene before this gets "
 "out of control."
 
-#: src-ru/data/newEvents.xml.rawclobber:1814
+#: src-ru/data/newEvents.xml.rawclobber:1816
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROCK_SLUG_ARGUMENT\"]/choice[1]/text"
 msgstr "Grease them to find out what happened."
 
-#: src-ru/data/newEvents.xml.rawclobber:1816
+#: src-ru/data/newEvents.xml.rawclobber:1818
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROCK_SLUG_ARGUMENT\"]/choice[1]/event/text"
 msgstr ""
@@ -2220,12 +2210,12 @@ msgstr ""
 "-headed\" refuse to pay for work.Captain Rokov says that these \"Lizuna\" "
 "were checked, and work is not worth the requested price."
 
-#: src-ru/data/newEvents.xml.rawclobber:1818
+#: src-ru/data/newEvents.xml.rawclobber:1820
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROCK_SLUG_ARGUMENT\"]/choice[1]/event/choice[1]/text"
 msgstr "To agree to repay the debt of rocks."
 
-#: src-ru/data/newEvents.xml.rawclobber:1820
+#: src-ru/data/newEvents.xml.rawclobber:1822
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROCK_SLUG_ARGUMENT\"]/choice[1]/event/choice[1]/event/text"
 msgstr ""
@@ -2233,34 +2223,34 @@ msgstr ""
 "received scrap \"undeservedly\", but at least the situation remains "
 "peaceful."
 
-#: src-ru/data/newEvents.xml.rawclobber:1831
+#: src-ru/data/newEvents.xml.rawclobber:1833
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROCK_SLUG_ARGUMENT\"]/choice[1]/event/choice[2]/text"
 msgstr "Demand the Rock from the ship to pay at a agreed price."
 
-#: src-ru/data/newEvents.xml.rawclobber:1835
+#: src-ru/data/newEvents.xml.rawclobber:1837
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROCK_SLUG_ARGUMENT\"]/choice[1]/event/choice[3]/text"
 msgstr "You have more important things to leave them."
 
-#: src-ru/data/newEvents.xml.rawclobber:1841
+#: src-ru/data/newEvents.xml.rawclobber:1843
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROCK_SLUG_ARGUMENT\"]/choice[2]/text"
 msgstr "Leave them alone."
 
-#: src-ru/data/newEvents.xml.rawclobber:1848
+#: src-ru/data/newEvents.xml.rawclobber:1850
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_COMMAND\"]/event[1]/text"
 msgstr ""
 "Apparently, Captain Rokov was annoyed more than you thought.They chop off "
 "the connection and unfold to you, the \"defender of the Lizunov.\""
 
-#: src-ru/data/newEvents.xml.rawclobber:1853
+#: src-ru/data/newEvents.xml.rawclobber:1855
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_COMMAND\"]/event[2]/text"
 msgstr "With great discontent, Captain Rokov still agrees to pay."
 
-#: src-ru/data/newEvents.xml.rawclobber:1860
+#: src-ru/data/newEvents.xml.rawclobber:1862
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_COMMAND\"]/event[3]/text"
 msgstr ""
@@ -2269,107 +2259,107 @@ msgstr ""
 "of the reactor was really poor -quality.During universal confusion, the "
 "blags successfully use the opportunity to slip away."
 
-#: src-ru/data/newEvents.xml.rawclobber:1869
+#: src-ru/data/newEvents.xml.rawclobber:1871
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ROCK_SLUG_REACTOR_SHIP\"]/destroyed/text"
 msgstr ""
 "After the destruction of the ship, spin a while to collect a little scrap."
 
-#: src-ru/data/newEvents.xml.rawclobber:1872
+#: src-ru/data/newEvents.xml.rawclobber:1874
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ROCK_SLUG_REACTOR_SHIP\"]/destroyed/choice/text"
 msgstr "Get in touch with the cones."
 
-#: src-ru/data/newEvents.xml.rawclobber:1877
+#: src-ru/data/newEvents.xml.rawclobber:1879
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ROCK_SLUG_REACTOR_SHIP\"]/deadCrew/text"
 msgstr ""
 "After the death of the Rock team, you take the remaining supplies on the "
 "ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:1880
+#: src-ru/data/newEvents.xml.rawclobber:1882
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"ROCK_SLUG_REACTOR_SHIP\"]/deadCrew/choice/text"
 msgstr "Get in touch with the cones."
 
-#: src-ru/data/newEvents.xml.rawclobber:1888
+#: src-ru/data/newEvents.xml.rawclobber:1890
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_GRATEFUL\"]/event[1]/text"
 msgstr ""
 "Slaves thank you for your help and fly away.Their true goals are doubtful, "
 "but at least you can continue your mission."
 
-#: src-ru/data/newEvents.xml.rawclobber:1891
+#: src-ru/data/newEvents.xml.rawclobber:1893
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_GRATEFUL\"]/event[2]/text"
 msgstr ""
 "Captain Slagov offers to improve the reactor for your help for free.A slight"
 " increase in power will never damage!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1895
+#: src-ru/data/newEvents.xml.rawclobber:1897
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_GRATEFUL\"]/event[3]/text"
 msgstr ""
 "Captain Slagov offers to improve the reactor for your help for free.A slight"
 " increase in power will never damage!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1899
+#: src-ru/data/newEvents.xml.rawclobber:1901
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_GRATEFUL\"]/event[4]/text"
 msgstr ""
 "Captain Sagov thanks you for your help, and also offers to improve your "
 "reactor ... at a \"fair\" price."
 
-#: src-ru/data/newEvents.xml.rawclobber:1901
+#: src-ru/data/newEvents.xml.rawclobber:1903
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_GRATEFUL\"]/event[4]/choice[@req=\"reactor\"]/text"
 msgstr "Agree with the price."
 
-#: src-ru/data/newEvents.xml.rawclobber:1903
+#: src-ru/data/newEvents.xml.rawclobber:1905
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_GRATEFUL\"]/event[4]/choice[@req=\"reactor\"]/event/text"
 msgstr ""
 "You allow their team to go aboard, and after a short time they finish their "
 "work."
 
-#: src-ru/data/newEvents.xml.rawclobber:1911
+#: src-ru/data/newEvents.xml.rawclobber:1913
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_GRATEFUL\"]/event[4]/choice[2]/text"
 msgstr "Reject the proposal."
 
-#: src-ru/data/newEvents.xml.rawclobber:1913
+#: src-ru/data/newEvents.xml.rawclobber:1915
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROCK_SLUG_GRATEFUL\"]/event[4]/choice[2]/event/text"
 msgstr "You interrupt the connection and prepare to move on."
 
-#: src-ru/data/newEvents.xml.rawclobber:1922
+#: src-ru/data/newEvents.xml.rawclobber:1924
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN\"]/text"
 msgstr ""
 "You are welcomed from the station in the orbit of the nearest "
 "planet.“Captain, we are a detachment of the Terraforming Federation with12, "
 "and we need help.Give us a little time? \""
 
-#: src-ru/data/newEvents.xml.rawclobber:1924
+#: src-ru/data/newEvents.xml.rawclobber:1926
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN\"]/choice[1]/text"
 msgstr "Offer your help."
 
-#: src-ru/data/newEvents.xml.rawclobber:1928
+#: src-ru/data/newEvents.xml.rawclobber:1930
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN\"]/choice[2]/text"
 msgstr "You don't have time for this."
 
-#: src-ru/data/newEvents.xml.rawclobber:1930
+#: src-ru/data/newEvents.xml.rawclobber:1932
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN\"]/choice[2]/event/text"
 msgstr "“We understand.We wish you good luck in your mission, sir! \""
 
-#: src-ru/data/newEvents.xml.rawclobber:1932
+#: src-ru/data/newEvents.xml.rawclobber:1934
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN\"]/choice[2]/event/choice/text"
 msgstr "Prepare for a jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:1939
+#: src-ru/data/newEvents.xml.rawclobber:1941
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/text"
 msgstr ""
@@ -2378,68 +2368,68 @@ msgstr ""
 "atmosphere.Any help is useful to us not to lag behind the schedule, will you"
 " help us? ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:1941
+#: src-ru/data/newEvents.xml.rawclobber:1943
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[@req=\"sensors\""
 " and @lvl=\"1\"]/text"
 msgstr "(Sensors) try to scan the planet."
 
-#: src-ru/data/newEvents.xml.rawclobber:1945
+#: src-ru/data/newEvents.xml.rawclobber:1947
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[@req=\"sensors\""
 " and @lvl=\"3\"]/text"
 msgstr "(Advanced sensors) Install the sensors to the maximum and scan."
 
-#: src-ru/data/newEvents.xml.rawclobber:1949
+#: src-ru/data/newEvents.xml.rawclobber:1951
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[@req=\"SHIPRADAR\"]/text"
 msgstr "(Directed scanner) use a directed scanner."
 
-#: src-ru/data/newEvents.xml.rawclobber:1953
+#: src-ru/data/newEvents.xml.rawclobber:1955
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[@req=\"SHIPRADAR2\"]/text"
 msgstr "(Morphs analyzer) Use the morph analyzer."
 
-#: src-ru/data/newEvents.xml.rawclobber:1957
+#: src-ru/data/newEvents.xml.rawclobber:1959
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
 
-#: src-ru/data/newEvents.xml.rawclobber:1961
+#: src-ru/data/newEvents.xml.rawclobber:1963
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[@req=\"CREW_ENERGY\"]/text"
 msgstr ""
 "(Crew member of the Zoltan) Send the Zoltan to disperse their systems."
 
-#: src-ru/data/newEvents.xml.rawclobber:1965
+#: src-ru/data/newEvents.xml.rawclobber:1967
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr ""
 "(Crew member of the Zoltonets) Send the Zolton to disperse their systems."
 
-#: src-ru/data/newEvents.xml.rawclobber:1969
+#: src-ru/data/newEvents.xml.rawclobber:1971
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[8]/text"
 msgstr "We have no suitable equipment."
 
-#: src-ru/data/newEvents.xml.rawclobber:1971
+#: src-ru/data/newEvents.xml.rawclobber:1973
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[8]/event/text"
 msgstr "“We understand.We wish you good luck in your mission, sir! \""
 
-#: src-ru/data/newEvents.xml.rawclobber:1973
+#: src-ru/data/newEvents.xml.rawclobber:1975
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TERRAFORMING_SCAN_CHECK_CARGO\"]/choice[8]/event/choice/text"
 msgstr "Prepare for a jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:1983
+#: src-ru/data/newEvents.xml.rawclobber:1985
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"NORMAL_SCAN_TERRAFORMING\"]/event[1]/text"
 msgstr ""
 "It seems that your sensors are weaker than the terrarammers.You apologize "
 "and continue your way."
 
-#: src-ru/data/newEvents.xml.rawclobber:1986
+#: src-ru/data/newEvents.xml.rawclobber:1988
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"NORMAL_SCAN_TERRAFORMING\"]/event[2]/text"
 msgstr ""
@@ -2447,7 +2437,7 @@ msgstr ""
 "to the desired frequency, you can conduct complete scan through the "
 "atmosphere!"
 
-#: src-ru/data/newEvents.xml.rawclobber:1996
+#: src-ru/data/newEvents.xml.rawclobber:1998
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[1]/text"
 msgstr ""
@@ -2456,7 +2446,7 @@ msgstr ""
 "station have unique skills settings for the life support system and in "
 "gratitude improve your breathing system."
 
-#: src-ru/data/newEvents.xml.rawclobber:2000
+#: src-ru/data/newEvents.xml.rawclobber:2002
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[2]/text"
 msgstr ""
@@ -2465,7 +2455,7 @@ msgstr ""
 " the ship.When you are going to jump, the ship takes off and attacks - these"
 " are pirates!"
 
-#: src-ru/data/newEvents.xml.rawclobber:2004
+#: src-ru/data/newEvents.xml.rawclobber:2006
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[3]/text"
 msgstr ""
@@ -2474,30 +2464,30 @@ msgstr ""
 " reasonable life forms can prevent their plans, and they can begin their "
 "work."
 
-#: src-ru/data/newEvents.xml.rawclobber:2006
+#: src-ru/data/newEvents.xml.rawclobber:2008
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/text"
 msgstr "Tell them to stop.Any life is valuable."
 
-#: src-ru/data/newEvents.xml.rawclobber:2008
+#: src-ru/data/newEvents.xml.rawclobber:2010
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/event/text"
 msgstr ""
 "“But our lives depend on this work!Who cares about this stupid mold?We will "
 "pay you if you close your eyes to this! \""
 
-#: src-ru/data/newEvents.xml.rawclobber:2010
+#: src-ru/data/newEvents.xml.rawclobber:2012
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/event/choice[1]/text"
 msgstr "Take a bribe and fly away."
 
-#: src-ru/data/newEvents.xml.rawclobber:2018
+#: src-ru/data/newEvents.xml.rawclobber:2020
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Offer them a bribe so that they at least wait until this mold is studied."
 
-#: src-ru/data/newEvents.xml.rawclobber:2020
+#: src-ru/data/newEvents.xml.rawclobber:2022
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/event/choice[2]/event/text"
 msgstr ""
@@ -2505,58 +2495,58 @@ msgstr ""
 "have a unique talent in setting up life support systems, they offer to "
 "update the oxygen compartment as an apology for their actions."
 
-#: src-ru/data/newEvents.xml.rawclobber:2029
+#: src-ru/data/newEvents.xml.rawclobber:2031
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/event/choice[3]/text"
 msgstr "To charge the guns and demand that they leave."
 
-#: src-ru/data/newEvents.xml.rawclobber:2031
+#: src-ru/data/newEvents.xml.rawclobber:2033
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/event/choice[3]/event/text"
 msgstr ""
 "They cut off the connection, but it seems that they begin the evacuation "
 "procedure."
 
-#: src-ru/data/newEvents.xml.rawclobber:2038
+#: src-ru/data/newEvents.xml.rawclobber:2040
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[2]/text"
 msgstr "Do not interfere with them to work and fly away."
 
-#: src-ru/data/newEvents.xml.rawclobber:2045
+#: src-ru/data/newEvents.xml.rawclobber:2047
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/text"
 msgstr ""
 "Soon after jumping into the system, you get a greeting from the civilian "
 "ship of the engineering ship near you.Their captain appears on your screen: "
 "“A strange mistake in the code.Help in debugging is required. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:2047
+#: src-ru/data/newEvents.xml.rawclobber:2049
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/text"
 msgstr "Listen to their problem."
 
-#: src-ru/data/newEvents.xml.rawclobber:2049
+#: src-ru/data/newEvents.xml.rawclobber:2051
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/text"
 msgstr ""
 "“Found a faulty mantis.He believes that he is a man.Will receive input data "
 "only from a person.Danger assessment: extremely high.Provide assistance. \""
 
-#: src-ru/data/newEvents.xml.rawclobber:2051
+#: src-ru/data/newEvents.xml.rawclobber:2053
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[1]/text"
 msgstr "Send shuttle with several members of the team to help."
 
-#: src-ru/data/newEvents.xml.rawclobber:2055
+#: src-ru/data/newEvents.xml.rawclobber:2057
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[2]/text"
 msgstr "Leaving them, a mantis driven into a corner is too dangerous."
 
-#: src-ru/data/newEvents.xml.rawclobber:2059
+#: src-ru/data/newEvents.xml.rawclobber:2061
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"human_crew\"]/text"
 msgstr "(Crew member) Let a person go to negotiations with this mantis."
 
-#: src-ru/data/newEvents.xml.rawclobber:2061
+#: src-ru/data/newEvents.xml.rawclobber:2063
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"human_crew\"]/event/text"
 msgstr ""
@@ -2564,17 +2554,17 @@ msgstr ""
 "Smith.He says that he is from a neighboring human colony, and would be glad "
 "to return there."
 
-#: src-ru/data/newEvents.xml.rawclobber:2063
+#: src-ru/data/newEvents.xml.rawclobber:2065
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"human_crew\"]/event/choice/text"
 msgstr "Return it home."
 
-#: src-ru/data/newEvents.xml.rawclobber:2069
+#: src-ru/data/newEvents.xml.rawclobber:2071
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
 msgstr "(Crew member) Let a person go to negotiations with this mantis."
 
-#: src-ru/data/newEvents.xml.rawclobber:2071
+#: src-ru/data/newEvents.xml.rawclobber:2073
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"CREW_ORDER_HUMAN\"]/event/text"
 msgstr ""
@@ -2582,17 +2572,17 @@ msgstr ""
 "Smith.He says that he is from a neighboring human colony, and would be glad "
 "to return there."
 
-#: src-ru/data/newEvents.xml.rawclobber:2073
+#: src-ru/data/newEvents.xml.rawclobber:2075
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"CREW_ORDER_HUMAN\"]/event/choice/text"
 msgstr "Return it home."
 
-#: src-ru/data/newEvents.xml.rawclobber:2079
+#: src-ru/data/newEvents.xml.rawclobber:2081
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"mantis_crew\"]/text"
 msgstr "(Member of the mantis crew) Send to negotiations of your mantis."
 
-#: src-ru/data/newEvents.xml.rawclobber:2081
+#: src-ru/data/newEvents.xml.rawclobber:2083
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"mantis_crew\"]/event/text"
 msgstr ""
@@ -2600,13 +2590,13 @@ msgstr ""
 "attacks the rescuers of the engineers, and your mantis is forced to kill "
 "him.Inji are grateful for your help and offer a small award."
 
-#: src-ru/data/newEvents.xml.rawclobber:2086
+#: src-ru/data/newEvents.xml.rawclobber:2088
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Control of the mind) use the system of monitoring the mind to reassure it."
 
-#: src-ru/data/newEvents.xml.rawclobber:2088
+#: src-ru/data/newEvents.xml.rawclobber:2090
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"mind\"]/event/text"
 msgstr ""
@@ -2614,12 +2604,12 @@ msgstr ""
 "to be taken to a neighboring planet to the colony of people where he was "
 "brought up.They are glad of his return and offer a reward."
 
-#: src-ru/data/newEvents.xml.rawclobber:2093
+#: src-ru/data/newEvents.xml.rawclobber:2095
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"orchid_crew\"]/text"
 msgstr "(Orchid crew member) The Orchid can calm him with its pollen."
 
-#: src-ru/data/newEvents.xml.rawclobber:2095
+#: src-ru/data/newEvents.xml.rawclobber:2097
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"orchid_crew\"]/event/text"
 msgstr ""
@@ -2627,12 +2617,12 @@ msgstr ""
 "to be taken to a neighboring planet to the colony of people where he was "
 "brought up.They are glad of his return and offer a reward."
 
-#: src-ru/data/newEvents.xml.rawclobber:2102
+#: src-ru/data/newEvents.xml.rawclobber:2104
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[2]/text"
 msgstr "Explain that you do not know how to program and leave."
 
-#: src-ru/data/newEvents.xml.rawclobber:2108
+#: src-ru/data/newEvents.xml.rawclobber:2110
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS_HOME\"]/text"
 msgstr ""
 "The colony is miners producing fuel for over -light flights.The Robert "
@@ -2640,36 +2630,36 @@ msgstr ""
 " return.Apparently, he escaped to \"join the federation\", like his older "
 "brother, but never hit the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:2110
+#: src-ru/data/newEvents.xml.rawclobber:2112
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS_HOME\"]/choice[1]/text"
 msgstr "Offer him work on the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:2112
+#: src-ru/data/newEvents.xml.rawclobber:2114
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS_HOME\"]/choice[1]/event/text"
 msgstr ""
 "“He always dreamed of serving a federation,” he says, kindly accepting the "
 "proposal."
 
-#: src-ru/data/newEvents.xml.rawclobber:2113
+#: src-ru/data/newEvents.xml.rawclobber:2115
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS_HOME\"]/choice[1]/event/crewMember"
 msgstr "Robert Smith"
 
-#: src-ru/data/newEvents.xml.rawclobber:2117
+#: src-ru/data/newEvents.xml.rawclobber:2119
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS_HOME\"]/choice[2]/text"
 msgstr "Ask them, they could not inspect your engines."
 
-#: src-ru/data/newEvents.xml.rawclobber:2119
+#: src-ru/data/newEvents.xml.rawclobber:2121
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS_HOME\"]/choice[2]/event/text"
 msgstr ""
 "They are happy to check the engines and offer some solutions to improve "
 "them."
 
-#: src-ru/data/newEvents.xml.rawclobber:2127
+#: src-ru/data/newEvents.xml.rawclobber:2129
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"CONFUSED_MANTIS_DEFAULT\"]/event[1]/text"
 msgstr ""
@@ -2677,7 +2667,7 @@ msgstr ""
 "Smith.He says that he is from a neighboring human colony, and would be glad "
 "to return there."
 
-#: src-ru/data/newEvents.xml.rawclobber:2134
+#: src-ru/data/newEvents.xml.rawclobber:2136
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"CONFUSED_MANTIS_DEFAULT\"]/event[2]/text"
 msgstr ""
@@ -2685,14 +2675,14 @@ msgstr ""
 " are approaching.One of the members of your crew was gutted before he "
 "managed to stop him.Ingos apologize for your loss."
 
-#: src-ru/data/newEvents.xml.rawclobber:2140
+#: src-ru/data/newEvents.xml.rawclobber:2142
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"CONFUSED_MANTIS_DEFAULT\"]/event[2]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr ""
 "The clone of your crew member is waiting for you to return to the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:2147
+#: src-ru/data/newEvents.xml.rawclobber:2149
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"CONFUSED_MANTIS_DEFAULT\"]/event[2]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
@@ -2700,7 +2690,7 @@ msgstr ""
 "Since your ship is controlled by AI, you should not be afraid of the death "
 "of the entire crew."
 
-#: src-ru/data/newEvents.xml.rawclobber:2152
+#: src-ru/data/newEvents.xml.rawclobber:2154
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"CONFUSED_MANTIS_DEFAULT\"]/event[3]/text"
 msgstr ""
@@ -2708,70 +2698,70 @@ msgstr ""
 " are approaching.You are able to pacify it and send it to the mantles colony"
 " in the next system.He seems to be not happy with his return."
 
-#: src-ru/data/newEvents.xml.rawclobber:2159
+#: src-ru/data/newEvents.xml.rawclobber:2161
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"PIRATE_SALESMAN\"]/text"
 msgstr ""
 "A ship with a noticeable pirate coloring, rotating around the next moon, "
 "reports an uncomplicated message, claiming that it has equipment available "
 "for sale."
 
-#: src-ru/data/newEvents.xml.rawclobber:2161
+#: src-ru/data/newEvents.xml.rawclobber:2163
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"PIRATE_SALESMAN\"]/choice[1]/text"
 msgstr "Welcome the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:2165
+#: src-ru/data/newEvents.xml.rawclobber:2167
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"PIRATE_SALESMAN\"]/choice[2]/text"
 msgstr "Attack them before they can attack you."
 
-#: src-ru/data/newEvents.xml.rawclobber:2171
+#: src-ru/data/newEvents.xml.rawclobber:2173
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"PIRATE_SALESMAN\"]/choice[3]/text"
 msgstr "Prepare quickly for the jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:2176
+#: src-ru/data/newEvents.xml.rawclobber:2178
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/text"
 msgstr ""
 "“Yes, we have large reserves!Climb on board and inspect our products! \"- "
 "They answered from the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:2178
+#: src-ru/data/newEvents.xml.rawclobber:2180
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[1]/text"
 msgstr "FACKING to the ship."
 
-#: src-ru/data/newEvents.xml.rawclobber:2182
+#: src-ru/data/newEvents.xml.rawclobber:2184
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[2]/text"
 msgstr "It looks dangerous, to leave."
 
-#: src-ru/data/newEvents.xml.rawclobber:2184
+#: src-ru/data/newEvents.xml.rawclobber:2186
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[2]/event/text"
 msgstr ""
 "As soon as you unfold your ship, the pirates show the hiding guns and goes "
 "in pursuit.You will have to fight them to leave!"
 
-#: src-ru/data/newEvents.xml.rawclobber:2189
+#: src-ru/data/newEvents.xml.rawclobber:2191
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
 msgstr ""
 "(Member of the crew of Slavs) Slages telepathically warns you that this "
 "pirate does not tolerate when his trading transaction breaks down ..."
 
-#: src-ru/data/newEvents.xml.rawclobber:2191
+#: src-ru/data/newEvents.xml.rawclobber:2193
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/event/text"
 msgstr "Are you cheating?"
 
-#: src-ru/data/newEvents.xml.rawclobber:2201
+#: src-ru/data/newEvents.xml.rawclobber:2203
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[@req=\"hacking\"]/text"
 msgstr "(Cracker) Before the docking, turn off their gun systems."
 
-#: src-ru/data/newEvents.xml.rawclobber:2203
+#: src-ru/data/newEvents.xml.rawclobber:2205
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[@req=\"hacking\"]/event/text"
 msgstr ""
@@ -2780,43 +2770,43 @@ msgstr ""
 "your \"standard fee\".It would be better if I was doing business elsewhere, "
 "scum. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:2215
+#: src-ru/data/newEvents.xml.rawclobber:2217
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_DRONE_SALESMAN\"]/text"
 msgstr ""
 "On board you are met by a man in an exquisite suit.“Welcome to my ship!We "
 "specialize in all kinds of drones, how can I interest you? \""
 
-#: src-ru/data/newEvents.xml.rawclobber:2217
+#: src-ru/data/newEvents.xml.rawclobber:2219
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[1]/text"
 msgstr "Buy the details of drones."
 
-#: src-ru/data/newEvents.xml.rawclobber:2226
+#: src-ru/data/newEvents.xml.rawclobber:2228
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[2]/text"
 msgstr "Buy a drone scheme."
 
-#: src-ru/data/newEvents.xml.rawclobber:2236
+#: src-ru/data/newEvents.xml.rawclobber:2238
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[3]/text"
 msgstr "Buy improvement of drones system."
 
-#: src-ru/data/newEvents.xml.rawclobber:2245
+#: src-ru/data/newEvents.xml.rawclobber:2247
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[4]/text"
 msgstr "Buy improvement of drones system."
 
-#: src-ru/data/newEvents.xml.rawclobber:2254
+#: src-ru/data/newEvents.xml.rawclobber:2256
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[5]/text"
 msgstr "Buy improvement of drones system."
 
-#: src-ru/data/newEvents.xml.rawclobber:2263
+#: src-ru/data/newEvents.xml.rawclobber:2265
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[6]/text"
 msgstr "Do not buy anything."
 
-#: src-ru/data/newEvents.xml.rawclobber:2265
+#: src-ru/data/newEvents.xml.rawclobber:2267
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[6]/event/text"
 msgstr ""
@@ -2825,33 +2815,33 @@ msgstr ""
 "guns!You get a message: \"You should not waste time people in vain, "
 "captain!\""
 
-#: src-ru/data/newEvents.xml.rawclobber:2274
+#: src-ru/data/newEvents.xml.rawclobber:2276
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_BOMB_SALESMAN\"]/text"
 msgstr ""
 "On board you are met by a man in an exquisite suit.“Welcome to my ship!We "
 "specialize in all kinds of explosives, how can I interest you? \""
 
-#: src-ru/data/newEvents.xml.rawclobber:2276
+#: src-ru/data/newEvents.xml.rawclobber:2278
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_BOMB_SALESMAN\"]/choice[1]/text"
 msgstr "Buy several missiles."
 
-#: src-ru/data/newEvents.xml.rawclobber:2285
+#: src-ru/data/newEvents.xml.rawclobber:2287
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_BOMB_SALESMAN\"]/choice[2]/text"
 msgstr "Buy installation for launching bombs."
 
-#: src-ru/data/newEvents.xml.rawclobber:2294
+#: src-ru/data/newEvents.xml.rawclobber:2296
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_BOMB_SALESMAN\"]/choice[3]/text"
 msgstr "Buy a missile installation."
 
-#: src-ru/data/newEvents.xml.rawclobber:2303
+#: src-ru/data/newEvents.xml.rawclobber:2305
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_BOMB_SALESMAN\"]/choice[4]/text"
 msgstr "Do not buy anything."
 
-#: src-ru/data/newEvents.xml.rawclobber:2305
+#: src-ru/data/newEvents.xml.rawclobber:2307
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_BOMB_SALESMAN\"]/choice[4]/event/text"
 msgstr ""
@@ -2859,28 +2849,28 @@ msgstr ""
 "the steering wheel, a series of explosions shakes your ship.Pirates charged "
 "their guns!"
 
-#: src-ru/data/newEvents.xml.rawclobber:2314
+#: src-ru/data/newEvents.xml.rawclobber:2316
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_WEAP_SALESMAN\"]/text"
 msgstr ""
 "On board you are met by a man in an exquisite suit.“Welcome to my ship!I "
 "have a couple of guns for sale, are you interested? \""
 
-#: src-ru/data/newEvents.xml.rawclobber:2316
+#: src-ru/data/newEvents.xml.rawclobber:2318
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_WEAP_SALESMAN\"]/choice[1]/text"
 msgstr "Buy this gun."
 
-#: src-ru/data/newEvents.xml.rawclobber:2325
+#: src-ru/data/newEvents.xml.rawclobber:2327
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_WEAP_SALESMAN\"]/choice[2]/text"
 msgstr "Buy this gun."
 
-#: src-ru/data/newEvents.xml.rawclobber:2334
+#: src-ru/data/newEvents.xml.rawclobber:2336
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_WEAP_SALESMAN\"]/choice[3]/text"
 msgstr "Do not buy anything."
 
-#: src-ru/data/newEvents.xml.rawclobber:2336
+#: src-ru/data/newEvents.xml.rawclobber:2338
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_WEAP_SALESMAN\"]/choice[3]/event/text"
 msgstr ""
@@ -2888,28 +2878,28 @@ msgstr ""
 "the steering wheel, a series of explosions shakes your ship.Pirates charged "
 "their guns!"
 
-#: src-ru/data/newEvents.xml.rawclobber:2345
+#: src-ru/data/newEvents.xml.rawclobber:2347
 msgid "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_AUG_SALESMAN\"]/text"
 msgstr ""
 "On board you are met by a man in an exquisite suit.“Welcome to my ship!I "
 "have a couple of reinforcements for sale, are you interested? \""
 
-#: src-ru/data/newEvents.xml.rawclobber:2347
+#: src-ru/data/newEvents.xml.rawclobber:2349
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_AUG_SALESMAN\"]/choice[1]/text"
 msgstr "Buy this amplification."
 
-#: src-ru/data/newEvents.xml.rawclobber:2356
+#: src-ru/data/newEvents.xml.rawclobber:2358
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_AUG_SALESMAN\"]/choice[2]/text"
 msgstr "Buy this amplification."
 
-#: src-ru/data/newEvents.xml.rawclobber:2365
+#: src-ru/data/newEvents.xml.rawclobber:2367
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_AUG_SALESMAN\"]/choice[3]/text"
 msgstr "Do not buy anything."
 
-#: src-ru/data/newEvents.xml.rawclobber:2367
+#: src-ru/data/newEvents.xml.rawclobber:2369
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"DOCK_AUG_SALESMAN\"]/choice[3]/event/text"
 msgstr ""
@@ -2917,7 +2907,7 @@ msgstr ""
 "the steering wheel, a series of explosions shakes your ship.Pirates charged "
 "their guns!"
 
-#: src-ru/data/newEvents.xml.rawclobber:2387
+#: src-ru/data/newEvents.xml.rawclobber:2389
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_CHECKPOINT_TEXT\"]/text[1]"
 msgstr ""
@@ -2925,7 +2915,7 @@ msgstr ""
 " oppress the peaceful population and delay members of the federation.The "
 "rebels do not notice you yet."
 
-#: src-ru/data/newEvents.xml.rawclobber:2388
+#: src-ru/data/newEvents.xml.rawclobber:2390
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_CHECKPOINT_TEXT\"]/text[2]"
 msgstr ""
@@ -2933,7 +2923,7 @@ msgstr ""
 " courts are awaiting inspection, any of them can be a supporter of the "
 "federation.The rebels do not notice you yet."
 
-#: src-ru/data/newEvents.xml.rawclobber:2389
+#: src-ru/data/newEvents.xml.rawclobber:2391
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_CHECKPOINT_TEXT\"]/text[3]"
 msgstr ""
@@ -2943,7 +2933,7 @@ msgstr ""
 "possible detention, if they are supporters of the federation.The rebels do "
 "not notice you yet."
 
-#: src-ru/data/newEvents.xml.rawclobber:2390
+#: src-ru/data/newEvents.xml.rawclobber:2392
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_CHECKPOINT_TEXT\"]/text[4]"
 msgstr ""
@@ -2951,14 +2941,14 @@ msgstr ""
 "seems that this is a checkpoint of the rebels.Now everyone is checked for "
 "possible ties with the federation.No one has noticed you yet."
 
-#: src-ru/data/newEvents.xml.rawclobber:2393
+#: src-ru/data/newEvents.xml.rawclobber:2395
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_BRIBE_TEXT\"]/text[1]"
 msgstr ""
 "The prospect of getting hold of excess crowbar of these rebels definitely "
 "pleased.They cancel inspection and release stopped civilian ships."
 
-#: src-ru/data/newEvents.xml.rawclobber:2394
+#: src-ru/data/newEvents.xml.rawclobber:2396
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_BRIBE_TEXT\"]/text[2]"
 msgstr ""
@@ -2966,105 +2956,105 @@ msgstr ""
 "harsh galaxy.They take your scrap, and allow everyone to continue their "
 "flight."
 
-#: src-ru/data/newEvents.xml.rawclobber:2395
+#: src-ru/data/newEvents.xml.rawclobber:2397
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_BRIBE_TEXT\"]/text[3]"
 msgstr ""
 "Since everyone who expects a check is in any case a person, the rebels let "
 "them go.They take your scrap and order you to hurry."
 
-#: src-ru/data/newEvents.xml.rawclobber:2396
+#: src-ru/data/newEvents.xml.rawclobber:2398
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_BRIBE_TEXT\"]/text[4]"
 msgstr ""
 "They willingly take your bribe, obviously, rebellious people underpay.Civil "
 "vessels are preparing to jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:2399
+#: src-ru/data/newEvents.xml.rawclobber:2401
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"GENERIC_HIDE_TEXT\"]/text[1]"
 msgstr "Visorly fly under the guise of the moon."
 
-#: src-ru/data/newEvents.xml.rawclobber:2400
+#: src-ru/data/newEvents.xml.rawclobber:2402
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"GENERIC_HIDE_TEXT\"]/text[2]"
 msgstr "Disconnect all systems except life support, and hide."
 
-#: src-ru/data/newEvents.xml.rawclobber:2401
+#: src-ru/data/newEvents.xml.rawclobber:2403
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"GENERIC_HIDE_TEXT\"]/text[3]"
 msgstr "To hide, in the hope that they will not find you."
 
-#: src-ru/data/newEvents.xml.rawclobber:2402
+#: src-ru/data/newEvents.xml.rawclobber:2404
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"GENERIC_HIDE_TEXT\"]/text[4]"
 msgstr "Stay away and prepare for a jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:2407
+#: src-ru/data/newEvents.xml.rawclobber:2409
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REBEL_CHECKPOINT\"]/choice[1]/text"
 msgstr "Stand for yourself.Attack and run."
 
-#: src-ru/data/newEvents.xml.rawclobber:2413
+#: src-ru/data/newEvents.xml.rawclobber:2415
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REBEL_CHECKPOINT\"]/choice[2]/text"
 msgstr "Buy the rebels so that they free civilian ships."
 
-#: src-ru/data/newEvents.xml.rawclobber:2420
+#: src-ru/data/newEvents.xml.rawclobber:2422
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REBEL_CHECKPOINT\"]/choice[2]/event/choice/text"
 msgstr "Contact civilian ships."
 
-#: src-ru/data/newEvents.xml.rawclobber:2432
+#: src-ru/data/newEvents.xml.rawclobber:2434
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_BRIBE_RESULT\"]/event[1]/text"
 msgstr ""
 "The civilian is grateful.Nevertheless, none of them seem to seek to repeat "
 "the mistake, supporting the federation, so they make a quick jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:2439
+#: src-ru/data/newEvents.xml.rawclobber:2441
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_BRIBE_RESULT\"]/event[2]/text"
 msgstr ""
 "Some of the civilians bring their excess scrap to try to repay for your "
 "help."
 
-#: src-ru/data/newEvents.xml.rawclobber:2443
+#: src-ru/data/newEvents.xml.rawclobber:2445
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_BRIBE_RESULT\"]/event[3]/text"
 msgstr ""
 "One of the civilian courts quietly teleported you a container of military "
 "deliveries of the Federation."
 
-#: src-ru/data/newEvents.xml.rawclobber:2447
+#: src-ru/data/newEvents.xml.rawclobber:2449
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_BRIBE_RESULT\"]/event[4]/text"
 msgstr ""
 "One of the civilian courts quietly teleported you a large container of "
 "military supplies of the Federation."
 
-#: src-ru/data/newEvents.xml.rawclobber:2451
+#: src-ru/data/newEvents.xml.rawclobber:2453
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_BRIBE_RESULT\"]/event[5]/text"
 msgstr ""
 "One of the civilian courts quietly teleported you a large container of "
 "military supplies of the Federation."
 
-#: src-ru/data/newEvents.xml.rawclobber:2455
+#: src-ru/data/newEvents.xml.rawclobber:2457
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_BRIBE_RESULT\"]/event[6]/text"
 msgstr ""
 "One of the civilian courts quietly teleported you a large container of "
 "military supplies of the Federation.Inside you find the gun."
 
-#: src-ru/data/newEvents.xml.rawclobber:2459
+#: src-ru/data/newEvents.xml.rawclobber:2461
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_BRIBE_RESULT\"]/event[7]/text"
 msgstr ""
 "One of the civilian courts quietly teleported you a large container of "
 "military supplies of the Federation.Inside you find the gun."
 
-#: src-ru/data/newEvents.xml.rawclobber:2467
+#: src-ru/data/newEvents.xml.rawclobber:2469
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_BRIBE_RESULT\"]/event[8]/text"
 msgstr ""
@@ -3072,7 +3062,7 @@ msgstr ""
 "are supporters of the federation.The rebels intercept your negotiations, fly"
 " and destroy a civilian ship, then unfold in your direction!"
 
-#: src-ru/data/newEvents.xml.rawclobber:2475
+#: src-ru/data/newEvents.xml.rawclobber:2477
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_HELPERS_TEXT\"]/text[1]"
 msgstr ""
@@ -3080,7 +3070,7 @@ msgstr ""
 "colonies.Among these supplies, most likely, there is nothing military class,"
 " but each trifle can come in handy ..."
 
-#: src-ru/data/newEvents.xml.rawclobber:2476
+#: src-ru/data/newEvents.xml.rawclobber:2478
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_HELPERS_TEXT\"]/text[2]"
 msgstr ""
@@ -3088,7 +3078,7 @@ msgstr ""
 "supply vessel in emergency situations.Local civilians, apparently, need "
 "help, and the rebels provide her."
 
-#: src-ru/data/newEvents.xml.rawclobber:2477
+#: src-ru/data/newEvents.xml.rawclobber:2479
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_HELPERS_TEXT\"]/text[3]"
 msgstr ""
@@ -3096,7 +3086,7 @@ msgstr ""
 " stations.These civilians most likely did not receive food for several "
 "months due to the war and are in a desperate position."
 
-#: src-ru/data/newEvents.xml.rawclobber:2478
+#: src-ru/data/newEvents.xml.rawclobber:2480
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_HELPERS_TEXT\"]/text[4]"
 msgstr ""
@@ -3104,7 +3094,7 @@ msgstr ""
 "neighboring planet.It seems that they are currently getting supplies.It can "
 "be useful."
 
-#: src-ru/data/newEvents.xml.rawclobber:2479
+#: src-ru/data/newEvents.xml.rawclobber:2481
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_HELPERS_TEXT\"]/text[5]"
 msgstr ""
@@ -3113,55 +3103,55 @@ msgstr ""
 "this with understanding and distribute those small deliveries that they "
 "managed to save."
 
-#: src-ru/data/newEvents.xml.rawclobber:2483
+#: src-ru/data/newEvents.xml.rawclobber:2485
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"REBEL_HELPERS_SHIP\"]/destroyed/text"
 msgstr ""
 "Having destroyed the ship of the rebels, you waste time to collect a little "
 "scrap.And they have already made a civil supply earlier."
 
-#: src-ru/data/newEvents.xml.rawclobber:2486
+#: src-ru/data/newEvents.xml.rawclobber:2488
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"REBEL_HELPERS_SHIP\"]/destroyed/choice[1]/text"
 msgstr "Steal civil supplies."
 
-#: src-ru/data/newEvents.xml.rawclobber:2490
+#: src-ru/data/newEvents.xml.rawclobber:2492
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"REBEL_HELPERS_SHIP\"]/destroyed/choice[2]/text"
 msgstr "Leave the civilians alone."
 
-#: src-ru/data/newEvents.xml.rawclobber:2495
+#: src-ru/data/newEvents.xml.rawclobber:2497
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"REBEL_HELPERS_SHIP\"]/deadCrew/text"
 msgstr ""
 "The crew of the rebels is dead, and you remove equipment from their ship.And"
 " they have already made a civil supply earlier."
 
-#: src-ru/data/newEvents.xml.rawclobber:2498
+#: src-ru/data/newEvents.xml.rawclobber:2500
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"REBEL_HELPERS_SHIP\"]/deadCrew/choice[1]/text"
 msgstr "Steal civil supplies."
 
-#: src-ru/data/newEvents.xml.rawclobber:2502
+#: src-ru/data/newEvents.xml.rawclobber:2504
 msgid ""
 "data/newEvents.xml.rawclobber$//ship[@name=\"REBEL_HELPERS_SHIP\"]/deadCrew/choice[2]/text"
 msgstr "Leave the civilians alone."
 
-#: src-ru/data/newEvents.xml.rawclobber:2513
+#: src-ru/data/newEvents.xml.rawclobber:2515
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_HELPER_NO_SUPPLIES_TEXT\"]/text[1]"
 msgstr ""
 "You are getting ready to leave.One of the civilian leaders addresses you: "
 "“These rebels were our only source of deliveries.You condemned us all. ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:2514
+#: src-ru/data/newEvents.xml.rawclobber:2516
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_HELPER_NO_SUPPLIES_TEXT\"]/text[2]"
 msgstr ""
 "You leave civilians with supplies, although without the rebels who worked "
 "with deliveries, they are unlikely to live a long time."
 
-#: src-ru/data/newEvents.xml.rawclobber:2515
+#: src-ru/data/newEvents.xml.rawclobber:2517
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_HELPER_NO_SUPPLIES_TEXT\"]/text[3]"
 msgstr ""
@@ -3169,7 +3159,7 @@ msgstr ""
 "civilians on the edge of the abyss.Well, for you, a few more dead rebels are"
 " more than the lives of thousands of colonists."
 
-#: src-ru/data/newEvents.xml.rawclobber:2516
+#: src-ru/data/newEvents.xml.rawclobber:2518
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"REBEL_HELPER_NO_SUPPLIES_TEXT\"]/text[4]"
 msgstr ""
@@ -3177,22 +3167,22 @@ msgstr ""
 " he just helped the rebels because they took care of us.Without it, we can’t"
 " find supplies, and we will most likely be forgotten and die here ... ”"
 
-#: src-ru/data/newEvents.xml.rawclobber:2523
+#: src-ru/data/newEvents.xml.rawclobber:2525
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REBEL_HELPERS\"]/choice[1]/text"
 msgstr "Attack the rebels."
 
-#: src-ru/data/newEvents.xml.rawclobber:2529
+#: src-ru/data/newEvents.xml.rawclobber:2531
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REBEL_HELPERS\"]/choice[2]/text"
 msgstr "Choose the moment and steal supplies from civilians."
 
-#: src-ru/data/newEvents.xml.rawclobber:2533
+#: src-ru/data/newEvents.xml.rawclobber:2535
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"REBEL_HELPERS\"]/choice[3]/text"
 msgstr "Leave them alone."
 
-#: src-ru/data/newEvents.xml.rawclobber:2540
+#: src-ru/data/newEvents.xml.rawclobber:2542
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_HELPERS_SUPPLIES\"]/event[1]/text"
 msgstr ""
@@ -3200,7 +3190,7 @@ msgstr ""
 "designed for automated resource production, but you can use it.Before flying"
 " away, you get a message: “That's why the rebels always help!”"
 
-#: src-ru/data/newEvents.xml.rawclobber:2544
+#: src-ru/data/newEvents.xml.rawclobber:2546
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_HELPERS_SUPPLIES\"]/event[2]/text"
 msgstr ""
@@ -3208,21 +3198,21 @@ msgstr ""
 "jumping, you open the containers and find nothing but vaccinations from the "
 "local plague."
 
-#: src-ru/data/newEvents.xml.rawclobber:2548
+#: src-ru/data/newEvents.xml.rawclobber:2550
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_HELPERS_SUPPLIES\"]/event[3]/text"
 msgstr ""
 "You order the colonists to teleport supplies to your ship.This turns out to "
 "be no more than ordinary building materials.Well, scrap is scrap."
 
-#: src-ru/data/newEvents.xml.rawclobber:2552
+#: src-ru/data/newEvents.xml.rawclobber:2554
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"REBEL_HELPERS_SUPPLIES\"]/event[4]/text"
 msgstr ""
 "Colonists readily give their supplies.But as soon as you jump, the explosion"
 " damages your ship.The burden was a mine-trap!"
 
-#: src-ru/data/newEvents.xml.rawclobber:2560
+#: src-ru/data/newEvents.xml.rawclobber:2562
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"ROGUE_REBEL_TEXT\"]/text[1]"
 msgstr ""
@@ -3230,7 +3220,7 @@ msgstr ""
 " colony turns to you: “We have a ship of rebels here, bothering our "
 "system.Do you have time to find it? \""
 
-#: src-ru/data/newEvents.xml.rawclobber:2561
+#: src-ru/data/newEvents.xml.rawclobber:2563
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"ROGUE_REBEL_TEXT\"]/text[2]"
 msgstr ""
@@ -3238,7 +3228,7 @@ msgstr ""
 " ship of the rebels terrorizes local citizens in this system, please find "
 "and destroy it.\""
 
-#: src-ru/data/newEvents.xml.rawclobber:2562
+#: src-ru/data/newEvents.xml.rawclobber:2564
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"ROGUE_REBEL_TEXT\"]/text[3]"
 msgstr ""
@@ -3246,7 +3236,7 @@ msgstr ""
 "planet.On the surface you find ruins of the recently destroyed colony of the"
 " Federation.A ship of rebels must be operating in this area ..."
 
-#: src-ru/data/newEvents.xml.rawclobber:2563
+#: src-ru/data/newEvents.xml.rawclobber:2565
 msgid ""
 "data/newEvents.xml.rawclobber$//textList[@name=\"ROGUE_REBEL_TEXT\"]/text[4]"
 msgstr ""
@@ -3256,35 +3246,35 @@ msgstr ""
 "please send help!\"The rebels responsible for this, most likely, are still "
 "nearby."
 
-#: src-ru/data/newEvents.xml.rawclobber:2569
+#: src-ru/data/newEvents.xml.rawclobber:2571
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROGUE_REBEL\"]/choice[1]/text"
 msgstr "Search the ship of the rebels."
 
-#: src-ru/data/newEvents.xml.rawclobber:2573
+#: src-ru/data/newEvents.xml.rawclobber:2575
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROGUE_REBEL\"]/choice[2]/text"
 msgstr "There is no time to look, prepare for a jump."
 
-#: src-ru/data/newEvents.xml.rawclobber:2577
+#: src-ru/data/newEvents.xml.rawclobber:2579
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROGUE_REBEL\"]/choice[@req=\"sensors\""
 " and @lvl=\"2\"]/text"
 msgstr "(Improved sensors) scan the region."
 
-#: src-ru/data/newEvents.xml.rawclobber:2579
+#: src-ru/data/newEvents.xml.rawclobber:2581
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROGUE_REBEL\"]/choice[@req=\"sensors\""
 " and @lvl=\"2\"]/event/text"
 msgstr "You quickly find the ship of the rebels and prepare for interception."
 
-#: src-ru/data/newEvents.xml.rawclobber:2584
+#: src-ru/data/newEvents.xml.rawclobber:2586
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROGUE_REBEL\"]/choice[@req=\"sensors\""
 " and @lvl=\"3\"]/text"
 msgstr "(Advanced sensors) determine the location of the rebels."
 
-#: src-ru/data/newEvents.xml.rawclobber:2586
+#: src-ru/data/newEvents.xml.rawclobber:2588
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"ROGUE_REBEL\"]/choice[@req=\"sensors\""
 " and @lvl=\"3\"]/event/text"
@@ -3292,28 +3282,28 @@ msgstr ""
 "You found a ship of rebels hiding behind a neighboring asteroid.You can "
 "shoot their engines before they notice you."
 
-#: src-ru/data/newEvents.xml.rawclobber:2594
+#: src-ru/data/newEvents.xml.rawclobber:2596
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROGUE_REBEL_SEARCH\"]/event[1]/text"
 msgstr ""
 "You spent some time search for some time, but your scanners cannot find any "
 "traces of the ship of the rebels.You are getting ready to move on."
 
-#: src-ru/data/newEvents.xml.rawclobber:2597
+#: src-ru/data/newEvents.xml.rawclobber:2599
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROGUE_REBEL_SEARCH\"]/event[2]/text"
 msgstr ""
 "After a short search, you find a ship of rebels.Let's hope that it is just "
 "as easy to win as to find."
 
-#: src-ru/data/newEvents.xml.rawclobber:2601
+#: src-ru/data/newEvents.xml.rawclobber:2603
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROGUE_REBEL_SEARCH\"]/event[3]/text"
 msgstr ""
 "You quickly tracked the ship of the rebels.Let's hope that it is just as "
 "easy to win as to find."
 
-#: src-ru/data/newEvents.xml.rawclobber:2605
+#: src-ru/data/newEvents.xml.rawclobber:2607
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"ROGUE_REBEL_SEARCH\"]/event[4]/text"
 msgstr ""

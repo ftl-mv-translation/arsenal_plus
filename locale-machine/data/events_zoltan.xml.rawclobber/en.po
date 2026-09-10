@@ -32,9 +32,6 @@ msgstr ""
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"START_BEACON_ZOLTAN\"]/text[4]"
 msgstr ""
-"Here, on the territory of the Zoltans, you are far from the home space of "
-"the federation, and it is unclear whether the authorities will be favorable "
-"to you.However, you must move on."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:173
 msgid ""
@@ -135,9 +132,6 @@ msgstr ""
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"NOTHING_ZOLTAN\"]/text[2]"
 msgstr ""
-"You must admit - the territory of the Zoltans are actually a beautiful and "
-"peaceful place.However, your main priority is the reload of FTL and the "
-"completion of the mission, and not the inspection of the sights."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:204
 msgid ""
@@ -6230,8 +6224,6 @@ msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"8\"]/event/text"
 msgstr ""
-"The Zoltonians say your shields cannot be improved.However, they spend you "
-"in a small equipment store at the station."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4613
 msgid ""
@@ -9548,9 +9540,6 @@ msgstr "While you dealt with the drone, the smugglers fled ..."
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_VS_AUTOSHIP_R1\"]/event[3]/text"
 msgstr ""
-"While you dealt with the drone, the smugglers tried to make a FTL "
-"jump.However, their engines burned down, and now they are engaged in "
-"repair.Seeing you, they give you valuable equipment in gratitude."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6965
 msgid ""
@@ -12509,11 +12498,6 @@ msgstr "Henry Kwon"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_ITB_VEK_LAND\"]/event[4]/text"
 msgstr ""
-"You land next to the city for a tactically important position and actively "
-"destroy the giant beetles one after another, until they retreat into the "
-"cracks underground.However, while your ship was on the surface, one of these"
-" creatures attacked it and inflicted several blows!Grateful residents give "
-"you what can be useful in flight."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9216
 msgid ""

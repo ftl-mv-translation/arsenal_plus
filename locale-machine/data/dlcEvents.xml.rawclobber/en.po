@@ -61,10 +61,6 @@ msgstr "Hooray!"
 #: src-ru/data/dlcEvents.xml.rawclobber:75
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/text"
 msgstr ""
-"You accidentally come across a large sales station.However, it was worth you"
-" to get closer, as everyone in the vicinity receives the same broadcast: “Do"
-" not contact the adherents of the Federation.Anyone who has entered into "
-"contact with them will be punished. ”"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:77
 msgid ""

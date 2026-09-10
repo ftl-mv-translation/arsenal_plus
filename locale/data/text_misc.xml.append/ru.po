@@ -1109,7 +1109,7 @@ msgstr "Собрано лома"
 
 #: src-ru/data/text_misc.xml.append:338
 msgid "data/text_misc.xml.append$//text[@name=\"crew_stat\"]"
-msgstr "Нанято экипажа"
+msgstr "Получено экипажа"
 
 #: src-ru/data/text_misc.xml.append:339
 msgid "data/text_misc.xml.append$//text[@name=\"most_defeated_stat\"]"
@@ -1125,7 +1125,7 @@ msgstr "Максимум собрано лома"
 
 #: src-ru/data/text_misc.xml.append:342
 msgid "data/text_misc.xml.append$//text[@name=\"most_crew_stat\"]"
-msgstr "Максимум нанято экипажа"
+msgstr "Максимум получено экипажа"
 
 #: src-ru/data/text_misc.xml.append:343
 msgid "data/text_misc.xml.append$//text[@name=\"total_defeated_stat\"]"
@@ -1141,7 +1141,7 @@ msgstr "Всего собрано лома"
 
 #: src-ru/data/text_misc.xml.append:346
 msgid "data/text_misc.xml.append$//text[@name=\"total_crew_stat\"]"
-msgstr "Всего нанято экипажа"
+msgstr "Всего получено экипажа"
 
 #: src-ru/data/text_misc.xml.append:348
 msgid "data/text_misc.xml.append$//text[@name=\"crew_evasions\"]"
@@ -3009,7 +3009,7 @@ msgstr "Интерьер корабля врага, щиты+"
 
 #: src-ru/data/text_misc.xml.append:934
 msgid "data/text_misc.xml.append$//text[@name=\"sensor_3\"]"
-msgstr "|, }, уворот, О2 и орудия врага"
+msgstr "|, }, уворот, О2, взлом и орудия"
 
 #: src-ru/data/text_misc.xml.append:935
 msgid "data/text_misc.xml.append$//text[@name=\"sensor_4\"]"
@@ -4886,7 +4886,7 @@ msgstr "И последний взрыв стал для вас роковым, 
 #: src-ru/data/text_misc.xml.append:1553
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_fedbase\"]"
 msgstr ""
-"Корабль повстанцев уничтожил базу Федерации. Всё кончено, они выиграли."
+"Флагман повстанцев уничтожил базу Федерации. Всё кончено, они выиграли."
 
 #: src-ru/data/text_misc.xml.append:1554
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_tutorial\"]"
@@ -6489,7 +6489,8 @@ msgstr "Орудия не меняются во время прыжков или
 
 #: src-ru/data/text_misc.xml.append:1983
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_on\"]"
-msgstr "Все противники будут иметь повышенную точность."
+msgstr ""
+"Все противники будут иметь повышенную точность (Модификатор точности: +50)."
 
 #: src-ru/data/text_misc.xml.append:1984
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_off\"]"
@@ -6574,7 +6575,8 @@ msgstr "Артиллерия будет стрелять в ручном реж�
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_tip\"]"
 msgstr ""
 "Кнопка для заброса удочки, подсекания и вытаскивания рыбы (Горячая клавиша: "
-"RIGHT CTRL)."
+"RIGHT CTRL).\\n\\nЧтобы поймать рыбу, удерживайте её в ограниченной области,"
+" пока шкала слева не заполнится."
 
 #: src-ru/data/text_misc.xml.append:2004
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_aug_main_name\"]"
@@ -6809,7 +6811,7 @@ msgstr "Награды деталями дронов не снижены."
 #: src-ru/data/text_misc.xml.append:2062
 msgid "data/text_misc.xml.append$//text[@name=\"lua_ai_ship\"]"
 msgstr ""
-"Этот корабль имеет внутренний искуственный интеллект. Если весь экипаж "
+"Этот корабль имеет внутренний искусственный интеллект. Если весь экипаж "
 "погибнет, это не завершит полёт."
 
 #: src-ru/data/text_misc.xml.append:2063
@@ -6871,7 +6873,7 @@ msgstr "Внимание! Смените в настройках язык на \
 
 #: src-ru/data/text_misc.xml.append:2076
 msgid "data/text_misc.xml.append$//text[@name=\"lua_onoff_glif_panel\"]"
-msgstr "Вкл./выкл. панель управления Глифганом."
+msgstr "Вкл./выкл. панель управления глифганом."
 
 #: src-ru/data/text_misc.xml.append:2077
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_glif_panel\"]"
@@ -7022,12 +7024,12 @@ msgstr "Взламывает систему на 5 секунд"
 
 #: src-ru/data/text_misc.xml.append:2142
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_on\"]"
-msgstr "Уволенный экипаж будет выброшен в космос."
+msgstr "Уволенный экипаж будет выброшен в космос"
 
 #: src-ru/data/text_misc.xml.append:2143
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_off\"]"
 msgstr ""
-"Уволенный экипаж отправится на мини-челноке к ближайшей планете или станции."
+"Уволенный экипаж отправится на мини-челноке к ближайшей планете или станции"
 
 #: src-ru/data/text_misc.xml.append:2144
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_cloak_blocked\"]"

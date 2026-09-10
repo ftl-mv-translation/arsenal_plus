@@ -5,14 +5,14 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src-ru/data/events_pirate.xml.rawclobber:157
+#: src-ru/data/events_pirate.xml.rawclobber:158
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[1]"
 msgstr ""
 "A few years ago, this region was a profitable place for trading.Now it is "
 "full of bandits and pirates.Caution is worth it."
 
-#: src-ru/data/events_pirate.xml.rawclobber:158
+#: src-ru/data/events_pirate.xml.rawclobber:159
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[2]"
 msgstr ""
@@ -20,7 +20,7 @@ msgstr ""
 "uprising.Even in peacetime, he was inhabited by pirates, but now the center "
 "for managing numerous pirate fleets is based there."
 
-#: src-ru/data/events_pirate.xml.rawclobber:159
+#: src-ru/data/events_pirate.xml.rawclobber:160
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[3]"
 msgstr ""
@@ -28,7 +28,7 @@ msgstr ""
 "pirates for a long time.Some merchants are still trying to trade with the "
 "remaining settlements, but they risk very much."
 
-#: src-ru/data/events_pirate.xml.rawclobber:160
+#: src-ru/data/events_pirate.xml.rawclobber:161
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[4]"
 msgstr ""
@@ -36,7 +36,7 @@ msgstr ""
 " constantly suffer from pirate raids.This is a dangerous sector, so be "
 "careful."
 
-#: src-ru/data/events_pirate.xml.rawclobber:161
+#: src-ru/data/events_pirate.xml.rawclobber:162
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[5]"
 msgstr ""
@@ -44,7 +44,7 @@ msgstr ""
 "was undergoing a cruel raid and is held in the hands of the pirates to this "
 "day.Be vigilant."
 
-#: src-ru/data/events_pirate.xml.rawclobber:162
+#: src-ru/data/events_pirate.xml.rawclobber:163
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[6]"
 msgstr ""
@@ -52,7 +52,7 @@ msgstr ""
 "team wants to believe that if you behave like a pirate, they will take you "
 "for your own and will not interfere with the flight."
 
-#: src-ru/data/events_pirate.xml.rawclobber:163
+#: src-ru/data/events_pirate.xml.rawclobber:164
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[7]"
 msgstr ""
@@ -60,7 +60,7 @@ msgstr ""
 "now the merchants prefer to bypass it due to a sharp increase in the number "
 "of pirates ..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:164
+#: src-ru/data/events_pirate.xml.rawclobber:165
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[8]"
 msgstr ""
@@ -68,14 +68,14 @@ msgstr ""
 "guessed, it is probably worth reminding these savages what the federation "
 "is."
 
-#: src-ru/data/events_pirate.xml.rawclobber:165
+#: src-ru/data/events_pirate.xml.rawclobber:166
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[9]"
 msgstr ""
 "This sector was restless before the civil war, but now it is simply teeming "
 "with pirates of all stripes.It is worth preparing for the worst."
 
-#: src-ru/data/events_pirate.xml.rawclobber:166
+#: src-ru/data/events_pirate.xml.rawclobber:167
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[10]"
 msgstr ""
@@ -83,7 +83,7 @@ msgstr ""
 "looters.Check the shields and guns in case the oncoming ships "
 "\"accidentally\" are interested in you."
 
-#: src-ru/data/events_pirate.xml.rawclobber:167
+#: src-ru/data/events_pirate.xml.rawclobber:168
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[11]"
 msgstr ""
@@ -91,7 +91,7 @@ msgstr ""
 "peaceful trading ship, but there will be a lot of people who want to make "
 "out your own for spare parts."
 
-#: src-ru/data/events_pirate.xml.rawclobber:168
+#: src-ru/data/events_pirate.xml.rawclobber:169
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[12]"
 msgstr ""
@@ -99,7 +99,7 @@ msgstr ""
 "Galaxy. Although there is some cohesion among pirate factions, they "
 "generally operate as lone wolves trying to profit from the turmoil."
 
-#: src-ru/data/events_pirate.xml.rawclobber:176
+#: src-ru/data/events_pirate.xml.rawclobber:177
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[1]"
 msgstr ""
@@ -109,7 +109,7 @@ msgstr ""
 " nervous breakdown ... You are contacting the merchants, interested in their"
 " goods."
 
-#: src-ru/data/events_pirate.xml.rawclobber:177
+#: src-ru/data/events_pirate.xml.rawclobber:178
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[2]"
 msgstr ""
@@ -117,7 +117,7 @@ msgstr ""
 "a trading warehouse and left a few well -armed ships here to patrol this "
 "place.It seems to be a fairly safe place to repair."
 
-#: src-ru/data/events_pirate.xml.rawclobber:178
+#: src-ru/data/events_pirate.xml.rawclobber:179
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[3]"
 msgstr ""
@@ -125,7 +125,7 @@ msgstr ""
 "depot and shipyard!We are glad to everyone, but try to throw something away,"
 " and our 152 automatic satellite turrets will make a sieve from your ship! ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:179
+#: src-ru/data/events_pirate.xml.rawclobber:180
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[4]"
 msgstr ""
@@ -133,12 +133,12 @@ msgstr ""
 "orbit.You are not sure that you can trust them, but, as they say, the poor "
 "do not have to choose."
 
-#: src-ru/data/events_pirate.xml.rawclobber:191
+#: src-ru/data/events_pirate.xml.rawclobber:192
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:192
+#: src-ru/data/events_pirate.xml.rawclobber:193
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[2]"
 msgstr ""
@@ -146,7 +146,7 @@ msgstr ""
 "doing a warning shot past their nose, and they answer: “Hey!There is no need"
 " for violence!It was just a comment ... \""
 
-#: src-ru/data/events_pirate.xml.rawclobber:193
+#: src-ru/data/events_pirate.xml.rawclobber:194
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[3]"
 msgstr ""
@@ -154,7 +154,7 @@ msgstr ""
 "structure with a gas station.It seems that they have already cleaned the "
 "looters."
 
-#: src-ru/data/events_pirate.xml.rawclobber:194
+#: src-ru/data/events_pirate.xml.rawclobber:195
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[4]"
 msgstr ""
@@ -162,32 +162,32 @@ msgstr ""
 "sight, sending you a message: “Piracy negatively affects "
 "society.Forbidden\".You assure them in good intentions, and they miss you."
 
-#: src-ru/data/events_pirate.xml.rawclobber:211
+#: src-ru/data/events_pirate.xml.rawclobber:212
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[1]"
 msgstr ""
 "As soon as you enter the system, a pirate ship goes to you at high speed.He "
 "does not answer the calls.Get ready for battle."
 
-#: src-ru/data/events_pirate.xml.rawclobber:212
+#: src-ru/data/events_pirate.xml.rawclobber:213
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[2]"
 msgstr ""
 "Immediately upon arrival in the system, a small cruiser welcomes you: “What "
 "a good luck that we stumbled upon each other.Nothing personal, but you have "
 "the information that we need! \""
 
-#: src-ru/data/events_pirate.xml.rawclobber:214
+#: src-ru/data/events_pirate.xml.rawclobber:215
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[3]"
 msgstr ""
 "A lone ship at the lighthouse tells you: “Finally!After the months of "
 "waiting, someone fell into our trap! ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:215
+#: src-ru/data/events_pirate.xml.rawclobber:216
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[4]"
 msgstr ""
 "You barely have time to finish the jump, the ship’s security systems warn "
 "that an enemy with weapons is approaching you."
 
-#: src-ru/data/events_pirate.xml.rawclobber:217
+#: src-ru/data/events_pirate.xml.rawclobber:218
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[5]"
 msgstr ""
 "You encountered a pirate ship. Their captain sneeringly remarks: \"What kind"
@@ -195,7 +195,7 @@ msgstr ""
 "fragment of a bucket than a ship!\" Time to see who is really flying a "
 "bucket!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:222
+#: src-ru/data/events_pirate.xml.rawclobber:223
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_NO_ESCAPE\"]/text"
 msgstr ""
 "Upon arrival on your screen, warning signals light up.The pirate, which, "
@@ -203,41 +203,41 @@ msgstr ""
 "and now he is trying to cut down your engine.The team how can it support him"
 " in working condition while you deal with this \"hacker\" ..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:231
+#: src-ru/data/events_pirate.xml.rawclobber:232
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_NO_ESCAPE\"]/choice[@req=\"hacking\"]/text"
 msgstr "(Cracker) confront hacking."
 
-#: src-ru/data/events_pirate.xml.rawclobber:233
+#: src-ru/data/events_pirate.xml.rawclobber:234
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_NO_ESCAPE\"]/choice[@req=\"hacking\"]/event/text"
 msgstr ""
 "Your hacking system automatically counteracts a digital attack, and you are "
 "moving on an attack on the ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:254
+#: src-ru/data/events_pirate.xml.rawclobber:255
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[1]/text"
 msgstr "Help civilian."
 
-#: src-ru/data/events_pirate.xml.rawclobber:256
+#: src-ru/data/events_pirate.xml.rawclobber:257
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[1]/event/text"
 msgstr "You turn on the weapon and rush on the attack on the pirate ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:262
+#: src-ru/data/events_pirate.xml.rawclobber:263
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[2]/text"
 msgstr "Stay away from them."
 
-#: src-ru/data/events_pirate.xml.rawclobber:264
+#: src-ru/data/events_pirate.xml.rawclobber:265
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[2]/event/text"
 msgstr ""
 "The battle leads them out of the radius of the action of your scanners.After"
 " some time, the distress signal disappears."
 
-#: src-ru/data/events_pirate.xml.rawclobber:269
+#: src-ru/data/events_pirate.xml.rawclobber:270
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[1]"
 msgstr ""
@@ -245,95 +245,95 @@ msgstr ""
 "civilians.The victim is desperately sending the transmission at the "
 "frequency of the distress signal."
 
-#: src-ru/data/events_pirate.xml.rawclobber:270
+#: src-ru/data/events_pirate.xml.rawclobber:271
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[2]"
 msgstr ""
 "Scanners show that a fight is taking place nearby.It seems that someone is "
 "under the attack of space pirates."
 
-#: src-ru/data/events_pirate.xml.rawclobber:271
+#: src-ru/data/events_pirate.xml.rawclobber:272
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[3]"
 msgstr ""
 "You cut out two ships, one haunts the other ... Scanners show that the pi "
 "-pirate is a pirate."
 
-#: src-ru/data/events_pirate.xml.rawclobber:272
+#: src-ru/data/events_pirate.xml.rawclobber:273
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[4]"
 msgstr ""
 "In this area there are only two ships, and it seems that they are "
 "fighting.One of them has pirate signs."
 
-#: src-ru/data/events_pirate.xml.rawclobber:273
+#: src-ru/data/events_pirate.xml.rawclobber:274
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[5]"
 msgstr ""
 "Only you arrive at the next radio beacon, as a small shuttle welcomes you "
 "immediately: “Help us!Pirates attack us! \""
 
-#: src-ru/data/events_pirate.xml.rawclobber:274
+#: src-ru/data/events_pirate.xml.rawclobber:275
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[6]"
 msgstr ""
 "You get out of the jump and see laser charges flying on the other side of "
 "the lighthouse.It seems that the pirates attacked someone."
 
-#: src-ru/data/events_pirate.xml.rawclobber:278
+#: src-ru/data/events_pirate.xml.rawclobber:279
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/text"
 msgstr ""
 "The ship that you saved was badly damaged in battle.Most of his team members"
 " agreed to bring them to the nearest station, and one asked to your team."
 
-#: src-ru/data/events_pirate.xml.rawclobber:280
+#: src-ru/data/events_pirate.xml.rawclobber:281
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[1]/text"
 msgstr "Welcome on board!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:282
+#: src-ru/data/events_pirate.xml.rawclobber:283
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[1]/event/text"
 msgstr "The survivor is accepted into the team."
 
-#: src-ru/data/events_pirate.xml.rawclobber:287
+#: src-ru/data/events_pirate.xml.rawclobber:288
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[2]/text"
 msgstr "Refuse and ask them for scrap instead."
 
-#: src-ru/data/events_pirate.xml.rawclobber:289
+#: src-ru/data/events_pirate.xml.rawclobber:290
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[2]/event/text"
 msgstr "They give you everything they had."
 
-#: src-ru/data/events_pirate.xml.rawclobber:295
+#: src-ru/data/events_pirate.xml.rawclobber:296
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[2]/text"
 msgstr ""
 "Apparently, the ship that was attacked was a scientific vessel.They thank "
 "you for salvation and offer a small reward."
 
-#: src-ru/data/events_pirate.xml.rawclobber:299
+#: src-ru/data/events_pirate.xml.rawclobber:300
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[3]/text"
 msgstr ""
 "It seems that the crew did not survive the attack.You take what you can from"
 " the remains of the ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:303
+#: src-ru/data/events_pirate.xml.rawclobber:304
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[4]/text"
 msgstr ""
 "They answer: “It is good that you arrived, otherwise we would be dead.We are"
 " shipbuilders, and we would like to help you how you helped us. ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:305
+#: src-ru/data/events_pirate.xml.rawclobber:306
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[4]/choice/text"
 msgstr "The captain suggests installing some equipment on your ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:312
+#: src-ru/data/events_pirate.xml.rawclobber:313
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[5]/text"
 msgstr ""
@@ -341,65 +341,65 @@ msgstr ""
 "think that my team can catch part of the damage to your corps as gratitude. "
 "”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:316
+#: src-ru/data/events_pirate.xml.rawclobber:317
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[6]/text"
 msgstr "While you fought, the civilian ship prudently preferred to wash away."
 
-#: src-ru/data/events_pirate.xml.rawclobber:321
+#: src-ru/data/events_pirate.xml.rawclobber:322
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/text"
 msgstr ""
 "The ship that you saved was badly damaged in battle.Most of his team members"
 " agreed to bring them to the nearest station, and one asked to your team."
 
-#: src-ru/data/events_pirate.xml.rawclobber:323
+#: src-ru/data/events_pirate.xml.rawclobber:324
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[1]/text"
 msgstr "Welcome on board!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:325
+#: src-ru/data/events_pirate.xml.rawclobber:326
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[1]/event/text"
 msgstr "The survivor is accepted into the team."
 
-#: src-ru/data/events_pirate.xml.rawclobber:330
+#: src-ru/data/events_pirate.xml.rawclobber:331
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[2]/text"
 msgstr "Refuse and ask them for scrap instead."
 
-#: src-ru/data/events_pirate.xml.rawclobber:332
+#: src-ru/data/events_pirate.xml.rawclobber:333
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[2]/event/text"
 msgstr "They give you everything they had."
 
-#: src-ru/data/events_pirate.xml.rawclobber:338
+#: src-ru/data/events_pirate.xml.rawclobber:339
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[2]/text"
 msgstr ""
 "Apparently, the ship that was attacked was a scientific vessel.They thank "
 "you for salvation and offer a small reward."
 
-#: src-ru/data/events_pirate.xml.rawclobber:342
+#: src-ru/data/events_pirate.xml.rawclobber:343
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[3]/text"
 msgstr ""
 "It seems that the crew did not survive the attack.You take what you can from"
 " the remains of the ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:346
+#: src-ru/data/events_pirate.xml.rawclobber:347
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[4]/text"
 msgstr ""
 "They answer: “It is good that you arrived, otherwise we would be dead.We are"
 " shipbuilders, and we would like to help you how you helped us. ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:348
+#: src-ru/data/events_pirate.xml.rawclobber:349
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[4]/choice/text"
 msgstr "The captain suggests installing some equipment on your ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:355
+#: src-ru/data/events_pirate.xml.rawclobber:356
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[5]/text"
 msgstr ""
@@ -407,28 +407,28 @@ msgstr ""
 "think that my team can catch part of the damage to your corps as gratitude. "
 "”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:365
+#: src-ru/data/events_pirate.xml.rawclobber:366
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[1]/text"
 msgstr "Take a bribe."
 
-#: src-ru/data/events_pirate.xml.rawclobber:367
+#: src-ru/data/events_pirate.xml.rawclobber:368
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[1]/event/text"
 msgstr "“The right choice, son.We both work on this. ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:372
+#: src-ru/data/events_pirate.xml.rawclobber:373
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[2]/text"
 msgstr "Show heroism by attacking the pirates."
 
-#: src-ru/data/events_pirate.xml.rawclobber:374
+#: src-ru/data/events_pirate.xml.rawclobber:375
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[2]/event/text"
 msgstr ""
 "The pirate ship stopped the persecution and directed the guns to your ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:382
+#: src-ru/data/events_pirate.xml.rawclobber:383
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/text"
 msgstr ""
@@ -436,60 +436,60 @@ msgstr ""
 "reconnaissance of the rebels!He is very battered and is not able to provide "
 "significant resistance."
 
-#: src-ru/data/events_pirate.xml.rawclobber:384
+#: src-ru/data/events_pirate.xml.rawclobber:385
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[1]/text"
 msgstr "Destroy the ship and collect trophies."
 
-#: src-ru/data/events_pirate.xml.rawclobber:386
+#: src-ru/data/events_pirate.xml.rawclobber:387
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[1]/event/text"
 msgstr ""
 "You remove everything that can come in handy from the ship, and leave the "
 "command to hope for help."
 
-#: src-ru/data/events_pirate.xml.rawclobber:391
+#: src-ru/data/events_pirate.xml.rawclobber:392
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[2]/text"
 msgstr ""
 "Use the influence obtained during the salvation of their lives to convince "
 "them to detain the fleet of the pursuers."
 
-#: src-ru/data/events_pirate.xml.rawclobber:393
+#: src-ru/data/events_pirate.xml.rawclobber:394
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[2]/event/text"
 msgstr ""
 "We must hope that this will give you extra time to get to the next sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:399
+#: src-ru/data/events_pirate.xml.rawclobber:400
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[2]/text"
 msgstr ""
 "You are late.Damage to the case deprived the oxygen command during the fight"
 " against pirates.You collect what you can."
 
-#: src-ru/data/events_pirate.xml.rawclobber:403
+#: src-ru/data/events_pirate.xml.rawclobber:404
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[3]/text"
 msgstr ""
 "The victim of the pirates flies away from you before you manage to get in "
 "touch with her."
 
-#: src-ru/data/events_pirate.xml.rawclobber:406
+#: src-ru/data/events_pirate.xml.rawclobber:407
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[4]/text"
 msgstr ""
 "“Thank you for your help!I am a merchant.Usually I work only with the "
 "rebels, but, given the circumstances, I will make an exception. ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:413
+#: src-ru/data/events_pirate.xml.rawclobber:414
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[5]/text"
 msgstr ""
 "“Glory to heaven, you were there!We cannot offer a lot, but our engineer, "
 "most likely, will be able to patch you after this terrible battle. ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:418
+#: src-ru/data/events_pirate.xml.rawclobber:419
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_BRIBER\"]/text[1]"
 msgstr ""
@@ -497,7 +497,7 @@ msgstr ""
 " from the pirate: \"Do not fit into this battle, and you will not regret "
 "it.\""
 
-#: src-ru/data/events_pirate.xml.rawclobber:419
+#: src-ru/data/events_pirate.xml.rawclobber:420
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_BRIBER\"]/text[2]"
 msgstr ""
@@ -505,7 +505,7 @@ msgstr ""
 "victim broadcasts a distress signal, but the pirates interrupt it and offer "
 "you to share the prey if you do not intervene."
 
-#: src-ru/data/events_pirate.xml.rawclobber:420
+#: src-ru/data/events_pirate.xml.rawclobber:421
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_BRIBER\"]/text[3]"
 msgstr ""
@@ -514,67 +514,67 @@ msgstr ""
 "unknown ship.Pirates inform you: “Damn, we did not wait for the company.Do "
 "not interfere and can earn. ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:428
+#: src-ru/data/events_pirate.xml.rawclobber:429
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/text"
 msgstr ""
 "After the jump is completed, you get a message from the ship nearby: "
 "“Welcome, welcome to our lighthouse!For a small fee, we will allow you to "
 "continue our journey. ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:431
+#: src-ru/data/events_pirate.xml.rawclobber:432
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[1]/text"
 msgstr "Pay the tribute."
 
-#: src-ru/data/events_pirate.xml.rawclobber:433
+#: src-ru/data/events_pirate.xml.rawclobber:434
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[1]/event/text"
 msgstr "\"You made the right decision, friend.\""
 
-#: src-ru/data/events_pirate.xml.rawclobber:441
+#: src-ru/data/events_pirate.xml.rawclobber:442
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[2]/text"
 msgstr "Reject the \"sentence\"."
 
-#: src-ru/data/events_pirate.xml.rawclobber:443
+#: src-ru/data/events_pirate.xml.rawclobber:444
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[2]/event/text"
 msgstr "“Regrettable, regrettable.Now you will regret this decision. ”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:453
+#: src-ru/data/events_pirate.xml.rawclobber:454
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/text"
 msgstr ""
 "A well -armed pirate ship comes up to you.“Tell us one of the members of "
 "your crew, and then the rest will be able to go intact.”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:457
+#: src-ru/data/events_pirate.xml.rawclobber:458
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[1]/text"
 msgstr "Send them someone from your team, having previously armed him."
 
-#: src-ru/data/events_pirate.xml.rawclobber:463
+#: src-ru/data/events_pirate.xml.rawclobber:464
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
 "They suddenly understand that they have a drone, and attack your ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:469
+#: src-ru/data/events_pirate.xml.rawclobber:470
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[3]/text"
 msgstr "Do not take risks and go on a frontal attack."
 
-#: src-ru/data/events_pirate.xml.rawclobber:476
+#: src-ru/data/events_pirate.xml.rawclobber:477
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[@req=\"mantis_crew\"]/text"
 msgstr "(Member of the mantis crew) send them an armed mantis."
 
-#: src-ru/data/events_pirate.xml.rawclobber:480
+#: src-ru/data/events_pirate.xml.rawclobber:481
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[@req=\"engines\"]/text"
 msgstr "(Advanced engines) try to break away from the ship's ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:486
+#: src-ru/data/events_pirate.xml.rawclobber:487
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[1]/text"
 msgstr ""
@@ -582,7 +582,7 @@ msgstr ""
 "before he managed to use it.Having decided not to risk the team anymore, you"
 " leave this lighthouse."
 
-#: src-ru/data/events_pirate.xml.rawclobber:492
+#: src-ru/data/events_pirate.xml.rawclobber:493
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[1]/choice/event/removeCrew/text"
 msgstr ""
@@ -590,7 +590,7 @@ msgstr ""
 "decide to respect the laws of the Federation on simultaneously existing "
 "doubles."
 
-#: src-ru/data/events_pirate.xml.rawclobber:498
+#: src-ru/data/events_pirate.xml.rawclobber:499
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[2]/text"
 msgstr ""
@@ -598,7 +598,7 @@ msgstr ""
 "before he managed to use it.Having decided not to risk the team anymore, you"
 " leave this lighthouse."
 
-#: src-ru/data/events_pirate.xml.rawclobber:504
+#: src-ru/data/events_pirate.xml.rawclobber:505
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[2]/choice/event/removeCrew/text"
 msgstr ""
@@ -606,7 +606,7 @@ msgstr ""
 "decide to respect the laws of the Federation on simultaneously existing "
 "doubles."
 
-#: src-ru/data/events_pirate.xml.rawclobber:510
+#: src-ru/data/events_pirate.xml.rawclobber:511
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[3]/text"
 msgstr ""
@@ -615,7 +615,7 @@ msgstr ""
 "surrender.You release the prisoners of the slaves who were transported by "
 "the pirates, and one of them enters your team."
 
-#: src-ru/data/events_pirate.xml.rawclobber:514
+#: src-ru/data/events_pirate.xml.rawclobber:515
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[4]/text"
 msgstr ""
@@ -623,7 +623,7 @@ msgstr ""
 "he manages to kill their leader, after which the rest of the pirates "
 "surrender.You give the order to pick up everything valuable from their ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:518
+#: src-ru/data/events_pirate.xml.rawclobber:519
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[5]/text"
 msgstr ""
@@ -631,7 +631,7 @@ msgstr ""
 "he manages to kill their leader, after which the rest of the pirates "
 "surrender.You shoot one of the guns from their ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:522
+#: src-ru/data/events_pirate.xml.rawclobber:523
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[6]/text"
 msgstr ""
@@ -639,14 +639,14 @@ msgstr ""
 "sensing something was wrong, carefully inspect it.Having discovered weapons,"
 " they execute it on the spot.Pressed, they attack your ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:530
+#: src-ru/data/events_pirate.xml.rawclobber:531
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[6]/choice/event/removeCrew/text"
 msgstr ""
 "The deceased saboteur is already leaving the shone of the Oseck and is "
 "preparing for the battle with the pirates."
 
-#: src-ru/data/events_pirate.xml.rawclobber:538
+#: src-ru/data/events_pirate.xml.rawclobber:539
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[1]/text"
 msgstr ""
@@ -655,7 +655,7 @@ msgstr ""
 "rest of the pirates surrender.You release the prisoners of the slaves whom "
 "they transported, and one of them enters your team."
 
-#: src-ru/data/events_pirate.xml.rawclobber:542
+#: src-ru/data/events_pirate.xml.rawclobber:543
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[2]/text"
 msgstr ""
@@ -664,7 +664,7 @@ msgstr ""
 "rest of the pirates surrender.You give the order to pick up everything "
 "valuable from their ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:546
+#: src-ru/data/events_pirate.xml.rawclobber:547
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[3]/text"
 msgstr ""
@@ -672,21 +672,21 @@ msgstr ""
 "arranges a real massacre!After the mantis blew the head of the leader, the "
 "rest of the pirates surrender.You shoot one of the guns from their ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:550
+#: src-ru/data/events_pirate.xml.rawclobber:551
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[4]/text"
 msgstr ""
 "The armed mantis kills several pirates and returns back on a stolen "
 "boat.Eveled pirates attack you."
 
-#: src-ru/data/events_pirate.xml.rawclobber:557
+#: src-ru/data/events_pirate.xml.rawclobber:558
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RUN\"]/event[1]/text"
 msgstr ""
 "You give the order: \"Full forward!\"A vain attempt - slave traders quickly "
 "catch up with you and take a position for attack."
 
-#: src-ru/data/events_pirate.xml.rawclobber:562
+#: src-ru/data/events_pirate.xml.rawclobber:563
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RUN\"]/event[2]/text"
 msgstr ""
@@ -694,7 +694,7 @@ msgstr ""
 "them by surprise, but they seem to catch you.Fortunately, you can keep them "
 "at a distance for a long time to have time to charge the FTL drive."
 
-#: src-ru/data/events_pirate.xml.rawclobber:565
+#: src-ru/data/events_pirate.xml.rawclobber:566
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RUN\"]/event[3]/text"
 msgstr ""
@@ -702,40 +702,40 @@ msgstr ""
 "with.In the end, he surrenders and returns to the lighthouse to wait for the"
 " prey easier."
 
-#: src-ru/data/events_pirate.xml.rawclobber:575
+#: src-ru/data/events_pirate.xml.rawclobber:576
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/text"
 msgstr ""
 "You will recognize the ship of a famous slave trader.He welcomes you and "
 "offers you to purchase cheap \"workers\"."
 
-#: src-ru/data/events_pirate.xml.rawclobber:577
+#: src-ru/data/events_pirate.xml.rawclobber:578
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[1]/text"
 msgstr "Buy one of the slaves, free it and accept it in the team."
 
-#: src-ru/data/events_pirate.xml.rawclobber:586
+#: src-ru/data/events_pirate.xml.rawclobber:587
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[2]/text"
 msgstr "Buy this slave."
 
-#: src-ru/data/events_pirate.xml.rawclobber:595
+#: src-ru/data/events_pirate.xml.rawclobber:596
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[3]/text"
 msgstr "Destroy the slave -owning trash!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:601
+#: src-ru/data/events_pirate.xml.rawclobber:602
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[4]/text"
 msgstr "Ignore the slave trader and continue the flight."
 
-#: src-ru/data/events_pirate.xml.rawclobber:605
+#: src-ru/data/events_pirate.xml.rawclobber:606
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 "(Improved teleporter) use a teleporter - try to penetrate the ship and "
 "release slaves."
 
-#: src-ru/data/events_pirate.xml.rawclobber:611
+#: src-ru/data/events_pirate.xml.rawclobber:612
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[1]/text"
 msgstr ""
@@ -743,7 +743,7 @@ msgstr ""
 "teleport back to your ship.One of the prisoners seems to be suitable for "
 "battle, you throw his weapon and prepare for the battle."
 
-#: src-ru/data/events_pirate.xml.rawclobber:616
+#: src-ru/data/events_pirate.xml.rawclobber:617
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[2]/text"
 msgstr ""
@@ -751,7 +751,7 @@ msgstr ""
 "prisoner before the enemy’s team catches and drives them into a corner.You "
 "quickly teleport your team and the captive back to your ship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:621
+#: src-ru/data/events_pirate.xml.rawclobber:622
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[3]/text"
 msgstr ""
@@ -760,32 +760,32 @@ msgstr ""
 "the slave traders discover it.You return the crew back to the ship and "
 "prepare for battle."
 
-#: src-ru/data/events_pirate.xml.rawclobber:638
+#: src-ru/data/events_pirate.xml.rawclobber:639
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SUN\"]/text"
 msgstr ""
 "The lighthouse was installed too close to the star-super-giant class m!The "
 "ship will definitely overheat while you get out of here ... or die.Pirates, "
 "probably forgetting about the dangers of the sun, rush into battle."
 
-#: src-ru/data/events_pirate.xml.rawclobber:649
+#: src-ru/data/events_pirate.xml.rawclobber:650
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_ASTEROID\"]/text"
 msgstr "The pirate ship hid in an asteroid field.He immediately attacks."
 
-#: src-ru/data/events_pirate.xml.rawclobber:652
+#: src-ru/data/events_pirate.xml.rawclobber:653
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_ASTEROID\"]/choice/text"
 msgstr "Turn around and accept the battle."
 
-#: src-ru/data/events_pirate.xml.rawclobber:690
+#: src-ru/data/events_pirate.xml.rawclobber:691
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"BOARDERS_PIRATE\"]/text"
 msgstr "SSSSSSSSSSSSSSSS"
 
-#: src-ru/data/events_pirate.xml.rawclobber:695
+#: src-ru/data/events_pirate.xml.rawclobber:696
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"BOARDERS_SUN\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:706
+#: src-ru/data/events_pirate.xml.rawclobber:707
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"BOARDERS_ASTEROID\"]/text"
 msgstr ""
@@ -793,52 +793,52 @@ msgstr ""
 "report that the pirate fortress aimed at your ship and activated the "
 "teleporter.Get ready for battle!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:716
+#: src-ru/data/events_pirate.xml.rawclobber:717
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/text"
 msgstr ""
 "Not far from the lighthouse you find a destroyed cargo ship.Part of the "
 "surviving cargo hangs in space nearby."
 
-#: src-ru/data/events_pirate.xml.rawclobber:718
+#: src-ru/data/events_pirate.xml.rawclobber:719
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[1]/text"
 msgstr "Raise the load on board."
 
-#: src-ru/data/events_pirate.xml.rawclobber:722
+#: src-ru/data/events_pirate.xml.rawclobber:723
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[2]/text"
 msgstr "Leaving the load alone, it looks suspicious."
 
-#: src-ru/data/events_pirate.xml.rawclobber:724
+#: src-ru/data/events_pirate.xml.rawclobber:725
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[2]/event/text"
 msgstr "You do not touch the load and prepare for the jump."
 
-#: src-ru/data/events_pirate.xml.rawclobber:728
+#: src-ru/data/events_pirate.xml.rawclobber:729
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[@req=\"sensors\"]/text"
 msgstr "(Improved sensors) thoroughly scatter boxes with cargo."
 
-#: src-ru/data/events_pirate.xml.rawclobber:732
+#: src-ru/data/events_pirate.xml.rawclobber:733
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr "(Scanners of wide coverage) thoroughly score boxes with cargo."
 
-#: src-ru/data/events_pirate.xml.rawclobber:738
+#: src-ru/data/events_pirate.xml.rawclobber:739
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[1]/text"
 msgstr ""
 "The boxes are filled with military equipment!You take everything you can use"
 " and throw everything else overboard."
 
-#: src-ru/data/events_pirate.xml.rawclobber:742
+#: src-ru/data/events_pirate.xml.rawclobber:743
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[2]/text"
 msgstr ""
 "The cargo mainly consists of clothing and any household trifle.However, you "
 "manage to gain a little scrap."
 
-#: src-ru/data/events_pirate.xml.rawclobber:746
+#: src-ru/data/events_pirate.xml.rawclobber:747
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[3]/text"
 msgstr ""
@@ -847,7 +847,7 @@ msgstr ""
 "death! \"Immediately after this fighting clicha, your ship is filled with "
 "the sound of breaking boxes ..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:750
+#: src-ru/data/events_pirate.xml.rawclobber:751
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[4]/text"
 msgstr ""
@@ -855,14 +855,14 @@ msgstr ""
 "the pirate ship leaves the shelter and attacks.At the same time, the boxes "
 "opened.Close on board!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:757
+#: src-ru/data/events_pirate.xml.rawclobber:758
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[1]/text"
 msgstr ""
 "The cargo does not contain anything interesting.But from the ship you manage"
 " to type a little scrap."
 
-#: src-ru/data/events_pirate.xml.rawclobber:763
+#: src-ru/data/events_pirate.xml.rawclobber:764
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[2]/text"
 msgstr ""
@@ -870,20 +870,20 @@ msgstr ""
 "scan cargo.It turns out to be full of military equipment!You take everything"
 " you can use."
 
-#: src-ru/data/events_pirate.xml.rawclobber:767
+#: src-ru/data/events_pirate.xml.rawclobber:768
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/text"
 msgstr ""
 "Your advanced sensors spotted weak signatures of life forms inside the "
 "cargo.Life forms seem to be armed.It looks like a pirate ambush plan."
 
-#: src-ru/data/events_pirate.xml.rawclobber:769
+#: src-ru/data/events_pirate.xml.rawclobber:770
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/choice[1]/text"
 msgstr ""
 "Destroy the boxes so that someone else does not fall into this ambush."
 
-#: src-ru/data/events_pirate.xml.rawclobber:771
+#: src-ru/data/events_pirate.xml.rawclobber:772
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/choice[1]/event/text"
 msgstr ""
@@ -891,36 +891,36 @@ msgstr ""
 "all directions.A pirate ship appears from somewhere and transfers the "
 "message: \"You will pay for it, bastard!\""
 
-#: src-ru/data/events_pirate.xml.rawclobber:776
+#: src-ru/data/events_pirate.xml.rawclobber:777
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/choice[2]/text"
 msgstr "Do not touch and prepare for a jump."
 
-#: src-ru/data/events_pirate.xml.rawclobber:786
+#: src-ru/data/events_pirate.xml.rawclobber:787
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"CURIOSITY_EVENT\"]/text"
 msgstr ""
 "A pirate ship in front of you is pursuing civilians. You receive an incoming"
 " message from the pirates: \"Don't interfere, or you're next.\" No time for "
 "negotiations—to battle!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:790
+#: src-ru/data/events_pirate.xml.rawclobber:791
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"PIRATE_CURIOSITY\"]/destroyed/text"
 msgstr "The pirate ship is destroyed. The civilians make contact..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:798
+#: src-ru/data/events_pirate.xml.rawclobber:799
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"PIRATE_CURIOSITY\"]/deadCrew/text"
 msgstr "The pirates are dead. The civilians make contact..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:809
+#: src-ru/data/events_pirate.xml.rawclobber:810
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[1]/text"
 msgstr ""
 "\"Thanks for not abandoning us! We are curiosities traders, and we have "
 "something for you.\" They leave you a strange weapon and say goodbye."
 
-#: src-ru/data/events_pirate.xml.rawclobber:813
+#: src-ru/data/events_pirate.xml.rawclobber:814
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/text"
 msgstr ""
@@ -928,27 +928,27 @@ msgstr ""
 "one of our items completely for free!\" You examine the unusual weapons in "
 "their hold..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:815
+#: src-ru/data/events_pirate.xml.rawclobber:816
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[1]/text"
 msgstr "Ask for this weapon."
 
-#: src-ru/data/events_pirate.xml.rawclobber:817
+#: src-ru/data/events_pirate.xml.rawclobber:818
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[1]/event/text"
 msgstr "You take the weapon and say goodbye to the traders."
 
-#: src-ru/data/events_pirate.xml.rawclobber:822
+#: src-ru/data/events_pirate.xml.rawclobber:823
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[2]/text"
 msgstr "Ask for this weapon."
 
-#: src-ru/data/events_pirate.xml.rawclobber:824
+#: src-ru/data/events_pirate.xml.rawclobber:825
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[2]/event/text"
 msgstr "You take the weapon and say goodbye to the traders."
 
-#: src-ru/data/events_pirate.xml.rawclobber:830
+#: src-ru/data/events_pirate.xml.rawclobber:831
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/text"
 msgstr ""
@@ -956,477 +956,477 @@ msgstr ""
 "one of our items completely for free!\" You examine the unusual weapons in "
 "their hold..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:832
+#: src-ru/data/events_pirate.xml.rawclobber:833
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[1]/text"
 msgstr "Ask for this weapon."
 
-#: src-ru/data/events_pirate.xml.rawclobber:834
+#: src-ru/data/events_pirate.xml.rawclobber:835
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[1]/event/text"
 msgstr "You take the weapon and say goodbye to the traders."
 
-#: src-ru/data/events_pirate.xml.rawclobber:839
+#: src-ru/data/events_pirate.xml.rawclobber:840
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[2]/text"
 msgstr "Ask for this weapon."
 
-#: src-ru/data/events_pirate.xml.rawclobber:841
+#: src-ru/data/events_pirate.xml.rawclobber:842
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[2]/event/text"
 msgstr "You take the weapon and say goodbye to the traders."
 
-#: src-ru/data/events_pirate.xml.rawclobber:846
+#: src-ru/data/events_pirate.xml.rawclobber:847
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[3]/text"
 msgstr "Ask for this weapon."
 
-#: src-ru/data/events_pirate.xml.rawclobber:848
+#: src-ru/data/events_pirate.xml.rawclobber:849
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[3]/event/text"
 msgstr "You take the weapon and say goodbye to the traders."
 
-#: src-ru/data/events_pirate.xml.rawclobber:861
+#: src-ru/data/events_pirate.xml.rawclobber:862
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/text"
 msgstr ""
 "An imposing pirate ship hangs near the beacon. Its commander introduces "
 "himself as Kenix and proposes taking on a challenge in some video game. What"
 " do you say?"
 
-#: src-ru/data/events_pirate.xml.rawclobber:864
+#: src-ru/data/events_pirate.xml.rawclobber:865
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[1]/text"
 msgstr "Agree and start their game."
 
-#: src-ru/data/events_pirate.xml.rawclobber:868
+#: src-ru/data/events_pirate.xml.rawclobber:869
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[2]/text"
 msgstr "Attack him! No games with pirates."
 
-#: src-ru/data/events_pirate.xml.rawclobber:870
+#: src-ru/data/events_pirate.xml.rawclobber:871
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[2]/event/text"
 msgstr ""
 "The pirate activates weapons in response. This battle will be legendary..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:875
+#: src-ru/data/events_pirate.xml.rawclobber:876
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[3]/text"
 msgstr "Refuse and fly away."
 
-#: src-ru/data/events_pirate.xml.rawclobber:881
+#: src-ru/data/events_pirate.xml.rawclobber:882
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_DECLINE\"]/event[1]/text"
 msgstr ""
 "Kenix is disappointed but remains waiting by the beacon for the next "
 "traveler."
 
-#: src-ru/data/events_pirate.xml.rawclobber:888
+#: src-ru/data/events_pirate.xml.rawclobber:889
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_DECLINE\"]/event[2]/text"
 msgstr ""
 "Kenix says that no refusal is accepted, and then activates his weapons."
 
-#: src-ru/data/events_pirate.xml.rawclobber:892
+#: src-ru/data/events_pirate.xml.rawclobber:893
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_DECLINE\"]/event[3]/text"
 msgstr ""
 "Kenix says that no refusal is accepted, and then activates his weapons."
 
-#: src-ru/data/events_pirate.xml.rawclobber:897
+#: src-ru/data/events_pirate.xml.rawclobber:898
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[1]"
 msgstr ""
 "The game \"FTL\" starts on your main terminal. Kenix picks some rusty bucket"
 " for you instead of a ship. You ponder what to do before the flight?"
 
-#: src-ru/data/events_pirate.xml.rawclobber:898
+#: src-ru/data/events_pirate.xml.rawclobber:899
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[2]"
 msgstr ""
 "The game \"FTL\" starts on your main terminal. Kenix picks a rather weak "
 "ship for you. You ponder what to do before the flight?"
 
-#: src-ru/data/events_pirate.xml.rawclobber:899
+#: src-ru/data/events_pirate.xml.rawclobber:900
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[3]"
 msgstr ""
 "The game \"FTL\" starts on your main terminal. Kenix picks a ship clearly "
 "designed for suffering. You ponder what to do before the flight?"
 
-#: src-ru/data/events_pirate.xml.rawclobber:900
+#: src-ru/data/events_pirate.xml.rawclobber:901
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[4]"
 msgstr ""
 "The game \"FTL\" starts on your main terminal. Kenix picks a dream ship for "
 "you. You ponder what to do before the flight?"
 
-#: src-ru/data/events_pirate.xml.rawclobber:903
+#: src-ru/data/events_pirate.xml.rawclobber:904
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[1]"
 msgstr "Take a ruler for improved navigation."
 
-#: src-ru/data/events_pirate.xml.rawclobber:904
+#: src-ru/data/events_pirate.xml.rawclobber:905
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[2]"
 msgstr "Go to the bathroom."
 
-#: src-ru/data/events_pirate.xml.rawclobber:905
+#: src-ru/data/events_pirate.xml.rawclobber:906
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[3]"
 msgstr "Pet the cat for luck."
 
-#: src-ru/data/events_pirate.xml.rawclobber:906
+#: src-ru/data/events_pirate.xml.rawclobber:907
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[4]"
 msgstr "Stretch on the pull-up bar."
 
-#: src-ru/data/events_pirate.xml.rawclobber:907
+#: src-ru/data/events_pirate.xml.rawclobber:908
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[5]"
 msgstr ""
 "Water the cactus that protects you from the monitor's harmful radiation."
 
-#: src-ru/data/events_pirate.xml.rawclobber:908
+#: src-ru/data/events_pirate.xml.rawclobber:909
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[6]"
 msgstr "Wipe the webcam."
 
-#: src-ru/data/events_pirate.xml.rawclobber:909
+#: src-ru/data/events_pirate.xml.rawclobber:910
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[7]"
 msgstr "Open the reward table."
 
-#: src-ru/data/events_pirate.xml.rawclobber:912
+#: src-ru/data/events_pirate.xml.rawclobber:913
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[1]"
 msgstr "Brew a cup of coffee."
 
-#: src-ru/data/events_pirate.xml.rawclobber:913
+#: src-ru/data/events_pirate.xml.rawclobber:914
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[2]"
 msgstr "Brew a cup of tea."
 
-#: src-ru/data/events_pirate.xml.rawclobber:914
+#: src-ru/data/events_pirate.xml.rawclobber:915
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[3]"
 msgstr "Clean up the mess behind you."
 
-#: src-ru/data/events_pirate.xml.rawclobber:915
+#: src-ru/data/events_pirate.xml.rawclobber:916
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[4]"
 msgstr "Wipe the monitor."
 
-#: src-ru/data/events_pirate.xml.rawclobber:916
+#: src-ru/data/events_pirate.xml.rawclobber:917
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[5]"
 msgstr "Grab a coin for making important decisions."
 
-#: src-ru/data/events_pirate.xml.rawclobber:917
+#: src-ru/data/events_pirate.xml.rawclobber:918
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[6]"
 msgstr "Kick out strangers from the bay."
 
-#: src-ru/data/events_pirate.xml.rawclobber:918
+#: src-ru/data/events_pirate.xml.rawclobber:919
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[7]"
 msgstr "Check if the stream is running on all channels."
 
-#: src-ru/data/events_pirate.xml.rawclobber:921
+#: src-ru/data/events_pirate.xml.rawclobber:922
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[1]"
 msgstr "Make sure all keys are working."
 
-#: src-ru/data/events_pirate.xml.rawclobber:922
+#: src-ru/data/events_pirate.xml.rawclobber:923
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[2]"
 msgstr "Charge the wireless mouse."
 
-#: src-ru/data/events_pirate.xml.rawclobber:923
+#: src-ru/data/events_pirate.xml.rawclobber:924
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[3]"
 msgstr "Turn off the phone."
 
-#: src-ru/data/events_pirate.xml.rawclobber:924
+#: src-ru/data/events_pirate.xml.rawclobber:925
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[4]"
 msgstr "Put a calculator nearby."
 
-#: src-ru/data/events_pirate.xml.rawclobber:925
+#: src-ru/data/events_pirate.xml.rawclobber:926
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[5]"
 msgstr "Stock up on chips."
 
-#: src-ru/data/events_pirate.xml.rawclobber:926
+#: src-ru/data/events_pirate.xml.rawclobber:927
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[6]"
 msgstr "Eat a plate of dumplings."
 
-#: src-ru/data/events_pirate.xml.rawclobber:927
+#: src-ru/data/events_pirate.xml.rawclobber:928
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[7]"
 msgstr "Scratch that itch properly."
 
-#: src-ru/data/events_pirate.xml.rawclobber:930
+#: src-ru/data/events_pirate.xml.rawclobber:931
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_HEADER_TEXT\"]/text"
 msgstr "Need to decide which sector to head to next..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:933
+#: src-ru/data/events_pirate.xml.rawclobber:934
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[1]"
 msgstr "Mantis Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:934
+#: src-ru/data/events_pirate.xml.rawclobber:935
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[2]"
 msgstr "Engi Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:935
+#: src-ru/data/events_pirate.xml.rawclobber:936
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[3]"
 msgstr "Rock Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:936
+#: src-ru/data/events_pirate.xml.rawclobber:937
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[4]"
 msgstr "Pirate Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:937
+#: src-ru/data/events_pirate.xml.rawclobber:938
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[5]"
 msgstr "Slug Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:938
+#: src-ru/data/events_pirate.xml.rawclobber:939
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[6]"
 msgstr "Avatar Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:939
+#: src-ru/data/events_pirate.xml.rawclobber:940
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[7]"
 msgstr "Civilian Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:940
+#: src-ru/data/events_pirate.xml.rawclobber:941
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[8]"
 msgstr "Nebula Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:941
+#: src-ru/data/events_pirate.xml.rawclobber:942
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[9]"
 msgstr "Unstable Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:942
+#: src-ru/data/events_pirate.xml.rawclobber:943
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[10]"
 msgstr "Highly Unstable Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:943
+#: src-ru/data/events_pirate.xml.rawclobber:944
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[11]"
 msgstr "Morph Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:944
+#: src-ru/data/events_pirate.xml.rawclobber:945
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[12]"
 msgstr "Zoltan Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:945
+#: src-ru/data/events_pirate.xml.rawclobber:946
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[13]"
 msgstr "Zolton Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:946
+#: src-ru/data/events_pirate.xml.rawclobber:947
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[14]"
 msgstr "Pirate Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:947
+#: src-ru/data/events_pirate.xml.rawclobber:948
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[15]"
 msgstr "Crystal Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:948
+#: src-ru/data/events_pirate.xml.rawclobber:949
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[16]"
 msgstr "Rebel Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:949
+#: src-ru/data/events_pirate.xml.rawclobber:950
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[17]"
 msgstr "Order Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:950
+#: src-ru/data/events_pirate.xml.rawclobber:951
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[18]"
 msgstr "Magmen Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:951
+#: src-ru/data/events_pirate.xml.rawclobber:952
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[19]"
 msgstr "Engi Homeworlds."
 
-#: src-ru/data/events_pirate.xml.rawclobber:952
+#: src-ru/data/events_pirate.xml.rawclobber:953
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[20]"
 msgstr "Rock Homeworlds."
 
-#: src-ru/data/events_pirate.xml.rawclobber:953
+#: src-ru/data/events_pirate.xml.rawclobber:954
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[21]"
 msgstr "Mantis Homeworlds."
 
-#: src-ru/data/events_pirate.xml.rawclobber:954
+#: src-ru/data/events_pirate.xml.rawclobber:955
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[22]"
 msgstr "Slug Homeworlds."
 
-#: src-ru/data/events_pirate.xml.rawclobber:955
+#: src-ru/data/events_pirate.xml.rawclobber:956
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[23]"
 msgstr "Avatar Homeworlds."
 
-#: src-ru/data/events_pirate.xml.rawclobber:956
+#: src-ru/data/events_pirate.xml.rawclobber:957
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[24]"
 msgstr "Anomaly Sector."
 
-#: src-ru/data/events_pirate.xml.rawclobber:959
+#: src-ru/data/events_pirate.xml.rawclobber:960
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[1]"
 msgstr "Flying through the sector, you find nothing useful..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:960
+#: src-ru/data/events_pirate.xml.rawclobber:961
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[2]"
 msgstr "Flying through the sector, you improved your ship a little..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:961
+#: src-ru/data/events_pirate.xml.rawclobber:962
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[3]"
 msgstr ""
 "Flying through the sector, you save some poor soul stuck on an asteroid..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:962
+#: src-ru/data/events_pirate.xml.rawclobber:963
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[4]"
 msgstr ""
 "Flying through the sector, you find only an absolutely useless drone..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:963
+#: src-ru/data/events_pirate.xml.rawclobber:964
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[5]"
 msgstr ""
 "Flying through the sector, you take a beating from pirates a couple of "
 "times. No matter, at least everyone is alive..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:964
+#: src-ru/data/events_pirate.xml.rawclobber:965
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[6]"
 msgstr ""
 "Flying through the sector, you save a repair ship. But your ship doesn't "
 "require repairs..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:967
+#: src-ru/data/events_pirate.xml.rawclobber:968
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[1]"
 msgstr ""
 "Flying through the sector, you salvage valuable guns from an abandoned "
 "ship..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:968
+#: src-ru/data/events_pirate.xml.rawclobber:969
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[2]"
 msgstr ""
 "Flying through the sector, you manage to sell junk from the hold at a "
 "profit..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:969
+#: src-ru/data/events_pirate.xml.rawclobber:970
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[3]"
 msgstr "Flying through the sector, your crew gets a reinforcement..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:970
+#: src-ru/data/events_pirate.xml.rawclobber:971
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[4]"
 msgstr ""
 "Flying through the sector, you find an Ion Blast Mk II. How beautiful it "
 "is!.."
 
-#: src-ru/data/events_pirate.xml.rawclobber:971
+#: src-ru/data/events_pirate.xml.rawclobber:972
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[5]"
 msgstr "Flying through the sector, you find just tons of abandoned scrap..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:972
+#: src-ru/data/events_pirate.xml.rawclobber:973
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[6]"
 msgstr ""
 "Flying through the sector, you find the sector map at the last beacon..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:975
+#: src-ru/data/events_pirate.xml.rawclobber:976
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[1]"
 msgstr ""
 "Flying through the sector, you manage to patch things up at a shop at the "
 "last beacon..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:976
+#: src-ru/data/events_pirate.xml.rawclobber:977
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[2]"
 msgstr "Flying through the sector, you find only one shop. Nothing useful..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:977
+#: src-ru/data/events_pirate.xml.rawclobber:978
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[3]"
 msgstr ""
 "Flying through the sector, you find three shops in a row. Unfortunately, you"
 " spent everything before the very first one..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:978
+#: src-ru/data/events_pirate.xml.rawclobber:979
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[4]"
 msgstr ""
 "Flying through the sector, you easily finish off local ships and take their "
 "junk..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:979
+#: src-ru/data/events_pirate.xml.rawclobber:980
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[5]"
 msgstr ""
 "Flying through the sector, you find a secret base with weapons and "
 "missiles..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:980
+#: src-ru/data/events_pirate.xml.rawclobber:981
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[6]"
 msgstr ""
 "Flying through the sector, you barely escape from a Black Wing "
 "dreadnought..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:983
+#: src-ru/data/events_pirate.xml.rawclobber:984
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[1]"
 msgstr ""
 "Flying through the sector, you find an Auto-Reloader. It looks like this "
 "attempt will be successful..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:984
+#: src-ru/data/events_pirate.xml.rawclobber:985
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[2]"
 msgstr ""
 "Flying through the sector, you find a missile launcher and a Replicator. "
 "This is a sign from above..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:985
+#: src-ru/data/events_pirate.xml.rawclobber:986
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[3]"
 msgstr ""
 "Flying through the sector, you take a few missiles to the hull, but overall "
 "find a lot of useful things..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:986
+#: src-ru/data/events_pirate.xml.rawclobber:987
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[4]"
 msgstr ""
@@ -1434,84 +1434,84 @@ msgstr ""
 "astrologers. To your surprise, you notice that your ship's population has "
 "doubled..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:987
+#: src-ru/data/events_pirate.xml.rawclobber:988
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[5]"
 msgstr ""
 "Flying through the sector, you find a Scrapper's Crane. Ah, a bit too "
 "late..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:988
+#: src-ru/data/events_pirate.xml.rawclobber:989
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[6]"
 msgstr ""
 "Flying through the sector, you find Titanium System Casing. This is "
 "useful..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:991
+#: src-ru/data/events_pirate.xml.rawclobber:992
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[1]"
 msgstr ""
 "In this sector, your crew is completely slaughtered by a gang of "
 "unexpectedly appearing Mantis... GAME OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:992
+#: src-ru/data/events_pirate.xml.rawclobber:993
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[2]"
 msgstr ""
 "In this sector, you fight off pirates desperately, but the final explosion "
 "becomes fatal and tears your ship to pieces... GAME OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:993
+#: src-ru/data/events_pirate.xml.rawclobber:994
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[3]"
 msgstr ""
 "In this sector, at some point during an intense battle, you forget to power "
 "your weapons and sustain critical damage... GAME OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:994
+#: src-ru/data/events_pirate.xml.rawclobber:995
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[4]"
 msgstr ""
 "In this sector, you manage to not notice a black hole and get stuck in it "
 "forever (from an external observer's point of view)... GAME OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:995
+#: src-ru/data/events_pirate.xml.rawclobber:996
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[5]"
 msgstr ""
 "In this sector, you are tricked by Slugs (AGAIN!), and under unequal "
 "conditions, the ship's crew perishes... GAME OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:996
+#: src-ru/data/events_pirate.xml.rawclobber:997
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[6]"
 msgstr ""
 "In this sector, while maneuvering confidently, you collect an entire "
 "asteroid field with your ship's hull... GAME OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:997
+#: src-ru/data/events_pirate.xml.rawclobber:998
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[7]"
 msgstr ""
 "In this sector, a ruthless local star turns your ship into a giant barbecue "
 "grill for the crew... GAME OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:998
+#: src-ru/data/events_pirate.xml.rawclobber:999
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[8]"
 msgstr ""
 "In this sector, a ruthless pirate guns down your vessel with a Flak Mk "
 "III... GAME OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:999
+#: src-ru/data/events_pirate.xml.rawclobber:1000
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[9]"
 msgstr ""
 "In this sector, you steer your ship into an unknown monolith and explode on "
 "its surface... GAME OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1000
+#: src-ru/data/events_pirate.xml.rawclobber:1001
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[10]"
 msgstr ""
@@ -1519,128 +1519,128 @@ msgstr ""
 "reaches of space. No one will see how your ship exploded on approach... GAME"
 " OVER"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1018
+#: src-ru/data/events_pirate.xml.rawclobber:1019
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT_GAME_PREPARE_ENDED\"]/text"
 msgstr ""
 "You do your important preparatory tasks and launch the first sector..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1138
+#: src-ru/data/events_pirate.xml.rawclobber:1139
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE\"]/text"
 msgstr ""
 "And here it is - The Final Stand! A showdown with the flagship lies ahead. "
 "Choose your tactic."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1154
+#: src-ru/data/events_pirate.xml.rawclobber:1155
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[1]"
 msgstr ""
 "Clear all beacons near the flagship and attack at the very last moment "
 "before the destruction of the main Federation base."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1155
+#: src-ru/data/events_pirate.xml.rawclobber:1156
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[2]"
 msgstr ""
 "Decisively attack the flagship right now, so there's a chance to retreat if "
 "something goes wrong."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1156
+#: src-ru/data/events_pirate.xml.rawclobber:1157
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[3]"
 msgstr ""
 "Don't use any tactics. Just fly straight in and tear this Rebel bucket to "
 "pieces."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1157
+#: src-ru/data/events_pirate.xml.rawclobber:1158
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[4]"
 msgstr ""
 "Watch the flagship for long enough, waiting for it to weaken, and strike at "
 "that moment."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1158
+#: src-ru/data/events_pirate.xml.rawclobber:1159
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[5]"
 msgstr ""
 "Disable their missile artillery and clear the crew with a boarding team."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1161
+#: src-ru/data/events_pirate.xml.rawclobber:1162
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[1]"
 msgstr ""
 "Look for a repair station before the final battle and attack the flagship "
 "only after repairs."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1162
+#: src-ru/data/events_pirate.xml.rawclobber:1163
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[2]"
 msgstr "Gather more resources from elite enemies, then attack the flagship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1163
+#: src-ru/data/events_pirate.xml.rawclobber:1164
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[3]"
 msgstr "Focus on exterminating the entire flagship crew."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1164
+#: src-ru/data/events_pirate.xml.rawclobber:1165
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[4]"
 msgstr "Hack their oxygen bay."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1165
+#: src-ru/data/events_pirate.xml.rawclobber:1166
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[5]"
 msgstr ""
 "Blow up their shields with bombs and shoot the remaining systems with "
 "lasers."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1168
+#: src-ru/data/events_pirate.xml.rawclobber:1169
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[1]"
 msgstr ""
 "Find a shop, sell junk, stock up on necessities, and then attack the "
 "flagship."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1169
+#: src-ru/data/events_pirate.xml.rawclobber:1170
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[2]"
 msgstr ""
 "Come at the flagship from the rear and attack when it least expects it."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1170
+#: src-ru/data/events_pirate.xml.rawclobber:1171
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[3]"
 msgstr ""
 "Use cloaking and break through the flagship's defense with a decisive volley"
 " from all weapons."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1171
+#: src-ru/data/events_pirate.xml.rawclobber:1172
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[4]"
 msgstr ""
 "Deal as much hull damage as possible in the first minutes of the battle."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1172
+#: src-ru/data/events_pirate.xml.rawclobber:1173
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[5]"
 msgstr "Shield hacking and cutting the ship with beams is the best strategy."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1176
+#: src-ru/data/events_pirate.xml.rawclobber:1177
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[1]/text"
 msgstr ""
 "Surprisingly, your tactic works, even though you are soaking wet with sweat."
 " Kenix is delighted and gives you a well-deserved reward."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1180
+#: src-ru/data/events_pirate.xml.rawclobber:1181
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[2]/text"
 msgstr ""
 "Surprisingly, your tactic works, even though you broke a few keys. Kenix is "
 "delighted and gives you a well-deserved reward."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1184
+#: src-ru/data/events_pirate.xml.rawclobber:1185
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[3]/text"
 msgstr ""
@@ -1648,7 +1648,7 @@ msgstr ""
 "grinding crew skills on a very weak opponent in the first sector. In any "
 "case, Kenix is delighted and gives you a well-deserved reward."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1188
+#: src-ru/data/events_pirate.xml.rawclobber:1189
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[4]/text"
 msgstr ""
@@ -1656,7 +1656,7 @@ msgstr ""
 "ultra-easy mode. In any case, Kenix is satisfied and gives you a well-"
 "deserved reward."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1195
+#: src-ru/data/events_pirate.xml.rawclobber:1196
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[8]/text"
 msgstr ""
@@ -1664,14 +1664,14 @@ msgstr ""
 "tears your ship apart with a powerful laser volley. GAME OVER. You suddenly "
 "realize the Rebel fleet is catching up to you..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1200
+#: src-ru/data/events_pirate.xml.rawclobber:1201
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_FTL_WIN\"]/text"
 msgstr ""
 "Surprisingly, your tactic works, most likely because you've logged over 1000"
 " hours in this game. In any case, Kenix is very satisfied and gives you a "
 "well-deserved reward."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1207
+#: src-ru/data/events_pirate.xml.rawclobber:1208
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[1]/text"
 msgstr ""
@@ -1679,14 +1679,14 @@ msgstr ""
 " out of pity, he gives you something from his stockpiles. By the way, the "
 "Rebel fleet got closer while you were playing."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1212
+#: src-ru/data/events_pirate.xml.rawclobber:1213
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[2]/text"
 msgstr ""
 "Kenix says it was a decent flight and gives you something from his hold. By "
 "the way, the Rebel fleet got closer while you were playing."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1217
+#: src-ru/data/events_pirate.xml.rawclobber:1218
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[3]/text"
 msgstr ""
@@ -1694,14 +1694,14 @@ msgstr ""
 "of pity, he gives you some junk. By the way, the Rebel fleet got closer "
 "while you were playing."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1222
+#: src-ru/data/events_pirate.xml.rawclobber:1223
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[4]/text"
 msgstr ""
 "Kenix says this flight is worth only 1 scrap token as a souvenir. By the "
 "way, the Rebel fleet got closer while you were playing."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1227
+#: src-ru/data/events_pirate.xml.rawclobber:1228
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[5]/text"
 msgstr ""
@@ -1709,81 +1709,101 @@ msgstr ""
 "better destroy your ship so such a thing never happens again in reality. By "
 "the way, the Rebel fleet got closer while you were playing."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1234
+#: src-ru/data/events_pirate.xml.rawclobber:1235
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/escape/text"
 msgstr "You detect the FTL drive charging! Kenix is escaping!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1237
+#: src-ru/data/events_pirate.xml.rawclobber:1238
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/gotaway/text"
 msgstr "The pirate has vanished in an unknown direction."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1240
+#: src-ru/data/events_pirate.xml.rawclobber:1241
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/destroyed/text"
 msgstr ""
 "The ship falls to pieces. You inspect the wreckage in search of valuables."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1248
+#: src-ru/data/events_pirate.xml.rawclobber:1249
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/deadCrew/text"
 msgstr ""
 "Sensors detect no signs of life on the ship. You scan the vessel in search "
 "of valuables."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1259
+#: src-ru/data/events_pirate.xml.rawclobber:1260
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_SHIP_DEAD\"]/event[1]/text"
 msgstr ""
 "One of their artillery weapons survived, and you take it for yourself."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1267
+#: src-ru/data/events_pirate.xml.rawclobber:1268
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_CREW_DEAD\"]/event[1]/text"
 msgstr ""
 "One of their artillery weapons survived, and you take it for yourself."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1271
+#: src-ru/data/events_pirate.xml.rawclobber:1272
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_CREW_DEAD\"]/event[2]/text"
 msgstr ""
 "One of their artillery weapons survived, and you take it for yourself."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1286
+#: src-ru/data/events_pirate.xml.rawclobber:1287
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"ROCK_JAIL_TEXT\"]/text[1]"
 msgstr ""
 "Upon appearing at the beacon, you come under attack by a strange pirate "
 "ship..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1287
+#: src-ru/data/events_pirate.xml.rawclobber:1288
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"ROCK_JAIL_TEXT\"]/text[2]"
 msgstr ""
 "As soon as you appear, you see a pirate ship with strange weapons. It wants "
 "to steal your crew!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1291
+#: src-ru/data/events_pirate.xml.rawclobber:1292
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"ROCK_JAIL_SHIPS_PARAM\"]/escape/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1294
+#: src-ru/data/events_pirate.xml.rawclobber:1295
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"ROCK_JAIL_SHIPS_PARAM\"]/gotaway/text"
 msgstr "The kidnapper has vanished in an unknown direction."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1301
+#: src-ru/data/events_pirate.xml.rawclobber:1302
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"ROCK_JAIL_DEAD_CREW\"]/event[1]/text"
 msgstr ""
 "You take everything that survived the battle. It's a shame, but there are no"
 " prisoners in the ship's cages. They were probably sold recently..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1305
+#: src-ru/data/events_pirate.xml.rawclobber:1306
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"ROCK_JAIL_DEAD_CREW\"]/event[2]/text"
 msgstr ""
 "You take everything that survived the battle. You also find a prisoner in "
 "one of the cells who joins your crew."
+
+#: src-ru/data/events_pirate.xml.rawclobber:1317
+msgid ""
+"data/events_pirate.xml.rawclobber$//event[@name=\"EVENT_PIRATE_GLIF_FIGHT\"]/loadEventList/event[1]/text"
+msgstr ""
+
+#: src-ru/data/events_pirate.xml.rawclobber:1325
+msgid ""
+"data/events_pirate.xml.rawclobber$//event[@name=\"EVENT_PIRATE_GLIF_FIGHT\"]/loadEventList/event[2]/text"
+msgstr ""
+
+#: src-ru/data/events_pirate.xml.rawclobber:1336
+msgid ""
+"data/events_pirate.xml.rawclobber$//ship[@name=\"GLIF_ENEMY_PARAM\"]/destroyed/text"
+msgstr ""
+
+#: src-ru/data/events_pirate.xml.rawclobber:1340
+msgid ""
+"data/events_pirate.xml.rawclobber$//ship[@name=\"GLIF_ENEMY_PARAM\"]/deadCrew/text"
+msgstr ""

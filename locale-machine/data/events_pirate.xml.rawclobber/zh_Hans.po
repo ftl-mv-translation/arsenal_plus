@@ -5,1403 +5,1423 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src-ru/data/events_pirate.xml.rawclobber:157
+#: src-ru/data/events_pirate.xml.rawclobber:158
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:158
+#: src-ru/data/events_pirate.xml.rawclobber:159
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:159
+#: src-ru/data/events_pirate.xml.rawclobber:160
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:160
+#: src-ru/data/events_pirate.xml.rawclobber:161
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:161
+#: src-ru/data/events_pirate.xml.rawclobber:162
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:162
+#: src-ru/data/events_pirate.xml.rawclobber:163
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:163
+#: src-ru/data/events_pirate.xml.rawclobber:164
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:164
+#: src-ru/data/events_pirate.xml.rawclobber:165
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[8]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:165
+#: src-ru/data/events_pirate.xml.rawclobber:166
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[9]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:166
+#: src-ru/data/events_pirate.xml.rawclobber:167
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[10]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:167
+#: src-ru/data/events_pirate.xml.rawclobber:168
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[11]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:168
+#: src-ru/data/events_pirate.xml.rawclobber:169
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[12]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:176
+#: src-ru/data/events_pirate.xml.rawclobber:177
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:177
+#: src-ru/data/events_pirate.xml.rawclobber:178
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:178
+#: src-ru/data/events_pirate.xml.rawclobber:179
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:179
+#: src-ru/data/events_pirate.xml.rawclobber:180
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:191
+#: src-ru/data/events_pirate.xml.rawclobber:192
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:192
+#: src-ru/data/events_pirate.xml.rawclobber:193
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:193
+#: src-ru/data/events_pirate.xml.rawclobber:194
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:194
+#: src-ru/data/events_pirate.xml.rawclobber:195
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:211
+#: src-ru/data/events_pirate.xml.rawclobber:212
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:212
+#: src-ru/data/events_pirate.xml.rawclobber:213
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:214
+#: src-ru/data/events_pirate.xml.rawclobber:215
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:215
+#: src-ru/data/events_pirate.xml.rawclobber:216
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:217
+#: src-ru/data/events_pirate.xml.rawclobber:218
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:222
+#: src-ru/data/events_pirate.xml.rawclobber:223
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_NO_ESCAPE\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:231
+#: src-ru/data/events_pirate.xml.rawclobber:232
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_NO_ESCAPE\"]/choice[@req=\"hacking\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:233
+#: src-ru/data/events_pirate.xml.rawclobber:234
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_NO_ESCAPE\"]/choice[@req=\"hacking\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:254
+#: src-ru/data/events_pirate.xml.rawclobber:255
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:256
+#: src-ru/data/events_pirate.xml.rawclobber:257
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:262
+#: src-ru/data/events_pirate.xml.rawclobber:263
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:264
+#: src-ru/data/events_pirate.xml.rawclobber:265
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:269
+#: src-ru/data/events_pirate.xml.rawclobber:270
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:270
+#: src-ru/data/events_pirate.xml.rawclobber:271
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:271
+#: src-ru/data/events_pirate.xml.rawclobber:272
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:272
+#: src-ru/data/events_pirate.xml.rawclobber:273
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:273
+#: src-ru/data/events_pirate.xml.rawclobber:274
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:274
+#: src-ru/data/events_pirate.xml.rawclobber:275
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:278
+#: src-ru/data/events_pirate.xml.rawclobber:279
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:280
+#: src-ru/data/events_pirate.xml.rawclobber:281
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:282
+#: src-ru/data/events_pirate.xml.rawclobber:283
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:287
+#: src-ru/data/events_pirate.xml.rawclobber:288
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:289
+#: src-ru/data/events_pirate.xml.rawclobber:290
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:295
+#: src-ru/data/events_pirate.xml.rawclobber:296
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:299
+#: src-ru/data/events_pirate.xml.rawclobber:300
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:303
+#: src-ru/data/events_pirate.xml.rawclobber:304
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:305
+#: src-ru/data/events_pirate.xml.rawclobber:306
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[4]/choice/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:312
+#: src-ru/data/events_pirate.xml.rawclobber:313
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[5]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:316
+#: src-ru/data/events_pirate.xml.rawclobber:317
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[6]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:321
+#: src-ru/data/events_pirate.xml.rawclobber:322
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:323
+#: src-ru/data/events_pirate.xml.rawclobber:324
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:325
+#: src-ru/data/events_pirate.xml.rawclobber:326
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:330
+#: src-ru/data/events_pirate.xml.rawclobber:331
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:332
+#: src-ru/data/events_pirate.xml.rawclobber:333
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:338
+#: src-ru/data/events_pirate.xml.rawclobber:339
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:342
+#: src-ru/data/events_pirate.xml.rawclobber:343
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:346
+#: src-ru/data/events_pirate.xml.rawclobber:347
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:348
+#: src-ru/data/events_pirate.xml.rawclobber:349
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[4]/choice/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:355
+#: src-ru/data/events_pirate.xml.rawclobber:356
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[5]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:365
+#: src-ru/data/events_pirate.xml.rawclobber:366
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:367
+#: src-ru/data/events_pirate.xml.rawclobber:368
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:372
+#: src-ru/data/events_pirate.xml.rawclobber:373
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:374
+#: src-ru/data/events_pirate.xml.rawclobber:375
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:382
+#: src-ru/data/events_pirate.xml.rawclobber:383
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:384
+#: src-ru/data/events_pirate.xml.rawclobber:385
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:386
+#: src-ru/data/events_pirate.xml.rawclobber:387
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:391
+#: src-ru/data/events_pirate.xml.rawclobber:392
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:393
+#: src-ru/data/events_pirate.xml.rawclobber:394
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:399
+#: src-ru/data/events_pirate.xml.rawclobber:400
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:403
+#: src-ru/data/events_pirate.xml.rawclobber:404
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:406
+#: src-ru/data/events_pirate.xml.rawclobber:407
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:413
+#: src-ru/data/events_pirate.xml.rawclobber:414
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[5]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:418
+#: src-ru/data/events_pirate.xml.rawclobber:419
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_BRIBER\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:419
+#: src-ru/data/events_pirate.xml.rawclobber:420
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_BRIBER\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:420
+#: src-ru/data/events_pirate.xml.rawclobber:421
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_BRIBER\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:428
+#: src-ru/data/events_pirate.xml.rawclobber:429
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:431
+#: src-ru/data/events_pirate.xml.rawclobber:432
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:433
+#: src-ru/data/events_pirate.xml.rawclobber:434
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:441
+#: src-ru/data/events_pirate.xml.rawclobber:442
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:443
+#: src-ru/data/events_pirate.xml.rawclobber:444
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:453
+#: src-ru/data/events_pirate.xml.rawclobber:454
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:457
+#: src-ru/data/events_pirate.xml.rawclobber:458
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:463
+#: src-ru/data/events_pirate.xml.rawclobber:464
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:469
+#: src-ru/data/events_pirate.xml.rawclobber:470
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:476
+#: src-ru/data/events_pirate.xml.rawclobber:477
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[@req=\"mantis_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:480
+#: src-ru/data/events_pirate.xml.rawclobber:481
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[@req=\"engines\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:486
+#: src-ru/data/events_pirate.xml.rawclobber:487
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:492
+#: src-ru/data/events_pirate.xml.rawclobber:493
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[1]/choice/event/removeCrew/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:498
+#: src-ru/data/events_pirate.xml.rawclobber:499
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:504
+#: src-ru/data/events_pirate.xml.rawclobber:505
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[2]/choice/event/removeCrew/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:510
+#: src-ru/data/events_pirate.xml.rawclobber:511
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:514
+#: src-ru/data/events_pirate.xml.rawclobber:515
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:518
+#: src-ru/data/events_pirate.xml.rawclobber:519
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[5]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:522
+#: src-ru/data/events_pirate.xml.rawclobber:523
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[6]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:530
+#: src-ru/data/events_pirate.xml.rawclobber:531
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[6]/choice/event/removeCrew/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:538
+#: src-ru/data/events_pirate.xml.rawclobber:539
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:542
+#: src-ru/data/events_pirate.xml.rawclobber:543
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:546
+#: src-ru/data/events_pirate.xml.rawclobber:547
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:550
+#: src-ru/data/events_pirate.xml.rawclobber:551
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:557
+#: src-ru/data/events_pirate.xml.rawclobber:558
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RUN\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:562
+#: src-ru/data/events_pirate.xml.rawclobber:563
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RUN\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:565
+#: src-ru/data/events_pirate.xml.rawclobber:566
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RUN\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:575
+#: src-ru/data/events_pirate.xml.rawclobber:576
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:577
+#: src-ru/data/events_pirate.xml.rawclobber:578
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:586
+#: src-ru/data/events_pirate.xml.rawclobber:587
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:595
+#: src-ru/data/events_pirate.xml.rawclobber:596
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:601
+#: src-ru/data/events_pirate.xml.rawclobber:602
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:605
+#: src-ru/data/events_pirate.xml.rawclobber:606
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:611
+#: src-ru/data/events_pirate.xml.rawclobber:612
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:616
+#: src-ru/data/events_pirate.xml.rawclobber:617
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:621
+#: src-ru/data/events_pirate.xml.rawclobber:622
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:638
+#: src-ru/data/events_pirate.xml.rawclobber:639
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SUN\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:649
+#: src-ru/data/events_pirate.xml.rawclobber:650
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_ASTEROID\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:652
+#: src-ru/data/events_pirate.xml.rawclobber:653
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_ASTEROID\"]/choice/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:690
+#: src-ru/data/events_pirate.xml.rawclobber:691
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"BOARDERS_PIRATE\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:695
+#: src-ru/data/events_pirate.xml.rawclobber:696
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"BOARDERS_SUN\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:706
+#: src-ru/data/events_pirate.xml.rawclobber:707
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"BOARDERS_ASTEROID\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:716
+#: src-ru/data/events_pirate.xml.rawclobber:717
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:718
+#: src-ru/data/events_pirate.xml.rawclobber:719
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:722
+#: src-ru/data/events_pirate.xml.rawclobber:723
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:724
+#: src-ru/data/events_pirate.xml.rawclobber:725
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:728
+#: src-ru/data/events_pirate.xml.rawclobber:729
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:732
+#: src-ru/data/events_pirate.xml.rawclobber:733
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:738
+#: src-ru/data/events_pirate.xml.rawclobber:739
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:742
+#: src-ru/data/events_pirate.xml.rawclobber:743
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:746
+#: src-ru/data/events_pirate.xml.rawclobber:747
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:750
+#: src-ru/data/events_pirate.xml.rawclobber:751
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:757
+#: src-ru/data/events_pirate.xml.rawclobber:758
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:763
+#: src-ru/data/events_pirate.xml.rawclobber:764
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:767
+#: src-ru/data/events_pirate.xml.rawclobber:768
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:769
+#: src-ru/data/events_pirate.xml.rawclobber:770
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:771
+#: src-ru/data/events_pirate.xml.rawclobber:772
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:776
+#: src-ru/data/events_pirate.xml.rawclobber:777
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:786
+#: src-ru/data/events_pirate.xml.rawclobber:787
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"CURIOSITY_EVENT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:790
+#: src-ru/data/events_pirate.xml.rawclobber:791
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"PIRATE_CURIOSITY\"]/destroyed/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:798
+#: src-ru/data/events_pirate.xml.rawclobber:799
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"PIRATE_CURIOSITY\"]/deadCrew/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:809
+#: src-ru/data/events_pirate.xml.rawclobber:810
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:813
+#: src-ru/data/events_pirate.xml.rawclobber:814
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:815
+#: src-ru/data/events_pirate.xml.rawclobber:816
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:817
+#: src-ru/data/events_pirate.xml.rawclobber:818
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:822
+#: src-ru/data/events_pirate.xml.rawclobber:823
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:824
+#: src-ru/data/events_pirate.xml.rawclobber:825
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:830
+#: src-ru/data/events_pirate.xml.rawclobber:831
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:832
+#: src-ru/data/events_pirate.xml.rawclobber:833
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:834
+#: src-ru/data/events_pirate.xml.rawclobber:835
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:839
+#: src-ru/data/events_pirate.xml.rawclobber:840
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:841
+#: src-ru/data/events_pirate.xml.rawclobber:842
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:846
+#: src-ru/data/events_pirate.xml.rawclobber:847
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:848
+#: src-ru/data/events_pirate.xml.rawclobber:849
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[3]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:861
+#: src-ru/data/events_pirate.xml.rawclobber:862
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:864
+#: src-ru/data/events_pirate.xml.rawclobber:865
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:868
+#: src-ru/data/events_pirate.xml.rawclobber:869
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:870
+#: src-ru/data/events_pirate.xml.rawclobber:871
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:875
+#: src-ru/data/events_pirate.xml.rawclobber:876
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:881
+#: src-ru/data/events_pirate.xml.rawclobber:882
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_DECLINE\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:888
+#: src-ru/data/events_pirate.xml.rawclobber:889
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_DECLINE\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:892
+#: src-ru/data/events_pirate.xml.rawclobber:893
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_DECLINE\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:897
+#: src-ru/data/events_pirate.xml.rawclobber:898
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:898
+#: src-ru/data/events_pirate.xml.rawclobber:899
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:899
+#: src-ru/data/events_pirate.xml.rawclobber:900
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:900
+#: src-ru/data/events_pirate.xml.rawclobber:901
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:903
+#: src-ru/data/events_pirate.xml.rawclobber:904
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:904
+#: src-ru/data/events_pirate.xml.rawclobber:905
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:905
+#: src-ru/data/events_pirate.xml.rawclobber:906
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:906
+#: src-ru/data/events_pirate.xml.rawclobber:907
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:907
+#: src-ru/data/events_pirate.xml.rawclobber:908
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:908
+#: src-ru/data/events_pirate.xml.rawclobber:909
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:909
+#: src-ru/data/events_pirate.xml.rawclobber:910
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:912
+#: src-ru/data/events_pirate.xml.rawclobber:913
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:913
+#: src-ru/data/events_pirate.xml.rawclobber:914
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:914
+#: src-ru/data/events_pirate.xml.rawclobber:915
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:915
+#: src-ru/data/events_pirate.xml.rawclobber:916
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:916
+#: src-ru/data/events_pirate.xml.rawclobber:917
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:917
+#: src-ru/data/events_pirate.xml.rawclobber:918
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:918
+#: src-ru/data/events_pirate.xml.rawclobber:919
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:921
+#: src-ru/data/events_pirate.xml.rawclobber:922
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:922
+#: src-ru/data/events_pirate.xml.rawclobber:923
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:923
+#: src-ru/data/events_pirate.xml.rawclobber:924
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:924
+#: src-ru/data/events_pirate.xml.rawclobber:925
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:925
+#: src-ru/data/events_pirate.xml.rawclobber:926
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:926
+#: src-ru/data/events_pirate.xml.rawclobber:927
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:927
+#: src-ru/data/events_pirate.xml.rawclobber:928
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:930
+#: src-ru/data/events_pirate.xml.rawclobber:931
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_HEADER_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:933
+#: src-ru/data/events_pirate.xml.rawclobber:934
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:934
+#: src-ru/data/events_pirate.xml.rawclobber:935
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:935
+#: src-ru/data/events_pirate.xml.rawclobber:936
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:936
+#: src-ru/data/events_pirate.xml.rawclobber:937
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:937
+#: src-ru/data/events_pirate.xml.rawclobber:938
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:938
+#: src-ru/data/events_pirate.xml.rawclobber:939
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:939
+#: src-ru/data/events_pirate.xml.rawclobber:940
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:940
+#: src-ru/data/events_pirate.xml.rawclobber:941
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[8]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:941
+#: src-ru/data/events_pirate.xml.rawclobber:942
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[9]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:942
+#: src-ru/data/events_pirate.xml.rawclobber:943
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[10]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:943
+#: src-ru/data/events_pirate.xml.rawclobber:944
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[11]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:944
+#: src-ru/data/events_pirate.xml.rawclobber:945
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[12]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:945
+#: src-ru/data/events_pirate.xml.rawclobber:946
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[13]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:946
+#: src-ru/data/events_pirate.xml.rawclobber:947
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[14]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:947
+#: src-ru/data/events_pirate.xml.rawclobber:948
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[15]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:948
+#: src-ru/data/events_pirate.xml.rawclobber:949
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[16]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:949
+#: src-ru/data/events_pirate.xml.rawclobber:950
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[17]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:950
+#: src-ru/data/events_pirate.xml.rawclobber:951
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[18]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:951
+#: src-ru/data/events_pirate.xml.rawclobber:952
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[19]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:952
+#: src-ru/data/events_pirate.xml.rawclobber:953
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[20]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:953
+#: src-ru/data/events_pirate.xml.rawclobber:954
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[21]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:954
+#: src-ru/data/events_pirate.xml.rawclobber:955
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[22]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:955
+#: src-ru/data/events_pirate.xml.rawclobber:956
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[23]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:956
+#: src-ru/data/events_pirate.xml.rawclobber:957
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[24]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:959
+#: src-ru/data/events_pirate.xml.rawclobber:960
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:960
+#: src-ru/data/events_pirate.xml.rawclobber:961
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:961
+#: src-ru/data/events_pirate.xml.rawclobber:962
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:962
+#: src-ru/data/events_pirate.xml.rawclobber:963
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:963
+#: src-ru/data/events_pirate.xml.rawclobber:964
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:964
+#: src-ru/data/events_pirate.xml.rawclobber:965
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:967
+#: src-ru/data/events_pirate.xml.rawclobber:968
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:968
+#: src-ru/data/events_pirate.xml.rawclobber:969
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:969
+#: src-ru/data/events_pirate.xml.rawclobber:970
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:970
+#: src-ru/data/events_pirate.xml.rawclobber:971
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:971
+#: src-ru/data/events_pirate.xml.rawclobber:972
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:972
+#: src-ru/data/events_pirate.xml.rawclobber:973
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:975
+#: src-ru/data/events_pirate.xml.rawclobber:976
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:976
+#: src-ru/data/events_pirate.xml.rawclobber:977
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:977
+#: src-ru/data/events_pirate.xml.rawclobber:978
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:978
+#: src-ru/data/events_pirate.xml.rawclobber:979
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:979
+#: src-ru/data/events_pirate.xml.rawclobber:980
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:980
+#: src-ru/data/events_pirate.xml.rawclobber:981
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:983
+#: src-ru/data/events_pirate.xml.rawclobber:984
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:984
+#: src-ru/data/events_pirate.xml.rawclobber:985
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:985
+#: src-ru/data/events_pirate.xml.rawclobber:986
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:986
+#: src-ru/data/events_pirate.xml.rawclobber:987
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:987
+#: src-ru/data/events_pirate.xml.rawclobber:988
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:988
+#: src-ru/data/events_pirate.xml.rawclobber:989
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:991
+#: src-ru/data/events_pirate.xml.rawclobber:992
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:992
+#: src-ru/data/events_pirate.xml.rawclobber:993
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:993
+#: src-ru/data/events_pirate.xml.rawclobber:994
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:994
+#: src-ru/data/events_pirate.xml.rawclobber:995
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:995
+#: src-ru/data/events_pirate.xml.rawclobber:996
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:996
+#: src-ru/data/events_pirate.xml.rawclobber:997
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:997
+#: src-ru/data/events_pirate.xml.rawclobber:998
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:998
+#: src-ru/data/events_pirate.xml.rawclobber:999
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[8]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:999
+#: src-ru/data/events_pirate.xml.rawclobber:1000
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[9]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1000
+#: src-ru/data/events_pirate.xml.rawclobber:1001
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[10]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1018
+#: src-ru/data/events_pirate.xml.rawclobber:1019
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT_GAME_PREPARE_ENDED\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1138
+#: src-ru/data/events_pirate.xml.rawclobber:1139
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1154
+#: src-ru/data/events_pirate.xml.rawclobber:1155
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1155
+#: src-ru/data/events_pirate.xml.rawclobber:1156
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1156
+#: src-ru/data/events_pirate.xml.rawclobber:1157
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1157
+#: src-ru/data/events_pirate.xml.rawclobber:1158
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1158
+#: src-ru/data/events_pirate.xml.rawclobber:1159
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1161
+#: src-ru/data/events_pirate.xml.rawclobber:1162
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1162
+#: src-ru/data/events_pirate.xml.rawclobber:1163
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1163
+#: src-ru/data/events_pirate.xml.rawclobber:1164
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1164
+#: src-ru/data/events_pirate.xml.rawclobber:1165
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1165
+#: src-ru/data/events_pirate.xml.rawclobber:1166
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1168
+#: src-ru/data/events_pirate.xml.rawclobber:1169
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1169
+#: src-ru/data/events_pirate.xml.rawclobber:1170
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1170
+#: src-ru/data/events_pirate.xml.rawclobber:1171
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1171
+#: src-ru/data/events_pirate.xml.rawclobber:1172
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1172
+#: src-ru/data/events_pirate.xml.rawclobber:1173
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1176
+#: src-ru/data/events_pirate.xml.rawclobber:1177
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1180
+#: src-ru/data/events_pirate.xml.rawclobber:1181
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1184
+#: src-ru/data/events_pirate.xml.rawclobber:1185
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1188
+#: src-ru/data/events_pirate.xml.rawclobber:1189
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1195
+#: src-ru/data/events_pirate.xml.rawclobber:1196
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[8]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1200
+#: src-ru/data/events_pirate.xml.rawclobber:1201
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_FTL_WIN\"]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1207
+#: src-ru/data/events_pirate.xml.rawclobber:1208
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1212
+#: src-ru/data/events_pirate.xml.rawclobber:1213
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1217
+#: src-ru/data/events_pirate.xml.rawclobber:1218
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1222
+#: src-ru/data/events_pirate.xml.rawclobber:1223
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1227
+#: src-ru/data/events_pirate.xml.rawclobber:1228
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[5]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1234
+#: src-ru/data/events_pirate.xml.rawclobber:1235
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/escape/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1237
+#: src-ru/data/events_pirate.xml.rawclobber:1238
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/gotaway/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1240
+#: src-ru/data/events_pirate.xml.rawclobber:1241
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/destroyed/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1248
+#: src-ru/data/events_pirate.xml.rawclobber:1249
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/deadCrew/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1259
+#: src-ru/data/events_pirate.xml.rawclobber:1260
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_SHIP_DEAD\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1267
+#: src-ru/data/events_pirate.xml.rawclobber:1268
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_CREW_DEAD\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1271
+#: src-ru/data/events_pirate.xml.rawclobber:1272
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_CREW_DEAD\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_pirate.xml.rawclobber:1286
+#: src-ru/data/events_pirate.xml.rawclobber:1287
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"ROCK_JAIL_TEXT\"]/text[1]"
 msgstr "Appearing at the beacon, you are attacked by a strange pirate ship..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1287
+#: src-ru/data/events_pirate.xml.rawclobber:1288
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"ROCK_JAIL_TEXT\"]/text[2]"
 msgstr ""
 "As soon as you arrive, you see a pirate ship with strange weapons. It wants "
 "to steal your crew!"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1291
+#: src-ru/data/events_pirate.xml.rawclobber:1292
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"ROCK_JAIL_SHIPS_PARAM\"]/escape/text"
 msgstr "看起来这艘飞船正在试图逃跑。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1294
+#: src-ru/data/events_pirate.xml.rawclobber:1295
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"ROCK_JAIL_SHIPS_PARAM\"]/gotaway/text"
 msgstr "The abductor disappeared in an unknown direction."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1301
+#: src-ru/data/events_pirate.xml.rawclobber:1302
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"ROCK_JAIL_DEAD_CREW\"]/event[1]/text"
 msgstr ""
 "You collect whatever survived the battle. A pity, but there are no prisoners"
 " in this ship's cages. Likely they were recently sold..."
 
-#: src-ru/data/events_pirate.xml.rawclobber:1305
+#: src-ru/data/events_pirate.xml.rawclobber:1306
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"ROCK_JAIL_DEAD_CREW\"]/event[2]/text"
 msgstr ""
 "You collect whatever survived the battle. You also find a prisoner in one of"
 " the cells who joins your crew."
+
+#: src-ru/data/events_pirate.xml.rawclobber:1317
+msgid ""
+"data/events_pirate.xml.rawclobber$//event[@name=\"EVENT_PIRATE_GLIF_FIGHT\"]/loadEventList/event[1]/text"
+msgstr ""
+
+#: src-ru/data/events_pirate.xml.rawclobber:1325
+msgid ""
+"data/events_pirate.xml.rawclobber$//event[@name=\"EVENT_PIRATE_GLIF_FIGHT\"]/loadEventList/event[2]/text"
+msgstr ""
+
+#: src-ru/data/events_pirate.xml.rawclobber:1336
+msgid ""
+"data/events_pirate.xml.rawclobber$//ship[@name=\"GLIF_ENEMY_PARAM\"]/destroyed/text"
+msgstr ""
+
+#: src-ru/data/events_pirate.xml.rawclobber:1340
+msgid ""
+"data/events_pirate.xml.rawclobber$//ship[@name=\"GLIF_ENEMY_PARAM\"]/deadCrew/text"
+msgstr ""

@@ -2723,7 +2723,7 @@ msgstr "Агрессор слёрмов"
 #: src-ru/data/autoBlueprints.xml.rawclobber:23920
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_DEFAULT1\"]/class"
-msgstr "Адаптивный штурмовик D"
+msgstr "Адаптивный штурмовик"
 
 #: src-ru/data/autoBlueprints.xml.rawclobber:23945
 msgid ""

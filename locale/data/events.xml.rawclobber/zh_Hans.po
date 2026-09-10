@@ -1,16 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-09-10 12:56+0000\n"
-"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
-"projects/arsenal-plus/dataeventsxmlrawclobber/zh_Hans/>\n"
-"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events.xml.rawclobber:32
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/text"
@@ -44080,7 +44073,7 @@ msgstr "要出售多少燃料？"
 #: src-ru/data/events.xml.rawclobber:51639
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_FUEL_IN_STORE\"]/choice[1]/text"
-msgstr "10."
+msgstr "1."
 
 #: src-ru/data/events.xml.rawclobber:51642
 msgid ""
@@ -44194,7 +44187,7 @@ msgstr "要出售多少弹药？"
 #: src-ru/data/events.xml.rawclobber:51747
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_MISSILES_IN_STORE\"]/choice[1]/text"
-msgstr "10."
+msgstr "1."
 
 #: src-ru/data/events.xml.rawclobber:51750
 msgid ""
@@ -44308,7 +44301,7 @@ msgstr "要出售多少无人机部件？"
 #: src-ru/data/events.xml.rawclobber:51854
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_DRONES_IN_STORE\"]/choice[1]/text"
-msgstr "10."
+msgstr "2."
 
 #: src-ru/data/events.xml.rawclobber:51857
 msgid ""

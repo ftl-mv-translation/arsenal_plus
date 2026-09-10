@@ -9292,7 +9292,7 @@ msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS\"]/choice[1]/event/text"
 msgstr ""
 "Орхиды сообщают: «Мы собрали огромную партию биологических образцов и теперь"
-" хотим доставить контейнер на родную планету. Однако, нам также нужно "
+" хотим доставить контейнер на родную планету. Однако нам также нужно "
 "закончить исследования здесь. Сможете доставить биологически ценный груз?»"
 
 #: src-ru/data/events_engi.xml.rawclobber:9348
@@ -10111,7 +10111,7 @@ msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/text"
 msgstr ""
 "Робототехники благодарят вас, хотя они не могут многого предложить, они "
-"готовы установить резервный искуственный интеллект на ваш корабль."
+"готовы установить резервный искусственный интеллект на ваш корабль."
 
 #: src-ru/data/events_engi.xml.rawclobber:10061
 msgid ""
@@ -10147,7 +10147,7 @@ msgstr "Корабль морфов присылает сообщение: \"0? 
 #: src-ru/data/events_engi.xml.rawclobber:10085
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/choice[1]/text"
-msgstr "Отправить \"10\"."
+msgstr "Отправить \"0\"."
 
 #: src-ru/data/events_engi.xml.rawclobber:10089
 msgid ""
@@ -10168,8 +10168,7 @@ msgstr "Морфы видят ваши действия и тоже готовя
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/choice[4]/text"
 msgstr ""
-"Ничего не трогать и просто поговорить с экипажем, пока заряжается FTL-"
-"привод."
+"Ничего не отвечать и поговорить с экипажем, пока заряжается FTL-привод."
 
 #: src-ru/data/events_engi.xml.rawclobber:10102
 msgid ""
@@ -10183,7 +10182,7 @@ msgstr "Они спрашивают снова: \"1? 0?\""
 #: src-ru/data/events_engi.xml.rawclobber:10111
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/choice[1]/text"
-msgstr "Отправить \"10\"."
+msgstr "Отправить \"0\"."
 
 #: src-ru/data/events_engi.xml.rawclobber:10115
 msgid ""
@@ -10204,8 +10203,7 @@ msgstr "Морфы видят ваши действия и тоже готовя
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/choice[4]/text"
 msgstr ""
-"Ничего не трогать и просто поговорить с экипажем, пока заряжается FTL-"
-"привод."
+"Ничего не отвечать и поговорить с экипажем, пока заряжается FTL-привод."
 
 #: src-ru/data/events_engi.xml.rawclobber:10128
 msgid ""
@@ -10219,7 +10217,7 @@ msgstr "Они опять спрашивают: \"0?\""
 #: src-ru/data/events_engi.xml.rawclobber:10137
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/choice[1]/text"
-msgstr "Отправить \"10\"."
+msgstr "Отправить \"0\"."
 
 #: src-ru/data/events_engi.xml.rawclobber:10141
 msgid ""
@@ -10240,8 +10238,7 @@ msgstr "Морфы видят ваши действия и тоже готовя
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/choice[4]/text"
 msgstr ""
-"Ничего не трогать и просто поговорить с экипажем, пока заряжается FTL-"
-"привод."
+"Ничего не отвечать и поговорить с экипажем, пока заряжается FTL-привод."
 
 #: src-ru/data/events_engi.xml.rawclobber:10154
 msgid ""

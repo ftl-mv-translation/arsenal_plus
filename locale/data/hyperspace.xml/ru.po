@@ -8,26 +8,26 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:962
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[1]/tooltip"
 msgstr ""
-"Ионный резонатор\n"
-"\t\t\tДобавляет урон по системам всем ионным орудиям без урона по системам или корпусу."
+"Шлюзовой червь:\n"
+"\t\t\tПри подключении дрона-взломщика к любой системе, кроме шлюзов, все двери корабля будут постоянно взломаны, а при отсутствии или уничтожении системы шлюзов они откроются."
 
 #: src-ru/data/hyperspace.xml:967
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[2]/tooltip"
 msgstr ""
-"Сетевой экран:\n"
-"\t\t\tНе позволяет активировать вражеский дрон-взломщик."
+"Промыватель:\n"
+"\t\t\tВ начале боя навсегда забирает под свой контроль одного из команды врага. Не сработает на последнем экипаже. Нейронный манипулятор блокирует это усиление."
 
 #: src-ru/data/hyperspace.xml:972
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[3]/tooltip"
 msgstr ""
-"Мини-бар дяди Мо:\n"
-"\t\t\tЭкипаж корабля сильно пьян. Точность выстрелов существенно снижена, если на корабле есть активный экипаж."
+"ПКБ-поддержка:\n"
+"\t\t\tЭтот корабль работает с поддержкой ПКБ флота всегда, если это возможно."
 
 #: src-ru/data/hyperspace.xml:978
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[4]/tooltip"
 msgstr ""
-"Щит-дезинтегратор\n"
-"\t\t\tЩиты нейтрализуют без потери мощности все лазеры, мусор, астероиды и, частично, фазовые ионные снаряды. Становится невозможно поднять более 1 слоя щита."
+"Ионный резонатор\n"
+"\t\t\tС вероятностью 75% добавляет урон по системам всем ионным орудиям без урона по системам или корпусу."
 
 #: src-ru/data/hyperspace.xml:983
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[5]/tooltip"
@@ -490,8 +490,8 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[71]/tooltip"
 msgstr ""
-"Скрытые орудия:\n"
-"\t\t\tПозволяют стрелять из режима невидимости, не прерывая его."
+"Армо-пилотирование:\n"
+"\t\t\tРубку пилота и двигатели нельзя повредить оружием или ионизировать."
 
 #: src-ru/data/hyperspace.xml:1320
 msgid ""
@@ -2041,7 +2041,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3074
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_REPLACE_MEDCLON\"]/description"
-msgstr "Заменить медотсек на клон-отсек или наоборот."
+msgstr "Бесплатно заменить медотсек на клон-отсек или наоборот."
 
 #: src-ru/data/hyperspace.xml:3113
 msgid ""

@@ -515,9 +515,6 @@ msgstr "Do not agree to bribery and attack."
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AUTO_DEFENSE_ITEM\"]/text"
 msgstr ""
-"An improved automatic ship of the rebels protects a small space "
-"station.However, without working sensors it is impossible to say what is "
-"inside."
 
 #: src-ru/data/events_nebula.xml.rawclobber:341
 msgid ""
@@ -3038,9 +3035,6 @@ msgstr ""
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/destroyed/text"
 msgstr ""
-"You completely destroyed the ship’s ship, and you will clearly not be "
-"thanking for the murder of your comrades.However, no one interferes with the"
-" remnants of the ship."
 
 #: src-ru/data/events_nebula.xml.rawclobber:2413
 msgid ""

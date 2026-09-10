@@ -57705,7 +57705,7 @@ msgstr "How much fuel will you sell?"
 #: src-ru/data/events.xml.rawclobber:51639
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_FUEL_IN_STORE\"]/choice[1]/text"
-msgstr "10."
+msgstr "1."
 
 #: src-ru/data/events.xml.rawclobber:51642
 msgid ""
@@ -57725,7 +57725,7 @@ msgstr "Return to the store."
 #: src-ru/data/events.xml.rawclobber:51658
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_FUEL_IN_STORE\"]/choice[2]/text"
-msgstr "20."
+msgstr "5."
 
 #: src-ru/data/events.xml.rawclobber:51661
 msgid ""
@@ -57821,7 +57821,7 @@ msgstr "How much ammo will you sell?"
 #: src-ru/data/events.xml.rawclobber:51747
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_MISSILES_IN_STORE\"]/choice[1]/text"
-msgstr "10."
+msgstr "1."
 
 #: src-ru/data/events.xml.rawclobber:51750
 msgid ""
@@ -57841,7 +57841,7 @@ msgstr "Return to the store."
 #: src-ru/data/events.xml.rawclobber:51766
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_MISSILES_IN_STORE\"]/choice[2]/text"
-msgstr "20."
+msgstr "5."
 
 #: src-ru/data/events.xml.rawclobber:51769
 msgid ""
@@ -57937,7 +57937,7 @@ msgstr "How many drone parts will you sell?"
 #: src-ru/data/events.xml.rawclobber:51854
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_DRONES_IN_STORE\"]/choice[1]/text"
-msgstr "10."
+msgstr "2."
 
 #: src-ru/data/events.xml.rawclobber:51857
 msgid ""
@@ -57957,7 +57957,7 @@ msgstr "Return to the store."
 #: src-ru/data/events.xml.rawclobber:51873
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_DRONES_IN_STORE\"]/choice[2]/text"
-msgstr "20."
+msgstr "6."
 
 #: src-ru/data/events.xml.rawclobber:51876
 msgid ""

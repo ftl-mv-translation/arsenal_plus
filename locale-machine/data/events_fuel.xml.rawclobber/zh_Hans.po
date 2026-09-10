@@ -9,1197 +9,1207 @@ msgstr ""
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_FLEET\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:61
+#: src-ru/data/events_fuel.xml.rawclobber:93
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_CLASSIC_TEXT\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:62
+#: src-ru/data/events_fuel.xml.rawclobber:94
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_CLASSIC_TEXT\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:63
+#: src-ru/data/events_fuel.xml.rawclobber:95
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_CLASSIC_TEXT\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:68
+#: src-ru/data/events_fuel.xml.rawclobber:101
+msgid ""
+"data/events_fuel.xml.rawclobber$/dummyroot/FTL/event[@name=\"NEBULA_NO_FUEL_FLEET_DLC_BAD\"]/choice/text"
+msgstr ""
+
+#: src-ru/data/events_fuel.xml.rawclobber:108
 msgid ""
 "data/events_fuel.xml.rawclobber$/dummyroot/FTL/event[@name=\"NO_FUEL_FLEET_DLC_BAD\"]/choice/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:73
+#: src-ru/data/events_fuel.xml.rawclobber:113
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_BAD_TEXT\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:74
+#: src-ru/data/events_fuel.xml.rawclobber:114
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_BAD_TEXT\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:75
+#: src-ru/data/events_fuel.xml.rawclobber:115
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_BAD_TEXT\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:136
+#: src-ru/data/events_fuel.xml.rawclobber:180
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:137
+#: src-ru/data/events_fuel.xml.rawclobber:181
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:138
+#: src-ru/data/events_fuel.xml.rawclobber:182
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:139
+#: src-ru/data/events_fuel.xml.rawclobber:183
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:140
+#: src-ru/data/events_fuel.xml.rawclobber:184
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:141
+#: src-ru/data/events_fuel.xml.rawclobber:185
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:142
+#: src-ru/data/events_fuel.xml.rawclobber:186
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:148
+#: src-ru/data/events_fuel.xml.rawclobber:192
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_NOTHING\"]/choice/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:153
+#: src-ru/data/events_fuel.xml.rawclobber:197
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:154
+#: src-ru/data/events_fuel.xml.rawclobber:198
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:155
+#: src-ru/data/events_fuel.xml.rawclobber:199
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:156
+#: src-ru/data/events_fuel.xml.rawclobber:200
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:157
+#: src-ru/data/events_fuel.xml.rawclobber:201
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:158
+#: src-ru/data/events_fuel.xml.rawclobber:202
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:159
+#: src-ru/data/events_fuel.xml.rawclobber:203
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:160
+#: src-ru/data/events_fuel.xml.rawclobber:204
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[8]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:161
+#: src-ru/data/events_fuel.xml.rawclobber:205
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[9]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:162
+#: src-ru/data/events_fuel.xml.rawclobber:206
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[10]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:163
+#: src-ru/data/events_fuel.xml.rawclobber:207
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[11]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:170
+#: src-ru/data/events_fuel.xml.rawclobber:214
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:174
+#: src-ru/data/events_fuel.xml.rawclobber:218
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:179
+#: src-ru/data/events_fuel.xml.rawclobber:223
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:180
+#: src-ru/data/events_fuel.xml.rawclobber:224
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:181
+#: src-ru/data/events_fuel.xml.rawclobber:225
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:182
+#: src-ru/data/events_fuel.xml.rawclobber:226
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:183
+#: src-ru/data/events_fuel.xml.rawclobber:227
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:186
+#: src-ru/data/events_fuel.xml.rawclobber:230
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_EXPLORE\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:188
+#: src-ru/data/events_fuel.xml.rawclobber:232
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_EXPLORE\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:192
+#: src-ru/data/events_fuel.xml.rawclobber:236
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_EXPLORE\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:198
+#: src-ru/data/events_fuel.xml.rawclobber:242
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:200
+#: src-ru/data/events_fuel.xml.rawclobber:244
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[1]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:204
+#: src-ru/data/events_fuel.xml.rawclobber:248
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[1]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:209
+#: src-ru/data/events_fuel.xml.rawclobber:253
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:213
+#: src-ru/data/events_fuel.xml.rawclobber:257
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:219
+#: src-ru/data/events_fuel.xml.rawclobber:263
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:221
+#: src-ru/data/events_fuel.xml.rawclobber:265
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:225
+#: src-ru/data/events_fuel.xml.rawclobber:269
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:231
+#: src-ru/data/events_fuel.xml.rawclobber:275
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:233
+#: src-ru/data/events_fuel.xml.rawclobber:277
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:237
+#: src-ru/data/events_fuel.xml.rawclobber:281
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:242
+#: src-ru/data/events_fuel.xml.rawclobber:286
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:244
+#: src-ru/data/events_fuel.xml.rawclobber:288
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:246
+#: src-ru/data/events_fuel.xml.rawclobber:290
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:254
+#: src-ru/data/events_fuel.xml.rawclobber:298
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:256
+#: src-ru/data/events_fuel.xml.rawclobber:300
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:264
+#: src-ru/data/events_fuel.xml.rawclobber:308
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:266
+#: src-ru/data/events_fuel.xml.rawclobber:310
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[3]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:274
+#: src-ru/data/events_fuel.xml.rawclobber:318
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[4]/text"
 msgstr "拒绝交换。"
 
-#: src-ru/data/events_fuel.xml.rawclobber:279
+#: src-ru/data/events_fuel.xml.rawclobber:323
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:283
+#: src-ru/data/events_fuel.xml.rawclobber:327
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:289
+#: src-ru/data/events_fuel.xml.rawclobber:333
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:291
+#: src-ru/data/events_fuel.xml.rawclobber:335
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:295
+#: src-ru/data/events_fuel.xml.rawclobber:339
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:299
+#: src-ru/data/events_fuel.xml.rawclobber:343
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:303
+#: src-ru/data/events_fuel.xml.rawclobber:347
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:309
+#: src-ru/data/events_fuel.xml.rawclobber:353
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:311
+#: src-ru/data/events_fuel.xml.rawclobber:355
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:315
+#: src-ru/data/events_fuel.xml.rawclobber:359
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:319
+#: src-ru/data/events_fuel.xml.rawclobber:363
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:323
+#: src-ru/data/events_fuel.xml.rawclobber:367
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:329
+#: src-ru/data/events_fuel.xml.rawclobber:373
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:336
+#: src-ru/data/events_fuel.xml.rawclobber:380
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:339
+#: src-ru/data/events_fuel.xml.rawclobber:383
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[2]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:343
+#: src-ru/data/events_fuel.xml.rawclobber:387
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[2]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:348
+#: src-ru/data/events_fuel.xml.rawclobber:392
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:353
+#: src-ru/data/events_fuel.xml.rawclobber:397
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:359
+#: src-ru/data/events_fuel.xml.rawclobber:403
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[1]/text"
 msgstr ""
 "\"Don't waste all your supplies again. These are dangerous times. Who knows "
 "who might show up,\" they said, handing you some supplies."
 
-#: src-ru/data/events_fuel.xml.rawclobber:368
+#: src-ru/data/events_fuel.xml.rawclobber:412
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:371
+#: src-ru/data/events_fuel.xml.rawclobber:415
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[2]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:375
+#: src-ru/data/events_fuel.xml.rawclobber:419
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[2]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:380
+#: src-ru/data/events_fuel.xml.rawclobber:424
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:385
+#: src-ru/data/events_fuel.xml.rawclobber:429
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:391
+#: src-ru/data/events_fuel.xml.rawclobber:435
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_DECLINE_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:396
+#: src-ru/data/events_fuel.xml.rawclobber:440
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_DECLINE_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:400
+#: src-ru/data/events_fuel.xml.rawclobber:444
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_DECLINE_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:406
+#: src-ru/data/events_fuel.xml.rawclobber:450
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:413
+#: src-ru/data/events_fuel.xml.rawclobber:457
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:417
+#: src-ru/data/events_fuel.xml.rawclobber:461
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:423
+#: src-ru/data/events_fuel.xml.rawclobber:467
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:429
+#: src-ru/data/events_fuel.xml.rawclobber:473
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:431
+#: src-ru/data/events_fuel.xml.rawclobber:475
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:437
+#: src-ru/data/events_fuel.xml.rawclobber:481
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:439
+#: src-ru/data/events_fuel.xml.rawclobber:483
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:447
+#: src-ru/data/events_fuel.xml.rawclobber:491
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:451
+#: src-ru/data/events_fuel.xml.rawclobber:495
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:453
+#: src-ru/data/events_fuel.xml.rawclobber:497
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[2]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:459
+#: src-ru/data/events_fuel.xml.rawclobber:503
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:461
+#: src-ru/data/events_fuel.xml.rawclobber:505
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:534
+#: src-ru/data/events_fuel.xml.rawclobber:580
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:535
+#: src-ru/data/events_fuel.xml.rawclobber:581
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:536
+#: src-ru/data/events_fuel.xml.rawclobber:582
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:537
+#: src-ru/data/events_fuel.xml.rawclobber:583
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:538
+#: src-ru/data/events_fuel.xml.rawclobber:584
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:539
+#: src-ru/data/events_fuel.xml.rawclobber:585
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:540
+#: src-ru/data/events_fuel.xml.rawclobber:586
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:548
+#: src-ru/data/events_fuel.xml.rawclobber:594
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_NOTHING_DISTRESS\"]/choice/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:553
+#: src-ru/data/events_fuel.xml.rawclobber:599
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:554
+#: src-ru/data/events_fuel.xml.rawclobber:600
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:555
+#: src-ru/data/events_fuel.xml.rawclobber:601
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:556
+#: src-ru/data/events_fuel.xml.rawclobber:602
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:557
+#: src-ru/data/events_fuel.xml.rawclobber:603
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:558
+#: src-ru/data/events_fuel.xml.rawclobber:604
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:559
+#: src-ru/data/events_fuel.xml.rawclobber:605
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:564
+#: src-ru/data/events_fuel.xml.rawclobber:610
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:566
+#: src-ru/data/events_fuel.xml.rawclobber:612
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:570
+#: src-ru/data/events_fuel.xml.rawclobber:616
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:572
+#: src-ru/data/events_fuel.xml.rawclobber:618
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:580
+#: src-ru/data/events_fuel.xml.rawclobber:626
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:582
+#: src-ru/data/events_fuel.xml.rawclobber:628
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[3]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:590
+#: src-ru/data/events_fuel.xml.rawclobber:636
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:599
+#: src-ru/data/events_fuel.xml.rawclobber:645
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"AUTO_FUEL_SELLER_ZAPROS\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:603
+#: src-ru/data/events_fuel.xml.rawclobber:649
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"AUTO_FUEL_SELLER_ZAPROS\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:614
+#: src-ru/data/events_fuel.xml.rawclobber:660
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER_DISTRESS\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:618
+#: src-ru/data/events_fuel.xml.rawclobber:664
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER_DISTRESS\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:623
+#: src-ru/data/events_fuel.xml.rawclobber:669
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:624
+#: src-ru/data/events_fuel.xml.rawclobber:670
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:625
+#: src-ru/data/events_fuel.xml.rawclobber:671
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:626
+#: src-ru/data/events_fuel.xml.rawclobber:672
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:673
+#: src-ru/data/events_fuel.xml.rawclobber:719
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:675
+#: src-ru/data/events_fuel.xml.rawclobber:721
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[1]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:679
+#: src-ru/data/events_fuel.xml.rawclobber:725
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[1]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:684
+#: src-ru/data/events_fuel.xml.rawclobber:730
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:686
+#: src-ru/data/events_fuel.xml.rawclobber:732
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:690
+#: src-ru/data/events_fuel.xml.rawclobber:736
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:692
+#: src-ru/data/events_fuel.xml.rawclobber:738
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:698
+#: src-ru/data/events_fuel.xml.rawclobber:744
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:724
+#: src-ru/data/events_fuel.xml.rawclobber:770
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT3\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:730
+#: src-ru/data/events_fuel.xml.rawclobber:776
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT3\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:759
+#: src-ru/data/events_fuel.xml.rawclobber:805
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:760
+#: src-ru/data/events_fuel.xml.rawclobber:806
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:761
+#: src-ru/data/events_fuel.xml.rawclobber:807
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:762
+#: src-ru/data/events_fuel.xml.rawclobber:808
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:767
+#: src-ru/data/events_fuel.xml.rawclobber:813
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_REBEL_WARNING\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:778
+#: src-ru/data/events_fuel.xml.rawclobber:824
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:781
+#: src-ru/data/events_fuel.xml.rawclobber:827
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:785
+#: src-ru/data/events_fuel.xml.rawclobber:831
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:787
+#: src-ru/data/events_fuel.xml.rawclobber:833
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:792
+#: src-ru/data/events_fuel.xml.rawclobber:838
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[@req=\"DRONES_SHIP_REPAIR\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:794
+#: src-ru/data/events_fuel.xml.rawclobber:840
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[@req=\"DRONES_SHIP_REPAIR\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:804
+#: src-ru/data/events_fuel.xml.rawclobber:850
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:808
+#: src-ru/data/events_fuel.xml.rawclobber:854
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:812
+#: src-ru/data/events_fuel.xml.rawclobber:858
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:814
+#: src-ru/data/events_fuel.xml.rawclobber:860
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:816
+#: src-ru/data/events_fuel.xml.rawclobber:862
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:824
+#: src-ru/data/events_fuel.xml.rawclobber:870
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:826
+#: src-ru/data/events_fuel.xml.rawclobber:872
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:832
+#: src-ru/data/events_fuel.xml.rawclobber:878
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:853
+#: src-ru/data/events_fuel.xml.rawclobber:899
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:854
+#: src-ru/data/events_fuel.xml.rawclobber:900
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:855
+#: src-ru/data/events_fuel.xml.rawclobber:901
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:856
+#: src-ru/data/events_fuel.xml.rawclobber:902
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[4]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:858
+#: src-ru/data/events_fuel.xml.rawclobber:904
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[5]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:859
+#: src-ru/data/events_fuel.xml.rawclobber:905
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[6]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:860
+#: src-ru/data/events_fuel.xml.rawclobber:906
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[7]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:861
+#: src-ru/data/events_fuel.xml.rawclobber:907
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[8]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:870
+#: src-ru/data/events_fuel.xml.rawclobber:916
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:872
+#: src-ru/data/events_fuel.xml.rawclobber:918
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:874
+#: src-ru/data/events_fuel.xml.rawclobber:920
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:876
+#: src-ru/data/events_fuel.xml.rawclobber:922
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:882
+#: src-ru/data/events_fuel.xml.rawclobber:928
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:884
+#: src-ru/data/events_fuel.xml.rawclobber:930
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:889
+#: src-ru/data/events_fuel.xml.rawclobber:935
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:891
+#: src-ru/data/events_fuel.xml.rawclobber:937
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[@req=\"LIFE_SCANNER\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:898
+#: src-ru/data/events_fuel.xml.rawclobber:944
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:902
+#: src-ru/data/events_fuel.xml.rawclobber:950
 msgid ""
-"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[2]/text"
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[2]/loadEventList/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:907
+#: src-ru/data/events_fuel.xml.rawclobber:954
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[2]/loadEventList/event[2]/text"
+msgstr ""
+
+#: src-ru/data/events_fuel.xml.rawclobber:961
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:911
+#: src-ru/data/events_fuel.xml.rawclobber:965
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:913
+#: src-ru/data/events_fuel.xml.rawclobber:967
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:915
+#: src-ru/data/events_fuel.xml.rawclobber:969
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:922
+#: src-ru/data/events_fuel.xml.rawclobber:976
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:924
+#: src-ru/data/events_fuel.xml.rawclobber:978
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:930
+#: src-ru/data/events_fuel.xml.rawclobber:984
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/event/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:937
+#: src-ru/data/events_fuel.xml.rawclobber:991
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:946
+#: src-ru/data/events_fuel.xml.rawclobber:1000
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:948
+#: src-ru/data/events_fuel.xml.rawclobber:1002
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:950
+#: src-ru/data/events_fuel.xml.rawclobber:1004
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:955
+#: src-ru/data/events_fuel.xml.rawclobber:1009
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:961
+#: src-ru/data/events_fuel.xml.rawclobber:1015
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_CURIOUS_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:967
+#: src-ru/data/events_fuel.xml.rawclobber:1021
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_CURIOUS_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:974
+#: src-ru/data/events_fuel.xml.rawclobber:1028
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/escape/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:977
+#: src-ru/data/events_fuel.xml.rawclobber:1031
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/gotaway/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:980
+#: src-ru/data/events_fuel.xml.rawclobber:1034
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/destroyed/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:985
+#: src-ru/data/events_fuel.xml.rawclobber:1039
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/deadCrew/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1002
+#: src-ru/data/events_fuel.xml.rawclobber:1056
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1005
+#: src-ru/data/events_fuel.xml.rawclobber:1059
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1009
+#: src-ru/data/events_fuel.xml.rawclobber:1063
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1011
+#: src-ru/data/events_fuel.xml.rawclobber:1065
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1016
+#: src-ru/data/events_fuel.xml.rawclobber:1070
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1020
+#: src-ru/data/events_fuel.xml.rawclobber:1074
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[@req=\"slug_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1022
+#: src-ru/data/events_fuel.xml.rawclobber:1076
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[@req=\"slug_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1032
+#: src-ru/data/events_fuel.xml.rawclobber:1086
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1040
+#: src-ru/data/events_fuel.xml.rawclobber:1094
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[1]/choice/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1049
+#: src-ru/data/events_fuel.xml.rawclobber:1103
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1058
+#: src-ru/data/events_fuel.xml.rawclobber:1112
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_ATTACK_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1062
+#: src-ru/data/events_fuel.xml.rawclobber:1116
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_ATTACK_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1068
+#: src-ru/data/events_fuel.xml.rawclobber:1122
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1071
+#: src-ru/data/events_fuel.xml.rawclobber:1125
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1073
+#: src-ru/data/events_fuel.xml.rawclobber:1127
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1081
+#: src-ru/data/events_fuel.xml.rawclobber:1135
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1083
+#: src-ru/data/events_fuel.xml.rawclobber:1137
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1091
+#: src-ru/data/events_fuel.xml.rawclobber:1145
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1093
+#: src-ru/data/events_fuel.xml.rawclobber:1147
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[3]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1122
+#: src-ru/data/events_fuel.xml.rawclobber:1176
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1130
+#: src-ru/data/events_fuel.xml.rawclobber:1184
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1132
+#: src-ru/data/events_fuel.xml.rawclobber:1186
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1134
+#: src-ru/data/events_fuel.xml.rawclobber:1188
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1142
+#: src-ru/data/events_fuel.xml.rawclobber:1196
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1144
+#: src-ru/data/events_fuel.xml.rawclobber:1198
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1147
+#: src-ru/data/events_fuel.xml.rawclobber:1201
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1156
+#: src-ru/data/events_fuel.xml.rawclobber:1210
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1162
+#: src-ru/data/events_fuel.xml.rawclobber:1216
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1164
+#: src-ru/data/events_fuel.xml.rawclobber:1218
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1166
+#: src-ru/data/events_fuel.xml.rawclobber:1220
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/event/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1175
+#: src-ru/data/events_fuel.xml.rawclobber:1229
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/event/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1181
+#: src-ru/data/events_fuel.xml.rawclobber:1235
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1185
+#: src-ru/data/events_fuel.xml.rawclobber:1239
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1187
+#: src-ru/data/events_fuel.xml.rawclobber:1241
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[5]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1195
+#: src-ru/data/events_fuel.xml.rawclobber:1249
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1199
+#: src-ru/data/events_fuel.xml.rawclobber:1253
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1201
+#: src-ru/data/events_fuel.xml.rawclobber:1255
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1210
+#: src-ru/data/events_fuel.xml.rawclobber:1264
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1212
+#: src-ru/data/events_fuel.xml.rawclobber:1266
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1219
+#: src-ru/data/events_fuel.xml.rawclobber:1273
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_PIRATE\"]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1221
+#: src-ru/data/events_fuel.xml.rawclobber:1275
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_PIRATE\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1225
+#: src-ru/data/events_fuel.xml.rawclobber:1279
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_PIRATE\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1232
+#: src-ru/data/events_fuel.xml.rawclobber:1286
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_ACCEPT\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1239
+#: src-ru/data/events_fuel.xml.rawclobber:1293
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_ACCEPT\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1250
+#: src-ru/data/events_fuel.xml.rawclobber:1304
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1253
+#: src-ru/data/events_fuel.xml.rawclobber:1307
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1257
+#: src-ru/data/events_fuel.xml.rawclobber:1311
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1261
+#: src-ru/data/events_fuel.xml.rawclobber:1315
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1269
+#: src-ru/data/events_fuel.xml.rawclobber:1323
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_FRIENDLY\"]/text"
 msgstr ""

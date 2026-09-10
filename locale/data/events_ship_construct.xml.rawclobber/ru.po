@@ -441,7 +441,7 @@ msgstr "Выбрать (легендарный)."
 #: src-ru/data/events_ship_construct.xml.rawclobber:204
 msgid ""
 "data/events_ship_construct.xml.rawclobber$//event[@name=\"ARBOLER_DEAD\"]/choice[42]/event/crewMember"
-msgstr "Квази"
+msgstr "Пароген"
 
 #: src-ru/data/events_ship_construct.xml.rawclobber:204
 msgid ""
@@ -1183,7 +1183,7 @@ msgstr "Выбрать (легендарный)."
 msgid ""
 "data/events_ship_construct.xml.rawclobber$//event[@name=\"PREPARE_CAREFULLY_FOR_FTL_MAIN_MENU\"]/choice[@req=\"ship_assembly_added_crew\""
 " and @lvl=\"0\"]/event/choice[42]/event/crewMember"
-msgstr "Квази"
+msgstr "Пароген"
 
 #: src-ru/data/events_ship_construct.xml.rawclobber:680
 msgid ""
@@ -5748,7 +5748,7 @@ msgstr "Назад."
 #: src-ru/data/events_ship_construct.xml.rawclobber:1816
 msgid ""
 "data/events_ship_construct.xml.rawclobber$//event[@name=\"PREPARE_CAREFULLY_FOR_FTL_WEAPONS\"]/choice[18]/text"
-msgstr "Особые орудия (осторожно, спойлеры!)"
+msgstr "Прокачиваемое оружие"
 
 #: src-ru/data/events_ship_construct.xml.rawclobber:1818
 msgid ""

@@ -1507,8 +1507,8 @@ msgstr "Dummy"
 #: src-ru/data/events.xml.rawclobber:2302
 msgid "data/events.xml.rawclobber$//event[@name=\"AUTOSHIP_TALK\"]/text"
 msgstr ""
-"Здесь не с кем разговаривать. Однако, можно произвести некоторую "
-"модернизацию вашего беспилотника."
+"Здесь не с кем разговаривать. Однако можно произвести некоторую модернизацию"
+" вашего беспилотника."
 
 #: src-ru/data/events.xml.rawclobber:2320
 msgid "data/events.xml.rawclobber$//event[@name=\"AUTOSHIP_TALK\"]/choice[1]/text"
@@ -2230,7 +2230,7 @@ msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"NOTHING2_ENGI_TEXT\"]/text[11]"
 msgstr ""
 "Инжи утверждает, что провёл анализ последних событий и нашёл коренную "
-"причину всех проблем на корабле. Однако, модуль этики не позволяет ему "
+"причину всех проблем на корабле. Однако модуль этики не позволяет ему "
 "озвучить её."
 
 #: src-ru/data/events.xml.rawclobber:3108
@@ -2348,7 +2348,7 @@ msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"NOTHING2_MORPH_TEXT\"]/text[11]"
 msgstr ""
 "Морф утверждает, что провёл анализ последних событий и нашёл коренную "
-"причину всех проблем на корабле. Однако, модуль этики не позволяет ему "
+"причину всех проблем на корабле. Однако модуль этики не позволяет ему "
 "озвучить её."
 
 #: src-ru/data/events.xml.rawclobber:3167
@@ -6225,7 +6225,7 @@ msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"STATION_SICK_SCANNER\"]/event[1]/text"
 msgstr ""
 "Сенсоры показывают рассеянные признаки жизни, невзирая на то, что "
-"большинство экипажа погибло. Однако, их характеристика показывает, что они "
+"большинство экипажа погибло. Однако их характеристика показывает, что они "
 "сильные и нестабильные. Вы решаете, что лучше уйти, чем рисковать, привлекая"
 " внимание оставшегося экипажа."
 
@@ -6502,7 +6502,7 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BOARDERS_ASTEROID_PRIZRAK\"]/choice[@req=\"pilot\"]/event/text"
 msgstr ""
-"Благодаря вашему пилоту, вы успешно маневрируете между астероидов. Однако, "
+"Благодаря вашему пилоту, вы успешно маневрируете между астероидов. Однако "
 "пучок яркого света преследует ваш корабль, призраки на борту!"
 
 #: src-ru/data/events.xml.rawclobber:6109
@@ -6717,9 +6717,9 @@ msgstr ""
 msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_KOMAROV_CORE\"]/text[1]"
 msgstr ""
 "Оказавшись в системе, вы замечаете неподалёку корабль Федерации. Сканеры "
-"показывают отсутствие экипажа, а единственная находка на борту - "
-"запечатанный топливный бак. Никаких следов или подсказок, объясняющих "
-"исчезновение команды, не обнаружено."
+"показывают отсутствие экипажа, а единственная находка на борту - ядро "
+"Комарова. Никаких следов или подсказок, объясняющих исчезновение команды, не"
+" обнаружено."
 
 #: src-ru/data/events.xml.rawclobber:6216
 msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_KOMAROV_CORE\"]/text[2]"
@@ -6730,7 +6730,7 @@ msgstr ""
 msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_KOMAROV_CORE\"]/text[3]"
 msgstr ""
 "Вы случайно наткнулись на обломки космической станции. В основном всё "
-"разграблено, но вы находите топливный бак внутри."
+"разграблено, но вы находите ядро Комарова внутри."
 
 #: src-ru/data/events.xml.rawclobber:6223
 msgid ""
@@ -8277,7 +8277,7 @@ msgid ""
 "data/events.xml.rawclobber$//event[@name=\"QUEST_MANTIS_INVASION_START\"]/text"
 msgstr ""
 "Вы получаете запрос: «Все наши военные корабли были повреждены или "
-"уничтожены во время восстания. Однако, у нас есть сведения о военном лагере "
+"уничтожены во время восстания. Однако у нас есть сведения о военном лагере "
 "мантисов на расстоянии нескольких прыжков от нас. Вы можете помочь?»"
 
 #: src-ru/data/events.xml.rawclobber:7496
@@ -11237,8 +11237,8 @@ msgid ""
 msgstr ""
 "Вы отправляете своего инжи на станцию, чтобы уговорить их передать прототип "
 "орудия вам для борьбы с повстанцами. Похоже, что инжи тоже не жалуют их, так"
-" как вскоре с вами связываются и спрашивают, куда установить орудие. Однако,"
-" ваш инжи пожелал остаться на станции и заниматься исследованиями со своими "
+" как вскоре с вами связываются и спрашивают, куда установить орудие. Однако "
+"ваш инжи пожелал остаться на станции и заниматься исследованиями со своими "
 "собратьями, так что придётся оставить его здесь. Вы считаете, что это "
 "справедливая плата за такое мощное орудие."
 
@@ -18509,7 +18509,7 @@ msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ZOLTAN_FLEET_ZOLTALKS\"]/event[1]/loadEventList/event[1]/text"
 msgstr ""
 "Золтанец увлечённо болтает с товарищами на самые разные темы и, в итоге, "
-"выпрашивает лицензию на пролёт, карту сектора и одно орудие."
+"выпрашивает лицензию на пролёт и одно орудие."
 
 #: src-ru/data/events.xml.rawclobber:18386
 msgid ""
@@ -23089,13 +23089,13 @@ msgstr "Вы отправляете команду оптимизировать 
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DOOR_WORM_LIST_PREPARE\"]/choice[@req=\"hacking\""
 " and @lvl=\"0\"]/text"
-msgstr "К сожалению, без системы щитов это невозможно сделать."
+msgstr "К сожалению, без системы взломщика это невозможно сделать."
 
 #: src-ru/data/events.xml.rawclobber:22698
 msgid "data/events.xml.rawclobber$//event[@name=\"DOOR_WORM_LIST_NOTHING\"]/text"
 msgstr ""
-"Ваша команда не может справиться с настройкой системы дронов. Вы больше не "
-"можете терять время и готовитесь к прыжку."
+"Ваша команда не может справиться с настройкой системы взломщика. Вы больше "
+"не можете терять время и готовитесь к прыжку."
 
 #: src-ru/data/events.xml.rawclobber:22701
 msgid "data/events.xml.rawclobber$//event[@name=\"DOOR_WORM_LIST_GOOD\"]/text"
@@ -23113,8 +23113,8 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:22710
 msgid "data/events.xml.rawclobber$//event[@name=\"DOOR_WORM_LIST_BAD\"]/text"
 msgstr ""
-"Во время процесса оптимизации проиходит взрыв в системе дронов! Что-то пошло"
-" не так..."
+"Во время процесса оптимизации происходит взрыв в системе взломщика! Что-то "
+"пошло не так..."
 
 #: src-ru/data/events.xml.rawclobber:22719
 msgid "data/events.xml.rawclobber$//event[@name=\"AIM_DRONES_LIST_PREPARE\"]/text"
@@ -23148,8 +23148,8 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:22752
 msgid "data/events.xml.rawclobber$//event[@name=\"AIM_DRONES_LIST_BAD\"]/text"
 msgstr ""
-"Во время процесса оптимизации проиходит взрыв в системе дронов! Что-то пошло"
-" не так..."
+"Во время процесса оптимизации происходит взрыв в системе дронов! Что-то "
+"пошло не так..."
 
 #: src-ru/data/events.xml.rawclobber:22759
 msgid ""
@@ -23186,7 +23186,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:22792
 msgid "data/events.xml.rawclobber$//event[@name=\"ART_ACCURACY_LIST_BAD\"]/text"
 msgstr ""
-"Во время процесса оптимизации проиходит взрыв в системе артиллерии! Что-то "
+"Во время процесса оптимизации происходит взрыв в системе артиллерии! Что-то "
 "пошло не так..."
 
 #: src-ru/data/events.xml.rawclobber:22803
@@ -25433,7 +25433,7 @@ msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"PROJECTILE_EATER_LIST_GOOD_AND_BAD\"]/text"
 msgstr ""
 "Ваша команда долго бьётся над алгоритмами, но у них получается! Уничтожитель"
-" снарядов получает дополнительный заряд применения. Однако, флот повстанцев "
+" снарядов получает дополнительный заряд применения. Однако флот повстанцев "
 "приблизился за это время."
 
 #: src-ru/data/events.xml.rawclobber:25312
@@ -25468,7 +25468,7 @@ msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"AUTO_REPAIR_LIST_GOOD_AND_BAD\"]/text"
 msgstr ""
 "Ваша команда долго бьётся над алгоритмами, но у них получается! Авторемонт "
-"систем теперь будет быстрее на 100% от базовой скорости. Однако, флот "
+"систем теперь будет быстрее на 100% от базовой скорости. Однако флот "
 "повстанцев приблизился за это время."
 
 #: src-ru/data/events.xml.rawclobber:25361
@@ -35375,7 +35375,7 @@ msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_1\"]/event/choice[@req=\"slug_crew\"]/event/text"
 msgstr ""
 "Через некоторое время слаг докладывает вам, что это простые существа, "
-"живущие мирной жизнью. Однако, это не первый раз, когда здесь приземлился "
+"живущие мирной жизнью. Однако это не первый раз, когда здесь приземлился "
 "корабль. Они информируют вас, что недалеко находится место крушения."
 
 #: src-ru/data/events.xml.rawclobber:32209
@@ -36025,7 +36025,7 @@ msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_5_JOIN\"]/event[2]/text"
 msgstr ""
 "Вы объясняете исследователю ситуацию, в которой Федерация находится в данный"
-" момент. Однако, он предан своему делу и, не желая бросать свой корабль, "
+" момент. Однако он предан своему делу и, не желая бросать свой корабль, "
 "остаётся на планете."
 
 #: src-ru/data/events.xml.rawclobber:32617
@@ -40388,7 +40388,7 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"CIV_CW_ST_DANCE1\"]/event[5]/text"
 msgstr ""
-"Ваша команда весело проводит время с местными танцовщицами. Однако, вы "
+"Ваша команда весело проводит время с местными танцовщицами. Однако вы "
 "замечаете, что кто-то из команды надолго пропал! Поиски и расспросы местных "
 "ничего не дали..."
 
@@ -44719,8 +44719,8 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:45193
 msgid "data/events.xml.rawclobber$//event[@name=\"ENGI_EVO\"]/text"
 msgstr ""
-"На первый взгляд маяк пуст. Однако, вскоре с вами связывается скрытая "
-"станция инжи, опознав вас как союзника Федерации. Вы получаете приглашение "
+"На первый взгляд маяк пуст. Однако вскоре с вами связывается скрытая станция"
+" инжи, опознав вас как союзника Федерации. Вы получаете приглашение "
 "пристыковаться."
 
 #: src-ru/data/events.xml.rawclobber:45195
@@ -51865,8 +51865,8 @@ msgstr "Внутреннее усиление: Шлюзовой червь."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"DOOR_WORM\"]/text"
 msgstr ""
-"(Сетевой экран) Встроить это усиление в конструкции корабля, освободив слот "
-"усилений."
+"(Шлюзовой червь) Встроить это усиление в конструкции корабля, освободив слот"
+" усилений."
 
 #: src-ru/data/events.xml.rawclobber:51349
 msgid ""
@@ -51905,7 +51905,7 @@ msgstr "Сколько топлива продать?"
 #: src-ru/data/events.xml.rawclobber:51639
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_FUEL_IN_STORE\"]/choice[1]/text"
-msgstr "10."
+msgstr "1."
 
 #: src-ru/data/events.xml.rawclobber:51642
 msgid ""
@@ -51925,7 +51925,7 @@ msgstr "Вернуться в магазин."
 #: src-ru/data/events.xml.rawclobber:51658
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_FUEL_IN_STORE\"]/choice[2]/text"
-msgstr "20."
+msgstr "5."
 
 #: src-ru/data/events.xml.rawclobber:51661
 msgid ""
@@ -52019,7 +52019,7 @@ msgstr "Сколько боеприпасов продать?"
 #: src-ru/data/events.xml.rawclobber:51747
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_MISSILES_IN_STORE\"]/choice[1]/text"
-msgstr "10."
+msgstr "1."
 
 #: src-ru/data/events.xml.rawclobber:51750
 msgid ""
@@ -52039,7 +52039,7 @@ msgstr "Вернуться в магазин."
 #: src-ru/data/events.xml.rawclobber:51766
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_MISSILES_IN_STORE\"]/choice[2]/text"
-msgstr "20."
+msgstr "5."
 
 #: src-ru/data/events.xml.rawclobber:51769
 msgid ""
@@ -52133,7 +52133,7 @@ msgstr "Сколько деталей дронов продать?"
 #: src-ru/data/events.xml.rawclobber:51854
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_DRONES_IN_STORE\"]/choice[1]/text"
-msgstr "10."
+msgstr "2."
 
 #: src-ru/data/events.xml.rawclobber:51857
 msgid ""
@@ -52153,7 +52153,7 @@ msgstr "Вернуться в магазин."
 #: src-ru/data/events.xml.rawclobber:51873
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_DRONES_IN_STORE\"]/choice[2]/text"
-msgstr "20."
+msgstr "6."
 
 #: src-ru/data/events.xml.rawclobber:51876
 msgid ""
@@ -56132,7 +56132,7 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_SEX\"]/choice[@req=\"engi_crew\"]/event/choice/event/text"
 msgstr ""
-"Вы решаете оставить эти корабли инжи заниматься своим \"делом\". Однако, "
+"Вы решаете оставить эти корабли инжи заниматься своим \"делом\". Однако "
 "спросив вашего члена экипажа инжи, вы собираете весь лом с периметра, до "
 "которого можете дотянуться, пусть даже у вас и остаётся неприятное ощущение "
 "от этого действия."
@@ -56542,7 +56542,7 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"BIG_MISSILE_SHIP\"]/deadCrew/text"
 msgstr ""
-"Всех пираты мертвы, больше они никого не побеспокоят. Вы грабите их трюмы."
+"Все пираты мертвы, больше они никого не побеспокоят. Вы грабите их трюмы."
 
 #: src-ru/data/events.xml.rawclobber:55499
 msgid "data/events.xml.rawclobber$//event[@name=\"BORDER_FED_MINER\"]/text"
@@ -64003,8 +64003,8 @@ msgstr "Поговорить с экипажем, пока заряжается 
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_BATTLE_OR_PRAZDNIK\"]/choice/event/loadEventList/event[1]/loadEventList/event/text"
 msgstr ""
-"Странноватый корабль выходит из FTL-прыжка поблизости. Он предлагает купить "
-"орудие по праздничной скидке."
+"Странноватый корабль выходит из FTL-прыжка поблизости. Он кажется покрытым "
+"скользским маслом."
 
 #: src-ru/data/events.xml.rawclobber:67805
 msgid ""
@@ -64981,7 +64981,7 @@ msgstr "Пароген"
 #: src-ru/data/events.xml.rawclobber:68980
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_PIRATE_SELLS_TRAITORATOR\"]/choice[1]/text"
-msgstr "Атаковать пиратов."
+msgstr "Атаковать пирата."
 
 #: src-ru/data/events.xml.rawclobber:68982
 msgid ""
@@ -65087,7 +65087,7 @@ msgstr "Похоже, корабль пытается скрыться."
 #: src-ru/data/events.xml.rawclobber:69061
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"FED_TRRAD_PARAMETERS\"]/gotaway/text"
-msgstr "Корабль покинул маяк."
+msgstr "Корабль покинул маяк..."
 
 #: src-ru/data/events.xml.rawclobber:69064
 msgid ""

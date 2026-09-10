@@ -1318,11 +1318,6 @@ msgstr ""
 msgid ""
 "data/dlcEvents_anaerobic.xml.rawclobber$//textList[@name=\"LANIUS_FIGHT_TEXT\"]/text[2]"
 msgstr ""
-"Soon after your arrival, the Lanius ship jumps next to the lighthouse.He "
-"begins to approach slowly.You are trying to contact them through a common "
-"communication channel.However, either he decided to ignore, or does not "
-"understand you.When the ship approached, you give the command to charge "
-"weapons and see that laniuses are doing the same."
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:943
 msgid ""
@@ -1739,10 +1734,6 @@ msgstr ""
 msgid ""
 "data/dlcEvents_anaerobic.xml.rawclobber$//textList[@name=\"LANIUS_PIRATE_CIVILIAN_TEXT\"]/text[1]"
 msgstr ""
-"You find an abandoned excavation object in the process of \"acquiring\" its "
-"lanius.However, you immediately get a call from a civilian transport ship: "
-"“Help!We tried to escape to the arrival of the Lanius, but were caught by "
-"pirates! ”You see a lonely pirate ship that captured a civilian ship."
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:1161
 msgid ""

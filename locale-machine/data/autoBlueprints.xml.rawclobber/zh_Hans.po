@@ -5,2962 +5,2942 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8395
+#: src-ru/data/autoBlueprints.xml.rawclobber:5261
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_FAT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8420
+#: src-ru/data/autoBlueprints.xml.rawclobber:5286
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_FAT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8445
+#: src-ru/data/autoBlueprints.xml.rawclobber:5311
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_FAT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8470
+#: src-ru/data/autoBlueprints.xml.rawclobber:5336
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8489
+#: src-ru/data/autoBlueprints.xml.rawclobber:5355
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8508
+#: src-ru/data/autoBlueprints.xml.rawclobber:5374
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8527
+#: src-ru/data/autoBlueprints.xml.rawclobber:5393
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_ELITE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8546
+#: src-ru/data/autoBlueprints.xml.rawclobber:5412
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_ELITE_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8565
+#: src-ru/data/autoBlueprints.xml.rawclobber:5431
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_ELITE_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8584
+#: src-ru/data/autoBlueprints.xml.rawclobber:5450
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_ELITE_4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8604
+#: src-ru/data/autoBlueprints.xml.rawclobber:5470
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_ELITE_5\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8626
+#: src-ru/data/autoBlueprints.xml.rawclobber:5492
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_ELITE_6\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8648
+#: src-ru/data/autoBlueprints.xml.rawclobber:5514
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_ELITE_7\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8669
+#: src-ru/data/autoBlueprints.xml.rawclobber:5535
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_TRANSPORT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8690
+#: src-ru/data/autoBlueprints.xml.rawclobber:5556
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_TRANSPORT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8711
+#: src-ru/data/autoBlueprints.xml.rawclobber:5577
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_TRANSPORT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8738
+#: src-ru/data/autoBlueprints.xml.rawclobber:5604
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_BASIC\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8754
+#: src-ru/data/autoBlueprints.xml.rawclobber:5620
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_BASIC_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8770
+#: src-ru/data/autoBlueprints.xml.rawclobber:5636
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_BASIC_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8786
+#: src-ru/data/autoBlueprints.xml.rawclobber:5652
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_ASSAULT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8803
+#: src-ru/data/autoBlueprints.xml.rawclobber:5669
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_ASSAULT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8820
+#: src-ru/data/autoBlueprints.xml.rawclobber:5686
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_ASSAULT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8843
+#: src-ru/data/autoBlueprints.xml.rawclobber:5709
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_AUTO_HUNTER_DLC\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8862
+#: src-ru/data/autoBlueprints.xml.rawclobber:5728
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_AUTO_HUNTER_DLC_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8881
+#: src-ru/data/autoBlueprints.xml.rawclobber:5747
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_AUTO_HUNTER_DLC_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8900
+#: src-ru/data/autoBlueprints.xml.rawclobber:5766
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AUTO_SPOTTER_ELITE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8932
+#: src-ru/data/autoBlueprints.xml.rawclobber:5798
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_BUTTON\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8951
+#: src-ru/data/autoBlueprints.xml.rawclobber:5817
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_BUTTON_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8970
+#: src-ru/data/autoBlueprints.xml.rawclobber:5836
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_BUTTON_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:8989
+#: src-ru/data/autoBlueprints.xml.rawclobber:5855
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_CROISSANT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9010
+#: src-ru/data/autoBlueprints.xml.rawclobber:5876
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_CROISSANT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9031
+#: src-ru/data/autoBlueprints.xml.rawclobber:5897
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_CROISSANT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9052
+#: src-ru/data/autoBlueprints.xml.rawclobber:5918
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9074
+#: src-ru/data/autoBlueprints.xml.rawclobber:5940
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9096
+#: src-ru/data/autoBlueprints.xml.rawclobber:5962
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9123
+#: src-ru/data/autoBlueprints.xml.rawclobber:5989
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_SCOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9144
+#: src-ru/data/autoBlueprints.xml.rawclobber:6010
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9165
+#: src-ru/data/autoBlueprints.xml.rawclobber:6031
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_SCOUT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9186
+#: src-ru/data/autoBlueprints.xml.rawclobber:6052
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_FIGHT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9207
+#: src-ru/data/autoBlueprints.xml.rawclobber:6073
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_FIGHT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9228
+#: src-ru/data/autoBlueprints.xml.rawclobber:6094
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_FIGHT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9249
+#: src-ru/data/autoBlueprints.xml.rawclobber:6115
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ASSAULT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9272
+#: src-ru/data/autoBlueprints.xml.rawclobber:6138
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ASSAULT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9295
+#: src-ru/data/autoBlueprints.xml.rawclobber:6161
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ASSAULT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9318
+#: src-ru/data/autoBlueprints.xml.rawclobber:6184
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ASSAULT_ELITE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9342
+#: src-ru/data/autoBlueprints.xml.rawclobber:6208
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ASSAULT_ELITE_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9366
+#: src-ru/data/autoBlueprints.xml.rawclobber:6232
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ASSAULT_ELITE_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9394
+#: src-ru/data/autoBlueprints.xml.rawclobber:6260
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_SCOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9416
+#: src-ru/data/autoBlueprints.xml.rawclobber:6282
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9438
+#: src-ru/data/autoBlueprints.xml.rawclobber:6304
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_SCOUT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9460
+#: src-ru/data/autoBlueprints.xml.rawclobber:6326
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_FIGHTER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9482
+#: src-ru/data/autoBlueprints.xml.rawclobber:6348
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_FIGHTER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9504
+#: src-ru/data/autoBlueprints.xml.rawclobber:6370
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_FIGHTER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9526
+#: src-ru/data/autoBlueprints.xml.rawclobber:6392
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_BOMBER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9548
+#: src-ru/data/autoBlueprints.xml.rawclobber:6414
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9570
+#: src-ru/data/autoBlueprints.xml.rawclobber:6436
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_BOMBER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9592
+#: src-ru/data/autoBlueprints.xml.rawclobber:6458
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_HUNTER\"]/class"
 msgstr "螳螂猎手"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9622
+#: src-ru/data/autoBlueprints.xml.rawclobber:6488
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_HUNTER_2\"]/class"
 msgstr "螳螂猎手"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9652
+#: src-ru/data/autoBlueprints.xml.rawclobber:6518
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_HUNTER_3\"]/class"
 msgstr "螳螂猎手"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9688
+#: src-ru/data/autoBlueprints.xml.rawclobber:6554
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_FOX_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9707
+#: src-ru/data/autoBlueprints.xml.rawclobber:6573
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_FOX_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9726
+#: src-ru/data/autoBlueprints.xml.rawclobber:6592
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_FOX_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9750
+#: src-ru/data/autoBlueprints.xml.rawclobber:6616
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SCOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9769
+#: src-ru/data/autoBlueprints.xml.rawclobber:6635
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9788
+#: src-ru/data/autoBlueprints.xml.rawclobber:6654
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SCOUT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9807
+#: src-ru/data/autoBlueprints.xml.rawclobber:6673
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_BOMBER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9826
+#: src-ru/data/autoBlueprints.xml.rawclobber:6692
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9845
+#: src-ru/data/autoBlueprints.xml.rawclobber:6711
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_BOMBER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9872
+#: src-ru/data/autoBlueprints.xml.rawclobber:6738
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_SCOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9895
+#: src-ru/data/autoBlueprints.xml.rawclobber:6761
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9918
+#: src-ru/data/autoBlueprints.xml.rawclobber:6784
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_SCOUT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9941
+#: src-ru/data/autoBlueprints.xml.rawclobber:6807
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_BOMBER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9964
+#: src-ru/data/autoBlueprints.xml.rawclobber:6830
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:9987
+#: src-ru/data/autoBlueprints.xml.rawclobber:6853
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_BOMBER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10017
+#: src-ru/data/autoBlueprints.xml.rawclobber:6883
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_FIGHTER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10037
+#: src-ru/data/autoBlueprints.xml.rawclobber:6903
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_FIGHTER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10057
+#: src-ru/data/autoBlueprints.xml.rawclobber:6923
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_FIGHTER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10083
+#: src-ru/data/autoBlueprints.xml.rawclobber:6949
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_BOMBER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10106
+#: src-ru/data/autoBlueprints.xml.rawclobber:6972
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10129
+#: src-ru/data/autoBlueprints.xml.rawclobber:6995
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_BOMBER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10152
+#: src-ru/data/autoBlueprints.xml.rawclobber:7018
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_PEACE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10173
+#: src-ru/data/autoBlueprints.xml.rawclobber:7039
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_SCOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10192
+#: src-ru/data/autoBlueprints.xml.rawclobber:7058
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10211
+#: src-ru/data/autoBlueprints.xml.rawclobber:7077
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_SCOUT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10230
+#: src-ru/data/autoBlueprints.xml.rawclobber:7096
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_BOMBER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10250
+#: src-ru/data/autoBlueprints.xml.rawclobber:7116
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:10270
+#: src-ru/data/autoBlueprints.xml.rawclobber:7136
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_BOMBER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:12864
+#: src-ru/data/autoBlueprints.xml.rawclobber:9805
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:12884
+#: src-ru/data/autoBlueprints.xml.rawclobber:9825
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:12904
+#: src-ru/data/autoBlueprints.xml.rawclobber:9845
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_ASSAULT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:12929
+#: src-ru/data/autoBlueprints.xml.rawclobber:9870
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_ASSAULT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:12954
+#: src-ru/data/autoBlueprints.xml.rawclobber:9895
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_GUARD_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:12978
+#: src-ru/data/autoBlueprints.xml.rawclobber:9919
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_GUARD_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13001
+#: src-ru/data/autoBlueprints.xml.rawclobber:9942
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_SCOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13021
+#: src-ru/data/autoBlueprints.xml.rawclobber:9962
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13041
+#: src-ru/data/autoBlueprints.xml.rawclobber:9982
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_BOSS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13070
+#: src-ru/data/autoBlueprints.xml.rawclobber:10011
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_TRADER1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13093
+#: src-ru/data/autoBlueprints.xml.rawclobber:10034
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_TRADER2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13150
+#: src-ru/data/autoBlueprints.xml.rawclobber:10091
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_ROCK_OUTPOST\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13172
+#: src-ru/data/autoBlueprints.xml.rawclobber:10113
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_CIRCLE_EW\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13201
+#: src-ru/data/autoBlueprints.xml.rawclobber:10142
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_ENERGY_CHECKPOINT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13228
+#: src-ru/data/autoBlueprints.xml.rawclobber:10169
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_JELLY_CHECKPOINT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13252
+#: src-ru/data/autoBlueprints.xml.rawclobber:10193
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_MANTIS_OUTPOST\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13274
+#: src-ru/data/autoBlueprints.xml.rawclobber:10215
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_MANTIS_OUTPOST2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13299
+#: src-ru/data/autoBlueprints.xml.rawclobber:10240
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_CRYSTAL_BOMBER_DLC\"]/class"
 msgstr "奇怪的战舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13340
+#: src-ru/data/autoBlueprints.xml.rawclobber:10281
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_CRYSTAL_BOMBER_DLC_2\"]/class"
 msgstr "奇怪的战舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13362
+#: src-ru/data/autoBlueprints.xml.rawclobber:10303
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_CRYSTAL_BOMBER_DLC_3\"]/class"
 msgstr "奇怪的战舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13391
+#: src-ru/data/autoBlueprints.xml.rawclobber:10332
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_REBEL_ASSAULT_1\"]/class"
 msgstr "掠夺者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13412
+#: src-ru/data/autoBlueprints.xml.rawclobber:10353
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_REBEL_ASSAULT_1_2\"]/class"
 msgstr "掠夺者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13433
+#: src-ru/data/autoBlueprints.xml.rawclobber:10374
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_REBEL_ASSAULT_1_3\"]/class"
 msgstr "掠夺者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13454
+#: src-ru/data/autoBlueprints.xml.rawclobber:10395
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_REBEL_ASSAULT_2\"]/class"
 msgstr "掠夺者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13475
+#: src-ru/data/autoBlueprints.xml.rawclobber:10416
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_REBEL_ASSAULT_2_2\"]/class"
 msgstr "掠夺者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13496
+#: src-ru/data/autoBlueprints.xml.rawclobber:10437
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_REBEL_ASSAULT_2_3\"]/class"
 msgstr "掠夺者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13517
+#: src-ru/data/autoBlueprints.xml.rawclobber:10458
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_REBEL_ASSAULT_3\"]/class"
 msgstr "掠夺者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13538
+#: src-ru/data/autoBlueprints.xml.rawclobber:10479
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_REBEL_ASSAULT_3_2\"]/class"
 msgstr "掠夺者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13559
+#: src-ru/data/autoBlueprints.xml.rawclobber:10500
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_REBEL_ASSAULT_3_3\"]/class"
 msgstr "掠夺者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13593
+#: src-ru/data/autoBlueprints.xml.rawclobber:10534
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_ENERGY_SHIELD\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13620
+#: src-ru/data/autoBlueprints.xml.rawclobber:10561
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"C_AUTO_CRUISER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13671
+#: src-ru/data/autoBlueprints.xml.rawclobber:10612
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_AUTO_CONSTRUCTOR\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13695
+#: src-ru/data/autoBlueprints.xml.rawclobber:10636
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_ROCK_FIGHT_DLC_OUTLAW\"]/class"
 msgstr "岩石族海盗舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13739
+#: src-ru/data/autoBlueprints.xml.rawclobber:10680
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_ROCK_ASTEROID\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13772
+#: src-ru/data/autoBlueprints.xml.rawclobber:10713
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_CIRCLE_SCOUT_DLC\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13815
+#: src-ru/data/autoBlueprints.xml.rawclobber:10756
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_CIRCLE_SCOUT_DLC_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13839
+#: src-ru/data/autoBlueprints.xml.rawclobber:10780
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_CIRCLE_SCOUT_DLC_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13869
+#: src-ru/data/autoBlueprints.xml.rawclobber:10810
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"C_PIRATE_CRUISER_ARTILLERY\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13909
+#: src-ru/data/autoBlueprints.xml.rawclobber:10850
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_ANAEROBIC_HIVE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13947
+#: src-ru/data/autoBlueprints.xml.rawclobber:10888
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"C_REBEL_EW_CRUISER\"]/class"
 msgstr "叛军无畏舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:13999
+#: src-ru/data/autoBlueprints.xml.rawclobber:10940
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"C_REBEL_EW_CRUISER_2\"]/class"
 msgstr "叛军无畏舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14036
+#: src-ru/data/autoBlueprints.xml.rawclobber:10977
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_CIV_BOMBER_OUTLAW\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14061
+#: src-ru/data/autoBlueprints.xml.rawclobber:11002
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_OUTLAW_OUTPOST\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14087
+#: src-ru/data/autoBlueprints.xml.rawclobber:11028
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_JELLY_HUNTER\"]/class"
 msgstr "蛞蝓族猎手"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14132
+#: src-ru/data/autoBlueprints.xml.rawclobber:11073
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_JELLY_HUNTER_2\"]/class"
 msgstr "蛞蝓族猎手"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14155
+#: src-ru/data/autoBlueprints.xml.rawclobber:11096
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_JELLY_HUNTER_3\"]/class"
 msgstr "蛞蝓族猎手"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14184
+#: src-ru/data/autoBlueprints.xml.rawclobber:11125
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TB_ENERGY_BARGE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14246
+#: src-ru/data/autoBlueprints.xml.rawclobber:11187
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_AI_OUTPOST\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14299
+#: src-ru/data/autoBlueprints.xml.rawclobber:11240
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_REPAIR\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14319
+#: src-ru/data/autoBlueprints.xml.rawclobber:11260
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_REPAIR_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14339
+#: src-ru/data/autoBlueprints.xml.rawclobber:11280
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_REPAIR_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14359
+#: src-ru/data/autoBlueprints.xml.rawclobber:11300
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_INTERCEPTOR\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14402
+#: src-ru/data/autoBlueprints.xml.rawclobber:11343
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_INTERCEPTOR_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14421
+#: src-ru/data/autoBlueprints.xml.rawclobber:11362
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_INTERCEPTOR_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14446
+#: src-ru/data/autoBlueprints.xml.rawclobber:11387
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_BOMBER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14493
+#: src-ru/data/autoBlueprints.xml.rawclobber:11434
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14516
+#: src-ru/data/autoBlueprints.xml.rawclobber:11457
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"1-CE_AI_BOMBER-2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14539
+#: src-ru/data/autoBlueprints.xml.rawclobber:11480
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"1-CE_AI_BOMBER-3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14562
+#: src-ru/data/autoBlueprints.xml.rawclobber:11503
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"1-CE_AI_BOMBER-4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14585
+#: src-ru/data/autoBlueprints.xml.rawclobber:11526
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"1-CE_AI_BOMBER-5\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14608
+#: src-ru/data/autoBlueprints.xml.rawclobber:11549
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_ASSAULT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14654
+#: src-ru/data/autoBlueprints.xml.rawclobber:11595
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_INSTIGATOR\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14693
+#: src-ru/data/autoBlueprints.xml.rawclobber:11634
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_INSTIGATOR_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14712
+#: src-ru/data/autoBlueprints.xml.rawclobber:11653
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_DEFENDER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14757
+#: src-ru/data/autoBlueprints.xml.rawclobber:11698
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_DEFENDER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14778
+#: src-ru/data/autoBlueprints.xml.rawclobber:11719
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_HACKER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14801
+#: src-ru/data/autoBlueprints.xml.rawclobber:11742
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_HACKER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14824
+#: src-ru/data/autoBlueprints.xml.rawclobber:11765
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CE_AI_HACKER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14851
+#: src-ru/data/autoBlueprints.xml.rawclobber:11792
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SEXSHIP\"]/class"
 msgstr "工程师双联巡洋舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14878
+#: src-ru/data/autoBlueprints.xml.rawclobber:11819
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_SCOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14903
+#: src-ru/data/autoBlueprints.xml.rawclobber:11844
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14928
+#: src-ru/data/autoBlueprints.xml.rawclobber:11869
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_SCOUT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14953
+#: src-ru/data/autoBlueprints.xml.rawclobber:11894
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"1_MOTHERSHIP\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:14990
+#: src-ru/data/autoBlueprints.xml.rawclobber:11931
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"LANIUS_X_1\"]/class"
 msgstr "拉尼乌斯无畏舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15021
+#: src-ru/data/autoBlueprints.xml.rawclobber:11962
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_HUNTER_PIRATE\"]/class"
 msgstr "螳螂猎手"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15053
+#: src-ru/data/autoBlueprints.xml.rawclobber:11994
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENGI_HUNTER\"]/class"
 msgstr "工程师猎手"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15092
+#: src-ru/data/autoBlueprints.xml.rawclobber:12034
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_ION_SHIP_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15120
+#: src-ru/data/autoBlueprints.xml.rawclobber:12062
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_DREDNOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15153
+#: src-ru/data/autoBlueprints.xml.rawclobber:12095
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLUG_DEPRESSER\"]/class"
 msgstr "蛞蝓族压制者"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15186
+#: src-ru/data/autoBlueprints.xml.rawclobber:12128
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_OUTLAW_ASTEROID\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15222
+#: src-ru/data/autoBlueprints.xml.rawclobber:12164
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_PRO\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15252
+#: src-ru/data/autoBlueprints.xml.rawclobber:12194
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_ARTILLERY\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15279
+#: src-ru/data/autoBlueprints.xml.rawclobber:12221
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_ARTILLERY_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15329
+#: src-ru/data/autoBlueprints.xml.rawclobber:12271
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_SUP_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15351
+#: src-ru/data/autoBlueprints.xml.rawclobber:12293
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_SUP_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15373
+#: src-ru/data/autoBlueprints.xml.rawclobber:12315
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_SUP_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15402
+#: src-ru/data/autoBlueprints.xml.rawclobber:12344
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15424
+#: src-ru/data/autoBlueprints.xml.rawclobber:12366
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15446
+#: src-ru/data/autoBlueprints.xml.rawclobber:12388
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15474
+#: src-ru/data/autoBlueprints.xml.rawclobber:12416
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_CLASSIC\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15496
+#: src-ru/data/autoBlueprints.xml.rawclobber:12438
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_CLASSIC_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15518
+#: src-ru/data/autoBlueprints.xml.rawclobber:12460
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_CLASSIC_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15546
+#: src-ru/data/autoBlueprints.xml.rawclobber:12488
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_BOMBER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15568
+#: src-ru/data/autoBlueprints.xml.rawclobber:12510
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15590
+#: src-ru/data/autoBlueprints.xml.rawclobber:12532
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_BOMBER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15619
+#: src-ru/data/autoBlueprints.xml.rawclobber:12561
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_ART\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15649
+#: src-ru/data/autoBlueprints.xml.rawclobber:12591
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_ART_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15679
+#: src-ru/data/autoBlueprints.xml.rawclobber:12621
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_ART_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15715
+#: src-ru/data/autoBlueprints.xml.rawclobber:12657
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_FLAGSHIP\"]/class"
 msgstr "教团旗舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15742
+#: src-ru/data/autoBlueprints.xml.rawclobber:12684
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_FLAGSHIP_2\"]/class"
 msgstr "教团旗舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15766
+#: src-ru/data/autoBlueprints.xml.rawclobber:12708
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_FLAGSHIP_3\"]/class"
 msgstr "教团旗舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15794
+#: src-ru/data/autoBlueprints.xml.rawclobber:12736
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_BOMBER_FOR_AI_QUEST\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15816
+#: src-ru/data/autoBlueprints.xml.rawclobber:12758
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_CARGO\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15836
+#: src-ru/data/autoBlueprints.xml.rawclobber:12778
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SKINNY_PLUS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15858
+#: src-ru/data/autoBlueprints.xml.rawclobber:12800
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_SCOUT_CRAZY\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15894
+#: src-ru/data/autoBlueprints.xml.rawclobber:12836
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_DRONEQUEEN\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15920
+#: src-ru/data/autoBlueprints.xml.rawclobber:12862
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_STATION\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15960
+#: src-ru/data/autoBlueprints.xml.rawclobber:12902
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_STATION2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:15987
+#: src-ru/data/autoBlueprints.xml.rawclobber:12929
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_BOSS_1\"]/class"
 msgstr "皇家突击舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16016
+#: src-ru/data/autoBlueprints.xml.rawclobber:12958
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_BOSS_2\"]/class"
 msgstr "皇家突击舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16046
+#: src-ru/data/autoBlueprints.xml.rawclobber:12988
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_SCOUT_FULL_OF_MANTIS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16072
+#: src-ru/data/autoBlueprints.xml.rawclobber:13014
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_ART\"]/class"
 msgstr "蛞蝓族火炮"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16108
+#: src-ru/data/autoBlueprints.xml.rawclobber:13050
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_CRYSTAL_DAMAGED\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16131
+#: src-ru/data/autoBlueprints.xml.rawclobber:13073
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_FIGHTER_ROCKER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16193
+#: src-ru/data/autoBlueprints.xml.rawclobber:13140
+msgid ""
+"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_BUTTON_PROHACK_1DW\"]/class"
+msgstr ""
+
+#: src-ru/data/autoBlueprints.xml.rawclobber:13161
+msgid ""
+"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_CROISSANT_PROHACK_1DW\"]/class"
+msgstr "破解巡洋舰"
+
+#: src-ru/data/autoBlueprints.xml.rawclobber:13183
+msgid ""
+"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_PROHACK_1DW\"]/class"
+msgstr ""
+
+#: src-ru/data/autoBlueprints.xml.rawclobber:13207
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_BUTTON_PROHACK_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16214
+#: src-ru/data/autoBlueprints.xml.rawclobber:13228
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_BUTTON_PROHACK_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16235
+#: src-ru/data/autoBlueprints.xml.rawclobber:13249
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_BUTTON_PROHACK_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16257
+#: src-ru/data/autoBlueprints.xml.rawclobber:13271
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_CROISSANT_PROHACK_1\"]/class"
 msgstr "破解巡洋舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16279
+#: src-ru/data/autoBlueprints.xml.rawclobber:13293
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_CROISSANT_PROHACK_2\"]/class"
 msgstr "破解巡洋舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16301
+#: src-ru/data/autoBlueprints.xml.rawclobber:13315
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_CROISSANT_PROHACK_3\"]/class"
 msgstr "破解巡洋舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16324
+#: src-ru/data/autoBlueprints.xml.rawclobber:13338
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_PROHACK_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16347
+#: src-ru/data/autoBlueprints.xml.rawclobber:13361
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_PROHACK_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16370
+#: src-ru/data/autoBlueprints.xml.rawclobber:13384
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_PROHACK_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16789
+#: src-ru/data/autoBlueprints.xml.rawclobber:13803
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_FIGHTER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16811
+#: src-ru/data/autoBlueprints.xml.rawclobber:13825
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_FIGHTER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16833
+#: src-ru/data/autoBlueprints.xml.rawclobber:13847
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_FIGHTER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16855
+#: src-ru/data/autoBlueprints.xml.rawclobber:13869
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_TRANSPORT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16877
+#: src-ru/data/autoBlueprints.xml.rawclobber:13891
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_TRANSPORT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16901
+#: src-ru/data/autoBlueprints.xml.rawclobber:13915
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_TRANSPORT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16931
+#: src-ru/data/autoBlueprints.xml.rawclobber:13945
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_BARGE\"]/class"
 msgstr "联邦运输舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:16957
+#: src-ru/data/autoBlueprints.xml.rawclobber:13971
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_FLAGSHIP\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17021
+#: src-ru/data/autoBlueprints.xml.rawclobber:14035
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_ART\"]/class"
 msgstr "工程师火炮"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17054
+#: src-ru/data/autoBlueprints.xml.rawclobber:14068
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_SENSOR_MINI\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17344
+#: src-ru/data/autoBlueprints.xml.rawclobber:14358
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1000\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17364
+#: src-ru/data/autoBlueprints.xml.rawclobber:14378
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1001\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17384
+#: src-ru/data/autoBlueprints.xml.rawclobber:14398
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1002\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17410
+#: src-ru/data/autoBlueprints.xml.rawclobber:14424
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1300\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17430
+#: src-ru/data/autoBlueprints.xml.rawclobber:14444
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1301\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17450
+#: src-ru/data/autoBlueprints.xml.rawclobber:14464
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1302\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17476
+#: src-ru/data/autoBlueprints.xml.rawclobber:14490
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1600\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17496
+#: src-ru/data/autoBlueprints.xml.rawclobber:14510
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1601\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17516
+#: src-ru/data/autoBlueprints.xml.rawclobber:14530
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1602\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17543
+#: src-ru/data/autoBlueprints.xml.rawclobber:14557
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_2000\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17569
+#: src-ru/data/autoBlueprints.xml.rawclobber:14583
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_2001\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17595
+#: src-ru/data/autoBlueprints.xml.rawclobber:14609
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_2002\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17622
+#: src-ru/data/autoBlueprints.xml.rawclobber:14636
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_2300\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17648
+#: src-ru/data/autoBlueprints.xml.rawclobber:14662
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_2301\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17674
+#: src-ru/data/autoBlueprints.xml.rawclobber:14688
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_2302\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17701
+#: src-ru/data/autoBlueprints.xml.rawclobber:14715
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_2600\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17727
+#: src-ru/data/autoBlueprints.xml.rawclobber:14741
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_2601\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17753
+#: src-ru/data/autoBlueprints.xml.rawclobber:14767
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_2602\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17780
+#: src-ru/data/autoBlueprints.xml.rawclobber:14794
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3000\"]/class"
 msgstr "HAL 3000"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17806
+#: src-ru/data/autoBlueprints.xml.rawclobber:14820
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3001\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17832
+#: src-ru/data/autoBlueprints.xml.rawclobber:14846
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3002\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17859
+#: src-ru/data/autoBlueprints.xml.rawclobber:14873
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3300\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17885
+#: src-ru/data/autoBlueprints.xml.rawclobber:14899
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3301\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17911
+#: src-ru/data/autoBlueprints.xml.rawclobber:14925
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3302\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17938
+#: src-ru/data/autoBlueprints.xml.rawclobber:14952
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3600\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17964
+#: src-ru/data/autoBlueprints.xml.rawclobber:14978
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3601\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:17990
+#: src-ru/data/autoBlueprints.xml.rawclobber:15004
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3602\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18021
+#: src-ru/data/autoBlueprints.xml.rawclobber:15035
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AI_CORE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18050
+#: src-ru/data/autoBlueprints.xml.rawclobber:15064
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_BOSS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18092
+#: src-ru/data/autoBlueprints.xml.rawclobber:15106
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_SCOUT_K\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18120
+#: src-ru/data/autoBlueprints.xml.rawclobber:15134
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SCOUT_X1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18147
+#: src-ru/data/autoBlueprints.xml.rawclobber:15161
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_HAL_HUNTER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18183
+#: src-ru/data/autoBlueprints.xml.rawclobber:15197
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18222
+#: src-ru/data/autoBlueprints.xml.rawclobber:15236
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_O2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18262
+#: src-ru/data/autoBlueprints.xml.rawclobber:15276
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_FIR\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18302
+#: src-ru/data/autoBlueprints.xml.rawclobber:15316
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_HEA\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18342
+#: src-ru/data/autoBlueprints.xml.rawclobber:15356
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_BYP\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18382
+#: src-ru/data/autoBlueprints.xml.rawclobber:15396
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_CRE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18422
+#: src-ru/data/autoBlueprints.xml.rawclobber:15436
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_SHI\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18462
+#: src-ru/data/autoBlueprints.xml.rawclobber:15476
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_GEL\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18502
+#: src-ru/data/autoBlueprints.xml.rawclobber:15516
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_ROC\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18542
+#: src-ru/data/autoBlueprints.xml.rawclobber:15556
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_ENE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18582
+#: src-ru/data/autoBlueprints.xml.rawclobber:15596
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_SYS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18622
+#: src-ru/data/autoBlueprints.xml.rawclobber:15636
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_BOSS_ION\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18693
+#: src-ru/data/autoBlueprints.xml.rawclobber:15707
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_1001_LANI\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18713
+#: src-ru/data/autoBlueprints.xml.rawclobber:15727
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_MANTIS_BOMBER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18739
+#: src-ru/data/autoBlueprints.xml.rawclobber:15753
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_MEGADEATH\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18798
+#: src-ru/data/autoBlueprints.xml.rawclobber:15812
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_HACK_BOSS\"]/class"
 msgstr "破解无畏舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18847
+#: src-ru/data/autoBlueprints.xml.rawclobber:15861
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ARMORED_1\"]/class"
 msgstr "岩石族护航舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18871
+#: src-ru/data/autoBlueprints.xml.rawclobber:15885
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ARMORED_2\"]/class"
 msgstr "岩石族护航舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18895
+#: src-ru/data/autoBlueprints.xml.rawclobber:15909
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ARMORED_3\"]/class"
 msgstr "岩石族护航舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18925
+#: src-ru/data/autoBlueprints.xml.rawclobber:15939
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SHIPPY\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18948
+#: src-ru/data/autoBlueprints.xml.rawclobber:15962
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_SHIPPY\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18972
+#: src-ru/data/autoBlueprints.xml.rawclobber:15986
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MISSILE_RADIATION\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:18994
+#: src-ru/data/autoBlueprints.xml.rawclobber:16008
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_BIGBIG\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19028
+#: src-ru/data/autoBlueprints.xml.rawclobber:16042
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_CROISSANT_BYPASS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19055
+#: src-ru/data/autoBlueprints.xml.rawclobber:16069
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"INVISIBLE_SHIP\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19078
+#: src-ru/data/autoBlueprints.xml.rawclobber:16092
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"INVISIBLE_SHIP_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19101
+#: src-ru/data/autoBlueprints.xml.rawclobber:16115
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"INVISIBLE_SHIP_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19154
+#: src-ru/data/autoBlueprints.xml.rawclobber:16168
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGY_BOSS\"]/class"
 msgstr "佐尔坦无畏舰"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19183
+#: src-ru/data/autoBlueprints.xml.rawclobber:16197
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SCOUT_X2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19217
+#: src-ru/data/autoBlueprints.xml.rawclobber:16231
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_S\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19278
+#: src-ru/data/autoBlueprints.xml.rawclobber:16292
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_AS_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19301
+#: src-ru/data/autoBlueprints.xml.rawclobber:16315
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_AS_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19329
+#: src-ru/data/autoBlueprints.xml.rawclobber:16343
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_AS_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19357
+#: src-ru/data/autoBlueprints.xml.rawclobber:16371
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_TR_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19385
+#: src-ru/data/autoBlueprints.xml.rawclobber:16399
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_TR_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19413
+#: src-ru/data/autoBlueprints.xml.rawclobber:16427
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_TR_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19441
+#: src-ru/data/autoBlueprints.xml.rawclobber:16455
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_CR_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19469
+#: src-ru/data/autoBlueprints.xml.rawclobber:16483
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_CR_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19497
+#: src-ru/data/autoBlueprints.xml.rawclobber:16511
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_CR_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19528
+#: src-ru/data/autoBlueprints.xml.rawclobber:16542
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_QUEENY\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19565
+#: src-ru/data/autoBlueprints.xml.rawclobber:16579
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"DECEPTICON_SHIP\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19598
+#: src-ru/data/autoBlueprints.xml.rawclobber:16612
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SCOUT_BAD\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19618
+#: src-ru/data/autoBlueprints.xml.rawclobber:16632
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SCOUT_BAD1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19638
+#: src-ru/data/autoBlueprints.xml.rawclobber:16652
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SCOUT_BAD2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19658
+#: src-ru/data/autoBlueprints.xml.rawclobber:16672
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_SCOUT_BAD3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19685
+#: src-ru/data/autoBlueprints.xml.rawclobber:16699
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_PIRATE_BROKEN\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19711
+#: src-ru/data/autoBlueprints.xml.rawclobber:16725
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_BLINK\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19739
+#: src-ru/data/autoBlueprints.xml.rawclobber:16753
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_BLINK2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19767
+#: src-ru/data/autoBlueprints.xml.rawclobber:16781
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_BLINK3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19795
+#: src-ru/data/autoBlueprints.xml.rawclobber:16809
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_BLINK4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19823
+#: src-ru/data/autoBlueprints.xml.rawclobber:16837
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_BLINK5\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19857
+#: src-ru/data/autoBlueprints.xml.rawclobber:16871
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_SPECIAL\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19888
+#: src-ru/data/autoBlueprints.xml.rawclobber:16902
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_KEEPER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19915
+#: src-ru/data/autoBlueprints.xml.rawclobber:16929
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_KEEPER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19942
+#: src-ru/data/autoBlueprints.xml.rawclobber:16956
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CRYSTAL_KEEPER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:19976
+#: src-ru/data/autoBlueprints.xml.rawclobber:16990
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_FEDHELP\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20002
+#: src-ru/data/autoBlueprints.xml.rawclobber:17016
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_DREDNOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20024
+#: src-ru/data/autoBlueprints.xml.rawclobber:17038
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_DREDNOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20046
+#: src-ru/data/autoBlueprints.xml.rawclobber:17060
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_DREDNOUT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20077
+#: src-ru/data/autoBlueprints.xml.rawclobber:17091
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_CRYSTAL_STATION\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20135
+#: src-ru/data/autoBlueprints.xml.rawclobber:17149
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_WRKD\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20158
+#: src-ru/data/autoBlueprints.xml.rawclobber:17172
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TR_SHIP\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20189
+#: src-ru/data/autoBlueprints.xml.rawclobber:17203
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_STATION\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20214
+#: src-ru/data/autoBlueprints.xml.rawclobber:17228
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_STATION2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20240
+#: src-ru/data/autoBlueprints.xml.rawclobber:17254
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCKSLUG\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20281
+#: src-ru/data/autoBlueprints.xml.rawclobber:17295
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_MINIBOSS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20312
+#: src-ru/data/autoBlueprints.xml.rawclobber:17326
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_PIRATRADER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20342
+#: src-ru/data/autoBlueprints.xml.rawclobber:17356
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_BOMBER_DX\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20377
+#: src-ru/data/autoBlueprints.xml.rawclobber:17391
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_AGRESSOR_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20396
+#: src-ru/data/autoBlueprints.xml.rawclobber:17410
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_AGRESSOR_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20415
+#: src-ru/data/autoBlueprints.xml.rawclobber:17429
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_AGRESSOR_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20434
+#: src-ru/data/autoBlueprints.xml.rawclobber:17448
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_BOXER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20453
+#: src-ru/data/autoBlueprints.xml.rawclobber:17467
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_BOXER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20472
+#: src-ru/data/autoBlueprints.xml.rawclobber:17486
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_BOXER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20493
+#: src-ru/data/autoBlueprints.xml.rawclobber:17507
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_RAZ_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20513
+#: src-ru/data/autoBlueprints.xml.rawclobber:17527
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_RAZ_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20533
+#: src-ru/data/autoBlueprints.xml.rawclobber:17547
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_RAZ_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20560
+#: src-ru/data/autoBlueprints.xml.rawclobber:17574
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_CATCHER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20582
+#: src-ru/data/autoBlueprints.xml.rawclobber:17596
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_CATCHER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20604
+#: src-ru/data/autoBlueprints.xml.rawclobber:17618
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_CATCHER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20634
+#: src-ru/data/autoBlueprints.xml.rawclobber:17648
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_RAPID_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20651
+#: src-ru/data/autoBlueprints.xml.rawclobber:17665
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_RAPID_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20668
+#: src-ru/data/autoBlueprints.xml.rawclobber:17682
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_RAPID_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20689
+#: src-ru/data/autoBlueprints.xml.rawclobber:17703
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_ELITE_ETG\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20717
+#: src-ru/data/autoBlueprints.xml.rawclobber:17731
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_TRBARREL\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20749
+#: src-ru/data/autoBlueprints.xml.rawclobber:17763
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_TRBOX\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20789
+#: src-ru/data/autoBlueprints.xml.rawclobber:17803
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_TRBARREL_P\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20817
+#: src-ru/data/autoBlueprints.xml.rawclobber:17831
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_TRBOX_P\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20880
+#: src-ru/data/autoBlueprints.xml.rawclobber:17894
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ARTILLERY_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20909
+#: src-ru/data/autoBlueprints.xml.rawclobber:17923
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ARTILLERY_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:20938
+#: src-ru/data/autoBlueprints.xml.rawclobber:17952
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_ARTILLERY_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21309
+#: src-ru/data/autoBlueprints.xml.rawclobber:18326
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21332
+#: src-ru/data/autoBlueprints.xml.rawclobber:18349
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21355
+#: src-ru/data/autoBlueprints.xml.rawclobber:18372
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_BOMBER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21378
+#: src-ru/data/autoBlueprints.xml.rawclobber:18395
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_BOMBER_4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21403
+#: src-ru/data/autoBlueprints.xml.rawclobber:18420
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_FIGHTER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21425
+#: src-ru/data/autoBlueprints.xml.rawclobber:18442
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_FIGHTER_1b\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21448
+#: src-ru/data/autoBlueprints.xml.rawclobber:18465
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_FIGHTER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21470
+#: src-ru/data/autoBlueprints.xml.rawclobber:18487
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_FIGHTER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21492
+#: src-ru/data/autoBlueprints.xml.rawclobber:18509
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_FIGHTER_4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21515
+#: src-ru/data/autoBlueprints.xml.rawclobber:18532
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_SCOUT_SPECIAL\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21533
+#: src-ru/data/autoBlueprints.xml.rawclobber:18550
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_SCOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21555
+#: src-ru/data/autoBlueprints.xml.rawclobber:18572
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21577
+#: src-ru/data/autoBlueprints.xml.rawclobber:18594
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_SCOUT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21599
+#: src-ru/data/autoBlueprints.xml.rawclobber:18616
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_SCOUT_4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21625
+#: src-ru/data/autoBlueprints.xml.rawclobber:18642
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_BOSS_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21653
+#: src-ru/data/autoBlueprints.xml.rawclobber:18670
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_BOSS_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21691
+#: src-ru/data/autoBlueprints.xml.rawclobber:18708
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTO_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21709
+#: src-ru/data/autoBlueprints.xml.rawclobber:18726
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTO_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21727
+#: src-ru/data/autoBlueprints.xml.rawclobber:18744
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTO_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21746
+#: src-ru/data/autoBlueprints.xml.rawclobber:18763
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTOB_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21764
+#: src-ru/data/autoBlueprints.xml.rawclobber:18781
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTOB_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21782
+#: src-ru/data/autoBlueprints.xml.rawclobber:18799
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTOB_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21801
+#: src-ru/data/autoBlueprints.xml.rawclobber:18818
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTO_RAZ_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21822
+#: src-ru/data/autoBlueprints.xml.rawclobber:18839
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTO_RAZ_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21843
+#: src-ru/data/autoBlueprints.xml.rawclobber:18860
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTO_RAZ_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21868
+#: src-ru/data/autoBlueprints.xml.rawclobber:18885
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BS_ENERGYX\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:21988
+#: src-ru/data/autoBlueprints.xml.rawclobber:19005
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CON_SCOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22008
+#: src-ru/data/autoBlueprints.xml.rawclobber:19025
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CON_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22029
+#: src-ru/data/autoBlueprints.xml.rawclobber:19046
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CON_SCOUT_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22050
+#: src-ru/data/autoBlueprints.xml.rawclobber:19067
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CON_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22071
+#: src-ru/data/autoBlueprints.xml.rawclobber:19088
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CON_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22092
+#: src-ru/data/autoBlueprints.xml.rawclobber:19109
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CON_BOMBER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22121
+#: src-ru/data/autoBlueprints.xml.rawclobber:19138
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CON_LEADER\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22370
+#: src-ru/data/autoBlueprints.xml.rawclobber:19388
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_BOMBER_D\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22403
+#: src-ru/data/autoBlueprints.xml.rawclobber:19421
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_BLUE_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22436
+#: src-ru/data/autoBlueprints.xml.rawclobber:19454
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_BLUE_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22469
+#: src-ru/data/autoBlueprints.xml.rawclobber:19487
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_BLUE_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22501
+#: src-ru/data/autoBlueprints.xml.rawclobber:19519
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_GREEN_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22535
+#: src-ru/data/autoBlueprints.xml.rawclobber:19553
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_GREEN_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22569
+#: src-ru/data/autoBlueprints.xml.rawclobber:19587
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_GREEN_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22602
+#: src-ru/data/autoBlueprints.xml.rawclobber:19620
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_VIO_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22635
+#: src-ru/data/autoBlueprints.xml.rawclobber:19653
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_VIO_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22668
+#: src-ru/data/autoBlueprints.xml.rawclobber:19686
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_VIO_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22708
+#: src-ru/data/autoBlueprints.xml.rawclobber:19726
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ABYSSEYE_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22741
+#: src-ru/data/autoBlueprints.xml.rawclobber:19759
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ABYSSEYE_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22774
+#: src-ru/data/autoBlueprints.xml.rawclobber:19792
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ABYSSEYE_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22807
+#: src-ru/data/autoBlueprints.xml.rawclobber:19825
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ABYSSEYE_4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22840
+#: src-ru/data/autoBlueprints.xml.rawclobber:19858
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ABYSSEYE_5\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22877
+#: src-ru/data/autoBlueprints.xml.rawclobber:19895
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_STATION_M\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22917
+#: src-ru/data/autoBlueprints.xml.rawclobber:19935
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_BOMBER_1_S\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22940
+#: src-ru/data/autoBlueprints.xml.rawclobber:19958
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_FIGHTER_1_S\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22962
+#: src-ru/data/autoBlueprints.xml.rawclobber:19980
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_SCOUT_1_S\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:22996
+#: src-ru/data/autoBlueprints.xml.rawclobber:20014
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CON_STATION\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23024
+#: src-ru/data/autoBlueprints.xml.rawclobber:20042
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_AUTO_1_PROG\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23047
+#: src-ru/data/autoBlueprints.xml.rawclobber:20065
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CAPSULE_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23074
+#: src-ru/data/autoBlueprints.xml.rawclobber:20092
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_TRANSPORT_SS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23246
+#: src-ru/data/autoBlueprints.xml.rawclobber:20264
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EZ_SCOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23269
+#: src-ru/data/autoBlueprints.xml.rawclobber:20287
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EZ_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23292
+#: src-ru/data/autoBlueprints.xml.rawclobber:20310
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EZ_SCOUT_1B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23315
+#: src-ru/data/autoBlueprints.xml.rawclobber:20333
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EZ_SCOUT_2B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23340
+#: src-ru/data/autoBlueprints.xml.rawclobber:20358
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EZ_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23364
+#: src-ru/data/autoBlueprints.xml.rawclobber:20382
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EZ_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23388
+#: src-ru/data/autoBlueprints.xml.rawclobber:20406
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EZ_BOMBER_1B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23412
+#: src-ru/data/autoBlueprints.xml.rawclobber:20430
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EZ_BOMBER_2B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23439
+#: src-ru/data/autoBlueprints.xml.rawclobber:20457
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ES_SCOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23462
+#: src-ru/data/autoBlueprints.xml.rawclobber:20480
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ES_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23485
+#: src-ru/data/autoBlueprints.xml.rawclobber:20503
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ES_SCOUT_1B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23508
+#: src-ru/data/autoBlueprints.xml.rawclobber:20526
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ES_SCOUT_2B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23533
+#: src-ru/data/autoBlueprints.xml.rawclobber:20551
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ES_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23557
+#: src-ru/data/autoBlueprints.xml.rawclobber:20575
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ES_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23581
+#: src-ru/data/autoBlueprints.xml.rawclobber:20599
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ES_BOMBER_1B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23605
+#: src-ru/data/autoBlueprints.xml.rawclobber:20623
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ES_BOMBER_2B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23631
+#: src-ru/data/autoBlueprints.xml.rawclobber:20649
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ER_SCOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23654
+#: src-ru/data/autoBlueprints.xml.rawclobber:20672
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ER_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23677
+#: src-ru/data/autoBlueprints.xml.rawclobber:20695
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ER_SCOUT_1B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23700
+#: src-ru/data/autoBlueprints.xml.rawclobber:20718
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ER_SCOUT_2B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23726
+#: src-ru/data/autoBlueprints.xml.rawclobber:20744
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ER_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23750
+#: src-ru/data/autoBlueprints.xml.rawclobber:20768
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ER_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23774
+#: src-ru/data/autoBlueprints.xml.rawclobber:20792
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ER_BOMBER_1B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23798
+#: src-ru/data/autoBlueprints.xml.rawclobber:20816
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ER_BOMBER_2B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23826
+#: src-ru/data/autoBlueprints.xml.rawclobber:20844
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EM_SCOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23849
+#: src-ru/data/autoBlueprints.xml.rawclobber:20867
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EM_SCOUT_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23872
+#: src-ru/data/autoBlueprints.xml.rawclobber:20890
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EM_SCOUT_1B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23895
+#: src-ru/data/autoBlueprints.xml.rawclobber:20913
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EM_SCOUT_2B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23922
+#: src-ru/data/autoBlueprints.xml.rawclobber:20940
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EM_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23946
+#: src-ru/data/autoBlueprints.xml.rawclobber:20964
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EM_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23970
+#: src-ru/data/autoBlueprints.xml.rawclobber:20988
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EM_BOMBER_1B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:23994
+#: src-ru/data/autoBlueprints.xml.rawclobber:21012
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_EM_BOMBER_2B\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24032
+#: src-ru/data/autoBlueprints.xml.rawclobber:21050
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_BOSSNOZLT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24061
+#: src-ru/data/autoBlueprints.xml.rawclobber:21079
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_BOSSNOSLG\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24090
+#: src-ru/data/autoBlueprints.xml.rawclobber:21108
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_BOSSNORCK\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24119
+#: src-ru/data/autoBlueprints.xml.rawclobber:21137
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_BOSSNOMAN\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24156
+#: src-ru/data/autoBlueprints.xml.rawclobber:21174
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_UNI_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24179
+#: src-ru/data/autoBlueprints.xml.rawclobber:21197
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_UNI_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24202
+#: src-ru/data/autoBlueprints.xml.rawclobber:21220
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_UNI_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24244
+#: src-ru/data/autoBlueprints.xml.rawclobber:21262
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_CLOUDER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24266
+#: src-ru/data/autoBlueprints.xml.rawclobber:21284
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_CLOUDER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24288
+#: src-ru/data/autoBlueprints.xml.rawclobber:21306
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_CLOUDER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24310
+#: src-ru/data/autoBlueprints.xml.rawclobber:21328
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_CLOUDER_4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24332
+#: src-ru/data/autoBlueprints.xml.rawclobber:21350
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_CLOUDER_5\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24354
+#: src-ru/data/autoBlueprints.xml.rawclobber:21372
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"AUTO_CLOUDER_6\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24385
+#: src-ru/data/autoBlueprints.xml.rawclobber:21403
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_TUCO_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24409
+#: src-ru/data/autoBlueprints.xml.rawclobber:21427
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_TUCO_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24433
+#: src-ru/data/autoBlueprints.xml.rawclobber:21451
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_TUCO_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24472
+#: src-ru/data/autoBlueprints.xml.rawclobber:21490
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_ABOMB_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24501
+#: src-ru/data/autoBlueprints.xml.rawclobber:21519
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_ABOMB_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24530
+#: src-ru/data/autoBlueprints.xml.rawclobber:21548
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_ABOMB_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24560
+#: src-ru/data/autoBlueprints.xml.rawclobber:21578
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_ABOMB_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24589
+#: src-ru/data/autoBlueprints.xml.rawclobber:21607
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_ABOMB_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24618
+#: src-ru/data/autoBlueprints.xml.rawclobber:21636
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_ABOMB_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24648
+#: src-ru/data/autoBlueprints.xml.rawclobber:21666
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLDPIRATE_ABOMB_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24677
+#: src-ru/data/autoBlueprints.xml.rawclobber:21695
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLDPIRATE_ABOMB_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24706
+#: src-ru/data/autoBlueprints.xml.rawclobber:21724
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLDPIRATE_ABOMB_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24807
+#: src-ru/data/autoBlueprints.xml.rawclobber:21825
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ANAEROBIC_PROV_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24831
+#: src-ru/data/autoBlueprints.xml.rawclobber:21849
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ANAEROBIC_PROV_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24855
+#: src-ru/data/autoBlueprints.xml.rawclobber:21873
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ANAEROBIC_PROV_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24885
+#: src-ru/data/autoBlueprints.xml.rawclobber:21903
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ANAEROBIC_PHO_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24907
+#: src-ru/data/autoBlueprints.xml.rawclobber:21925
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ANAEROBIC_PHO_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24929
+#: src-ru/data/autoBlueprints.xml.rawclobber:21947
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ANAEROBIC_PHO_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24958
+#: src-ru/data/autoBlueprints.xml.rawclobber:21976
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ANAEROBIC_HARV_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:24979
+#: src-ru/data/autoBlueprints.xml.rawclobber:21997
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ANAEROBIC_HARV_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25000
+#: src-ru/data/autoBlueprints.xml.rawclobber:22018
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ANAEROBIC_HARV_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25034
+#: src-ru/data/autoBlueprints.xml.rawclobber:22052
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ZOND_R\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25050
+#: src-ru/data/autoBlueprints.xml.rawclobber:22068
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ZOND_S\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25066
+#: src-ru/data/autoBlueprints.xml.rawclobber:22084
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ZOND_M\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25086
+#: src-ru/data/autoBlueprints.xml.rawclobber:22104
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BCIRCLE_ZOND_Z\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25104
+#: src-ru/data/autoBlueprints.xml.rawclobber:22122
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_HUNTER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25127
+#: src-ru/data/autoBlueprints.xml.rawclobber:22145
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_HUNTER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25150
+#: src-ru/data/autoBlueprints.xml.rawclobber:22168
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_HUNTER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25174
+#: src-ru/data/autoBlueprints.xml.rawclobber:22192
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_HUNTER_P1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25197
+#: src-ru/data/autoBlueprints.xml.rawclobber:22215
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_HUNTER_P2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25220
+#: src-ru/data/autoBlueprints.xml.rawclobber:22238
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ZOLTAN_HUNTER_P3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25243
+#: src-ru/data/autoBlueprints.xml.rawclobber:22261
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_HUNTER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25265
+#: src-ru/data/autoBlueprints.xml.rawclobber:22283
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_HUNTER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25287
+#: src-ru/data/autoBlueprints.xml.rawclobber:22305
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ENERGYX_HUNTER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25310
+#: src-ru/data/autoBlueprints.xml.rawclobber:22328
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PREIGNITED_JELLY_SCIENCE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25333
+#: src-ru/data/autoBlueprints.xml.rawclobber:22351
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_SCIENCE_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25354
+#: src-ru/data/autoBlueprints.xml.rawclobber:22373
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_SCIENCE_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25375
+#: src-ru/data/autoBlueprints.xml.rawclobber:22395
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_SCIENCE_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25398
+#: src-ru/data/autoBlueprints.xml.rawclobber:22419
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_SCIENCE_1P\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25419
+#: src-ru/data/autoBlueprints.xml.rawclobber:22441
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_SCIENCE_2P\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25440
+#: src-ru/data/autoBlueprints.xml.rawclobber:22463
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_SCIENCE_3P\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25464
+#: src-ru/data/autoBlueprints.xml.rawclobber:22488
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_CATCHR_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25493
+#: src-ru/data/autoBlueprints.xml.rawclobber:22517
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_CATCHR_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25522
+#: src-ru/data/autoBlueprints.xml.rawclobber:22546
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_CATCHR_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25552
+#: src-ru/data/autoBlueprints.xml.rawclobber:22576
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_CATCHR_1P\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25580
+#: src-ru/data/autoBlueprints.xml.rawclobber:22604
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_CATCHR_2P\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25608
+#: src-ru/data/autoBlueprints.xml.rawclobber:22632
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_CATCHR_3P\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25644
+#: src-ru/data/autoBlueprints.xml.rawclobber:22668
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SWORDFISH\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25663
+#: src-ru/data/autoBlueprints.xml.rawclobber:22687
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SWORDFISH_BRK\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25687
+#: src-ru/data/autoBlueprints.xml.rawclobber:22711
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"WEAK_BCIRCLE_EZ_SCOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25709
+#: src-ru/data/autoBlueprints.xml.rawclobber:22733
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"WEAK_BCIRCLE_ES_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25733
+#: src-ru/data/autoBlueprints.xml.rawclobber:22757
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"WEAK_BCIRCLE_ER_SCOUT_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25755
+#: src-ru/data/autoBlueprints.xml.rawclobber:22779
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"WEAK_BCIRCLE_EM_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25780
+#: src-ru/data/autoBlueprints.xml.rawclobber:22804
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"EMPTY_BCIRCLE_EZ_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25808
+#: src-ru/data/autoBlueprints.xml.rawclobber:22832
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SHELL_BOMBER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25828
+#: src-ru/data/autoBlueprints.xml.rawclobber:22852
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SHELL_BOMBER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25849
+#: src-ru/data/autoBlueprints.xml.rawclobber:22873
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SHELL_BOMBER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25870
+#: src-ru/data/autoBlueprints.xml.rawclobber:22894
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SHELL_FIGHTER_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25890
+#: src-ru/data/autoBlueprints.xml.rawclobber:22914
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SHELL_FIGHTER_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25911
+#: src-ru/data/autoBlueprints.xml.rawclobber:22935
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SHELL_FIGHTER_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25952
+#: src-ru/data/autoBlueprints.xml.rawclobber:22980
+msgid ""
+"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_ART1\"]/class"
+msgstr "岩浆人火炮"
+
+#: src-ru/data/autoBlueprints.xml.rawclobber:23001
+msgid ""
+"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_ART2\"]/class"
+msgstr "岩浆人火炮"
+
+#: src-ru/data/autoBlueprints.xml.rawclobber:23027
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_A1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:25976
+#: src-ru/data/autoBlueprints.xml.rawclobber:23051
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_A2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26000
+#: src-ru/data/autoBlueprints.xml.rawclobber:23075
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_A3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26024
+#: src-ru/data/autoBlueprints.xml.rawclobber:23099
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_A4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26048
+#: src-ru/data/autoBlueprints.xml.rawclobber:23123
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_B1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26071
+#: src-ru/data/autoBlueprints.xml.rawclobber:23146
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_B2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26095
+#: src-ru/data/autoBlueprints.xml.rawclobber:23170
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_B3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26118
+#: src-ru/data/autoBlueprints.xml.rawclobber:23193
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_B4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26142
+#: src-ru/data/autoBlueprints.xml.rawclobber:23217
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_C1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26165
+#: src-ru/data/autoBlueprints.xml.rawclobber:23240
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_C2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26189
+#: src-ru/data/autoBlueprints.xml.rawclobber:23264
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_C3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26212
+#: src-ru/data/autoBlueprints.xml.rawclobber:23287
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_C4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26236
+#: src-ru/data/autoBlueprints.xml.rawclobber:23311
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_D1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26260
+#: src-ru/data/autoBlueprints.xml.rawclobber:23335
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_D2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26284
+#: src-ru/data/autoBlueprints.xml.rawclobber:23359
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_E1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26301
+#: src-ru/data/autoBlueprints.xml.rawclobber:23376
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_E2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26322
+#: src-ru/data/autoBlueprints.xml.rawclobber:23397
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_BOSS1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26344
+#: src-ru/data/autoBlueprints.xml.rawclobber:23419
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MAGMAN_BOSS2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26373
+#: src-ru/data/autoBlueprints.xml.rawclobber:23448
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_RED_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26406
+#: src-ru/data/autoBlueprints.xml.rawclobber:23481
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MOTILEK_RED_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26446
+#: src-ru/data/autoBlueprints.xml.rawclobber:23521
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PANDEMONIUM_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26468
+#: src-ru/data/autoBlueprints.xml.rawclobber:23543
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PANDEMONIUM_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26491
+#: src-ru/data/autoBlueprints.xml.rawclobber:23566
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHID_SLIG_ASSAULT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26517
+#: src-ru/data/autoBlueprints.xml.rawclobber:23592
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CAPSULE_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26542
+#: src-ru/data/autoBlueprints.xml.rawclobber:23617
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CAPSULE_2_BROKEN\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26561
+#: src-ru/data/autoBlueprints.xml.rawclobber:23636
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIRCLE_BOMBER_SPECIAL\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26597
+#: src-ru/data/autoBlueprints.xml.rawclobber:23672
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CLONE_JELLY\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26622
+#: src-ru/data/autoBlueprints.xml.rawclobber:23697
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BOSS_BLACK_WING\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26657
+#: src-ru/data/autoBlueprints.xml.rawclobber:23732
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BOSS_KENIX\"]/class"
 msgstr "海盗破解船"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26690
+#: src-ru/data/autoBlueprints.xml.rawclobber:23765
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"HAL_3000_HACKED\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26721
+#: src-ru/data/autoBlueprints.xml.rawclobber:23796
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_HUNTER_ENGINED\"]/class"
 msgstr "螳螂猎手"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26754
+#: src-ru/data/autoBlueprints.xml.rawclobber:23829
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PIRATE_ABOMB_UNIQUE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26786
+#: src-ru/data/autoBlueprints.xml.rawclobber:23861
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"OLD_PIRATE_TRANSPORT_V\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26813
+#: src-ru/data/autoBlueprints.xml.rawclobber:23888
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"SLURM_CRR\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26845
+#: src-ru/data/autoBlueprints.xml.rawclobber:23920
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_DEFAULT1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:26870
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTITELE_NOZLTSHIELD1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:26899
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTITELE_WITHZLTSHIELD1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:26928
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTIMISSILE1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:26953
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTIION1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:26978
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTILASER1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:27003
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTIAUTOCOOLDOWN1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:27029
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTILOWCREW1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:27059
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTILOWCREW_NOION1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:27088
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTILOWCREW_WITHBYPASS1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:27121
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTINOSHIELD1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:27146
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTIFIRE1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:27171
-msgid ""
-"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_TRUFFLE_AD_ANTIATTACKDRONES1\"]/class"
-msgstr ""
-
-#: src-ru/data/autoBlueprints.xml.rawclobber:27201
+#: src-ru/data/autoBlueprints.xml.rawclobber:23945
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27221
+#: src-ru/data/autoBlueprints.xml.rawclobber:23965
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27243
+#: src-ru/data/autoBlueprints.xml.rawclobber:23987
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27266
+#: src-ru/data/autoBlueprints.xml.rawclobber:24010
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_4\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27291
+#: src-ru/data/autoBlueprints.xml.rawclobber:24035
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_5\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27316
+#: src-ru/data/autoBlueprints.xml.rawclobber:24060
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_6\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27341
+#: src-ru/data/autoBlueprints.xml.rawclobber:24085
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_7\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27367
+#: src-ru/data/autoBlueprints.xml.rawclobber:24111
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_8\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27393
+#: src-ru/data/autoBlueprints.xml.rawclobber:24137
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_9\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27420
+#: src-ru/data/autoBlueprints.xml.rawclobber:24164
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"BUILDINGSTATION_10\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27450
+#: src-ru/data/autoBlueprints.xml.rawclobber:24194
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"PONY_MONITOR1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27477
+#: src-ru/data/autoBlueprints.xml.rawclobber:24221
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"KESTRAL_PART\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27497
+#: src-ru/data/autoBlueprints.xml.rawclobber:24241
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ORCHANTIS_SCOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27525
+#: src-ru/data/autoBlueprints.xml.rawclobber:24269
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_PRAZDNIK\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27549
+#: src-ru/data/autoBlueprints.xml.rawclobber:24293
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_PRAZDNIK2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27576
+#: src-ru/data/autoBlueprints.xml.rawclobber:24318
+msgid ""
+"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"JELLY_PRAZDNIK3\"]/class"
+msgstr ""
+
+#: src-ru/data/autoBlueprints.xml.rawclobber:24348
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MUSHROOM_SCOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27599
+#: src-ru/data/autoBlueprints.xml.rawclobber:24371
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MUSHROOM_SCOUT2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27622
+#: src-ru/data/autoBlueprints.xml.rawclobber:24394
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MUSHROOM_SCOUT3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27649
+#: src-ru/data/autoBlueprints.xml.rawclobber:24421
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TIMEKEEPER_SCOUT\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27673
+#: src-ru/data/autoBlueprints.xml.rawclobber:24445
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TESTSHIP1\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27691
+#: src-ru/data/autoBlueprints.xml.rawclobber:24463
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TESTSHIP2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27710
+#: src-ru/data/autoBlueprints.xml.rawclobber:24482
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TESTSHIP3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27737
+#: src-ru/data/autoBlueprints.xml.rawclobber:24509
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_KIZDOS\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27761
+#: src-ru/data/autoBlueprints.xml.rawclobber:24533
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_KIZDOS2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27785
+#: src-ru/data/autoBlueprints.xml.rawclobber:24557
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_KIZDOS3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27813
+#: src-ru/data/autoBlueprints.xml.rawclobber:24585
 msgid ""
-"data/autoBlueprints.xml.rawclobber$/dummyroot/FTL/shipBlueprint[577]/class"
+"data/autoBlueprints.xml.rawclobber$/dummyroot/FTL/shipBlueprint[571]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27847
+#: src-ru/data/autoBlueprints.xml.rawclobber:24619
 msgid ""
-"data/autoBlueprints.xml.rawclobber$/dummyroot/FTL/shipBlueprint[578]/class"
+"data/autoBlueprints.xml.rawclobber$/dummyroot/FTL/shipBlueprint[572]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27892
+#: src-ru/data/autoBlueprints.xml.rawclobber:24664
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TURTLE_CARRIER_SHIP\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27914
+#: src-ru/data/autoBlueprints.xml.rawclobber:24686
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TURTLE_CARRIER_SHIP_2\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27937
+#: src-ru/data/autoBlueprints.xml.rawclobber:24709
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TURTLE_CARRIER_SHIP_3\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27961
+#: src-ru/data/autoBlueprints.xml.rawclobber:24733
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TURTLE_FIGHTER\"]/class"
 msgstr "Panzeron Fighter"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:27982
+#: src-ru/data/autoBlueprints.xml.rawclobber:24754
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TURTLE_FIGHTER_2\"]/class"
 msgstr "Panzeron Fighter"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:28003
+#: src-ru/data/autoBlueprints.xml.rawclobber:24775
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TURTLE_FIGHTER_3\"]/class"
 msgstr "Panzeron Fighter"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:28025
+#: src-ru/data/autoBlueprints.xml.rawclobber:24797
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TURTLE_SCOUT\"]/class"
 msgstr "Panzeron Scout"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:28046
+#: src-ru/data/autoBlueprints.xml.rawclobber:24818
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TURTLE_SCOUT_2\"]/class"
 msgstr "Panzeron Scout"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:28067
+#: src-ru/data/autoBlueprints.xml.rawclobber:24839
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"TURTLE_SCOUT_3\"]/class"
 msgstr "Panzeron Scout"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:28092
+#: src-ru/data/autoBlueprints.xml.rawclobber:24864
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_LONG_ELITE_RED_CLONE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:28124
+#: src-ru/data/autoBlueprints.xml.rawclobber:24896
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"REBEL_LONG_ELITE_RED_MED\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:28157
+#: src-ru/data/autoBlueprints.xml.rawclobber:24929
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"CIV_GLORY_PIRATE\"]/class"
 msgstr ""
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:28187
+#: src-ru/data/autoBlueprints.xml.rawclobber:24959
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_JAIL\"]/class"
 msgstr "Pirate Abductor"
 
-#: src-ru/data/autoBlueprints.xml.rawclobber:28216
+#: src-ru/data/autoBlueprints.xml.rawclobber:24988
 msgid ""
 "data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"ROCK_JAIL_2\"]/class"
 msgstr "Pirate Abductor"
+
+#: src-ru/data/autoBlueprints.xml.rawclobber:25211
+msgid ""
+"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"MANTIS_BOMBER_P_TR\"]/class"
+msgstr "海盗攻击舰"
+
+#: src-ru/data/autoBlueprints.xml.rawclobber:25236
+msgid ""
+"data/autoBlueprints.xml.rawclobber$//shipBlueprint[@name=\"FED_TRRAD\"]/class"
+msgstr ""

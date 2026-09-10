@@ -4901,7 +4901,8 @@ msgstr "Пленитель душ"
 #: src-ru/data/blueprints.xml.rawclobber:15194
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SOUL_MAGNIT\"]/desc"
 msgstr ""
-"Назначение этого устройства неизвестно, но, по крайней мере, оно стоит лом."
+"Увеличивает вдвое количество душ, которые получает душегуб за взорванные "
+"корабли."
 
 #: src-ru/data/blueprints.xml.rawclobber:15203
 msgid ""
@@ -5611,10 +5612,10 @@ msgstr "Нейронный манипулятор"
 #: src-ru/data/blueprints.xml.rawclobber:15853
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MIND_ORDER\"]/desc"
 msgstr ""
-"Даёт иммунитет к контролю разума союзникам и полный контроль над управляемым"
-" разумом врагом, время контроля увеличено на 50%. Все способности "
-"управляемого врага становятся союзными. Требует запитанную систему контроля "
-"разума на борту."
+"Даёт иммунитет к взятию под контроль разума союзникам и полный контроль над "
+"управляемым разумом врагом, время контроля увеличено на 50%. Все способности"
+" управляемого врага становятся союзными. Требует запитанную систему контроля"
+" разума на борту."
 
 #: src-ru/data/blueprints.xml.rawclobber:15861
 msgid ""
@@ -15615,8 +15616,8 @@ msgstr "Тахион I"
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:33640
 msgid ""
@@ -15637,8 +15638,8 @@ msgstr "Тахион II"
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:33669
 msgid ""
@@ -15659,8 +15660,8 @@ msgstr "Тяж. тахион"
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:33702
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"KERNEL_1\"]/title"
@@ -38098,8 +38099,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_FRC\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:78899
 msgid ""
@@ -38121,8 +38122,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_CLD\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:78927
 msgid ""
@@ -38144,8 +38145,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_POW\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:78955
 msgid ""
@@ -38167,8 +38168,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_FRC\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:78983
 msgid ""
@@ -38190,8 +38191,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_CLD\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:79011
 msgid ""
@@ -38213,8 +38214,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_POW\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:79039
 msgid ""
@@ -38236,8 +38237,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_FRC\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:79067
 msgid ""
@@ -38259,8 +38260,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_CLD\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:79095
 msgid ""
@@ -38282,8 +38283,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_POW\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:79127
 msgid ""
@@ -59404,8 +59405,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_UNI\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:121761
 msgid ""
@@ -59427,8 +59428,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_UNI\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:121789
 msgid ""
@@ -59450,8 +59451,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_UNI\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:121817
 msgid ""
@@ -65961,12 +65962,12 @@ msgstr "Это адаптивное оружие уже разогрето."
 #: src-ru/data/blueprints.xml.rawclobber:134961
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1P_ACC\"]/title"
-msgstr "Малая бомба+ ‰"
+msgstr "Малая бомба+ £"
 
 #: src-ru/data/blueprints.xml.rawclobber:134962
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1P_ACC\"]/short"
-msgstr "М. бомба+ ‰"
+msgstr "М. бомба+ £"
 
 #: src-ru/data/blueprints.xml.rawclobber:134964
 msgid ""
@@ -65985,12 +65986,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:134994
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_ACC\"]/title"
-msgstr "Звёздный крушитель ‰"
+msgstr "Звёздный крушитель £"
 
 #: src-ru/data/blueprints.xml.rawclobber:134995
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_ACC\"]/short"
-msgstr "Крушитель ‰"
+msgstr "Крушитель £"
 
 #: src-ru/data/blueprints.xml.rawclobber:134996
 msgid ""
@@ -66012,12 +66013,12 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:135030
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_ACC\"]/title"
-msgstr "Эффектор+ ‡"
+msgstr "Эффектор+ £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135031
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_ACC\"]/short"
-msgstr "Эффектор+ ‡"
+msgstr "Эффектор+ £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135032
 msgid ""
@@ -66038,7 +66039,7 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:135072
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_TELE_ACC\"]/title"
-msgstr "Телепорт-бомба"
+msgstr "Телепорт-бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135073
 msgid ""
@@ -66056,12 +66057,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135106
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_STUN_ACC\"]/title"
-msgstr "Шок-бомба ‡"
+msgstr "Шок-бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135107
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_STUN_ACC\"]/short"
-msgstr "Шок-бомба ‡"
+msgstr "Шок-бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135109
 msgid ""
@@ -66073,12 +66074,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135140
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEAL_SYSTEM_ACC\"]/title"
-msgstr "Ремонтная бомба ‡"
+msgstr "Ремонтная бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135141
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEAL_SYSTEM_ACC\"]/short"
-msgstr "Ремонтная б. ‡"
+msgstr "Ремонтная б. £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135143
 msgid ""
@@ -66090,12 +66091,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135172
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_LOCK_ACC\"]/title"
-msgstr "Запирающая бомба Мод I €"
+msgstr "Запирающая бомба Мод I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135173
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_LOCK_ACC\"]/short"
-msgstr "З-бомба I €"
+msgstr "З-бомба I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135175
 msgid ""
@@ -66107,12 +66108,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135207
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_LOCK_2_ACC\"]/title"
-msgstr "Запирающая бомба Мод II ‡"
+msgstr "Запирающая бомба Мод II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135208
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_LOCK_2_ACC\"]/short"
-msgstr "З-бомба II ‡"
+msgstr "З-бомба II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135210
 msgid ""
@@ -66124,12 +66125,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135242
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_ACC\"]/title"
-msgstr "Малая бомба ‰"
+msgstr "Малая бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135243
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_ACC\"]/short"
-msgstr "Мал. бомба ‰"
+msgstr "Мал. бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135245
 msgid ""
@@ -66141,12 +66142,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135274
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIG_ACC\"]/title"
-msgstr "Большая бомба ‰"
+msgstr "Большая бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135275
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIG_ACC\"]/short"
-msgstr "Бол. бомба ‰"
+msgstr "Бол. бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135277
 msgid ""
@@ -66158,12 +66159,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135305
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEALFIRE_ACC\"]/title"
-msgstr "Лечебная огненная бомба ‰"
+msgstr "Лечебная огненная бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135306
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEALFIRE_ACC\"]/short"
-msgstr "Л-огнебомба ‰"
+msgstr "Л-огнебомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135308
 msgid ""
@@ -66176,12 +66177,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135337
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_SMALL_ACC\"]/title"
-msgstr "Огненная бомба Мод I ‰"
+msgstr "Огненная бомба Мод I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135338
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_SMALL_ACC\"]/short"
-msgstr "Огнебомба I ‰"
+msgstr "Огнебомба I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135340
 msgid ""
@@ -66193,12 +66194,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135369
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_FIRE_ACC\"]/title"
-msgstr "Огненная бомба Мод II ‰"
+msgstr "Огненная бомба Мод II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135370
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_FIRE_ACC\"]/short"
-msgstr "Огнебомба II ‰"
+msgstr "Огнебомба II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135372
 msgid ""
@@ -66210,12 +66211,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135401
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_2_ACC\"]/title"
-msgstr "Огненная бомба Мод III ‡"
+msgstr "Огненная бомба Мод III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135402
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_2_ACC\"]/short"
-msgstr "Огнебомба III ‡"
+msgstr "Огнебомба III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135404
 msgid ""
@@ -66227,12 +66228,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135433
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_FIRE_ACC\"]/title"
-msgstr "Огненная разрывная бомба ‰"
+msgstr "Огненная разрывная бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135434
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_FIRE_ACC\"]/short"
-msgstr "Огнебомба * ‰"
+msgstr "Огнебомба * £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135436
 msgid ""
@@ -66244,12 +66245,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135464
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_FIRE_STUN_ACC\"]/title"
-msgstr "Затяжная огнебомба ‡"
+msgstr "Затяжная огнебомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135465
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_FIRE_STUN_ACC\"]/short"
-msgstr "З-огнебомба ‡"
+msgstr "З-огнебомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135466
 msgid ""
@@ -66261,12 +66262,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135494
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_BIO_ACC\"]/title"
-msgstr "Затяжная био-бомба ‡"
+msgstr "Затяжная био-бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135495
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_BIO_ACC\"]/short"
-msgstr "З-био-бомба ‡"
+msgstr "З-био-бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135496
 msgid ""
@@ -66278,12 +66279,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135525
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIO_ACC\"]/title"
-msgstr "Биологическая бомба ‡"
+msgstr "Биологическая бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135526
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIO_ACC\"]/short"
-msgstr "Био-бомба ‡"
+msgstr "Био-бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135528
 msgid ""
@@ -66296,7 +66297,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135556
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEAL_ACC\"]/title"
-msgstr "Лечебная бомба ‡"
+msgstr "Лечебная бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135557
 msgid ""
@@ -66313,12 +66314,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135588
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_HEAL_2_ACC\"]/title"
-msgstr "Лечебная разрывная бомба ‡"
+msgstr "Лечебная разрывная бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135589
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_HEAL_2_ACC\"]/short"
-msgstr "Л-бомба* ‡"
+msgstr "Л-бомба* £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135591
 msgid ""
@@ -66331,12 +66332,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135619
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_1_ACC\"]/title"
-msgstr "Бронебойн. бомба Мод I €"
+msgstr "Бронебойн. бомба Мод I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135620
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_1_ACC\"]/short"
-msgstr "Бронебомба I €"
+msgstr "Бронебомба I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135622
 msgid ""
@@ -66349,12 +66350,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135651
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_2_ACC\"]/title"
-msgstr "Бронебойн. бомба Мод II €"
+msgstr "Бронебойн. бомба Мод II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135652
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_2_ACC\"]/short"
-msgstr "Бронебомба II €"
+msgstr "Бронебомба II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135654
 msgid ""
@@ -66366,12 +66367,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135683
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_3_ACC\"]/title"
-msgstr "Бронебойн. бомба Мод III ‡"
+msgstr "Бронебойн. бомба Мод III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135684
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_3_ACC\"]/short"
-msgstr "Бронебомба III ‡"
+msgstr "Бронебомба III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135686
 msgid ""
@@ -66383,12 +66384,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135715
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_BREACH_ACC\"]/title"
-msgstr "Разрывная бронебомба €"
+msgstr "Разрывная бронебомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135716
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_BREACH_ACC\"]/short"
-msgstr "Бронебомба * €"
+msgstr "Бронебомба * £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135718
 msgid ""
@@ -66400,12 +66401,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135747
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_1_ACC\"]/title"
-msgstr "Разрывная бомба ‰"
+msgstr "Разрывная бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135748
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_1_ACC\"]/short"
-msgstr "Разрывная б. ‰"
+msgstr "Разрывная б. £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135750
 msgid ""
@@ -66417,12 +66418,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135779
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_ION_ACC\"]/title"
-msgstr "Ионная бомба ‡"
+msgstr "Ионная бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135780
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_ION_ACC\"]/short"
-msgstr "Ион. бомба ‡"
+msgstr "Ион. бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135782
 msgid ""
@@ -66434,12 +66435,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135813
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_ION_ACC\"]/title"
-msgstr "Ионная разрывная бомба ‡"
+msgstr "Ионная разрывная бомба £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135814
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_ION_ACC\"]/short"
-msgstr "И-бомба* ‡"
+msgstr "И-бомба* £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135816
 msgid ""
@@ -66449,12 +66450,12 @@ msgstr "Выпускает 3 телепортирующихся бомбы, на
 #: src-ru/data/blueprints.xml.rawclobber:135846
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN_ACC\"]/title"
-msgstr "Световая разр. бомба Мод I"
+msgstr "Световая разр. бомба Мод I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135847
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN_ACC\"]/short"
-msgstr "Световая* I €"
+msgstr "Световая* I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135849
 msgid ""
@@ -66466,12 +66467,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:135880
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN2_ACC\"]/title"
-msgstr "Световая разр. бомба Мод II"
+msgstr "Световая разр. бомба Мод II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135881
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN2_ACC\"]/short"
-msgstr "Световая* II €"
+msgstr "Световая* II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135883
 msgid ""
@@ -66488,20 +66489,20 @@ msgstr "Тахионное орудие"
 #: src-ru/data/blueprints.xml.rawclobber:135915
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_ACC\"]/title"
-msgstr "Тахионное орудие Мод I ‰"
+msgstr "Тахионное орудие Мод I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135916
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_ACC\"]/short"
-msgstr "Тахион I ‰"
+msgstr "Тахион I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135917
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_ACC\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:135942
 msgid ""
@@ -66511,20 +66512,20 @@ msgstr "Тахионное орудие"
 #: src-ru/data/blueprints.xml.rawclobber:135944
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_ACC\"]/title"
-msgstr "Тахионное орудие Мод II ‰"
+msgstr "Тахионное орудие Мод II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135945
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_ACC\"]/short"
-msgstr "Тахион II ‰"
+msgstr "Тахион II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135946
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_ACC\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:135971
 msgid ""
@@ -66534,30 +66535,30 @@ msgstr "Тахионное орудие"
 #: src-ru/data/blueprints.xml.rawclobber:135973
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_ACC\"]/title"
-msgstr "Тяжёлое тахионное орудие ‰"
+msgstr "Тяжёлое тахионное орудие £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135974
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_ACC\"]/short"
-msgstr "Тяж. тахион ‰"
+msgstr "Тяж. тахион £"
 
 #: src-ru/data/blueprints.xml.rawclobber:135975
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_ACC\"]/desc"
 msgstr ""
 "Это орудие генерирует сгусток частиц, движущихся обратно течению времени, "
-"что делает принципиально невозможным их сбивание чем-либо. Однако, промахи "
-"не исключены."
+"что делает принципиально невозможным их сбивание чем-либо. Однако промахи не"
+" исключены."
 
 #: src-ru/data/blueprints.xml.rawclobber:136001
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_ACC\"]/title"
-msgstr "Эффектор Мод I ‡"
+msgstr "Эффектор Мод I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136002
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_ACC\"]/short"
-msgstr "Эффектор I ‡"
+msgstr "Эффектор I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136003
 msgid ""
@@ -66573,12 +66574,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136042
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_ACC\"]/title"
-msgstr "Эффектор Мод II ‡"
+msgstr "Эффектор Мод II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136043
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_ACC\"]/short"
-msgstr "Эффектор II ‡"
+msgstr "Эффектор II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136045
 msgid ""
@@ -66595,12 +66596,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136083
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_ACC\"]/title"
-msgstr "Тяжёлый эффектор ‡"
+msgstr "Тяжёлый эффектор £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136084
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_ACC\"]/short"
-msgstr "Тяжёлый эффектор ‡"
+msgstr "Тяжёлый эффектор £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136086
 msgid ""
@@ -66615,12 +66616,12 @@ msgstr "Медленный ионный излучатель, надолго в�
 #: src-ru/data/blueprints.xml.rawclobber:136124
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_ACC\"]/title"
-msgstr "Адаптивный эффектор ‡"
+msgstr "Адаптивный эффектор £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136125
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_ACC\"]/short"
-msgstr "А-эффектор ‡"
+msgstr "А-эффектор £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136127
 msgid ""
@@ -66637,12 +66638,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136170
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_1_ACC\"]/title"
-msgstr "Прототип магменов ‡"
+msgstr "Прототип магменов £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136171
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_1_ACC\"]/short"
-msgstr "Пр. магменов ‡"
+msgstr "Пр. магменов £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136172
 msgid ""
@@ -66654,12 +66655,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136215
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_2_ACC\"]/title"
-msgstr "Прототип магменов ‡"
+msgstr "Прототип магменов £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136216
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_2_ACC\"]/short"
-msgstr "Пр. магменов ‡"
+msgstr "Пр. магменов £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136217
 msgid ""
@@ -66676,12 +66677,12 @@ msgstr "Экспериментальное орудие"
 #: src-ru/data/blueprints.xml.rawclobber:136261
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_MORPHGUN_ACC\"]/title"
-msgstr "Прототип морфов ‰"
+msgstr "Прототип морфов £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136262
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_MORPHGUN_ACC\"]/short"
-msgstr "Прототип морфов ‰"
+msgstr "Прототип морфов £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136263
 msgid ""
@@ -66696,12 +66697,12 @@ msgstr "Экспериментальное орудие"
 #: src-ru/data/blueprints.xml.rawclobber:136294
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_MORPHGUN2_ACC\"]/title"
-msgstr "Прототип морфов ‰"
+msgstr "Прототип морфов £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136295
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_MORPHGUN2_ACC\"]/short"
-msgstr "Прототип морфов ‰"
+msgstr "Прототип морфов £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136296
 msgid ""
@@ -66732,12 +66733,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136360
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_1_ACC\"]/title"
-msgstr "Пироформер Мод I ‡"
+msgstr "Пироформер Мод I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136361
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_1_ACC\"]/short"
-msgstr "Пироформер I ‡"
+msgstr "Пироформер I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136362
 msgid ""
@@ -66749,12 +66750,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136405
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_2_ACC\"]/title"
-msgstr "Пироформер Мод II ‡"
+msgstr "Пироформер Мод II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136406
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_2_ACC\"]/short"
-msgstr "Пироформер II ‡"
+msgstr "Пироформер II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136407
 msgid ""
@@ -66766,12 +66767,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136450
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_3_ACC\"]/title"
-msgstr "Пироформер Мод III ‡"
+msgstr "Пироформер Мод III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136451
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_3_ACC\"]/short"
-msgstr "Пироформер III ‡"
+msgstr "Пироформер III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136452
 msgid ""
@@ -66783,7 +66784,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136495
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_M_ACC\"]/title"
-msgstr "Морф-М пушка ‡"
+msgstr "Морф-М пушка £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136496
 msgid ""
@@ -66801,7 +66802,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136526
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_R_ACC\"]/title"
-msgstr "Морф-R пушка ‰"
+msgstr "Морф-R пушка £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136527
 msgid ""
@@ -66819,7 +66820,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136557
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_S_ACC\"]/title"
-msgstr "Морф-S пушка €"
+msgstr "Морф-S пушка £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136558
 msgid ""
@@ -66837,7 +66838,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:136588
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_Z_ACC\"]/title"
-msgstr "Морф-Z пушка ‡"
+msgstr "Морф-Z пушка £"
 
 #: src-ru/data/blueprints.xml.rawclobber:136589
 msgid ""
@@ -87087,7 +87088,7 @@ msgstr ""
 "\tУрон корпусу: 1\n"
 "\tШанс пробоины/пожара в орудиях: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 300~/150~"
+"\tЦена покупки/продажи: 200~/100~"
 
 #: src-ru/data/blueprints.xml.rawclobber:178105
 msgid ""
@@ -87772,7 +87773,7 @@ msgstr ""
 "\tУрон корпусу: 1\n"
 "\tШанс пробоины/пожара в орудиях: 100%\n"
 "\n"
-"\tЦена покупки/продажи: 300~/150~"
+"\tЦена покупки/продажи: 200~/100~"
 
 #: src-ru/data/blueprints.xml.rawclobber:179518
 msgid ""
@@ -87820,7 +87821,7 @@ msgstr ""
 "\tУрон корпусу: 1\n"
 "\tШанс пробоины/пожара в орудиях: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 300~/150~"
+"\tЦена покупки/продажи: 200~/100~"
 
 #: src-ru/data/blueprints.xml.rawclobber:179565
 msgid ""
@@ -87868,7 +87869,7 @@ msgstr ""
 "\tУрон корпусу: 1\n"
 "\tШанс пробоины/пожара в орудиях: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 300~/150~"
+"\tЦена покупки/продажи: 200~/100~"
 
 #: src-ru/data/blueprints.xml.rawclobber:179612
 msgid ""
@@ -87916,7 +87917,7 @@ msgstr ""
 "\tУрон корпусу: 1\n"
 "\tШанс пробоины/пожара в орудиях: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 300~/150~"
+"\tЦена покупки/продажи: 200~/100~"
 
 #: src-ru/data/blueprints.xml.rawclobber:179688
 msgid ""
@@ -90848,12 +90849,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184458
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_PRC\"]/title"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:184459
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_PRC\"]/short"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:184460
 msgid ""
@@ -90865,12 +90866,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184483
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_BRC\"]/title"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) €"
 
 #: src-ru/data/blueprints.xml.rawclobber:184484
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_BRC\"]/short"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) €"
 
 #: src-ru/data/blueprints.xml.rawclobber:184485
 msgid ""
@@ -90882,12 +90883,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184508
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_CLD\"]/title"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:184509
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_CLD\"]/short"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:184510
 msgid ""
@@ -90899,12 +90900,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184533
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_POW\"]/title"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) †"
 
 #: src-ru/data/blueprints.xml.rawclobber:184534
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_POW\"]/short"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) †"
 
 #: src-ru/data/blueprints.xml.rawclobber:184535
 msgid ""
@@ -90916,12 +90917,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184558
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_UNI\"]/title"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) √"
 
 #: src-ru/data/blueprints.xml.rawclobber:184559
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_UNI\"]/short"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (Г) √"
 
 #: src-ru/data/blueprints.xml.rawclobber:184560
 msgid ""
@@ -90933,12 +90934,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184584
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_PRC\"]/title"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:184585
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_PRC\"]/short"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:184586
 msgid ""
@@ -90950,12 +90951,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184609
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_BRC\"]/title"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) €"
 
 #: src-ru/data/blueprints.xml.rawclobber:184610
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_BRC\"]/short"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) €"
 
 #: src-ru/data/blueprints.xml.rawclobber:184611
 msgid ""
@@ -90967,12 +90968,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184634
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_CLD\"]/title"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:184635
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_CLD\"]/short"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:184636
 msgid ""
@@ -90984,12 +90985,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184659
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_POW\"]/title"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) †"
 
 #: src-ru/data/blueprints.xml.rawclobber:184660
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_POW\"]/short"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) †"
 
 #: src-ru/data/blueprints.xml.rawclobber:184661
 msgid ""
@@ -91001,12 +91002,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184684
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_UNI\"]/title"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) √"
 
 #: src-ru/data/blueprints.xml.rawclobber:184685
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_UNI\"]/short"
-msgstr "Луч Вилка (В)"
+msgstr "Луч Вилка (В) √"
 
 #: src-ru/data/blueprints.xml.rawclobber:184686
 msgid ""
@@ -91640,7 +91641,7 @@ msgstr "АЩ дрон"
 #: src-ru/data/blueprints.xml.rawclobber:185996
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ASHIELD\"]/desc"
-msgstr "Этот дрон уменьшает скорость зарядки вражеских щитов на 100%."
+msgstr "Этот дрон увеличивает время зарядки вражеских щитов на 100%."
 
 #: src-ru/data/blueprints.xml.rawclobber:186009
 msgid ""
@@ -91873,8 +91874,8 @@ msgstr "Ионный резонатор"
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ION_RESONATOR\"]/desc"
 msgstr ""
-"Добавляет урон по системам всем ионным орудиям без урона по системам или "
-"корпусу."
+"С вероятностью 75% добавляет урон по системам всем ионным орудиям без урона "
+"по системам или корпусу."
 
 #: src-ru/data/blueprints.xml.rawclobber:186403
 msgid ""
@@ -99853,12 +99854,12 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:198490
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_ADV\"]/title"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (У)"
 
 #: src-ru/data/blueprints.xml.rawclobber:198491
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_ADV\"]/short"
-msgstr "Луч Вилка (Г)"
+msgstr "Луч Вилка (У)"
 
 #: src-ru/data/blueprints.xml.rawclobber:198492
 msgid ""
@@ -100995,8 +100996,8 @@ msgstr "Мал. Флак *"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_SHOTGUN_SCATTER_MINI\"]/desc"
 msgstr ""
-"Стреляет осколками по широкой площади, наносит до 6 урона. Великолепно "
-"сбивает щиты, но прицеливание затруднено, наносит урон только корпусу."
+"Стреляет осколками по широкой площади, наносит до 4 урона. Хорошо сбивает "
+"щиты, но прицеливание затруднено, наносит урон только корпусу."
 
 #: src-ru/data/blueprints.xml.rawclobber:199748
 msgid ""
@@ -101017,8 +101018,8 @@ msgstr "Мал. Флак * ™"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_SHOTGUN_SCATTER_MINI_PRC\"]/desc"
 msgstr ""
-"Стреляет осколками по широкой площади, наносит до 6 урона. Великолепно "
-"сбивает щиты, но прицеливание затруднено, наносит урон только корпусу."
+"Стреляет осколками по широкой площади, наносит до 4 урона. Хорошо сбивает "
+"щиты, но прицеливание затруднено, наносит урон только корпусу."
 
 #: src-ru/data/blueprints.xml.rawclobber:199796
 msgid ""
@@ -101039,8 +101040,8 @@ msgstr "Мал. Флак * €"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_SHOTGUN_SCATTER_MINI_BRC\"]/desc"
 msgstr ""
-"Стреляет осколками по широкой площади, наносит до 6 урона. Великолепно "
-"сбивает щиты, но прицеливание затруднено, наносит урон только корпусу."
+"Стреляет осколками по широкой площади, наносит до 4 урона. Хорошо сбивает "
+"щиты, но прицеливание затруднено, наносит урон только корпусу."
 
 #: src-ru/data/blueprints.xml.rawclobber:199844
 msgid ""
@@ -101061,8 +101062,8 @@ msgstr "Мал. Флак * ‡"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_SHOTGUN_SCATTER_MINI_CLD\"]/desc"
 msgstr ""
-"Стреляет осколками по широкой площади, наносит до 6 урона. Великолепно "
-"сбивает щиты, но прицеливание затруднено, наносит урон только корпусу."
+"Стреляет осколками по широкой площади, наносит до 4 урона. Хорошо сбивает "
+"щиты, но прицеливание затруднено, наносит урон только корпусу."
 
 #: src-ru/data/blueprints.xml.rawclobber:199892
 msgid ""
@@ -101083,8 +101084,8 @@ msgstr "Мал. Флак * †"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_SHOTGUN_SCATTER_MINI_POW\"]/desc"
 msgstr ""
-"Стреляет осколками по широкой площади, наносит до 6 урона. Великолепно "
-"сбивает щиты, но прицеливание затруднено, наносит урон только корпусу."
+"Стреляет осколками по широкой площади, наносит до 4 урона. Хорошо сбивает "
+"щиты, но прицеливание затруднено, наносит урон только корпусу."
 
 #: src-ru/data/blueprints.xml.rawclobber:199940
 msgid ""
@@ -101105,8 +101106,8 @@ msgstr "Мал. Флак * √"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_SHOTGUN_SCATTER_MINI_UNI\"]/desc"
 msgstr ""
-"Стреляет осколками по широкой площади, наносит до 6 урона. Великолепно "
-"сбивает щиты, но прицеливание затруднено, наносит урон только корпусу."
+"Стреляет осколками по широкой площади, наносит до 4 урона. Хорошо сбивает "
+"щиты, но прицеливание затруднено, наносит урон только корпусу."
 
 #: src-ru/data/blueprints.xml.rawclobber:199988
 msgid ""
@@ -101127,8 +101128,8 @@ msgstr "Мал. Флак * £"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_SHOTGUN_SCATTER_MINI_ACC\"]/desc"
 msgstr ""
-"Стреляет осколками по широкой площади, наносит до 6 урона. Великолепно "
-"сбивает щиты, но прицеливание затруднено, наносит урон только корпусу."
+"Стреляет осколками по широкой площади, наносит до 4 урона. Хорошо сбивает "
+"щиты, но прицеливание затруднено, наносит урон только корпусу."
 
 #: src-ru/data/blueprints.xml.rawclobber:200038
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anomaly\"]/desc"
