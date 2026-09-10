@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
 "Language: en\n"
@@ -63047,11 +63047,12 @@ msgstr ""
 "wreckage from the battlefield."
 
 #: src-ru/data/events.xml.rawclobber:55491
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"BIG_MISSILE_SHIP\"]/deadCrew/text"
 msgstr ""
-"All the pirates are dead; they won't bother anyone else. You clean out their"
-" holds."
+"All the pirates are dead; they won't bother anyone else. You clean out their "
+"holds."
 
 #: src-ru/data/events.xml.rawclobber:55499
 msgid "data/events.xml.rawclobber$//event[@name=\"BORDER_FED_MINER\"]/text"
