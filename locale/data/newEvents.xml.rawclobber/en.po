@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataneweventsxmlrawclobber/en/>\n"
 "Language: en\n"
@@ -325,11 +325,12 @@ msgstr ""
 "protected by a defense scrambler, rendering anti-drones useless."
 
 #: src-ru/data/newEvents.xml.rawclobber:410
+#, fuzzy
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[48]"
 msgstr ""
-"TIP: HAL On-board Computer — When HAL ships receive damage, they may turn on"
-" a backup power supply which increases reactor power. However, sometimes the"
-" damage can be fatal to the on-board computer."
+"TIP: HAL On-board Computer — When HAL ships receive damage, they may turn on "
+"a backup power supply which increases reactor power. However, sometimes the "
+"damage can be fatal to the on-board computer."
 
 #: src-ru/data/newEvents.xml.rawclobber:411
 #, fuzzy
