@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"datadlceventsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:9
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_PULSAR\"]/text"
@@ -56,6 +63,7 @@ msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP2\"]/deadCrew/text"
 msgstr "Yay!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:75
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/text"
 msgstr ""
 "You come across a large trade station. However, as soon as you approach a "
