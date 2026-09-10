@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"dataneweventsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/newEvents.xml.rawclobber:361
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[1]"
@@ -207,11 +214,12 @@ msgstr ""
 "Shields System."
 
 #: src-ru/data/newEvents.xml.rawclobber:394
+#, fuzzy
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[33]"
 msgstr ""
 "TIP: Bomb Weapons — Bombs teleport directly onto either ship. They bypass "
-"Shields AND Defense Drones. However, they affect only crew and Systems; they"
-" do no damage to the ship's hull."
+"Shields AND Defense Drones. However, they affect only crew and Systems; they "
+"do no damage to the ship's hull."
 
 #: src-ru/data/newEvents.xml.rawclobber:395
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[34]"
@@ -364,6 +372,7 @@ msgstr ""
 " support fire, but defeating them can yield great rewards."
 
 #: src-ru/data/newEvents.xml.rawclobber:418
+#, fuzzy
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[54]"
 msgstr ""
 "TIP: Slig Ships — Slig ships are almost impossible to board because their "
