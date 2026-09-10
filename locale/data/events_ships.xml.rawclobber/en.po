@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"dataevents_shipsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_ships.xml.rawclobber:75
 msgid "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE\"]/gotaway/text"
@@ -1060,6 +1067,7 @@ msgstr ""
 " can stop you for questioning."
 
 #: src-ru/data/events_ships.xml.rawclobber:1179
+#, fuzzy
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK2\"]/destroyed/text"
 msgstr ""
@@ -1068,6 +1076,7 @@ msgstr ""
 "into the clouds. You scrap what you can and prepare to move on."
 
 #: src-ru/data/events_ships.xml.rawclobber:1183
+#, fuzzy
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK2\"]/deadCrew/text"
 msgstr ""
