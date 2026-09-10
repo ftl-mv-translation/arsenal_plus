@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
 "Language: en\n"
@@ -5517,6 +5517,7 @@ msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MIND_ORDER\"]/title
 msgstr "Neuron Manipulator"
 
 #: src-ru/data/blueprints.xml.rawclobber:15853
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MIND_ORDER\"]/desc"
 msgstr ""
 "Grants immunity to enemy Mind Control and complete control over mind-"
@@ -67669,11 +67670,13 @@ msgid ""
 msgstr "This adaptive weapon is already fully spooled up."
 
 #: src-ru/data/blueprints.xml.rawclobber:134961
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1P_ACC\"]/title"
 msgstr "Small Bomb+ ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:134962
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1P_ACC\"]/short"
 msgstr "S. Bomb+ ‰"
@@ -67692,11 +67695,13 @@ msgstr ""
 " hull. Can be used on your ship."
 
 #: src-ru/data/blueprints.xml.rawclobber:134994
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_ACC\"]/title"
 msgstr "Star Crusher"
 
 #: src-ru/data/blueprints.xml.rawclobber:134995
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_ACC\"]/short"
 msgstr "Star Crusher ‰"
@@ -67720,11 +67725,13 @@ msgid ""
 msgstr "..."
 
 #: src-ru/data/blueprints.xml.rawclobber:135030
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_ACC\"]/title"
 msgstr "Effector Mark II+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135031
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_ACC\"]/short"
 msgstr "Effector Mark II+ ‡"
@@ -67763,11 +67770,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:135106
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_STUN_ACC\"]/title"
 msgstr "Stun Bomb ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135107
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_STUN_ACC\"]/short"
 msgstr "Stun Bomb ‡"
@@ -67781,11 +67790,13 @@ msgstr ""
 "crew inside the room."
 
 #: src-ru/data/blueprints.xml.rawclobber:135140
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEAL_SYSTEM_ACC\"]/title"
 msgstr "Repair Burst ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135141
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEAL_SYSTEM_ACC\"]/short"
 msgstr "Repair B. ‡"
@@ -67799,11 +67810,13 @@ msgstr ""
 "completely repairing all system damage."
 
 #: src-ru/data/blueprints.xml.rawclobber:135172
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_LOCK_ACC\"]/title"
 msgstr "Lockdown Bomb Mark I €"
 
 #: src-ru/data/blueprints.xml.rawclobber:135173
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_LOCK_ACC\"]/short"
 msgstr "L-Bomb I €"
@@ -67817,11 +67830,13 @@ msgstr ""
 " in or out of the room, damaging and stunning crew."
 
 #: src-ru/data/blueprints.xml.rawclobber:135207
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_LOCK_2_ACC\"]/title"
 msgstr "Lockdown Bomb Mark II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135208
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_LOCK_2_ACC\"]/short"
 msgstr "L-Bomb II ‡"
@@ -67835,11 +67850,13 @@ msgstr ""
 " in or out of the room, damaging and stunning crew."
 
 #: src-ru/data/blueprints.xml.rawclobber:135242
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_ACC\"]/title"
 msgstr "Small Bomb ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135243
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_ACC\"]/short"
 msgstr "Small B. ‰"
@@ -67852,11 +67869,13 @@ msgstr ""
 "Self-teleporting explosive that damages systems and crew but not the hull."
 
 #: src-ru/data/blueprints.xml.rawclobber:135274
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIG_ACC\"]/title"
 msgstr "Big Bomb ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135275
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIG_ACC\"]/short"
 msgstr "Big Bomb ‰"
@@ -67867,11 +67886,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:135305
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEALFIRE_ACC\"]/title"
 msgstr "Healing Fire Bomb ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135306
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEALFIRE_ACC\"]/short"
 msgstr "Heal-Fire B. ‰"
@@ -67882,11 +67903,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:135337
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_SMALL_ACC\"]/title"
 msgstr "Fire Bomb Mark I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135338
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_SMALL_ACC\"]/short"
 msgstr "Fire B. I ‰"
@@ -67897,11 +67920,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:135369
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_FIRE_ACC\"]/title"
 msgstr "Fire Bomb Mark II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135370
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_FIRE_ACC\"]/short"
 msgstr "Fire B. II ‰"
@@ -67912,11 +67937,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:135401
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_2_ACC\"]/title"
 msgstr "Fire Bomb Mark III ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135402
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_2_ACC\"]/short"
 msgstr "Fire B. III ‡"
@@ -67927,11 +67954,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:135433
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_FIRE_ACC\"]/title"
 msgstr "Cluster Fire Bomb ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135434
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_FIRE_ACC\"]/short"
 msgstr "Fire B.* ‰"
@@ -67945,11 +67974,13 @@ msgstr ""
 " fires."
 
 #: src-ru/data/blueprints.xml.rawclobber:135464
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_FIRE_STUN_ACC\"]/title"
 msgstr "Lingering Fire Bomb ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135465
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_FIRE_STUN_ACC\"]/short"
 msgstr "L-Fire Bomb ‡"
@@ -67960,11 +67991,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:135494
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_BIO_ACC\"]/title"
 msgstr "Lingering Bio Bomb ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135495
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_BIO_ACC\"]/short"
 msgstr "L-Bio-Bomb ‡"
@@ -67975,11 +68008,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:135525
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIO_ACC\"]/title"
 msgstr "Biological Bomb ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135526
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIO_ACC\"]/short"
 msgstr "Bio-Bomb ‡"
@@ -67993,6 +68028,7 @@ msgstr ""
 "destroys organic matter, dealing heavy damage to crew."
 
 #: src-ru/data/blueprints.xml.rawclobber:135556
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEAL_ACC\"]/title"
 msgstr "Healing Burst ‡"
@@ -68011,11 +68047,13 @@ msgstr ""
 "targeted room."
 
 #: src-ru/data/blueprints.xml.rawclobber:135588
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_HEAL_2_ACC\"]/title"
 msgstr "Cluster Healing Burst ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135589
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_HEAL_2_ACC\"]/short"
 msgstr "Heal B.* ‡"
@@ -68030,11 +68068,13 @@ msgstr ""
 "fired."
 
 #: src-ru/data/blueprints.xml.rawclobber:135619
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_1_ACC\"]/title"
 msgstr "Breach Bomb Mark I €"
 
 #: src-ru/data/blueprints.xml.rawclobber:135620
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_1_ACC\"]/short"
 msgstr "Breach B. I €"
@@ -68047,11 +68087,13 @@ msgstr ""
 "Self-teleporting explosive designed to damage systems and cause a breach."
 
 #: src-ru/data/blueprints.xml.rawclobber:135651
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_2_ACC\"]/title"
 msgstr "Breach Bomb Mark II €"
 
 #: src-ru/data/blueprints.xml.rawclobber:135652
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_2_ACC\"]/short"
 msgstr "Breach B. II €"
@@ -68065,11 +68107,13 @@ msgstr ""
 "Deals more damage to systems and crew than its predecessor."
 
 #: src-ru/data/blueprints.xml.rawclobber:135683
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_3_ACC\"]/title"
 msgstr "Breach Bomb Mark III ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135684
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_3_ACC\"]/short"
 msgstr "Breach B. III ‡"
@@ -68083,11 +68127,13 @@ msgstr ""
 "damage to systems and crew than its predecessor."
 
 #: src-ru/data/blueprints.xml.rawclobber:135715
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_BREACH_ACC\"]/title"
 msgstr "Cluster Breach Bomb €"
 
 #: src-ru/data/blueprints.xml.rawclobber:135716
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_BREACH_ACC\"]/short"
 msgstr "Breach* €"
@@ -68101,11 +68147,13 @@ msgstr ""
 "and cause breaches."
 
 #: src-ru/data/blueprints.xml.rawclobber:135747
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_1_ACC\"]/title"
 msgstr "Cluster Bomb ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135748
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_1_ACC\"]/short"
 msgstr "Cluster B. ‰"
@@ -68119,11 +68167,13 @@ msgstr ""
 "and crew, but not hull."
 
 #: src-ru/data/blueprints.xml.rawclobber:135779
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_ION_ACC\"]/title"
 msgstr "Ion Bomb ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135780
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_ION_ACC\"]/short"
 msgstr "Ion Bomb ‡"
@@ -68135,11 +68185,13 @@ msgid ""
 msgstr "Self-teleporting explosive that uses ion damage to disable systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:135813
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_ION_ACC\"]/title"
 msgstr "Cluster Ion Bomb ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135814
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_ION_ACC\"]/short"
 msgstr "Ion Bomb* ‡"
@@ -68153,11 +68205,13 @@ msgstr ""
 "disable systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:135846
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN_ACC\"]/title"
 msgstr "Flashbang Cluster Bomb I"
 
 #: src-ru/data/blueprints.xml.rawclobber:135847
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN_ACC\"]/short"
 msgstr "Flashbang I €"
@@ -68171,11 +68225,13 @@ msgstr ""
 "for 10 seconds."
 
 #: src-ru/data/blueprints.xml.rawclobber:135880
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN2_ACC\"]/title"
 msgstr "Flashbang Cluster Bomb II"
 
 #: src-ru/data/blueprints.xml.rawclobber:135881
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN2_ACC\"]/short"
 msgstr "Flashbang II €"
@@ -68195,11 +68251,13 @@ msgid ""
 msgstr "Tachyon-Particle Generator"
 
 #: src-ru/data/blueprints.xml.rawclobber:135915
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_ACC\"]/title"
 msgstr "Tachyon Generator Mark I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135916
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_ACC\"]/short"
 msgstr "Tachyon I ‰"
@@ -68216,11 +68274,13 @@ msgid ""
 msgstr "Tachyon-Particle Generator"
 
 #: src-ru/data/blueprints.xml.rawclobber:135944
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_ACC\"]/title"
 msgstr "Tachyon Generator Mark II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135945
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_ACC\"]/short"
 msgstr "Tachyon II ‰"
@@ -68237,11 +68297,13 @@ msgid ""
 msgstr "Tachyon-Particle Generator"
 
 #: src-ru/data/blueprints.xml.rawclobber:135973
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_ACC\"]/title"
 msgstr "Heavy Tachyon Generator ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135974
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_ACC\"]/short"
 msgstr "Heavy Tachyon ‰"
@@ -68252,11 +68314,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:136001
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_ACC\"]/title"
 msgstr "Effector Mark I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136002
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_ACC\"]/short"
 msgstr "Effector Mark I ‡"
@@ -68273,11 +68337,13 @@ msgid ""
 msgstr "Ion emitter that generates ion fields, disabling systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:136042
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_ACC\"]/title"
 msgstr "Effector Mark II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136043
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_ACC\"]/short"
 msgstr "Effector Mark II ‡"
@@ -68295,11 +68361,13 @@ msgstr ""
 "Fast ion emitter that quickly generates ion fields, disabling systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:136083
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_ACC\"]/title"
 msgstr "Heavy Effector ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136084
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_ACC\"]/short"
 msgstr "Heavy Effector ‡"
@@ -68318,11 +68386,13 @@ msgstr ""
 "systems for a long time."
 
 #: src-ru/data/blueprints.xml.rawclobber:136124
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_ACC\"]/title"
 msgstr "Adaptive Effector ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136125
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_ACC\"]/short"
 msgstr "A-Effector ‡"
@@ -68341,11 +68411,13 @@ msgstr ""
 "its ion damage by 1 after every pulse, up to max of 3."
 
 #: src-ru/data/blueprints.xml.rawclobber:136170
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_1_ACC\"]/title"
 msgstr "Magman Prototype ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136171
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_1_ACC\"]/short"
 msgstr "Magman Prototype ‡"
@@ -68358,11 +68430,13 @@ msgstr ""
 "500% for 30 seconds."
 
 #: src-ru/data/blueprints.xml.rawclobber:136215
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_2_ACC\"]/title"
 msgstr "Magman Prototype ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136216
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_2_ACC\"]/short"
 msgstr "Magman Prototype ‡"
@@ -68380,11 +68454,13 @@ msgid ""
 msgstr "Experimental Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:136261
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_MORPHGUN_ACC\"]/title"
 msgstr "Morph Prototype ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:136262
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_MORPHGUN_ACC\"]/short"
 msgstr "Morph Prototype ‰"
@@ -68400,11 +68476,13 @@ msgid ""
 msgstr "Experimental Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:136294
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_MORPHGUN2_ACC\"]/title"
 msgstr "Morph Prototype ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:136295
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_MORPHGUN2_ACC\"]/short"
 msgstr "Morph Prototype ‰"
@@ -68435,11 +68513,13 @@ msgid ""
 msgstr "[Star Crusher] Smuggler-created universal weapon box."
 
 #: src-ru/data/blueprints.xml.rawclobber:136360
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_1_ACC\"]/title"
 msgstr "Pyroformer Mark I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136361
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_1_ACC\"]/short"
 msgstr "Pyroformer I ‡"
@@ -68452,11 +68532,13 @@ msgstr ""
 "100% for 15 seconds."
 
 #: src-ru/data/blueprints.xml.rawclobber:136405
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_2_ACC\"]/title"
 msgstr "Pyroformer Mark II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136406
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_2_ACC\"]/short"
 msgstr "Pyroformer II ‡"
@@ -68469,11 +68551,13 @@ msgstr ""
 "200% for 15 seconds."
 
 #: src-ru/data/blueprints.xml.rawclobber:136450
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_3_ACC\"]/title"
 msgstr "Pyroformer Mark III ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136451
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_3_ACC\"]/short"
 msgstr "Pyroformer III ‡"
@@ -68486,6 +68570,7 @@ msgstr ""
 "400% for 15 seconds."
 
 #: src-ru/data/blueprints.xml.rawclobber:136495
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_M_ACC\"]/title"
 msgstr "Morph-М Weapon ‡"
@@ -68504,6 +68589,7 @@ msgstr ""
 "target, the projectiles return to our dimension."
 
 #: src-ru/data/blueprints.xml.rawclobber:136526
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_R_ACC\"]/title"
 msgstr "Morph-R Weapon ‰"
@@ -68522,6 +68608,7 @@ msgstr ""
 "target, the projectiles return to our dimension."
 
 #: src-ru/data/blueprints.xml.rawclobber:136557
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_S_ACC\"]/title"
 msgstr "Morph-S Weapon €"
@@ -68540,6 +68627,7 @@ msgstr ""
 "target, the projectiles return to our dimension."
 
 #: src-ru/data/blueprints.xml.rawclobber:136588
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_Z_ACC\"]/title"
 msgstr "Morph-Z Weapon ‡"
