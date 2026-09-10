@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"datadlcevents_anaerobicxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:125
 msgid ""
@@ -1325,6 +1332,7 @@ msgstr ""
 "turn on each other, the survivor notices you and moves in to attack."
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:942
+#, fuzzy
 msgid ""
 "data/dlcEvents_anaerobic.xml.rawclobber$//textList[@name=\"LANIUS_FIGHT_TEXT\"]/text[2]"
 msgstr ""
@@ -1748,11 +1756,12 @@ msgstr ""
 "war or the Lanius invasion."
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:1160
+#, fuzzy
 msgid ""
 "data/dlcEvents_anaerobic.xml.rawclobber$//textList[@name=\"LANIUS_PIRATE_CIVILIAN_TEXT\"]/text[1]"
 msgstr ""
-"You discover an abandoned mining facility in the process of being 'acquired'"
-" by the Lanius. However, you immediately receive a call from a civilian "
+"You discover an abandoned mining facility in the process of being 'acquired' "
+"by the Lanius. However, you immediately receive a call from a civilian "
 "transport vessel, \"Help! We were trying to escape before the Lanius came "
 "only to be caught by pirates!\" You see a lone pirate ship boarding the "
 "civilian craft."
