@@ -1,0 +1,1965 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-ru/data/events_rock.xml.rawclobber:119
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[1]"
+msgstr ""
+"Роки агрессивно настроены против нарушений их границ чужеземцами и полётов "
+"через их территории. Вы должны быть осторожны."
+
+#: src-ru/data/events_rock.xml.rawclobber:120
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[2]"
+msgstr ""
+"Роки — сильная и гордая раса. Даже не думайте мирно пролететь по их "
+"территории."
+
+#: src-ru/data/events_rock.xml.rawclobber:121
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[3]"
+msgstr ""
+"\"Хороший враг — мёртвый враг\" — так обычно выражаются каменные гиганты, "
+"встречая чужаков на своих территориях. Не знающие жалости, они готовы даже "
+"на безумные поступки, но кто знает, быть может, вам удастся переплюнуть их в"
+" этом?"
+
+#: src-ru/data/events_rock.xml.rawclobber:122
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[4]"
+msgstr ""
+"Долгое время этот сектор считался безжизненным. Ровно до тех пор, пока из "
+"огромного куска базальта не вылетел рой разнокалиберных ракет, уничтожив "
+"пролетающий мимо транспортный корабль. Роки не шутят."
+
+#: src-ru/data/events_rock.xml.rawclobber:123
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[5]"
+msgstr ""
+"Роки — гордая и крайне религиозная раса, не жалующая чужаков. Впрочем, даже "
+"они уважают умелых дипломатов, знающих древний принцип \"у кого больше "
+"пушки, тот и прав\"."
+
+#: src-ru/data/events_rock.xml.rawclobber:124
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[6]"
+msgstr ""
+"Сектор роков... Чужаков здесь не любят — стоит приготовиться к \"горячему\" "
+"приёму."
+
+#: src-ru/data/events_rock.xml.rawclobber:125
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[7]"
+msgstr ""
+"Сектора роков славятся своим гостеприимством — любой путешественник может "
+"рассчитывать на дружный залп местных в свою честь, а то, что сделан он будет"
+" по его же кораблю — уже совсем другая история..."
+
+#: src-ru/data/events_rock.xml.rawclobber:126
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[8]"
+msgstr ""
+"Судя по приваренному к маяку на входе куску обшивки корабля мантисов и "
+"надписи \"Смерть чужакам!\" на местном языке, пролететь мирно не получится."
+
+#: src-ru/data/events_rock.xml.rawclobber:127
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[9]"
+msgstr ""
+"Вы прибыли в заселённый роками сектор. Но не сильно обольщайтесь — "
+"единственное, на что здесь можно рассчитывать — это залп орудий по вашему "
+"кораблю."
+
+#: src-ru/data/events_rock.xml.rawclobber:128
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[10]"
+msgstr ""
+"Данное пространство принадлежит рокам. Попав сюда, вы нарушили границу их "
+"территории, что по здешним законам карается смертью. И не говорите, что вы "
+"этого не знали..."
+
+#: src-ru/data/events_rock.xml.rawclobber:129
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_ROCK\"]/text[11]"
+msgstr ""
+"Роки — грубые, ксенофобные существа, подчиняющиеся строгим культурным "
+"правилам и классовой иерархии. Редкие среди них личности, которые "
+"сотрудничают с другими расами, часто избегаются и бросаются своими "
+"сородичами. Несмотря на это, их лидеры подчинились правлению Федерации, "
+"чтобы сохранить галактический мир."
+
+#: src-ru/data/events_rock.xml.rawclobber:137
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_ROCK\"]/text[1]"
+msgstr ""
+"Вы пересеклись путями с кораблём роков, возвращающимся из особой "
+"дипломатической миссии. Удивлённый не меньше вашего, капитан их корабля "
+"ответил на приветствие и согласился на взаимную торговлю."
+
+#: src-ru/data/events_rock.xml.rawclobber:138
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_ROCK\"]/text[2]"
+msgstr ""
+"Вы натолкнулись на торговую станцию роков. Они редко имеют дело с "
+"чужеземцами, но сейчас им понадобилось продать последние свои запасы, "
+"поскольку по возвращении на родину они вынуждены выплатить штраф за "
+"нарушение закона."
+
+#: src-ru/data/events_rock.xml.rawclobber:139
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_ROCK\"]/text[3]"
+msgstr ""
+"Из-за упорного нежелания местных поселений роков торговать с другими особями"
+" предприимчивые мантисы отложили свою пиратскую деятельность и открыли "
+"магазин, чтобы привлекать любых пролетающих торговцев."
+
+#: src-ru/data/events_rock.xml.rawclobber:140
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_ROCK\"]/text[4]"
+msgstr ""
+"Роки терпят присутствие немногих пришельцев в своём пространстве, но даже "
+"они, похоже, уважают мудрость золтанцев: некоторые из них организовали "
+"торговый пункт в оболочке большого заброшенного корабля."
+
+#: src-ru/data/events_rock.xml.rawclobber:141
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_ROCK\"]/text[5]"
+msgstr ""
+"Вы получаете сообщение на частоте Федерации: «Вы — корабль Федерации?! Мы "
+"давно потеряли надежду снова увидеть союзников. Может, вы хотите "
+"поторговать?»"
+
+#: src-ru/data/events_rock.xml.rawclobber:159
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_ROCK\"]/text[1]"
+msgstr ""
+"Вы получаете сообщение, в котором вас расценивают как чужаков. Вы было "
+"заподозрили атаку, но тут выяснилось, что сообщение пришло от маленького "
+"гражданского корабля."
+
+#: src-ru/data/events_rock.xml.rawclobber:160
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_ROCK\"]/text[2]"
+msgstr ""
+"Никто не беспокоит вас, пока вы пролетаете мимо многочисленных космических "
+"станций и добывающих платформ. Роки определённо ведут свои дела эффективно."
+
+#: src-ru/data/events_rock.xml.rawclobber:161
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_ROCK\"]/text[3]"
+msgstr ""
+"Вы прибываете к маяку и обнаруживаете неподалёку сражение. Несколько "
+"кораблей обмениваются залпами возле небольшой станции. Неизвестна причина "
+"конфликта: спор за территорию, противоборство или обряд посвящения, но вы "
+"решаете, что лучше не вмешиваться."
+
+#: src-ru/data/events_rock.xml.rawclobber:162
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_ROCK\"]/text[4]"
+msgstr ""
+"В этом секторе ничего интересного нет. Просто несколько брошенных станций. "
+"Кто-то обчистил их до вас."
+
+#: src-ru/data/events_rock.xml.rawclobber:163
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_ROCK\"]/text[5]"
+msgstr ""
+"Несколько грузовых кораблей проходят мимо, отказываясь выходить на связь. "
+"Наверное, они не хотят пятнать свою репутацию, общаясь с чужеземцами."
+
+#: src-ru/data/events_rock.xml.rawclobber:164
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_ROCK\"]/text[6]"
+msgstr ""
+"Обнаружив небольшую торговую станцию, вы запрашиваете дозаправку, но они "
+"отвечают отказом: «Убирайтесь! Таких как вы тут не обслуживают»."
+
+#: src-ru/data/events_rock.xml.rawclobber:165
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_ROCK\"]/text[7]"
+msgstr ""
+"Вы видите торговца расы золтанцев и предлагаете пообщаться. Он отвечает: "
+"«Извините, но потребовались годы, чтобы завоевать их доверие. Я не могу "
+"рисковать им, общаясь с вами. Надеюсь, вы меня понимаете», — и прекращает "
+"связь."
+
+#: src-ru/data/events_rock.xml.rawclobber:180
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP\"]/text[1]"
+msgstr ""
+"Встретившись с кораблём роков, вы пытаетесь связаться с ними по торговым "
+"частотам, но они посчитали это попыткой культурного влияния на них и "
+"открывают огонь."
+
+#: src-ru/data/events_rock.xml.rawclobber:181
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP\"]/text[2]"
+msgstr ""
+"Вы выныриваете прямо посреди места раскопок роков на близлежащей луне. "
+"Будучи не в восторге от вашего бесцеремонного проникновения, они готовятся "
+"защищать себя!"
+
+#: src-ru/data/events_rock.xml.rawclobber:182
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP\"]/text[3]"
+msgstr ""
+"Вы перехватываете сигнал от приближающегося корабля роков: «Оружие к бою, "
+"сближение на расстояние атаки». С такими парнями вам разговаривать не о чем."
+
+#: src-ru/data/events_rock.xml.rawclobber:183
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP\"]/text[4]"
+msgstr ""
+"После прыжка у вас на коммуникаторе появляется огромная фигура. Капитан "
+"роков задумчиво потирает зелёную, похожую на мох растительность на "
+"подбородке, а затем командует своим рокам открыть по вам огонь."
+
+#: src-ru/data/events_rock.xml.rawclobber:184
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP\"]/text[5]"
+msgstr ""
+"Вроде бы никого нет, но вы замечаете, что ваш компьютер сканируется. "
+"Замаскированный корабль роков окликает вас: «Это что у вас в компьютерах за "
+"богохульство?! Это нечестивые слова!» Прежде чем вы успеваете возразить, они"
+" открывают огонь."
+
+#: src-ru/data/events_rock.xml.rawclobber:185
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP\"]/text[6]"
+msgstr ""
+"Вы заметили корабль роков, выполняющий боевые учения. Однако они быстро "
+"изменили свой курс на перехват вашего корабля. Они, похоже, считают все "
+"неизвестные корабли удобными учебными мишенями."
+
+#: src-ru/data/events_rock.xml.rawclobber:186
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP\"]/text[7]"
+msgstr ""
+"Громкий стучащий звук проносится по кораблю после прыжка. Вы только что "
+"задели боевой корабль роков, и он уже готовится стрелять!"
+
+#: src-ru/data/events_rock.xml.rawclobber:187
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP\"]/text[8]"
+msgstr ""
+"Вас перехватили роки, занимавшиеся сбором лома и прочего хлама в космосе. "
+"Похоже, их мало беспокоит то, что вы всё ещё на корабле, пока они разбирают "
+"его на части."
+
+#: src-ru/data/events_rock.xml.rawclobber:193
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_SHIP_SURRENDER\"]/choice[1]/text"
+msgstr "Принять их предложение."
+
+#: src-ru/data/events_rock.xml.rawclobber:200
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_SHIP_SURRENDER\"]/choice[2]/text"
+msgstr "Мы не признаём капитуляцию!"
+
+#: src-ru/data/events_rock.xml.rawclobber:205
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[1]"
+msgstr ""
+"Корабль роков выходит на связь: «Хватит! Нас предупреждали, что пришельцы "
+"представляют угрозу укладу нашей жизни, и вы тому прямое подтверждение. "
+"Возьмите это и уходите с миром»."
+
+#: src-ru/data/events_rock.xml.rawclobber:206
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[2]"
+msgstr ""
+"Их устройства трещат по швам, корабль роков пытается установить контакт: "
+"«Судно пришельцев, прекратите атаку. Мы заплатим»."
+
+#: src-ru/data/events_rock.xml.rawclobber:207
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[3]"
+msgstr ""
+"Корабль роков отходит на защитную позицию и передаёт сигнал белого флага. "
+"Похоже, они хотят купить свои жизни."
+
+#: src-ru/data/events_rock.xml.rawclobber:209
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[4]"
+msgstr ""
+"Корабль роков выходит на связь: «Хватит! Нас предупреждали, что пришельцы "
+"представляют угрозу укладу нашей жизни, и вы тому прямое подтверждение. "
+"Возьмите это и уходите с миром»."
+
+#: src-ru/data/events_rock.xml.rawclobber:210
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[5]"
+msgstr ""
+"Их устройства трещат по швам, корабль роков пытается установить контакт: "
+"«Судно пришельцев, прекратите атаку. Мы заплатим»."
+
+#: src-ru/data/events_rock.xml.rawclobber:211
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[6]"
+msgstr ""
+"Корабль роков отходит на защитную позицию и передаёт сигнал белого флага. "
+"Похоже, они хотят купить свои жизни."
+
+#: src-ru/data/events_rock.xml.rawclobber:213
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[7]"
+msgstr ""
+"Корабль роков выходит на связь: «Хватит! Нас предупреждали, что пришельцы "
+"представляют угрозу укладу нашей жизни, и вы тому прямое подтверждение. "
+"Возьмите это и уходите с миром»."
+
+#: src-ru/data/events_rock.xml.rawclobber:214
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[8]"
+msgstr ""
+"Их устройства трещат по швам, корабль роков пытается установить контакт: "
+"«Судно пришельцев, прекратите атаку. Мы заплатим»."
+
+#: src-ru/data/events_rock.xml.rawclobber:215
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[9]"
+msgstr ""
+"Корабль роков отходит на защитную позицию и передаёт сигнал белого флага. "
+"Похоже, они хотят купить свои жизни."
+
+#: src-ru/data/events_rock.xml.rawclobber:217
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[10]"
+msgstr ""
+"Корабль роков выходит на связь: «Хватит! Нас предупреждали, что пришельцы "
+"представляют угрозу укладу нашей жизни, и вы тому прямое подтверждение. "
+"Возьмите это и уходите с миром»."
+
+#: src-ru/data/events_rock.xml.rawclobber:218
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[11]"
+msgstr ""
+"Их устройства трещат по швам, корабль роков пытается установить контакт: "
+"«Судно пришельцев, прекратите атаку. Мы заплатим»."
+
+#: src-ru/data/events_rock.xml.rawclobber:219
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_SHIP_SURRENDER\"]/text[12]"
+msgstr ""
+"Корабль роков отходит на защитную позицию и передаёт сигнал белого флага. "
+"Похоже, они хотят купить свои жизни."
+
+#: src-ru/data/events_rock.xml.rawclobber:228
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE\"]/text[1]"
+msgstr ""
+"Репутация бесстрашных пиратов накрепко прикипела к расе роков: воинственные "
+"от природы, они предпочитают брать своё силой, не опускаясь до "
+"дипломатических переговоров и заключения союзов. Вы натыкаетесь на один из "
+"их кораблей, и он точно подходит под это описание."
+
+#: src-ru/data/events_rock.xml.rawclobber:229
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE\"]/text[2]"
+msgstr ""
+"Корабль роков пролетает мимо ваших окон, и вы узнаёте знак отличия изгоев на"
+" корпусе. Это должно быть пираты!"
+
+#: src-ru/data/events_rock.xml.rawclobber:230
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE\"]/text[3]"
+msgstr ""
+"Пёстрая коллекция кораблей роков расположилась вокруг этого маяка — они "
+"примкнули к пиратам. Защитные манёвры!"
+
+#: src-ru/data/events_rock.xml.rawclobber:232
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE\"]/text[4]"
+msgstr ""
+"Репутация бесстрашных пиратов накрепко прикипела к расе роков: воинственные "
+"от природы, они предпочитают брать своё силой, не опускаясь до "
+"дипломатических переговоров и заключения союзов. Вы натыкаетесь на один из "
+"их кораблей, и он точно подходит под это описание."
+
+#: src-ru/data/events_rock.xml.rawclobber:233
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE\"]/text[5]"
+msgstr ""
+"Корабль роков пролетает мимо ваших окон, и вы узнаёте знак отличия изгоев на"
+" корпусе. Это должно быть пираты!"
+
+#: src-ru/data/events_rock.xml.rawclobber:234
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE\"]/text[6]"
+msgstr ""
+"Пёстрая коллекция кораблей роков расположилась вокруг этого маяка — они "
+"примкнули к пиратам. Защитные манёвры!"
+
+#: src-ru/data/events_rock.xml.rawclobber:236
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE\"]/text[7]"
+msgstr ""
+"Репутация бесстрашных пиратов накрепко прикипела к расе роков: воинственные "
+"от природы, они предпочитают брать своё силой, не опускаясь до "
+"дипломатических переговоров и заключения союзов. Вы натыкаетесь на один из "
+"их кораблей, и он точно подходит под это описание."
+
+#: src-ru/data/events_rock.xml.rawclobber:237
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE\"]/text[8]"
+msgstr ""
+"Корабль роков пролетает мимо ваших окон, и вы узнаёте знак отличия изгоев на"
+" корпусе. Это должно быть пираты!"
+
+#: src-ru/data/events_rock.xml.rawclobber:238
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE\"]/text[9]"
+msgstr ""
+"Пёстрая коллекция кораблей роков расположилась вокруг этого маяка — они "
+"примкнули к пиратам. Защитные манёвры!"
+
+#: src-ru/data/events_rock.xml.rawclobber:249
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_LOOTING\"]/text"
+msgstr ""
+"Вы находите выведенный из строя транспортник роков, плавающий недалеко от "
+"маяка. Вы намереваетесь забрать с него все полезные детали, но неизвестно, "
+"что он здесь делал до вас."
+
+#: src-ru/data/events_rock.xml.rawclobber:251
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_LOOTING\"]/choice[1]/text"
+msgstr "Обчистить корабль."
+
+#: src-ru/data/events_rock.xml.rawclobber:255
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_LOOTING\"]/choice[2]/text"
+msgstr "Оставить его в покое."
+
+#: src-ru/data/events_rock.xml.rawclobber:259
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_LOOTING\"]/choice[@req=\"slug_crew\"]/text"
+msgstr ""
+"(Член экипажа слаг) Проверить присутствие жизненных форм и быть настороже, "
+"обыскивая останки корабля."
+
+#: src-ru/data/events_rock.xml.rawclobber:265
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_LOOTING_STRIP\"]/event[1]/text"
+msgstr ""
+"Вы собираете всё, что можете с корабля. Во время операции вас никто не "
+"беспокоит."
+
+#: src-ru/data/events_rock.xml.rawclobber:269
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_LOOTING_STRIP\"]/event[2]/text"
+msgstr ""
+"Пока вы разбирали корабль, патруль роков вышел из прыжка. Они передают: "
+"«Грязные пираты! Приготовьтесь умереть!» Вы сомневаетесь, что объяснение "
+"вашей миссии их переубедит."
+
+#: src-ru/data/events_rock.xml.rawclobber:276
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_LOOTING_LEAVE\"]/event[1]/text"
+msgstr ""
+"Раса роков не славится умением устраивать засады, но вы всё равно решаете "
+"лететь поскорее дальше."
+
+#: src-ru/data/events_rock.xml.rawclobber:279
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_LOOTING_LEAVE\"]/event[2]/text"
+msgstr ""
+"Раса роков не славится умением устраивать засады, но вы всё равно решаете "
+"лететь поскорее дальше."
+
+#: src-ru/data/events_rock.xml.rawclobber:282
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_LOOTING_LEAVE\"]/event[3]/text"
+msgstr ""
+"И только у вас появляется возможность уйти, как прибывает патрульный корабль"
+" роков. Вы перехватываете их болтовню: «...похоже, мы наконец нашли их. Этот"
+" кровавый пир закончится здесь!» Прежде чем вы успеваете отстоять свою "
+"невиновность, они нападают."
+
+#: src-ru/data/events_rock.xml.rawclobber:288
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_LOOTING_SLUG\"]/event[1]/text"
+msgstr ""
+"Вы собираете всё, что можете с корабля. Жизненных форм и кораблей поблизости"
+" не обнаружено."
+
+#: src-ru/data/events_rock.xml.rawclobber:292
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_LOOTING_SLUG\"]/event[2]/text"
+msgstr ""
+"Вы начинаете операцию по сбору, но вскоре экипаж предупреждает вас о "
+"приближающемся корабле. Вы поскорее уходите, прежде чем попадёте в радиус "
+"поражения его орудий."
+
+#: src-ru/data/events_rock.xml.rawclobber:297
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/text"
+msgstr ""
+"На поверхности ближайшей луны замечены неустойчивые признаки жизни. Здесь, "
+"похоже, расположен монастырь роков, в котором молодёжи \"прививают\" их "
+"религию, только сейчас там бушует что-то вроде переворота, и повсюду бегают "
+"озверевшие ученики."
+
+#: src-ru/data/events_rock.xml.rawclobber:299
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[1]/text"
+msgstr "Выслать команду для расследования."
+
+#: src-ru/data/events_rock.xml.rawclobber:301
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[1]/event/text"
+msgstr ""
+"Ваша команда докладывает о битвах между учениками и властями. Похоже, "
+"некоторые из учеников были объявлены еретиками и должны были быть заключены "
+"в тюрьму."
+
+#: src-ru/data/events_rock.xml.rawclobber:303
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[1]/event/choice[1]/text"
+msgstr "Приказать команде принять сторону учеников."
+
+#: src-ru/data/events_rock.xml.rawclobber:305
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[1]/event/choice[1]/event/text"
+msgstr ""
+"Не проходит много времени, и мелкая стычка перерастает в полномасштабное "
+"сражение, ваша команда и их военное вооружение в его эпицентре."
+
+#: src-ru/data/events_rock.xml.rawclobber:313
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[1]/event/choice[2]/text"
+msgstr "Приказать команде принять сторону властей."
+
+#: src-ru/data/events_rock.xml.rawclobber:315
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[1]/event/choice[2]/event/text"
+msgstr ""
+"Не проходит много времени, и мелкая стычка перерастает в полномасштабное "
+"сражение, ваша команда и их военное вооружение в его эпицентре."
+
+#: src-ru/data/events_rock.xml.rawclobber:325
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[2]/text"
+msgstr "Покинуть это место."
+
+#: src-ru/data/events_rock.xml.rawclobber:327
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[2]/event/text"
+msgstr "Пока они не стреляют по вашему кораблю, лучше их не трогать."
+
+#: src-ru/data/events_rock.xml.rawclobber:331
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[@req=\"weapons\"]/text"
+msgstr ""
+"(Продвинутые орудия) Сделать предупредительный выстрел рядом с волнениями, "
+"возвестив о своём прибытии."
+
+#: src-ru/data/events_rock.xml.rawclobber:333
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY\"]/choice[@req=\"weapons\"]/event/text"
+msgstr ""
+"Вы направляете шквальный огонь на пустой дом рядом с кратером поблизости от "
+"поселения. Стрельба на поверхности стихает на то время, пока лунные силы "
+"обороны отправляются к вашей дислокации!"
+
+#: src-ru/data/events_rock.xml.rawclobber:340
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[1]/text"
+msgstr ""
+"В конце концов, дела оказались плохи. Враги обошли вашу команду с флангов, и"
+" они были вынуждены ретироваться на корабль."
+
+#: src-ru/data/events_rock.xml.rawclobber:344
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[1]/choice/event/text"
+msgstr ""
+"Персонал и власти подчиняют последних изменников. Корабли для перевозки их в"
+" тюрьму уже на орбите."
+
+#: src-ru/data/events_rock.xml.rawclobber:353
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[2]/text"
+msgstr ""
+"Бой проходит скверно, и ваша команда в конце концов обнаруживает себя "
+"загнанной в один угол с раненым роком в связке. Они делают отчаянный рывок к"
+" кораблю, но один из них погибает. Выжившие оказывают помощь раненому року "
+"на борту."
+
+#: src-ru/data/events_rock.xml.rawclobber:359
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and not(@lvl)]/event/removeCrew/text"
+msgstr ""
+"К счастью, ваш член экипажа был достаточно близко к кораблю для того, чтобы "
+"клон-отсек возродил его."
+
+#: src-ru/data/events_rock.xml.rawclobber:364
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr ""
+"Персонал и власти подчиняют последних изменников. Корабли для перевозки их в"
+" тюрьму уже на орбите."
+
+#: src-ru/data/events_rock.xml.rawclobber:377
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and @lvl=\"0\"]/event/text"
+msgstr ""
+"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
+"смерти всего экипажа."
+
+#: src-ru/data/events_rock.xml.rawclobber:381
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and @lvl=\"0\"]/event/choice/event/text"
+msgstr ""
+"Персонал и власти подчиняют последних изменников. Корабли для перевозки их в"
+" тюрьму уже на орбите."
+
+#: src-ru/data/events_rock.xml.rawclobber:393
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[3]/text"
+msgstr ""
+"Ваша команда принимается за дело на главной площади, успешно сдерживает "
+"натиск вражеских бойцов и обретает контроль над комплексом!"
+
+#: src-ru/data/events_rock.xml.rawclobber:397
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[3]/choice/event/text"
+msgstr ""
+"Ученики добивают оставшийся персонал и готовятся покинуть эту систему. "
+"Теперь им доступна только одна дорога — преступников."
+
+#: src-ru/data/events_rock.xml.rawclobber:406
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[4]/text"
+msgstr ""
+"Ваша команда попадает под сильный обстрел. Одного из них ослепляет вспышкой "
+"бомбы, и он переваливается через край кратера, улетая далеко вниз к своей "
+"погибели. Оставшиеся успешно объединяются с дружественными силами и, в конце"
+" концов, обретают контроль над комплексом!"
+
+#: src-ru/data/events_rock.xml.rawclobber:412
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[4]/choice[@req=\"CREW_ALL\""
+" and not(@lvl)]/event/removeCrew/text"
+msgstr ""
+"К счастью, ваш член экипажа был достаточно близко к кораблю для того, чтобы "
+"клон-отсек возродил его."
+
+#: src-ru/data/events_rock.xml.rawclobber:417
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[4]/choice[@req=\"CREW_ALL\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr ""
+"Ученики добивают оставшийся персонал и готовятся покинуть эту систему. "
+"Теперь им доступна только одна дорога — преступников."
+
+#: src-ru/data/events_rock.xml.rawclobber:429
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[4]/choice[@req=\"CREW_ALL\""
+" and @lvl=\"0\"]/event/text"
+msgstr ""
+"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
+"смерти всего экипажа."
+
+#: src-ru/data/events_rock.xml.rawclobber:433
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[4]/choice[@req=\"CREW_ALL\""
+" and @lvl=\"0\"]/event/choice/event/text"
+msgstr ""
+"Ученики добивают оставшийся персонал и готовятся покинуть эту систему. "
+"Теперь им доступна только одна дорога — преступников."
+
+#: src-ru/data/events_rock.xml.rawclobber:444
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_STUDENTS\"]/event[5]/text"
+msgstr ""
+"В ходе битвы основные действия уходят от местонахождения вашей команды, и, "
+"пока всё тихо, им удаётся завладеть каким-то брошенным вооружением. К тому "
+"моменту бой в основном был закончен, и экипаж вернулся на корабль."
+
+#: src-ru/data/events_rock.xml.rawclobber:450
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[1]/text"
+msgstr ""
+"В конце концов, дела оказались плохи. Враги обошли вашу команду с флангов, и"
+" они были вынуждены ретироваться на корабль."
+
+#: src-ru/data/events_rock.xml.rawclobber:454
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[1]/choice/event/text"
+msgstr ""
+"Ученики добивают оставшийся персонал и готовятся покинуть эту систему. "
+"Теперь им доступна только одна дорога — преступников."
+
+#: src-ru/data/events_rock.xml.rawclobber:463
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[2]/text"
+msgstr ""
+"Бой проходит скверно, и ваша команда в конце концов обнаруживает себя "
+"загнанной в один угол с раненым роком в связке. Они делают отчаянный рывок к"
+" кораблю, но один из них погибает. Выжившие оказывают помощь раненому року "
+"на борту."
+
+#: src-ru/data/events_rock.xml.rawclobber:469
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and not(@lvl)]/event/removeCrew/text"
+msgstr ""
+"К счастью, ваш член экипажа был достаточно близко к кораблю для того, чтобы "
+"клон-отсек возродил его."
+
+#: src-ru/data/events_rock.xml.rawclobber:474
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr ""
+"Ученики добивают оставшийся персонал и готовятся покинуть эту систему. "
+"Теперь им доступна только одна дорога — преступников."
+
+#: src-ru/data/events_rock.xml.rawclobber:487
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and @lvl=\"0\"]/event/text"
+msgstr ""
+"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
+"смерти всего экипажа."
+
+#: src-ru/data/events_rock.xml.rawclobber:491
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and @lvl=\"0\"]/event/choice/event/text"
+msgstr ""
+"Ученики добивают оставшийся персонал и готовятся покинуть эту систему. "
+"Теперь им доступна только одна дорога — преступников."
+
+#: src-ru/data/events_rock.xml.rawclobber:503
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[3]/text"
+msgstr ""
+"Ваша команда принимается за дело на главной площади, успешно сдерживает "
+"натиск вражеских бойцов и обретает контроль над комплексом!"
+
+#: src-ru/data/events_rock.xml.rawclobber:507
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[3]/choice/event/text"
+msgstr ""
+"Персонал и власти подчиняют последних изменников. Корабли для перевозки их в"
+" тюрьму уже на орбите."
+
+#: src-ru/data/events_rock.xml.rawclobber:516
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[4]/text"
+msgstr ""
+"Ваша команда попадает под сильный обстрел. Одного из них ослепляет вспышкой "
+"бомбы, и он переваливается через край кратера, улетая далеко вниз к своей "
+"погибели; оставшиеся успешно объединяются с дружественными силами и, в конце"
+" концов, обретают контроль над комплексом!"
+
+#: src-ru/data/events_rock.xml.rawclobber:522
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[4]/choice[@req=\"CREW_ALL\""
+" and not(@lvl)]/event/removeCrew/text"
+msgstr ""
+"К счастью, ваш член экипажа был достаточно близко к кораблю для того, чтобы "
+"клон-отсек возродил его."
+
+#: src-ru/data/events_rock.xml.rawclobber:527
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[4]/choice[@req=\"CREW_ALL\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr ""
+"Персонал и власти подчиняют последних изменников. Корабли для перевозки их в"
+" тюрьму уже на орбите."
+
+#: src-ru/data/events_rock.xml.rawclobber:539
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[4]/choice[@req=\"CREW_ALL\""
+" and @lvl=\"0\"]/event/text"
+msgstr ""
+"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
+"смерти всего экипажа."
+
+#: src-ru/data/events_rock.xml.rawclobber:543
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[4]/choice[@req=\"CREW_ALL\""
+" and @lvl=\"0\"]/event/choice/event/text"
+msgstr ""
+"Персонал и власти подчиняют последних изменников. Корабли для перевозки их в"
+" тюрьму уже на орбите."
+
+#: src-ru/data/events_rock.xml.rawclobber:554
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_NURSERY_AUTHORITY\"]/event[5]/text"
+msgstr ""
+"В ходе битвы основные действия уходят от места нахождения вашей команды, и "
+"пока всё тихо, им удаётся завладеть каким-то брошенным вооружением. К тому "
+"моменту бой в основном был закончен, и экипаж вернулся на корабль."
+
+#: src-ru/data/events_rock.xml.rawclobber:559
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY_WIN\"]/text"
+msgstr ""
+"В ответ на вашу поддержку в бою, выжившие вознаграждают вас платой, "
+"приготовленной для тюремного транспортника. Вы улетаете, прежде чем они "
+"передумают!"
+
+#: src-ru/data/events_rock.xml.rawclobber:563
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_NURSERY_LOSE\"]/text"
+msgstr ""
+"Понимая, что их победа была омрачена вашим прибытием, выжившие немедленно "
+"отправляют корабль, чтобы вас уничтожить!"
+
+#: src-ru/data/events_rock.xml.rawclobber:570
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_HUNTER\"]/text"
+msgstr ""
+"Корабль мантисов украшен частями тел роков! Это выглядело бы ещё более "
+"кроваво, если бы они имели внутренние органы, но сообщение достаточно ясно —"
+" это охотник очень специализированного рода."
+
+#: src-ru/data/events_rock.xml.rawclobber:573
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_HUNTER\"]/choice[1]/text"
+msgstr "Атаковать!"
+
+#: src-ru/data/events_rock.xml.rawclobber:575
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_HUNTER\"]/choice[1]/event/text"
+msgstr ""
+"Ни одно создание не заслуживает быть объектом охоты мантисов. Пора сделать "
+"Галактику немного безопаснее. В атаку!"
+
+#: src-ru/data/events_rock.xml.rawclobber:580
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_HUNTER\"]/choice[2]/text"
+msgstr "Пролететь мимо."
+
+#: src-ru/data/events_rock.xml.rawclobber:582
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_HUNTER\"]/choice[2]/event/text"
+msgstr ""
+"Мантисы не проявляют интереса к вашему кораблю. Они поглощены ожиданием "
+"следующего корабля роков, который рискнёт сюда сунуться. Вы заводите "
+"двигатели и спокойно совершаете прыжок."
+
+#: src-ru/data/events_rock.xml.rawclobber:586
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_HUNTER\"]/choice[@req=\"ROCK_ARMOR\"]/text"
+msgstr "(Обшивка корпуса роков) Протаранить ублюдков."
+
+#: src-ru/data/events_rock.xml.rawclobber:588
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_HUNTER\"]/choice[@req=\"ROCK_ARMOR\"]/event/text"
+msgstr ""
+"Прежде чем у них появился шанс, вы тараните их корабль своим, нанося "
+"летальный урон их двигателям. К счастью, броня вашего корабля дополнительно "
+"усилена против столкновений. Корабль мантисов дрейфует прочь, и вы атакуете "
+"его."
+
+#: src-ru/data/events_rock.xml.rawclobber:594
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_HUNTER\"]/choice[@req=\"rock_crew\"]/text"
+msgstr "(Член экипажа рок) Позвать к коммуникатору рока."
+
+#: src-ru/data/events_rock.xml.rawclobber:596
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_HUNTER\"]/choice[@req=\"rock_crew\"]/event/text"
+msgstr ""
+"Двое инопланетян взирают друг на друга через экран. «Пещерная каменюга! — в "
+"ярости выкрикивает капитан мантисов. — Посмотри, я разукрасил свой корабль "
+"твоими товарищами! Я раскрашу свой корабль и тобой!» Кажется, их капитан "
+"сейчас не в состоянии адекватно управлять своим кораблём, что вам только на "
+"руку."
+
+#: src-ru/data/events_rock.xml.rawclobber:609
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_FREIGHTER\"]/text"
+msgstr ""
+"Любопытная картина ожидает вас у этого маяка: неработающий грузовой корабль "
+"роков дрейфует в пространстве, пока двое кораблей мантисов сражаются друг с "
+"другом — очевидно, по поводу того, кому достанется добыча."
+
+#: src-ru/data/events_rock.xml.rawclobber:611
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_FREIGHTER\"]/choice[1]/text"
+msgstr "Подождать и затем атаковать выжившего мантиса."
+
+#: src-ru/data/events_rock.xml.rawclobber:615
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_FREIGHTER\"]/choice[2]/text"
+msgstr "Пролететь мимо."
+
+#: src-ru/data/events_rock.xml.rawclobber:617
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_FREIGHTER\"]/choice[2]/event/text"
+msgstr ""
+"Тут уже и без вас достаточно накалённая обстановка — вы готовитесь набрать "
+"скорость света."
+
+#: src-ru/data/events_rock.xml.rawclobber:621
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_FREIGHTER\"]/choice[@req=\"DRONES_REPAIR_LIST\"]/text"
+msgstr "(Ремонтник систем) Починить корабль роков."
+
+#: src-ru/data/events_rock.xml.rawclobber:623
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_FREIGHTER\"]/choice[@req=\"DRONES_REPAIR_LIST\"]/event/text"
+msgstr ""
+"Пока двое мантисов дерутся, вы приближаетесь к кораблю роков и посылаете "
+"дрона-ремонтника через одну из множества пробоин. Он чинит корабль "
+"достаточно, чтобы тот мог сделать хотя бы один прыжок. Однако вместо этого, "
+"удивив вас, они бросаются в самоубийственную атаку на мантисов, которая "
+"оканчивается уничтожением всех троих!"
+
+#: src-ru/data/events_rock.xml.rawclobber:630
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_FREIGHTER\"]/choice[@req=\"DRONES_REPAIR_LIST\"]/event/choice/event/text"
+msgstr "Вы собираете обломки всех кораблей."
+
+#: src-ru/data/events_rock.xml.rawclobber:637
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_FREIGHTER\"]/choice[@req=\"DRONES_SHIP_REPAIR\"]/text"
+msgstr "(Ремонтник корпуса) Починить их обшивку."
+
+#: src-ru/data/events_rock.xml.rawclobber:639
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_MANTIS_FREIGHTER\"]/choice[@req=\"DRONES_SHIP_REPAIR\"]/event/text"
+msgstr ""
+"Пока двое мантисов дерутся, вы приближаетесь к кораблю роков и используете "
+"дрона для ремонта корабля. Как только пробоины заделаны, системы "
+"жизнеобеспечения снова включаются. Через несколько мгновений они уже "
+"пытаются догнать один из кораблей мантисов. Тем временем второй корабль "
+"поворачивается в вашу сторону."
+
+#: src-ru/data/events_rock.xml.rawclobber:649
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_MANTIS_FREIGHTER_LIST\"]/event[1]/text"
+msgstr ""
+"Оба корабля мантисов слишком заняты, мутузя друг друга, чтобы заметить вас. "
+"В конце концов, один из них одерживает верх, но, похоже, в горячке боя он "
+"пережёг предохранители, и его оружейная система не работает. Самое время "
+"атаковать!"
+
+#: src-ru/data/events_rock.xml.rawclobber:654
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_MANTIS_FREIGHTER_LIST\"]/event[2]/text"
+msgstr ""
+"Может у них и есть разногласия, но, когда рядом появляетесь вы, они мыслят "
+"как один. У меньшего корабля отказало питание, когда он двинулся в вашу "
+"сторону, зато корабль побольше, выпустив струю пламени, наступает на вас!"
+
+#: src-ru/data/events_rock.xml.rawclobber:660
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"MANTIS_ROCK_MANTIS_FREIGHTER\"]/destroyed/text"
+msgstr ""
+"За время, пока вы уничтожали корабль мантисов, роки, должно быть, починили "
+"свой FTL-привод и бежали. Вы собираете останки обоих судов мантисов."
+
+#: src-ru/data/events_rock.xml.rawclobber:664
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"MANTIS_ROCK_MANTIS_FREIGHTER\"]/deadCrew/text"
+msgstr ""
+"За время, пока вы уничтожали команду мантисов, роки, должно быть, починили "
+"свой FTL-привод и бежали. Вы собираете останки обоих судов мантисов."
+
+#: src-ru/data/events_rock.xml.rawclobber:676
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ZOLTAN_HELP\"]/text"
+msgstr ""
+"Похоже, корабль золтанцев прилетел сюда, чтобы освободить поселение роков от"
+" \"репрессивных уверований\", но поселение этого не оценило — сканеры "
+"дальнего действия засекли золтанцев и их преследователей, и они будут здесь "
+"в любой момент!"
+
+#: src-ru/data/events_rock.xml.rawclobber:678
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ZOLTAN_HELP\"]/choice[1]/text"
+msgstr "Остаться и защитить золтанцев."
+
+#: src-ru/data/events_rock.xml.rawclobber:680
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ZOLTAN_HELP\"]/choice[1]/event/text"
+msgstr ""
+"Довольно... экстремальная природа верований роков широко известна, вряд ли "
+"можно винить золтанцев за попытки расширить их кругозор. Преследующий "
+"корабль роков быстро оценивает положение и решает, что два захваченных "
+"корабля пришельцев лучше одного."
+
+#: src-ru/data/events_rock.xml.rawclobber:686
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ZOLTAN_HELP\"]/choice[2]/text"
+msgstr "Остаться и защитить роков."
+
+#: src-ru/data/events_rock.xml.rawclobber:688
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ZOLTAN_HELP\"]/choice[2]/event/text"
+msgstr ""
+"Это территория роков, и тут действуют их законы. Золтанцы не могли не знать,"
+" во что влезают. Вам придётся вывести из строя их двигатели и управление, "
+"чтобы быть уверенными в безопасности их захвата."
+
+#: src-ru/data/events_rock.xml.rawclobber:693
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ZOLTAN_HELP\"]/choice[3]/text"
+msgstr "Покинуть это место."
+
+#: src-ru/data/events_rock.xml.rawclobber:695
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ZOLTAN_HELP\"]/choice[3]/event/text"
+msgstr "Вас это не касается — разогреть двигатели!"
+
+#: src-ru/data/events_rock.xml.rawclobber:701
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"ROCK_ZOLTAN_HELP_ROCK\"]/destroyed/text"
+msgstr ""
+"Корпус корабля роков разваливается на куски. Вы собираете останки, после "
+"чего связываетесь с кораблём золтанцев."
+
+#: src-ru/data/events_rock.xml.rawclobber:706
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"ROCK_ZOLTAN_HELP_ROCK\"]/destroyed/choice/event/text"
+msgstr ""
+"Золтанцы не проявляют особых эмоций, но небольшое вознаграждение становится "
+"лучшей демонстрацией их благодарности."
+
+#: src-ru/data/events_rock.xml.rawclobber:712
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"ROCK_ZOLTAN_HELP_ROCK\"]/deadCrew/text"
+msgstr ""
+"Экипаж корабля мёртв, и вы утилизируете корабль, прежде чем связаться с "
+"золтанцами."
+
+#: src-ru/data/events_rock.xml.rawclobber:717
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"ROCK_ZOLTAN_HELP_ROCK\"]/deadCrew/choice/event/text"
+msgstr ""
+"Золтанцы не проявляют особых эмоций, но небольшое вознаграждение становится "
+"лучшей демонстрацией их благодарности."
+
+#: src-ru/data/events_rock.xml.rawclobber:725
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"ROCK_ZOLTAN_HELP_ZOLTAN\"]/destroyed/text"
+msgstr ""
+"Корабль роков прибывает как раз к финальным выстрелам по кораблю золтанцев. "
+"Они даже не думают благодарить, и у вас создалось впечатление, что было бы "
+"лучше улететь по-быстрому."
+
+#: src-ru/data/events_rock.xml.rawclobber:729
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"ROCK_ZOLTAN_HELP_ZOLTAN\"]/deadCrew/text"
+msgstr ""
+"К тому времени, когда корабль роков прибывает, вы уже закончили, разве что "
+"не завернули всё в подарочную упаковку. Израненные и умирающие золтанцы были"
+" с лёгкостью арестованы, и корабль роков нехотя передаёт вам что-то, "
+"являющееся, наверное, наградой за их головы."
+
+#: src-ru/data/events_rock.xml.rawclobber:735
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ATHIEST\"]/text"
+msgstr ""
+"Вы встречаете маленькое судно, идущее на минимальной тяге. Экипаж роков "
+"рассказывает вам, что их родные миры погрязли во лжи и пропаганде, "
+"призванной держать население в неведении, и что они не хотят быть частью "
+"этого."
+
+#: src-ru/data/events_rock.xml.rawclobber:738
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ATHIEST\"]/choice[1]/text"
+msgstr ""
+"Сказать им, что Бог привёл их сюда, чтобы присоединиться к вашему экипажу."
+
+#: src-ru/data/events_rock.xml.rawclobber:745
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ATHIEST\"]/choice[2]/text"
+msgstr "Пообещать рассказать им правду, которую от них скрывали."
+
+#: src-ru/data/events_rock.xml.rawclobber:749
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ATHIEST\"]/choice[@req=\"sensors\"]/text"
+msgstr "(Улучшенные сенсоры) Показать им набор данных, который вы собрали."
+
+#: src-ru/data/events_rock.xml.rawclobber:751
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_ATHIEST\"]/choice[@req=\"sensors\"]/event/text"
+msgstr ""
+"Капитан роков впечатлён данными, что вы собрали, и согласился остаться с "
+"вами, пока они не отыщут свой путь в Галактике."
+
+#: src-ru/data/events_rock.xml.rawclobber:757
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_ATHIEST_BAD\"]/text[1]"
+msgstr ""
+"Едва заслышав ваши россказни, их капитан тут же завопил: «Снова эта ложь, от"
+" которой я бегу!» Похоже, они заряжают орудия!"
+
+#: src-ru/data/events_rock.xml.rawclobber:758
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_ATHIEST_BAD\"]/text[2]"
+msgstr ""
+"Они выслушивают ваши россказни и шепчут: «Предатели истины. Вы ничем не "
+"лучше, чем они!» Начинается хаос."
+
+#: src-ru/data/events_rock.xml.rawclobber:762
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_ATHIEST_GOOD\"]/event[1]/text"
+msgstr ""
+"Ваши обещания привлекают их внимание, и они соглашаются пока послужить вам."
+
+#: src-ru/data/events_rock.xml.rawclobber:766
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_ATHIEST_GOOD\"]/event[2]/text"
+msgstr ""
+"Их искушает ваше предложение, но они решают, что не могут рисковать быть "
+"обманутыми снова. Они обрывают связь и совершают прыжок отсюда."
+
+#: src-ru/data/events_rock.xml.rawclobber:771
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE\"]/text"
+msgstr ""
+"Выжженный корпус миноукладчика роков дрейфует неподалёку. Внутри каркаса "
+"находится всё ещё работающая мина — автоматический дрон, всверливающийся в "
+"обшивку кораблей перед тем, как взорваться. Он наводится на сигналы вашего "
+"корабля и направляется сюда!"
+
+#: src-ru/data/events_rock.xml.rawclobber:773
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE\"]/choice[1]/text"
+msgstr "Попытаться увернуться."
+
+#: src-ru/data/events_rock.xml.rawclobber:777
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE\"]/choice[@req=\"engines\"]/text"
+msgstr "(Продвинутые двигатели) Развернуть сопла!"
+
+#: src-ru/data/events_rock.xml.rawclobber:779
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE\"]/choice[@req=\"engines\"]/event/text"
+msgstr ""
+"Хоть это и сильно нагружает гасители инерции, вы разворачиваете корабль и "
+"уходите от мины. Теперь можно спокойно лететь отсюда."
+
+#: src-ru/data/events_rock.xml.rawclobber:784
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/text"
+msgstr ""
+"Радиус разворота слишком широкий, и мина цепляется к корпусу вашего корабля."
+" Вы слышите, как она всверливается в обшивку."
+
+#: src-ru/data/events_rock.xml.rawclobber:786
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/choice[1]/text"
+msgstr "Отправить кого-нибудь обезвредить её."
+
+#: src-ru/data/events_rock.xml.rawclobber:790
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/choice[@req=\"human\"]/text"
+msgstr ""
+"(Член экипажа человек) Человек говорит, что знает устройство мины этого "
+"типа."
+
+#: src-ru/data/events_rock.xml.rawclobber:792
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/choice[@req=\"human\"]/event/text"
+msgstr ""
+"Он быстро вскрывает корпус мины и одновременно перекусывает "
+"[style[color:ff4551]]красный[[/style]] и "
+"[style[color:5f97ff]]синий[[/style]] провода..."
+
+#: src-ru/data/events_rock.xml.rawclobber:800
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
+msgstr ""
+"(Член экипажа человек) Человек говорит, что знает устройство мины этого "
+"типа."
+
+#: src-ru/data/events_rock.xml.rawclobber:802
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/text"
+msgstr ""
+"Он быстро вскрывает корпус мины и одновременно перекусывает "
+"[style[color:ff4551]]красный[[/style]] и "
+"[style[color:5f97ff]]синий[[/style]] провода..."
+
+#: src-ru/data/events_rock.xml.rawclobber:810
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/choice[@req=\"WEAPONS_MISSILES_EVENTS\"]/text"
+msgstr ""
+"(Ракетное орудие) Используя ракету, попытаться совершить контролируемый "
+"подрыв."
+
+#: src-ru/data/events_rock.xml.rawclobber:812
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/choice[@req=\"WEAPONS_MISSILES_EVENTS\"]/event/text"
+msgstr ""
+"Бросив жребий, член экипажа отправляется закрепить модифицированную "
+"боеголовку к мине. Вы подрываете ракету, что выбивает мину из корпуса, и "
+"вскоре после этого она взрывается. Корабль получает некоторые повреждения, "
+"но вы всё ещё на ходу."
+
+#: src-ru/data/events_rock.xml.rawclobber:822
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/choice[@req=\"COMBAT_BEAM_DRONE_LIST\"]/text"
+msgstr "(Лучевой дрон) Использовать дрона, чтобы вырезать мину точным лучом."
+
+#: src-ru/data/events_rock.xml.rawclobber:824
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_STARSHIP_MINE_2\"]/choice[@req=\"COMBAT_BEAM_DRONE_LIST\"]/event/text"
+msgstr ""
+"Аккуратно управляемый с мостика лучевой дрон отрезает крепление мины и "
+"отправляет её дрейфовать в космос, где вы стреляете в неё с безопасной "
+"дистанции до тех пор, пока она не взрывается."
+
+#: src-ru/data/events_rock.xml.rawclobber:834
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE\"]/event[1]/text"
+msgstr ""
+"Один из экипажа надевает скафандр и отправляется в шлюз. Он быстро делает "
+"своё дело и возвращается, расслабившись. Из мины получается неплохой лом."
+
+#: src-ru/data/events_rock.xml.rawclobber:838
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE\"]/event[2]/text"
+msgstr ""
+"Один из экипажа надевает скафандр и отправляется в шлюз. Когда он вскрывает "
+"мину, то начинает паниковать. [style[color:ff4551]]Красный[[/style]] провод "
+"или [style[color:5f97ff]]синий[[/style]]?! 3... 2... 1..."
+
+#: src-ru/data/events_rock.xml.rawclobber:840
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE\"]/event[2]/choice[1]/text"
+msgstr "Красный!"
+
+#: src-ru/data/events_rock.xml.rawclobber:844
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE\"]/event[2]/choice[2]/text"
+msgstr "Синий!"
+
+#: src-ru/data/events_rock.xml.rawclobber:852
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE2\"]/event[2]/text"
+msgstr ""
+"Мина взрывается. Всё темнеет, мостик освещается огнями, разливающимися по "
+"корпусу. Вашего горе-сапёра раскручивает в сторону ближайшего светила. Вы "
+"тушите пожары и готовитесь двигаться дальше."
+
+#: src-ru/data/events_rock.xml.rawclobber:858
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE2\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and not(@lvl)]/event/removeCrew/text"
+msgstr ""
+"К счастью, ваш неудавшийся сапёр был достаточно близко к кораблю, чтобы "
+"аппарат клонирования воскресил его. Виновато потупившись, он вновь "
+"присоединяется к команде."
+
+#: src-ru/data/events_rock.xml.rawclobber:865
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE2\"]/event[2]/choice[@req=\"CREW_ALL\""
+" and @lvl=\"0\"]/event/text"
+msgstr ""
+"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
+"смерти всего экипажа."
+
+#: src-ru/data/events_rock.xml.rawclobber:878
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE3\"]/event[5]/text"
+msgstr ""
+"Мина взрывается. Всё темнеет, мостик освещается огнями, разливающимися по "
+"корпусу. Вашего горе-сапёра раскручивает в сторону ближайшего светила. "
+"Похоже, что это была мина совершенно другого типа..."
+
+#: src-ru/data/events_rock.xml.rawclobber:885
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE3\"]/event[5]/choice[@req=\"CREW_ALL\"]/event/removeCrew/text"
+msgstr ""
+"К счастью, ваш неудавшийся сапёр был достаточно близко к кораблю, чтобы "
+"аппарат клонирования воскресил его. Виновато потупившись, он вновь "
+"присоединяется к команде."
+
+#: src-ru/data/events_rock.xml.rawclobber:895
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"ROCK_STARSHIP_MINE_DEFUSE4\"]/event/text"
+msgstr ""
+"Вы открываете глаза, и всё, похоже, ещё на своих местах. У вас получилось!"
+
+#: src-ru/data/events_rock.xml.rawclobber:914
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_ASTEROID\"]/text[1]"
+msgstr ""
+"Шахтёрское судно роков добывает здесь минералы из астероидов, и их "
+"разведчики восприняли ваше присутствие как агрессию. К бою!"
+
+#: src-ru/data/events_rock.xml.rawclobber:915
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_ASTEROID\"]/text[2]"
+msgstr ""
+"Неумелый пилот грузового корабля роков воспринял приказ слишком буквально и "
+"лёг на самый прямой курс к месту назначения... прямиком через астероидное "
+"поле. Растерянные и сбитые с толку, они беспорядочно палят налево и направо,"
+" когда вы выныриваете поблизости."
+
+#: src-ru/data/events_rock.xml.rawclobber:916
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_ASTEROID\"]/text[3]"
+msgstr ""
+"Капитан грузоперевозчика роков, потерявшегося в астероидном поле, сообщает: "
+"«Наши координаторы завели нас сюда, но только смерть поджидает нас здесь. "
+"Что ж, чему быть — того не миновать. Смерть всему!» Вы подключаете боевые "
+"системы, размышляя, как долго они тут болтаются."
+
+#: src-ru/data/events_rock.xml.rawclobber:926
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE_ASTEROID\"]/text[1]"
+msgstr ""
+"Ваши щиты искрят и трещат, когда ваш корабль выходит из прыжка прямо рядом с"
+" огромным астероидом. За ним следует ещё больше астероидов вместе с "
+"потерявшимся пиратским кораблём роков."
+
+#: src-ru/data/events_rock.xml.rawclobber:927
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE_ASTEROID\"]/text[2]"
+msgstr ""
+"Вы выходите из прыжка в окружении камней и кусков земли. Тут ваши щиты "
+"поглощают удар, и это был не астероид... Приближаются пираты!"
+
+#: src-ru/data/events_rock.xml.rawclobber:938
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE_SUN\"]/text[1]"
+msgstr ""
+"Необычная солнечная активность в этом регионе означает, что вам нужно "
+"немедленно убираться. Пиратский корабль неподалёку, видимо, думает иначе, "
+"они направляются к вам, чтобы атаковать ваш корабль."
+
+#: src-ru/data/events_rock.xml.rawclobber:939
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_PIRATE_SUN\"]/text[2]"
+msgstr ""
+"На фоне сверхновой вырисовывается силуэт корабля роков. Они выходят на "
+"связь: «Даже здесь вы нас преследуете. Мы всего лишь хотим, чтобы нас "
+"оставили в покое!» То ли в панике, то ли от злости, они заряжают свои "
+"орудия."
+
+#: src-ru/data/events_rock.xml.rawclobber:948
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE_START\"]/text"
+msgstr ""
+"Капитан роков выходит на связь: «Для меня недопустимо контактировать с "
+"чужеземцами, но это экстренная ситуация. Мы направлялись, чтобы доставить "
+"нашу пассажирку к её новому мужу — Великому Василиску Нумы 5, когда наши "
+"двигатели сломались. Не подберёте ли вы её, поспешив на Нуму 5?»"
+
+#: src-ru/data/events_rock.xml.rawclobber:950
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE_START\"]/choice[1]/text"
+msgstr "Принять пассажирку."
+
+#: src-ru/data/events_rock.xml.rawclobber:952
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE_START\"]/choice[1]/event/text"
+msgstr ""
+"«Вы приятно удивили меня, чужеземцы. Спасибо. Пассажирка немедленно окажется"
+" у вас». Она отказывается войти в основные помещения и предпочитает "
+"переждать в разгрузочном отсеке."
+
+#: src-ru/data/events_rock.xml.rawclobber:957
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE_START\"]/choice[2]/text"
+msgstr "Отказаться."
+
+#: src-ru/data/events_rock.xml.rawclobber:959
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE_START\"]/choice[2]/event/text"
+msgstr ""
+"Организация свадеб не в вашем списке важных дел. Вы оставляете роков самих "
+"решать свои дела самостоятельно."
+
+#: src-ru/data/events_rock.xml.rawclobber:964
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE\"]/text"
+msgstr ""
+"Обширные системы туннелей у поверхности Нумы 5 указывают на развитую "
+"цивилизацию роков. Должно быть, сюда вас просили доставить пассажирку."
+
+#: src-ru/data/events_rock.xml.rawclobber:968
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE\"]/choice/event/text"
+msgstr ""
+"Понимая неизбежное прибытие, пассажирка, сидевшая до сих пор тихо, умоляет "
+"вас не отдавать её. Её прерывает главный помощник Великого Василиска: "
+"«Инопланетному судну с женой Василиска на борту: доставьте её нам. Вы будете"
+" вознаграждены... щедро»."
+
+#: src-ru/data/events_rock.xml.rawclobber:970
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE\"]/choice/event/choice[1]/text"
+msgstr "Передать её."
+
+#: src-ru/data/events_rock.xml.rawclobber:972
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE\"]/choice/event/choice[1]/event/text"
+msgstr ""
+"«Да рассыпятся в пыль твои дети!» — выкрикивает она, пока её запихивают в "
+"ожидающий корабль. Охрана роков на борту торопливо оставляет часть "
+"экзотической технологии и возвращается к Великому Василиску."
+
+#: src-ru/data/events_rock.xml.rawclobber:978
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE\"]/choice/event/choice[@req=\"orchid_crew\"]/text"
+msgstr ""
+"(Член экипажа орхид) Передать её вместе с небольшим свадебным подарком."
+
+#: src-ru/data/events_rock.xml.rawclobber:980
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE\"]/choice/event/choice[@req=\"orchid_crew\"]/event/text"
+msgstr ""
+"Великий Василиск очень признателен вам за помощь в организации свадьбы и "
+"лично благодарит: «Настоящим я объявляю вас, капитан неизвестного корабля "
+"пришельцев, почётным гражданином Нумы-5. Позвольте мне представить этот "
+"скромный подарок»."
+
+#: src-ru/data/events_rock.xml.rawclobber:988
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_QUEST_MARRIAGE\"]/choice/event/choice[3]/text"
+msgstr "Отказаться подчиниться."
+
+#: src-ru/data/events_rock.xml.rawclobber:995
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ARIADNA\"]/text"
+msgstr ""
+"«Я была выращена в уверенности, что такие как вы не знают жалости. Я "
+"останусь с вами. Но скорее, мы должны совершить прыжок отсюда, они не "
+"потерпят такого...» Её прерывает стрельба эскорта Василиска!"
+
+#: src-ru/data/events_rock.xml.rawclobber:997
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ARIADNA\"]/crewMember"
+msgstr "Ариадна"
+
+#: src-ru/data/events_rock.xml.rawclobber:1004
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"ROCK_QUEST_MARRIAGE\"]/destroyed/text"
+msgstr ""
+"После того, как эскорт уничтожен, Великий Василиск отправляет за вами весь "
+"свой флот. У вас есть немного времени, чтобы разобрать останки, прежде чем "
+"вы совершите прыжок из их досягаемости."
+
+#: src-ru/data/events_rock.xml.rawclobber:1008
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"ROCK_QUEST_MARRIAGE\"]/deadCrew/text"
+msgstr ""
+"После того, как эскорт уничтожен, Великий Василиск отправляет за вами весь "
+"свой флот. У вас есть немного времени, чтобы разобрать останки, прежде чем "
+"вы совершите прыжок из их досягаемости."
+
+#: src-ru/data/events_rock.xml.rawclobber:1030
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_BOARDERS_SHIP\"]/text[1]"
+msgstr ""
+"Вы попутно сканируете маленькую станцию роков рядом с маяком. Однако они не "
+"приветствуют ваше любопытство. Корабль роков отрывается от станции, и в это "
+"же время вы регистрируете приближающийся сигнал телепортера!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1031
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_BOARDERS_SHIP\"]/text[2]"
+msgstr ""
+"Вы находите корабль роков, пристыкованный к повреждённому истребителю "
+"мантисов. Прежде, чем вы успеваете связаться с ними, корабль движется в "
+"атаку, и вы регистрируете сигналы телепортера, исходящие из неисправного "
+"корабля. Они используют технику мантисов, чтобы высадиться к вам!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1043
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_BOARDERS_ASTEROID\"]/text[1]"
+msgstr ""
+"Вы прибываете в поле астероидов и немедленно начинаете манёвры уклонения, "
+"когда громкий глухой звук отражается по кораблю. Сначала вы думаете, что это"
+" астероид попал в корпус, но оказалось, что шум издают захватчики-роки, "
+"телепортирующиеся на корабль!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1044
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_BOARDERS_ASTEROID\"]/text[2]"
+msgstr ""
+"Ваши щиты перенапряжены, так как они блокируют мусор от астероидного поля. "
+"Лавируя между глыбами, вы внезапно натыкаетесь на пиратскую крепость роков. "
+"Вы засекли телепортацию и слышите шум абордажа корабля."
+
+#: src-ru/data/events_rock.xml.rawclobber:1057
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_BOARDERS_SUN\"]/text[1]"
+msgstr ""
+"Как только вы появляетесь, вы слышите характерные звуки телепортера и "
+"воинственные крики, доносящиеся сквозь переборки: «Гореть вам в аду, "
+"чужеземные мешки с мясом!»"
+
+#: src-ru/data/events_rock.xml.rawclobber:1058
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ROCK_BOARDERS_SUN\"]/text[2]"
+msgstr ""
+"Разбойники роков, с их высоким сопротивлением к теплу, часто устраиваются "
+"очень близко к звёздам. Поэтому неудивительно, что ваш корабль берут на "
+"абордаж, когда вы пролетаете мимо замаскированного поселения."
+
+#: src-ru/data/events_rock.xml.rawclobber:1072
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK1\"]/text"
+msgstr ""
+"Вам немедленно приходит сообщение от внушительно выглядящего военного судна "
+"роков: «Это ваш корабль отправили, чтобы спасти Федерацию, не так ли? И вы "
+"надеетесь выжить на этой развалюхе?»"
+
+#: src-ru/data/events_rock.xml.rawclobber:1075
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK1\"]/choice[1]/text"
+msgstr "«Так или иначе, мы спасём их или погибнем»."
+
+#: src-ru/data/events_rock.xml.rawclobber:1077
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK1\"]/choice[1]/event/text"
+msgstr ""
+"«Второе куда вероятнее. Всё же... мы можем помочь вам и вашему драгоценному "
+"флоту, но вы должны показать себя в деле. Встретимся по этим координатам». "
+"Они совершают прыжок."
+
+#: src-ru/data/events_rock.xml.rawclobber:1082
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK1\"]/choice[2]/text"
+msgstr "«Нам легко хватит сил, чтоб порвать вас на куски!»"
+
+#: src-ru/data/events_rock.xml.rawclobber:1084
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK1\"]/choice[2]/event/text"
+msgstr ""
+"«Один корабль — не то же самое, что и флот, но, по крайней мере, у вас есть "
+"запал. Встретимся по этим координатам, если вы желаете доказать нам, что "
+"Федерацию стоит спасать». Они совершают прыжок."
+
+#: src-ru/data/events_rock.xml.rawclobber:1089
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK1\"]/choice[3]/text"
+msgstr "Пролететь мимо."
+
+#: src-ru/data/events_rock.xml.rawclobber:1091
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK1\"]/choice[3]/event/text"
+msgstr ""
+"«Ха. Как я и предполагал. Если Федерация так же слаба, как и вы, она "
+"заслуживает падения». И, без лишних слов, они совершают прыжок."
+
+#: src-ru/data/events_rock.xml.rawclobber:1096
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK2\"]/text"
+msgstr ""
+"Вы прибываете по координатам, данным вам, и оказываетесь в опасной близости "
+"со звездой класса М! Крейсер роков сообщает вам: «Что ж, посмотрим как долго"
+" ваш ничтожный корабль сможет выдерживать этот жар! Приготовьтесь к "
+"испытанию!»"
+
+#: src-ru/data/events_rock.xml.rawclobber:1102
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK3\"]/text"
+msgstr ""
+"Вы прибываете к внушительному доку роков и замечаете там корабль, который "
+"только что пытался вас убить. Он уже пришвартован и чинится. «Отличное "
+"сражение! Должен сказать, я не ожидал, что вы останетесь в живых»."
+
+#: src-ru/data/events_rock.xml.rawclobber:1107
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK3\"]/choice/event/text"
+msgstr ""
+"«Я убедился в вашей силе и обещаю предоставить свою помощь. Мы немедленно "
+"отправим продвинутый крейсер во флот Федерации и подготовим наши боевые "
+"корабли выдвигаться на подмогу»."
+
+#: src-ru/data/events_rock.xml.rawclobber:1108
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK3\"]/choice/event/unlockShip"
+msgstr "Рок доставил крейсер в ангар. Крейсер The Bulwark был разблокирован!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1112
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"ROCK_UNLOCK3\"]/choice/event/choice/event/text"
+msgstr ""
+"«Об одном позаботились, а теперь позвольте залатать вашу обшивку. Наверное, "
+"мы сможем усилить бронирование, пока будем ей заниматься»."
+
+#: src-ru/data/events_rock.xml.rawclobber:1204
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[1]"
+msgstr ""
+"Сектор магменов... Гражданские корабли обычно стараются избегать его, но "
+"некоторые уверенные в себе торговцы срезают здесь путь..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1205
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[2]"
+msgstr ""
+"Согласно справочнику Федерации, магмены появились на планете наполовину "
+"покрытой расплавленной лавой."
+
+#: src-ru/data/events_rock.xml.rawclobber:1206
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[3]"
+msgstr ""
+"Многие планеты в этом секторе признаны слишком горячими и непригодными для "
+"жизни. А вот для магменов они оказались вполне комфортными."
+
+#: src-ru/data/events_rock.xml.rawclobber:1207
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[4]"
+msgstr ""
+"Существует версия, что корабли магменов такие тёмные, потому что они сразу "
+"после сборки прогорают дотла."
+
+#: src-ru/data/events_rock.xml.rawclobber:1208
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[5]"
+msgstr ""
+"В этом секторе замечены случаи обратного терраформинга - магмены превращают "
+"цветущие зелёные миры в адские пустоши с помощью своих пироформеров."
+
+#: src-ru/data/events_rock.xml.rawclobber:1209
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[6]"
+msgstr ""
+"В Федерации введён негласный запрет на провоз орхидов через секторы "
+"магменов. Оно и понятно, учитывая сколько живых растений здесь уже было "
+"потеряно."
+
+#: src-ru/data/events_rock.xml.rawclobber:1217
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_MAGMAN\"]/text[1]"
+msgstr ""
+"Предприниматель на этом маяке держит магазин, замаскированный в крупном "
+"астероиде. Вот хитрец!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1218
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_MAGMAN\"]/text[2]"
+msgstr ""
+"Торговец приглашает вас посмотреть на его товары. Кажется, что он как-то "
+"\"договорился\" с местными магменами, чтобы его не трогали."
+
+#: src-ru/data/events_rock.xml.rawclobber:1219
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_MAGMAN\"]/text[3]"
+msgstr ""
+"Возле маяка вы находите торговую станцию. Её двери открыты, и вы "
+"заглядываете осмотреть ассортимент."
+
+#: src-ru/data/events_rock.xml.rawclobber:1230
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_MAGMAN\"]/text[1]"
+msgstr ""
+"Маяк, возле которого вы появляетесь, выглядит обугленным, но "
+"функционирующим. Видимо, тот, кто прокладывал местные прыжковые маршруты, "
+"делал свою работу на совесть."
+
+#: src-ru/data/events_rock.xml.rawclobber:1231
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_MAGMAN\"]/text[2]"
+msgstr ""
+"На пределе работы ваших сенсоров мелькнул корабль магменов и пропал. Больше "
+"ничего интересного не происходит."
+
+#: src-ru/data/events_rock.xml.rawclobber:1232
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_MAGMAN\"]/text[3]"
+msgstr ""
+"Возле маяка вы фиксируете останки былого сражения. Видимо, какой-то корабль "
+"был разломан и обчищен магменами. Ничего полезного не осталось."
+
+#: src-ru/data/events_rock.xml.rawclobber:1236
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"EVENT_MAGMAN_ART_TEXT\"]/text[1]"
+msgstr ""
+"Возле маяка вы встречаете артиллерию магменов. Кто-то из вашей команды "
+"говорит, что он её уже видел и чудом пережил ту встречу..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1237
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"EVENT_MAGMAN_ART_TEXT\"]/text[2]"
+msgstr "После прыжка на вас летит корабль магменов. Похоже, боя не избежать."
+
+#: src-ru/data/events_rock.xml.rawclobber:1259
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SUN_TEXT\"]/text[1]"
+msgstr ""
+"Выйдя из прыжка возле активной звезды, вы замечаете моргающую красную лампу "
+"на приборной панели. Похоже, что на борту чужаки!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1260
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SUN_TEXT\"]/text[2]"
+msgstr ""
+"Магмены решили напасть на вас возле активной звезды, они хотят "
+"воспользоваться своим главным преимуществом."
+
+#: src-ru/data/events_rock.xml.rawclobber:1261
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SUN_TEXT\"]/text[3]"
+msgstr ""
+"Магмены известны своей привычкой держаться там, где потеплее, их нападение "
+"сейчас яркое подтверждение этого."
+
+#: src-ru/data/events_rock.xml.rawclobber:1270
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SHIP_TEXT\"]/text[1]"
+msgstr ""
+"К вам на борт телепортируются магмены, а на хвост вам садится их корабль."
+
+#: src-ru/data/events_rock.xml.rawclobber:1271
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SHIP_TEXT\"]/text[2]"
+msgstr ""
+"Звук телепорта раздаётся по пустынным коридорам вашего корабля - это абордаж"
+" магменов с кораблём поддержки."
+
+#: src-ru/data/events_rock.xml.rawclobber:1272
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SHIP_TEXT\"]/text[3]"
+msgstr ""
+"Вы уже собирались хлебнуть остывающий напиток в кружке на приборной панели, "
+"как откуда-то телепортировалась группа агрессивных магменов с корабля "
+"поблизости."
+
+#: src-ru/data/events_rock.xml.rawclobber:1283
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_ASTEROID_TEXT\"]/text[1]"
+msgstr ""
+"Вы прибываете в поле астероидов и сразу же фиксируете телепортацию магменов "
+"с одного из астеродиов. В поддержку им откуда-то вынырнул чёрный корабль."
+
+#: src-ru/data/events_rock.xml.rawclobber:1284
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_ASTEROID_TEXT\"]/text[2]"
+msgstr ""
+"Пока вы уклонялись от астероидов этого маяка, кто-то из команды рапортует, "
+"что обнаружил захватчиков. Нужно дать им отпор!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1291
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_DOUBLE_BATTLE\"]/text"
+msgstr ""
+"На вас мчится агрессивно настроенный корабль магменов. Боя не избежать!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1301
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"DOUBLE_BATTLE_PARAMETERS1\"]/destroyed/text"
+msgstr ""
+"Только вы начали собрать обломки побеждённого корабля, как внезапно "
+"появляется ещё один!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1307
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"DOUBLE_BATTLE_PARAMETERS1\"]/deadCrew/text"
+msgstr ""
+"Только вы начали обчищать захваченный корабль, как внезапно появляется ещё "
+"один!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1320
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"DOUBLE_BATTLE_PARAMETERS2\"]/destroyed/text"
+msgstr ""
+"Теперь всё спокойно, и вы собираете то, что осталось от обоих кораблей."
+
+#: src-ru/data/events_rock.xml.rawclobber:1324
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"DOUBLE_BATTLE_PARAMETERS2\"]/deadCrew/text"
+msgstr "Теперь всё спокойно, и вы собираете то, что уцелело после битвы."
+
+#: src-ru/data/events_rock.xml.rawclobber:1332
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/text"
+msgstr ""
+"Рядом с маяком медленно дрейфует обломок корабля. Следы ремонта видны на его"
+" обшивке, но, видимо, это не очень помогло кораблю. Что прикажете делать?"
+
+#: src-ru/data/events_rock.xml.rawclobber:1335
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[1]/text"
+msgstr "Выслать команду для обыска."
+
+#: src-ru/data/events_rock.xml.rawclobber:1339
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[2]/text"
+msgstr "Расстрелять обломок издали."
+
+#: src-ru/data/events_rock.xml.rawclobber:1341
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[2]/event/text"
+msgstr ""
+"Вы решаете, что безопаснее будет атаковать этот подозрительный объект."
+
+#: src-ru/data/events_rock.xml.rawclobber:1346
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[3]/text"
+msgstr ""
+"Не трогать обломок и поговорить с экипажем, пока заряжается FTL-привод."
+
+#: src-ru/data/events_rock.xml.rawclobber:1351
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/text"
+msgstr ""
+"В ходе обыска команда находит заклинившую клон-камеру. К ней подключён "
+"резервный банк ДНК, и в очереди застряли несколько магменов."
+
+#: src-ru/data/events_rock.xml.rawclobber:1353
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[1]/text"
+msgstr "Забрать резервный банк ДНК и то, что уцелело."
+
+#: src-ru/data/events_rock.xml.rawclobber:1357
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[2]/text"
+msgstr "Запустить очередь клонирования."
+
+#: src-ru/data/events_rock.xml.rawclobber:1361
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[3]/text"
+msgstr "Покинуть это место и расстрелять обломок издали."
+
+#: src-ru/data/events_rock.xml.rawclobber:1363
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[3]/event/text"
+msgstr "Вы решаете, что безопаснее будет атаковать этот странный объект."
+
+#: src-ru/data/events_rock.xml.rawclobber:1368
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[4]/text"
+msgstr "Покинут обломок и больше его не трогать."
+
+#: src-ru/data/events_rock.xml.rawclobber:1370
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[4]/event/text"
+msgstr "Вы решаете, что безопаснее будет улететь отсюда."
+
+#: src-ru/data/events_rock.xml.rawclobber:1376
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_DNA\"]/event[1]/text"
+msgstr ""
+"Вы извлекаете всё ценное, а звук сирены от умирающих магменов ещё долго эхом"
+" звучит в вашей голове..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1381
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_DNA\"]/event[2]/text"
+msgstr ""
+"Вы извлекаете всё ценное, а звук сирены от умирающих магменов ещё долго эхом"
+" звучит в вашей голове..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1386
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_DNA\"]/event[3]/text"
+msgstr ""
+"Похоже, что ДНК-банк повреждён. Вы забираете то немногое, что всё ещё "
+"представляет ценность, и уходите."
+
+#: src-ru/data/events_rock.xml.rawclobber:1392
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[1]/text"
+msgstr ""
+"Магмены из очереди клонирования почему-то сразу разваливаются. Ваша команда "
+"в недоумении смотрит на это, а потом собирает уцелевшее с обломка корабля..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1396
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[2]/text"
+msgstr ""
+"Магмены из очереди клонирования почему-то сразу разваливаются. Однако один "
+"оказывается здоров. Вместе с вашей командой он собирает уцелевшее с обломка "
+"корабля..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1401
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[3]/text"
+msgstr ""
+"Магмены из очереди клонирования почему-то сразу разваливаются. Однако двое "
+"оказываются здоровыми. Вместе с вашей командой они помогают собрать "
+"уцелевшее с обломка корабля..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1407
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[4]/text"
+msgstr ""
+"Магмены из очереди клонирования почему-то сразу разваливаются. Однако двое "
+"оказываются здоровыми. Вместе с вашей командой они помогают собрать "
+"уцелевшее с обломка корабля..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1413
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[5]/text"
+msgstr "Магмены из очереди клонирования враждебны и нападают на вас."
+
+#: src-ru/data/events_rock.xml.rawclobber:1419
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[6]/text"
+msgstr "Магмены из очереди клонирования враждебны и нападают на вас."
+
+#: src-ru/data/events_rock.xml.rawclobber:1430
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"KESTRAL_PART_PARAMETERS\"]/destroyed/text"
+msgstr "Обломок корабля уничтожен, и вы собираете всё, что уцелело."
+
+#: src-ru/data/events_rock.xml.rawclobber:1434
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"KESTRAL_PART_PARAMETERS\"]/deadCrew/text"
+msgstr "Обломок захвачен, и вы собираете всё, что уцелело."
+
+#: src-ru/data/events_rock.xml.rawclobber:1451
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ULTRA_SUN_FIGHT_TEXT\"]/text[1]"
+msgstr ""
+"Вы оказываетесь возле маяка с чудовищными температурами за бортом, и на вас "
+"мчится корабль магменов!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1452
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ULTRA_SUN_FIGHT_TEXT\"]/text[2]"
+msgstr ""
+"Температура на этом маяке очень высокая. Кажется, корабль магменов "
+"поблизости ждал вас..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1460
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/text"
+msgstr "Сигнал бедствия исходит от этой полуразрушенной временной капсулы..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1464
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/choice[1]/text"
+msgstr "Обстрелять капсулу."
+
+#: src-ru/data/events_rock.xml.rawclobber:1466
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/choice[1]/event/text"
+msgstr "Вы решаете опробовать свои орудия на этой лёгкой мишени."
+
+#: src-ru/data/events_rock.xml.rawclobber:1472
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/choice[2]/text"
+msgstr "Приблизиться и обыскать капсулу."
+
+#: src-ru/data/events_rock.xml.rawclobber:1476
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/choice[3]/text"
+msgstr "Игнорировать и поговорить с командой."
+
+#: src-ru/data/events_rock.xml.rawclobber:1483
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[1]/text"
+msgstr ""
+"Вы вскрываете капсулу и находите её пилота в стазис-сне. Вы приводите его в "
+"чувства, и после пары стаканов согревающего какао он соглашается вступить в "
+"вашу команду, а капсулу пустить на лом..."
+
+#: src-ru/data/events_rock.xml.rawclobber:1490
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[2]/text"
+msgstr ""
+"Вскрывая капсулу, кто-то из вашей команды задевает её систему защиты, и "
+"неизвестно откуда на ваш корабль телепортируется банда головорезов!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1496
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[3]/text"
+msgstr ""
+"Вскрывая капсулу, кто-то из вашей команды задевает её систему защиты, и "
+"неизвестно откуда на ваш корабль телепортируется отряд магменов!"
+
+#: src-ru/data/events_rock.xml.rawclobber:1502
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[4]/text"
+msgstr "Вы вскрываете капсулу и спокойно забираете всё ценное."
+
+#: src-ru/data/events_rock.xml.rawclobber:1506
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[5]/text"
+msgstr "Вы вскрываете капсулу и спокойно забираете всё ценное."
+
+#: src-ru/data/events_rock.xml.rawclobber:1511
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[6]/text"
+msgstr "Вы вскрываете капсулу и спокойно забираете всё ценное."
+
+#: src-ru/data/events_rock.xml.rawclobber:1516
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[7]/text"
+msgstr "Вы вскрываете капсулу и спокойно забираете всё ценное."
+
+#: src-ru/data/events_rock.xml.rawclobber:1521
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[8]/text"
+msgstr "Вы вскрываете капсулу и спокойно забираете всё ценное."
+
+#: src-ru/data/events_rock.xml.rawclobber:1526
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[9]/text"
+msgstr "Вы вскрываете капсулу и спокойно забираете всё ценное."
+
+#: src-ru/data/events_rock.xml.rawclobber:1533
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"CAPSULE_2_BROKEN_PARAMETERS\"]/destroyed/text"
+msgstr "Капсула разваливается на куски. Вы собираете всё ценное."

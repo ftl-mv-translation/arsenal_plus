@@ -1,16 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-20 05:56+0000\n"
-"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
-"projects/arsenal-plus/dataevents_zoltanxmlrawclobber/zh_Hans/>\n"
-"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:169
 msgid ""
@@ -697,8 +690,7 @@ msgstr "你的任务是拯救联邦，而不是在整个银河系寻找奇迹。
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[1]/text"
 msgstr ""
-"你一靠近，一个古老的外星声音对你说：“你的使命为你带来了伟大的战斗和伟大的失败"
-"。这将减轻你的痛苦……”几分钟后，你在船上发现了一套维修设备！"
+"你一靠近，一个古老的外星声音对你说：“你的使命为你带来了伟大的战斗和伟大的失败。这将减轻你的痛苦……”几分钟后，你在船上发现了一套维修设备！"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:769
 msgid ""
@@ -796,9 +788,7 @@ msgstr "你靠近一些，先知圣眼开始发出纯净的白光。这道光笼
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE\"]/text"
 msgstr ""
-"你追踪到两艘海盗船潜伏在附近的星云中。他们没有察觉你的存在。你至少可以扫描他"
-"们的货物——一艘运送燃料，另一艘运送弹药。在太空风暴的影响下，他们开始相互略微"
-"漂离。"
+"你追踪到两艘海盗船潜伏在附近的星云中。他们没有察觉你的存在。你至少可以扫描他们的货物——一艘运送燃料，另一艘运送弹药。在太空风暴的影响下，他们开始相互略微漂离。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:911
 msgid ""
@@ -813,9 +803,7 @@ msgstr "确保弹药供应。"
 #: src-ru/data/events_zoltan.xml.rawclobber:921
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[1]/text"
-msgstr ""
-"扫描显示一艘运输燃料，另一艘运输弹药。在太空风暴的影响下，他们开始相互略微漂"
-"离。"
+msgstr "扫描显示一艘运输燃料，另一艘运输弹药。在太空风暴的影响下，他们开始相互略微漂离。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:923
 msgid ""
@@ -850,9 +838,7 @@ msgstr "有时谨慎是勇气最好的部分。"
 #: src-ru/data/events_zoltan.xml.rawclobber:944
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[2]/text"
-msgstr ""
-"扫描显示一艘运输无人机部件，另一艘运输弹药。在太空风暴的影响下，他们开始相互"
-"略微漂离。"
+msgstr "扫描显示一艘运输无人机部件，另一艘运输弹药。在太空风暴的影响下，他们开始相互略微漂离。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:946
 msgid ""
@@ -887,9 +873,7 @@ msgstr "有时谨慎是勇气最好的部分。"
 #: src-ru/data/events_zoltan.xml.rawclobber:967
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[3]/text"
-msgstr ""
-"扫描显示一艘运输燃料，另一艘运输无人机部件。在太空风暴的影响下，他们开始相互"
-"略微漂离。"
+msgstr "扫描显示一艘运输燃料，另一艘运输无人机部件。在太空风暴的影响下，他们开始相互略微漂离。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:969
 msgid ""
@@ -3046,9 +3030,7 @@ msgstr "……“量子倍增器”向天空发出一道明亮的闪光，你走
 #: src-ru/data/events_zoltan.xml.rawclobber:2830
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLIG\"]/event[1]/text"
-msgstr ""
-"……“量子倍增器”发出明亮的闪光，从中爬出两个斯鲁姆。一个是你的老船员，另一个是"
-"他的量子镜像。"
+msgstr "……“量子倍增器”发出明亮的闪光，从中爬出两个斯鲁姆。一个是你的老船员，另一个是他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2831
 msgid ""
@@ -6129,9 +6111,7 @@ msgstr "……“刻立 示展 你 的 量力 。 果如 你 法无 明证 己�
 #: src-ru/data/events_zoltan.xml.rawclobber:5523
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTAN_BLINK_X2_RANDOM_TEXT_ATK\"]/text[3]"
-msgstr ""
-"……“维三 命生 式形 。 你 有 力能 护保 己自 吗 ？ 向 河银系 的 等高 物造 明证 "
-"， 你 非并 无毫 还手力之 。”"
+msgstr "……“维三 命生 式形 。 你 有 力能 护保 己自 吗 ？ 向 河银系 的 等高 物造 明证 ， 你 非并 无毫 还手力之 。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5524
 msgid ""

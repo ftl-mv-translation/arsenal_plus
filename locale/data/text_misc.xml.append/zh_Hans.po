@@ -1,16 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-30 03:36+0000\n"
-"Last-Translator: circle217 <3545024352@qq.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
-"projects/arsenal-plus/datatext_miscxmlappend/zh_Hans/>\n"
-"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/text_misc.xml.append:7
 msgid "data/text_misc.xml.append$//text[@name=\"bullet\"]"
@@ -3257,1864 +3250,1925 @@ msgstr "提示：位于货舱中。要使用，请将其拖拽至空闲的无人
 msgid "data/text_misc.xml.append$//text[@name=\"tip_weapon_drag\"]"
 msgstr "提示：位于货舱中。要使用或查看起火/破洞几率，请将其拖拽至空闲的武器槽位。"
 
-#: src-ru/data/text_misc.xml.append:1124
+#: src-ru/data/text_misc.xml.append:1123
+msgid "data/text_misc.xml.append$//text[@name=\"tip_deionizator\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1125
 msgid "data/text_misc.xml.append$//text[@name=\"required_power\"]"
 msgstr "需要能量：\\1"
 
-#: src-ru/data/text_misc.xml.append:1125
+#: src-ru/data/text_misc.xml.append:1126
 msgid "data/text_misc.xml.append$//text[@name=\"boost_power_speed\"]"
 msgstr "每次射击后装填加快"
 
-#: src-ru/data/text_misc.xml.append:1126
+#: src-ru/data/text_misc.xml.append:1127
 msgid "data/text_misc.xml.append$//text[@name=\"boost_power_damage\"]"
 msgstr "每次射击后伤害增加"
 
-#: src-ru/data/text_misc.xml.append:1127
+#: src-ru/data/text_misc.xml.append:1128
 msgid "data/text_misc.xml.append$//text[@name=\"damage_cap\"]"
 msgstr "最大伤害：\\1"
 
-#: src-ru/data/text_misc.xml.append:1128
+#: src-ru/data/text_misc.xml.append:1129
 msgid "data/text_misc.xml.append$//text[@name=\"speed_cap\"]"
 msgstr "最小装填：\\1 秒"
 
-#: src-ru/data/text_misc.xml.append:1130
+#: src-ru/data/text_misc.xml.append:1131
 msgid "data/text_misc.xml.append$//text[@name=\"charge_time\"]"
 msgstr "充能时间：\\1 秒"
 
-#: src-ru/data/text_misc.xml.append:1131
+#: src-ru/data/text_misc.xml.append:1132
 msgid "data/text_misc.xml.append$//text[@name=\"requires_missiles\"]"
 msgstr "消耗弹药"
 
-#: src-ru/data/text_misc.xml.append:1132
+#: src-ru/data/text_misc.xml.append:1133
 msgid "data/text_misc.xml.append$//text[@name=\"shots\"]"
 msgstr "每次充能射击次数：\\1"
 
-#: src-ru/data/text_misc.xml.append:1133
+#: src-ru/data/text_misc.xml.append:1134
 msgid "data/text_misc.xml.append$//text[@name=\"charge\"]"
 msgstr "最大充能数：\\1"
 
-#: src-ru/data/text_misc.xml.append:1134
+#: src-ru/data/text_misc.xml.append:1135
 msgid "data/text_misc.xml.append$//text[@name=\"damage_shot\"]"
 msgstr "基础伤害：\\1"
 
-#: src-ru/data/text_misc.xml.append:1135
+#: src-ru/data/text_misc.xml.append:1136
 msgid "data/text_misc.xml.append$//text[@name=\"damage_room\"]"
 msgstr "每舱室伤害：\\1"
 
-#: src-ru/data/text_misc.xml.append:1136
+#: src-ru/data/text_misc.xml.append:1137
 msgid "data/text_misc.xml.append$//text[@name=\"shield_piercing\"]"
 msgstr "护盾穿透：\\1"
 
-#: src-ru/data/text_misc.xml.append:1137
+#: src-ru/data/text_misc.xml.append:1138
 msgid "data/text_misc.xml.append$//text[@name=\"fire_chance\"]"
 msgstr "起火几率：\\1%"
 
-#: src-ru/data/text_misc.xml.append:1138
+#: src-ru/data/text_misc.xml.append:1139
 msgid "data/text_misc.xml.append$//text[@name=\"breach_chance\"]"
 msgstr "破舱几率：\\2%"
 
-#: src-ru/data/text_misc.xml.append:1139
+#: src-ru/data/text_misc.xml.append:1140
 msgid "data/text_misc.xml.append$//text[@name=\"stun_chance\"]"
 msgstr "击晕几率：\\1%"
 
-#: src-ru/data/text_misc.xml.append:1140
+#: src-ru/data/text_misc.xml.append:1141
 msgid "data/text_misc.xml.append$//text[@name=\"ion_damage\"]"
 msgstr "离子伤害：\\1"
 
-#: src-ru/data/text_misc.xml.append:1141
+#: src-ru/data/text_misc.xml.append:1142
 msgid "data/text_misc.xml.append$//text[@name=\"stun_damage\"]"
 msgstr "击晕：\\1 秒"
 
-#: src-ru/data/text_misc.xml.append:1142
+#: src-ru/data/text_misc.xml.append:1143
 msgid "data/text_misc.xml.append$//text[@name=\"personnel_damage\"]"
 msgstr "船员伤害：\\1"
 
-#: src-ru/data/text_misc.xml.append:1143
+#: src-ru/data/text_misc.xml.append:1144
 msgid "data/text_misc.xml.append$//text[@name=\"system_damage\"]"
 msgstr "系统伤害：\\1"
 
-#: src-ru/data/text_misc.xml.append:1144
+#: src-ru/data/text_misc.xml.append:1145
 msgid "data/text_misc.xml.append$//text[@name=\"double_damage\"]"
 msgstr "对无系统舱室造成 2 倍伤害。"
 
-#: src-ru/data/text_misc.xml.append:1146
+#: src-ru/data/text_misc.xml.append:1147
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of\"]"
 msgstr "可能效果：\\1"
 
-#: src-ru/data/text_misc.xml.append:1147
+#: src-ru/data/text_misc.xml.append:1148
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_separator\"]"
 msgstr "，"
 
-#: src-ru/data/text_misc.xml.append:1148
+#: src-ru/data/text_misc.xml.append:1149
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_fire\"]"
 msgstr "起火"
 
-#: src-ru/data/text_misc.xml.append:1149
+#: src-ru/data/text_misc.xml.append:1150
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_breach\"]"
 msgstr "破舱"
 
-#: src-ru/data/text_misc.xml.append:1150
+#: src-ru/data/text_misc.xml.append:1151
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_stun\"]"
 msgstr "击晕"
 
-#: src-ru/data/text_misc.xml.append:1152
+#: src-ru/data/text_misc.xml.append:1153
 msgid "data/text_misc.xml.append$//text[@name=\"chance_low\"]"
 msgstr "低"
 
-#: src-ru/data/text_misc.xml.append:1153
+#: src-ru/data/text_misc.xml.append:1154
 msgid "data/text_misc.xml.append$//text[@name=\"chance_medium\"]"
 msgstr "中"
 
-#: src-ru/data/text_misc.xml.append:1154
+#: src-ru/data/text_misc.xml.append:1155
 msgid "data/text_misc.xml.append$//text[@name=\"chance_high\"]"
 msgstr "高"
 
-#: src-ru/data/text_misc.xml.append:1156
+#: src-ru/data/text_misc.xml.append:1157
 msgid "data/text_misc.xml.append$//text[@name=\"type_desc\"]"
 msgstr "类型：\\1\\n\\2"
 
-#: src-ru/data/text_misc.xml.append:1158
+#: src-ru/data/text_misc.xml.append:1159
 msgid "data/text_misc.xml.append$//text[@name=\"type_beam\"]"
 msgstr "光束"
 
-#: src-ru/data/text_misc.xml.append:1159
+#: src-ru/data/text_misc.xml.append:1160
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb\"]"
 msgstr "传送炸弹"
 
-#: src-ru/data/text_misc.xml.append:1160
+#: src-ru/data/text_misc.xml.append:1161
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser\"]"
 msgstr "激光"
 
-#: src-ru/data/text_misc.xml.append:1161
+#: src-ru/data/text_misc.xml.append:1162
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser_chain\"]"
 msgstr "链式激光"
 
-#: src-ru/data/text_misc.xml.append:1162
+#: src-ru/data/text_misc.xml.append:1163
 msgid "data/text_misc.xml.append$//text[@name=\"type_beam_chain\"]"
 msgstr "链式光束"
 
-#: src-ru/data/text_misc.xml.append:1163
+#: src-ru/data/text_misc.xml.append:1164
 msgid "data/text_misc.xml.append$//text[@name=\"type_missile_chain\"]"
 msgstr "链式导弹"
 
-#: src-ru/data/text_misc.xml.append:1164
+#: src-ru/data/text_misc.xml.append:1165
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb_chain\"]"
 msgstr "链式炸弹"
 
-#: src-ru/data/text_misc.xml.append:1165
+#: src-ru/data/text_misc.xml.append:1166
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser_charge\"]"
 msgstr "充能激光"
 
-#: src-ru/data/text_misc.xml.append:1166
+#: src-ru/data/text_misc.xml.append:1167
 msgid "data/text_misc.xml.append$//text[@name=\"type_missile\"]"
 msgstr "弹药"
 
-#: src-ru/data/text_misc.xml.append:1167
+#: src-ru/data/text_misc.xml.append:1168
 msgid "data/text_misc.xml.append$//text[@name=\"type_crystal\"]"
 msgstr "实体弹"
 
-#: src-ru/data/text_misc.xml.append:1168
+#: src-ru/data/text_misc.xml.append:1169
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst\"]"
 msgstr "高爆弹"
 
-#: src-ru/data/text_misc.xml.append:1169
+#: src-ru/data/text_misc.xml.append:1170
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst_chain\"]"
 msgstr "链式高爆弹"
 
-#: src-ru/data/text_misc.xml.append:1170
+#: src-ru/data/text_misc.xml.append:1171
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst_charge\"]"
 msgstr "充能高爆弹"
 
-#: src-ru/data/text_misc.xml.append:1171
+#: src-ru/data/text_misc.xml.append:1172
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion\"]"
 msgstr "离子"
 
-#: src-ru/data/text_misc.xml.append:1172
+#: src-ru/data/text_misc.xml.append:1173
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion_chain\"]"
 msgstr "链式离子"
 
-#: src-ru/data/text_misc.xml.append:1173
+#: src-ru/data/text_misc.xml.append:1174
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion_charge\"]"
 msgstr "充能离子"
 
-#: src-ru/data/text_misc.xml.append:1175
+#: src-ru/data/text_misc.xml.append:1176
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion_effect\"]"
 msgstr "禁用并锁定系统"
 
-#: src-ru/data/text_misc.xml.append:1176
+#: src-ru/data/text_misc.xml.append:1177
 msgid "data/text_misc.xml.append$//text[@name=\"type_missile_effect\"]"
 msgstr "无视护盾 \\n消耗弹药"
 
-#: src-ru/data/text_misc.xml.append:1177
+#: src-ru/data/text_misc.xml.append:1178
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb_effect\"]"
 msgstr "无视护盾"
 
-#: src-ru/data/text_misc.xml.append:1178
+#: src-ru/data/text_misc.xml.append:1179
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst_effect\"]"
 msgstr "范围射击"
 
-#: src-ru/data/text_misc.xml.append:1179
+#: src-ru/data/text_misc.xml.append:1180
 msgid "data/text_misc.xml.append$//text[@name=\"type_charge_effect\"]"
 msgstr "多次充能"
 
-#: src-ru/data/text_misc.xml.append:1180
+#: src-ru/data/text_misc.xml.append:1181
 msgid "data/text_misc.xml.append$//text[@name=\"type_chain_effect\"]"
 msgstr "每次后续射击提升"
 
-#: src-ru/data/text_misc.xml.append:1182
+#: src-ru/data/text_misc.xml.append:1183
 msgid "data/text_misc.xml.append$//text[@name=\"drone_required\"]"
 msgstr "需要无人机部件才能发射"
 
-#: src-ru/data/text_misc.xml.append:1185
+#: src-ru/data/text_misc.xml.append:1186
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_speed\"]"
 msgstr "加速"
 
-#: src-ru/data/text_misc.xml.append:1186
+#: src-ru/data/text_misc.xml.append:1187
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_console\"]"
 msgstr "打开控制台"
 
-#: src-ru/data/text_misc.xml.append:1187
+#: src-ru/data/text_misc.xml.append:1188
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_info\"]"
 msgstr "开关额外信息模式"
 
-#: src-ru/data/text_misc.xml.append:1189
+#: src-ru/data/text_misc.xml.append:1190
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_more_info\"]"
 msgstr "船员/信标地图额外信息。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1190
+#: src-ru/data/text_misc.xml.append:1191
 msgid "data/text_misc.xml.append$//text[@name=\"description_stats\"]"
 msgstr "属性："
 
-#: src-ru/data/text_misc.xml.append:1191
+#: src-ru/data/text_misc.xml.append:1192
 msgid "data/text_misc.xml.append$//text[@name=\"requires_no_power\"]"
 msgstr "无需供能"
 
-#: src-ru/data/text_misc.xml.append:1192
+#: src-ru/data/text_misc.xml.append:1193
 msgid "data/text_misc.xml.append$//text[@name=\"provides_bonus_power\"]"
 msgstr "提供额外能量"
 
-#: src-ru/data/text_misc.xml.append:1193
+#: src-ru/data/text_misc.xml.append:1194
 msgid "data/text_misc.xml.append$//text[@name=\"cannot_fire\"]"
 msgstr "无法被发射"
 
-#: src-ru/data/text_misc.xml.append:1194
+#: src-ru/data/text_misc.xml.append:1195
 msgid "data/text_misc.xml.append$//text[@name=\"ammo_consumption\"]"
 msgstr "消耗导弹：\\1"
 
-#: src-ru/data/text_misc.xml.append:1195
+#: src-ru/data/text_misc.xml.append:1196
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_damage_positive\"]"
 msgstr "每次齐射伤害增加 \\1"
 
-#: src-ru/data/text_misc.xml.append:1196
+#: src-ru/data/text_misc.xml.append:1197
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_damage_negative\"]"
 msgstr "每次齐射伤害减少 \\1"
 
-#: src-ru/data/text_misc.xml.append:1197
+#: src-ru/data/text_misc.xml.append:1198
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_speed_positive\"]"
 msgstr "每次齐射装填减少 \\1"
 
-#: src-ru/data/text_misc.xml.append:1198
+#: src-ru/data/text_misc.xml.append:1199
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_speed_negative\"]"
 msgstr "每次齐射装填增加 \\1"
 
-#: src-ru/data/text_misc.xml.append:1199
+#: src-ru/data/text_misc.xml.append:1200
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_damage_cap\"]"
 msgstr "最大伤害：\\1（第 \\2 次齐射后）"
 
-#: src-ru/data/text_misc.xml.append:1200
+#: src-ru/data/text_misc.xml.append:1201
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_speed_cap\"]"
 msgstr "最小装填：\\1（第 \\2 次齐射后）"
 
-#: src-ru/data/text_misc.xml.append:1201
+#: src-ru/data/text_misc.xml.append:1202
 msgid "data/text_misc.xml.append$//text[@name=\"shot_radius\"]"
 msgstr "碎片半径：\\1"
 
-#: src-ru/data/text_misc.xml.append:1202
+#: src-ru/data/text_misc.xml.append:1203
 msgid "data/text_misc.xml.append$//text[@name=\"shot_radius_angular\"]"
 msgstr "碎片半径：\\1 度"
 
-#: src-ru/data/text_misc.xml.append:1203
+#: src-ru/data/text_misc.xml.append:1204
 msgid "data/text_misc.xml.append$//text[@name=\"beam_length\"]"
 msgstr "光束长度：\\1"
 
-#: src-ru/data/text_misc.xml.append:1204
+#: src-ru/data/text_misc.xml.append:1205
 msgid "data/text_misc.xml.append$//text[@name=\"pinpoint\"]"
 msgstr "光点"
 
-#: src-ru/data/text_misc.xml.append:1205
+#: src-ru/data/text_misc.xml.append:1206
 msgid "data/text_misc.xml.append$//text[@name=\"swipe_speed\"]"
 msgstr "光束速度：\\1"
 
-#: src-ru/data/text_misc.xml.append:1206
+#: src-ru/data/text_misc.xml.append:1207
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_double_damage\"]"
 msgstr "对无系统舱室造成双倍伤害"
 
-#: src-ru/data/text_misc.xml.append:1207
+#: src-ru/data/text_misc.xml.append:1208
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_damage_room\"]"
 msgstr "对舱室常规伤害：\\1（对船员 x15）"
 
-#: src-ru/data/text_misc.xml.append:1208
+#: src-ru/data/text_misc.xml.append:1209
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_damage_shot\"]"
 msgstr "每次射击常规伤害：\\1（对船员 x15）"
 
-#: src-ru/data/text_misc.xml.append:1209
+#: src-ru/data/text_misc.xml.append:1210
 msgid "data/text_misc.xml.append$//text[@name=\"hull_damage\"]"
 msgstr "船体伤害：\\1"
 
-#: src-ru/data/text_misc.xml.append:1210
+#: src-ru/data/text_misc.xml.append:1211
 msgid "data/text_misc.xml.append$//text[@name=\"stun_length\"]"
 msgstr "秒 击晕"
 
-#: src-ru/data/text_misc.xml.append:1211
+#: src-ru/data/text_misc.xml.append:1212
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_lockdown\"]"
 msgstr "锁住舱室"
 
-#: src-ru/data/text_misc.xml.append:1212
+#: src-ru/data/text_misc.xml.append:1213
 msgid "data/text_misc.xml.append$//text[@name=\"crew_stun_time\"]"
 msgstr "击晕：\\1 秒"
 
-#: src-ru/data/text_misc.xml.append:1214
+#: src-ru/data/text_misc.xml.append:1215
 msgid "data/text_misc.xml.append$//text[@name=\"hull_damage_negative\"]"
 msgstr "船体维修：\\1"
 
-#: src-ru/data/text_misc.xml.append:1215
+#: src-ru/data/text_misc.xml.append:1216
 msgid "data/text_misc.xml.append$//text[@name=\"system_damage_negative\"]"
 msgstr "系统维修：\\1"
 
-#: src-ru/data/text_misc.xml.append:1216
+#: src-ru/data/text_misc.xml.append:1217
 msgid "data/text_misc.xml.append$//text[@name=\"personnel_damage_negative\"]"
 msgstr "生命恢复： \\1 点"
 
-#: src-ru/data/text_misc.xml.append:1218
+#: src-ru/data/text_misc.xml.append:1219
 msgid "data/text_misc.xml.append$//text[@name=\"scrap_value\"]"
 msgstr "购买/售价：\\1~/ \\2~"
 
-#: src-ru/data/text_misc.xml.append:1220
+#: src-ru/data/text_misc.xml.append:1221
 msgid "data/text_misc.xml.append$//text[@name=\"damage_word\"]"
 msgstr "伤害"
 
-#: src-ru/data/text_misc.xml.append:1221
+#: src-ru/data/text_misc.xml.append:1222
 msgid "data/text_misc.xml.append$//text[@name=\"bomb_shots\"]"
 msgstr "每次齐射炸弹数：\\1（对己方飞船为 1）"
 
-#: src-ru/data/text_misc.xml.append:1222
+#: src-ru/data/text_misc.xml.append:1223
 msgid "data/text_misc.xml.append$//text[@name=\"crew_scrap_value\"]"
 msgstr "雇佣价格：\\1~"
 
-#: src-ru/data/text_misc.xml.append:1223
+#: src-ru/data/text_misc.xml.append:1224
 msgid "data/text_misc.xml.append$//text[@name=\"drone_speed\"]"
 msgstr "移动速度：\\1"
 
-#: src-ru/data/text_misc.xml.append:1225
+#: src-ru/data/text_misc.xml.append:1226
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_reload_speed\"]"
 msgstr "装弹速度：\\1 毫秒"
 
-#: src-ru/data/text_misc.xml.append:1226
+#: src-ru/data/text_misc.xml.append:1227
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_orbit_speed\"]"
 msgstr "轨道速度：\\1"
 
-#: src-ru/data/text_misc.xml.append:1227
+#: src-ru/data/text_misc.xml.append:1228
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_speed\"]"
 msgstr "弹体速度：\\1"
 
-#: src-ru/data/text_misc.xml.append:1228
+#: src-ru/data/text_misc.xml.append:1229
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_all\"]"
 msgstr "目标：所有射弹"
 
-#: src-ru/data/text_misc.xml.append:1229
+#: src-ru/data/text_misc.xml.append:1230
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_solid\"]"
 msgstr "目标：除激光外的射弹"
 
-#: src-ru/data/text_misc.xml.append:1230
+#: src-ru/data/text_misc.xml.append:1231
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_all\"]"
 msgstr "目标：攻击无人机"
 
-#: src-ru/data/text_misc.xml.append:1231
+#: src-ru/data/text_misc.xml.append:1232
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_solid\"]"
 msgstr "目标：实体无人机"
 
-#: src-ru/data/text_misc.xml.append:1232
+#: src-ru/data/text_misc.xml.append:1233
 msgid "data/text_misc.xml.append$//text[@name=\"shield_drone_layers_per_charge\"]"
 msgstr "每周期护盾层数：\\1"
 
-#: src-ru/data/text_misc.xml.append:1233
+#: src-ru/data/text_misc.xml.append:1234
 msgid "data/text_misc.xml.append$//text[@name=\"shield_drone_cooldowns\"]"
 msgstr "充能时间：\\1"
 
-#: src-ru/data/text_misc.xml.append:1234
+#: src-ru/data/text_misc.xml.append:1235
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_unknown\"]"
 msgstr "目标：未知"
 
-#: src-ru/data/text_misc.xml.append:1235
+#: src-ru/data/text_misc.xml.append:1236
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_asteroid\"]"
 msgstr "目标：小行星"
 
-#: src-ru/data/text_misc.xml.append:1236
+#: src-ru/data/text_misc.xml.append:1237
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_solid_projectiles\"]"
 msgstr "目标：无人机和非激光射弹"
 
-#: src-ru/data/text_misc.xml.append:1237
+#: src-ru/data/text_misc.xml.append:1238
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_all_projectiles\"]"
 msgstr "目标：无人机和所有射弹"
 
-#: src-ru/data/text_misc.xml.append:1238
+#: src-ru/data/text_misc.xml.append:1239
 msgid "data/text_misc.xml.append$//text[@name=\"drone_BOARDER_ION_desc\"]"
 msgstr "穿透敌方船体并离子化随机系统。"
 
-#: src-ru/data/text_misc.xml.append:1240
+#: src-ru/data/text_misc.xml.append:1241
 msgid "data/text_misc.xml.append$//text[@name=\"store_unavailable\"]"
 msgstr "不提供"
 
-#: src-ru/data/text_misc.xml.append:1242
+#: src-ru/data/text_misc.xml.append:1243
 msgid "data/text_misc.xml.append$//text[@name=\"no_time_sector\"]"
 msgstr "查看地图后，你发现没有时间做这个了，因为你需要前往下一个星区！你推迟了任务。"
 
-#: src-ru/data/text_misc.xml.append:1244
+#: src-ru/data/text_misc.xml.append:1245
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_health_tooltip\"]"
 msgstr "生命值"
 
-#: src-ru/data/text_misc.xml.append:1245
+#: src-ru/data/text_misc.xml.append:1246
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_cooldown_negative\"]"
 msgstr "已失效"
 
-#: src-ru/data/text_misc.xml.append:1247
+#: src-ru/data/text_misc.xml.append:1248
 msgid "data/text_misc.xml.append$//text[@name=\"free_missile_chance\"]"
 msgstr "不消耗弹药几率：\\1%"
 
-#: src-ru/data/text_misc.xml.append:1249
+#: src-ru/data/text_misc.xml.append:1250
 msgid "data/text_misc.xml.append$//text[@name=\"augment_no_effect\"]"
 msgstr "安装此增强部件后，以下增强部件将失效："
 
-#: src-ru/data/text_misc.xml.append:1251
+#: src-ru/data/text_misc.xml.append:1252
 msgid "data/text_misc.xml.append$//text[@name=\"seed_prompt\"]"
 msgstr "种子"
 
-#: src-ru/data/text_misc.xml.append:1252
+#: src-ru/data/text_misc.xml.append:1253
 msgid "data/text_misc.xml.append$//text[@name=\"seed_prompt_disabled\"]"
 msgstr "种子已禁用"
 
-#: src-ru/data/text_misc.xml.append:1253
+#: src-ru/data/text_misc.xml.append:1254
 msgid "data/text_misc.xml.append$//text[@name=\"menu_status_seed\"]"
 msgstr "种子"
 
-#: src-ru/data/text_misc.xml.append:1254
+#: src-ru/data/text_misc.xml.append:1255
 msgid "data/text_misc.xml.append$//text[@name=\"unlocks_disabled\"]"
 msgstr "飞船解锁已禁用"
 
-#: src-ru/data/text_misc.xml.append:1256
+#: src-ru/data/text_misc.xml.append:1257
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_crew_page_down\"]"
 msgstr "向下滚动 \\n（可使用鼠标滚轮）"
 
-#: src-ru/data/text_misc.xml.append:1257
+#: src-ru/data/text_misc.xml.append:1258
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_crew_page_up\"]"
 msgstr "向上滚动 \\n（可使用鼠标滚轮）"
 
-#: src-ru/data/text_misc.xml.append:1259
+#: src-ru/data/text_misc.xml.append:1260
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_player_ship\"]"
 msgstr "未就绪：不在玩家飞船上"
 
-#: src-ru/data/text_misc.xml.append:1260
+#: src-ru/data/text_misc.xml.append:1261
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_ship\"]"
 msgstr "未就绪：不在敌方飞船上"
 
-#: src-ru/data/text_misc.xml.append:1261
+#: src-ru/data/text_misc.xml.append:1262
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_in_room\"]"
 msgstr "未就绪：舱室内无敌人"
 
-#: src-ru/data/text_misc.xml.append:1262
+#: src-ru/data/text_misc.xml.append:1263
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_friendly_in_room\"]"
 msgstr "未就绪：舱室内无盟友"
 
-#: src-ru/data/text_misc.xml.append:1263
+#: src-ru/data/text_misc.xml.append:1264
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_whitelist\"]"
 msgstr "未就绪：舱室内无允许的船员"
 
-#: src-ru/data/text_misc.xml.append:1264
+#: src-ru/data/text_misc.xml.append:1265
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_whitelist\"]"
 msgstr "未就绪：舱室内无允许的敌人"
 
-#: src-ru/data/text_misc.xml.append:1265
+#: src-ru/data/text_misc.xml.append:1266
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_friendly_whitelist\"]"
 msgstr "未就绪：舱室内无允许的盟友"
 
-#: src-ru/data/text_misc.xml.append:1266
+#: src-ru/data/text_misc.xml.append:1267
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_blacklist\"]"
 msgstr "未就绪：舱室内有被禁止的敌人"
 
-#: src-ru/data/text_misc.xml.append:1267
+#: src-ru/data/text_misc.xml.append:1268
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_friendly_blacklist\"]"
 msgstr "未就绪：舱室内有被禁止的盟友"
 
-#: src-ru/data/text_misc.xml.append:1268
+#: src-ru/data/text_misc.xml.append:1269
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_system_in_room\"]"
 msgstr "未就绪：舱室内无系统"
 
-#: src-ru/data/text_misc.xml.append:1269
+#: src-ru/data/text_misc.xml.append:1270
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_activated\"]"
 msgstr "技能已激活"
 
-#: src-ru/data/text_misc.xml.append:1270
+#: src-ru/data/text_misc.xml.append:1271
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_ai_disabled\"]"
 msgstr "未就绪：AI 电力禁用（理论上不应看到此信息）"
 
-#: src-ru/data/text_misc.xml.append:1271
+#: src-ru/data/text_misc.xml.append:1272
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_has_clonebay\"]"
 msgstr "未就绪：无克隆舱"
 
-#: src-ru/data/text_misc.xml.append:1272
+#: src-ru/data/text_misc.xml.append:1273
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_out_of_combat\"]"
 msgstr "未就绪：不能在战斗中使用"
 
-#: src-ru/data/text_misc.xml.append:1273
+#: src-ru/data/text_misc.xml.append:1274
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_in_combat\"]"
 msgstr "未就绪：无敌方飞船"
 
-#: src-ru/data/text_misc.xml.append:1274
+#: src-ru/data/text_misc.xml.append:1275
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_system\"]"
 msgstr "未就绪：无系统（\\1）"
 
-#: src-ru/data/text_misc.xml.append:1275
+#: src-ru/data/text_misc.xml.append:1276
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_system_functional\"]"
 msgstr "未就绪：\\1 不运作"
 
-#: src-ru/data/text_misc.xml.append:1276
+#: src-ru/data/text_misc.xml.append:1277
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_min_health\"]"
 msgstr "未就绪：生命值低于 \\1"
 
-#: src-ru/data/text_misc.xml.append:1277
+#: src-ru/data/text_misc.xml.append:1278
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_max_health\"]"
 msgstr "未就绪：生命值高于 \\1"
 
-#: src-ru/data/text_misc.xml.append:1278
+#: src-ru/data/text_misc.xml.append:1279
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_system_damaged\"]"
 msgstr "未就绪：舱室内无受损系统"
 
-#: src-ru/data/text_misc.xml.append:1279
-msgid "data/text_misc.xml.append$/dummyroot/FTL/text[941]"
+#: src-ru/data/text_misc.xml.append:1280
+msgid "data/text_misc.xml.append$/dummyroot/FTL/text[942]"
 msgstr "未就绪：传送中"
 
-#: src-ru/data/text_misc.xml.append:1280
+#: src-ru/data/text_misc.xml.append:1281
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_charges\"]"
 msgstr "未就绪：无充能"
 
-#: src-ru/data/text_misc.xml.append:1281
+#: src-ru/data/text_misc.xml.append:1282
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_silenced\"]"
 msgstr "未就绪：沉默"
 
-#: src-ru/data/text_misc.xml.append:1283
+#: src-ru/data/text_misc.xml.append:1284
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_burning\"]"
 msgstr "未就绪：着火"
 
-#: src-ru/data/text_misc.xml.append:1284
+#: src-ru/data/text_misc.xml.append:1285
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_suffocating\"]"
 msgstr "未就绪：窒息"
 
-#: src-ru/data/text_misc.xml.append:1285
-msgid "data/text_misc.xml.append$/dummyroot/FTL/text[946]"
+#: src-ru/data/text_misc.xml.append:1286
+msgid "data/text_misc.xml.append$/dummyroot/FTL/text[947]"
 msgstr "未就绪：心智被控"
 
-#: src-ru/data/text_misc.xml.append:1286
+#: src-ru/data/text_misc.xml.append:1287
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_stunned\"]"
 msgstr "未就绪：被击晕"
 
-#: src-ru/data/text_misc.xml.append:1287
+#: src-ru/data/text_misc.xml.append:1288
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing\"]"
 msgstr "未就绪：正在维修"
 
-#: src-ru/data/text_misc.xml.append:1288
+#: src-ru/data/text_misc.xml.append:1289
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_system\"]"
 msgstr "未就绪：正在维修系统"
 
-#: src-ru/data/text_misc.xml.append:1289
+#: src-ru/data/text_misc.xml.append:1290
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_breach\"]"
 msgstr "未就绪：正在修补破洞"
 
-#: src-ru/data/text_misc.xml.append:1290
+#: src-ru/data/text_misc.xml.append:1291
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_fighting\"]"
 msgstr "未就绪：正在战斗"
 
-#: src-ru/data/text_misc.xml.append:1291
+#: src-ru/data/text_misc.xml.append:1292
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_sabotaging\"]"
 msgstr "未就绪：正在破坏系统"
 
-#: src-ru/data/text_misc.xml.append:1292
+#: src-ru/data/text_misc.xml.append:1293
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_shooting\"]"
 msgstr "未就绪：正在射击"
 
-#: src-ru/data/text_misc.xml.append:1293
+#: src-ru/data/text_misc.xml.append:1294
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_moving\"]"
 msgstr "未就绪：正在移动"
 
-#: src-ru/data/text_misc.xml.append:1294
+#: src-ru/data/text_misc.xml.append:1295
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_idle\"]"
 msgstr "未就绪：静止不动"
 
-#: src-ru/data/text_misc.xml.append:1295
+#: src-ru/data/text_misc.xml.append:1296
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_manning\"]"
 msgstr "未就绪：正在操控系统"
 
-#: src-ru/data/text_misc.xml.append:1296
+#: src-ru/data/text_misc.xml.append:1297
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_firefighting\"]"
 msgstr "未就绪：正在灭火"
 
-#: src-ru/data/text_misc.xml.append:1297
+#: src-ru/data/text_misc.xml.append:1298
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_dying\"]"
 msgstr "未就绪：正在死亡"
 
-#: src-ru/data/text_misc.xml.append:1298
-msgid "data/text_misc.xml.append$/dummyroot/FTL/text[959]"
+#: src-ru/data/text_misc.xml.append:1299
+msgid "data/text_misc.xml.append$/dummyroot/FTL/text[960]"
 msgstr "未就绪：正在传送"
 
-#: src-ru/data/text_misc.xml.append:1300
+#: src-ru/data/text_misc.xml.append:1301
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_burning_false\"]"
 msgstr "未就绪：未着火"
 
-#: src-ru/data/text_misc.xml.append:1301
+#: src-ru/data/text_misc.xml.append:1302
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_suffocating_false\"]"
 msgstr "未就绪：未窒息"
 
-#: src-ru/data/text_misc.xml.append:1302
+#: src-ru/data/text_misc.xml.append:1303
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_mind_false\"]"
 msgstr "未就绪：心智未被控"
 
-#: src-ru/data/text_misc.xml.append:1303
+#: src-ru/data/text_misc.xml.append:1304
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_stunned_false\"]"
 msgstr "未就绪：未被击晕"
 
-#: src-ru/data/text_misc.xml.append:1304
+#: src-ru/data/text_misc.xml.append:1305
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_false\"]"
 msgstr "未就绪：未在维修"
 
-#: src-ru/data/text_misc.xml.append:1305
+#: src-ru/data/text_misc.xml.append:1306
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_system_false\"]"
 msgstr "未就绪：未在维修系统"
 
-#: src-ru/data/text_misc.xml.append:1306
+#: src-ru/data/text_misc.xml.append:1307
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_breach_false\"]"
 msgstr "未就绪：未在修补破洞"
 
-#: src-ru/data/text_misc.xml.append:1307
+#: src-ru/data/text_misc.xml.append:1308
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_fighting_false\"]"
 msgstr "未就绪：未在战斗"
 
-#: src-ru/data/text_misc.xml.append:1308
+#: src-ru/data/text_misc.xml.append:1309
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_sabotaging_false\"]"
 msgstr "未就绪：未在破坏系统"
 
-#: src-ru/data/text_misc.xml.append:1309
+#: src-ru/data/text_misc.xml.append:1310
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_shooting_false\"]"
 msgstr "未就绪：未在射击"
 
-#: src-ru/data/text_misc.xml.append:1310
+#: src-ru/data/text_misc.xml.append:1311
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_moving_false\"]"
 msgstr "未就绪：未在移动"
 
-#: src-ru/data/text_misc.xml.append:1311
+#: src-ru/data/text_misc.xml.append:1312
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_idle_false\"]"
 msgstr "未就绪：未静止不动"
 
-#: src-ru/data/text_misc.xml.append:1312
+#: src-ru/data/text_misc.xml.append:1313
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_manning_false\"]"
 msgstr "未就绪：未在操控系统"
 
-#: src-ru/data/text_misc.xml.append:1313
+#: src-ru/data/text_misc.xml.append:1314
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_firefighting_false\"]"
 msgstr "未就绪：未在灭火"
 
-#: src-ru/data/text_misc.xml.append:1314
+#: src-ru/data/text_misc.xml.append:1315
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_dying_false\"]"
 msgstr "未就绪：未在死亡"
 
-#: src-ru/data/text_misc.xml.append:1315
+#: src-ru/data/text_misc.xml.append:1316
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_teleporting_false\"]"
 msgstr "未就绪：未在传送"
 
-#: src-ru/data/text_misc.xml.append:1317
+#: src-ru/data/text_misc.xml.append:1318
 msgid "data/text_misc.xml.append$//text[@name=\"power_number_charges\"]"
 msgstr "可用次数：\\1/\\2"
 
-#: src-ru/data/text_misc.xml.append:1319
+#: src-ru/data/text_misc.xml.append:1320
 msgid "data/text_misc.xml.append$//text[@name=\"button_mushroom_b\"]"
 msgstr "孢子武器"
 
-#: src-ru/data/text_misc.xml.append:1320
+#: src-ru/data/text_misc.xml.append:1321
 msgid "data/text_misc.xml.append$//text[@name=\"power_mushroom_b_ready\"]"
 msgstr "就绪：点击击晕此舱室内敌人 4 秒"
 
-#: src-ru/data/text_misc.xml.append:1322
+#: src-ru/data/text_misc.xml.append:1323
 msgid "data/text_misc.xml.append$//text[@name=\"button_mushroom\"]"
 msgstr "孢子武器"
 
-#: src-ru/data/text_misc.xml.append:1323
+#: src-ru/data/text_misc.xml.append:1324
 msgid "data/text_misc.xml.append$//text[@name=\"power_mushroom_ready\"]"
 msgstr "就绪：点击击晕此舱室内敌人 8 秒"
 
-#: src-ru/data/text_misc.xml.append:1325
+#: src-ru/data/text_misc.xml.append:1326
 msgid "data/text_misc.xml.append$//text[@name=\"tip_manning\"]"
 msgstr "以高级水平操控系统，并为其所在系统提供 1 能量。"
 
-#: src-ru/data/text_misc.xml.append:1327
+#: src-ru/data/text_misc.xml.append:1328
 msgid "data/text_misc.xml.append$//text[@name=\"tip_manning_2\"]"
 msgstr "以专家水平操控系统，并为其所在系统提供 2 能量。"
 
-#: src-ru/data/text_misc.xml.append:1329
+#: src-ru/data/text_misc.xml.append:1330
 msgid "data/text_misc.xml.append$//text[@name=\"tip_battery\"]"
 msgstr "自动移动并为系统提供额外能量。"
 
-#: src-ru/data/text_misc.xml.append:1333
+#: src-ru/data/text_misc.xml.append:1334
 msgid "data/text_misc.xml.append$//text[@name=\"discord_main_menu\"]"
 msgstr "主菜单"
 
-#: src-ru/data/text_misc.xml.append:1334
+#: src-ru/data/text_misc.xml.append:1335
 msgid "data/text_misc.xml.append$//text[@name=\"discord_hangar\"]"
 msgstr "浏览舰库中"
 
-#: src-ru/data/text_misc.xml.append:1335
+#: src-ru/data/text_misc.xml.append:1336
 msgid "data/text_misc.xml.append$//text[@name=\"discord_dying\"]"
 msgstr "濒死"
 
-#: src-ru/data/text_misc.xml.append:1336
+#: src-ru/data/text_misc.xml.append:1337
 msgid "data/text_misc.xml.append$//text[@name=\"discord_exploring\"]"
 msgstr "侦察"
 
-#: src-ru/data/text_misc.xml.append:1337
+#: src-ru/data/text_misc.xml.append:1338
 msgid "data/text_misc.xml.append$//text[@name=\"discord_battle\"]"
 msgstr "战斗中"
 
-#: src-ru/data/text_misc.xml.append:1338
+#: src-ru/data/text_misc.xml.append:1339
 msgid "data/text_misc.xml.append$//text[@name=\"discord_battle_boss\"]"
 msgstr "BOSS战中(第\\1阶段)"
 
-#: src-ru/data/text_misc.xml.append:1339
+#: src-ru/data/text_misc.xml.append:1340
 msgid "data/text_misc.xml.append$//text[@name=\"discord_sector\"]"
 msgstr "\\1(第\\2星区)"
 
-#: src-ru/data/text_misc.xml.append:1340
+#: src-ru/data/text_misc.xml.append:1341
 msgid "data/text_misc.xml.append$//text[@name=\"discord_ship\"]"
 msgstr "\\1 型号 \\2"
 
-#: src-ru/data/text_misc.xml.append:1341
+#: src-ru/data/text_misc.xml.append:1342
 msgid "data/text_misc.xml.append$//text[@name=\"discord_playing_modded\"]"
 msgstr "正在游玩Mod(\\1)"
 
-#: src-ru/data/text_misc.xml.append:1342
+#: src-ru/data/text_misc.xml.append:1343
 msgid "data/text_misc.xml.append$//text[@name=\"discord_playing_vanilla\"]"
 msgstr "正在游玩原版"
 
-#: src-ru/data/text_misc.xml.append:1343
+#: src-ru/data/text_misc.xml.append:1344
 msgid "data/text_misc.xml.append$//text[@name=\"discord_victory\"]"
 msgstr "胜利"
 
-#: src-ru/data/text_misc.xml.append:1344
+#: src-ru/data/text_misc.xml.append:1345
 msgid "data/text_misc.xml.append$//text[@name=\"discord_dead\"]"
 msgstr "失败"
 
-#: src-ru/data/text_misc.xml.append:1345
+#: src-ru/data/text_misc.xml.append:1346
 msgid "data/text_misc.xml.append$//text[@name=\"discord_mod\"]"
 msgstr "Arsenal +"
 
-#: src-ru/data/text_misc.xml.append:1349
+#: src-ru/data/text_misc.xml.append:1350
 msgid "data/text_misc.xml.append$//text[@name=\"shields_4\"]"
 msgstr "5 层防护屏障"
 
-#: src-ru/data/text_misc.xml.append:1350
+#: src-ru/data/text_misc.xml.append:1351
 msgid "data/text_misc.xml.append$//text[@name=\"shields_5\"]"
 msgstr "6 层防护屏障"
 
-#: src-ru/data/text_misc.xml.append:1351
+#: src-ru/data/text_misc.xml.append:1352
 msgid "data/text_misc.xml.append$//text[@name=\"shields_6\"]"
 msgstr "7 层防护屏障"
 
-#: src-ru/data/text_misc.xml.append:1352
+#: src-ru/data/text_misc.xml.append:1353
 msgid "data/text_misc.xml.append$//text[@name=\"shields_7\"]"
 msgstr "8 层防护屏障"
 
-#: src-ru/data/text_misc.xml.append:1354
-msgid "data/text_misc.xml.append$/dummyroot/FTL/text[1001]"
+#: src-ru/data/text_misc.xml.append:1355
+msgid "data/text_misc.xml.append$/dummyroot/FTL/text[1002]"
 msgstr "你的飞船只能安装 \\1 个增强部件。"
 
-#: src-ru/data/text_misc.xml.append:1355
+#: src-ru/data/text_misc.xml.append:1356
 msgid "data/text_misc.xml.append$//text[@name=\"shot_limit\"]"
 msgstr "武器射击限制：\\1"
 
-#: src-ru/data/text_misc.xml.append:1356
+#: src-ru/data/text_misc.xml.append:1357
 msgid "data/text_misc.xml.append$//text[@name=\"shots_remaining\"]"
 msgstr "弹体数：\\1"
 
-#: src-ru/data/text_misc.xml.append:1357
+#: src-ru/data/text_misc.xml.append:1358
 msgid "data/text_misc.xml.append$//text[@name=\"warning_shot_limit\"]"
 msgstr "无更多射击次数"
 
-#: src-ru/data/text_misc.xml.append:1359
+#: src-ru/data/text_misc.xml.append:1360
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_dialog\"]"
 msgstr "看起来你是第一次玩这个模组，或者还没有创建新的存档！你想从原版迁移你的进度，还是创建一个新的存档？这不会影响你在原版中的进度。"
 
-#: src-ru/data/text_misc.xml.append:1361
+#: src-ru/data/text_misc.xml.append:1362
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_yes\"]"
 msgstr "迁移进度"
 
-#: src-ru/data/text_misc.xml.append:1362
+#: src-ru/data/text_misc.xml.append:1363
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_no\"]"
 msgstr "重新开始"
 
-#: src-ru/data/text_misc.xml.append:1364
+#: src-ru/data/text_misc.xml.append:1365
 msgid "data/text_misc.xml.append$//text[@name=\"button_magman\"]"
 msgstr "纵火"
 
-#: src-ru/data/text_misc.xml.append:1365
+#: src-ru/data/text_misc.xml.append:1366
 msgid "data/text_misc.xml.append$//text[@name=\"power_magman_ready\"]"
 msgstr "就绪：点击有 50% 几率点燃当前舱室"
 
-#: src-ru/data/text_misc.xml.append:1367
+#: src-ru/data/text_misc.xml.append:1368
 msgid "data/text_misc.xml.append$//text[@name=\"button_morph\"]"
 msgstr "锁定"
 
-#: src-ru/data/text_misc.xml.append:1368
+#: src-ru/data/text_misc.xml.append:1369
 msgid "data/text_misc.xml.append$//text[@name=\"power_morph_ready\"]"
 msgstr "就绪：失去控制，但大幅提升维修、灭火、移动速度和战斗伤害"
 
-#: src-ru/data/text_misc.xml.append:1409
+#: src-ru/data/text_misc.xml.append:1410
 msgid "data/text_misc.xml.append$//text[@name=\"hack_potential\"]"
 msgstr "入侵能力确认：\\1"
 
-#: src-ru/data/text_misc.xml.append:1410
+#: src-ru/data/text_misc.xml.append:1411
 msgid "data/text_misc.xml.append$//text[@name=\"hack_activate\"]"
 msgstr "开始入侵：\\1"
 
-#: src-ru/data/text_misc.xml.append:1412
+#: src-ru/data/text_misc.xml.append:1413
 msgid "data/text_misc.xml.append$//text[@name=\"hack_no_system\"]"
 msgstr "无入侵目标。"
 
-#: src-ru/data/text_misc.xml.append:1413
+#: src-ru/data/text_misc.xml.append:1414
 msgid "data/text_misc.xml.append$//text[@name=\"hack_oxygen\"]"
 msgstr "暂时耗尽敌方飞船的氧气。"
 
-#: src-ru/data/text_misc.xml.append:1414
+#: src-ru/data/text_misc.xml.append:1415
 msgid "data/text_misc.xml.append$//text[@name=\"hack_doors\"]"
 msgstr "暂时将所有敌方门变为玩家的装甲门。"
 
-#: src-ru/data/text_misc.xml.append:1415
+#: src-ru/data/text_misc.xml.append:1416
 msgid "data/text_misc.xml.append$//text[@name=\"hack_shields\"]"
 msgstr "暂时耗尽敌方护盾的能量。"
 
-#: src-ru/data/text_misc.xml.append:1416
+#: src-ru/data/text_misc.xml.append:1417
 msgid "data/text_misc.xml.append$//text[@name=\"hack_pilot\"]"
 msgstr "暂时将敌方飞船的闪避率降至 0。"
 
-#: src-ru/data/text_misc.xml.append:1417
+#: src-ru/data/text_misc.xml.append:1418
 msgid "data/text_misc.xml.append$//text[@name=\"hack_engines\"]"
 msgstr "暂时将敌方飞船的闪避率降至 0。"
 
-#: src-ru/data/text_misc.xml.append:1418
+#: src-ru/data/text_misc.xml.append:1419
 msgid "data/text_misc.xml.append$//text[@name=\"hack_sensors\"]"
 msgstr "暂时禁用敌方传感器。"
 
-#: src-ru/data/text_misc.xml.append:1419
+#: src-ru/data/text_misc.xml.append:1420
 msgid "data/text_misc.xml.append$//text[@name=\"hack_medbay\"]"
 msgstr "医疗舱暂时对内部的敌方船员造成伤害。"
 
-#: src-ru/data/text_misc.xml.append:1420
+#: src-ru/data/text_misc.xml.append:1421
 msgid "data/text_misc.xml.append$//text[@name=\"hack_weapons\"]"
 msgstr "暂时耗尽敌方武器的充能。"
 
-#: src-ru/data/text_misc.xml.append:1421
+#: src-ru/data/text_misc.xml.append:1422
 msgid "data/text_misc.xml.append$//text[@name=\"hack_drones\"]"
 msgstr "暂时瘫痪敌方无人机，并有一定几率摧毁它们。"
 
-#: src-ru/data/text_misc.xml.append:1422
+#: src-ru/data/text_misc.xml.append:1423
 msgid "data/text_misc.xml.append$//text[@name=\"hack_teleporter\"]"
 msgstr "暂时控制敌方传送器，将其船员召回敌方飞船。"
 
-#: src-ru/data/text_misc.xml.append:1423
+#: src-ru/data/text_misc.xml.append:1424
 msgid "data/text_misc.xml.append$//text[@name=\"hack_cloaking\"]"
 msgstr "暂时禁用敌方隐形。"
 
-#: src-ru/data/text_misc.xml.append:1424
+#: src-ru/data/text_misc.xml.append:1425
 msgid "data/text_misc.xml.append$//text[@name=\"hack_artillery\"]"
 msgstr "暂时降低敌方巨炮的充能。"
 
-#: src-ru/data/text_misc.xml.append:1425
+#: src-ru/data/text_misc.xml.append:1426
 msgid "data/text_misc.xml.append$//text[@name=\"hack_battery\"]"
 msgstr "暂时将敌方反应堆的功率降低 2。"
 
-#: src-ru/data/text_misc.xml.append:1426
+#: src-ru/data/text_misc.xml.append:1427
 msgid "data/text_misc.xml.append$//text[@name=\"hack_clonebay\"]"
 msgstr "被黑系统：克隆舱暂时失效，潜在克隆体被消灭。"
 
-#: src-ru/data/text_misc.xml.append:1427
+#: src-ru/data/text_misc.xml.append:1428
 msgid "data/text_misc.xml.append$//text[@name=\"hack_mind\"]"
 msgstr "解除任何人的控制，并暂时控制一名敌方战斗人员。"
 
-#: src-ru/data/text_misc.xml.append:1428
+#: src-ru/data/text_misc.xml.append:1429
 msgid "data/text_misc.xml.append$//text[@name=\"hack_hacking\"]"
 msgstr "暂时中断并停止敌方入侵。"
 
-#: src-ru/data/text_misc.xml.append:1430
+#: src-ru/data/text_misc.xml.append:1431
 msgid "data/text_misc.xml.append$//text[@name=\"hack_oxygen_player\"]"
 msgstr "系统被黑：氧气迅速流失。"
 
-#: src-ru/data/text_misc.xml.append:1431
+#: src-ru/data/text_misc.xml.append:1432
 msgid "data/text_misc.xml.append$//text[@name=\"hack_doors_player\"]"
 msgstr "系统被黑：门被锁。"
 
-#: src-ru/data/text_misc.xml.append:1432
+#: src-ru/data/text_misc.xml.append:1433
 msgid "data/text_misc.xml.append$//text[@name=\"hack_shields_player\"]"
 msgstr "系统被黑：护盾失去电力。"
 
-#: src-ru/data/text_misc.xml.append:1433
+#: src-ru/data/text_misc.xml.append:1434
 msgid "data/text_misc.xml.append$//text[@name=\"hack_pilot_player\"]"
 msgstr "系统被黑：闪避率降至0。"
 
-#: src-ru/data/text_misc.xml.append:1434
+#: src-ru/data/text_misc.xml.append:1435
 msgid "data/text_misc.xml.append$//text[@name=\"hack_engines_player\"]"
 msgstr "系统被黑：闪避率降至0。"
 
-#: src-ru/data/text_misc.xml.append:1435
+#: src-ru/data/text_misc.xml.append:1436
 msgid "data/text_misc.xml.append$//text[@name=\"hack_sensors_player\"]"
 msgstr "系统被黑：传感器不工作。"
 
-#: src-ru/data/text_misc.xml.append:1436
+#: src-ru/data/text_misc.xml.append:1437
 msgid "data/text_misc.xml.append$//text[@name=\"hack_medbay_player\"]"
 msgstr "系统被黑：医疗舱对船员造成伤害！"
 
-#: src-ru/data/text_misc.xml.append:1437
+#: src-ru/data/text_misc.xml.append:1438
 msgid "data/text_misc.xml.append$//text[@name=\"hack_weapons_player\"]"
 msgstr "系统被黑：武器失去充能。"
 
-#: src-ru/data/text_misc.xml.append:1438
+#: src-ru/data/text_misc.xml.append:1439
 msgid "data/text_misc.xml.append$//text[@name=\"hack_drones_player\"]"
 msgstr "系统被黑：无人机被击晕，可能爆炸。"
 
-#: src-ru/data/text_misc.xml.append:1439
+#: src-ru/data/text_misc.xml.append:1440
 msgid "data/text_misc.xml.append$//text[@name=\"hack_teleporter_player\"]"
 msgstr "系统被黑：船员被迫传送回去。"
 
-#: src-ru/data/text_misc.xml.append:1440
+#: src-ru/data/text_misc.xml.append:1441
 msgid "data/text_misc.xml.append$//text[@name=\"hack_cloaking_player\"]"
 msgstr "系统被黑：隐形系统关闭。"
 
-#: src-ru/data/text_misc.xml.append:1441
+#: src-ru/data/text_misc.xml.append:1442
 msgid "data/text_misc.xml.append$//text[@name=\"hack_artillery_player\"]"
 msgstr "系统被黑：巨炮迅速失去充能。"
 
-#: src-ru/data/text_misc.xml.append:1442
+#: src-ru/data/text_misc.xml.append:1443
 msgid "data/text_misc.xml.append$//text[@name=\"hack_battery_player\"]"
 msgstr "系统被黑：反应堆功率降低2。"
 
-#: src-ru/data/text_misc.xml.append:1443
+#: src-ru/data/text_misc.xml.append:1444
 msgid "data/text_misc.xml.append$//text[@name=\"hack_clonebay_player\"]"
 msgstr "系统被黑：无法创建克隆，船员可能死亡！"
 
-#: src-ru/data/text_misc.xml.append:1444
+#: src-ru/data/text_misc.xml.append:1445
 msgid "data/text_misc.xml.append$//text[@name=\"hack_mind_player\"]"
 msgstr "系统被黑：盟友被控制！"
 
-#: src-ru/data/text_misc.xml.append:1445
+#: src-ru/data/text_misc.xml.append:1446
 msgid "data/text_misc.xml.append$//text[@name=\"hack_hacking_player\"]"
 msgstr "系统被黑：入侵暂时不可用。"
 
-#: src-ru/data/text_misc.xml.append:1449
+#: src-ru/data/text_misc.xml.append:1450
 msgid "data/text_misc.xml.append$//text[@name=\"distraction\"]"
 msgstr "你部署了诱饵信标，在舰队追上你之前为你争取了更多探索星区的时间。"
 
-#: src-ru/data/text_misc.xml.append:1450
+#: src-ru/data/text_misc.xml.append:1451
 msgid "data/text_misc.xml.append$//text[@name=\"added_quest\"]"
 msgstr "任务标记已添加到地图！"
 
-#: src-ru/data/text_misc.xml.append:1451
+#: src-ru/data/text_misc.xml.append:1452
 msgid "data/text_misc.xml.append$//text[@name=\"no_time\"]"
 msgstr "查看地图后，你发现没有时间做这个了，因为你需要去联邦基地！你推迟了任务。"
 
-#: src-ru/data/text_misc.xml.append:1452
+#: src-ru/data/text_misc.xml.append:1453
 msgid "data/text_misc.xml.append$//text[@name=\"added_quest_sector\"]"
 msgstr "任务标记已添加到下一星区的地图！"
 
-#: src-ru/data/text_misc.xml.append:1454
+#: src-ru/data/text_misc.xml.append:1455
 msgid "data/text_misc.xml.append$//text[@name=\"circle_ship\"]"
 msgstr "恭喜！到达第5星区，你为后续游戏解锁了半械族巡洋舰！"
 
-#: src-ru/data/text_misc.xml.append:1456
+#: src-ru/data/text_misc.xml.append:1457
 msgid "data/text_misc.xml.append$//text[@name=\"intruder_energy\"]"
 msgstr "敌人设法绕过了超级护盾，登舰者已在船上！"
 
-#: src-ru/data/text_misc.xml.append:1458
+#: src-ru/data/text_misc.xml.append:1459
 msgid "data/text_misc.xml.append$//text[@name=\"event_crew_full\"]"
 msgstr "[注意：船员已满，你必须解雇某人]"
 
-#: src-ru/data/text_misc.xml.append:1460
+#: src-ru/data/text_misc.xml.append:1461
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_1\"]"
 msgstr "半械族的秘密技术已送达机库。隐形巡洋舰已解锁！"
 
-#: src-ru/data/text_misc.xml.append:1461
+#: src-ru/data/text_misc.xml.append:1462
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_2\"]"
 msgstr "螳螂族巡洋舰已解锁并添加至机库！"
 
-#: src-ru/data/text_misc.xml.append:1462
+#: src-ru/data/text_misc.xml.append:1463
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_4\"]"
 msgstr "联邦巡洋舰已解锁并添加至机库！"
 
-#: src-ru/data/text_misc.xml.append:1463
+#: src-ru/data/text_misc.xml.append:1464
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_5\"]"
 msgstr "蛞蝓族巡洋舰已解锁并添加至机库！"
 
-#: src-ru/data/text_misc.xml.append:1464
+#: src-ru/data/text_misc.xml.append:1465
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_6\"]"
 msgstr "岩石族已将巡洋舰送至机库。堡垒巡洋舰已解锁！"
 
-#: src-ru/data/text_misc.xml.append:1465
+#: src-ru/data/text_misc.xml.append:1466
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_7\"]"
 msgstr "超能族巡洋舰已解锁并添加至机库！"
 
-#: src-ru/data/text_misc.xml.append:1466
+#: src-ru/data/text_misc.xml.append:1467
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_8\"]"
 msgstr "水晶族飞船正前往机库。布拉维已解锁！"
 
-#: src-ru/data/text_misc.xml.append:1470
+#: src-ru/data/text_misc.xml.append:1471
 msgid "data/text_misc.xml.append$//text[@name=\"augment\"]"
 msgstr "增强部件："
 
-#: src-ru/data/text_misc.xml.append:1472
+#: src-ru/data/text_misc.xml.append:1473
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_success\"]"
 msgstr "\\1 获得了 \\2 的增强"
 
-#: src-ru/data/text_misc.xml.append:1473
+#: src-ru/data/text_misc.xml.append:1474
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_fail_max\"]"
 msgstr "\\1 已达到最高等级"
 
-#: src-ru/data/text_misc.xml.append:1474
+#: src-ru/data/text_misc.xml.append:1475
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_fail_missing\"]"
 msgstr "\\1 不在飞船上，无法增强"
 
-#: src-ru/data/text_misc.xml.append:1476
+#: src-ru/data/text_misc.xml.append:1477
 msgid "data/text_misc.xml.append$//text[@name=\"oxygen\"]"
 msgstr "氧气系统"
 
-#: src-ru/data/text_misc.xml.append:1477
+#: src-ru/data/text_misc.xml.append:1478
 msgid "data/text_misc.xml.append$//text[@name=\"doors\"]"
 msgstr "门禁子系统"
 
-#: src-ru/data/text_misc.xml.append:1478
+#: src-ru/data/text_misc.xml.append:1479
 msgid "data/text_misc.xml.append$//text[@name=\"shields\"]"
 msgstr "护盾系统"
 
-#: src-ru/data/text_misc.xml.append:1479
+#: src-ru/data/text_misc.xml.append:1480
 msgid "data/text_misc.xml.append$//text[@name=\"pilot\"]"
 msgstr "驾驶系统"
 
-#: src-ru/data/text_misc.xml.append:1480
+#: src-ru/data/text_misc.xml.append:1481
 msgid "data/text_misc.xml.append$//text[@name=\"engines\"]"
 msgstr "引擎系统"
 
-#: src-ru/data/text_misc.xml.append:1481
+#: src-ru/data/text_misc.xml.append:1482
 msgid "data/text_misc.xml.append$//text[@name=\"sensors\"]"
 msgstr "传感器子系统"
 
-#: src-ru/data/text_misc.xml.append:1482
+#: src-ru/data/text_misc.xml.append:1483
 msgid "data/text_misc.xml.append$//text[@name=\"medbay\"]"
 msgstr "医疗舱"
 
-#: src-ru/data/text_misc.xml.append:1483
+#: src-ru/data/text_misc.xml.append:1484
 msgid "data/text_misc.xml.append$//text[@name=\"weapons\"]"
 msgstr "武器系统"
 
-#: src-ru/data/text_misc.xml.append:1484
+#: src-ru/data/text_misc.xml.append:1485
 msgid "data/text_misc.xml.append$//text[@name=\"drones\"]"
 msgstr "无人机系统"
 
-#: src-ru/data/text_misc.xml.append:1485
+#: src-ru/data/text_misc.xml.append:1486
 msgid "data/text_misc.xml.append$//text[@name=\"teleporter\"]"
 msgstr "传送器"
 
-#: src-ru/data/text_misc.xml.append:1486
+#: src-ru/data/text_misc.xml.append:1487
 msgid "data/text_misc.xml.append$//text[@name=\"cloaking\"]"
 msgstr "隐形"
 
-#: src-ru/data/text_misc.xml.append:1487
+#: src-ru/data/text_misc.xml.append:1488
 msgid "data/text_misc.xml.append$//text[@name=\"artillery\"]"
 msgstr "巨炮"
 
-#: src-ru/data/text_misc.xml.append:1488
+#: src-ru/data/text_misc.xml.append:1489
 msgid "data/text_misc.xml.append$//text[@name=\"battery\"]"
 msgstr "备用电池"
 
-#: src-ru/data/text_misc.xml.append:1489
+#: src-ru/data/text_misc.xml.append:1490
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay\"]"
 msgstr "克隆舱"
 
-#: src-ru/data/text_misc.xml.append:1490
+#: src-ru/data/text_misc.xml.append:1491
 msgid "data/text_misc.xml.append$//text[@name=\"mind\"]"
 msgstr "心灵控制"
 
-#: src-ru/data/text_misc.xml.append:1491
+#: src-ru/data/text_misc.xml.append:1492
 msgid "data/text_misc.xml.append$//text[@name=\"hacking\"]"
 msgstr "黑客系统"
 
-#: src-ru/data/text_misc.xml.append:1492
+#: src-ru/data/text_misc.xml.append:1493
 msgid "data/text_misc.xml.append$//text[@name=\"reactor\"]"
 msgstr "反应堆"
 
-#: src-ru/data/text_misc.xml.append:1494
+#: src-ru/data/text_misc.xml.append:1495
 msgid "data/text_misc.xml.append$//text[@name=\"oxygen_installed\"]"
 msgstr "氧气系统已安装"
 
-#: src-ru/data/text_misc.xml.append:1495
+#: src-ru/data/text_misc.xml.append:1496
 msgid "data/text_misc.xml.append$//text[@name=\"doors_installed\"]"
 msgstr "门禁系统已安装"
 
-#: src-ru/data/text_misc.xml.append:1496
+#: src-ru/data/text_misc.xml.append:1497
 msgid "data/text_misc.xml.append$//text[@name=\"shields_installed\"]"
 msgstr "护盾已安装"
 
-#: src-ru/data/text_misc.xml.append:1497
+#: src-ru/data/text_misc.xml.append:1498
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_installed\"]"
 msgstr "驾驶系统已安装"
 
-#: src-ru/data/text_misc.xml.append:1498
+#: src-ru/data/text_misc.xml.append:1499
 msgid "data/text_misc.xml.append$//text[@name=\"engines_installed\"]"
 msgstr "引擎已安装"
 
-#: src-ru/data/text_misc.xml.append:1499
+#: src-ru/data/text_misc.xml.append:1500
 msgid "data/text_misc.xml.append$//text[@name=\"sensors_installed\"]"
 msgstr "传感器已安装"
 
-#: src-ru/data/text_misc.xml.append:1500
+#: src-ru/data/text_misc.xml.append:1501
 msgid "data/text_misc.xml.append$//text[@name=\"medbay_installed\"]"
 msgstr "医疗舱已安装"
 
-#: src-ru/data/text_misc.xml.append:1501
+#: src-ru/data/text_misc.xml.append:1502
 msgid "data/text_misc.xml.append$//text[@name=\"weapons_installed\"]"
 msgstr "武器控制系统已安装"
 
-#: src-ru/data/text_misc.xml.append:1502
+#: src-ru/data/text_misc.xml.append:1503
 msgid "data/text_misc.xml.append$//text[@name=\"drones_installed\"]"
 msgstr "无人机控制系统已安装"
 
-#: src-ru/data/text_misc.xml.append:1503
+#: src-ru/data/text_misc.xml.append:1504
 msgid "data/text_misc.xml.append$//text[@name=\"teleporter_installed\"]"
 msgstr "传送器已安装"
 
-#: src-ru/data/text_misc.xml.append:1504
+#: src-ru/data/text_misc.xml.append:1505
 msgid "data/text_misc.xml.append$//text[@name=\"cloaking_installed\"]"
 msgstr "隐形系统已安装"
 
-#: src-ru/data/text_misc.xml.append:1505
+#: src-ru/data/text_misc.xml.append:1506
 msgid "data/text_misc.xml.append$//text[@name=\"artillery_installed\"]"
 msgstr "巨炮已安装"
 
-#: src-ru/data/text_misc.xml.append:1506
+#: src-ru/data/text_misc.xml.append:1507
 msgid "data/text_misc.xml.append$//text[@name=\"battery_installed\"]"
 msgstr "备用电池已安装"
 
-#: src-ru/data/text_misc.xml.append:1507
+#: src-ru/data/text_misc.xml.append:1508
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay_installed\"]"
 msgstr "克隆舱已安装"
 
-#: src-ru/data/text_misc.xml.append:1508
+#: src-ru/data/text_misc.xml.append:1509
 msgid "data/text_misc.xml.append$//text[@name=\"mind_installed\"]"
 msgstr "心灵控制系统已安装"
 
-#: src-ru/data/text_misc.xml.append:1509
+#: src-ru/data/text_misc.xml.append:1510
 msgid "data/text_misc.xml.append$//text[@name=\"hacking_installed\"]"
 msgstr "黑客系统已安装"
 
-#: src-ru/data/text_misc.xml.append:1510
+#: src-ru/data/text_misc.xml.append:1511
 msgid "data/text_misc.xml.append$//text[@name=\"reactor_installed\"]"
 msgstr "反应堆已安装"
 
-#: src-ru/data/text_misc.xml.append:1512
+#: src-ru/data/text_misc.xml.append:1513
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_last\"]"
 msgstr "注意：该系统将占用你飞船上的最后一个空闲槽位。"
 
-#: src-ru/data/text_misc.xml.append:1513
+#: src-ru/data/text_misc.xml.append:1514
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_penultimate\"]"
 msgstr "注意：如果你安装此系统，你还会剩下一个空闲槽位。"
 
-#: src-ru/data/text_misc.xml.append:1514
+#: src-ru/data/text_misc.xml.append:1515
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_update\"]"
 msgstr "注意：如果你安装此系统，你还会剩下 \\1 个系统槽位。"
 
-#: src-ru/data/text_misc.xml.append:1515
+#: src-ru/data/text_misc.xml.append:1516
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_clonebay\"]"
 msgstr "注意：克隆舱将替换医疗舱。"
 
-#: src-ru/data/text_misc.xml.append:1516
+#: src-ru/data/text_misc.xml.append:1517
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_medbay\"]"
 msgstr "注意：医疗舱将替换克隆舱。"
 
-#: src-ru/data/text_misc.xml.append:1517
+#: src-ru/data/text_misc.xml.append:1518
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_full\"]"
 msgstr "注意：你不能再安装更多系统了。"
 
-#: src-ru/data/text_misc.xml.append:1518
+#: src-ru/data/text_misc.xml.append:1519
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_owned\"]"
 msgstr "注意：你已拥有此系统。"
 
-#: src-ru/data/text_misc.xml.append:1520
+#: src-ru/data/text_misc.xml.append:1521
 msgid "data/text_misc.xml.append$//text[@name=\"dead_crew\"]"
 msgstr "\\1 已死亡"
 
-#: src-ru/data/text_misc.xml.append:1521
+#: src-ru/data/text_misc.xml.append:1522
 msgid "data/text_misc.xml.append$//text[@name=\"traitor_crew\"]"
 msgstr "\\1 已倒向敌人"
 
-#: src-ru/data/text_misc.xml.append:1522
+#: src-ru/data/text_misc.xml.append:1523
 msgid "data/text_misc.xml.append$//text[@name=\"intruder_alert\"]"
 msgstr "登舰者在船上！"
 
-#: src-ru/data/text_misc.xml.append:1523
+#: src-ru/data/text_misc.xml.append:1524
 msgid "data/text_misc.xml.append$//text[@name=\"item_removed\"]"
 msgstr "设备已移除：\\1"
 
-#: src-ru/data/text_misc.xml.append:1525
+#: src-ru/data/text_misc.xml.append:1526
 msgid "data/text_misc.xml.append$//text[@name=\"damage_alert\"]"
 msgstr "\\1 点船体伤害"
 
-#: src-ru/data/text_misc.xml.append:1527
+#: src-ru/data/text_misc.xml.append:1528
 msgid "data/text_misc.xml.append$//text[@name=\"heal_alert\"]"
 msgstr "\\1 点船体已修复"
 
-#: src-ru/data/text_misc.xml.append:1528
+#: src-ru/data/text_misc.xml.append:1529
 msgid "data/text_misc.xml.append$//text[@name=\"heal_1_alert\"]"
 msgstr "1 点船体已修复"
 
-#: src-ru/data/text_misc.xml.append:1530
+#: src-ru/data/text_misc.xml.append:1531
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_delayed\"]"
 msgstr "舰队延迟了 \\1 次跃迁"
 
-#: src-ru/data/text_misc.xml.append:1531
+#: src-ru/data/text_misc.xml.append:1532
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_delayed_1\"]"
 msgstr "舰队延迟了 1 次跃迁"
 
-#: src-ru/data/text_misc.xml.append:1533
+#: src-ru/data/text_misc.xml.append:1534
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_speed\"]"
 msgstr "舰队已接近 \\1 次跃迁"
 
-#: src-ru/data/text_misc.xml.append:1534
+#: src-ru/data/text_misc.xml.append:1535
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_speed_1\"]"
 msgstr "舰队已接近 1 次跃迁"
 
-#: src-ru/data/text_misc.xml.append:1538
+#: src-ru/data/text_misc.xml.append:1539
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_title_gameover\"]"
 msgstr "失败"
 
-#: src-ru/data/text_misc.xml.append:1539
+#: src-ru/data/text_misc.xml.append:1540
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_title_victory\"]"
 msgstr "胜利！"
 
-#: src-ru/data/text_misc.xml.append:1541
+#: src-ru/data/text_misc.xml.append:1542
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_stats\"]"
 msgstr "得分"
 
-#: src-ru/data/text_misc.xml.append:1542
+#: src-ru/data/text_misc.xml.append:1543
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_restart\"]"
 msgstr "重新开始"
 
-#: src-ru/data/text_misc.xml.append:1543
+#: src-ru/data/text_misc.xml.append:1544
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_hangar\"]"
 msgstr "机库"
 
-#: src-ru/data/text_misc.xml.append:1544
+#: src-ru/data/text_misc.xml.append:1545
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_mainmenu\"]"
 msgstr "菜单"
 
-#: src-ru/data/text_misc.xml.append:1545
+#: src-ru/data/text_misc.xml.append:1546
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_quit\"]"
 msgstr "出口"
 
-#: src-ru/data/text_misc.xml.append:1547
+#: src-ru/data/text_misc.xml.append:1548
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_win\"]"
 msgstr "恭喜！你摧毁了叛军旗舰，确保了联邦的胜利！"
 
-#: src-ru/data/text_misc.xml.append:1548
+#: src-ru/data/text_misc.xml.append:1549
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_win_demo\"]"
 msgstr "恭喜！你摧毁了不可一世的海盗，通关了演示版！"
 
-#: src-ru/data/text_misc.xml.append:1550
+#: src-ru/data/text_misc.xml.append:1551
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_crew\"]"
 msgstr "船员已死亡。你的飞船将永远在太空中漂流。或者落入拾荒者之手。"
 
-#: src-ru/data/text_misc.xml.append:1551
+#: src-ru/data/text_misc.xml.append:1552
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_blowup\"]"
 msgstr "最后一次爆炸对你来说是致命的，将你的飞船炸成了碎片。"
 
-#: src-ru/data/text_misc.xml.append:1552
+#: src-ru/data/text_misc.xml.append:1553
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_fedbase\"]"
 msgstr "叛军飞船摧毁了联邦基地。一切都结束了，他们赢了。"
 
-#: src-ru/data/text_misc.xml.append:1553
+#: src-ru/data/text_misc.xml.append:1554
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_tutorial\"]"
 msgstr "你不知怎么的在训练任务中死掉了。你可以再试一次，但这对你的任务来说不是好兆头。"
 
-#: src-ru/data/text_misc.xml.append:1555
+#: src-ru/data/text_misc.xml.append:1556
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_jump_noJump\"]"
 msgstr "敌舰关闭了你的超光速驱动器。无处可逃，如果你想活命，就必须击败敌舰！"
 
-#: src-ru/data/text_misc.xml.append:1559
+#: src-ru/data/text_misc.xml.append:1560
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_comma\"]"
 msgstr "，"
 
-#: src-ru/data/text_misc.xml.append:1560
+#: src-ru/data/text_misc.xml.append:1561
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_and\"]"
 msgstr "与"
 
-#: src-ru/data/text_misc.xml.append:1562
+#: src-ru/data/text_misc.xml.append:1563
 msgid "data/text_misc.xml.append$//text[@name=\"thank_ship\"]"
 msgstr "凭借英勇事迹："
 
-#: src-ru/data/text_misc.xml.append:1564
+#: src-ru/data/text_misc.xml.append:1565
 msgid "data/text_misc.xml.append$//text[@name=\"thank_crew\"]"
 msgstr "以及其英勇的船员："
 
-#: src-ru/data/text_misc.xml.append:1566
+#: src-ru/data/text_misc.xml.append:1567
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory\"]"
 msgstr "叛军旗舰被摧毁，使其舰队陷入混乱，确保了联邦的胜利。"
 
-#: src-ru/data/text_misc.xml.append:1568
+#: src-ru/data/text_misc.xml.append:1569
 msgid "data/text_misc.xml.append$//text[@name=\"game_from\"]"
 msgstr "模组"
 
-#: src-ru/data/text_misc.xml.append:1569
+#: src-ru/data/text_misc.xml.append:1570
 msgid "data/text_misc.xml.append$//text[@name=\"subset_games\"]"
 msgstr "Arsenal +"
 
-#: src-ru/data/text_misc.xml.append:1571
+#: src-ru/data/text_misc.xml.append:1572
 msgid "data/text_misc.xml.append$//text[@name=\"created_by\"]"
 msgstr "开发者："
 
-#: src-ru/data/text_misc.xml.append:1572
+#: src-ru/data/text_misc.xml.append:1573
 msgid "data/text_misc.xml.append$//text[@name=\"matthew_justin\"]"
 msgstr "亚历山大 \"bamalf\" 阿尔费罗夫，\\n康斯坦丁 \"KBA3u\" 莫罗佐夫，\\n姆斯季斯拉夫 \"Al'Hazrad\" 索科洛夫"
 
-#: src-ru/data/text_misc.xml.append:1574
+#: src-ru/data/text_misc.xml.append:1575
 msgid "data/text_misc.xml.append$//text[@name=\"addition_code\"]"
 msgstr "Hyperspace 开发者："
 
-#: src-ru/data/text_misc.xml.append:1575
+#: src-ru/data/text_misc.xml.append:1576
 msgid "data/text_misc.xml.append$//text[@name=\"andrew_church\"]"
 msgstr "TheSwiftTiger, Admiral Billy, mathchamp93, laszlogasd 及其他"
 
-#: src-ru/data/text_misc.xml.append:1577
+#: src-ru/data/text_misc.xml.append:1578
 msgid "data/text_misc.xml.append$//text[@name=\"music_by\"]"
 msgstr "音乐："
 
-#: src-ru/data/text_misc.xml.append:1578
+#: src-ru/data/text_misc.xml.append:1579
 msgid "data/text_misc.xml.append$//text[@name=\"ben_prunty\"]"
 msgstr "德米特里 \"Luminis Insigne\" 扎莫塔耶夫"
 
-#: src-ru/data/text_misc.xml.append:1580
+#: src-ru/data/text_misc.xml.append:1581
 msgid "data/text_misc.xml.append$//text[@name=\"writing_by\"]"
 msgstr "教团、HAL和水晶族音乐："
 
-#: src-ru/data/text_misc.xml.append:1581
+#: src-ru/data/text_misc.xml.append:1582
 msgid "data/text_misc.xml.append$//text[@name=\"tom_jubert\"]"
 msgstr "基辅·斯维特尼科夫"
 
-#: src-ru/data/text_misc.xml.append:1583
+#: src-ru/data/text_misc.xml.append:1584
 msgid "data/text_misc.xml.append$//text[@name=\"guest_writer\"]"
 msgstr "英文翻译："
 
-#: src-ru/data/text_misc.xml.append:1584
+#: src-ru/data/text_misc.xml.append:1585
 msgid "data/text_misc.xml.append$//text[@name=\"chris_a\"]"
 msgstr "BlizzArchonJ"
 
-#: src-ru/data/text_misc.xml.append:1586
+#: src-ru/data/text_misc.xml.append:1587
 msgid "data/text_misc.xml.append$//text[@name=\"additional_art\"]"
 msgstr "原始游戏："
 
-#: src-ru/data/text_misc.xml.append:1587
+#: src-ru/data/text_misc.xml.append:1588
 msgid "data/text_misc.xml.append$//text[@name=\"bryan_ma\"]"
 msgstr "Subset Games"
 
-#: src-ru/data/text_misc.xml.append:1589
+#: src-ru/data/text_misc.xml.append:1590
 msgid "data/text_misc.xml.append$//text[@name=\"editing\"]"
 msgstr "俄语版本："
 
-#: src-ru/data/text_misc.xml.append:1590
+#: src-ru/data/text_misc.xml.append:1591
 msgid "data/text_misc.xml.append$//text[@name=\"alison_w\"]"
 msgstr "vk.com/ftl154 小组"
 
-#: src-ru/data/text_misc.xml.append:1592
+#: src-ru/data/text_misc.xml.append:1593
 msgid "data/text_misc.xml.append$//text[@name=\"additional_testing\"]"
 msgstr "感谢宝贵贡献："
 
-#: src-ru/data/text_misc.xml.append:1593
+#: src-ru/data/text_misc.xml.append:1594
 msgid "data/text_misc.xml.append$//text[@name=\"family_friends\"]"
 msgstr ""
-"Alex Vinst, Anthonest, Arfy, Biohazard063, choosechee, Chrono Vortex, D:\\s"
-"ide,\n"
-"DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, "
-"Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (来"
-"自 GO BALLISTIC! 2.0 mod 和 ROGUE AI CRUISERS mod), Sleeper Service, "
-"TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, "
-"Woona 及其他"
+"Alex Vinst, Anthonest, Arfy, Biohazard063, choosechee, Chrono Vortex, D:\\side,\n"
+"DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (来自 GO BALLISTIC! 2.0 mod 和 ROGUE AI CRUISERS mod), Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, Woona 及其他"
 
-#: src-ru/data/text_misc.xml.append:1599
+#: src-ru/data/text_misc.xml.append:1600
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_fr\"]"
 msgstr "本地化由 Riotloc 公司完成"
 
-#: src-ru/data/text_misc.xml.append:1600
+#: src-ru/data/text_misc.xml.append:1601
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_fr_names\"]"
 msgstr "弗拉基米尔·科诺普利茨基，亚历山大·斯卡科夫斯基"
 
-#: src-ru/data/text_misc.xml.append:1601
+#: src-ru/data/text_misc.xml.append:1602
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_it\"]"
 msgstr "意大利语版本"
 
-#: src-ru/data/text_misc.xml.append:1602
+#: src-ru/data/text_misc.xml.append:1603
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_it_names\"]"
 msgstr "阿兰·德莱皮亚内，法比奥·博尔托洛蒂，洛伦佐·贝托鲁奇，马泰奥·斯卡拉贝利"
 
-#: src-ru/data/text_misc.xml.append:1603
+#: src-ru/data/text_misc.xml.append:1604
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_de\"]"
 msgstr "德语版本"
 
-#: src-ru/data/text_misc.xml.append:1604
+#: src-ru/data/text_misc.xml.append:1605
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_de_names\"]"
 msgstr "乌尔里希·翁肯，康斯坦茨·沃格尔，罗兰·斯特鲁贝"
 
-#: src-ru/data/text_misc.xml.append:1605
+#: src-ru/data/text_misc.xml.append:1606
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_es\"]"
 msgstr "西班牙语版本"
 
-#: src-ru/data/text_misc.xml.append:1606
+#: src-ru/data/text_misc.xml.append:1607
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_es_names\"]"
 msgstr "阿尔巴·卡尔沃，拉蒙·门德斯，胡安·拉蒙·阿塞多，费尔南多·莫雷拉斯"
 
-#: src-ru/data/text_misc.xml.append:1607
+#: src-ru/data/text_misc.xml.append:1608
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pl\"]"
 msgstr "波兰语版本"
 
-#: src-ru/data/text_misc.xml.append:1608
+#: src-ru/data/text_misc.xml.append:1609
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pl_names\"]"
 msgstr "安杰伊·弗罗布莱夫斯基，马尔钦·塞尔基斯，马切伊·科瓦利克"
 
-#: src-ru/data/text_misc.xml.append:1609
+#: src-ru/data/text_misc.xml.append:1610
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pt_BR\"]"
 msgstr "葡萄牙语（巴西）版本"
 
-#: src-ru/data/text_misc.xml.append:1610
+#: src-ru/data/text_misc.xml.append:1611
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pt_BR_names\"]"
 msgstr "布鲁诺·迪亚斯，卡约·乌利亚纳，迭戈·佩雷斯，特里·巴内特"
 
-#: src-ru/data/text_misc.xml.append:1611
+#: src-ru/data/text_misc.xml.append:1612
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ru\"]"
 msgstr "俄语版本"
 
-#: src-ru/data/text_misc.xml.append:1612
+#: src-ru/data/text_misc.xml.append:1613
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ru_names\"]"
 msgstr "vk.com/ftl154 小组"
 
-#: src-ru/data/text_misc.xml.append:1614
+#: src-ru/data/text_misc.xml.append:1615
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja\"]"
 msgstr "日语本地化："
 
-#: src-ru/data/text_misc.xml.append:1615
+#: src-ru/data/text_misc.xml.append:1616
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja_84\"]"
 msgstr "8-4, Ltd."
 
-#: src-ru/data/text_misc.xml.append:1616
+#: src-ru/data/text_misc.xml.append:1617
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja_names\"]"
 msgstr "小川公孝，松下裕之，德莫特·克里根，格雷姆·霍华德，约翰·里恰尔迪"
 
-#: src-ru/data/text_misc.xml.append:1618
+#: src-ru/data/text_misc.xml.append:1619
 msgid "data/text_misc.xml.append$//text[@name=\"kickstarter\"]"
 msgstr "感谢我们在 Kickstarter 上所有极其慷慨的赞助者，特别感谢："
 
-#: src-ru/data/text_misc.xml.append:1620
+#: src-ru/data/text_misc.xml.append:1621
 msgid "data/text_misc.xml.append$//text[@name=\"third_party\"]"
 msgstr "FTL 使用了以下第三方库"
 
-#: src-ru/data/text_misc.xml.append:1621
+#: src-ru/data/text_misc.xml.append:1622
 msgid "data/text_misc.xml.append$//text[@name=\"folder\"]"
 msgstr "（详情请参阅附带的许可证文件夹或自述文件）"
 
-#: src-ru/data/text_misc.xml.append:1622
+#: src-ru/data/text_misc.xml.append:1623
 msgid "data/text_misc.xml.append$//text[@name=\"freetype\"]"
 msgstr ""
 "FreeType 项目 (c) 1996-2002, 2006 by David Turner, Robert Wilhelm, and Werner "
 "Lemberg"
 
-#: src-ru/data/text_misc.xml.append:1623
+#: src-ru/data/text_misc.xml.append:1624
 msgid "data/text_misc.xml.append$//text[@name=\"bass\"]"
 msgstr "BASS 音频库 (c) 1999-2012 Un4seen Developments Ltd"
 
-#: src-ru/data/text_misc.xml.append:1625
+#: src-ru/data/text_misc.xml.append:1626
 msgid "data/text_misc.xml.append$//text[@name=\"rapidxml\"]"
 msgstr "RapidXML (c) 2006, 2007 Marcin Kalicinski"
 
-#: src-ru/data/text_misc.xml.append:1628
+#: src-ru/data/text_misc.xml.append:1629
 msgid "data/text_misc.xml.append$//text[@name=\"touch_skip\"]"
 msgstr "长按屏幕可跳过制作人员名单。"
 
-#: src-ru/data/text_misc.xml.append:1631
+#: src-ru/data/text_misc.xml.append:1632
 msgid "data/text_misc.xml.append$//text[@name=\"tip_laser_blood\"]"
 msgstr "流血每秒造成 3 点伤害，持续 10 秒。持续时间最多叠加 4 次。化身和无人机不受流血影响。"
 
-#: src-ru/data/text_misc.xml.append:1633
+#: src-ru/data/text_misc.xml.append:1634
 msgid "data/text_misc.xml.append$//text[@name=\"autofire_tooltip_on\"]"
 msgstr "自动开火已开启。武器将继续向目标射击。\\n\\n双击可切换射击模式。"
 
-#: src-ru/data/text_misc.xml.append:1634
+#: src-ru/data/text_misc.xml.append:1635
 msgid "data/text_misc.xml.append$//text[@name=\"autofire_tooltip_off\"]"
 msgstr "自动开火已关闭。武器将向目标射击一次。\\n\\n双击可切换射击模式。"
 
-#: src-ru/data/text_misc.xml.append:1636
+#: src-ru/data/text_misc.xml.append:1637
 msgid "data/text_misc.xml.append$//text[@name=\"health_tooltip\"]"
 msgstr "生命值：\\1/\\2"
 
-#: src-ru/data/text_misc.xml.append:1637
+#: src-ru/data/text_misc.xml.append:1638
 msgid "data/text_misc.xml.append$//text[@name=\"death_tooltip\"]"
 msgstr "濒死"
 
-#: src-ru/data/text_misc.xml.append:1639
+#: src-ru/data/text_misc.xml.append:1640
 msgid "data/text_misc.xml.append$//text[@name=\"save_stations_tooltip\"]"
 msgstr "保存当前船员位置 \\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1640
+#: src-ru/data/text_misc.xml.append:1641
 msgid "data/text_misc.xml.append$//text[@name=\"ret_stations_tooltip\"]"
 msgstr "将船员送回到保存的位置 \\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1642
+#: src-ru/data/text_misc.xml.append:1643
 msgid "data/text_misc.xml.append$//text[@name=\"ship_info\"]"
 msgstr "打开飞船信息。当飞船处于危险状态时不可用。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1643
+#: src-ru/data/text_misc.xml.append:1644
 msgid "data/text_misc.xml.append$//text[@name=\"open_store\"]"
 msgstr "打开本地商店。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1644
+#: src-ru/data/text_misc.xml.append:1645
 msgid "data/text_misc.xml.append$//text[@name=\"open_options\"]"
 msgstr "打开设置菜单"
 
-#: src-ru/data/text_misc.xml.append:1646
+#: src-ru/data/text_misc.xml.append:1647
 msgid "data/text_misc.xml.append$//text[@name=\"mind_controlled_tooltip\"]"
 msgstr "被控制"
 
-#: src-ru/data/text_misc.xml.append:1648
+#: src-ru/data/text_misc.xml.append:1649
 msgid "data/text_misc.xml.append$//text[@name=\"rearrange\"]"
 msgstr "点击并拖拽以交换位置"
 
-#: src-ru/data/text_misc.xml.append:1650
+#: src-ru/data/text_misc.xml.append:1651
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey\"]"
 msgstr "快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1652
+#: src-ru/data/text_misc.xml.append:1653
 msgid "data/text_misc.xml.append$//text[@name=\"jump_button\"]"
 msgstr "打开星图以选择下一个跃迁点。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1653
+#: src-ru/data/text_misc.xml.append:1654
 msgid "data/text_misc.xml.append$//text[@name=\"activate_battery\"]"
 msgstr "激活备用电池，提供额外的反应堆能量槽\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1654
+#: src-ru/data/text_misc.xml.append:1655
 msgid "data/text_misc.xml.append$//text[@name=\"mind_button\"]"
 msgstr "暂时将指定舱室内的敌人变成盟友。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1655
+#: src-ru/data/text_misc.xml.append:1656
 msgid "data/text_misc.xml.append$//text[@name=\"hack_button\"]"
 msgstr "发射入侵无人机，消耗 1 个无人机部件。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1656
+#: src-ru/data/text_misc.xml.append:1657
 msgid "data/text_misc.xml.append$//text[@name=\"pulse_button_broken\"]"
 msgstr "入侵无效，系统已被摧毁"
 
-#: src-ru/data/text_misc.xml.append:1657
+#: src-ru/data/text_misc.xml.append:1658
 msgid "data/text_misc.xml.append$//text[@name=\"open_doors\"]"
 msgstr "打开飞船上的所有门。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1658
+#: src-ru/data/text_misc.xml.append:1659
 msgid "data/text_misc.xml.append$//text[@name=\"close_doors\"]"
 msgstr "关闭飞船上的所有门。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1659
+#: src-ru/data/text_misc.xml.append:1660
 msgid "data/text_misc.xml.append$//text[@name=\"tele_ret\"]"
 msgstr "将指定房间内的船员召回传送舱。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1660
+#: src-ru/data/text_misc.xml.append:1661
 msgid "data/text_misc.xml.append$//text[@name=\"tele_send\"]"
 msgstr "派遣传送舱内的船员登上敌方飞船。\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1661
+#: src-ru/data/text_misc.xml.append:1662
 msgid "data/text_misc.xml.append$//text[@name=\"cloak_button\"]"
 msgstr "暂时隐藏飞船，停止敌方武器充能并增加 60 点闪避\\n快捷键：\\1"
 
-#: src-ru/data/text_misc.xml.append:1663
+#: src-ru/data/text_misc.xml.append:1664
 msgid "data/text_misc.xml.append$//text[@name=\"powered_deployed\"]"
 msgstr "已连接（工作中）：已激活并正在执行其功能。"
 
-#: src-ru/data/text_misc.xml.append:1664
+#: src-ru/data/text_misc.xml.append:1665
 msgid "data/text_misc.xml.append$//text[@name=\"unpowered_deployed\"]"
 msgstr "已连接（不工作）：未激活，但可以不消耗无人机部件开启。"
 
-#: src-ru/data/text_misc.xml.append:1665
+#: src-ru/data/text_misc.xml.append:1666
 msgid "data/text_misc.xml.append$//text[@name=\"undeployed\"]"
 msgstr "未连接：首次启动将消耗一个无人机部件。"
 
-#: src-ru/data/text_misc.xml.append:1666
+#: src-ru/data/text_misc.xml.append:1667
 msgid "data/text_misc.xml.append$//text[@name=\"rebuilding\"]"
 msgstr "无人机在被意外摧毁后正在恢复。"
 
-#: src-ru/data/text_misc.xml.append:1668
+#: src-ru/data/text_misc.xml.append:1669
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_autofire_off\"]"
 msgstr "点击一次进行装备，点击两次进行装备并切换到连射模式。"
 
-#: src-ru/data/text_misc.xml.append:1669
+#: src-ru/data/text_misc.xml.append:1670
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_autofire_on\"]"
 msgstr "点击一次进行自动射击。点击两次进行单次射击。"
 
-#: src-ru/data/text_misc.xml.append:1673
+#: src-ru/data/text_misc.xml.append:1674
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_yes\"]"
 msgstr "是"
 
-#: src-ru/data/text_misc.xml.append:1674
+#: src-ru/data/text_misc.xml.append:1675
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_no\"]"
 msgstr "无"
 
-#: src-ru/data/text_misc.xml.append:1676
+#: src-ru/data/text_misc.xml.append:1677
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_clonebay\"]"
 msgstr "你确定吗？\\n克隆舱将取代你的医疗舱。"
 
-#: src-ru/data/text_misc.xml.append:1677
+#: src-ru/data/text_misc.xml.append:1678
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_last_system\"]"
 msgstr "这是你飞船上的最后一个系统槽位。\\n你确定吗？"
 
-#: src-ru/data/text_misc.xml.append:1678
+#: src-ru/data/text_misc.xml.append:1682
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_crash\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1683
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_bug\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1684
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_create\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1685
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_skip\"]"
+msgstr "否"
+
+#: src-ru/data/text_misc.xml.append:1686
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_where\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1687
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_discord\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1688
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_github\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1689
+msgid ""
+"data/text_misc.xml.append$//text[@name=\"confirm_report_instructions_discord\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1690
+msgid ""
+"data/text_misc.xml.append$//text[@name=\"confirm_report_instructions_github\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1691
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_view\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1692
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_done\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1693
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_failed\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1694
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_failed_okay\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1697
+msgid "data/text_misc.xml.append$//text[@name=\"tooltip_supergrid\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1699
+msgid "data/text_misc.xml.append$//text[@name=\"tooltip_bugreport\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1701
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_medbay\"]"
 msgstr "你确定吗？\\n医疗舱将取代你的克隆舱。"
 
-#: src-ru/data/text_misc.xml.append:1679
+#: src-ru/data/text_misc.xml.append:1702
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_dismiss\"]"
 msgstr "该船员\\n将被永久\\n损失。\\n你确定吗？"
 
-#: src-ru/data/text_misc.xml.append:1680
+#: src-ru/data/text_misc.xml.append:1703
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_end_game\"]"
 msgstr "你确定吗？\\n本次飞行的进度将丢失。"
 
-#: src-ru/data/text_misc.xml.append:1681
+#: src-ru/data/text_misc.xml.append:1704
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_leave_crew\"]"
 msgstr "你确定吗？\\n你的队伍\\n仍在\\n敌方飞船上。"
 
-#: src-ru/data/text_misc.xml.append:1682
+#: src-ru/data/text_misc.xml.append:1705
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_new_game\"]"
 msgstr "注意：\\n你确定要开始新游戏吗？你之前的飞行将会丢失。"
 
-#: src-ru/data/text_misc.xml.append:1683
+#: src-ru/data/text_misc.xml.append:1706
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_reset_keys\"]"
 msgstr "重置所有\\n按键设置？"
 
-#: src-ru/data/text_misc.xml.append:1684
+#: src-ru/data/text_misc.xml.append:1707
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_wipe_profile\"]"
 msgstr "你确定吗？\\n你将失去\\n所有已解锁的飞船、\\n成就\\n和统计数据。"
 
-#: src-ru/data/text_misc.xml.append:1688
+#: src-ru/data/text_misc.xml.append:1711
 msgid "data/text_misc.xml.append$//text[@name=\"button_cancel\"]"
 msgstr "取消"
 
-#: src-ru/data/text_misc.xml.append:1689
+#: src-ru/data/text_misc.xml.append:1712
 msgid "data/text_misc.xml.append$//text[@name=\"button_confirm\"]"
 msgstr "确认"
 
-#: src-ru/data/text_misc.xml.append:1691
+#: src-ru/data/text_misc.xml.append:1714
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_continue\"]"
 msgstr "下一步"
 
-#: src-ru/data/text_misc.xml.append:1693
+#: src-ru/data/text_misc.xml.append:1716
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_off\"]"
 msgstr "关闭"
 
-#: src-ru/data/text_misc.xml.append:1695
+#: src-ru/data/text_misc.xml.append:1718
 msgid "data/text_misc.xml.append$//text[@name=\"window_title\"]"
 msgstr "FTL: Hyperspace Arsenal +"
 
-#: src-ru/data/text_misc.xml.append:1696
+#: src-ru/data/text_misc.xml.append:1719
 msgid "data/text_misc.xml.append$//text[@name=\"error_resolution\"]"
 msgstr ""
 "注意：FTL 最低要求 1280x720 或更高的分辨率，看起来你的电脑不支持。如果你认为这是误报，请联系 Subset "
 "Games: devteam@ftlgame.com。"
 
-#: src-ru/data/text_misc.xml.append:1697
+#: src-ru/data/text_misc.xml.append:1720
 msgid "data/text_misc.xml.append$//text[@name=\"error_manual_resolution\"]"
 msgstr "抱歉，以手动选择的分辨率（\\1 x \\2）启动游戏失败。已自动切换回窗口模式。"
 
-#: src-ru/data/text_misc.xml.append:1698
+#: src-ru/data/text_misc.xml.append:1721
 msgid "data/text_misc.xml.append$//text[@name=\"error_native_fullscreen\"]"
 msgstr "抱歉，FTL 无法以默认的全屏模式启动。你的显示器不支持所需的分辨率（1280 x 720）。视频设置已自动恢复为拉伸全屏模式。"
 
-#: src-ru/data/text_misc.xml.append:1699
+#: src-ru/data/text_misc.xml.append:1722
 msgid "data/text_misc.xml.append$//text[@name=\"error_framebuffer\"]"
 msgstr "你的系统不支持帧缓冲，因此拉伸全屏模式和游戏窗口大小调整不可用。"
 
-#: src-ru/data/text_misc.xml.append:1700
+#: src-ru/data/text_misc.xml.append:1723
 msgid "data/text_misc.xml.append$//text[@name=\"error_framebuffer_stretch\"]"
 msgstr "你的系统不支持帧缓冲，因此拉伸全屏模式和游戏窗口大小调整不可用。已自动切换回带边框的全屏模式。"
 
-#: src-ru/data/text_misc.xml.append:1701
+#: src-ru/data/text_misc.xml.append:1724
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed\"]"
 msgstr "你更改了屏幕设置。要保存它们吗？\\n\\n更改将在 \\1 后自动撤销"
 
-#: src-ru/data/text_misc.xml.append:1702
+#: src-ru/data/text_misc.xml.append:1725
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed_seconds\"]"
 msgstr "\\1 秒"
 
-#: src-ru/data/text_misc.xml.append:1703
+#: src-ru/data/text_misc.xml.append:1726
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed_1_second\"]"
 msgstr "1 秒"
 
-#: src-ru/data/text_misc.xml.append:1704
+#: src-ru/data/text_misc.xml.append:1727
 msgid "data/text_misc.xml.append$//text[@name=\"keep_screen\"]"
 msgstr "保存屏幕设置"
 
-#: src-ru/data/text_misc.xml.append:1705
+#: src-ru/data/text_misc.xml.append:1728
 msgid "data/text_misc.xml.append$//text[@name=\"revert_screen\"]"
 msgstr "撤销更改"
 
-#: src-ru/data/text_misc.xml.append:1707
+#: src-ru/data/text_misc.xml.append:1730
 msgid "data/text_misc.xml.append$//text[@name=\"mind_blocked_shield\"]"
 msgstr "不能透过超级护盾使用精神控制。"
 
-#: src-ru/data/text_misc.xml.append:1708
+#: src-ru/data/text_misc.xml.append:1731
 msgid "data/text_misc.xml.append$//text[@name=\"mind_blocked_blackout\"]"
 msgstr "不能在你看不到生物的舱室使用精神控制。"
 
-#: src-ru/data/text_misc.xml.append:1710
+#: src-ru/data/text_misc.xml.append:1733
 msgid "data/text_misc.xml.append$//text[@name=\"rename\"]"
 msgstr "按 ENTER 或 ESCAPE 键\\n确认。"
 
-#: src-ru/data/text_misc.xml.append:1712
+#: src-ru/data/text_misc.xml.append:1735
 msgid "data/text_misc.xml.append$//text[@name=\"stations_saved\"]"
 msgstr "位置已保存！"
 
-#: src-ru/data/text_misc.xml.append:1713
+#: src-ru/data/text_misc.xml.append:1736
 msgid "data/text_misc.xml.append$//text[@name=\"no_stations\"]"
 msgstr "位置未保存！"
 
-#: src-ru/data/text_misc.xml.append:1714
+#: src-ru/data/text_misc.xml.append:1737
 msgid "data/text_misc.xml.append$//text[@name=\"return_stations\"]"
 msgstr "正在返回位置！"
 
-#: src-ru/data/text_misc.xml.append:1716
+#: src-ru/data/text_misc.xml.append:1739
 msgid "data/text_misc.xml.append$//text[@name=\"nameless_one\"]"
 msgstr "无名"
 
-#: src-ru/data/text_misc.xml.append:1718
+#: src-ru/data/text_misc.xml.append:1741
 msgid "data/text_misc.xml.append$//text[@name=\"game_center\"]"
 msgstr "正在等待 Game Center"
 
-#: src-ru/data/text_misc.xml.append:1719
+#: src-ru/data/text_misc.xml.append:1742
 msgid "data/text_misc.xml.append$//text[@name=\"game_center_slow\"]"
 msgstr "如果 Game Center 无响应，你可以在“设置”应用的 FTL 页面中禁用它。"
 
-#: src-ru/data/text_misc.xml.append:1720
+#: src-ru/data/text_misc.xml.append:1743
 msgid "data/text_misc.xml.append$//text[@name=\"game_center_disabled\"]"
 msgstr "注意：Game Center 支持已禁用。"
 
-#: src-ru/data/text_misc.xml.append:1722
+#: src-ru/data/text_misc.xml.append:1745
 msgid "data/text_misc.xml.append$//text[@name=\"default_dead_crew\"]"
 msgstr "你的船员将会被怀念。"
 
-#: src-ru/data/text_misc.xml.append:1724
+#: src-ru/data/text_misc.xml.append:1747
 msgid "data/text_misc.xml.append$//text[@name=\"first_run_tip_pc\"]"
 msgstr "提示：按 ESCAPE 键打开游戏菜单。你可以重新启动游戏或更改设置。"
 
-#: src-ru/data/text_misc.xml.append:1725
+#: src-ru/data/text_misc.xml.append:1748
 msgid "data/text_misc.xml.append$//text[@name=\"first_run_tip_ipad\"]"
 msgstr "提示：点击屏幕右上角的“选项”按钮打开游戏菜单。你可以重新启动游戏或更改设置。"
 
-#: src-ru/data/text_misc.xml.append:1727
+#: src-ru/data/text_misc.xml.append:1750
 msgid "data/text_misc.xml.append$//text[@name=\"demo_locked\"]"
 msgstr "在 FTL 演示版中不可用"
 
-#: src-ru/data/text_misc.xml.append:1729
+#: src-ru/data/text_misc.xml.append:1752
 msgid "data/text_misc.xml.append$//text[@name=\"beam_tutorial\"]"
 msgstr ""
 "光束武器可以击中多个房间。瞄准时，用手指滑动以绘制初始轨迹。\\n\\n用一根手指拖动可以改变轨迹角度；用两根手指可以改变位置。多尝试以获得最佳瞄准轨迹！"
 
-#: src-ru/data/text_misc.xml.append:1731
+#: src-ru/data/text_misc.xml.append:1754
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_extra_crew_1\"]"
 msgstr "汤姆"
 
-#: src-ru/data/text_misc.xml.append:1732
+#: src-ru/data/text_misc.xml.append:1755
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_extra_crew_2\"]"
 msgstr "莫娜"
 
-#: src-ru/data/text_misc.xml.append:1734
+#: src-ru/data/text_misc.xml.append:1757
 msgid "data/text_misc.xml.append$//text[@name=\"loading\"]"
 msgstr "加载中"
 
-#: src-ru/data/text_misc.xml.append:1736
+#: src-ru/data/text_misc.xml.append:1759
 msgid "data/text_misc.xml.append$//text[@name=\"save_error\"]"
 msgstr ""
 "无法保存你的进度。\\n\\n请退出游戏，并检查你的杀毒软件是否阻止了游戏进程。\\n\\n如果问题仍然存在，请通过 contact@subsetgames.com 与我们联系。"
 
-#: src-ru/data/text_misc.xml.append:1740
+#: src-ru/data/text_misc.xml.append:1763
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory_true_end\"]"
 msgstr ""
 "你恰好出现在联邦基地附近，叛军旗舰正在攻击它。在与黑色旗舰的战斗中磨练出的技巧让你毫不费力地摧毁了叛军。联邦再无威胁，而你将作为英雄被永远铭记。"
 
-#: src-ru/data/text_misc.xml.append:1743
+#: src-ru/data/text_misc.xml.append:1766
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_more\"]"
 msgstr "还有更多"
 
-#: src-ru/data/text_misc.xml.append:1744
+#: src-ru/data/text_misc.xml.append:1767
 msgid "data/text_misc.xml.append$//text[@name=\"thank_ai\"]"
 msgstr "由精确的机载 AI 操控"
 
-#: src-ru/data/text_misc.xml.append:1745
+#: src-ru/data/text_misc.xml.append:1768
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ko\"]"
 msgstr "粉丝韩语翻译："
 
-#: src-ru/data/text_misc.xml.append:1746
+#: src-ru/data/text_misc.xml.append:1769
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ko_names\"]"
 msgstr "H20, nedsociety"
 
-#: src-ru/data/text_misc.xml.append:1747
+#: src-ru/data/text_misc.xml.append:1770
 msgid "data/text_misc.xml.append$//text[@name=\"font\"]"
 msgstr "'Half-Life 1 + 2' 字体经 freakyfonts.de 许可使用（在此翻译版本中已不适用）"
 
-#: src-ru/data/text_misc.xml.append:1748
+#: src-ru/data/text_misc.xml.append:1771
 msgid "data/text_misc.xml.append$//text[@name=\"font_halflife\"]"
 msgstr "'Half-Life 1 + 2' 字体经 freakyfonts.de 许可使用（在此翻译版本中已不适用）"
 
-#: src-ru/data/text_misc.xml.append:1749
+#: src-ru/data/text_misc.xml.append:1772
 msgid "data/text_misc.xml.append$//text[@name=\"font_dotgothic\"]"
 msgstr "'DotGothic' 字体经 Fontworks Inc. 许可使用。"
 
-#: src-ru/data/text_misc.xml.append:1752
+#: src-ru/data/text_misc.xml.append:1775
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_project\"]"
 msgstr "Hyperspace 项目"
 
-#: src-ru/data/text_misc.xml.append:1753
+#: src-ru/data/text_misc.xml.append:1776
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_developed_by\"]"
 msgstr "开发者："
 
-#: src-ru/data/text_misc.xml.append:1754
+#: src-ru/data/text_misc.xml.append:1777
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_developed_names\"]"
 msgstr ""
@@ -5122,20 +5176,20 @@ msgstr ""
 "mathchamp93, Mr. Doom (Nasa62), Chrono Vortex, Pepson, ranhai, "
 "sillysandvich, The Dumb Dino"
 
-#: src-ru/data/text_misc.xml.append:1755
+#: src-ru/data/text_misc.xml.append:1778
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_art\"]"
 msgstr "额外美术："
 
-#: src-ru/data/text_misc.xml.append:1756
+#: src-ru/data/text_misc.xml.append:1779
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_art_names\"]"
 msgstr "SaltyFriedRice"
 
-#: src-ru/data/text_misc.xml.append:1757
+#: src-ru/data/text_misc.xml.append:1780
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_contributors\"]"
 msgstr "额外合作："
 
-#: src-ru/data/text_misc.xml.append:1758
+#: src-ru/data/text_misc.xml.append:1781
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_contributors_names\"]"
 msgstr ""
@@ -5144,955 +5198,967 @@ msgstr ""
 "Vertaalfout, BobThePotat0, Gabriel Cooper, Fishhh, neopryne, Alder, Julk, "
 "bibo38, DeserPrinter \\nкоманда FTL Multiverse"
 
-#: src-ru/data/text_misc.xml.append:1759
+#: src-ru/data/text_misc.xml.append:1782
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc\"]"
 msgstr "Hyperspace翻译者:"
 
-#: src-ru/data/text_misc.xml.append:1760
+#: src-ru/data/text_misc.xml.append:1783
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_fr\"]"
 msgstr "法语翻译："
 
-#: src-ru/data/text_misc.xml.append:1761
+#: src-ru/data/text_misc.xml.append:1784
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_fr_names\"]"
 msgstr "Pepson"
 
-#: src-ru/data/text_misc.xml.append:1762
+#: src-ru/data/text_misc.xml.append:1785
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_it\"]"
 msgstr "意大利语翻译："
 
-#: src-ru/data/text_misc.xml.append:1763
+#: src-ru/data/text_misc.xml.append:1786
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_it_names\"]"
 msgstr "RawToast，Khal"
 
-#: src-ru/data/text_misc.xml.append:1764
+#: src-ru/data/text_misc.xml.append:1787
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_de\"]"
 msgstr "德语翻译："
 
-#: src-ru/data/text_misc.xml.append:1765
+#: src-ru/data/text_misc.xml.append:1788
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_de_names\"]"
 msgstr "The Dumb Dino"
 
-#: src-ru/data/text_misc.xml.append:1766
+#: src-ru/data/text_misc.xml.append:1789
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_es\"]"
 msgstr "西班牙语翻译："
 
-#: src-ru/data/text_misc.xml.append:1767
+#: src-ru/data/text_misc.xml.append:1790
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_es_names\"]"
 msgstr "DavidRedFox， Serpy， DarkieZ"
 
-#: src-ru/data/text_misc.xml.append:1768
+#: src-ru/data/text_misc.xml.append:1791
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_pl\"]"
 msgstr "波兰语翻译："
 
-#: src-ru/data/text_misc.xml.append:1769
+#: src-ru/data/text_misc.xml.append:1792
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_pl_names\"]"
 msgstr "Marcinus，Palon"
 
-#: src-ru/data/text_misc.xml.append:1770
+#: src-ru/data/text_misc.xml.append:1793
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_pt_BR\"]"
 msgstr "葡萄牙语（巴西）翻译："
 
-#: src-ru/data/text_misc.xml.append:1771
+#: src-ru/data/text_misc.xml.append:1794
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_pt_BR_names\"]"
 msgstr "Gabriel Cooper"
 
-#: src-ru/data/text_misc.xml.append:1772
+#: src-ru/data/text_misc.xml.append:1795
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ru\"]"
 msgstr "俄语翻译："
 
-#: src-ru/data/text_misc.xml.append:1773
+#: src-ru/data/text_misc.xml.append:1796
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ru_names\"]"
 msgstr "aleev0_o"
 
-#: src-ru/data/text_misc.xml.append:1774
+#: src-ru/data/text_misc.xml.append:1797
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_zn_Hans\"]"
 msgstr "中文翻译："
 
-#: src-ru/data/text_misc.xml.append:1775
+#: src-ru/data/text_misc.xml.append:1798
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_zn_Hans_names\"]"
 msgstr "Mwalls"
 
-#: src-ru/data/text_misc.xml.append:1776
+#: src-ru/data/text_misc.xml.append:1799
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ja\"]"
 msgstr "日语翻译："
 
-#: src-ru/data/text_misc.xml.append:1777
+#: src-ru/data/text_misc.xml.append:1800
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ja_names\"]"
 msgstr "ranhai"
 
-#: src-ru/data/text_misc.xml.append:1778
+#: src-ru/data/text_misc.xml.append:1801
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ko\"]"
 msgstr "韩语翻译："
 
-#: src-ru/data/text_misc.xml.append:1779
+#: src-ru/data/text_misc.xml.append:1802
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ko_names\"]"
 msgstr "nedsociety, H2O"
 
-#: src-ru/data/text_misc.xml.append:1782
+#: src-ru/data/text_misc.xml.append:1805
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa1\"]"
 msgstr "涅克塔尔"
 
-#: src-ru/data/text_misc.xml.append:1783
+#: src-ru/data/text_misc.xml.append:1806
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa2\"]"
 msgstr "斯莱德基"
 
-#: src-ru/data/text_misc.xml.append:1784
+#: src-ru/data/text_misc.xml.append:1807
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa3\"]"
 msgstr "波洛萨奇"
 
-#: src-ru/data/text_misc.xml.append:1785
+#: src-ru/data/text_misc.xml.append:1808
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa4\"]"
 msgstr "舍尔申"
 
-#: src-ru/data/text_misc.xml.append:1786
+#: src-ru/data/text_misc.xml.append:1809
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa5\"]"
 msgstr "朱扎"
 
-#: src-ru/data/text_misc.xml.append:1787
+#: src-ru/data/text_misc.xml.append:1810
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa6\"]"
 msgstr "乔乔"
 
-#: src-ru/data/text_misc.xml.append:1788
+#: src-ru/data/text_misc.xml.append:1811
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa7\"]"
 msgstr "扎勒尔"
 
-#: src-ru/data/text_misc.xml.append:1789
+#: src-ru/data/text_misc.xml.append:1812
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa8\"]"
 msgstr "朱"
 
-#: src-ru/data/text_misc.xml.append:1790
+#: src-ru/data/text_misc.xml.append:1813
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa9\"]"
 msgstr "普乔尔"
 
-#: src-ru/data/text_misc.xml.append:1791
+#: src-ru/data/text_misc.xml.append:1814
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa10\"]"
 msgstr "库斯"
 
-#: src-ru/data/text_misc.xml.append:1792
+#: src-ru/data/text_misc.xml.append:1815
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa11\"]"
 msgstr "朱扎克"
 
-#: src-ru/data/text_misc.xml.append:1793
+#: src-ru/data/text_misc.xml.append:1816
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa12\"]"
 msgstr "埃莱克特拉"
 
-#: src-ru/data/text_misc.xml.append:1794
+#: src-ru/data/text_misc.xml.append:1817
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa13\"]"
 msgstr "埃莱克特龙"
 
-#: src-ru/data/text_misc.xml.append:1795
+#: src-ru/data/text_misc.xml.append:1818
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa14\"]"
 msgstr "朱日克"
 
-#: src-ru/data/text_misc.xml.append:1796
+#: src-ru/data/text_misc.xml.append:1819
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa15\"]"
 msgstr "特鲁滕"
 
-#: src-ru/data/text_misc.xml.append:1797
+#: src-ru/data/text_misc.xml.append:1820
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa16\"]"
 msgstr "梅多耶德"
 
-#: src-ru/data/text_misc.xml.append:1798
+#: src-ru/data/text_misc.xml.append:1821
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa17\"]"
 msgstr "维日克"
 
-#: src-ru/data/text_misc.xml.append:1799
+#: src-ru/data/text_misc.xml.append:1822
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa18\"]"
 msgstr "日日阿"
 
-#: src-ru/data/text_misc.xml.append:1800
+#: src-ru/data/text_misc.xml.append:1823
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa19\"]"
 msgstr "扎洛"
 
-#: src-ru/data/text_misc.xml.append:1801
+#: src-ru/data/text_misc.xml.append:1824
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa20\"]"
 msgstr "朱日佐尼"
 
-#: src-ru/data/text_misc.xml.append:1802
+#: src-ru/data/text_misc.xml.append:1825
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR10\"]"
 msgstr "自动修复飞船受损系统，如同无人飞船一样。修复速度 33%。"
 
-#: src-ru/data/text_misc.xml.append:1803
+#: src-ru/data/text_misc.xml.append:1826
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR20\"]"
 msgstr "自动修复飞船受损系统，如同无人飞船一样。修复速度 66%。"
 
-#: src-ru/data/text_misc.xml.append:1804
+#: src-ru/data/text_misc.xml.append:1827
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR30\"]"
 msgstr "自动修复飞船受损系统，如同无人飞船一样。修复速度 100%。"
 
-#: src-ru/data/text_misc.xml.append:1805
+#: src-ru/data/text_misc.xml.append:1828
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR40\"]"
 msgstr "自动修复飞船受损系统，如同无人飞船一样。修复速度 133%。"
 
-#: src-ru/data/text_misc.xml.append:1806
+#: src-ru/data/text_misc.xml.append:1829
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR50\"]"
 msgstr "自动修复飞船受损系统，如同无人飞船一样。修复速度 166%。"
 
-#: src-ru/data/text_misc.xml.append:1807
+#: src-ru/data/text_misc.xml.append:1830
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR60\"]"
 msgstr "自动修复飞船受损系统，如同无人飞船一样。修复速度 200%。"
 
-#: src-ru/data/text_misc.xml.append:1808
+#: src-ru/data/text_misc.xml.append:1831
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR70\"]"
 msgstr "自动修复飞船受损系统，如同无人飞船一样。修复速度 233%。"
 
-#: src-ru/data/text_misc.xml.append:1809
+#: src-ru/data/text_misc.xml.append:1832
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b1\"]"
 msgstr "减少能量消耗。"
 
-#: src-ru/data/text_misc.xml.append:1810
+#: src-ru/data/text_misc.xml.append:1833
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b2\"]"
 msgstr "减少装填时间。"
 
-#: src-ru/data/text_misc.xml.append:1811
+#: src-ru/data/text_misc.xml.append:1834
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b3\"]"
 msgstr "增加射弹数量。"
 
-#: src-ru/data/text_misc.xml.append:1812
+#: src-ru/data/text_misc.xml.append:1835
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b4\"]"
 msgstr "增加射弹总伤害。"
 
-#: src-ru/data/text_misc.xml.append:1813
+#: src-ru/data/text_misc.xml.append:1836
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b5\"]"
 msgstr "增加射弹的系统伤害。"
 
-#: src-ru/data/text_misc.xml.append:1814
+#: src-ru/data/text_misc.xml.append:1837
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b6\"]"
 msgstr "增加射弹的船员伤害。"
 
-#: src-ru/data/text_misc.xml.append:1815
+#: src-ru/data/text_misc.xml.append:1838
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b7\"]"
 msgstr "增加离子伤害。"
 
-#: src-ru/data/text_misc.xml.append:1816
+#: src-ru/data/text_misc.xml.append:1839
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b8\"]"
 msgstr "增加护盾穿透数量。"
 
-#: src-ru/data/text_misc.xml.append:1817
+#: src-ru/data/text_misc.xml.append:1840
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b9\"]"
 msgstr "增加破洞几率。"
 
-#: src-ru/data/text_misc.xml.append:1818
+#: src-ru/data/text_misc.xml.append:1841
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b10\"]"
 msgstr "增加起火几率。"
 
-#: src-ru/data/text_misc.xml.append:1819
+#: src-ru/data/text_misc.xml.append:1842
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b11\"]"
 msgstr "添加锁舱效果。"
 
-#: src-ru/data/text_misc.xml.append:1820
+#: src-ru/data/text_misc.xml.append:1843
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b12\"]"
 msgstr "添加击中无系统舱室时造成双倍伤害的效果。"
 
-#: src-ru/data/text_misc.xml.append:1821
+#: src-ru/data/text_misc.xml.append:1844
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b13\"]"
 msgstr "增加灵魂储存容量。"
 
-#: src-ru/data/text_misc.xml.append:1822
+#: src-ru/data/text_misc.xml.append:1845
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_quit\"]"
 msgstr "关闭噬魂者控制面板。"
 
-#: src-ru/data/text_misc.xml.append:1823
+#: src-ru/data/text_misc.xml.append:1846
 msgid "data/text_misc.xml.append$//text[@name=\"lua_alien\"]"
 msgstr "异形"
 
-#: src-ru/data/text_misc.xml.append:1824
+#: src-ru/data/text_misc.xml.append:1847
 msgid "data/text_misc.xml.append$//text[@name=\"lua_speed_disabled\"]"
 msgstr "加速已关闭。要开启，请按 `"
 
-#: src-ru/data/text_misc.xml.append:1825
+#: src-ru/data/text_misc.xml.append:1848
 msgid "data/text_misc.xml.append$//text[@name=\"lua_controlled_by_crew\"]"
 msgstr "有船员操控：装填速度提高 25%"
 
-#: src-ru/data/text_misc.xml.append:1826
+#: src-ru/data/text_misc.xml.append:1849
 msgid "data/text_misc.xml.append$//text[@name=\"lua_notcontrolled_by_crew\"]"
 msgstr "无船员操控：标准装填速度"
 
-#: src-ru/data/text_misc.xml.append:1827
+#: src-ru/data/text_misc.xml.append:1850
 msgid "data/text_misc.xml.append$//text[@name=\"lua_explode_hackdrone\"]"
 msgstr "引爆你的入侵无人机。"
 
-#: src-ru/data/text_misc.xml.append:1828
+#: src-ru/data/text_misc.xml.append:1851
 msgid "data/text_misc.xml.append$//text[@name=\"lua_notexplode_hackdrone\"]"
 msgstr "现在不能引爆你的入侵无人机。"
 
-#: src-ru/data/text_misc.xml.append:1829
+#: src-ru/data/text_misc.xml.append:1852
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_dronemode_on\"]"
 msgstr "切换舰载无人机模式。\\n当前：[style[color:33FF33FF]]自动[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1830
+#: src-ru/data/text_misc.xml.append:1853
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_dronemode_off\"]"
 msgstr "切换舰载无人机模式。\\n当前：[style[color:FFFF33FF]]手动[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1831
+#: src-ru/data/text_misc.xml.append:1854
 msgid "data/text_misc.xml.append$//text[@name=\"lua_additional_augplace\"]"
 msgstr "这艘飞船的武器槽位较少，但增强部件和无人机槽位较多。额外增强部件槽位："
 
-#: src-ru/data/text_misc.xml.append:1832
+#: src-ru/data/text_misc.xml.append:1855
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inner_aug\"]"
 msgstr "内置增强部件："
 
-#: src-ru/data/text_misc.xml.append:1833
+#: src-ru/data/text_misc.xml.append:1856
 msgid "data/text_misc.xml.append$//text[@name=\"lua_needed_help_ship\"]"
 msgstr "附近的飞船需要帮助。"
 
-#: src-ru/data/text_misc.xml.append:1834
+#: src-ru/data/text_misc.xml.append:1857
 msgid "data/text_misc.xml.append$//text[@name=\"lua_needed_help_station\"]"
 msgstr "附近的空间站或定居点需要帮助。"
 
-#: src-ru/data/text_misc.xml.append:1835
+#: src-ru/data/text_misc.xml.append:1858
 msgid "data/text_misc.xml.append$//text[@name=\"lua_advanced_ai\"]"
 msgstr "这个敌人拥有先进的战斗系统。护盾、引擎、武器、受伤的船员和正在工作的克隆舱会被更频繁地选为目标。"
 
-#: src-ru/data/text_misc.xml.append:1836
+#: src-ru/data/text_misc.xml.append:1859
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_player_missing\"]"
 msgstr "你的武器被诅咒了。命中率降低50%。剩余信标数："
 
-#: src-ru/data/text_misc.xml.append:1837
+#: src-ru/data/text_misc.xml.append:1860
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_enemy_hitting\"]"
 msgstr "你的飞船被诅咒了。闪避率降低50%。剩余信标数："
 
-#: src-ru/data/text_misc.xml.append:1838
+#: src-ru/data/text_misc.xml.append:1861
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_enemy_firing\"]"
 msgstr "任何有几率引发火灾的敌方射弹将必定引发火灾。剩余信标数："
 
-#: src-ru/data/text_misc.xml.append:1839
+#: src-ru/data/text_misc.xml.append:1862
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_orchid_shase\"]"
 msgstr "一艘兰花族护卫舰正在追击你。剩余信标数："
 
-#: src-ru/data/text_misc.xml.append:1840
+#: src-ru/data/text_misc.xml.append:1863
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_cold\"]"
 msgstr "你身处极寒之地。飞船的舱室会周期性冻结，船体也会出现破洞。"
 
-#: src-ru/data/text_misc.xml.append:1841
+#: src-ru/data/text_misc.xml.append:1864
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_crystals\"]"
 msgstr "你身处水晶场中。水晶会周期性撞击你的飞船。水晶可穿透1层护盾。"
 
-#: src-ru/data/text_misc.xml.append:1842
+#: src-ru/data/text_misc.xml.append:1865
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_nanites\"]"
 msgstr "你身处纳米云中。飞船系统会周期性受到腐蚀伤害。"
 
-#: src-ru/data/text_misc.xml.append:1843
+#: src-ru/data/text_misc.xml.append:1866
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_radiation\"]"
 msgstr "你正受到强辐射照射。设备尚能应付，但对船员的影响可能无法预料……"
 
-#: src-ru/data/text_misc.xml.append:1844
+#: src-ru/data/text_misc.xml.append:1867
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_wild_drones\"]"
 msgstr "你附近有一群野生无人机。它们会周期性攻击附近的任何飞船。"
 
-#: src-ru/data/text_misc.xml.append:1845
+#: src-ru/data/text_misc.xml.append:1868
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_ultra_sun\"]"
 msgstr "你正受到极高温度的影响。飞船起火几乎不可避免。"
 
-#: src-ru/data/text_misc.xml.append:1846
+#: src-ru/data/text_misc.xml.append:1869
 msgid "data/text_misc.xml.append$//text[@name=\"lua_onoff_soulreaper_panel\"]"
 msgstr "开启/关闭噬魂者控制面板。"
 
-#: src-ru/data/text_misc.xml.append:1847
+#: src-ru/data/text_misc.xml.append:1870
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_up_limit\"]"
 msgstr "已达到发展上限。"
 
-#: src-ru/data/text_misc.xml.append:1848
+#: src-ru/data/text_misc.xml.append:1871
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_no_soul\"]"
 msgstr "灵魂不足。"
 
-#: src-ru/data/text_misc.xml.append:1849
+#: src-ru/data/text_misc.xml.append:1872
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_desc\"]"
 msgstr "这件武器会吞噬被摧毁飞船的灵魂。必须在爆炸时位于武器槽位中（在叛军浪潮中无效）。无法使用注射器升级。"
 
-#: src-ru/data/text_misc.xml.append:1850
+#: src-ru/data/text_misc.xml.append:1873
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_charact\"]"
 msgstr "属性："
 
-#: src-ru/data/text_misc.xml.append:1851
+#: src-ru/data/text_misc.xml.append:1874
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_req_pow\"]"
 msgstr "需要能量："
 
-#: src-ru/data/text_misc.xml.append:1852
+#: src-ru/data/text_misc.xml.append:1875
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_noreq_pow\"]"
 msgstr "无需供能"
 
-#: src-ru/data/text_misc.xml.append:1853
+#: src-ru/data/text_misc.xml.append:1876
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_cooldown\"]"
 msgstr "充能时间："
 
-#: src-ru/data/text_misc.xml.append:1854
+#: src-ru/data/text_misc.xml.append:1877
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_sec\"]"
 msgstr "秒"
 
-#: src-ru/data/text_misc.xml.append:1855
+#: src-ru/data/text_misc.xml.append:1878
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_shots\"]"
 msgstr "每次充能射击次数："
 
-#: src-ru/data/text_misc.xml.append:1856
+#: src-ru/data/text_misc.xml.append:1879
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damagehull\"]"
 msgstr "船体伤害："
 
-#: src-ru/data/text_misc.xml.append:1857
+#: src-ru/data/text_misc.xml.append:1880
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damagesys\"]"
 msgstr "系统伤害："
 
-#: src-ru/data/text_misc.xml.append:1858
+#: src-ru/data/text_misc.xml.append:1881
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damagecrew\"]"
 msgstr "船员伤害："
 
-#: src-ru/data/text_misc.xml.append:1859
+#: src-ru/data/text_misc.xml.append:1882
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damageion\"]"
 msgstr "离子伤害："
 
-#: src-ru/data/text_misc.xml.append:1860
+#: src-ru/data/text_misc.xml.append:1883
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_spierce\"]"
 msgstr "护盾穿透："
 
-#: src-ru/data/text_misc.xml.append:1861
+#: src-ru/data/text_misc.xml.append:1884
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_bc\"]"
 msgstr "破舱几率："
 
-#: src-ru/data/text_misc.xml.append:1862
+#: src-ru/data/text_misc.xml.append:1885
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_fc\"]"
 msgstr "起火几率："
 
-#: src-ru/data/text_misc.xml.append:1863
+#: src-ru/data/text_misc.xml.append:1886
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_lockroom\"]"
 msgstr "锁舱"
 
-#: src-ru/data/text_misc.xml.append:1864
+#: src-ru/data/text_misc.xml.append:1887
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_ddnosysroom\"]"
 msgstr "对无系统舱室造成双倍伤害"
 
-#: src-ru/data/text_misc.xml.append:1865
+#: src-ru/data/text_misc.xml.append:1888
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_capacity\"]"
 msgstr "灵魂容器容量："
 
-#: src-ru/data/text_misc.xml.append:1866
+#: src-ru/data/text_misc.xml.append:1889
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_soulreapername\"]"
 msgstr "噬魂者"
 
-#: src-ru/data/text_misc.xml.append:1867
+#: src-ru/data/text_misc.xml.append:1890
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_crystals\"]"
 msgstr "探测到冰场。"
 
-#: src-ru/data/text_misc.xml.append:1868
+#: src-ru/data/text_misc.xml.append:1891
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_cold\"]"
 msgstr "探测到超低温区域。"
 
-#: src-ru/data/text_misc.xml.append:1869
+#: src-ru/data/text_misc.xml.append:1892
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_wild_drones\"]"
 msgstr "探测到攻击性无人机。"
 
-#: src-ru/data/text_misc.xml.append:1870
+#: src-ru/data/text_misc.xml.append:1893
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_nanites\"]"
 msgstr "探测到纳米云。"
 
-#: src-ru/data/text_misc.xml.append:1871
+#: src-ru/data/text_misc.xml.append:1894
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_radiation\"]"
 msgstr "探测到强辐射。"
 
-#: src-ru/data/text_misc.xml.append:1872
+#: src-ru/data/text_misc.xml.append:1895
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_ultra_sun\"]"
 msgstr "探测到超高温区域。"
 
-#: src-ru/data/text_misc.xml.append:1873
+#: src-ru/data/text_misc.xml.append:1896
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj\"]"
 msgstr "你正在从你的武器中移除注射器。现在可以安装另一个注射器了。"
 
-#: src-ru/data/text_misc.xml.append:1874
+#: src-ru/data/text_misc.xml.append:1897
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_PRC\"]"
 msgstr "移除穿透注射器。"
 
-#: src-ru/data/text_misc.xml.append:1875
+#: src-ru/data/text_misc.xml.append:1898
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_BRC\"]"
 msgstr "移除破舱注射器。"
 
-#: src-ru/data/text_misc.xml.append:1876
+#: src-ru/data/text_misc.xml.append:1899
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_CLD\"]"
 msgstr "移除装填注射器。"
 
-#: src-ru/data/text_misc.xml.append:1877
+#: src-ru/data/text_misc.xml.append:1900
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_FRC\"]"
 msgstr "移除火焰注射器。"
 
-#: src-ru/data/text_misc.xml.append:1878
+#: src-ru/data/text_misc.xml.append:1901
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_POW\"]"
 msgstr "移除能量注射器。"
 
-#: src-ru/data/text_misc.xml.append:1879
+#: src-ru/data/text_misc.xml.append:1902
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_UNI\"]"
 msgstr "移除通用注射器。"
 
-#: src-ru/data/text_misc.xml.append:1880
+#: src-ru/data/text_misc.xml.append:1903
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_ACC\"]"
 msgstr "移除精度注射器。"
 
-#: src-ru/data/text_misc.xml.append:1881
+#: src-ru/data/text_misc.xml.append:1904
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_RDY\"]"
 msgstr "移除预热注射器。"
 
-#: src-ru/data/text_misc.xml.append:1882
+#: src-ru/data/text_misc.xml.append:1905
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inj_add1\"]"
 msgstr "你将注射器连接到武器上，得到了想要的结果……"
 
-#: src-ru/data/text_misc.xml.append:1883
+#: src-ru/data/text_misc.xml.append:1906
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inj_add2\"]"
 msgstr "……注射器与武器完全融合，为其他增强部件腾出了槽位。"
 
-#: src-ru/data/text_misc.xml.append:1884
+#: src-ru/data/text_misc.xml.append:1907
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inj_sel\"]"
 msgstr "选择这件武器。"
 
-#: src-ru/data/text_misc.xml.append:1885
+#: src-ru/data/text_misc.xml.append:1908
 msgid "data/text_misc.xml.append$//text[@name=\"lua_marker_phrase_to_ach\"]"
 msgstr "你完成了一笔划算的交易，满意地前往贸易站。"
 
-#: src-ru/data/text_misc.xml.append:1886
+#: src-ru/data/text_misc.xml.append:1909
 msgid "data/text_misc.xml.append$//text[@name=\"lua_battle_ship_cost\"]"
 msgstr "飞船战斗价值："
 
-#: src-ru/data/text_misc.xml.append:1887
+#: src-ru/data/text_misc.xml.append:1910
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cargo_ship_cost\"]"
 msgstr "飞船货物价值："
 
-#: src-ru/data/text_misc.xml.append:1888
+#: src-ru/data/text_misc.xml.append:1911
 msgid "data/text_misc.xml.append$//text[@name=\"lua_max_win\"]"
 msgstr "最大连续胜利次数："
 
-#: src-ru/data/text_misc.xml.append:1889
+#: src-ru/data/text_misc.xml.append:1912
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cur_win\"]"
 msgstr "当前连续胜利次数："
 
-#: src-ru/data/text_misc.xml.append:1890
+#: src-ru/data/text_misc.xml.append:1913
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cur_sector_rew\"]"
 msgstr "当前星区收入："
 
-#: src-ru/data/text_misc.xml.append:1891
+#: src-ru/data/text_misc.xml.append:1914
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cur_count\"]"
 msgstr "当前得分："
 
-#: src-ru/data/text_misc.xml.append:1893
+#: src-ru/data/text_misc.xml.append:1916
 msgid "data/text_misc.xml.append$//text[@name=\"lua_effectivity_unknown\"]"
 msgstr "飞行数据不足……再多飞一会儿！"
 
-#: src-ru/data/text_misc.xml.append:1894
+#: src-ru/data/text_misc.xml.append:1917
 msgid "data/text_misc.xml.append$//text[@name=\"lua_effectivity_known\"]"
 msgstr "你当前飞行的成功率为："
 
-#: src-ru/data/text_misc.xml.append:1895
+#: src-ru/data/text_misc.xml.append:1918
 msgid "data/text_misc.xml.append$//text[@name=\"lua_effectivity_info\"]"
 msgstr "（基于之前飞行在到达此星区开始时，或在出口信标打开星区地图时该星区结束时获得的平均收入）"
 
-#: src-ru/data/text_misc.xml.append:1897
+#: src-ru/data/text_misc.xml.append:1920
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_easy\"]"
 msgstr "简单模式星区统计"
 
-#: src-ru/data/text_misc.xml.append:1898
+#: src-ru/data/text_misc.xml.append:1921
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_normal\"]"
 msgstr "普通模式星区统计"
 
-#: src-ru/data/text_misc.xml.append:1899
+#: src-ru/data/text_misc.xml.append:1922
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_hard\"]"
 msgstr "困难模式星区统计"
 
-#: src-ru/data/text_misc.xml.append:1900
+#: src-ru/data/text_misc.xml.append:1923
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_poppyhatty\"]"
 msgstr "序号 平均收入 访问数"
 
-#: src-ru/data/text_misc.xml.append:1901
+#: src-ru/data/text_misc.xml.append:1924
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_nodata\"]"
 msgstr "无数据……"
 
-#: src-ru/data/text_misc.xml.append:1902
+#: src-ru/data/text_misc.xml.append:1925
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_clearstat\"]"
 msgstr "清除飞行统计"
 
-#: src-ru/data/text_misc.xml.append:1903
+#: src-ru/data/text_misc.xml.append:1926
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_clearconfirm\"]"
 msgstr "确认清除飞行统计"
 
-#: src-ru/data/text_misc.xml.append:1904
+#: src-ru/data/text_misc.xml.append:1927
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_recon\"]"
 msgstr "开启/关闭星区收入统计记录\\n[style[color:86c946]]记录已开启[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1905
+#: src-ru/data/text_misc.xml.append:1928
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_recoff\"]"
 msgstr "开启/关闭星区收入统计记录\\n[style[color:d93130]]记录已关闭[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1906
+#: src-ru/data/text_misc.xml.append:1929
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_fly\"]"
 msgstr "飞行统计"
 
-#: src-ru/data/text_misc.xml.append:1907
+#: src-ru/data/text_misc.xml.append:1930
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name1\"]"
 msgstr "亨利·关"
 
-#: src-ru/data/text_misc.xml.append:1908
+#: src-ru/data/text_misc.xml.append:1931
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name2\"]"
 msgstr "贝瑟妮·琼斯"
 
-#: src-ru/data/text_misc.xml.append:1909
+#: src-ru/data/text_misc.xml.append:1932
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name3\"]"
 msgstr "亚当"
 
-#: src-ru/data/text_misc.xml.append:1910
+#: src-ru/data/text_misc.xml.append:1933
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name4\"]"
 msgstr "阿比阿萨姆"
 
-#: src-ru/data/text_misc.xml.append:1911
+#: src-ru/data/text_misc.xml.append:1934
 msgid "data/text_misc.xml.append$//text[@name=\"lua_nousedtacticalpause\"]"
 msgstr "在这次飞行中未使用战术暂停。"
 
-#: src-ru/data/text_misc.xml.append:1912
+#: src-ru/data/text_misc.xml.append:1935
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_infousage\"]"
 msgstr "在此菜单中，你可以在起始信标选择增加游戏难度的额外选项。\\n[style[color:86c946]]当前允许更改。[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1913
+#: src-ru/data/text_misc.xml.append:1936
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_infousage2\"]"
 msgstr "在此菜单中，你可以在起始信标选择增加游戏难度的额外选项。\\n[style[color:d93130]]当前禁止更改。[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1914
+#: src-ru/data/text_misc.xml.append:1937
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_help\"]"
 msgstr "每完成一个试炼，塔利会在后续每次飞行的第8星区开始时给予10废料（最多100废料）。"
 
-#: src-ru/data/text_misc.xml.append:1915
+#: src-ru/data/text_misc.xml.append:1938
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_is_active_any\"]"
 msgstr "注意！有激活的试炼！请小心！"
 
-#: src-ru/data/text_misc.xml.append:1916
+#: src-ru/data/text_misc.xml.append:1939
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nopause_on\"]"
 msgstr "本次飞行中战术暂停和减速已禁用。"
 
-#: src-ru/data/text_misc.xml.append:1917
+#: src-ru/data/text_misc.xml.append:1940
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nopause_off\"]"
 msgstr "本次飞行中战术暂停和减速正常工作。"
 
-#: src-ru/data/text_misc.xml.append:1918
+#: src-ru/data/text_misc.xml.append:1941
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nofuel_on\"]"
 msgstr "每次跃迁将额外消耗1单位燃料（如果有的话）。"
 
-#: src-ru/data/text_misc.xml.append:1919
+#: src-ru/data/text_misc.xml.append:1942
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nofuel_off\"]"
 msgstr "每次跃迁消耗标准数量的燃料。"
 
-#: src-ru/data/text_misc.xml.append:1920
+#: src-ru/data/text_misc.xml.append:1943
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobrain_on\"]"
 msgstr "船员因飞船跃迁而失去所有技能。"
 
-#: src-ru/data/text_misc.xml.append:1921
+#: src-ru/data/text_misc.xml.append:1944
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobrain_off\"]"
 msgstr "船员不会因飞船跃迁而失去技能。"
 
-#: src-ru/data/text_misc.xml.append:1922
+#: src-ru/data/text_misc.xml.append:1945
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noaug_on\"]"
 msgstr "所有非内置飞船增强部件（不可移除的除外）将在跃迁时丢失。"
 
-#: src-ru/data/text_misc.xml.append:1923
+#: src-ru/data/text_misc.xml.append:1946
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noaug_off\"]"
 msgstr "飞船增强部件照常保留在原位。"
 
-#: src-ru/data/text_misc.xml.append:1924
+#: src-ru/data/text_misc.xml.append:1947
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noinst_on\"]"
 msgstr "将增强部件嵌入船体已禁用。"
 
-#: src-ru/data/text_misc.xml.append:1925
+#: src-ru/data/text_misc.xml.append:1948
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noinst_off\"]"
 msgstr "将增强部件嵌入船体正常工作。"
 
-#: src-ru/data/text_misc.xml.append:1926
+#: src-ru/data/text_misc.xml.append:1949
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nomaxhp_on\"]"
 msgstr "你的船员只有他们正常生命值的一半。"
 
-#: src-ru/data/text_misc.xml.append:1927
+#: src-ru/data/text_misc.xml.append:1950
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nomaxhp_off\"]"
 msgstr "船员拥有标准生命值。"
 
-#: src-ru/data/text_misc.xml.append:1928
+#: src-ru/data/text_misc.xml.append:1951
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noscrap_on\"]"
 msgstr "事件中获得的废料将减少50%。"
 
-#: src-ru/data/text_misc.xml.append:1929
+#: src-ru/data/text_misc.xml.append:1952
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noscrap_off\"]"
 msgstr "你在事件中获得正常数量的废料。"
 
-#: src-ru/data/text_misc.xml.append:1930
+#: src-ru/data/text_misc.xml.append:1953
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nosysca_on\"]"
 msgstr "几乎所有敌方飞船都将额外配备钛合金镀层增强部件。"
 
-#: src-ru/data/text_misc.xml.append:1931
+#: src-ru/data/text_misc.xml.append:1954
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nosysca_off\"]"
 msgstr "敌方飞船拥有其标准的增强部件。"
 
-#: src-ru/data/text_misc.xml.append:1932
+#: src-ru/data/text_misc.xml.append:1955
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nodromis_on\"]"
 msgstr "所有无人机部件和导弹将在跃迁时从货舱消失。"
 
-#: src-ru/data/text_misc.xml.append:1933
+#: src-ru/data/text_misc.xml.append:1956
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nodromis_off\"]"
 msgstr "无人机部件和导弹在跃迁时保留在原位。"
 
-#: src-ru/data/text_misc.xml.append:1934
+#: src-ru/data/text_misc.xml.append:1957
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nozlt_on\"]"
 msgstr "几乎所有敌方飞船都将额外配备超能族护盾。"
 
-#: src-ru/data/text_misc.xml.append:1935
+#: src-ru/data/text_misc.xml.append:1958
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nozlt_off\"]"
 msgstr "敌方飞船拥有其标准的增强部件。"
 
-#: src-ru/data/text_misc.xml.append:1936
+#: src-ru/data/text_misc.xml.append:1959
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_norare_on\"]"
 msgstr "稀有设备出现几率显著降低。"
 
-#: src-ru/data/text_misc.xml.append:1937
+#: src-ru/data/text_misc.xml.append:1960
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_norare_off\"]"
 msgstr "所有设备照常出现。"
 
-#: src-ru/data/text_misc.xml.append:1938
+#: src-ru/data/text_misc.xml.append:1961
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocrg_on\"]"
 msgstr "你的飞船在第一次跃迁后将不再拥有货舱。"
 
-#: src-ru/data/text_misc.xml.append:1939
+#: src-ru/data/text_misc.xml.append:1962
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocrg_off\"]"
 msgstr "你的飞船拥有标准货舱。"
 
-#: src-ru/data/text_misc.xml.append:1940
+#: src-ru/data/text_misc.xml.append:1963
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noeye_on\"]"
 msgstr "星图视野大幅降低。没有信标信息。"
 
-#: src-ru/data/text_misc.xml.append:1941
+#: src-ru/data/text_misc.xml.append:1964
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noeye_off\"]"
 msgstr "星图照常可见。"
 
-#: src-ru/data/text_misc.xml.append:1942
+#: src-ru/data/text_misc.xml.append:1965
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocont_on\"]"
 msgstr "友方船员无法控制，但别担心：他们知道该做什么！"
 
-#: src-ru/data/text_misc.xml.append:1943
+#: src-ru/data/text_misc.xml.append:1966
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocont_off\"]"
 msgstr "船员照常控制。"
 
-#: src-ru/data/text_misc.xml.append:1944
+#: src-ru/data/text_misc.xml.append:1967
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noexp_on\"]"
 msgstr "所有敌人都将拥有精英船员。"
 
-#: src-ru/data/text_misc.xml.append:1945
+#: src-ru/data/text_misc.xml.append:1968
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noexp_off\"]"
 msgstr "在困难难度下，偶尔会遇到拥有精英船员的敌人。"
 
-#: src-ru/data/text_misc.xml.append:1946
+#: src-ru/data/text_misc.xml.append:1969
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobuh_on\"]"
 msgstr "第一次跃迁后，船员将开始饮酒，大幅降低你的齐射精度。"
 
-#: src-ru/data/text_misc.xml.append:1947
+#: src-ru/data/text_misc.xml.append:1970
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobuh_off\"]"
 msgstr "你的船员在飞行中不会饮用酒精饮料。"
 
-#: src-ru/data/text_misc.xml.append:1948
+#: src-ru/data/text_misc.xml.append:1971
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noai_on\"]"
 msgstr "所有敌人将拥有高级人工智能（包括首领）。"
 
-#: src-ru/data/text_misc.xml.append:1949
+#: src-ru/data/text_misc.xml.append:1972
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noai_off\"]"
 msgstr "在困难难度下，有时会遇到拥有高级人工智能的敌人（首领除外）。"
 
-#: src-ru/data/text_misc.xml.append:1950
+#: src-ru/data/text_misc.xml.append:1973
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nohull_on\"]"
 msgstr "飞船船体不能超过10点强度（离开起始信标后）。"
 
-#: src-ru/data/text_misc.xml.append:1951
+#: src-ru/data/text_misc.xml.append:1974
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nohull_off\"]"
 msgstr "飞船船体拥有标准强度。"
 
-#: src-ru/data/text_misc.xml.append:1952
+#: src-ru/data/text_misc.xml.append:1975
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogeq_on\"]"
 msgstr "进入新星区时，将移除最昂贵的无人机或武器。"
 
-#: src-ru/data/text_misc.xml.append:1953
+#: src-ru/data/text_misc.xml.append:1976
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogeq_off\"]"
 msgstr "进入新星区时，装备照常保留。"
 
-#: src-ru/data/text_misc.xml.append:1954
+#: src-ru/data/text_misc.xml.append:1977
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogus_on\"]"
 msgstr "第一次跃迁后，船上会出现一位饥饿的王室成员，必须保护其存活到最后。仅以废料为食。"
 
-#: src-ru/data/text_misc.xml.append:1955
+#: src-ru/data/text_misc.xml.append:1978
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogus_off\"]"
 msgstr "跃迁后不会添加特殊船员。"
 
-#: src-ru/data/text_misc.xml.append:1956
+#: src-ru/data/text_misc.xml.append:1979
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nostor_on\"]"
 msgstr "虫族入侵！几乎所有商店都被虫族吞噬，包括贸易浮标的自动商店。"
 
-#: src-ru/data/text_misc.xml.append:1957
+#: src-ru/data/text_misc.xml.append:1980
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nostor_off\"]"
 msgstr "商店照常出现。"
 
-#: src-ru/data/text_misc.xml.append:1958
+#: src-ru/data/text_misc.xml.append:1981
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nowst_on\"]"
 msgstr "每次跃迁，武器将被替换为消耗相同能量的随机武器。"
 
-#: src-ru/data/text_misc.xml.append:1959
+#: src-ru/data/text_misc.xml.append:1982
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nowst_off\"]"
 msgstr "武器不会在每次跃迁时更换。"
 
-#: src-ru/data/text_misc.xml.append:1960
+#: src-ru/data/text_misc.xml.append:1983
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_on\"]"
 msgstr "所有敌人都将拥有提高的命中精度。"
 
-#: src-ru/data/text_misc.xml.append:1961
+#: src-ru/data/text_misc.xml.append:1984
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_off\"]"
 msgstr "敌人将拥有普通命中精度。"
 
-#: src-ru/data/text_misc.xml.append:1962
+#: src-ru/data/text_misc.xml.append:1985
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noorc_on\"]"
 msgstr "兰花族护卫舰将追击你，别想着逃跑。"
 
-#: src-ru/data/text_misc.xml.append:1963
+#: src-ru/data/text_misc.xml.append:1986
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noorc_off\"]"
 msgstr "没有额外的追击。"
 
-#: src-ru/data/text_misc.xml.append:1964
+#: src-ru/data/text_misc.xml.append:1987
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_orchid_shase_very\"]"
 msgstr "兰花族护卫舰已开始追击你，它不会放弃……"
 
-#: src-ru/data/text_misc.xml.append:1965
+#: src-ru/data/text_misc.xml.append:1988
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notxt_on\"]"
 msgstr "第一次跃迁后，事件文本将被替换为乱码。"
 
-#: src-ru/data/text_misc.xml.append:1966
+#: src-ru/data/text_misc.xml.append:1989
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notxt_off\"]"
 msgstr "事件文本将恢复正常。"
 
-#: src-ru/data/text_misc.xml.append:1967
+#: src-ru/data/text_misc.xml.append:1990
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_resetchall_on\"]"
 msgstr "所有试炼将在新飞行中禁用。"
 
-#: src-ru/data/text_misc.xml.append:1968
+#: src-ru/data/text_misc.xml.append:1991
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_resetchall_off\"]"
 msgstr "所有试炼将在新飞行中保持其状态。"
 
-#: src-ru/data/text_misc.xml.append:1969
+#: src-ru/data/text_misc.xml.append:1992
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_rew_on\"]"
 msgstr "你将因完成的试炼获得废料奖励。"
 
-#: src-ru/data/text_misc.xml.append:1970
+#: src-ru/data/text_misc.xml.append:1993
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_rew_off\"]"
 msgstr "完成的试炼奖励已禁用。"
 
-#: src-ru/data/text_misc.xml.append:1971
+#: src-ru/data/text_misc.xml.append:1994
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobf_on\"]"
 msgstr "与叛军旗舰的战斗将增加一个额外阶段。"
 
-#: src-ru/data/text_misc.xml.append:1972
+#: src-ru/data/text_misc.xml.append:1995
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobf_off\"]"
 msgstr "与叛军旗舰的战斗照常进行。"
 
-#: src-ru/data/text_misc.xml.append:1973
+#: src-ru/data/text_misc.xml.append:1996
+msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notmr_on\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1997
+msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notmr_off\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:1998
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_easy\"]"
 msgstr "（已在简单难度完成）"
 
-#: src-ru/data/text_misc.xml.append:1974
+#: src-ru/data/text_misc.xml.append:1999
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_med\"]"
 msgstr "（已在普通难度完成）"
 
-#: src-ru/data/text_misc.xml.append:1975
+#: src-ru/data/text_misc.xml.append:2000
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_hard\"]"
 msgstr "（已在困难难度完成）"
 
-#: src-ru/data/text_misc.xml.append:1976
+#: src-ru/data/text_misc.xml.append:2001
 msgid "data/text_misc.xml.append$//text[@name=\"lua_arty_tip_auto\"]"
 msgstr "巨炮充能后将自动向随机舱室射击。"
 
-#: src-ru/data/text_misc.xml.append:1977
+#: src-ru/data/text_misc.xml.append:2002
 msgid "data/text_misc.xml.append$//text[@name=\"lua_arty_tip_hand\"]"
 msgstr "巨炮将以手动模式向选定舱室射击。"
 
-#: src-ru/data/text_misc.xml.append:1978
+#: src-ru/data/text_misc.xml.append:2003
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_tip\"]"
 msgstr "抛竿、刺鱼和收线的按钮（快捷键：RIGHT CTRL）。"
 
-#: src-ru/data/text_misc.xml.append:1979
+#: src-ru/data/text_misc.xml.append:2004
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_aug_main_name\"]"
 msgstr "鱼味（影响船员）。"
 
-#: src-ru/data/text_misc.xml.append:1980
+#: src-ru/data/text_misc.xml.append:2005
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cancel_mindcontrol\"]"
 msgstr "取消精神控制效果。"
 
-#: src-ru/data/text_misc.xml.append:1981
+#: src-ru/data/text_misc.xml.append:2006
 msgid "data/text_misc.xml.append$//text[@name=\"lua_nocancel_mindcontrol\"]"
 msgstr "现在无法取消精神控制效果。"
 
-#: src-ru/data/text_misc.xml.append:1982
+#: src-ru/data/text_misc.xml.append:2007
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fire_weakness\"]"
 msgstr "敌方飞船上的船员（包括友方）受到来自火焰的三倍伤害。"
 
-#: src-ru/data/text_misc.xml.append:1983
+#: src-ru/data/text_misc.xml.append:2008
 msgid "data/text_misc.xml.append$//text[@name=\"lua_here_wasted_weap\"]"
 msgstr "在此位置掉落了一件武器："
 
-#: src-ru/data/text_misc.xml.append:1984
+#: src-ru/data/text_misc.xml.append:2009
 msgid "data/text_misc.xml.append$//text[@name=\"lua_here_wasted_drone\"]"
 msgstr "在此位置掉落了一张无人机蓝图："
 
-#: src-ru/data/text_misc.xml.append:1985
+#: src-ru/data/text_misc.xml.append:2010
 msgid "data/text_misc.xml.append$//text[@name=\"lua_here_wasted_aug\"]"
 msgstr "在此位置掉落了一个增强部件："
 
-#: src-ru/data/text_misc.xml.append:1986
+#: src-ru/data/text_misc.xml.append:2011
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sector_scaner_active\"]"
 msgstr "星区扫描仪已激活！"
 
-#: src-ru/data/text_misc.xml.append:1987
+#: src-ru/data/text_misc.xml.append:2012
 msgid "data/text_misc.xml.append$//text[@name=\"lua_strong_0\"]"
 msgstr "你的飞船实力等级：破船。"
 
-#: src-ru/data/text_misc.xml.append:1988
+#: src-ru/data/text_misc.xml.append:2013
 msgid "data/text_misc.xml.append$//text[@name=\"lua_strong_1\"]"
 msgstr "你的飞船实力等级：巡洋舰。"
 
-#: src-ru/data/text_misc.xml.append:1989
+#: src-ru/data/text_misc.xml.append:2014
 msgid "data/text_misc.xml.append$//text[@name=\"lua_strong_2\"]"
 msgstr "你的飞船实力等级：无畏舰。"
 
-#: src-ru/data/text_misc.xml.append:1990
+#: src-ru/data/text_misc.xml.append:2015
 msgid "data/text_misc.xml.append$//text[@name=\"lua_waiting_with_fuel\"]"
 msgstr "切换信标处等待模式。"
 
-#: src-ru/data/text_misc.xml.append:1991
+#: src-ru/data/text_misc.xml.append:2016
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory_4_phase_end\"]"
 msgstr "你直接出现在联邦基地附近，叛军正在攻击它。身经百战的你轻易摧毁了叛军，甚至没有感觉到他们的反抗。联邦再无威胁，而你将作为英雄被永远铭记。"
 
-#: src-ru/data/text_misc.xml.append:1992
+#: src-ru/data/text_misc.xml.append:2017
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_aim_drones\"]"
 msgstr ""
 "左键选择第一个目标，右键选择第二个目标。左侧的 X "
 "按钮用于取消目标。光标样式的按钮用于舱室选择模式。对于光束无人机，如果选择了两个目标，光束轨迹将从第一个目标开始，穿过第二个目标。如果两个目标相同或只选择了一个目标，则第二个目标将是随机的。对于其他类型的攻击无人机，当选择两个目标时，将优先瞄准尚未被完全摧毁的系统。如果两个系统都被完全摧毁，无人机将随机瞄准两个选定目标中的一个。"
 
-#: src-ru/data/text_misc.xml.append:1993
+#: src-ru/data/text_misc.xml.append:2018
 msgid "data/text_misc.xml.append$//text[@name=\"lua_capsule\"]"
 msgstr "你的飞船上有一个逃生舱，可以用来延迟追击你的舰队。"
 
-#: src-ru/data/text_misc.xml.append:1994
+#: src-ru/data/text_misc.xml.append:2019
+msgid "data/text_misc.xml.append$//text[@name=\"lua_barrel\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2020
 msgid "data/text_misc.xml.append$//text[@name=\"lua_engi_monster_text_replacer\"]"
 msgstr "看来怪物安静下来了，敌对的微生物也停止了对你的攻击。平静下来后，你环顾四周，在信标附近找到了燃料。是时候离开这里了……"
 
-#: src-ru/data/text_misc.xml.append:1995
+#: src-ru/data/text_misc.xml.append:2021
 msgid "data/text_misc.xml.append$//text[@name=\"lua_draw\"]"
 msgstr "开启/关闭星区地图路线绘制模式（在地图上使用右键添加点）。"
 
-#: src-ru/data/text_misc.xml.append:1996
+#: src-ru/data/text_misc.xml.append:2022
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_draw\"]"
 msgstr "移除已绘制的点。"
 
-#: src-ru/data/text_misc.xml.append:1998
+#: src-ru/data/text_misc.xml.append:2024
 msgid "data/text_misc.xml.append$//text[@name=\"tip_rainbow_beam\"]"
 msgstr ""
 "红色：1点常规伤害\n"
@@ -6103,283 +6169,407 @@ msgstr ""
 "蓝色：锁舱\n"
 "紫色：90%几率破洞"
 
-#: src-ru/data/text_misc.xml.append:2006
+#: src-ru/data/text_misc.xml.append:2032
 msgid "data/text_misc.xml.append$//text[@name=\"lua_enemy_has_nechet_shield\"]"
 msgstr "敌人拥有奇数级别的护盾系统。"
 
-#: src-ru/data/text_misc.xml.append:2007
+#: src-ru/data/text_misc.xml.append:2033
 msgid "data/text_misc.xml.append$//text[@name=\"lua_copy_this_weapon\"]"
 msgstr "复制此武器。"
 
-#: src-ru/data/text_misc.xml.append:2008
+#: src-ru/data/text_misc.xml.append:2034
 msgid "data/text_misc.xml.append$//text[@name=\"lua_copyed_weapon\"]"
 msgstr "武器复制成功。可以装备使用。"
 
-#: src-ru/data/text_misc.xml.append:2011
+#: src-ru/data/text_misc.xml.append:2037
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_1\"]"
 msgstr "击败"
 
-#: src-ru/data/text_misc.xml.append:2012
+#: src-ru/data/text_misc.xml.append:2038
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_2\"]"
 msgstr "超级泵"
 
-#: src-ru/data/text_misc.xml.append:2013
+#: src-ru/data/text_misc.xml.append:2039
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_3\"]"
 msgstr "和黏液凝胶"
 
-#: src-ru/data/text_misc.xml.append:2014
+#: src-ru/data/text_misc.xml.append:2040
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_4\"]"
 msgstr "无人机加速器和"
 
-#: src-ru/data/text_misc.xml.append:2015
+#: src-ru/data/text_misc.xml.append:2041
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_5\"]"
 msgstr "在最后一阶段"
 
-#: src-ru/data/text_misc.xml.append:2016
+#: src-ru/data/text_misc.xml.append:2042
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_6\"]"
 msgstr "在四个阶段的最后两个阶段"
 
-#: src-ru/data/text_misc.xml.append:2017
+#: src-ru/data/text_misc.xml.append:2043
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_7\"]"
 msgstr "废物"
 
-#: src-ru/data/text_misc.xml.append:2018
+#: src-ru/data/text_misc.xml.append:2044
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_8\"]"
 msgstr "红隼"
 
-#: src-ru/data/text_misc.xml.append:2019
+#: src-ru/data/text_misc.xml.append:2045
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_9\"]"
 msgstr "在最后阶段，还有一些神秘的巨炮变化"
 
-#: src-ru/data/text_misc.xml.append:2020
+#: src-ru/data/text_misc.xml.append:2046
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_10\"]"
 msgstr "在四个阶段的最后两个阶段，还有一些神秘的巨炮变化"
 
-#: src-ru/data/text_misc.xml.append:2021
+#: src-ru/data/text_misc.xml.append:2047
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_artillery\"]"
 msgstr "巨炮"
 
-#: src-ru/data/text_misc.xml.append:2022
+#: src-ru/data/text_misc.xml.append:2048
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_artillery_remover\"]"
 msgstr "巨炮"
 
-#: src-ru/data/text_misc.xml.append:2023
+#: src-ru/data/text_misc.xml.append:2049
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_not_avaiable_install_artillery\"]"
 msgstr "安装巨炮（已达到系统上限）。"
 
-#: src-ru/data/text_misc.xml.append:2024
+#: src-ru/data/text_misc.xml.append:2050
 msgid "data/text_misc.xml.append$//text[@name=\"lua_not_ship_install_artillery\"]"
 msgstr "安装巨炮（你的飞船未配备此功能）。"
 
-#: src-ru/data/text_misc.xml.append:2026
+#: src-ru/data/text_misc.xml.append:2052
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_ready\"]"
 msgstr "发射摧毁弹丸的波动。快捷键：DELETE"
 
-#: src-ru/data/text_misc.xml.append:2027
+#: src-ru/data/text_misc.xml.append:2053
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_wait_cooldown\"]"
 msgstr "无法使用：请等待重新装填"
 
-#: src-ru/data/text_misc.xml.append:2028
+#: src-ru/data/text_misc.xml.append:2054
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_needed_jump\"]"
 msgstr "无法使用：需要超光速跃迁来重新装填"
 
-#: src-ru/data/text_misc.xml.append:2029
+#: src-ru/data/text_misc.xml.append:2055
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_anaerobic\"]"
 msgstr "厌氧"
 
-#: src-ru/data/text_misc.xml.append:2030
+#: src-ru/data/text_misc.xml.append:2056
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_anaerobic_choice_replacer\"]"
 msgstr "（厌氧烈焰）增强火焰伤害的催化剂仍然有效。"
 
-#: src-ru/data/text_misc.xml.append:2031
+#: src-ru/data/text_misc.xml.append:2057
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coefficients_zero\"]"
 msgstr "弹药和无人机零件奖励未减少。"
 
-#: src-ru/data/text_misc.xml.append:2032
+#: src-ru/data/text_misc.xml.append:2058
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_msls\"]"
 msgstr "弹药奖励降低了VAL%，因为它们在战斗中没有被使用。"
 
-#: src-ru/data/text_misc.xml.append:2033
+#: src-ru/data/text_misc.xml.append:2059
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_drns\"]"
 msgstr "无人机零件奖励降低了VAL%，因为它们在战斗中没有被使用。"
 
-#: src-ru/data/text_misc.xml.append:2034
+#: src-ru/data/text_misc.xml.append:2060
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_msls_zero\"]"
 msgstr "弹药奖励未减少。"
 
-#: src-ru/data/text_misc.xml.append:2035
+#: src-ru/data/text_misc.xml.append:2061
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_drns_zero\"]"
 msgstr "无人机零件奖励未减少。"
 
-#: src-ru/data/text_misc.xml.append:2036
+#: src-ru/data/text_misc.xml.append:2062
 msgid "data/text_misc.xml.append$//text[@name=\"lua_ai_ship\"]"
 msgstr "这艘飞船搭载了内部人工智能。即使全体船员阵亡，航行也不会结束。"
 
-#: src-ru/data/text_misc.xml.append:2037
+#: src-ru/data/text_misc.xml.append:2063
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_shop_is_close\"]"
 msgstr "最近信标处的商店已发送欢迎信息。"
 
-#: src-ru/data/text_misc.xml.append:2038
+#: src-ru/data/text_misc.xml.append:2064
 msgid "data/text_misc.xml.append$//text[@name=\"alas_friendly\"]"
 msgstr ""
 "你的防御反射无人机：\n"
 "将激光射弹反射回敌人。将持续工作直到被摧毁或你进行跃迁。"
 
-#: src-ru/data/text_misc.xml.append:2039
+#: src-ru/data/text_misc.xml.append:2065
 msgid "data/text_misc.xml.append$//text[@name=\"alas_enemy\"]"
 msgstr ""
 "反射无人机：\n"
 "将激光射弹反射向你的飞船。可通过破坏敌方无人机控制系统来关闭。"
 
-#: src-ru/data/text_misc.xml.append:2040
+#: src-ru/data/text_misc.xml.append:2066
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_switcher\"]"
 msgstr "显示/隐藏每秒伤害计数器。"
 
-#: src-ru/data/text_misc.xml.append:2041
+#: src-ru/data/text_misc.xml.append:2067
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_sim\"]"
 msgstr "所有武器齐射时的每秒伤害。"
 
-#: src-ru/data/text_misc.xml.append:2042
+#: src-ru/data/text_misc.xml.append:2068
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_auto\"]"
 msgstr "自动开火时的每秒伤害。"
 
-#: src-ru/data/text_misc.xml.append:2043
+#: src-ru/data/text_misc.xml.append:2069
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_oxygen\"]"
 msgstr "你处于稠密的气体空间中。飞船外部存在可供呼吸的大气。"
 
-#: src-ru/data/text_misc.xml.append:2044
+#: src-ru/data/text_misc.xml.append:2070
 msgid "data/text_misc.xml.append$//text[@name=\"lua_legendary_egg_name\"]"
 msgstr "奥里"
 
-#: src-ru/data/text_misc.xml.append:2045
+#: src-ru/data/text_misc.xml.append:2071
 msgid "data/text_misc.xml.append$//text[@name=\"lua_shots_for_charge\"]"
 msgstr "每次充能射击次数："
 
-#: src-ru/data/text_misc.xml.append:2046
+#: src-ru/data/text_misc.xml.append:2072
 msgid "data/text_misc.xml.append$//text[@name=\"lua_mc_tip_auto\"]"
 msgstr "自动模式下的心灵控制，用于保护本船船员免受敌方心灵控制。"
 
-#: src-ru/data/text_misc.xml.append:2047
+#: src-ru/data/text_misc.xml.append:2073
 msgid "data/text_misc.xml.append$//text[@name=\"lua_mc_tip_hand\"]"
 msgstr "心灵控制不使用自动模式。"
 
-#: src-ru/data/text_misc.xml.append:2048
+#: src-ru/data/text_misc.xml.append:2074
 msgid "data/text_misc.xml.append$//text[@name=\"needed_change_language\"]"
 msgstr "注意！请在设置中将语言切换为\"中文（Arsenal +）\""
 
-#: src-ru/data/text_misc.xml.append:2050
+#: src-ru/data/text_misc.xml.append:2076
 msgid "data/text_misc.xml.append$//text[@name=\"lua_onoff_glif_panel\"]"
 msgstr "开/关符文控制面板。"
 
-#: src-ru/data/text_misc.xml.append:2051
+#: src-ru/data/text_misc.xml.append:2077
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_glif_panel\"]"
 msgstr "清除所有符文。"
 
-#: src-ru/data/text_misc.xml.append:2052
+#: src-ru/data/text_misc.xml.append:2078
+msgid "data/text_misc.xml.append$//text[@name=\"lua_lastclear_glif_panel\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2079
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_glif\"]"
 msgstr "此武器的信息不可用。"
 
-#: src-ru/data/text_misc.xml.append:2053
+#: src-ru/data/text_misc.xml.append:2080
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_glif_panel_no\"]"
 msgstr "没有需要清除的符文。"
 
-#: src-ru/data/text_misc.xml.append:2054
+#: src-ru/data/text_misc.xml.append:2081
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_acc\"]"
 msgstr "精度修正"
 
-#: src-ru/data/text_misc.xml.append:2055
+#: src-ru/data/text_misc.xml.append:2082
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_iondamage\"]"
 msgstr "离子伤害："
 
-#: src-ru/data/text_misc.xml.append:2056
+#: src-ru/data/text_misc.xml.append:2083
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_crewdamage\"]"
 msgstr "船员伤害："
 
-#: src-ru/data/text_misc.xml.append:2057
+#: src-ru/data/text_misc.xml.append:2084
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sysdamage\"]"
 msgstr "系统伤害："
 
-#: src-ru/data/text_misc.xml.append:2058
+#: src-ru/data/text_misc.xml.append:2085
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_hulldamage\"]"
 msgstr "船体伤害："
 
-#: src-ru/data/text_misc.xml.append:2059
+#: src-ru/data/text_misc.xml.append:2086
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_shots\"]"
 msgstr "每次充能射击次数："
 
-#: src-ru/data/text_misc.xml.append:2060
+#: src-ru/data/text_misc.xml.append:2087
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_cooldown\"]"
 msgstr "充能时间："
 
-#: src-ru/data/text_misc.xml.append:2061
+#: src-ru/data/text_misc.xml.append:2088
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sec\"]"
 msgstr "秒"
 
-#: src-ru/data/text_misc.xml.append:2062
+#: src-ru/data/text_misc.xml.append:2089
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_charact\"]"
 msgstr "属性："
 
-#: src-ru/data/text_misc.xml.append:2063
+#: src-ru/data/text_misc.xml.append:2090
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_power\"]"
 msgstr "需要能量："
 
-#: src-ru/data/text_misc.xml.append:2064
+#: src-ru/data/text_misc.xml.append:2091
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_speed\"]"
 msgstr "射弹速度"
 
-#: src-ru/data/text_misc.xml.append:2065
+#: src-ru/data/text_misc.xml.append:2092
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_resetcd\"]"
 msgstr "射击后重新装填至"
 
-#: src-ru/data/text_misc.xml.append:2066
+#: src-ru/data/text_misc.xml.append:2093
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_freeze\"]"
 msgstr "锁定目标舱室"
 
-#: src-ru/data/text_misc.xml.append:2067
+#: src-ru/data/text_misc.xml.append:2094
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_hullbst\"]"
 msgstr "对空舱室造成2倍伤害"
 
-#: src-ru/data/text_misc.xml.append:2068
+#: src-ru/data/text_misc.xml.append:2095
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_stun\"]"
 msgstr "击晕"
 
-#: src-ru/data/text_misc.xml.append:2069
+#: src-ru/data/text_misc.xml.append:2096
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sp\"]"
 msgstr "护盾穿透："
 
-#: src-ru/data/text_misc.xml.append:2070
+#: src-ru/data/text_misc.xml.append:2097
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_fc\"]"
 msgstr "起火概率："
 
-#: src-ru/data/text_misc.xml.append:2071
+#: src-ru/data/text_misc.xml.append:2098
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_bc\"]"
 msgstr "破舱概率："
 
-#: src-ru/data/text_misc.xml.append:2072
+#: src-ru/data/text_misc.xml.append:2099
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_copycdnext\"]"
 msgstr "射击时将右侧武器充能达到自身的装填时间水平"
 
-#: src-ru/data/text_misc.xml.append:2073
+#: src-ru/data/text_misc.xml.append:2100
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_stealcrew\"]"
 msgstr "命中时传送舱室内的船员到另一艘飞船"
 
-#: src-ru/data/text_misc.xml.append:2074
+#: src-ru/data/text_misc.xml.append:2101
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_blood\"]"
 msgstr "命中时造成流血效果"
 
-#: src-ru/data/text_misc.xml.append:2075
+#: src-ru/data/text_misc.xml.append:2102
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_erosion\"]"
 msgstr "命中时造成侵蚀效果"
 
-#: src-ru/data/text_misc.xml.append:2077
+#: src-ru/data/text_misc.xml.append:2104
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_evasion\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2105
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_bomb\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2106
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_oxygen_fill\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2107
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_spall\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2108
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_asin\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2109
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_tau\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2110
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_empty_teleport\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2111
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_spawn_mantis\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2112
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_add_mc\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2113
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_add_hack\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2142
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_on\"]"
 msgstr "被解雇的船员将被抛入太空。"
 
-#: src-ru/data/text_misc.xml.append:2078
+#: src-ru/data/text_misc.xml.append:2143
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_off\"]"
 msgstr "被解雇的船员将乘坐小型穿梭机前往最近的行星或空间站。"
+
+#: src-ru/data/text_misc.xml.append:2144
+msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_cloak_blocked\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2146
+msgid "data/text_misc.xml.append$//text[@name=\"lua_pds_from_planet_marker\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2147
+msgid "data/text_misc.xml.append$//text[@name=\"lua_pds_fed_fleet\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2149
+msgid "data/text_misc.xml.append$//text[@name=\"tip_mc_weapon\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2151
+msgid "data/text_misc.xml.append$//text[@name=\"lua_annihilator_text_adder\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2153
+msgid "data/text_misc.xml.append$//text[@name=\"lua_show_ftl_timer_on\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2154
+msgid "data/text_misc.xml.append$//text[@name=\"lua_show_ftl_timer_off\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2157
+msgid "data/text_misc.xml.append$//text[@name=\"lua_get_this_weapon\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2158
+msgid "data/text_misc.xml.append$//text[@name=\"lua_container_broke\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2159
+msgid "data/text_misc.xml.append$//text[@name=\"lua_install_core\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2161
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_11\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2163
+msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_top\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2165
+msgid "data/text_misc.xml.append$//text[@name=\"lua_flagman_sbezhal\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2167
+msgid "data/text_misc.xml.append$//text[@name=\"lua_legendary_morph_name\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2169
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka0\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2170
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka1\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2171
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka2\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2172
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka3\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2174
+msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_grenades\"]"
+msgstr ""
+
+#: src-ru/data/text_misc.xml.append:2175
+msgid "data/text_misc.xml.append$//text[@name=\"tip_protector_beam\"]"
+msgstr ""

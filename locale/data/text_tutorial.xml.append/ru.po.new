@@ -1,0 +1,376 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-ru/data/text_tutorial.xml.append:5
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_SHIP_INTRO_1\"]"
+msgstr "Ваш корабль \"Kestrel\" является центром всех событий в игре."
+
+#: src-ru/data/text_tutorial.xml.append:6
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_SHIP_INTRO_2\"]"
+msgstr ""
+"Круглые значки внизу экрана представляют основные системы вашего корабля. "
+"\\n\\nСистемы используют энергию реактора (на него указывает стрелка)."
+
+#: src-ru/data/text_tutorial.xml.append:7
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_SHIP_INTRO_3\"]"
+msgstr ""
+"Это подсистемы вашего корабля. \\n\\nВ отличие от систем, им не требуется "
+"энергия реактора."
+
+#: src-ru/data/text_tutorial.xml.append:8
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_SHIP_INTRO_4_PC\"]"
+msgstr ""
+"Наведите мышь на иконку любой из систем, чтобы получить больше информации о "
+"ней. \\n\\nСоответствующий отсек будет подсвечен."
+
+#: src-ru/data/text_tutorial.xml.append:9
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_SHIP_INTRO_5\"]"
+msgstr ""
+"Индикаторы прочности корпуса, состояния щитов и ресурсов находятся в левом "
+"верхнем углу. \\n\\nЕсли прочность дойдёт до нуля, ваш корабль взорвётся."
+
+#: src-ru/data/text_tutorial.xml.append:10
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_POWER_SYSTEM_1\"]"
+msgstr ""
+"Пора отправляться, но, кажется, двигатели сейчас отключены. \\n\\nЗЕЛЁНЫМ "
+"цветом отмечается запитанная система. БЕЛЫЙ цвет означает, что система "
+"обесточена и не приносит пользы кораблю!"
+
+#: src-ru/data/text_tutorial.xml.append:11
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_POWER_SYSTEM_2_PC\"]"
+msgstr ""
+"Кликните ЛКМ по иконке двигателя, и часть энергии РЕАКТОРА будет направлена "
+"в ДВИГАТЕЛЬ. \\n\\nВажные системы старайтесь держать полностью запитанными. "
+"Правый клик обесточит систему."
+
+#: src-ru/data/text_tutorial.xml.append:12
+msgid ""
+"data/text_tutorial.xml.append$//text[@name=\"tutorial_POWER_SYSTEM_2_IPAD\"]"
+msgstr ""
+"Потяните вверх значок системы двигателя для перераспределения энергии с "
+"реактора на ваш двигатель. \\n\\nСтарайтесь сохранять системы полностью "
+"запитанными. Потяните вниз, чтобы обесточить систему, если вы захотите "
+"перераспределить энергию."
+
+#: src-ru/data/text_tutorial.xml.append:13
+msgid ""
+"data/text_tutorial.xml.append$//text[@name=\"tutorial_IPAD_TOOLTIPS_IPAD\"]"
+msgstr ""
+"Перетащите значок вправо на систему, чтобы открыть его инфо панель (как "
+"указано стрелкой). \\n\\nЭто даст вам более подробное описание его "
+"назначения и статуса."
+
+#: src-ru/data/text_tutorial.xml.append:14
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_1\"]"
+msgstr ""
+"О нет! Отсек двигателя получил 2 единицы повреждения! Иконка стала красной, "
+"показывая, что он сломан. \\n\\nКорпус также повреждён на 2 единицы."
+
+#: src-ru/data/text_tutorial.xml.append:15
+msgid ""
+"data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_2_PC\"]"
+msgstr ""
+"Ваша команда не может чинить корпус, но может ремонтировать двигатели! "
+"\\n\\nВыберите члена экипажа, нажав на него ЛКМ. Можно выбрать всю команду, "
+"зажав ЛКМ и выделив их на корабле. Выберите членов команды для продолжения."
+
+#: src-ru/data/text_tutorial.xml.append:16
+msgid ""
+"data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_2_IPAD\"]"
+msgstr ""
+"Ваша команда не может чинить корпус, но может ремонтировать двигатели! "
+"\\n\\nВыберите члена экипажа, ТАПНУВ на него. Можно выбрать всю команду, "
+"ТАПНУВ по экрану и ВЫДЕЛИВ их на корабле. Выберите членов команды для "
+"продолжения."
+
+#: src-ru/data/text_tutorial.xml.append:17
+msgid ""
+"data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_3_PC\"]"
+msgstr ""
+"Выбрав экипаж, нажмите ПКМ туда, куда вы хотите их отправить. "
+"\\n\\nОтправьте выбранный экипаж в отсек с двигателями."
+
+#: src-ru/data/text_tutorial.xml.append:18
+msgid ""
+"data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_3_IPAD\"]"
+msgstr ""
+"Выбрав экипаж, ТАПНИТЕ туда, куда вы хотите их отправить. \\n\\nОтправьте "
+"выбранный экипаж в отсек с двигателями."
+
+#: src-ru/data/text_tutorial.xml.append:19
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_4\"]"
+msgstr ""
+"Члены экипажа будут автоматически ремонтировать системы, тушить пожары, "
+"заделывать пробоины и сражаться с захватчиками в своих отсеках. \\n\\nВраги,"
+" нехватка кислорода и огонь наносят урон экипажу."
+
+#: src-ru/data/text_tutorial.xml.append:20
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_5\"]"
+msgstr ""
+"Отлично, двигатели восстановлены! \\n\\nЗаметьте, что отремонтированные "
+"системы автоматически восстанавливают питание до последней включённой "
+"мощности."
+
+#: src-ru/data/text_tutorial.xml.append:21
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_5_5\"]"
+msgstr ""
+"Некоторые системы могут обслуживаться членами экипажа, это будет давать "
+"небольшой бонус системе. Члены экипажа будут автоматически управлять "
+"неповреждённой системой, в которой они находятся. \\n\\nСилуэт над "
+"индикатором системы показывает, обслуживается ли эта система в данный "
+"момент."
+
+#: src-ru/data/text_tutorial.xml.append:22
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_FIRE_IPAD_1_IPAD\"]"
+msgstr ""
+"О нет! В вашем шлюзе вспыхнул огонь! Вы можете послать члена своей команды "
+"потушить его, но также можно использовать преимущество ваших шлюзов. "
+"\\n\\nНАЖМИТЕ на иконку системы управления дверями внизу справа, чтобы "
+"контролировать двери корабля."
+
+#: src-ru/data/text_tutorial.xml.append:23
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_FIRE_IPAD_2_IPAD\"]"
+msgstr ""
+"Нажмите на дверь, чтобы открыть или закрыть её. Проведите по дверям, чтобы "
+"открывать (или закрывать) несколько дверей быстрее. \\n\\nПопробуйте открыть"
+" ШЛЮЗЫ сейчас."
+
+#: src-ru/data/text_tutorial.xml.append:24
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_FIRE_PC_1_PC\"]"
+msgstr ""
+"О нет! В отсеке вспыхнул огонь! Вы можете послать члена своей команды "
+"потушить его, а можете использовать преимущество ваших шлюзов. "
+"\\n\\nОткройте ДВЕРИ отсека, кликнув на них ЛКМ."
+
+#: src-ru/data/text_tutorial.xml.append:25
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_FIRE_END\"]"
+msgstr ""
+"Открыв двери, вы выпустили кислород и потушили огонь. \\n\\nОтсек розовеет, "
+"когда заканчивается кислород. Кислородная система постепенно восстановит "
+"уровень кислорода, когда утечка будет устранена."
+
+#: src-ru/data/text_tutorial.xml.append:26
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_6\"]"
+msgstr ""
+"Теперь, когда двигатели отремонтированы и огонь потушен, настало время "
+"совершить FTL-прыжок к следующей локации. Прыжки требуют пилота в рубке "
+"управления."
+
+#: src-ru/data/text_tutorial.xml.append:27
+msgid ""
+"data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_7_PC\"]"
+msgstr ""
+"Каждый прыжок расходует 1 единицу топлива. Без топлива вы не сможете "
+"совершать прыжки. Прыжок также требует пилота и включённые двигатели. "
+"\\n\\nНажмите кнопку ПРЫЖОК для продолжения."
+
+#: src-ru/data/text_tutorial.xml.append:28
+msgid ""
+"data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_7_IPAD\"]"
+msgstr ""
+"Каждый прыжок расходует 1 единицу топлива. Без топлива вы не сможете "
+"совершать прыжки. Прыжок также требует пилота и включённые двигатели. "
+"\\n\\nНажмите кнопку ПРЫЖОК для продолжения."
+
+#: src-ru/data/text_tutorial.xml.append:29
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_STAR_MAP_1_PC\"]"
+msgstr ""
+"Это карта маяков. Значок корабля указывает, где вы находитесь. Наведите "
+"курсор на локацию, чтобы получить больше информации о ней. \\n\\nНажмите ЛКМ"
+" на соединительном узле, чтобы переместиться к нему."
+
+#: src-ru/data/text_tutorial.xml.append:30
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_STAR_MAP_1_IPAD\"]"
+msgstr ""
+"Это карта маяков. Маркер корабля указывает вашу текущую локацию. "
+"\\n\\nНАЖМИТЕ на локацию, чтобы узнать больше информации о ней. "
+"\\n\\nВыберите соседнюю локацию и нажмите ПРЫЖОК, чтобы переместиться туда."
+
+#: src-ru/data/text_tutorial.xml.append:31
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_0_PC\"]"
+msgstr ""
+"Добро пожаловать в бой! Вы можете использовать ПРОБЕЛ или СКМ, чтобы "
+"приостановить игру в любое время, выработать стратегию, раздать команды или "
+"перераспределить энергию.\\n\\nПопробуйте приостановить игру."
+
+#: src-ru/data/text_tutorial.xml.append:32
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_0_IPAD\"]"
+msgstr ""
+"Добро пожаловать в бой! Нажмите кнопку ПАУЗЫ что бы приостановить игру в "
+"любое время для выработки стратегии, отдачи команд или перераспределения "
+"энергии. \\n\\nПопробуйте приостановить игру сейчас."
+
+#: src-ru/data/text_tutorial.xml.append:33
+msgid ""
+"data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_IPAD_0_IPAD\"]"
+msgstr ""
+"Заметьте, сейчас вы сфокусировались на одном корабле. Нажмите на любой "
+"корабль, чтобы переместить фокус и увеличить данный корабль. \\n\\nКогда вы "
+"будете готовы, нажмите на оружейную систему для подготовки к битве."
+
+#: src-ru/data/text_tutorial.xml.append:34
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_1_PC\"]"
+msgstr ""
+"Для битвы вам нужно включить оружие. Количество требуемой энергии отображено"
+" в слоте орудия (указано ниже). \\n\\nСделайте ЛЕВЫЙ клик, чтобы включить "
+"его (включённое оружие станет БЕЛЫМ). ПРАВЫЙ клик выключает орудие."
+
+#: src-ru/data/text_tutorial.xml.append:35
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_1_IPAD\"]"
+msgstr ""
+"Вам нужна энергия для оружия, чтобы сражаться. Требуемое количество энергии "
+"отображается на оружие. n\\n\\Нажмите на него, чтобы включить (включённое "
+"оружие подсвечено белым). Нажмите ВЫКЛ, чтобы выключить оружие."
+
+#: src-ru/data/text_tutorial.xml.append:36
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_2_PC\"]"
+msgstr ""
+"Сделайте ЛЕВЫЙ клик на включённом орудии, затем прицельтесь в отсек "
+"вражеского корабля, кликнув по нему. Можно пользоваться горячими клавишами "
+"1-4. \\nОрудие выстрелит, когда полностью зарядится. Убедитесь, что игра не "
+"на паузе."
+
+#: src-ru/data/text_tutorial.xml.append:37
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_2_IPAD\"]"
+msgstr ""
+"Теперь орудие запитано. НАЖМИТЕ на орудие снова, чтобы включить прицел, "
+"затем наведите его на отсек вражеского корабля и КЛИКНИТЕ на нем. \\nОрудие "
+"выстрелит, как будет готово. Убедитесь, что игра не стоит на паузе "
+"(переключается с помощью нижней правой кнопки)."
+
+#: src-ru/data/text_tutorial.xml.append:38
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_3\"]"
+msgstr ""
+"О нет! Ваш сдвоенный лазер не может пробить пиратские щиты 2 уровня, но, к "
+"счастью, враг также не может пробить ваш щит. \\n\\n(Заметка: Каждые 2 "
+"ячейки энергии в вашей системе щитов дают вам ещё 1 щит)"
+
+#: src-ru/data/text_tutorial.xml.append:39
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_4\"]"
+msgstr ""
+"Артемида автоматически экипируется в свободный слот. Стрельба из неё "
+"расходует запас ракет, зато ракеты проникают сквозь все вражеские щиты. "
+"\\n\\nИспользуйте ракеты, чтобы повредить систему ЩИТОВ, а затем используйте"
+" лазеры."
+
+#: src-ru/data/text_tutorial.xml.append:40
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_4_5\"]"
+msgstr ""
+"Заметьте, когда вражеские системы ПОВРЕЖДАЮТСЯ или РАЗРУШАЮТСЯ, их иконки "
+"становятся ОРАНЖЕВЫМИ или КРАСНЫМИ. \\n\\nПовторные атаки КРАСНЫХ систем не "
+"наносят дополнительного урона системам, но всё ещё наносят урон КОРПУСУ. "
+"Снизьте их уровень корпуса до нуля, и они взорвутся."
+
+#: src-ru/data/text_tutorial.xml.append:41
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_4_6_PC\"]"
+msgstr ""
+"Если вам нужно напоминание, что означают иконки вражеской системы, вы можете"
+" навести курсор на зелёные символы вдоль нижнего поля. \\n\\nВыбирайте цель "
+"с умом, орудия и щиты часто бывают хорошим выбором. Теперь победите пирата!"
+
+#: src-ru/data/text_tutorial.xml.append:42
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_4_6_IPAD\"]"
+msgstr ""
+"Если вам нужно напоминание, что означают иконки каждой вражеской системы, вы"
+" можете НАЖАТЬ и УДЕРЖИВАТЬ ваш палец на зеленых символах вдоль нижнего "
+"поля. \\n\\nВыбирайте вашу цель с умом, хотя орудия и щиты часто бывают "
+"хорошим выбором."
+
+#: src-ru/data/text_tutorial.xml.append:43
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_INVENTORY_1_PC\"]"
+msgstr ""
+"Оружие и дроны добавляются в ваш грузовой отсек, если больше нет места в "
+"соответствующей системе. \\n\\nКликните ЛКМ на кнопке со знаком корабля, и "
+"вы сможете экипировать ваше новое оружие."
+
+#: src-ru/data/text_tutorial.xml.append:44
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_INVENTORY_1_IPAD\"]"
+msgstr ""
+"Оружие и дроны добавляются в ваш грузовой отсек, если больше нет места в "
+"соответствующей системе. \\n\\nНАЖМИТЕ на кнопку инфо корабля, и вы сможете "
+"экипировать ваше новое оружие."
+
+#: src-ru/data/text_tutorial.xml.append:45
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_INVENTORY_2_PC\"]"
+msgstr ""
+"Это экран вашего оборудования. Детальную информацию по орудиям, дронам и "
+"усилениям можно получить, наведя на них мышью. \\n\\nВыберите и перетащите "
+"новое орудие луч Алебарда вместо Артемиды. Затем нажмите принять."
+
+#: src-ru/data/text_tutorial.xml.append:46
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_INVENTORY_2_IPAD\"]"
+msgstr ""
+"Это ваш экран экипировки. Вы можете посмотреть более подробную информацию о "
+"вашем оружии, дронах или улучшениях нажатием на них. \\n\\nНажмите и "
+"перетащите ваш новый луч Алебарда на Артемиду, чтобы поменять их. Затем "
+"нажмите ПРИНЯТЬ."
+
+#: src-ru/data/text_tutorial.xml.append:47
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_5\"]"
+msgstr ""
+"Упс, ваша система орудий (максимальная мощность 2) недостаточно улучшена, "
+"чтобы поддерживать новое орудие (необходимая мощность 3). \\n\\nОткройте "
+"экран вашего корабля, чтобы мы могли это исправить."
+
+#: src-ru/data/text_tutorial.xml.append:48
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_1\"]"
+msgstr ""
+"Это экран улучшений. Вы можете увидеть детальную информацию о ваших системах"
+" и улучшить их, потратив ЛОМ. \\n\\nВы также можете улучшить ваш РЕАКТОР в "
+"нижней части меню, он очень важен для поддержания всех систем полностью "
+"заряженными."
+
+#: src-ru/data/text_tutorial.xml.append:49
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_1_2_PC\"]"
+msgstr ""
+"Сделайте ЛЕВЫЙ клик на вашей оружейной системе для её улучшения. Затем "
+"нажмите ПРИНЯТЬ, чтобы закрыть окно."
+
+#: src-ru/data/text_tutorial.xml.append:50
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_1_2_IPAD\"]"
+msgstr ""
+"Нажмите на вашу Оружейную систему, чтобы выбрать её, затем нажмите кнопку "
+"УЛУЧШЕНИЕ справа чтобы потратить лом и усовершенствовать систему. "
+"\\n\\nНажмите Принять, чтобы закрыть экран улучшений когда закончите."
+
+#: src-ru/data/text_tutorial.xml.append:51
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_2_PC\"]"
+msgstr ""
+"Теперь запитайте ваше новое оружие. \\n\\nВозможно, вам понадобится "
+"выключить другие орудия, чтобы освободить энергию (ПРАВЫЙ КЛИК отключает "
+"орудия)."
+
+#: src-ru/data/text_tutorial.xml.append:52
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_2_IPAD\"]"
+msgstr ""
+"Теперь испытайте, ваше новое оружие. \\n\\nВам может понадобиться выключить "
+"другое ваше оружие, чтобы освободить энергию (нажмите ВЫКЛ чтобы отключить "
+"другое оружие)."
+
+#: src-ru/data/text_tutorial.xml.append:53
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_3_PC\"]"
+msgstr ""
+"Заключительный совет: Мышкой можно перемещать орудия внутри оружейной "
+"панели. \\n\\nЕсли оружейная система будет повреждена, то орудия будут "
+"отключаться в порядке их установки (сначала отключится самое правое)."
+
+#: src-ru/data/text_tutorial.xml.append:54
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_3_IPAD\"]"
+msgstr ""
+"Заключительный совет: Вы можете изменить ваше оружие в системной панели "
+"оружие, нажав и перетащив. \\n\\nЕсли ваша система оружия повреждена, то "
+"оружие будет отключено сверху вниз."
+
+#: src-ru/data/text_tutorial.xml.append:55
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DONE_1_PC\"]"
+msgstr ""
+"Вот и всё для начала. Удачи. \\n\\nНажмите ДАЛЕЕ, чтобы закончить обучение."
+
+#: src-ru/data/text_tutorial.xml.append:56
+msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DONE_1_IPAD\"]"
+msgstr ""
+"Вот и всё для начала. Удачи. \\n\\nНажмите ДАЛЬШЕ чтобы закончить этот урок."

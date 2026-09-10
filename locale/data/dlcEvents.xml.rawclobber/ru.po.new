@@ -1,0 +1,363 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:9
+msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_PULSAR\"]/text"
+msgstr ""
+"Используя последние запасы топлива, вы смогли увести корабль на безопасное "
+"расстояние от пульсара."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:13
+msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"PULSAR\"]/text"
+msgstr "Вот чёрт! Пульсар!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:19
+msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"PDS_TEST\"]/text"
+msgstr ""
+"Вот чёрт! Эта планета в союзе с повстанцами, и они ведут по нам огонь!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:25
+msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_PDS\"]/text"
+msgstr ""
+"С помощью своих импульсных двигателей вы смогли отойти на безопасное "
+"расстояние от враждебной планеты."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:29
+msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_FLEET\"]/text"
+msgstr ""
+"Ваш пилот ловко уклоняется от артиллерийского огня окружающей вас флотилии, "
+"пока вы пытаетесь разобраться в ситуации и придумать какой-нибудь план..."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:33
+msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"NEWSHIP1\"]/text"
+msgstr "ладно"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:38
+msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"NEWSHIP2\"]/text"
+msgstr "ладно"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:44
+msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP1\"]/destroyed/text"
+msgstr "Ура!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:47
+msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP1\"]/deadCrew/text"
+msgstr "Ура!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:53
+msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP2\"]/destroyed/text"
+msgstr "Ура!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:56
+msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP2\"]/deadCrew/text"
+msgstr "Ура!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:75
+msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/text"
+msgstr ""
+"Вы случайно натыкаетесь на крупную торговую станцию. Однако стоило вам "
+"приблизиться, как все в окрестностях получают одну и ту же трансляцию: «Не "
+"связывайтесь с приверженцами Федерации. Любой, вступивший с ними в контакт, "
+"будет наказан»."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:77
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[1]/text"
+msgstr "Поискать, кто готов с вами торговать."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:81
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[2]/text"
+msgstr "Покинуть это место."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:83
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[2]/event/text"
+msgstr "Вы решаете не испытывать удачу и двигаетесь дальше."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:87
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
+" and @lvl=\"1\"]/text"
+msgstr "(Контроль разума) Изменить мнение говорящего."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:89
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
+" and @lvl=\"1\"]/event/text"
+msgstr ""
+"Вы находите источник вещания и \"убеждаете\" его отказаться от своих слов. "
+"Будем надеяться, у вас есть достаточно времени, чтобы затариться, пока до "
+"него дойдёт, что только что произошло."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:97
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
+" and @lvl=\"2\"]/text"
+msgstr "(Улучшенный контроль разума) Изменить мнение говорящего."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:99
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
+" and @lvl=\"2\"]/event/text"
+msgstr ""
+"Вы находите источник вещания и \"убеждаете\" его отказаться от своих слов. "
+"Более того, извиняясь перед вами, он предлагает бесплатные товары. Будем "
+"надеяться, у вас есть достаточно времени чтобы затариться, пока до него "
+"дойдёт, что только что произошло."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:108
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
+" and @lvl=\"3\"]/text"
+msgstr "(Продвинутый контроль разума) Изменить мнение говорящего."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:110
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
+" and @lvl=\"3\"]/event/text"
+msgstr ""
+"Вы находите источник вещания и \"убеждаете\" его отказаться от своих слов. "
+"Более того, извиняясь перед вами, он предлагает много бесплатных товаров. "
+"Будем надеяться, у вас есть достаточно времени, чтобы затариться, пока до "
+"него дойдёт, что только что произошло."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:121
+msgid ""
+"data/dlcEvents.xml.rawclobber$//eventList[@name=\"STORE_REBELSIDE_SEARCH\"]/event[1]/text"
+msgstr ""
+"На ваши позывные отозвался всего один магазин: «Никаких каналов общей связи."
+" Мы продадим вам, что попросите, но нам лучше не привлекать внимания»."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:128
+msgid ""
+"data/dlcEvents.xml.rawclobber$//eventList[@name=\"STORE_REBELSIDE_SEARCH\"]/event[2]/text"
+msgstr ""
+"Ваш запрос на дружественный обмен не даёт результатов, но через некоторое "
+"время приближается небольшой шаттл. Они отправляют немного материалов в "
+"вашем направлении с сообщением: «Не все здесь друзья флота повстанцев. "
+"Оставайтесь сильными»."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:132
+msgid ""
+"data/dlcEvents.xml.rawclobber$//eventList[@name=\"STORE_REBELSIDE_SEARCH\"]/event[3]/text"
+msgstr ""
+"В поисках магазина вы явно связались не с тем, с кем надо. Включаются "
+"сигналы тревоги, а корабельные сенсоры засекают беспилотник повстанцев, "
+"идущий на перехват."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:136
+msgid ""
+"data/dlcEvents.xml.rawclobber$//eventList[@name=\"STORE_REBELSIDE_SEARCH\"]/event[4]/text"
+msgstr ""
+"В поисках магазина вы явно связались не с тем, с кем надо. Включаются "
+"сигналы тревоги, а корабельные сенсоры засекают беспилотник повстанцев, "
+"идущий на перехват."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:156
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[1]"
+msgstr ""
+"Капитан повстанцев появляется на экране. «Я думал, мы были обречены "
+"выполнять захолустные поручения. Это мой шанс вернуть благосклонность "
+"командования! Зарядить орудия!»"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:157
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[2]"
+msgstr ""
+"Вы находите небольшую научную станцию повстанцев, занимающуюся исследованием"
+" пульсара. Прежде чем вы успеваете среагировать, корабль повстанцев засекает"
+" вас и начинает атаку."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:158
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[3]"
+msgstr ""
+"Вы прибываете к редко используемому маяку вблизи от пульсара. Вскоре "
+"неподалёку выходит из прыжка корабль повстанцев. Похоже, придётся сражаться."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:162
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[4]"
+msgstr ""
+"Капитан повстанцев появляется на экране. «Я думал, мы были обречены "
+"выполнять захолустные поручения. Это мой шанс вернуть благосклонность "
+"командования! Зарядить орудия!»"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:163
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[5]"
+msgstr ""
+"Вы находите небольшую научную станцию повстанцев, занимающуюся исследованием"
+" пульсара. Прежде чем вы успеваете среагировать, корабль повстанцев засекает"
+" вас и начинает атаку."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:164
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[6]"
+msgstr ""
+"Вы прибываете к редко используемому маяку вблизи от пульсара. Вскоре "
+"неподалёку выходит из прыжка корабль повстанцев. Похоже, придётся сражаться."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:173
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[1]"
+msgstr ""
+"Сенсоры сходят с ума, обнаружив неподалёку пульсар. Пока вы пытаетесь "
+"откалибровать FTL-привод, пиратский корабль подкрадывается к вам, заряжая "
+"орудия. Готовьтесь к бою!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:174
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[2]"
+msgstr ""
+"Прибыв в сектор, вы видите на экране громадный пульсар, а перед ним "
+"крохотный движущийся силуэт. Пока вы пытаетесь понять, что это, тишина "
+"взрывается сигналами тревоги. Похоже, это корабль на траектории перехвата!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:175
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[3]"
+msgstr ""
+"Небольшая исследовательская станция находится на орбите близлежащего "
+"пульсара. Всё указывает на то, что она заброшена, но как только вы подходите"
+" на дистанцию сканирования, приборы фиксируют признаки энергетического "
+"оружия. Небольшой боевой корабль стартует со станции. Пираты!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:179
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[4]"
+msgstr ""
+"Сенсоры сходят с ума, обнаружив неподалёку пульсар. Пока вы пытаетесь "
+"откалибровать FTL-привод, пиратский корабль подкрадывается к вам, заряжая "
+"орудия. Готовьтесь к бою!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:180
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[5]"
+msgstr ""
+"Прибыв в сектор, вы видите на экране громадный пульсар, а перед ним "
+"крохотный движущийся силуэт. Пока вы пытаетесь понять, что это, тишина "
+"взрывается сигналами тревоги. Похоже, это корабль на траектории перехвата!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:181
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[6]"
+msgstr ""
+"Небольшая исследовательская станция находится на орбите близлежащего "
+"пульсара. Всё указывает на то, что она заброшена, но как только вы подходите"
+" на дистанцию сканирования, приборы фиксируют признаки энергетического "
+"оружия. Небольшой боевой корабль стартует со станции. Пираты!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:191
+msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[1]/text"
+msgstr "Приготовиться к бою."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:195
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[@req=\"hacking\""
+" and @lvl=\"1\"]/text"
+msgstr "(Взломщик) Сбить прицел противокорабельной батареи противника."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:197
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[@req=\"hacking\""
+" and @lvl=\"1\"]/event/text"
+msgstr ""
+"Вы обнаружили уязвимость в системе спутникового наведения. Ваша команда "
+"способна запустить дрона-взломщика, чтобы изменить матрицу поиска цели. В "
+"результате противокорабельная батарея противника будет атаковать и вас, и "
+"повстанцев."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:205
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[@req=\"hacking\""
+" and @lvl=\"3\"]/text"
+msgstr "(Продвинутый взломщик) Перенацелить противокорабельную батарею."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:207
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[@req=\"hacking\""
+" and @lvl=\"3\"]/event/text"
+msgstr ""
+"Вы обнаружили уязвимость в системе спутникового наведения. Ваша команда "
+"способна запустить усовершенствованного дрона-взломщика, чтобы переписать "
+"матрицу поиска цели. В результате противокорабельная батарея противника "
+"будет атаковать корабль повстанцев вместо вашего!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:216
+msgid "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PDS_TEXT\"]/text[1]"
+msgstr ""
+"Вы потрясены, обнаружив передовую базу повстанцев на этой планете. "
+"Патрульный корабль идёт на перехват, и сенсоры показывают, что "
+"противокорабельная батарея вот-вот выстрелит. Мы должны выбираться отсюда!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:219
+msgid "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PDS_TEXT\"]/text[2]"
+msgstr ""
+"Вы потрясены, обнаружив передовую базу повстанцев на этой планете. "
+"Патрульный корабль идёт на перехват, и сенсоры показывают, что "
+"противокорабельная батарея вот-вот выстрелит. Мы должны выбираться отсюда!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:220
+msgid "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PDS_TEXT\"]/text[3]"
+msgstr ""
+"Вы потрясены, обнаружив передовую базу повстанцев на этой планете. "
+"Патрульный корабль идёт на перехват, и сенсоры показывают, что "
+"противокорабельная батарея вот-вот выстрелит. Мы должны выбираться отсюда!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:221
+msgid "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PDS_TEXT\"]/text[4]"
+msgstr ""
+"Вы потрясены, обнаружив передовую базу повстанцев на этой планете. "
+"Патрульный корабль идёт на перехват, и сенсоры показывают, что "
+"противокорабельная батарея вот-вот выстрелит. Мы должны выбираться отсюда!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:230
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[1]/text"
+msgstr "Приготовиться к бою."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:234
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[@req=\"hacking\""
+" and @lvl=\"1\"]/text"
+msgstr "(Взломщик) Сбить прицел противокорабельной батареи противника."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:236
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[@req=\"hacking\""
+" and @lvl=\"1\"]/event/text"
+msgstr ""
+"Вы обнаружили уязвимость в системе спутникового наведения. Ваша команда "
+"способна запустить дрона-взломщика, чтобы периодически менять параметры "
+"захвата цели. В результате противокорабельная батарея противника иногда "
+"будет атаковать корабль повстанцев."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:244
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[@req=\"hacking\""
+" and @lvl=\"3\"]/text"
+msgstr "(Продвинутый взломщик) Изменить цель ПКБ."
+
+#: src-ru/data/dlcEvents.xml.rawclobber:246
+msgid ""
+"data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[@req=\"hacking\""
+" and @lvl=\"3\"]/event/text"
+msgstr ""
+"Вы обнаруживаете уязвимость в спутниках наведения. Вашей команде удаётся "
+"запустить усовершенствованного дрона-взломщика для перезаписи информации о "
+"цели ПКБ. Теперь она будет вести огонь по кораблю повстанцев!"
+
+#: src-ru/data/dlcEvents.xml.rawclobber:255
+msgid ""
+"data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_AUTO_PDS_TEXT\"]/text"
+msgstr ""
+"Как только вы появляетесь, раздаются сразу несколько сигналов тревоги. Вас "
+"засекает вражеский автоматизированный корабль, а также противокорабельная "
+"батарея открывает огонь. Это не к добру!"

@@ -3536,1895 +3536,1974 @@ msgstr ""
 "Совет: Находится в грузовом отсеке. Для использования или просмотра шансов "
 "поджога/пробоя перетащите в доступный слот оружия."
 
-#: src-ru/data/text_misc.xml.append:1124
+#: src-ru/data/text_misc.xml.append:1123
+msgid "data/text_misc.xml.append$//text[@name=\"tip_deionizator\"]"
+msgstr ""
+"Совет: Может помочь для противодействия вражеским ионным орудиям или "
+"ускорить перезарядку систем корабля. Лучше показывает себя в недолгих "
+"битвах."
+
+#: src-ru/data/text_misc.xml.append:1125
 msgid "data/text_misc.xml.append$//text[@name=\"required_power\"]"
 msgstr "Требует энергии: \\1"
 
-#: src-ru/data/text_misc.xml.append:1125
+#: src-ru/data/text_misc.xml.append:1126
 msgid "data/text_misc.xml.append$//text[@name=\"boost_power_speed\"]"
 msgstr "С каждым выстрелом перезарядка быстрее"
 
-#: src-ru/data/text_misc.xml.append:1126
+#: src-ru/data/text_misc.xml.append:1127
 msgid "data/text_misc.xml.append$//text[@name=\"boost_power_damage\"]"
 msgstr "С каждым выстрелом больше урона"
 
-#: src-ru/data/text_misc.xml.append:1127
+#: src-ru/data/text_misc.xml.append:1128
 msgid "data/text_misc.xml.append$//text[@name=\"damage_cap\"]"
 msgstr "Максимальный урон: \\1"
 
-#: src-ru/data/text_misc.xml.append:1128
+#: src-ru/data/text_misc.xml.append:1129
 msgid "data/text_misc.xml.append$//text[@name=\"speed_cap\"]"
 msgstr "Минимальная перезарядка: \\1 сек."
 
-#: src-ru/data/text_misc.xml.append:1130
+#: src-ru/data/text_misc.xml.append:1131
 msgid "data/text_misc.xml.append$//text[@name=\"charge_time\"]"
 msgstr "Время зарядки: \\1 сек."
 
-#: src-ru/data/text_misc.xml.append:1131
+#: src-ru/data/text_misc.xml.append:1132
 msgid "data/text_misc.xml.append$//text[@name=\"requires_missiles\"]"
 msgstr "Тратит боеприпасы"
 
-#: src-ru/data/text_misc.xml.append:1132
+#: src-ru/data/text_misc.xml.append:1133
 msgid "data/text_misc.xml.append$//text[@name=\"shots\"]"
 msgstr "Выстрелов за заряд: \\1"
 
-#: src-ru/data/text_misc.xml.append:1133
+#: src-ru/data/text_misc.xml.append:1134
 msgid "data/text_misc.xml.append$//text[@name=\"charge\"]"
 msgstr "Максимум зарядов: \\1"
 
-#: src-ru/data/text_misc.xml.append:1134
+#: src-ru/data/text_misc.xml.append:1135
 msgid "data/text_misc.xml.append$//text[@name=\"damage_shot\"]"
 msgstr "Базовый урон: \\1"
 
-#: src-ru/data/text_misc.xml.append:1135
+#: src-ru/data/text_misc.xml.append:1136
 msgid "data/text_misc.xml.append$//text[@name=\"damage_room\"]"
 msgstr "Повреждений на отсек: \\1"
 
-#: src-ru/data/text_misc.xml.append:1136
+#: src-ru/data/text_misc.xml.append:1137
 msgid "data/text_misc.xml.append$//text[@name=\"shield_piercing\"]"
 msgstr "Пробивает щитов: \\1"
 
-#: src-ru/data/text_misc.xml.append:1137
+#: src-ru/data/text_misc.xml.append:1138
 msgid "data/text_misc.xml.append$//text[@name=\"fire_chance\"]"
 msgstr "Шанс возгорания: \\1%"
 
-#: src-ru/data/text_misc.xml.append:1138
+#: src-ru/data/text_misc.xml.append:1139
 msgid "data/text_misc.xml.append$//text[@name=\"breach_chance\"]"
 msgstr "Шанс пробить корпус: \\2%"
 
-#: src-ru/data/text_misc.xml.append:1139
+#: src-ru/data/text_misc.xml.append:1140
 msgid "data/text_misc.xml.append$//text[@name=\"stun_chance\"]"
 msgstr "Шанс оглушения: \\1%"
 
-#: src-ru/data/text_misc.xml.append:1140
+#: src-ru/data/text_misc.xml.append:1141
 msgid "data/text_misc.xml.append$//text[@name=\"ion_damage\"]"
 msgstr "Ионный урон: \\1"
 
-#: src-ru/data/text_misc.xml.append:1141
+#: src-ru/data/text_misc.xml.append:1142
 msgid "data/text_misc.xml.append$//text[@name=\"stun_damage\"]"
 msgstr "Оглушение: \\1 сек."
 
-#: src-ru/data/text_misc.xml.append:1142
+#: src-ru/data/text_misc.xml.append:1143
 msgid "data/text_misc.xml.append$//text[@name=\"personnel_damage\"]"
 msgstr "Урон по экипажу: \\1"
 
-#: src-ru/data/text_misc.xml.append:1143
+#: src-ru/data/text_misc.xml.append:1144
 msgid "data/text_misc.xml.append$//text[@name=\"system_damage\"]"
 msgstr "Урон по системам: \\1"
 
-#: src-ru/data/text_misc.xml.append:1144
+#: src-ru/data/text_misc.xml.append:1145
 msgid "data/text_misc.xml.append$//text[@name=\"double_damage\"]"
 msgstr "2x урона по отсекам без систем."
 
-#: src-ru/data/text_misc.xml.append:1146
+#: src-ru/data/text_misc.xml.append:1147
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of\"]"
 msgstr "Возможные эффекты: \\1"
 
-#: src-ru/data/text_misc.xml.append:1147
+#: src-ru/data/text_misc.xml.append:1148
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_separator\"]"
 msgstr ","
 
-#: src-ru/data/text_misc.xml.append:1148
+#: src-ru/data/text_misc.xml.append:1149
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_fire\"]"
 msgstr "Возгорание"
 
-#: src-ru/data/text_misc.xml.append:1149
+#: src-ru/data/text_misc.xml.append:1150
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_breach\"]"
 msgstr "Бронебой"
 
-#: src-ru/data/text_misc.xml.append:1150
+#: src-ru/data/text_misc.xml.append:1151
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_stun\"]"
 msgstr "Оглушение"
 
-#: src-ru/data/text_misc.xml.append:1152
+#: src-ru/data/text_misc.xml.append:1153
 msgid "data/text_misc.xml.append$//text[@name=\"chance_low\"]"
 msgstr "Низкий"
 
-#: src-ru/data/text_misc.xml.append:1153
+#: src-ru/data/text_misc.xml.append:1154
 msgid "data/text_misc.xml.append$//text[@name=\"chance_medium\"]"
 msgstr "Средний"
 
-#: src-ru/data/text_misc.xml.append:1154
+#: src-ru/data/text_misc.xml.append:1155
 msgid "data/text_misc.xml.append$//text[@name=\"chance_high\"]"
 msgstr "Высокий"
 
-#: src-ru/data/text_misc.xml.append:1156
+#: src-ru/data/text_misc.xml.append:1157
 msgid "data/text_misc.xml.append$//text[@name=\"type_desc\"]"
 msgstr "Тип: \\1\\n\\2"
 
-#: src-ru/data/text_misc.xml.append:1158
+#: src-ru/data/text_misc.xml.append:1159
 msgid "data/text_misc.xml.append$//text[@name=\"type_beam\"]"
 msgstr "Луч"
 
-#: src-ru/data/text_misc.xml.append:1159
+#: src-ru/data/text_misc.xml.append:1160
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb\"]"
 msgstr "Телепортирующаяся бомба"
 
-#: src-ru/data/text_misc.xml.append:1160
+#: src-ru/data/text_misc.xml.append:1161
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser\"]"
 msgstr "Лазер"
 
-#: src-ru/data/text_misc.xml.append:1161
+#: src-ru/data/text_misc.xml.append:1162
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser_chain\"]"
 msgstr "Цепной лазер"
 
-#: src-ru/data/text_misc.xml.append:1162
+#: src-ru/data/text_misc.xml.append:1163
 msgid "data/text_misc.xml.append$//text[@name=\"type_beam_chain\"]"
 msgstr "Цепной луч"
 
-#: src-ru/data/text_misc.xml.append:1163
+#: src-ru/data/text_misc.xml.append:1164
 msgid "data/text_misc.xml.append$//text[@name=\"type_missile_chain\"]"
 msgstr "Цепная ракета"
 
-#: src-ru/data/text_misc.xml.append:1164
+#: src-ru/data/text_misc.xml.append:1165
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb_chain\"]"
 msgstr "Цепная бомба"
 
-#: src-ru/data/text_misc.xml.append:1165
+#: src-ru/data/text_misc.xml.append:1166
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser_charge\"]"
 msgstr "Зарядный лазер"
 
-#: src-ru/data/text_misc.xml.append:1166
+#: src-ru/data/text_misc.xml.append:1167
 msgid "data/text_misc.xml.append$//text[@name=\"type_missile\"]"
 msgstr "Ракета"
 
-#: src-ru/data/text_misc.xml.append:1167
+#: src-ru/data/text_misc.xml.append:1168
 msgid "data/text_misc.xml.append$//text[@name=\"type_crystal\"]"
 msgstr "Физический снаряд"
 
-#: src-ru/data/text_misc.xml.append:1168
+#: src-ru/data/text_misc.xml.append:1169
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst\"]"
 msgstr "Разрывной снаряд"
 
-#: src-ru/data/text_misc.xml.append:1169
+#: src-ru/data/text_misc.xml.append:1170
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst_chain\"]"
 msgstr "Цепной разрывной снаряд"
 
-#: src-ru/data/text_misc.xml.append:1170
+#: src-ru/data/text_misc.xml.append:1171
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst_charge\"]"
 msgstr "Зарядный разрывной снаряд"
 
-#: src-ru/data/text_misc.xml.append:1171
+#: src-ru/data/text_misc.xml.append:1172
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion\"]"
 msgstr "Ион"
 
-#: src-ru/data/text_misc.xml.append:1172
+#: src-ru/data/text_misc.xml.append:1173
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion_chain\"]"
 msgstr "Цепной ион"
 
-#: src-ru/data/text_misc.xml.append:1173
+#: src-ru/data/text_misc.xml.append:1174
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion_charge\"]"
 msgstr "Зарядный ион"
 
-#: src-ru/data/text_misc.xml.append:1175
+#: src-ru/data/text_misc.xml.append:1176
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion_effect\"]"
 msgstr "Отключает и блокирует системы"
 
-#: src-ru/data/text_misc.xml.append:1176
+#: src-ru/data/text_misc.xml.append:1177
 msgid "data/text_misc.xml.append$//text[@name=\"type_missile_effect\"]"
 msgstr "Игнорирует щиты \\nТратит боеприпасы"
 
-#: src-ru/data/text_misc.xml.append:1177
+#: src-ru/data/text_misc.xml.append:1178
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb_effect\"]"
 msgstr "Игнорирует щиты"
 
-#: src-ru/data/text_misc.xml.append:1178
+#: src-ru/data/text_misc.xml.append:1179
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst_effect\"]"
 msgstr "Стреляет по области"
 
-#: src-ru/data/text_misc.xml.append:1179
+#: src-ru/data/text_misc.xml.append:1180
 msgid "data/text_misc.xml.append$//text[@name=\"type_charge_effect\"]"
 msgstr "Многократная зарядка"
 
-#: src-ru/data/text_misc.xml.append:1180
+#: src-ru/data/text_misc.xml.append:1181
 msgid "data/text_misc.xml.append$//text[@name=\"type_chain_effect\"]"
 msgstr "Улучшается с каждым последующим выстрелом"
 
-#: src-ru/data/text_misc.xml.append:1182
+#: src-ru/data/text_misc.xml.append:1183
 msgid "data/text_misc.xml.append$//text[@name=\"drone_required\"]"
 msgstr "Для запуска требуется деталь дрона"
 
-#: src-ru/data/text_misc.xml.append:1185
+#: src-ru/data/text_misc.xml.append:1186
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_speed\"]"
 msgstr "Ускорение"
 
-#: src-ru/data/text_misc.xml.append:1186
+#: src-ru/data/text_misc.xml.append:1187
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_console\"]"
 msgstr "Консоль"
 
-#: src-ru/data/text_misc.xml.append:1187
+#: src-ru/data/text_misc.xml.append:1188
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_info\"]"
 msgstr "Доп. информация"
 
-#: src-ru/data/text_misc.xml.append:1189
+#: src-ru/data/text_misc.xml.append:1190
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_more_info\"]"
 msgstr "Доп. информация об экипаже/карте маяков.\\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1190
+#: src-ru/data/text_misc.xml.append:1191
 msgid "data/text_misc.xml.append$//text[@name=\"description_stats\"]"
 msgstr "Характеристики:"
 
-#: src-ru/data/text_misc.xml.append:1191
+#: src-ru/data/text_misc.xml.append:1192
 msgid "data/text_misc.xml.append$//text[@name=\"requires_no_power\"]"
 msgstr "Не требует питания"
 
-#: src-ru/data/text_misc.xml.append:1192
+#: src-ru/data/text_misc.xml.append:1193
 msgid "data/text_misc.xml.append$//text[@name=\"provides_bonus_power\"]"
 msgstr "Обеспечивает доп. питание"
 
-#: src-ru/data/text_misc.xml.append:1193
+#: src-ru/data/text_misc.xml.append:1194
 msgid "data/text_misc.xml.append$//text[@name=\"cannot_fire\"]"
 msgstr "Не может стрелять"
 
-#: src-ru/data/text_misc.xml.append:1194
+#: src-ru/data/text_misc.xml.append:1195
 msgid "data/text_misc.xml.append$//text[@name=\"ammo_consumption\"]"
 msgstr "Потребляет ракет: \\1"
 
-#: src-ru/data/text_misc.xml.append:1195
+#: src-ru/data/text_misc.xml.append:1196
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_damage_positive\"]"
 msgstr "Урон увеличивается на \\1 за залп"
 
-#: src-ru/data/text_misc.xml.append:1196
+#: src-ru/data/text_misc.xml.append:1197
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_damage_negative\"]"
 msgstr "Урон уменьшается на \\1 за залп"
 
-#: src-ru/data/text_misc.xml.append:1197
+#: src-ru/data/text_misc.xml.append:1198
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_speed_positive\"]"
 msgstr "Перезарядка уменьшается на \\1 за залп"
 
-#: src-ru/data/text_misc.xml.append:1198
+#: src-ru/data/text_misc.xml.append:1199
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_speed_negative\"]"
 msgstr "Перезарядка увеличивается на \\1 за залп"
 
-#: src-ru/data/text_misc.xml.append:1199
+#: src-ru/data/text_misc.xml.append:1200
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_damage_cap\"]"
 msgstr "Максимальный урон: \\1 (после \\2-го залпа)"
 
-#: src-ru/data/text_misc.xml.append:1200
+#: src-ru/data/text_misc.xml.append:1201
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_speed_cap\"]"
 msgstr "Минимальная перезарядка: \\1 (после \\2-го залпа)"
 
-#: src-ru/data/text_misc.xml.append:1201
+#: src-ru/data/text_misc.xml.append:1202
 msgid "data/text_misc.xml.append$//text[@name=\"shot_radius\"]"
 msgstr "Радиус осколков: \\1"
 
-#: src-ru/data/text_misc.xml.append:1202
+#: src-ru/data/text_misc.xml.append:1203
 msgid "data/text_misc.xml.append$//text[@name=\"shot_radius_angular\"]"
 msgstr "Радиус осколков: \\1 градусов"
 
-#: src-ru/data/text_misc.xml.append:1203
+#: src-ru/data/text_misc.xml.append:1204
 msgid "data/text_misc.xml.append$//text[@name=\"beam_length\"]"
 msgstr "Длина луча: \\1"
 
-#: src-ru/data/text_misc.xml.append:1204
+#: src-ru/data/text_misc.xml.append:1205
 msgid "data/text_misc.xml.append$//text[@name=\"pinpoint\"]"
 msgstr "Точечный луч"
 
-#: src-ru/data/text_misc.xml.append:1205
+#: src-ru/data/text_misc.xml.append:1206
 msgid "data/text_misc.xml.append$//text[@name=\"swipe_speed\"]"
 msgstr "Скорость луча: \\1"
 
-#: src-ru/data/text_misc.xml.append:1206
+#: src-ru/data/text_misc.xml.append:1207
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_double_damage\"]"
 msgstr "Двойной урон по отсекам без систем"
 
-#: src-ru/data/text_misc.xml.append:1207
+#: src-ru/data/text_misc.xml.append:1208
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_damage_room\"]"
 msgstr "Обычный урон по отсеку: \\1 (x15 по экипажу)"
 
-#: src-ru/data/text_misc.xml.append:1208
+#: src-ru/data/text_misc.xml.append:1209
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_damage_shot\"]"
 msgstr "Обычный урон за выстрел: \\1 (x15 по экипажу)"
 
-#: src-ru/data/text_misc.xml.append:1209
+#: src-ru/data/text_misc.xml.append:1210
 msgid "data/text_misc.xml.append$//text[@name=\"hull_damage\"]"
 msgstr "Урон по корпусу: \\1"
 
-#: src-ru/data/text_misc.xml.append:1210
+#: src-ru/data/text_misc.xml.append:1211
 msgid "data/text_misc.xml.append$//text[@name=\"stun_length\"]"
 msgstr "сек. оглушения"
 
-#: src-ru/data/text_misc.xml.append:1211
+#: src-ru/data/text_misc.xml.append:1212
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_lockdown\"]"
 msgstr "Запирает отсеки"
 
-#: src-ru/data/text_misc.xml.append:1212
+#: src-ru/data/text_misc.xml.append:1213
 msgid "data/text_misc.xml.append$//text[@name=\"crew_stun_time\"]"
 msgstr "Оглушение: \\1 сек."
 
-#: src-ru/data/text_misc.xml.append:1214
+#: src-ru/data/text_misc.xml.append:1215
 msgid "data/text_misc.xml.append$//text[@name=\"hull_damage_negative\"]"
 msgstr "Ремонт корпуса: \\1"
 
-#: src-ru/data/text_misc.xml.append:1215
+#: src-ru/data/text_misc.xml.append:1216
 msgid "data/text_misc.xml.append$//text[@name=\"system_damage_negative\"]"
 msgstr "Ремонт систем: \\1"
 
-#: src-ru/data/text_misc.xml.append:1216
+#: src-ru/data/text_misc.xml.append:1217
 msgid "data/text_misc.xml.append$//text[@name=\"personnel_damage_negative\"]"
 msgstr "Лечение экипажа: \\1"
 
-#: src-ru/data/text_misc.xml.append:1218
+#: src-ru/data/text_misc.xml.append:1219
 msgid "data/text_misc.xml.append$//text[@name=\"scrap_value\"]"
 msgstr "Цена покупки/продажи: \\1~/\\2~"
 
-#: src-ru/data/text_misc.xml.append:1220
+#: src-ru/data/text_misc.xml.append:1221
 msgid "data/text_misc.xml.append$//text[@name=\"damage_word\"]"
 msgstr "Урон"
 
-#: src-ru/data/text_misc.xml.append:1221
+#: src-ru/data/text_misc.xml.append:1222
 msgid "data/text_misc.xml.append$//text[@name=\"bomb_shots\"]"
 msgstr "Бомб за залп: \\1 (1 по своему кораблю)"
 
-#: src-ru/data/text_misc.xml.append:1222
+#: src-ru/data/text_misc.xml.append:1223
 msgid "data/text_misc.xml.append$//text[@name=\"crew_scrap_value\"]"
 msgstr "Стоимость найма: \\1~"
 
-#: src-ru/data/text_misc.xml.append:1223
+#: src-ru/data/text_misc.xml.append:1224
 msgid "data/text_misc.xml.append$//text[@name=\"drone_speed\"]"
 msgstr "Скорость дрона: \\1"
 
-#: src-ru/data/text_misc.xml.append:1225
+#: src-ru/data/text_misc.xml.append:1226
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_reload_speed\"]"
 msgstr "Скорость перезарядки: \\1мс"
 
-#: src-ru/data/text_misc.xml.append:1226
+#: src-ru/data/text_misc.xml.append:1227
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_orbit_speed\"]"
 msgstr "Орбитальная скорость: \\1"
 
-#: src-ru/data/text_misc.xml.append:1227
+#: src-ru/data/text_misc.xml.append:1228
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_speed\"]"
 msgstr "Скорость снаряда: \\1"
 
-#: src-ru/data/text_misc.xml.append:1228
+#: src-ru/data/text_misc.xml.append:1229
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_all\"]"
 msgstr "Цель: все снаряды"
 
-#: src-ru/data/text_misc.xml.append:1229
+#: src-ru/data/text_misc.xml.append:1230
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_solid\"]"
 msgstr "Цель: снаряды, кроме лазеров"
 
-#: src-ru/data/text_misc.xml.append:1230
+#: src-ru/data/text_misc.xml.append:1231
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_all\"]"
 msgstr "Цель: атакующие дроны"
 
-#: src-ru/data/text_misc.xml.append:1231
+#: src-ru/data/text_misc.xml.append:1232
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_solid\"]"
 msgstr "Цель: твёрдые дроны"
 
-#: src-ru/data/text_misc.xml.append:1232
+#: src-ru/data/text_misc.xml.append:1233
 msgid "data/text_misc.xml.append$//text[@name=\"shield_drone_layers_per_charge\"]"
 msgstr "Слоёв щита за цикл: \\1"
 
-#: src-ru/data/text_misc.xml.append:1233
+#: src-ru/data/text_misc.xml.append:1234
 msgid "data/text_misc.xml.append$//text[@name=\"shield_drone_cooldowns\"]"
 msgstr "Перезарядка: \\1"
 
-#: src-ru/data/text_misc.xml.append:1234
+#: src-ru/data/text_misc.xml.append:1235
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_unknown\"]"
 msgstr "Цель: неизвестно"
 
-#: src-ru/data/text_misc.xml.append:1235
+#: src-ru/data/text_misc.xml.append:1236
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_asteroid\"]"
 msgstr "Цель: астероиды"
 
-#: src-ru/data/text_misc.xml.append:1236
+#: src-ru/data/text_misc.xml.append:1237
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_solid_projectiles\"]"
 msgstr "Цель: дроны и снаряды, кроме лазеров"
 
-#: src-ru/data/text_misc.xml.append:1237
+#: src-ru/data/text_misc.xml.append:1238
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_all_projectiles\"]"
 msgstr "Цель: дроны и все снаряды"
 
-#: src-ru/data/text_misc.xml.append:1238
+#: src-ru/data/text_misc.xml.append:1239
 msgid "data/text_misc.xml.append$//text[@name=\"drone_BOARDER_ION_desc\"]"
 msgstr "Пробивается сквозь корпус врага и ионизирует случайные системы."
 
-#: src-ru/data/text_misc.xml.append:1240
+#: src-ru/data/text_misc.xml.append:1241
 msgid "data/text_misc.xml.append$//text[@name=\"store_unavailable\"]"
 msgstr "НЕДОСТУПНО"
 
-#: src-ru/data/text_misc.xml.append:1242
+#: src-ru/data/text_misc.xml.append:1243
 msgid "data/text_misc.xml.append$//text[@name=\"no_time_sector\"]"
 msgstr ""
 "Посмотрев на карту, вы видите, что у вас нет на это времени, поскольку вам "
 "нужно отправиться в следующий сектор! Вы откладываете задание."
 
-#: src-ru/data/text_misc.xml.append:1244
+#: src-ru/data/text_misc.xml.append:1245
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_health_tooltip\"]"
 msgstr "Здоровье"
 
-#: src-ru/data/text_misc.xml.append:1245
+#: src-ru/data/text_misc.xml.append:1246
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_cooldown_negative\"]"
 msgstr "Отключено"
 
-#: src-ru/data/text_misc.xml.append:1247
+#: src-ru/data/text_misc.xml.append:1248
 msgid "data/text_misc.xml.append$//text[@name=\"free_missile_chance\"]"
 msgstr "Шанс не потратить боеприпас: \\1%"
 
-#: src-ru/data/text_misc.xml.append:1249
+#: src-ru/data/text_misc.xml.append:1250
 msgid "data/text_misc.xml.append$//text[@name=\"augment_no_effect\"]"
 msgstr "При установке этого усиления не будут работать следующие усиления:"
 
-#: src-ru/data/text_misc.xml.append:1251
+#: src-ru/data/text_misc.xml.append:1252
 msgid "data/text_misc.xml.append$//text[@name=\"seed_prompt\"]"
 msgstr "Seed"
 
-#: src-ru/data/text_misc.xml.append:1252
+#: src-ru/data/text_misc.xml.append:1253
 msgid "data/text_misc.xml.append$//text[@name=\"seed_prompt_disabled\"]"
 msgstr "Seeds отключены"
 
-#: src-ru/data/text_misc.xml.append:1253
+#: src-ru/data/text_misc.xml.append:1254
 msgid "data/text_misc.xml.append$//text[@name=\"menu_status_seed\"]"
 msgstr "Seed"
 
-#: src-ru/data/text_misc.xml.append:1254
+#: src-ru/data/text_misc.xml.append:1255
 msgid "data/text_misc.xml.append$//text[@name=\"unlocks_disabled\"]"
 msgstr "Разблокировки кораблей отключены"
 
-#: src-ru/data/text_misc.xml.append:1256
+#: src-ru/data/text_misc.xml.append:1257
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_crew_page_down\"]"
 msgstr "Пролистать вниз \\n(можно использовать колёсико мыши)"
 
-#: src-ru/data/text_misc.xml.append:1257
+#: src-ru/data/text_misc.xml.append:1258
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_crew_page_up\"]"
 msgstr "Пролистать вверх \\n(можно использовать колёсико мыши)"
 
-#: src-ru/data/text_misc.xml.append:1259
+#: src-ru/data/text_misc.xml.append:1260
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_player_ship\"]"
 msgstr "Не готово: Не на корабле игрока"
 
-#: src-ru/data/text_misc.xml.append:1260
+#: src-ru/data/text_misc.xml.append:1261
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_ship\"]"
 msgstr "Не готово: Не на вражеском корабле"
 
-#: src-ru/data/text_misc.xml.append:1261
+#: src-ru/data/text_misc.xml.append:1262
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_in_room\"]"
 msgstr "Не готово: В отсеке нет врагов"
 
-#: src-ru/data/text_misc.xml.append:1262
+#: src-ru/data/text_misc.xml.append:1263
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_friendly_in_room\"]"
 msgstr "Не готово: В отсеке нет союзников"
 
-#: src-ru/data/text_misc.xml.append:1263
+#: src-ru/data/text_misc.xml.append:1264
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_whitelist\"]"
 msgstr "Не готово: Нет разрешённого экипажа в отсеке"
 
-#: src-ru/data/text_misc.xml.append:1264
+#: src-ru/data/text_misc.xml.append:1265
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_whitelist\"]"
 msgstr "Не готово: Нет разрешённого врага в отсеке"
 
-#: src-ru/data/text_misc.xml.append:1265
+#: src-ru/data/text_misc.xml.append:1266
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_friendly_whitelist\"]"
 msgstr "Не готово: Нет разрешённого союзника в отсеке"
 
-#: src-ru/data/text_misc.xml.append:1266
+#: src-ru/data/text_misc.xml.append:1267
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_blacklist\"]"
 msgstr "Не готово: Запрещённый враг в отсеке"
 
-#: src-ru/data/text_misc.xml.append:1267
+#: src-ru/data/text_misc.xml.append:1268
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_friendly_blacklist\"]"
 msgstr "Не готово: Запрещённый союзник в отсеке"
 
-#: src-ru/data/text_misc.xml.append:1268
+#: src-ru/data/text_misc.xml.append:1269
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_system_in_room\"]"
 msgstr "Не готово: В отсеке нет системы"
 
-#: src-ru/data/text_misc.xml.append:1269
+#: src-ru/data/text_misc.xml.append:1270
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_activated\"]"
 msgstr "Способность активна"
 
-#: src-ru/data/text_misc.xml.append:1270
+#: src-ru/data/text_misc.xml.append:1271
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_ai_disabled\"]"
 msgstr "Not Ready: Power disabled for AI (shouldn't see this)"
 
-#: src-ru/data/text_misc.xml.append:1271
+#: src-ru/data/text_misc.xml.append:1272
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_has_clonebay\"]"
 msgstr "Не готово: Нет клон-отсека"
 
-#: src-ru/data/text_misc.xml.append:1272
+#: src-ru/data/text_misc.xml.append:1273
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_out_of_combat\"]"
 msgstr "Не готово: Нельзя применить в бою"
 
-#: src-ru/data/text_misc.xml.append:1273
+#: src-ru/data/text_misc.xml.append:1274
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_in_combat\"]"
 msgstr "Не готово: Нет вражеского корабля"
 
-#: src-ru/data/text_misc.xml.append:1274
+#: src-ru/data/text_misc.xml.append:1275
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_system\"]"
 msgstr "Не готово: Нет системы (\\1)"
 
-#: src-ru/data/text_misc.xml.append:1275
+#: src-ru/data/text_misc.xml.append:1276
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_system_functional\"]"
 msgstr "Не готово: \\1 не функционирует"
 
-#: src-ru/data/text_misc.xml.append:1276
+#: src-ru/data/text_misc.xml.append:1277
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_min_health\"]"
 msgstr "Не готово: Здоровье меньше \\1"
 
-#: src-ru/data/text_misc.xml.append:1277
+#: src-ru/data/text_misc.xml.append:1278
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_max_health\"]"
 msgstr "Не готово: Здоровье больше \\1"
 
-#: src-ru/data/text_misc.xml.append:1278
+#: src-ru/data/text_misc.xml.append:1279
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_system_damaged\"]"
 msgstr "Не готово: Нет повреждённой системы в отсеке"
 
-#: src-ru/data/text_misc.xml.append:1279
-msgid "data/text_misc.xml.append$/dummyroot/FTL/text[941]"
+#: src-ru/data/text_misc.xml.append:1280
+msgid "data/text_misc.xml.append$/dummyroot/FTL/text[942]"
 msgstr "Не готово: Идёт телепортация"
 
-#: src-ru/data/text_misc.xml.append:1280
+#: src-ru/data/text_misc.xml.append:1281
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_charges\"]"
 msgstr "Не готово: Нет зарядов"
 
-#: src-ru/data/text_misc.xml.append:1281
+#: src-ru/data/text_misc.xml.append:1282
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_silenced\"]"
 msgstr "Не готово: Немота"
 
-#: src-ru/data/text_misc.xml.append:1283
+#: src-ru/data/text_misc.xml.append:1284
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_burning\"]"
 msgstr "Не готово: Горит"
 
-#: src-ru/data/text_misc.xml.append:1284
+#: src-ru/data/text_misc.xml.append:1285
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_suffocating\"]"
 msgstr "Не готово: Задыхается"
 
-#: src-ru/data/text_misc.xml.append:1285
-msgid "data/text_misc.xml.append$/dummyroot/FTL/text[946]"
+#: src-ru/data/text_misc.xml.append:1286
+msgid "data/text_misc.xml.append$/dummyroot/FTL/text[947]"
 msgstr "Не готово: Разум захвачен"
 
-#: src-ru/data/text_misc.xml.append:1286
+#: src-ru/data/text_misc.xml.append:1287
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_stunned\"]"
 msgstr "Не готово: Оглушён"
 
-#: src-ru/data/text_misc.xml.append:1287
+#: src-ru/data/text_misc.xml.append:1288
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing\"]"
 msgstr "Не готово: Ремонтирует"
 
-#: src-ru/data/text_misc.xml.append:1288
+#: src-ru/data/text_misc.xml.append:1289
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_system\"]"
 msgstr "Не готово: Ремонтирует систему"
 
-#: src-ru/data/text_misc.xml.append:1289
+#: src-ru/data/text_misc.xml.append:1290
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_breach\"]"
 msgstr "Не готово: Ремонтирует пробоину"
 
-#: src-ru/data/text_misc.xml.append:1290
+#: src-ru/data/text_misc.xml.append:1291
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_fighting\"]"
 msgstr "Не готово: Сражается"
 
-#: src-ru/data/text_misc.xml.append:1291
+#: src-ru/data/text_misc.xml.append:1292
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_sabotaging\"]"
 msgstr "Не готово: Ломает систему"
 
-#: src-ru/data/text_misc.xml.append:1292
+#: src-ru/data/text_misc.xml.append:1293
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_shooting\"]"
 msgstr "Не готово: Стреляет"
 
-#: src-ru/data/text_misc.xml.append:1293
+#: src-ru/data/text_misc.xml.append:1294
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_moving\"]"
 msgstr "Не готово: Двигается"
 
-#: src-ru/data/text_misc.xml.append:1294
+#: src-ru/data/text_misc.xml.append:1295
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_idle\"]"
 msgstr "Не готово: Стоит на месте"
 
-#: src-ru/data/text_misc.xml.append:1295
+#: src-ru/data/text_misc.xml.append:1296
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_manning\"]"
 msgstr "Не готово: Управляет системой"
 
-#: src-ru/data/text_misc.xml.append:1296
+#: src-ru/data/text_misc.xml.append:1297
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_firefighting\"]"
 msgstr "Не готово: Тушит пожар"
 
-#: src-ru/data/text_misc.xml.append:1297
+#: src-ru/data/text_misc.xml.append:1298
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_dying\"]"
 msgstr "Не готово: Умирает"
 
-#: src-ru/data/text_misc.xml.append:1298
-msgid "data/text_misc.xml.append$/dummyroot/FTL/text[959]"
+#: src-ru/data/text_misc.xml.append:1299
+msgid "data/text_misc.xml.append$/dummyroot/FTL/text[960]"
 msgstr "Не готово: Телепортируется"
 
-#: src-ru/data/text_misc.xml.append:1300
+#: src-ru/data/text_misc.xml.append:1301
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_burning_false\"]"
 msgstr "Не готово: Не горит"
 
-#: src-ru/data/text_misc.xml.append:1301
+#: src-ru/data/text_misc.xml.append:1302
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_suffocating_false\"]"
 msgstr "Не готово: Не задыхается"
 
-#: src-ru/data/text_misc.xml.append:1302
+#: src-ru/data/text_misc.xml.append:1303
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_mind_false\"]"
 msgstr "Не готово: Разум не захвачен"
 
-#: src-ru/data/text_misc.xml.append:1303
+#: src-ru/data/text_misc.xml.append:1304
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_stunned_false\"]"
 msgstr "Не готово: Не оглушён"
 
-#: src-ru/data/text_misc.xml.append:1304
+#: src-ru/data/text_misc.xml.append:1305
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_false\"]"
 msgstr "Не готово: Не рементирует"
 
-#: src-ru/data/text_misc.xml.append:1305
+#: src-ru/data/text_misc.xml.append:1306
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_system_false\"]"
 msgstr "Не готово: Не рементирует систему"
 
-#: src-ru/data/text_misc.xml.append:1306
+#: src-ru/data/text_misc.xml.append:1307
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_breach_false\"]"
 msgstr "Не готово: Не рементирует пробоину"
 
-#: src-ru/data/text_misc.xml.append:1307
+#: src-ru/data/text_misc.xml.append:1308
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_fighting_false\"]"
 msgstr "Не готово: Не сражается"
 
-#: src-ru/data/text_misc.xml.append:1308
+#: src-ru/data/text_misc.xml.append:1309
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_sabotaging_false\"]"
 msgstr "Не готово: Не ломает систему"
 
-#: src-ru/data/text_misc.xml.append:1309
+#: src-ru/data/text_misc.xml.append:1310
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_shooting_false\"]"
 msgstr "Не готово: Не стреляет"
 
-#: src-ru/data/text_misc.xml.append:1310
+#: src-ru/data/text_misc.xml.append:1311
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_moving_false\"]"
 msgstr "Не готово: Не двигается"
 
-#: src-ru/data/text_misc.xml.append:1311
+#: src-ru/data/text_misc.xml.append:1312
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_idle_false\"]"
 msgstr "Не готово: Не стоит на месте"
 
-#: src-ru/data/text_misc.xml.append:1312
+#: src-ru/data/text_misc.xml.append:1313
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_manning_false\"]"
 msgstr "Не готово: Не управляет системой"
 
-#: src-ru/data/text_misc.xml.append:1313
+#: src-ru/data/text_misc.xml.append:1314
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_firefighting_false\"]"
 msgstr "Не готово: Не тушит пожар"
 
-#: src-ru/data/text_misc.xml.append:1314
+#: src-ru/data/text_misc.xml.append:1315
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_dying_false\"]"
 msgstr "Не готово: Не умирает"
 
-#: src-ru/data/text_misc.xml.append:1315
+#: src-ru/data/text_misc.xml.append:1316
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_teleporting_false\"]"
 msgstr "Не готово: Не телепортируется"
 
-#: src-ru/data/text_misc.xml.append:1317
+#: src-ru/data/text_misc.xml.append:1318
 msgid "data/text_misc.xml.append$//text[@name=\"power_number_charges\"]"
 msgstr "Заряды: \\1/\\2"
 
-#: src-ru/data/text_misc.xml.append:1319
+#: src-ru/data/text_misc.xml.append:1320
 msgid "data/text_misc.xml.append$//text[@name=\"button_mushroom_b\"]"
 msgstr "СПОРЫ"
 
-#: src-ru/data/text_misc.xml.append:1320
+#: src-ru/data/text_misc.xml.append:1321
 msgid "data/text_misc.xml.append$//text[@name=\"power_mushroom_b_ready\"]"
 msgstr "Готово: Нажмите, чтобы оглушить врагов на 4 секунды в этом отсеке"
 
-#: src-ru/data/text_misc.xml.append:1322
+#: src-ru/data/text_misc.xml.append:1323
 msgid "data/text_misc.xml.append$//text[@name=\"button_mushroom\"]"
 msgstr "СПОРЫ"
 
-#: src-ru/data/text_misc.xml.append:1323
+#: src-ru/data/text_misc.xml.append:1324
 msgid "data/text_misc.xml.append$//text[@name=\"power_mushroom_ready\"]"
 msgstr "Готово: Нажмите, чтобы оглушить врагов на 8 секунд в этом отсеке"
 
-#: src-ru/data/text_misc.xml.append:1325
+#: src-ru/data/text_misc.xml.append:1326
 msgid "data/text_misc.xml.append$//text[@name=\"tip_manning\"]"
 msgstr ""
 "Управляет системами на продвинутом уровне и даёт 1 энергию системе, в "
 "которой находится."
 
-#: src-ru/data/text_misc.xml.append:1327
+#: src-ru/data/text_misc.xml.append:1328
 msgid "data/text_misc.xml.append$//text[@name=\"tip_manning_2\"]"
 msgstr ""
 "Управляет системами на экспертном уровне и даёт 2 энергии системе, в которой"
 " находится."
 
-#: src-ru/data/text_misc.xml.append:1329
+#: src-ru/data/text_misc.xml.append:1330
 msgid "data/text_misc.xml.append$//text[@name=\"tip_battery\"]"
 msgstr ""
 "Автоматически перемещается и запитывает системы дополнительной энергией."
 
-#: src-ru/data/text_misc.xml.append:1333
+#: src-ru/data/text_misc.xml.append:1334
 msgid "data/text_misc.xml.append$//text[@name=\"discord_main_menu\"]"
 msgstr "В главном меню"
 
-#: src-ru/data/text_misc.xml.append:1334
+#: src-ru/data/text_misc.xml.append:1335
 msgid "data/text_misc.xml.append$//text[@name=\"discord_hangar\"]"
 msgstr "В ангаре"
 
-#: src-ru/data/text_misc.xml.append:1335
+#: src-ru/data/text_misc.xml.append:1336
 msgid "data/text_misc.xml.append$//text[@name=\"discord_dying\"]"
 msgstr "Умирает"
 
-#: src-ru/data/text_misc.xml.append:1336
+#: src-ru/data/text_misc.xml.append:1337
 msgid "data/text_misc.xml.append$//text[@name=\"discord_exploring\"]"
 msgstr "Разведывает"
 
-#: src-ru/data/text_misc.xml.append:1337
+#: src-ru/data/text_misc.xml.append:1338
 msgid "data/text_misc.xml.append$//text[@name=\"discord_battle\"]"
 msgstr "В бою"
 
-#: src-ru/data/text_misc.xml.append:1338
+#: src-ru/data/text_misc.xml.append:1339
 msgid "data/text_misc.xml.append$//text[@name=\"discord_battle_boss\"]"
 msgstr "В финальном бою (Фаза \\1)"
 
-#: src-ru/data/text_misc.xml.append:1339
+#: src-ru/data/text_misc.xml.append:1340
 msgid "data/text_misc.xml.append$//text[@name=\"discord_sector\"]"
 msgstr "\\1 (\\2/8)"
 
-#: src-ru/data/text_misc.xml.append:1340
+#: src-ru/data/text_misc.xml.append:1341
 msgid "data/text_misc.xml.append$//text[@name=\"discord_ship\"]"
 msgstr "\\1 Тип \\2"
 
-#: src-ru/data/text_misc.xml.append:1341
+#: src-ru/data/text_misc.xml.append:1342
 msgid "data/text_misc.xml.append$//text[@name=\"discord_playing_modded\"]"
 msgstr "Играет в мод (\\1)"
 
-#: src-ru/data/text_misc.xml.append:1342
+#: src-ru/data/text_misc.xml.append:1343
 msgid "data/text_misc.xml.append$//text[@name=\"discord_playing_vanilla\"]"
 msgstr "Играет в ванилу"
 
-#: src-ru/data/text_misc.xml.append:1343
+#: src-ru/data/text_misc.xml.append:1344
 msgid "data/text_misc.xml.append$//text[@name=\"discord_victory\"]"
 msgstr "Победа"
 
-#: src-ru/data/text_misc.xml.append:1344
+#: src-ru/data/text_misc.xml.append:1345
 msgid "data/text_misc.xml.append$//text[@name=\"discord_dead\"]"
 msgstr "Поражение"
 
-#: src-ru/data/text_misc.xml.append:1345
+#: src-ru/data/text_misc.xml.append:1346
 msgid "data/text_misc.xml.append$//text[@name=\"discord_mod\"]"
 msgstr "Arsenal +"
 
-#: src-ru/data/text_misc.xml.append:1349
+#: src-ru/data/text_misc.xml.append:1350
 msgid "data/text_misc.xml.append$//text[@name=\"shields_4\"]"
 msgstr "5 защитных барьеров"
 
-#: src-ru/data/text_misc.xml.append:1350
+#: src-ru/data/text_misc.xml.append:1351
 msgid "data/text_misc.xml.append$//text[@name=\"shields_5\"]"
 msgstr "6 защитных барьеров"
 
-#: src-ru/data/text_misc.xml.append:1351
+#: src-ru/data/text_misc.xml.append:1352
 msgid "data/text_misc.xml.append$//text[@name=\"shields_6\"]"
 msgstr "7 защитных барьеров"
 
-#: src-ru/data/text_misc.xml.append:1352
+#: src-ru/data/text_misc.xml.append:1353
 msgid "data/text_misc.xml.append$//text[@name=\"shields_7\"]"
 msgstr "8 защитных барьеров"
 
-#: src-ru/data/text_misc.xml.append:1354
-msgid "data/text_misc.xml.append$/dummyroot/FTL/text[1001]"
+#: src-ru/data/text_misc.xml.append:1355
+msgid "data/text_misc.xml.append$/dummyroot/FTL/text[1002]"
 msgstr "На ваш корабль можно устанавливать только \\1 усиления."
 
-#: src-ru/data/text_misc.xml.append:1355
+#: src-ru/data/text_misc.xml.append:1356
 msgid "data/text_misc.xml.append$//text[@name=\"shot_limit\"]"
 msgstr "Лимит выстрелов из оружия: \\1"
 
-#: src-ru/data/text_misc.xml.append:1356
+#: src-ru/data/text_misc.xml.append:1357
 msgid "data/text_misc.xml.append$//text[@name=\"shots_remaining\"]"
 msgstr "Выстрелов: \\1"
 
-#: src-ru/data/text_misc.xml.append:1357
+#: src-ru/data/text_misc.xml.append:1358
 msgid "data/text_misc.xml.append$//text[@name=\"warning_shot_limit\"]"
 msgstr "ВЫСТРЕЛОВ БОЛЬШЕ НЕТ"
 
-#: src-ru/data/text_misc.xml.append:1359
+#: src-ru/data/text_misc.xml.append:1360
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_dialog\"]"
 msgstr ""
 "Похоже, вы либо впервые играете в этот мод, либо еще не создали новый файл "
 "сохранения! Хотите перенести ваш прогресс с ванилы или создать новое "
 "сохранение? Это никак не повлияет на ваш прогресс в ваниле."
 
-#: src-ru/data/text_misc.xml.append:1361
+#: src-ru/data/text_misc.xml.append:1362
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_yes\"]"
 msgstr "Перенести прогресс"
 
-#: src-ru/data/text_misc.xml.append:1362
+#: src-ru/data/text_misc.xml.append:1363
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_no\"]"
 msgstr "Начать всё заново"
 
-#: src-ru/data/text_misc.xml.append:1364
+#: src-ru/data/text_misc.xml.append:1365
 msgid "data/text_misc.xml.append$//text[@name=\"button_magman\"]"
 msgstr "ПОДЖОГ"
 
-#: src-ru/data/text_misc.xml.append:1365
+#: src-ru/data/text_misc.xml.append:1366
 msgid "data/text_misc.xml.append$//text[@name=\"power_magman_ready\"]"
 msgstr "Готово: Нажмите, чтобы поджечь текущий отсек с вероятностью 50%"
 
-#: src-ru/data/text_misc.xml.append:1367
+#: src-ru/data/text_misc.xml.append:1368
 msgid "data/text_misc.xml.append$//text[@name=\"button_morph\"]"
 msgstr "ЗАМЫКАНИЕ"
 
-#: src-ru/data/text_misc.xml.append:1368
+#: src-ru/data/text_misc.xml.append:1369
 msgid "data/text_misc.xml.append$//text[@name=\"power_morph_ready\"]"
 msgstr ""
 "Готово: Теряет контроль, но значительно увеличивает скорость ремонта, "
 "тушения, передвижения и урон в бою"
 
-#: src-ru/data/text_misc.xml.append:1409
+#: src-ru/data/text_misc.xml.append:1410
 msgid "data/text_misc.xml.append$//text[@name=\"hack_potential\"]"
 msgstr "Подтверждение способности взлома: \\1"
 
-#: src-ru/data/text_misc.xml.append:1410
+#: src-ru/data/text_misc.xml.append:1411
 msgid "data/text_misc.xml.append$//text[@name=\"hack_activate\"]"
 msgstr "Начало взлома: \\1"
 
-#: src-ru/data/text_misc.xml.append:1412
+#: src-ru/data/text_misc.xml.append:1413
 msgid "data/text_misc.xml.append$//text[@name=\"hack_no_system\"]"
 msgstr "Нет цели для взлома."
 
-#: src-ru/data/text_misc.xml.append:1413
+#: src-ru/data/text_misc.xml.append:1414
 msgid "data/text_misc.xml.append$//text[@name=\"hack_oxygen\"]"
 msgstr "Временно истощает кислород вражеского корабля."
 
-#: src-ru/data/text_misc.xml.append:1414
+#: src-ru/data/text_misc.xml.append:1415
 msgid "data/text_misc.xml.append$//text[@name=\"hack_doors\"]"
 msgstr "Временно обращает все вражеские двери в бронированные двери игрока."
 
-#: src-ru/data/text_misc.xml.append:1415
+#: src-ru/data/text_misc.xml.append:1416
 msgid "data/text_misc.xml.append$//text[@name=\"hack_shields\"]"
 msgstr "Временно истощает мощность вражеских щитов."
 
-#: src-ru/data/text_misc.xml.append:1416
+#: src-ru/data/text_misc.xml.append:1417
 msgid "data/text_misc.xml.append$//text[@name=\"hack_pilot\"]"
 msgstr "Временно уменьшает уклонение вражеского корабля до 0."
 
-#: src-ru/data/text_misc.xml.append:1417
+#: src-ru/data/text_misc.xml.append:1418
 msgid "data/text_misc.xml.append$//text[@name=\"hack_engines\"]"
 msgstr "Временно уменьшает уклонение вражеского корабля до 0."
 
-#: src-ru/data/text_misc.xml.append:1418
+#: src-ru/data/text_misc.xml.append:1419
 msgid "data/text_misc.xml.append$//text[@name=\"hack_sensors\"]"
 msgstr "Временно отключает вражеские сенсоры."
 
-#: src-ru/data/text_misc.xml.append:1419
+#: src-ru/data/text_misc.xml.append:1420
 msgid "data/text_misc.xml.append$//text[@name=\"hack_medbay\"]"
 msgstr "Медотсек временно наносит урон вражескому экипажу внутри него."
 
-#: src-ru/data/text_misc.xml.append:1420
+#: src-ru/data/text_misc.xml.append:1421
 msgid "data/text_misc.xml.append$//text[@name=\"hack_weapons\"]"
 msgstr "Временно истощает зарядку вражеских орудий."
 
-#: src-ru/data/text_misc.xml.append:1421
+#: src-ru/data/text_misc.xml.append:1422
 msgid "data/text_misc.xml.append$//text[@name=\"hack_drones\"]"
 msgstr "Временно парализует вражеских дронов с вероятностью уничтожить их."
 
-#: src-ru/data/text_misc.xml.append:1422
+#: src-ru/data/text_misc.xml.append:1423
 msgid "data/text_misc.xml.append$//text[@name=\"hack_teleporter\"]"
 msgstr ""
 "Временно взять под контроль вражеский телепортер для возвращения их экипажа "
 "на вражеский корабль."
 
-#: src-ru/data/text_misc.xml.append:1423
+#: src-ru/data/text_misc.xml.append:1424
 msgid "data/text_misc.xml.append$//text[@name=\"hack_cloaking\"]"
 msgstr "Временно выключает вражескую маскировку."
 
-#: src-ru/data/text_misc.xml.append:1424
+#: src-ru/data/text_misc.xml.append:1425
 msgid "data/text_misc.xml.append$//text[@name=\"hack_artillery\"]"
 msgstr "Временно снижает заряд артиллерии врага."
 
-#: src-ru/data/text_misc.xml.append:1425
+#: src-ru/data/text_misc.xml.append:1426
 msgid "data/text_misc.xml.append$//text[@name=\"hack_battery\"]"
 msgstr "Временно снижает силу вражеского реактора на 2."
 
-#: src-ru/data/text_misc.xml.append:1426
+#: src-ru/data/text_misc.xml.append:1427
 msgid "data/text_misc.xml.append$//text[@name=\"hack_clonebay\"]"
 msgstr ""
 "Временно выводит из строя отсек клонирования, убивая потенциальных клонов."
 
-#: src-ru/data/text_misc.xml.append:1427
+#: src-ru/data/text_misc.xml.append:1428
 msgid "data/text_misc.xml.append$//text[@name=\"hack_mind\"]"
 msgstr ""
 "Освобождает любого человека из-под контроля и временно подчиняет разум "
 "вражеского бойца."
 
-#: src-ru/data/text_misc.xml.append:1428
+#: src-ru/data/text_misc.xml.append:1429
 msgid "data/text_misc.xml.append$//text[@name=\"hack_hacking\"]"
 msgstr "Временно прерывает и останавливает вражеский взлом."
 
-#: src-ru/data/text_misc.xml.append:1430
+#: src-ru/data/text_misc.xml.append:1431
 msgid "data/text_misc.xml.append$//text[@name=\"hack_oxygen_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: СТРЕМИТЕЛЬНАЯ ПОТЕРЯ КИСЛОРОДА."
 
-#: src-ru/data/text_misc.xml.append:1431
+#: src-ru/data/text_misc.xml.append:1432
 msgid "data/text_misc.xml.append$//text[@name=\"hack_doors_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: ДВЕРИ ЗАБЛОКИРОВАНЫ."
 
-#: src-ru/data/text_misc.xml.append:1432
+#: src-ru/data/text_misc.xml.append:1433
 msgid "data/text_misc.xml.append$//text[@name=\"hack_shields_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: ЩИТЫ ТЕРЯЮТ МОЩНОСТЬ."
 
-#: src-ru/data/text_misc.xml.append:1433
+#: src-ru/data/text_misc.xml.append:1434
 msgid "data/text_misc.xml.append$//text[@name=\"hack_pilot_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: УКЛОНЕНИЕ УПАЛО ДО 0."
 
-#: src-ru/data/text_misc.xml.append:1434
+#: src-ru/data/text_misc.xml.append:1435
 msgid "data/text_misc.xml.append$//text[@name=\"hack_engines_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: УКЛОНЕНИЕ УПАЛО ДО 0."
 
-#: src-ru/data/text_misc.xml.append:1435
+#: src-ru/data/text_misc.xml.append:1436
 msgid "data/text_misc.xml.append$//text[@name=\"hack_sensors_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: СЕНСОРЫ НЕ ФУНКЦИОНИРУЮТ."
 
-#: src-ru/data/text_misc.xml.append:1436
+#: src-ru/data/text_misc.xml.append:1437
 msgid "data/text_misc.xml.append$//text[@name=\"hack_medbay_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: МЕДОТСЕК НАНОСИТ УРОН КОМАНДЕ!"
 
-#: src-ru/data/text_misc.xml.append:1437
+#: src-ru/data/text_misc.xml.append:1438
 msgid "data/text_misc.xml.append$//text[@name=\"hack_weapons_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: ОРУДИЯ ТЕРЯЮТ ЗАРЯДКУ."
 
-#: src-ru/data/text_misc.xml.append:1438
+#: src-ru/data/text_misc.xml.append:1439
 msgid "data/text_misc.xml.append$//text[@name=\"hack_drones_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: ДРОНЫ ОГЛУШЕНЫ И МОГУТ ВЗОРВАТЬСЯ."
 
-#: src-ru/data/text_misc.xml.append:1439
+#: src-ru/data/text_misc.xml.append:1440
 msgid "data/text_misc.xml.append$//text[@name=\"hack_teleporter_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: ЭКИПАЖ ВЫНУЖДЕН ТЕЛЕПОРТИРОВАТЬСЯ НАЗАД."
 
-#: src-ru/data/text_misc.xml.append:1440
+#: src-ru/data/text_misc.xml.append:1441
 msgid "data/text_misc.xml.append$//text[@name=\"hack_cloaking_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: СИСТЕМА МАСКИРОВКИ ОТКЛЮЧЕНА."
 
-#: src-ru/data/text_misc.xml.append:1441
+#: src-ru/data/text_misc.xml.append:1442
 msgid "data/text_misc.xml.append$//text[@name=\"hack_artillery_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: АРТИЛЛЕРИЯ БЫСТРО ТЕРЯЕТ ЗАРЯД."
 
-#: src-ru/data/text_misc.xml.append:1442
+#: src-ru/data/text_misc.xml.append:1443
 msgid "data/text_misc.xml.append$//text[@name=\"hack_battery_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: МОЩНОСТЬ РЕАКТОРА СНИЗИЛАСЬ НА 2."
 
-#: src-ru/data/text_misc.xml.append:1443
+#: src-ru/data/text_misc.xml.append:1444
 msgid "data/text_misc.xml.append$//text[@name=\"hack_clonebay_player\"]"
 msgstr ""
 "СИСТЕМА ВЗЛОМАНА: НЕВОЗМОЖНО СОЗДАТЬ КЛОНОВ, ЧЛЕНЫ ЭКИПАЖА МОГУТ УМЕРЕТЬ!"
 
-#: src-ru/data/text_misc.xml.append:1444
+#: src-ru/data/text_misc.xml.append:1445
 msgid "data/text_misc.xml.append$//text[@name=\"hack_mind_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: СОЮЗНИК ПОД КОНТРОЛЕМ!"
 
-#: src-ru/data/text_misc.xml.append:1445
+#: src-ru/data/text_misc.xml.append:1446
 msgid "data/text_misc.xml.append$//text[@name=\"hack_hacking_player\"]"
 msgstr "СИСТЕМА ВЗЛОМАНА: ВЗЛОМ ВРЕМЕННО НЕДОСТУПЕН."
 
-#: src-ru/data/text_misc.xml.append:1449
+#: src-ru/data/text_misc.xml.append:1450
 msgid "data/text_misc.xml.append$//text[@name=\"distraction\"]"
 msgstr ""
 "Вы развернули отвлекающие маячки, дающие вам больше времени для исследования"
 " сектора, перед тем как флот догонит вас."
 
-#: src-ru/data/text_misc.xml.append:1450
+#: src-ru/data/text_misc.xml.append:1451
 msgid "data/text_misc.xml.append$//text[@name=\"added_quest\"]"
 msgstr "Метка задания добавлена на карту!"
 
-#: src-ru/data/text_misc.xml.append:1451
+#: src-ru/data/text_misc.xml.append:1452
 msgid "data/text_misc.xml.append$//text[@name=\"no_time\"]"
 msgstr ""
 "Посмотрев на карту, вы видите, что у вас нет на это времени, поскольку вам "
 "нужно к базе Федерации! Вы откладываете задание."
 
-#: src-ru/data/text_misc.xml.append:1452
+#: src-ru/data/text_misc.xml.append:1453
 msgid "data/text_misc.xml.append$//text[@name=\"added_quest_sector\"]"
 msgstr "Метка задания добавлена на карту следующего сектора!"
 
-#: src-ru/data/text_misc.xml.append:1454
+#: src-ru/data/text_misc.xml.append:1455
 msgid "data/text_misc.xml.append$//text[@name=\"circle_ship\"]"
 msgstr ""
 "Поздравляем! Добравшись до 5-го сектора, вы разблокировали крейсер инжи для "
 "последующих прохождений!"
 
-#: src-ru/data/text_misc.xml.append:1456
+#: src-ru/data/text_misc.xml.append:1457
 msgid "data/text_misc.xml.append$//text[@name=\"intruder_energy\"]"
 msgstr "Противнику удалось обойти суперщит, на борту захватчики!"
 
-#: src-ru/data/text_misc.xml.append:1458
+#: src-ru/data/text_misc.xml.append:1459
 msgid "data/text_misc.xml.append$//text[@name=\"event_crew_full\"]"
 msgstr "[Внимание: Экипаж полон, вам придётся кого-то уволить]"
 
-#: src-ru/data/text_misc.xml.append:1460
+#: src-ru/data/text_misc.xml.append:1461
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_1\"]"
 msgstr ""
 "Секретная технология инжи была доставлена в ангар. Разблокирован стелс-"
 "крейсер!"
 
-#: src-ru/data/text_misc.xml.append:1461
+#: src-ru/data/text_misc.xml.append:1462
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_2\"]"
 msgstr "Крейсер мантисов был разблокирован и добавлен в ангар!"
 
-#: src-ru/data/text_misc.xml.append:1462
+#: src-ru/data/text_misc.xml.append:1463
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_4\"]"
 msgstr "Крейсер Федерации был разблокирован и добавлен в ангар!"
 
-#: src-ru/data/text_misc.xml.append:1463
+#: src-ru/data/text_misc.xml.append:1464
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_5\"]"
 msgstr "Крейсер слагов был разблокирован и добавлен в ангар!"
 
-#: src-ru/data/text_misc.xml.append:1464
+#: src-ru/data/text_misc.xml.append:1465
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_6\"]"
 msgstr "Рок доставил крейсер в ангар. Крейсер The Bulwark был разблокирован!"
 
-#: src-ru/data/text_misc.xml.append:1465
+#: src-ru/data/text_misc.xml.append:1466
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_7\"]"
 msgstr "Крейсер золтанцев был разблокирован и добавлен в ангар!"
 
-#: src-ru/data/text_misc.xml.append:1466
+#: src-ru/data/text_misc.xml.append:1467
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_8\"]"
 msgstr "Корабль кристалинов отправляется в ангар. Bravais разблокирован!"
 
-#: src-ru/data/text_misc.xml.append:1470
+#: src-ru/data/text_misc.xml.append:1471
 msgid "data/text_misc.xml.append$//text[@name=\"augment\"]"
 msgstr "Усиление:"
 
-#: src-ru/data/text_misc.xml.append:1472
+#: src-ru/data/text_misc.xml.append:1473
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_success\"]"
 msgstr "\\1 получает улучшение на \\2"
 
-#: src-ru/data/text_misc.xml.append:1473
+#: src-ru/data/text_misc.xml.append:1474
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_fail_max\"]"
 msgstr "\\1 уже имеет максимальный уровень"
 
-#: src-ru/data/text_misc.xml.append:1474
+#: src-ru/data/text_misc.xml.append:1475
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_fail_missing\"]"
 msgstr "\\1 отсутствует на корабле, улучшение невозможно"
 
-#: src-ru/data/text_misc.xml.append:1476
+#: src-ru/data/text_misc.xml.append:1477
 msgid "data/text_misc.xml.append$//text[@name=\"oxygen\"]"
 msgstr "Система кислорода"
 
-#: src-ru/data/text_misc.xml.append:1477
+#: src-ru/data/text_misc.xml.append:1478
 msgid "data/text_misc.xml.append$//text[@name=\"doors\"]"
 msgstr "Подсистема шлюзов"
 
-#: src-ru/data/text_misc.xml.append:1478
+#: src-ru/data/text_misc.xml.append:1479
 msgid "data/text_misc.xml.append$//text[@name=\"shields\"]"
 msgstr "Система щитов"
 
-#: src-ru/data/text_misc.xml.append:1479
+#: src-ru/data/text_misc.xml.append:1480
 msgid "data/text_misc.xml.append$//text[@name=\"pilot\"]"
 msgstr "Рубка управления"
 
-#: src-ru/data/text_misc.xml.append:1480
+#: src-ru/data/text_misc.xml.append:1481
 msgid "data/text_misc.xml.append$//text[@name=\"engines\"]"
 msgstr "Система двигателей"
 
-#: src-ru/data/text_misc.xml.append:1481
+#: src-ru/data/text_misc.xml.append:1482
 msgid "data/text_misc.xml.append$//text[@name=\"sensors\"]"
 msgstr "Подсистема сенсоров"
 
-#: src-ru/data/text_misc.xml.append:1482
+#: src-ru/data/text_misc.xml.append:1483
 msgid "data/text_misc.xml.append$//text[@name=\"medbay\"]"
 msgstr "Медотсек"
 
-#: src-ru/data/text_misc.xml.append:1483
+#: src-ru/data/text_misc.xml.append:1484
 msgid "data/text_misc.xml.append$//text[@name=\"weapons\"]"
 msgstr "Система орудий"
 
-#: src-ru/data/text_misc.xml.append:1484
+#: src-ru/data/text_misc.xml.append:1485
 msgid "data/text_misc.xml.append$//text[@name=\"drones\"]"
 msgstr "Система дронов"
 
-#: src-ru/data/text_misc.xml.append:1485
+#: src-ru/data/text_misc.xml.append:1486
 msgid "data/text_misc.xml.append$//text[@name=\"teleporter\"]"
 msgstr "Телепортер"
 
-#: src-ru/data/text_misc.xml.append:1486
+#: src-ru/data/text_misc.xml.append:1487
 msgid "data/text_misc.xml.append$//text[@name=\"cloaking\"]"
 msgstr "Маскировка"
 
-#: src-ru/data/text_misc.xml.append:1487
+#: src-ru/data/text_misc.xml.append:1488
 msgid "data/text_misc.xml.append$//text[@name=\"artillery\"]"
 msgstr "Артиллерия"
 
-#: src-ru/data/text_misc.xml.append:1488
+#: src-ru/data/text_misc.xml.append:1489
 msgid "data/text_misc.xml.append$//text[@name=\"battery\"]"
 msgstr "Резервная батарея"
 
-#: src-ru/data/text_misc.xml.append:1489
+#: src-ru/data/text_misc.xml.append:1490
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay\"]"
 msgstr "Клон-отсек"
 
-#: src-ru/data/text_misc.xml.append:1490
+#: src-ru/data/text_misc.xml.append:1491
 msgid "data/text_misc.xml.append$//text[@name=\"mind\"]"
 msgstr "Управление разумом"
 
-#: src-ru/data/text_misc.xml.append:1491
+#: src-ru/data/text_misc.xml.append:1492
 msgid "data/text_misc.xml.append$//text[@name=\"hacking\"]"
 msgstr "Система взлома"
 
-#: src-ru/data/text_misc.xml.append:1492
+#: src-ru/data/text_misc.xml.append:1493
 msgid "data/text_misc.xml.append$//text[@name=\"reactor\"]"
 msgstr "Реактор"
 
-#: src-ru/data/text_misc.xml.append:1494
+#: src-ru/data/text_misc.xml.append:1495
 msgid "data/text_misc.xml.append$//text[@name=\"oxygen_installed\"]"
 msgstr "Система кислорода установлена"
 
-#: src-ru/data/text_misc.xml.append:1495
+#: src-ru/data/text_misc.xml.append:1496
 msgid "data/text_misc.xml.append$//text[@name=\"doors_installed\"]"
 msgstr "Шлюзы установлены"
 
-#: src-ru/data/text_misc.xml.append:1496
+#: src-ru/data/text_misc.xml.append:1497
 msgid "data/text_misc.xml.append$//text[@name=\"shields_installed\"]"
 msgstr "Щиты установлены"
 
-#: src-ru/data/text_misc.xml.append:1497
+#: src-ru/data/text_misc.xml.append:1498
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_installed\"]"
 msgstr "Рубка управления установлена"
 
-#: src-ru/data/text_misc.xml.append:1498
+#: src-ru/data/text_misc.xml.append:1499
 msgid "data/text_misc.xml.append$//text[@name=\"engines_installed\"]"
 msgstr "Двигатели установлены"
 
-#: src-ru/data/text_misc.xml.append:1499
+#: src-ru/data/text_misc.xml.append:1500
 msgid "data/text_misc.xml.append$//text[@name=\"sensors_installed\"]"
 msgstr "Сенсоры установлены"
 
-#: src-ru/data/text_misc.xml.append:1500
+#: src-ru/data/text_misc.xml.append:1501
 msgid "data/text_misc.xml.append$//text[@name=\"medbay_installed\"]"
 msgstr "Медотсек установлен"
 
-#: src-ru/data/text_misc.xml.append:1501
+#: src-ru/data/text_misc.xml.append:1502
 msgid "data/text_misc.xml.append$//text[@name=\"weapons_installed\"]"
 msgstr "Система управления орудиями установлена"
 
-#: src-ru/data/text_misc.xml.append:1502
+#: src-ru/data/text_misc.xml.append:1503
 msgid "data/text_misc.xml.append$//text[@name=\"drones_installed\"]"
 msgstr "Система управления дронами установлена"
 
-#: src-ru/data/text_misc.xml.append:1503
+#: src-ru/data/text_misc.xml.append:1504
 msgid "data/text_misc.xml.append$//text[@name=\"teleporter_installed\"]"
 msgstr "Телепортер установлен"
 
-#: src-ru/data/text_misc.xml.append:1504
+#: src-ru/data/text_misc.xml.append:1505
 msgid "data/text_misc.xml.append$//text[@name=\"cloaking_installed\"]"
 msgstr "Система маскировки установлена"
 
-#: src-ru/data/text_misc.xml.append:1505
+#: src-ru/data/text_misc.xml.append:1506
 msgid "data/text_misc.xml.append$//text[@name=\"artillery_installed\"]"
 msgstr "Артиллерия установлена"
 
-#: src-ru/data/text_misc.xml.append:1506
+#: src-ru/data/text_misc.xml.append:1507
 msgid "data/text_misc.xml.append$//text[@name=\"battery_installed\"]"
 msgstr "Резервная батарея установлена"
 
-#: src-ru/data/text_misc.xml.append:1507
+#: src-ru/data/text_misc.xml.append:1508
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay_installed\"]"
 msgstr "Клон-отсек установлен"
 
-#: src-ru/data/text_misc.xml.append:1508
+#: src-ru/data/text_misc.xml.append:1509
 msgid "data/text_misc.xml.append$//text[@name=\"mind_installed\"]"
 msgstr "Система управления разумом установлена"
 
-#: src-ru/data/text_misc.xml.append:1509
+#: src-ru/data/text_misc.xml.append:1510
 msgid "data/text_misc.xml.append$//text[@name=\"hacking_installed\"]"
 msgstr "Система взлома установлена"
 
-#: src-ru/data/text_misc.xml.append:1510
+#: src-ru/data/text_misc.xml.append:1511
 msgid "data/text_misc.xml.append$//text[@name=\"reactor_installed\"]"
 msgstr "Реактор установлен"
 
-#: src-ru/data/text_misc.xml.append:1512
+#: src-ru/data/text_misc.xml.append:1513
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_last\"]"
 msgstr ""
 "Внимание: Эта система займёт последний свободный слот на вашем корабле."
 
-#: src-ru/data/text_misc.xml.append:1513
+#: src-ru/data/text_misc.xml.append:1514
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_penultimate\"]"
 msgstr ""
 "Внимание: Если вы установите эту систему, у вас останется ещё один свободный"
 " слот."
 
-#: src-ru/data/text_misc.xml.append:1514
+#: src-ru/data/text_misc.xml.append:1515
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_update\"]"
 msgstr ""
 "Внимание: Если вы установите эту систему, у вас останется \\1 слота под "
 "системы."
 
-#: src-ru/data/text_misc.xml.append:1515
+#: src-ru/data/text_misc.xml.append:1516
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_clonebay\"]"
 msgstr "Внимание: Клон-отсек заменит медотсек."
 
-#: src-ru/data/text_misc.xml.append:1516
+#: src-ru/data/text_misc.xml.append:1517
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_medbay\"]"
 msgstr "Внимание: Медотсек заменит клон-отсек."
 
-#: src-ru/data/text_misc.xml.append:1517
+#: src-ru/data/text_misc.xml.append:1518
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_full\"]"
 msgstr "Внимание: Вы больше не можете устанавливать системы."
 
-#: src-ru/data/text_misc.xml.append:1518
+#: src-ru/data/text_misc.xml.append:1519
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_owned\"]"
 msgstr "Внимание: У вас уже есть эта система."
 
-#: src-ru/data/text_misc.xml.append:1520
+#: src-ru/data/text_misc.xml.append:1521
 msgid "data/text_misc.xml.append$//text[@name=\"dead_crew\"]"
 msgstr "\\1 погиб"
 
-#: src-ru/data/text_misc.xml.append:1521
+#: src-ru/data/text_misc.xml.append:1522
 msgid "data/text_misc.xml.append$//text[@name=\"traitor_crew\"]"
 msgstr "\\1 встал на сторону противника"
 
-#: src-ru/data/text_misc.xml.append:1522
+#: src-ru/data/text_misc.xml.append:1523
 msgid "data/text_misc.xml.append$//text[@name=\"intruder_alert\"]"
 msgstr "Захватчики на борту!"
 
-#: src-ru/data/text_misc.xml.append:1523
+#: src-ru/data/text_misc.xml.append:1524
 msgid "data/text_misc.xml.append$//text[@name=\"item_removed\"]"
 msgstr "Оборудование удалено: \\1"
 
-#: src-ru/data/text_misc.xml.append:1525
+#: src-ru/data/text_misc.xml.append:1526
 msgid "data/text_misc.xml.append$//text[@name=\"damage_alert\"]"
 msgstr "\\1 ед. урона корпуса"
 
-#: src-ru/data/text_misc.xml.append:1527
+#: src-ru/data/text_misc.xml.append:1528
 msgid "data/text_misc.xml.append$//text[@name=\"heal_alert\"]"
 msgstr "\\1 ед. корпуса отремонтировано"
 
-#: src-ru/data/text_misc.xml.append:1528
+#: src-ru/data/text_misc.xml.append:1529
 msgid "data/text_misc.xml.append$//text[@name=\"heal_1_alert\"]"
 msgstr "1 ед. корпуса восстановлена"
 
-#: src-ru/data/text_misc.xml.append:1530
+#: src-ru/data/text_misc.xml.append:1531
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_delayed\"]"
 msgstr "Флот задержан на \\1 прыжка"
 
-#: src-ru/data/text_misc.xml.append:1531
+#: src-ru/data/text_misc.xml.append:1532
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_delayed_1\"]"
 msgstr "Флот задержан на 1 прыжок"
 
-#: src-ru/data/text_misc.xml.append:1533
+#: src-ru/data/text_misc.xml.append:1534
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_speed\"]"
 msgstr "Флот приблизился на \\1 прыжка"
 
-#: src-ru/data/text_misc.xml.append:1534
+#: src-ru/data/text_misc.xml.append:1535
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_speed_1\"]"
 msgstr "Флот приблизился на 1 прыжок"
 
-#: src-ru/data/text_misc.xml.append:1538
+#: src-ru/data/text_misc.xml.append:1539
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_title_gameover\"]"
 msgstr "ПОРАЖЕНИЕ"
 
-#: src-ru/data/text_misc.xml.append:1539
+#: src-ru/data/text_misc.xml.append:1540
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_title_victory\"]"
 msgstr "ПОБЕДА!"
 
-#: src-ru/data/text_misc.xml.append:1541
+#: src-ru/data/text_misc.xml.append:1542
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_stats\"]"
 msgstr "СЧЁТ"
 
-#: src-ru/data/text_misc.xml.append:1542
+#: src-ru/data/text_misc.xml.append:1543
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_restart\"]"
 msgstr "ЗАНОВО"
 
-#: src-ru/data/text_misc.xml.append:1543
+#: src-ru/data/text_misc.xml.append:1544
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_hangar\"]"
 msgstr "АНГАР"
 
-#: src-ru/data/text_misc.xml.append:1544
+#: src-ru/data/text_misc.xml.append:1545
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_mainmenu\"]"
 msgstr "МЕНЮ"
 
-#: src-ru/data/text_misc.xml.append:1545
+#: src-ru/data/text_misc.xml.append:1546
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_quit\"]"
 msgstr "ВЫХОД"
 
-#: src-ru/data/text_misc.xml.append:1547
+#: src-ru/data/text_misc.xml.append:1548
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_win\"]"
 msgstr ""
 "Поздравляем! Вы уничтожили флагман повстанцев и обеспечили победу Федерации!"
 
-#: src-ru/data/text_misc.xml.append:1548
+#: src-ru/data/text_misc.xml.append:1549
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_win_demo\"]"
 msgstr "Поздравляем! Вы уничтожили невозможного пирата и прошли демо-версию!"
 
-#: src-ru/data/text_misc.xml.append:1550
+#: src-ru/data/text_misc.xml.append:1551
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_crew\"]"
 msgstr ""
 "Экипаж мёртв. Ваш корабль будет вечно дрейфовать по просторам космоса. Или "
 "попадётся мародёрам."
 
-#: src-ru/data/text_misc.xml.append:1551
+#: src-ru/data/text_misc.xml.append:1552
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_blowup\"]"
 msgstr "И последний взрыв стал для вас роковым, разнеся ваш корабль на части."
 
-#: src-ru/data/text_misc.xml.append:1552
+#: src-ru/data/text_misc.xml.append:1553
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_fedbase\"]"
 msgstr ""
 "Корабль повстанцев уничтожил базу Федерации. Всё кончено, они выиграли."
 
-#: src-ru/data/text_misc.xml.append:1553
+#: src-ru/data/text_misc.xml.append:1554
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_tutorial\"]"
 msgstr ""
 "Каким-то образом вы погибли во время обучающих миссий. Вы можете попробовать"
 " снова, но это не сулит ничего хорошего вашей миссии."
 
-#: src-ru/data/text_misc.xml.append:1555
+#: src-ru/data/text_misc.xml.append:1556
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_jump_noJump\"]"
 msgstr ""
 "Корабль противника отключил ваш FTL-привод. Выхода нет, вы должны победить "
 "вражеский корабль, если хотите выжить!"
 
-#: src-ru/data/text_misc.xml.append:1559
+#: src-ru/data/text_misc.xml.append:1560
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_comma\"]"
 msgstr ","
 
-#: src-ru/data/text_misc.xml.append:1560
+#: src-ru/data/text_misc.xml.append:1561
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_and\"]"
 msgstr "и"
 
-#: src-ru/data/text_misc.xml.append:1562
+#: src-ru/data/text_misc.xml.append:1563
 msgid "data/text_misc.xml.append$//text[@name=\"thank_ship\"]"
 msgstr "Благодаря подвигу:"
 
-#: src-ru/data/text_misc.xml.append:1564
+#: src-ru/data/text_misc.xml.append:1565
 msgid "data/text_misc.xml.append$//text[@name=\"thank_crew\"]"
 msgstr "И его доблестному экипажу:"
 
-#: src-ru/data/text_misc.xml.append:1566
+#: src-ru/data/text_misc.xml.append:1567
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory\"]"
 msgstr ""
 "Флагман повстанцев был уничтожен, что повергло их флот в хаос и обеспечило "
 "победу Федерации."
 
-#: src-ru/data/text_misc.xml.append:1568
+#: src-ru/data/text_misc.xml.append:1569
 msgid "data/text_misc.xml.append$//text[@name=\"game_from\"]"
 msgstr "Модификация"
 
-#: src-ru/data/text_misc.xml.append:1569
+#: src-ru/data/text_misc.xml.append:1570
 msgid "data/text_misc.xml.append$//text[@name=\"subset_games\"]"
 msgstr "Arsenal +"
 
-#: src-ru/data/text_misc.xml.append:1571
+#: src-ru/data/text_misc.xml.append:1572
 msgid "data/text_misc.xml.append$//text[@name=\"created_by\"]"
 msgstr "Разработчики:"
 
-#: src-ru/data/text_misc.xml.append:1572
+#: src-ru/data/text_misc.xml.append:1573
 msgid "data/text_misc.xml.append$//text[@name=\"matthew_justin\"]"
 msgstr ""
 "Александр \"bamalf\" Алферов,\\nКонстантин \"KBA3u\" Морозов,\\n Мстислав "
 "\"Al'Hazrad\" Соколов"
 
-#: src-ru/data/text_misc.xml.append:1574
+#: src-ru/data/text_misc.xml.append:1575
 msgid "data/text_misc.xml.append$//text[@name=\"addition_code\"]"
 msgstr "Разработчики Hyperspace:"
 
-#: src-ru/data/text_misc.xml.append:1575
+#: src-ru/data/text_misc.xml.append:1576
 msgid "data/text_misc.xml.append$//text[@name=\"andrew_church\"]"
 msgstr "TheSwiftTiger, Admiral Billy, mathchamp93, laszlogasd и другие"
 
-#: src-ru/data/text_misc.xml.append:1577
+#: src-ru/data/text_misc.xml.append:1578
 msgid "data/text_misc.xml.append$//text[@name=\"music_by\"]"
 msgstr "Музыка:"
 
-#: src-ru/data/text_misc.xml.append:1578
+#: src-ru/data/text_misc.xml.append:1579
 msgid "data/text_misc.xml.append$//text[@name=\"ben_prunty\"]"
 msgstr "Дмитрий \"Luminis Insigne\" Замотаев"
 
-#: src-ru/data/text_misc.xml.append:1580
+#: src-ru/data/text_misc.xml.append:1581
 msgid "data/text_misc.xml.append$//text[@name=\"writing_by\"]"
 msgstr "Музыка Ордена, HAL и кристалинов:"
 
-#: src-ru/data/text_misc.xml.append:1581
+#: src-ru/data/text_misc.xml.append:1582
 msgid "data/text_misc.xml.append$//text[@name=\"tom_jubert\"]"
 msgstr "Kieve Svetnikov"
 
-#: src-ru/data/text_misc.xml.append:1583
+#: src-ru/data/text_misc.xml.append:1584
 msgid "data/text_misc.xml.append$//text[@name=\"guest_writer\"]"
 msgstr "Перевод на английский язык:"
 
-#: src-ru/data/text_misc.xml.append:1584
+#: src-ru/data/text_misc.xml.append:1585
 msgid "data/text_misc.xml.append$//text[@name=\"chris_a\"]"
 msgstr "BlizzArchonJ"
 
-#: src-ru/data/text_misc.xml.append:1586
+#: src-ru/data/text_misc.xml.append:1587
 msgid "data/text_misc.xml.append$//text[@name=\"additional_art\"]"
 msgstr "Оригинальная игра:"
 
-#: src-ru/data/text_misc.xml.append:1587
+#: src-ru/data/text_misc.xml.append:1588
 msgid "data/text_misc.xml.append$//text[@name=\"bryan_ma\"]"
 msgstr "Subset Games"
 
-#: src-ru/data/text_misc.xml.append:1589
+#: src-ru/data/text_misc.xml.append:1590
 msgid "data/text_misc.xml.append$//text[@name=\"editing\"]"
 msgstr "Русская версия:"
 
-#: src-ru/data/text_misc.xml.append:1590
+#: src-ru/data/text_misc.xml.append:1591
 msgid "data/text_misc.xml.append$//text[@name=\"alison_w\"]"
 msgstr "Группа vk.com/ftl154"
 
-#: src-ru/data/text_misc.xml.append:1592
+#: src-ru/data/text_misc.xml.append:1593
 msgid "data/text_misc.xml.append$//text[@name=\"additional_testing\"]"
 msgstr "Благодарность за ценный вклад:"
 
-#: src-ru/data/text_misc.xml.append:1593
+#: src-ru/data/text_misc.xml.append:1594
 msgid "data/text_misc.xml.append$//text[@name=\"family_friends\"]"
 msgstr ""
 "Alex Vinst, Anthonest, Arfy, Biohazard063, choosechee, Chrono Vortex, D:\\side\\,\n"
 "DarkGamer, DemiSir, Evil PepperPlayz, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (from GO BALLISTIC! 2.0 mod and ROGUE AI CRUISERS mod), Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, Svirepyj, Woona и другие"
 
-#: src-ru/data/text_misc.xml.append:1599
+#: src-ru/data/text_misc.xml.append:1600
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_fr\"]"
 msgstr "Локализовано компанией Riotloc"
 
-#: src-ru/data/text_misc.xml.append:1600
+#: src-ru/data/text_misc.xml.append:1601
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_fr_names\"]"
 msgstr "Владимир Коноплицкий, Александр Скаковский"
 
-#: src-ru/data/text_misc.xml.append:1601
+#: src-ru/data/text_misc.xml.append:1602
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_it\"]"
 msgstr "Итальянская версия"
 
-#: src-ru/data/text_misc.xml.append:1602
+#: src-ru/data/text_misc.xml.append:1603
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_it_names\"]"
 msgstr ""
 "Ален Деллепьяне, Фабио Бортолотти, Лоренцо Бертолуччи, Маттео Скарабелли"
 
-#: src-ru/data/text_misc.xml.append:1603
+#: src-ru/data/text_misc.xml.append:1604
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_de\"]"
 msgstr "Немецкая версия"
 
-#: src-ru/data/text_misc.xml.append:1604
+#: src-ru/data/text_misc.xml.append:1605
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_de_names\"]"
 msgstr "Ульрих Онкен, Констанц Фогль, Роланд Штрубе"
 
-#: src-ru/data/text_misc.xml.append:1605
+#: src-ru/data/text_misc.xml.append:1606
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_es\"]"
 msgstr "Испанская версия"
 
-#: src-ru/data/text_misc.xml.append:1606
+#: src-ru/data/text_misc.xml.append:1607
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_es_names\"]"
 msgstr "Альба Кальво, Рамон Мендес, Хуан Рамон Аседо, Фернандо Морейрас"
 
-#: src-ru/data/text_misc.xml.append:1607
+#: src-ru/data/text_misc.xml.append:1608
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pl\"]"
 msgstr "Польская версия"
 
-#: src-ru/data/text_misc.xml.append:1608
+#: src-ru/data/text_misc.xml.append:1609
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pl_names\"]"
 msgstr "Анджей Вроблевски, Марцин Серкис, Мацей Ковалик"
 
-#: src-ru/data/text_misc.xml.append:1609
+#: src-ru/data/text_misc.xml.append:1610
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pt_BR\"]"
 msgstr "Португальская (бразильская) версия"
 
-#: src-ru/data/text_misc.xml.append:1610
+#: src-ru/data/text_misc.xml.append:1611
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pt_BR_names\"]"
 msgstr "Бруно Диас, Кайо Улиана, Диего Перес, Терри Банэт"
 
-#: src-ru/data/text_misc.xml.append:1611
+#: src-ru/data/text_misc.xml.append:1612
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ru\"]"
 msgstr "Русская версия"
 
-#: src-ru/data/text_misc.xml.append:1612
+#: src-ru/data/text_misc.xml.append:1613
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ru_names\"]"
 msgstr "Группа vk.com/ftl154"
 
-#: src-ru/data/text_misc.xml.append:1614
+#: src-ru/data/text_misc.xml.append:1615
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja\"]"
 msgstr "Japanese localization:"
 
-#: src-ru/data/text_misc.xml.append:1615
+#: src-ru/data/text_misc.xml.append:1616
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja_84\"]"
 msgstr "8-4, Ltd."
 
-#: src-ru/data/text_misc.xml.append:1616
+#: src-ru/data/text_misc.xml.append:1617
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja_names\"]"
 msgstr ""
 "Kimitaka Ogawa, Hiroyuki Matsushita, Dermot Creegan, Graeme Howard, John "
 "Ricciardi"
 
-#: src-ru/data/text_misc.xml.append:1618
+#: src-ru/data/text_misc.xml.append:1619
 msgid "data/text_misc.xml.append$//text[@name=\"kickstarter\"]"
 msgstr ""
 "Спасибо всем нашим чрезвычайно щедрым спонсорам на Кикстартере, особая "
 "благодарность:"
 
-#: src-ru/data/text_misc.xml.append:1620
+#: src-ru/data/text_misc.xml.append:1621
 msgid "data/text_misc.xml.append$//text[@name=\"third_party\"]"
 msgstr "FTL использует следующие сторонние библиотеки"
 
-#: src-ru/data/text_misc.xml.append:1621
+#: src-ru/data/text_misc.xml.append:1622
 msgid "data/text_misc.xml.append$//text[@name=\"folder\"]"
 msgstr ""
 "(См. прилагаемую папку с лицензией или readme для более подробной "
 "информации)"
 
-#: src-ru/data/text_misc.xml.append:1622
+#: src-ru/data/text_misc.xml.append:1623
 msgid "data/text_misc.xml.append$//text[@name=\"freetype\"]"
 msgstr ""
 "The FreeType Project (c) 1996-2002, 2006 by David Turner, Robert Wilhelm, "
 "and Werner Lemberg"
 
-#: src-ru/data/text_misc.xml.append:1623
+#: src-ru/data/text_misc.xml.append:1624
 msgid "data/text_misc.xml.append$//text[@name=\"bass\"]"
 msgstr "BASS audio library (c) 1999-2012 Un4seen Developments Ltd"
 
-#: src-ru/data/text_misc.xml.append:1625
+#: src-ru/data/text_misc.xml.append:1626
 msgid "data/text_misc.xml.append$//text[@name=\"rapidxml\"]"
 msgstr "RapidXML (c) 2006, 2007 Marcin Kalicinski"
 
-#: src-ru/data/text_misc.xml.append:1628
+#: src-ru/data/text_misc.xml.append:1629
 msgid "data/text_misc.xml.append$//text[@name=\"touch_skip\"]"
 msgstr "Коснитесь экрана и удерживайте палец, чтобы пропустить титры."
 
-#: src-ru/data/text_misc.xml.append:1631
+#: src-ru/data/text_misc.xml.append:1632
 msgid "data/text_misc.xml.append$//text[@name=\"tip_laser_blood\"]"
 msgstr ""
 "Кровотечение наносит 3 ед. урона в секунду и длится 10 секунд. Длительность "
 "складывается до 4-х раз. Аватары и дроны не подвержены кровотечению."
 
-#: src-ru/data/text_misc.xml.append:1633
+#: src-ru/data/text_misc.xml.append:1634
 msgid "data/text_misc.xml.append$//text[@name=\"autofire_tooltip_on\"]"
 msgstr ""
 "Автоматический огонь вкл. Оружие будет продолжать стрелять в цель. "
 "\\n\\nНажмите дважды, чтобы сменить режим стрельбы."
 
-#: src-ru/data/text_misc.xml.append:1634
+#: src-ru/data/text_misc.xml.append:1635
 msgid "data/text_misc.xml.append$//text[@name=\"autofire_tooltip_off\"]"
 msgstr ""
 "Автоматический огонь выкл. Оружие выстрелит один раз в цель. \\n\\nНажмите "
 "дважды, чтобы сменить режим стрельбы."
 
-#: src-ru/data/text_misc.xml.append:1636
+#: src-ru/data/text_misc.xml.append:1637
 msgid "data/text_misc.xml.append$//text[@name=\"health_tooltip\"]"
 msgstr "Здоровье: \\1/\\2"
 
-#: src-ru/data/text_misc.xml.append:1637
+#: src-ru/data/text_misc.xml.append:1638
 msgid "data/text_misc.xml.append$//text[@name=\"death_tooltip\"]"
 msgstr "Умирает"
 
-#: src-ru/data/text_misc.xml.append:1639
+#: src-ru/data/text_misc.xml.append:1640
 msgid "data/text_misc.xml.append$//text[@name=\"save_stations_tooltip\"]"
 msgstr "Сохранить текущие позиции экипажа \\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1640
+#: src-ru/data/text_misc.xml.append:1641
 msgid "data/text_misc.xml.append$//text[@name=\"ret_stations_tooltip\"]"
 msgstr "Вернуть экипаж на сохранённые позиции \\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1642
+#: src-ru/data/text_misc.xml.append:1643
 msgid "data/text_misc.xml.append$//text[@name=\"ship_info\"]"
 msgstr ""
 "Открыть информацию о корабле. Недоступно, когда корабль в опасности. "
 "\\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1643
+#: src-ru/data/text_misc.xml.append:1644
 msgid "data/text_misc.xml.append$//text[@name=\"open_store\"]"
 msgstr "Открыть местный магазин. \\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1644
+#: src-ru/data/text_misc.xml.append:1645
 msgid "data/text_misc.xml.append$//text[@name=\"open_options\"]"
 msgstr "Открыть меню настроек"
 
-#: src-ru/data/text_misc.xml.append:1646
+#: src-ru/data/text_misc.xml.append:1647
 msgid "data/text_misc.xml.append$//text[@name=\"mind_controlled_tooltip\"]"
 msgstr "Под контролем"
 
-#: src-ru/data/text_misc.xml.append:1648
+#: src-ru/data/text_misc.xml.append:1649
 msgid "data/text_misc.xml.append$//text[@name=\"rearrange\"]"
 msgstr "Нажмите и перетащите, чтобы поменять местами"
 
-#: src-ru/data/text_misc.xml.append:1650
+#: src-ru/data/text_misc.xml.append:1651
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey\"]"
 msgstr "Горячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1652
+#: src-ru/data/text_misc.xml.append:1653
 msgid "data/text_misc.xml.append$//text[@name=\"jump_button\"]"
 msgstr ""
 "Открыть звёздную карту, чтобы выбрать место для следующего прыжка. "
 "\\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1653
+#: src-ru/data/text_misc.xml.append:1654
 msgid "data/text_misc.xml.append$//text[@name=\"activate_battery\"]"
 msgstr ""
 "Активировать резервную батарею, дающую дополнительные ячейки питания "
 "реактора\\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1654
+#: src-ru/data/text_misc.xml.append:1655
 msgid "data/text_misc.xml.append$//text[@name=\"mind_button\"]"
 msgstr ""
 "Временно обращает врагов в союзников в указанном отсеке. \\nГорячая клавиша:"
 " \\1"
 
-#: src-ru/data/text_misc.xml.append:1655
+#: src-ru/data/text_misc.xml.append:1656
 msgid "data/text_misc.xml.append$//text[@name=\"hack_button\"]"
 msgstr ""
 "Запускает дрона-взломщика, требует 1 деталь дрона. \\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1656
+#: src-ru/data/text_misc.xml.append:1657
 msgid "data/text_misc.xml.append$//text[@name=\"pulse_button_broken\"]"
 msgstr "Взлом бесполезен, система уничтожена"
 
-#: src-ru/data/text_misc.xml.append:1657
+#: src-ru/data/text_misc.xml.append:1658
 msgid "data/text_misc.xml.append$//text[@name=\"open_doors\"]"
 msgstr "Открыть все двери на корабле. \\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1658
+#: src-ru/data/text_misc.xml.append:1659
 msgid "data/text_misc.xml.append$//text[@name=\"close_doors\"]"
 msgstr "Закрыть все двери на корабле. \\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1659
+#: src-ru/data/text_misc.xml.append:1660
 msgid "data/text_misc.xml.append$//text[@name=\"tele_ret\"]"
 msgstr ""
 "Забрать экипаж из указанной комнаты обратно в отсек телепортера. \\nГорячая "
 "клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1660
+#: src-ru/data/text_misc.xml.append:1661
 msgid "data/text_misc.xml.append$//text[@name=\"tele_send\"]"
 msgstr ""
 "Отправить экипаж в телепортере на вражеский корабль. \\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1661
+#: src-ru/data/text_misc.xml.append:1662
 msgid "data/text_misc.xml.append$//text[@name=\"cloak_button\"]"
 msgstr ""
 "Временно маскирует корабль, останавливая зарядку вражеских орудий и "
 "увеличивая уклонение на 60 \\nГорячая клавиша: \\1"
 
-#: src-ru/data/text_misc.xml.append:1663
+#: src-ru/data/text_misc.xml.append:1664
 msgid "data/text_misc.xml.append$//text[@name=\"powered_deployed\"]"
 msgstr "Подключён (Работает): Активен и выполняет свои функции."
 
-#: src-ru/data/text_misc.xml.append:1664
+#: src-ru/data/text_misc.xml.append:1665
 msgid "data/text_misc.xml.append$//text[@name=\"unpowered_deployed\"]"
 msgstr ""
 "Подключён (Не работает): Не активен, но можно включить без траты детали "
 "дрона."
 
-#: src-ru/data/text_misc.xml.append:1665
+#: src-ru/data/text_misc.xml.append:1666
 msgid "data/text_misc.xml.append$//text[@name=\"undeployed\"]"
 msgstr "Не подключён: Будет стоить одну деталь дрона при первом запуске."
 
-#: src-ru/data/text_misc.xml.append:1666
+#: src-ru/data/text_misc.xml.append:1667
 msgid "data/text_misc.xml.append$//text[@name=\"rebuilding\"]"
 msgstr "Дрон восстанавливается после неожиданного уничтожения."
 
-#: src-ru/data/text_misc.xml.append:1668
+#: src-ru/data/text_misc.xml.append:1669
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_autofire_off\"]"
 msgstr ""
 "Одно касание для экипировки, два — для экипировки и режима непрерывной "
 "стрельбы."
 
-#: src-ru/data/text_misc.xml.append:1669
+#: src-ru/data/text_misc.xml.append:1670
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_autofire_on\"]"
 msgstr ""
 "Нажмите один раз для автоматической стрельбы. Нажмите дважды для одиночной "
 "стрельбы."
 
-#: src-ru/data/text_misc.xml.append:1673
+#: src-ru/data/text_misc.xml.append:1674
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_yes\"]"
 msgstr "ДА"
 
-#: src-ru/data/text_misc.xml.append:1674
+#: src-ru/data/text_misc.xml.append:1675
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_no\"]"
 msgstr "НЕТ"
 
-#: src-ru/data/text_misc.xml.append:1676
+#: src-ru/data/text_misc.xml.append:1677
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_clonebay\"]"
 msgstr "Вы уверены?\\nКлон-отсек заменит ваш медотсек."
 
-#: src-ru/data/text_misc.xml.append:1677
+#: src-ru/data/text_misc.xml.append:1678
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_last_system\"]"
 msgstr "Это последний системный слот на вашем корабле.\\nВы уверены?"
 
-#: src-ru/data/text_misc.xml.append:1678
+#: src-ru/data/text_misc.xml.append:1682
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_crash\"]"
+msgstr ""
+"В ходе предыдущего игрового сеанса был обнаружен сбой мода "
+"Hyperspace.\\n\\nХотите создать отчёт об ошибке с вашими сохраненными "
+"данными и логами?"
+
+#: src-ru/data/text_misc.xml.append:1683
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_bug\"]"
+msgstr ""
+"Хотите создать отчёт об ошибке с вашими сохраненными данными и логами?"
+
+#: src-ru/data/text_misc.xml.append:1684
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_create\"]"
+msgstr "Создать отчёт об ошибке"
+
+#: src-ru/data/text_misc.xml.append:1685
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_skip\"]"
+msgstr "Нет"
+
+#: src-ru/data/text_misc.xml.append:1686
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_where\"]"
+msgstr "Отчёт об ошибке успешно создан!\\n\\nКуда вы хотите отправить этот отчёт?"
+
+#: src-ru/data/text_misc.xml.append:1687
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_discord\"]"
+msgstr "Сообщить в Discord"
+
+#: src-ru/data/text_misc.xml.append:1688
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_github\"]"
+msgstr "Создать проблему на GitHub"
+
+#: src-ru/data/text_misc.xml.append:1689
+msgid ""
+"data/text_misc.xml.append$//text[@name=\"confirm_report_instructions_discord\"]"
+msgstr ""
+"Пожалуйста, сообщите об ошибке на сервере Discord FTL: "
+"Arsenal+.\\n\\nМестоположение отчёта об ошибке:\\n\\1"
+
+#: src-ru/data/text_misc.xml.append:1690
+msgid ""
+"data/text_misc.xml.append$//text[@name=\"confirm_report_instructions_github\"]"
+msgstr ""
+"Пожалуйста, создайте проблему на GitHub по адресу:\\ngithub.com/FTL-"
+"Hyperspace/FTL-Hyperspace/issues\\n\\nМестоположение отчёта об ошибке:\\n\\1"
+
+#: src-ru/data/text_misc.xml.append:1691
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_view\"]"
+msgstr "Открыть папку с отчётами об ошибках"
+
+#: src-ru/data/text_misc.xml.append:1692
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_done\"]"
+msgstr "Пропустить"
+
+#: src-ru/data/text_misc.xml.append:1693
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_failed\"]"
+msgstr ""
+"Не удалось создать отчёт об ошибке.\\n\\nПожалуйста, проверьте логи для "
+"получения подробной информации."
+
+#: src-ru/data/text_misc.xml.append:1694
+msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_failed_okay\"]"
+msgstr "ОК"
+
+#: src-ru/data/text_misc.xml.append:1697
+msgid "data/text_misc.xml.append$//text[@name=\"tooltip_supergrid\"]"
+msgstr "Расширенный просмотр узлов: \\nПоказать все соединения на карте маяков."
+
+#: src-ru/data/text_misc.xml.append:1699
+msgid "data/text_misc.xml.append$//text[@name=\"tooltip_bugreport\"]"
+msgstr "Нажмите, чтобы сообщить об ошибке."
+
+#: src-ru/data/text_misc.xml.append:1701
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_medbay\"]"
 msgstr "Вы уверены?\\nМедотсек заменит ваш клон-отсек."
 
-#: src-ru/data/text_misc.xml.append:1679
+#: src-ru/data/text_misc.xml.append:1702
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_dismiss\"]"
 msgstr "Член экипажа\\nбудет потерян\\nнавсегда.\\nВы уверены?"
 
-#: src-ru/data/text_misc.xml.append:1680
+#: src-ru/data/text_misc.xml.append:1703
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_end_game\"]"
 msgstr "Вы уверены?\\nПрогресс полёта будет потерян."
 
-#: src-ru/data/text_misc.xml.append:1681
+#: src-ru/data/text_misc.xml.append:1704
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_leave_crew\"]"
 msgstr "Вы уверены?\\nВаша команда\\nвсё ещё находится\\nна вражеском корабле."
 
-#: src-ru/data/text_misc.xml.append:1682
+#: src-ru/data/text_misc.xml.append:1705
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_new_game\"]"
 msgstr ""
 "ВНИМАНИЕ:\\nВы уверены, что хотите начать новую игру? Ваш предыдущий полёт "
 "будет потерян."
 
-#: src-ru/data/text_misc.xml.append:1683
+#: src-ru/data/text_misc.xml.append:1706
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_reset_keys\"]"
 msgstr "Сбросить все\\nнастройки клавиш?"
 
-#: src-ru/data/text_misc.xml.append:1684
+#: src-ru/data/text_misc.xml.append:1707
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_wipe_profile\"]"
 msgstr ""
 "Вы уверены?\\nВы потеряете\\nвсе открытые корабли,\\nдостижения\\nи "
 "статистику."
 
-#: src-ru/data/text_misc.xml.append:1688
+#: src-ru/data/text_misc.xml.append:1711
 msgid "data/text_misc.xml.append$//text[@name=\"button_cancel\"]"
 msgstr "ОТМЕНА"
 
-#: src-ru/data/text_misc.xml.append:1689
+#: src-ru/data/text_misc.xml.append:1712
 msgid "data/text_misc.xml.append$//text[@name=\"button_confirm\"]"
 msgstr "ПРИНЯТЬ"
 
-#: src-ru/data/text_misc.xml.append:1691
+#: src-ru/data/text_misc.xml.append:1714
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_continue\"]"
 msgstr "ДАЛЕЕ"
 
-#: src-ru/data/text_misc.xml.append:1693
+#: src-ru/data/text_misc.xml.append:1716
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_off\"]"
 msgstr "ВЫКЛ"
 
-#: src-ru/data/text_misc.xml.append:1695
+#: src-ru/data/text_misc.xml.append:1718
 msgid "data/text_misc.xml.append$//text[@name=\"window_title\"]"
 msgstr "FTL: Hyperspace Arsenal +"
 
-#: src-ru/data/text_misc.xml.append:1696
+#: src-ru/data/text_misc.xml.append:1719
 msgid "data/text_misc.xml.append$//text[@name=\"error_resolution\"]"
 msgstr ""
 "Примечание: FTL требует минимальное разрешение 1280x720 или выше, и, похоже,"
 " ваш компьютер не поддерживает это. Пожалуйста, свяжитесь с Subset Games на "
 "devteam@ftlgame.com, если вы считаете, что получили это сообщение по ошибке."
 
-#: src-ru/data/text_misc.xml.append:1697
+#: src-ru/data/text_misc.xml.append:1720
 msgid "data/text_misc.xml.append$//text[@name=\"error_manual_resolution\"]"
 msgstr ""
 "К сожалению, запуск игры в выбранном вручную разрешении (\\1 x \\2) оказался"
 " неудачным. Автоматически возвращён оконный режим."
 
-#: src-ru/data/text_misc.xml.append:1698
+#: src-ru/data/text_misc.xml.append:1721
 msgid "data/text_misc.xml.append$//text[@name=\"error_native_fullscreen\"]"
 msgstr ""
 "Извините, FTL не смог запуститься в полноэкранном режиме по умолчанию. Ваш "
 "монитор не поддерживает требуемое разрешение (1280 x 720). Настройки видео "
 "автоматически возвращаются в растянутый полноэкранный режим."
 
-#: src-ru/data/text_misc.xml.append:1699
+#: src-ru/data/text_misc.xml.append:1722
 msgid "data/text_misc.xml.append$//text[@name=\"error_framebuffer\"]"
 msgstr ""
 "Ваша система не поддерживает кадровые буферы, а потому полноэкранный режим с"
 " растяжением и изменение размеров окна игры недоступны."
 
-#: src-ru/data/text_misc.xml.append:1700
+#: src-ru/data/text_misc.xml.append:1723
 msgid "data/text_misc.xml.append$//text[@name=\"error_framebuffer_stretch\"]"
 msgstr ""
 "Ваша система не поддерживает кадровые буферы, а потому полноэкранный режим с"
 " растяжением и изменение размеров окна игры недоступны. Автоматически "
 "возвращен полноэкранный режим с рамкой."
 
-#: src-ru/data/text_misc.xml.append:1701
+#: src-ru/data/text_misc.xml.append:1724
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed\"]"
 msgstr ""
 "Вы изменили настройки экрана. Сохранить их?\\n\\nИзменения автоматически "
 "отменятся через \\1"
 
-#: src-ru/data/text_misc.xml.append:1702
+#: src-ru/data/text_misc.xml.append:1725
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed_seconds\"]"
 msgstr "\\1 сек."
 
-#: src-ru/data/text_misc.xml.append:1703
+#: src-ru/data/text_misc.xml.append:1726
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed_1_second\"]"
 msgstr "1 сек."
 
-#: src-ru/data/text_misc.xml.append:1704
+#: src-ru/data/text_misc.xml.append:1727
 msgid "data/text_misc.xml.append$//text[@name=\"keep_screen\"]"
 msgstr "Сохранить настройки экрана"
 
-#: src-ru/data/text_misc.xml.append:1705
+#: src-ru/data/text_misc.xml.append:1728
 msgid "data/text_misc.xml.append$//text[@name=\"revert_screen\"]"
 msgstr "Отменить изменения"
 
-#: src-ru/data/text_misc.xml.append:1707
+#: src-ru/data/text_misc.xml.append:1730
 msgid "data/text_misc.xml.append$//text[@name=\"mind_blocked_shield\"]"
 msgstr "Нельзя использовать контроль разума сквозь суперщит."
 
-#: src-ru/data/text_misc.xml.append:1708
+#: src-ru/data/text_misc.xml.append:1731
 msgid "data/text_misc.xml.append$//text[@name=\"mind_blocked_blackout\"]"
 msgstr ""
 "Нельзя использовать контроль разума в отсеках, где вы не видите существ."
 
-#: src-ru/data/text_misc.xml.append:1710
+#: src-ru/data/text_misc.xml.append:1733
 msgid "data/text_misc.xml.append$//text[@name=\"rename\"]"
 msgstr "Нажмите ENTER или ESCAPE,\\nчтобы подтвердить."
 
-#: src-ru/data/text_misc.xml.append:1712
+#: src-ru/data/text_misc.xml.append:1735
 msgid "data/text_misc.xml.append$//text[@name=\"stations_saved\"]"
 msgstr "Позиции сохранены!"
 
-#: src-ru/data/text_misc.xml.append:1713
+#: src-ru/data/text_misc.xml.append:1736
 msgid "data/text_misc.xml.append$//text[@name=\"no_stations\"]"
 msgstr "Позиции не сохранены!"
 
-#: src-ru/data/text_misc.xml.append:1714
+#: src-ru/data/text_misc.xml.append:1737
 msgid "data/text_misc.xml.append$//text[@name=\"return_stations\"]"
 msgstr "Возвращение на позиции!"
 
-#: src-ru/data/text_misc.xml.append:1716
+#: src-ru/data/text_misc.xml.append:1739
 msgid "data/text_misc.xml.append$//text[@name=\"nameless_one\"]"
 msgstr "Безымянный"
 
-#: src-ru/data/text_misc.xml.append:1718
+#: src-ru/data/text_misc.xml.append:1741
 msgid "data/text_misc.xml.append$//text[@name=\"game_center\"]"
 msgstr "Waiting for Game Center"
 
-#: src-ru/data/text_misc.xml.append:1719
+#: src-ru/data/text_misc.xml.append:1742
 msgid "data/text_misc.xml.append$//text[@name=\"game_center_slow\"]"
 msgstr ""
 "If Game Center is not responding, you can disable it in the FTL page of the "
 "Settings app."
 
-#: src-ru/data/text_misc.xml.append:1720
+#: src-ru/data/text_misc.xml.append:1743
 msgid "data/text_misc.xml.append$//text[@name=\"game_center_disabled\"]"
 msgstr "Note: Game Center support is disabled."
 
-#: src-ru/data/text_misc.xml.append:1722
+#: src-ru/data/text_misc.xml.append:1745
 msgid "data/text_misc.xml.append$//text[@name=\"default_dead_crew\"]"
 msgstr "Вашего члена экипажа будет не хватать."
 
-#: src-ru/data/text_misc.xml.append:1724
+#: src-ru/data/text_misc.xml.append:1747
 msgid "data/text_misc.xml.append$//text[@name=\"first_run_tip_pc\"]"
 msgstr ""
 "Совет: Откройте игровое меню клавишей ESCAPE. Вы сможете перезапустить игру "
 "или изменить настройки."
 
-#: src-ru/data/text_misc.xml.append:1725
+#: src-ru/data/text_misc.xml.append:1748
 msgid "data/text_misc.xml.append$//text[@name=\"first_run_tip_ipad\"]"
 msgstr ""
 "Совет: Откройте игровое меню, нажав кнопку ОПЦИИ в правом верхнем углу "
 "экрана. Вы сможете перезапустить игру или изменить настройки."
 
-#: src-ru/data/text_misc.xml.append:1727
+#: src-ru/data/text_misc.xml.append:1750
 msgid "data/text_misc.xml.append$//text[@name=\"demo_locked\"]"
 msgstr "Недоступно в демо-версии FTL"
 
-#: src-ru/data/text_misc.xml.append:1729
+#: src-ru/data/text_misc.xml.append:1752
 msgid "data/text_misc.xml.append$//text[@name=\"beam_tutorial\"]"
 msgstr ""
 "Лучевое оружие может поражать несколько комнат. Когда целитесь, проведите "
@@ -5432,26 +5511,26 @@ msgstr ""
 "изменится, если тащить одним пальцем; используйте два пальца, чтобы сменить "
 "положение. Экспериментируйте для лучшей траектории прицеливания!"
 
-#: src-ru/data/text_misc.xml.append:1731
+#: src-ru/data/text_misc.xml.append:1754
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_extra_crew_1\"]"
 msgstr "Том"
 
-#: src-ru/data/text_misc.xml.append:1732
+#: src-ru/data/text_misc.xml.append:1755
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_extra_crew_2\"]"
 msgstr "Мона"
 
-#: src-ru/data/text_misc.xml.append:1734
+#: src-ru/data/text_misc.xml.append:1757
 msgid "data/text_misc.xml.append$//text[@name=\"loading\"]"
 msgstr "ЗАГРУЗКА"
 
-#: src-ru/data/text_misc.xml.append:1736
+#: src-ru/data/text_misc.xml.append:1759
 msgid "data/text_misc.xml.append$//text[@name=\"save_error\"]"
 msgstr ""
 "Не удалось сохранить ваш прогресс.\\n\\nПожалуйста, выйдите из игры и "
 "проверьте, не блокирует ли ваш антивирус процесс игры.\\n\\nЕсли проблема "
 "повторяется, напишите нам по адресу contact@subsetgames.com"
 
-#: src-ru/data/text_misc.xml.append:1740
+#: src-ru/data/text_misc.xml.append:1763
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory_true_end\"]"
 msgstr ""
 "Вы оказываетесь прямо рядом с базой Федерации, на которую напал флагман "
@@ -5459,48 +5538,48 @@ msgstr ""
 "даже не почувствовав их сопротивления. Федерации больше ничто не угрожает, а"
 " вас навсегда запомнят как героев."
 
-#: src-ru/data/text_misc.xml.append:1743
+#: src-ru/data/text_misc.xml.append:1766
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_more\"]"
 msgstr "и другие"
 
-#: src-ru/data/text_misc.xml.append:1744
+#: src-ru/data/text_misc.xml.append:1767
 msgid "data/text_misc.xml.append$//text[@name=\"thank_ai\"]"
 msgstr "Управляемого точным бортовым ИИ"
 
-#: src-ru/data/text_misc.xml.append:1745
+#: src-ru/data/text_misc.xml.append:1768
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ko\"]"
 msgstr "Фанатский корейский перевод:"
 
-#: src-ru/data/text_misc.xml.append:1746
+#: src-ru/data/text_misc.xml.append:1769
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ko_names\"]"
 msgstr "H20, nedsociety"
 
-#: src-ru/data/text_misc.xml.append:1747
+#: src-ru/data/text_misc.xml.append:1770
 msgid "data/text_misc.xml.append$//text[@name=\"font\"]"
 msgstr ""
 "Шрифты 'Half-Life 1 + 2' используются с разрешения freakyfonts.de (не "
 "актуально в данной версии перевода)"
 
-#: src-ru/data/text_misc.xml.append:1748
+#: src-ru/data/text_misc.xml.append:1771
 msgid "data/text_misc.xml.append$//text[@name=\"font_halflife\"]"
 msgstr ""
 "Шрифты 'Half-Life 1 + 2' используются с разрешения freakyfonts.de (не "
 "актуально в данной версии перевода)"
 
-#: src-ru/data/text_misc.xml.append:1749
+#: src-ru/data/text_misc.xml.append:1772
 msgid "data/text_misc.xml.append$//text[@name=\"font_dotgothic\"]"
 msgstr "Шрифт 'DotGothic' используется по лицензии Fontworks Inc."
 
-#: src-ru/data/text_misc.xml.append:1752
+#: src-ru/data/text_misc.xml.append:1775
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_project\"]"
 msgstr "Проект Hyperspace"
 
-#: src-ru/data/text_misc.xml.append:1753
+#: src-ru/data/text_misc.xml.append:1776
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_developed_by\"]"
 msgstr "Разработчики:"
 
-#: src-ru/data/text_misc.xml.append:1754
+#: src-ru/data/text_misc.xml.append:1777
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_developed_names\"]"
 msgstr ""
@@ -5508,20 +5587,20 @@ msgstr ""
 "mathchamp93, Mr. Doom (Nasa62), Chrono Vortex, Pepson, ranhai, "
 "sillysandvich, The Dumb Dino"
 
-#: src-ru/data/text_misc.xml.append:1755
+#: src-ru/data/text_misc.xml.append:1778
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_art\"]"
 msgstr "Дополнительный арт:"
 
-#: src-ru/data/text_misc.xml.append:1756
+#: src-ru/data/text_misc.xml.append:1779
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_art_names\"]"
 msgstr "SaltyFriedRice"
 
-#: src-ru/data/text_misc.xml.append:1757
+#: src-ru/data/text_misc.xml.append:1780
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_contributors\"]"
 msgstr "Дополнительное сотрудничество:"
 
-#: src-ru/data/text_misc.xml.append:1758
+#: src-ru/data/text_misc.xml.append:1781
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_contributors_names\"]"
 msgstr ""
@@ -5530,1014 +5609,1024 @@ msgstr ""
 "Vertaalfout, BobThePotat0, Gabriel Cooper, Fishhh, neopryne, Alder, Julk, "
 "bibo38, DeserPrinter \\nкоманда FTL Multiverse"
 
-#: src-ru/data/text_misc.xml.append:1759
+#: src-ru/data/text_misc.xml.append:1782
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc\"]"
 msgstr "Переводчики Hyperspace:"
 
-#: src-ru/data/text_misc.xml.append:1760
+#: src-ru/data/text_misc.xml.append:1783
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_fr\"]"
 msgstr "На французский язык:"
 
-#: src-ru/data/text_misc.xml.append:1761
+#: src-ru/data/text_misc.xml.append:1784
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_fr_names\"]"
 msgstr "Pepson"
 
-#: src-ru/data/text_misc.xml.append:1762
+#: src-ru/data/text_misc.xml.append:1785
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_it\"]"
 msgstr "На итальянский язык:"
 
-#: src-ru/data/text_misc.xml.append:1763
+#: src-ru/data/text_misc.xml.append:1786
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_it_names\"]"
 msgstr "RawToast, Khal"
 
-#: src-ru/data/text_misc.xml.append:1764
+#: src-ru/data/text_misc.xml.append:1787
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_de\"]"
 msgstr "На немецкий язык:"
 
-#: src-ru/data/text_misc.xml.append:1765
+#: src-ru/data/text_misc.xml.append:1788
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_de_names\"]"
 msgstr "The Dumb Dino"
 
-#: src-ru/data/text_misc.xml.append:1766
+#: src-ru/data/text_misc.xml.append:1789
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_es\"]"
 msgstr "На испанский язык:"
 
-#: src-ru/data/text_misc.xml.append:1767
+#: src-ru/data/text_misc.xml.append:1790
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_es_names\"]"
 msgstr "DavidRedFox, Serpy, DarkieZ"
 
-#: src-ru/data/text_misc.xml.append:1768
+#: src-ru/data/text_misc.xml.append:1791
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_pl\"]"
 msgstr "На польский язык:"
 
-#: src-ru/data/text_misc.xml.append:1769
+#: src-ru/data/text_misc.xml.append:1792
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_pl_names\"]"
 msgstr "Marcinus, Palon"
 
-#: src-ru/data/text_misc.xml.append:1770
+#: src-ru/data/text_misc.xml.append:1793
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_pt_BR\"]"
 msgstr "На португальский (бразильский) язык:"
 
-#: src-ru/data/text_misc.xml.append:1771
+#: src-ru/data/text_misc.xml.append:1794
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_pt_BR_names\"]"
 msgstr "Gabriel Cooper"
 
-#: src-ru/data/text_misc.xml.append:1772
+#: src-ru/data/text_misc.xml.append:1795
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ru\"]"
 msgstr "На русский язык:"
 
-#: src-ru/data/text_misc.xml.append:1773
+#: src-ru/data/text_misc.xml.append:1796
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ru_names\"]"
 msgstr "aleev0_o"
 
-#: src-ru/data/text_misc.xml.append:1774
+#: src-ru/data/text_misc.xml.append:1797
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_zn_Hans\"]"
 msgstr "На китайский язык:"
 
-#: src-ru/data/text_misc.xml.append:1775
+#: src-ru/data/text_misc.xml.append:1798
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_zn_Hans_names\"]"
 msgstr "Mwalls"
 
-#: src-ru/data/text_misc.xml.append:1776
+#: src-ru/data/text_misc.xml.append:1799
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ja\"]"
 msgstr "На японский язык:"
 
-#: src-ru/data/text_misc.xml.append:1777
+#: src-ru/data/text_misc.xml.append:1800
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ja_names\"]"
 msgstr "ranhai"
 
-#: src-ru/data/text_misc.xml.append:1778
+#: src-ru/data/text_misc.xml.append:1801
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ko\"]"
 msgstr "На корейский язык:"
 
-#: src-ru/data/text_misc.xml.append:1779
+#: src-ru/data/text_misc.xml.append:1802
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_loc_ko_names\"]"
 msgstr "nedsociety, H2O"
 
-#: src-ru/data/text_misc.xml.append:1782
+#: src-ru/data/text_misc.xml.append:1805
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa1\"]"
 msgstr "Нектар"
 
-#: src-ru/data/text_misc.xml.append:1783
+#: src-ru/data/text_misc.xml.append:1806
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa2\"]"
 msgstr "Сладкий"
 
-#: src-ru/data/text_misc.xml.append:1784
+#: src-ru/data/text_misc.xml.append:1807
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa3\"]"
 msgstr "Полосач"
 
-#: src-ru/data/text_misc.xml.append:1785
+#: src-ru/data/text_misc.xml.append:1808
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa4\"]"
 msgstr "Шершень"
 
-#: src-ru/data/text_misc.xml.append:1786
+#: src-ru/data/text_misc.xml.append:1809
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa5\"]"
 msgstr "Жужа"
 
-#: src-ru/data/text_misc.xml.append:1787
+#: src-ru/data/text_misc.xml.append:1810
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa6\"]"
 msgstr "Жожо"
 
-#: src-ru/data/text_misc.xml.append:1788
+#: src-ru/data/text_misc.xml.append:1811
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa7\"]"
 msgstr "Жалер"
 
-#: src-ru/data/text_misc.xml.append:1789
+#: src-ru/data/text_misc.xml.append:1812
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa8\"]"
 msgstr "Жу"
 
-#: src-ru/data/text_misc.xml.append:1790
+#: src-ru/data/text_misc.xml.append:1813
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa9\"]"
 msgstr "Пчёл"
 
-#: src-ru/data/text_misc.xml.append:1791
+#: src-ru/data/text_misc.xml.append:1814
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa10\"]"
 msgstr "Кусь"
 
-#: src-ru/data/text_misc.xml.append:1792
+#: src-ru/data/text_misc.xml.append:1815
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa11\"]"
 msgstr "Жужжак"
 
-#: src-ru/data/text_misc.xml.append:1793
+#: src-ru/data/text_misc.xml.append:1816
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa12\"]"
 msgstr "Электра"
 
-#: src-ru/data/text_misc.xml.append:1794
+#: src-ru/data/text_misc.xml.append:1817
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa13\"]"
 msgstr "Электрон"
 
-#: src-ru/data/text_misc.xml.append:1795
+#: src-ru/data/text_misc.xml.append:1818
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa14\"]"
 msgstr "Жужик"
 
-#: src-ru/data/text_misc.xml.append:1796
+#: src-ru/data/text_misc.xml.append:1819
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa15\"]"
 msgstr "Трутень"
 
-#: src-ru/data/text_misc.xml.append:1797
+#: src-ru/data/text_misc.xml.append:1820
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa16\"]"
 msgstr "Медоед"
 
-#: src-ru/data/text_misc.xml.append:1798
+#: src-ru/data/text_misc.xml.append:1821
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa17\"]"
 msgstr "Вжик"
 
-#: src-ru/data/text_misc.xml.append:1799
+#: src-ru/data/text_misc.xml.append:1822
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa18\"]"
 msgstr "Жижа"
 
-#: src-ru/data/text_misc.xml.append:1800
+#: src-ru/data/text_misc.xml.append:1823
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa19\"]"
 msgstr "Жало"
 
-#: src-ru/data/text_misc.xml.append:1801
+#: src-ru/data/text_misc.xml.append:1824
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa20\"]"
 msgstr "Жужжони"
 
-#: src-ru/data/text_misc.xml.append:1802
+#: src-ru/data/text_misc.xml.append:1825
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR10\"]"
 msgstr ""
 "Автоматически ремонтирует повреждённые системы корабля, как это происходит "
 "на беспилотных кораблях. Скорость ремонта 33%."
 
-#: src-ru/data/text_misc.xml.append:1803
+#: src-ru/data/text_misc.xml.append:1826
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR20\"]"
 msgstr ""
 "Автоматически ремонтирует повреждённые системы корабля, как это происходит "
 "на беспилотных кораблях. Скорость ремонта 66%."
 
-#: src-ru/data/text_misc.xml.append:1804
+#: src-ru/data/text_misc.xml.append:1827
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR30\"]"
 msgstr ""
 "Автоматически ремонтирует повреждённые системы корабля, как это происходит "
 "на беспилотных кораблях. Скорость ремонта 100%."
 
-#: src-ru/data/text_misc.xml.append:1805
+#: src-ru/data/text_misc.xml.append:1828
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR40\"]"
 msgstr ""
 "Автоматически ремонтирует повреждённые системы корабля, как это происходит "
 "на беспилотных кораблях. Скорость ремонта 133%."
 
-#: src-ru/data/text_misc.xml.append:1806
+#: src-ru/data/text_misc.xml.append:1829
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR50\"]"
 msgstr ""
 "Автоматически ремонтирует повреждённые системы корабля, как это происходит "
 "на беспилотных кораблях. Скорость ремонта 166%."
 
-#: src-ru/data/text_misc.xml.append:1807
+#: src-ru/data/text_misc.xml.append:1830
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR60\"]"
 msgstr ""
 "Автоматически ремонтирует повреждённые системы корабля, как это происходит "
 "на беспилотных кораблях. Скорость ремонта 200%."
 
-#: src-ru/data/text_misc.xml.append:1808
+#: src-ru/data/text_misc.xml.append:1831
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR70\"]"
 msgstr ""
 "Автоматически ремонтирует повреждённые системы корабля, как это происходит "
 "на беспилотных кораблях. Скорость ремонта 233%."
 
-#: src-ru/data/text_misc.xml.append:1809
+#: src-ru/data/text_misc.xml.append:1832
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b1\"]"
 msgstr "Уменьшить потребление энергии."
 
-#: src-ru/data/text_misc.xml.append:1810
+#: src-ru/data/text_misc.xml.append:1833
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b2\"]"
 msgstr "Уменьшить время перезарядки."
 
-#: src-ru/data/text_misc.xml.append:1811
+#: src-ru/data/text_misc.xml.append:1834
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b3\"]"
 msgstr "Увеличить количество снарядов."
 
-#: src-ru/data/text_misc.xml.append:1812
+#: src-ru/data/text_misc.xml.append:1835
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b4\"]"
 msgstr "Увеличить общий урон снарядов."
 
-#: src-ru/data/text_misc.xml.append:1813
+#: src-ru/data/text_misc.xml.append:1836
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b5\"]"
 msgstr "Увеличить системный урон снарядов."
 
-#: src-ru/data/text_misc.xml.append:1814
+#: src-ru/data/text_misc.xml.append:1837
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b6\"]"
 msgstr "Увеличить урон снарядов по экипажу."
 
-#: src-ru/data/text_misc.xml.append:1815
+#: src-ru/data/text_misc.xml.append:1838
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b7\"]"
 msgstr "Увеличить ионный урон."
 
-#: src-ru/data/text_misc.xml.append:1816
+#: src-ru/data/text_misc.xml.append:1839
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b8\"]"
 msgstr "Увеличить количество пробиваемых щитов."
 
-#: src-ru/data/text_misc.xml.append:1817
+#: src-ru/data/text_misc.xml.append:1840
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b9\"]"
 msgstr "Увеличить шанс появления пробоины."
 
-#: src-ru/data/text_misc.xml.append:1818
+#: src-ru/data/text_misc.xml.append:1841
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b10\"]"
 msgstr "Увеличить шанс появления возгорания."
 
-#: src-ru/data/text_misc.xml.append:1819
+#: src-ru/data/text_misc.xml.append:1842
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b11\"]"
 msgstr "Добавить эффект запирания отсеков."
 
-#: src-ru/data/text_misc.xml.append:1820
+#: src-ru/data/text_misc.xml.append:1843
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b12\"]"
 msgstr "Добавить эффект двойного урона при попадании в отсеки без систем."
 
-#: src-ru/data/text_misc.xml.append:1821
+#: src-ru/data/text_misc.xml.append:1844
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b13\"]"
 msgstr "Увеличить вместимость хранилища душ."
 
-#: src-ru/data/text_misc.xml.append:1822
+#: src-ru/data/text_misc.xml.append:1845
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_quit\"]"
 msgstr "Закрыть панель управления Душегубом."
 
-#: src-ru/data/text_misc.xml.append:1823
+#: src-ru/data/text_misc.xml.append:1846
 msgid "data/text_misc.xml.append$//text[@name=\"lua_alien\"]"
 msgstr "Чужой"
 
-#: src-ru/data/text_misc.xml.append:1824
+#: src-ru/data/text_misc.xml.append:1847
 msgid "data/text_misc.xml.append$//text[@name=\"lua_speed_disabled\"]"
 msgstr "Ускорение отключено. Чтобы включить, нажмите `"
 
-#: src-ru/data/text_misc.xml.append:1825
+#: src-ru/data/text_misc.xml.append:1848
 msgid "data/text_misc.xml.append$//text[@name=\"lua_controlled_by_crew\"]"
 msgstr "Управляется экипажем: перезарядка быстрее на 25%"
 
-#: src-ru/data/text_misc.xml.append:1826
+#: src-ru/data/text_misc.xml.append:1849
 msgid "data/text_misc.xml.append$//text[@name=\"lua_notcontrolled_by_crew\"]"
 msgstr "Не управляется экипажем: стандартная перезарядка"
 
-#: src-ru/data/text_misc.xml.append:1827
+#: src-ru/data/text_misc.xml.append:1850
 msgid "data/text_misc.xml.append$//text[@name=\"lua_explode_hackdrone\"]"
 msgstr "Подорвать свой дрон-взломщик."
 
-#: src-ru/data/text_misc.xml.append:1828
+#: src-ru/data/text_misc.xml.append:1851
 msgid "data/text_misc.xml.append$//text[@name=\"lua_notexplode_hackdrone\"]"
 msgstr "Сейчас нельзя подорвать свой дрон-взломщик."
 
-#: src-ru/data/text_misc.xml.append:1829
+#: src-ru/data/text_misc.xml.append:1852
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_dronemode_on\"]"
 msgstr ""
 "Переключить режим корабельных дронов.\\nСейчас: "
 "[style[color:33FF33FF]]Автоматический[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1830
+#: src-ru/data/text_misc.xml.append:1853
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_dronemode_off\"]"
 msgstr ""
 "Переключить режим корабельных дронов.\\nСейчас: "
 "[style[color:FFFF33FF]]Ручной[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1831
+#: src-ru/data/text_misc.xml.append:1854
 msgid "data/text_misc.xml.append$//text[@name=\"lua_additional_augplace\"]"
 msgstr ""
 "Этот корабль имеет меньше слотов орудий, но больше слотов для усилений и "
 "дронов. Дополнительных слотов усилений:"
 
-#: src-ru/data/text_misc.xml.append:1832
+#: src-ru/data/text_misc.xml.append:1855
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inner_aug\"]"
 msgstr "Встроенное усиление:"
 
-#: src-ru/data/text_misc.xml.append:1833
+#: src-ru/data/text_misc.xml.append:1856
 msgid "data/text_misc.xml.append$//text[@name=\"lua_needed_help_ship\"]"
 msgstr "Кораблю поблизости требуется помощь."
 
-#: src-ru/data/text_misc.xml.append:1834
+#: src-ru/data/text_misc.xml.append:1857
 msgid "data/text_misc.xml.append$//text[@name=\"lua_needed_help_station\"]"
 msgstr "Станции или поселению поблизости требуется помощь."
 
-#: src-ru/data/text_misc.xml.append:1835
+#: src-ru/data/text_misc.xml.append:1858
 msgid "data/text_misc.xml.append$//text[@name=\"lua_advanced_ai\"]"
 msgstr ""
 "Этот враг имеет продвинутую систему ведения боя. Щиты, двигатель, орудия, "
 "раненый экипаж и работающий клон-отсек будут чаще выбраны в качестве цели."
 
-#: src-ru/data/text_misc.xml.append:1836
+#: src-ru/data/text_misc.xml.append:1859
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_player_missing\"]"
 msgstr "Ваши орудия прокляты. Шанс попадания снижен на 50%. Осталось маяков:"
 
-#: src-ru/data/text_misc.xml.append:1837
+#: src-ru/data/text_misc.xml.append:1860
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_enemy_hitting\"]"
 msgstr "Ваш корабль проклят. Шанс уклонения снижен на 50%. Осталось маяков:"
 
-#: src-ru/data/text_misc.xml.append:1838
+#: src-ru/data/text_misc.xml.append:1861
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_enemy_firing\"]"
 msgstr ""
 "Любой снаряд врага, который имеет шанс поджога, вызовет поджог "
 "гарантированно. Осталось маяков:"
 
-#: src-ru/data/text_misc.xml.append:1839
+#: src-ru/data/text_misc.xml.append:1862
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_orchid_shase\"]"
 msgstr "За вами устроил погоню фрегат орхидов. Осталось маяков:"
 
-#: src-ru/data/text_misc.xml.append:1840
+#: src-ru/data/text_misc.xml.append:1863
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_cold\"]"
 msgstr ""
 "Вы находитесь в очень холодном месте. Периодически отсеки корабля будут "
 "замерзать, а обшивка получать пробоины."
 
-#: src-ru/data/text_misc.xml.append:1841
+#: src-ru/data/text_misc.xml.append:1864
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_crystals\"]"
 msgstr ""
 "Вы находитесь в поле кристаллов. Периодически кристаллы будут попадать в ваш"
 " корабль. Кристаллы проникают через 1 слой щита."
 
-#: src-ru/data/text_misc.xml.append:1842
+#: src-ru/data/text_misc.xml.append:1865
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_nanites\"]"
 msgstr ""
 "Вы находитесь в облаке нанитов. Периодически системы корабля будут получать "
 "урон от эрозии."
 
-#: src-ru/data/text_misc.xml.append:1843
+#: src-ru/data/text_misc.xml.append:1866
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_radiation\"]"
 msgstr ""
 "Вы находитесь под воздействием мощного радиационного излучения. Оборудование"
 " справляется, но последствия для экипажа могут быть непредсказуемыми..."
 
-#: src-ru/data/text_misc.xml.append:1844
+#: src-ru/data/text_misc.xml.append:1867
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_wild_drones\"]"
 msgstr ""
 "Вы находитесь рядом с группой диких дронов. Периодически они будут пытаться "
 "атаковать любые корабли поблизости."
 
-#: src-ru/data/text_misc.xml.append:1845
+#: src-ru/data/text_misc.xml.append:1868
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_ultra_sun\"]"
 msgstr ""
 "Вы находитесь под воздействием очень высоких температур. Возгорания на "
 "корабле практически неизбежны."
 
-#: src-ru/data/text_misc.xml.append:1846
+#: src-ru/data/text_misc.xml.append:1869
 msgid "data/text_misc.xml.append$//text[@name=\"lua_onoff_soulreaper_panel\"]"
 msgstr "Вкл./выкл. панель управления Душегубом."
 
-#: src-ru/data/text_misc.xml.append:1847
+#: src-ru/data/text_misc.xml.append:1870
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_up_limit\"]"
 msgstr "Достигнут предел развития."
 
-#: src-ru/data/text_misc.xml.append:1848
+#: src-ru/data/text_misc.xml.append:1871
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_no_soul\"]"
 msgstr "Не хватает душ."
 
-#: src-ru/data/text_misc.xml.append:1849
+#: src-ru/data/text_misc.xml.append:1872
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_desc\"]"
 msgstr ""
 "Это орудие пожирает души погибших кораблей. Должно быть в слоте орудий в "
 "момент взрыва (не работает в волне повстанцев). Нельзя улучшить инжекторами."
 
-#: src-ru/data/text_misc.xml.append:1850
+#: src-ru/data/text_misc.xml.append:1873
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_charact\"]"
 msgstr "Характеристики:"
 
-#: src-ru/data/text_misc.xml.append:1851
+#: src-ru/data/text_misc.xml.append:1874
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_req_pow\"]"
 msgstr "Требует энергии:"
 
-#: src-ru/data/text_misc.xml.append:1852
+#: src-ru/data/text_misc.xml.append:1875
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_noreq_pow\"]"
 msgstr "Не требует питания"
 
-#: src-ru/data/text_misc.xml.append:1853
+#: src-ru/data/text_misc.xml.append:1876
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_cooldown\"]"
 msgstr "Время зарядки:"
 
-#: src-ru/data/text_misc.xml.append:1854
+#: src-ru/data/text_misc.xml.append:1877
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_sec\"]"
 msgstr "сек."
 
-#: src-ru/data/text_misc.xml.append:1855
+#: src-ru/data/text_misc.xml.append:1878
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_shots\"]"
 msgstr "Выстрелов за заряд:"
 
-#: src-ru/data/text_misc.xml.append:1856
+#: src-ru/data/text_misc.xml.append:1879
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damagehull\"]"
 msgstr "Урон по корпусу:"
 
-#: src-ru/data/text_misc.xml.append:1857
+#: src-ru/data/text_misc.xml.append:1880
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damagesys\"]"
 msgstr "Урон по системам:"
 
-#: src-ru/data/text_misc.xml.append:1858
+#: src-ru/data/text_misc.xml.append:1881
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damagecrew\"]"
 msgstr "Урон по экипажу:"
 
-#: src-ru/data/text_misc.xml.append:1859
+#: src-ru/data/text_misc.xml.append:1882
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damageion\"]"
 msgstr "Ионный урон:"
 
-#: src-ru/data/text_misc.xml.append:1860
+#: src-ru/data/text_misc.xml.append:1883
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_spierce\"]"
 msgstr "Пробивает щитов:"
 
-#: src-ru/data/text_misc.xml.append:1861
+#: src-ru/data/text_misc.xml.append:1884
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_bc\"]"
 msgstr "Шанс пробить корпус:"
 
-#: src-ru/data/text_misc.xml.append:1862
+#: src-ru/data/text_misc.xml.append:1885
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_fc\"]"
 msgstr "Шанс возгорания:"
 
-#: src-ru/data/text_misc.xml.append:1863
+#: src-ru/data/text_misc.xml.append:1886
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_lockroom\"]"
 msgstr "Запирает отсеки"
 
-#: src-ru/data/text_misc.xml.append:1864
+#: src-ru/data/text_misc.xml.append:1887
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_ddnosysroom\"]"
 msgstr "Двойной урон по отсекам без систем"
 
-#: src-ru/data/text_misc.xml.append:1865
+#: src-ru/data/text_misc.xml.append:1888
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_capacity\"]"
 msgstr "Ёмкость контейнера душ:"
 
-#: src-ru/data/text_misc.xml.append:1866
+#: src-ru/data/text_misc.xml.append:1889
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_soulreapername\"]"
 msgstr "Душегуб"
 
-#: src-ru/data/text_misc.xml.append:1867
+#: src-ru/data/text_misc.xml.append:1890
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_crystals\"]"
 msgstr "Обнаружено ледяное поле."
 
-#: src-ru/data/text_misc.xml.append:1868
+#: src-ru/data/text_misc.xml.append:1891
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_cold\"]"
 msgstr "Обнаружена область сверхнизких температур."
 
-#: src-ru/data/text_misc.xml.append:1869
+#: src-ru/data/text_misc.xml.append:1892
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_wild_drones\"]"
 msgstr "Обнаружены агрессивные дроны."
 
-#: src-ru/data/text_misc.xml.append:1870
+#: src-ru/data/text_misc.xml.append:1893
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_nanites\"]"
 msgstr "Обнаружено нанитное облако."
 
-#: src-ru/data/text_misc.xml.append:1871
+#: src-ru/data/text_misc.xml.append:1894
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_radiation\"]"
 msgstr "Обнаружено сильное радиоактивное излучение."
 
-#: src-ru/data/text_misc.xml.append:1872
+#: src-ru/data/text_misc.xml.append:1895
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_ultra_sun\"]"
 msgstr "Обнаружена область сверхвысоких температур."
 
-#: src-ru/data/text_misc.xml.append:1873
+#: src-ru/data/text_misc.xml.append:1896
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj\"]"
 msgstr ""
 "Вы удаляете инжектор из вашего орудия. Теперь в него можно установить другой"
 " инжектор."
 
-#: src-ru/data/text_misc.xml.append:1874
+#: src-ru/data/text_misc.xml.append:1897
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_PRC\"]"
 msgstr "Удалить инжектор проникновения."
 
-#: src-ru/data/text_misc.xml.append:1875
+#: src-ru/data/text_misc.xml.append:1898
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_BRC\"]"
 msgstr "Удалить инжектор пробоя."
 
-#: src-ru/data/text_misc.xml.append:1876
+#: src-ru/data/text_misc.xml.append:1899
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_CLD\"]"
 msgstr "Удалить инжектор перезарядки."
 
-#: src-ru/data/text_misc.xml.append:1877
+#: src-ru/data/text_misc.xml.append:1900
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_FRC\"]"
 msgstr "Удалить инжектор пламени."
 
-#: src-ru/data/text_misc.xml.append:1878
+#: src-ru/data/text_misc.xml.append:1901
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_POW\"]"
 msgstr "Удалить инжектор энергии."
 
-#: src-ru/data/text_misc.xml.append:1879
+#: src-ru/data/text_misc.xml.append:1902
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_UNI\"]"
 msgstr "Удалить универсальный инжектор."
 
-#: src-ru/data/text_misc.xml.append:1880
+#: src-ru/data/text_misc.xml.append:1903
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_ACC\"]"
 msgstr "Удалить инжектор точности."
 
-#: src-ru/data/text_misc.xml.append:1881
+#: src-ru/data/text_misc.xml.append:1904
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_RDY\"]"
 msgstr "Удалить инжектор разогрева."
 
-#: src-ru/data/text_misc.xml.append:1882
+#: src-ru/data/text_misc.xml.append:1905
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inj_add1\"]"
 msgstr "Вы подключаете инжектор к орудию и получаете нужный результат..."
 
-#: src-ru/data/text_misc.xml.append:1883
+#: src-ru/data/text_misc.xml.append:1906
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inj_add2\"]"
 msgstr ""
 "...инжектор же полностью интегрировался с орудием, освободив слот для других"
 " усилений."
 
-#: src-ru/data/text_misc.xml.append:1884
+#: src-ru/data/text_misc.xml.append:1907
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inj_sel\"]"
 msgstr "Выбрать это орудие."
 
-#: src-ru/data/text_misc.xml.append:1885
+#: src-ru/data/text_misc.xml.append:1908
 msgid "data/text_misc.xml.append$//text[@name=\"lua_marker_phrase_to_ach\"]"
 msgstr ""
 "Вы совершаете выгодный обмен и, довольные, отправляетесь на торговую "
 "площадку."
 
-#: src-ru/data/text_misc.xml.append:1886
+#: src-ru/data/text_misc.xml.append:1909
 msgid "data/text_misc.xml.append$//text[@name=\"lua_battle_ship_cost\"]"
 msgstr "Боевая стоимость корабля:"
 
-#: src-ru/data/text_misc.xml.append:1887
+#: src-ru/data/text_misc.xml.append:1910
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cargo_ship_cost\"]"
 msgstr "Стоимость корабля с грузом:"
 
-#: src-ru/data/text_misc.xml.append:1888
+#: src-ru/data/text_misc.xml.append:1911
 msgid "data/text_misc.xml.append$//text[@name=\"lua_max_win\"]"
 msgstr "Макс. серия побед подряд:"
 
-#: src-ru/data/text_misc.xml.append:1889
+#: src-ru/data/text_misc.xml.append:1912
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cur_win\"]"
 msgstr "Текущая серия побед подряд:"
 
-#: src-ru/data/text_misc.xml.append:1890
+#: src-ru/data/text_misc.xml.append:1913
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cur_sector_rew\"]"
 msgstr "Текущий доход за сектор:"
 
-#: src-ru/data/text_misc.xml.append:1891
+#: src-ru/data/text_misc.xml.append:1914
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cur_count\"]"
 msgstr "Текущий счёт:"
 
-#: src-ru/data/text_misc.xml.append:1893
+#: src-ru/data/text_misc.xml.append:1916
 msgid "data/text_misc.xml.append$//text[@name=\"lua_effectivity_unknown\"]"
 msgstr "Мало данных для оценки полёта... Полетайте ещё!"
 
-#: src-ru/data/text_misc.xml.append:1894
+#: src-ru/data/text_misc.xml.append:1917
 msgid "data/text_misc.xml.append$//text[@name=\"lua_effectivity_known\"]"
 msgstr "Успешность вашего текущего полёта составляет:"
 
-#: src-ru/data/text_misc.xml.append:1895
+#: src-ru/data/text_misc.xml.append:1918
 msgid "data/text_misc.xml.append$//text[@name=\"lua_effectivity_info\"]"
 msgstr ""
 "(Основано на среднем доходе, полученном за прежние полёты, на момент начала "
 "этого сектора или на конец сектора, если была открыта карта секторов на "
 "маяке выхода)"
 
-#: src-ru/data/text_misc.xml.append:1897
+#: src-ru/data/text_misc.xml.append:1920
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_easy\"]"
 msgstr "Статистика секторов для лёгкого режима"
 
-#: src-ru/data/text_misc.xml.append:1898
+#: src-ru/data/text_misc.xml.append:1921
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_normal\"]"
 msgstr "Статистика секторов для нормального режима"
 
-#: src-ru/data/text_misc.xml.append:1899
+#: src-ru/data/text_misc.xml.append:1922
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_hard\"]"
 msgstr "Статистика секторов для сложного режима"
 
-#: src-ru/data/text_misc.xml.append:1900
+#: src-ru/data/text_misc.xml.append:1923
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_poppyhatty\"]"
 msgstr "Номер   Ср.доход   Посещено"
 
-#: src-ru/data/text_misc.xml.append:1901
+#: src-ru/data/text_misc.xml.append:1924
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_nodata\"]"
 msgstr "нет данных..."
 
-#: src-ru/data/text_misc.xml.append:1902
+#: src-ru/data/text_misc.xml.append:1925
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_clearstat\"]"
 msgstr "Очистить статистику полётов"
 
-#: src-ru/data/text_misc.xml.append:1903
+#: src-ru/data/text_misc.xml.append:1926
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_clearconfirm\"]"
 msgstr "Подтвердить очистку статистики полётов"
 
-#: src-ru/data/text_misc.xml.append:1904
+#: src-ru/data/text_misc.xml.append:1927
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_recon\"]"
 msgstr ""
 "Вкл./выкл. запись статистики доходности "
 "секторов\\n[style[color:86c946]]Запись включена[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1905
+#: src-ru/data/text_misc.xml.append:1928
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_recoff\"]"
 msgstr ""
 "Вкл./выкл. запись статистики доходности "
 "секторов\\n[style[color:d93130]]Запись выключена[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1906
+#: src-ru/data/text_misc.xml.append:1929
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_fly\"]"
 msgstr "СТАТИСТИКА ПОЛЁТОВ"
 
-#: src-ru/data/text_misc.xml.append:1907
+#: src-ru/data/text_misc.xml.append:1930
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name1\"]"
 msgstr "Генри Кван"
 
-#: src-ru/data/text_misc.xml.append:1908
+#: src-ru/data/text_misc.xml.append:1931
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name2\"]"
 msgstr "Бетани Джонс"
 
-#: src-ru/data/text_misc.xml.append:1909
+#: src-ru/data/text_misc.xml.append:1932
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name3\"]"
 msgstr "Адам"
 
-#: src-ru/data/text_misc.xml.append:1910
+#: src-ru/data/text_misc.xml.append:1933
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name4\"]"
 msgstr "Абэ Исаму"
 
-#: src-ru/data/text_misc.xml.append:1911
+#: src-ru/data/text_misc.xml.append:1934
 msgid "data/text_misc.xml.append$//text[@name=\"lua_nousedtacticalpause\"]"
 msgstr "В этом полёте не использовалась тактическая пауза."
 
-#: src-ru/data/text_misc.xml.append:1912
+#: src-ru/data/text_misc.xml.append:1935
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_infousage\"]"
 msgstr ""
 "В этом меню на стартовом маяке можно выбрать дополнительные элементы, "
 "усложняющие игру.\\n[style[color:86c946]]Сейчас изменения "
 "разрешены.[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1913
+#: src-ru/data/text_misc.xml.append:1936
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_infousage2\"]"
 msgstr ""
 "В этом меню на стартовом маяке можно выбрать дополнительные элементы, "
 "усложняющие игру.\\n[style[color:d93130]]Сейчас изменения "
 "запрещены.[[/style]]"
 
-#: src-ru/data/text_misc.xml.append:1914
+#: src-ru/data/text_misc.xml.append:1937
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_help\"]"
 msgstr ""
 "За каждое пройденное испытание Тулли будет давать 10 ~ в начале\\n8-го "
 "сектора в каждом последующем полёте (100 ~ максимум)."
 
-#: src-ru/data/text_misc.xml.append:1915
+#: src-ru/data/text_misc.xml.append:1938
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_is_active_any\"]"
 msgstr "Внимание! Есть активные испытания! Будьте осторожны!"
 
-#: src-ru/data/text_misc.xml.append:1916
+#: src-ru/data/text_misc.xml.append:1939
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nopause_on\"]"
 msgstr "Тактическая пауза и замедление в этом полёте отключены."
 
-#: src-ru/data/text_misc.xml.append:1917
+#: src-ru/data/text_misc.xml.append:1940
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nopause_off\"]"
 msgstr "Тактическая пауза и замедление в этом полёте работают."
 
-#: src-ru/data/text_misc.xml.append:1918
+#: src-ru/data/text_misc.xml.append:1941
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nofuel_on\"]"
 msgstr ""
 "Каждый прыжок будет тратить дополнительно 1 единицу топлива (если оно есть)."
 
-#: src-ru/data/text_misc.xml.append:1919
+#: src-ru/data/text_misc.xml.append:1942
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nofuel_off\"]"
 msgstr "Каждый прыжок тратит стандартное количество топлива."
 
-#: src-ru/data/text_misc.xml.append:1920
+#: src-ru/data/text_misc.xml.append:1943
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobrain_on\"]"
 msgstr "Экипаж теряет все навыки из-за прыжков корабля."
 
-#: src-ru/data/text_misc.xml.append:1921
+#: src-ru/data/text_misc.xml.append:1944
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobrain_off\"]"
 msgstr "Экипаж не теряет навыки из-за прыжков корабля."
 
-#: src-ru/data/text_misc.xml.append:1922
+#: src-ru/data/text_misc.xml.append:1945
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noaug_on\"]"
 msgstr ""
 "Все невстроенные усиления корабля (кроме неснимаемых) будут потеряны при "
 "прыжке."
 
-#: src-ru/data/text_misc.xml.append:1923
+#: src-ru/data/text_misc.xml.append:1946
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noaug_off\"]"
 msgstr "Усиления корабля сохраняются как обычно на своих местах."
 
-#: src-ru/data/text_misc.xml.append:1924
+#: src-ru/data/text_misc.xml.append:1947
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noinst_on\"]"
 msgstr "Встраивание усилений в корпус корабля отключено."
 
-#: src-ru/data/text_misc.xml.append:1925
+#: src-ru/data/text_misc.xml.append:1948
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noinst_off\"]"
 msgstr "Встраивание усилений в корпус корабля работает как обычно."
 
-#: src-ru/data/text_misc.xml.append:1926
+#: src-ru/data/text_misc.xml.append:1949
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nomaxhp_on\"]"
 msgstr "Экипаж вашего корабля имеет лишь половину от их обычного здоровья."
 
-#: src-ru/data/text_misc.xml.append:1927
+#: src-ru/data/text_misc.xml.append:1950
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nomaxhp_off\"]"
 msgstr "У экипажа стандартное здоровье."
 
-#: src-ru/data/text_misc.xml.append:1928
+#: src-ru/data/text_misc.xml.append:1951
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noscrap_on\"]"
 msgstr "Получаемый в событиях лом будет уменьшен на 50%."
 
-#: src-ru/data/text_misc.xml.append:1929
+#: src-ru/data/text_misc.xml.append:1952
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noscrap_off\"]"
 msgstr "Вы получаете обычное количество лома в событиях."
 
-#: src-ru/data/text_misc.xml.append:1930
+#: src-ru/data/text_misc.xml.append:1953
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nosysca_on\"]"
 msgstr ""
 "Почти все корабли противников дополнительно будут оснащены усилением "
 "титановое покрытие."
 
-#: src-ru/data/text_misc.xml.append:1931
+#: src-ru/data/text_misc.xml.append:1954
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nosysca_off\"]"
 msgstr "У кораблей противников стандартные для них усиления."
 
-#: src-ru/data/text_misc.xml.append:1932
+#: src-ru/data/text_misc.xml.append:1955
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nodromis_on\"]"
 msgstr "Все детали дронов и ракеты будут исчезать из трюма при прыжке."
 
-#: src-ru/data/text_misc.xml.append:1933
+#: src-ru/data/text_misc.xml.append:1956
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nodromis_off\"]"
 msgstr "Детали дронов и ракеты остаются на своих местах при прыжках."
 
-#: src-ru/data/text_misc.xml.append:1934
+#: src-ru/data/text_misc.xml.append:1957
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nozlt_on\"]"
 msgstr ""
 "Почти все корабли противников дополнительно будут оснащены золтанским щитом."
 
-#: src-ru/data/text_misc.xml.append:1935
+#: src-ru/data/text_misc.xml.append:1958
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nozlt_off\"]"
 msgstr "У кораблей противников стандартные для них усиления."
 
-#: src-ru/data/text_misc.xml.append:1936
+#: src-ru/data/text_misc.xml.append:1959
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_norare_on\"]"
 msgstr "Редкое оборудование встречается существенно реже."
 
-#: src-ru/data/text_misc.xml.append:1937
+#: src-ru/data/text_misc.xml.append:1960
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_norare_off\"]"
 msgstr "Всё оборудование встречается как обычно."
 
-#: src-ru/data/text_misc.xml.append:1938
+#: src-ru/data/text_misc.xml.append:1961
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocrg_on\"]"
 msgstr "У вашего корабля больше нет трюма (после первого прыжка)."
 
-#: src-ru/data/text_misc.xml.append:1939
+#: src-ru/data/text_misc.xml.append:1962
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocrg_off\"]"
 msgstr "У вашего корабля стандартный трюм."
 
-#: src-ru/data/text_misc.xml.append:1940
+#: src-ru/data/text_misc.xml.append:1963
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noeye_on\"]"
 msgstr "Обзор карты существенно снижен. Информации о маяках нет."
 
-#: src-ru/data/text_misc.xml.append:1941
+#: src-ru/data/text_misc.xml.append:1964
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noeye_off\"]"
 msgstr "Карта видна как обычно."
 
-#: src-ru/data/text_misc.xml.append:1942
+#: src-ru/data/text_misc.xml.append:1965
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocont_on\"]"
 msgstr ""
 "Союзный экипаж нельзя контролировать, но не волнуйтесь: они знают, что им "
 "делать!"
 
-#: src-ru/data/text_misc.xml.append:1943
+#: src-ru/data/text_misc.xml.append:1966
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocont_off\"]"
 msgstr "Экипаж управляется как обычно."
 
-#: src-ru/data/text_misc.xml.append:1944
+#: src-ru/data/text_misc.xml.append:1967
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noexp_on\"]"
 msgstr "Все враги будут иметь опытный экипаж."
 
-#: src-ru/data/text_misc.xml.append:1945
+#: src-ru/data/text_misc.xml.append:1968
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noexp_off\"]"
 msgstr "На сложном уровне иногда будут попадаться враги с опытным экипажем."
 
-#: src-ru/data/text_misc.xml.append:1946
+#: src-ru/data/text_misc.xml.append:1969
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobuh_on\"]"
 msgstr ""
 "После первого прыжка экипаж начнёт пьянку, что существенно снизит точность "
 "ваших залпов."
 
-#: src-ru/data/text_misc.xml.append:1947
+#: src-ru/data/text_misc.xml.append:1970
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobuh_off\"]"
 msgstr "Ваш экипаж не будет пить алкогольные напитки в полёте."
 
-#: src-ru/data/text_misc.xml.append:1948
+#: src-ru/data/text_misc.xml.append:1971
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noai_on\"]"
 msgstr "Все враги будут иметь продвинутый ИИ (в том числе боссы)."
 
-#: src-ru/data/text_misc.xml.append:1949
+#: src-ru/data/text_misc.xml.append:1972
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noai_off\"]"
 msgstr ""
 "На сложном уровне иногда будут попадаться враги с продвинутым ИИ (кроме "
 "боссов)."
 
-#: src-ru/data/text_misc.xml.append:1950
+#: src-ru/data/text_misc.xml.append:1973
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nohull_on\"]"
 msgstr ""
 "Корпус корабля не может иметь более 10 единиц прочности (после отбытия со "
 "стартового маяка)."
 
-#: src-ru/data/text_misc.xml.append:1951
+#: src-ru/data/text_misc.xml.append:1974
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nohull_off\"]"
 msgstr "Корпус корабля имеет стандартную прочность."
 
-#: src-ru/data/text_misc.xml.append:1952
+#: src-ru/data/text_misc.xml.append:1975
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogeq_on\"]"
 msgstr ""
 "При переходе в новый сектор будет удален самый дорогой дрон или орудие."
 
-#: src-ru/data/text_misc.xml.append:1953
+#: src-ru/data/text_misc.xml.append:1976
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogeq_off\"]"
 msgstr "При переходе в новый сектор оборудование сохраняется как обычно."
 
-#: src-ru/data/text_misc.xml.append:1954
+#: src-ru/data/text_misc.xml.append:1977
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogus_on\"]"
 msgstr ""
 "После первого прыжка на корабле появится голодная королевская особа, которую"
 " надо сохранить до конца. Питается исключительно ломом."
 
-#: src-ru/data/text_misc.xml.append:1955
+#: src-ru/data/text_misc.xml.append:1978
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogus_off\"]"
 msgstr "Особый экипаж не будет добавлен после прыжка."
 
-#: src-ru/data/text_misc.xml.append:1956
+#: src-ru/data/text_misc.xml.append:1979
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nostor_on\"]"
 msgstr ""
 "Нашествие инсекторов! Почти все магазины сожрали инсекторы, в том числе "
 "автоматические магазины торгового буя."
 
-#: src-ru/data/text_misc.xml.append:1957
+#: src-ru/data/text_misc.xml.append:1980
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nostor_off\"]"
 msgstr "Магазины встречаются как обычно."
 
-#: src-ru/data/text_misc.xml.append:1958
+#: src-ru/data/text_misc.xml.append:1981
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nowst_on\"]"
 msgstr ""
 "Каждый прыжок или ожидание на маяке орудия будут заменены на случайные с той"
 " же энергией."
 
-#: src-ru/data/text_misc.xml.append:1959
+#: src-ru/data/text_misc.xml.append:1982
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nowst_off\"]"
 msgstr "Орудия не меняются во время прыжков или ожидания на маяке."
 
-#: src-ru/data/text_misc.xml.append:1960
+#: src-ru/data/text_misc.xml.append:1983
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_on\"]"
 msgstr "Все противники будут иметь повышенную точность."
 
-#: src-ru/data/text_misc.xml.append:1961
+#: src-ru/data/text_misc.xml.append:1984
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_off\"]"
 msgstr "Враги будут иметь обычную точность."
 
-#: src-ru/data/text_misc.xml.append:1962
+#: src-ru/data/text_misc.xml.append:1985
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noorc_on\"]"
 msgstr "За вами устроит погоню фрегат орхидов, не надейтесь убежать."
 
-#: src-ru/data/text_misc.xml.append:1963
+#: src-ru/data/text_misc.xml.append:1986
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noorc_off\"]"
 msgstr "Никаких дополнительных погонь."
 
-#: src-ru/data/text_misc.xml.append:1964
+#: src-ru/data/text_misc.xml.append:1987
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_orchid_shase_very\"]"
 msgstr "За вами устроил погоню фрегат орхидов, и он не отстанет..."
 
-#: src-ru/data/text_misc.xml.append:1965
+#: src-ru/data/text_misc.xml.append:1988
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notxt_on\"]"
 msgstr "После первого прыжка текст событий заменяется на абракадабру."
 
-#: src-ru/data/text_misc.xml.append:1966
+#: src-ru/data/text_misc.xml.append:1989
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notxt_off\"]"
 msgstr "Текст событий будет в порядке."
 
-#: src-ru/data/text_misc.xml.append:1967
+#: src-ru/data/text_misc.xml.append:1990
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_resetchall_on\"]"
 msgstr "Все испытания будут отключены в новом полёте."
 
-#: src-ru/data/text_misc.xml.append:1968
+#: src-ru/data/text_misc.xml.append:1991
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_resetchall_off\"]"
 msgstr "Все испытания сохранят своё состояние в новом полёте."
 
-#: src-ru/data/text_misc.xml.append:1969
+#: src-ru/data/text_misc.xml.append:1992
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_rew_on\"]"
 msgstr "Вы будете получать награду ломом за пройденные испытания."
 
-#: src-ru/data/text_misc.xml.append:1970
+#: src-ru/data/text_misc.xml.append:1993
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_rew_off\"]"
 msgstr "Награда за пройденные испытания отключена."
 
-#: src-ru/data/text_misc.xml.append:1971
+#: src-ru/data/text_misc.xml.append:1994
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobf_on\"]"
 msgstr "Битва с флагманом повстанцев будет иметь дополнительную фазу."
 
-#: src-ru/data/text_misc.xml.append:1972
+#: src-ru/data/text_misc.xml.append:1995
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobf_off\"]"
 msgstr "Битва с флагманом повстанцев пройдёт как обычно."
 
-#: src-ru/data/text_misc.xml.append:1973
+#: src-ru/data/text_misc.xml.append:1996
+msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notmr_on\"]"
+msgstr ""
+"После первого прыжка каждые 5 минут реального времени призраки на корабле "
+"будут делать нехорошие вещи."
+
+#: src-ru/data/text_misc.xml.append:1997
+msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notmr_off\"]"
+msgstr "Никаких неупокоенных призраков на корабле."
+
+#: src-ru/data/text_misc.xml.append:1998
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_easy\"]"
 msgstr "(Пройдено на лёгком режиме)"
 
-#: src-ru/data/text_misc.xml.append:1974
+#: src-ru/data/text_misc.xml.append:1999
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_med\"]"
 msgstr "(Пройдено на среднем режиме)"
 
-#: src-ru/data/text_misc.xml.append:1975
+#: src-ru/data/text_misc.xml.append:2000
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_hard\"]"
 msgstr "(Пройдено на сложном режиме)"
 
-#: src-ru/data/text_misc.xml.append:1976
+#: src-ru/data/text_misc.xml.append:2001
 msgid "data/text_misc.xml.append$//text[@name=\"lua_arty_tip_auto\"]"
 msgstr ""
 "Артиллерия будет стрелять автоматически после зарядки в случайный отсек."
 
-#: src-ru/data/text_misc.xml.append:1977
+#: src-ru/data/text_misc.xml.append:2002
 msgid "data/text_misc.xml.append$//text[@name=\"lua_arty_tip_hand\"]"
 msgstr "Артиллерия будет стрелять в ручном режиме в выбранный отсек."
 
-#: src-ru/data/text_misc.xml.append:1978
+#: src-ru/data/text_misc.xml.append:2003
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_tip\"]"
 msgstr ""
 "Кнопка для заброса удочки, подсекания и вытаскивания рыбы (Горячая клавиша: "
 "RIGHT CTRL)."
 
-#: src-ru/data/text_misc.xml.append:1979
+#: src-ru/data/text_misc.xml.append:2004
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_aug_main_name\"]"
 msgstr "Рыбные ароматы (влияют на экипаж)."
 
-#: src-ru/data/text_misc.xml.append:1980
+#: src-ru/data/text_misc.xml.append:2005
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cancel_mindcontrol\"]"
 msgstr "Отменить действие контроля разума."
 
-#: src-ru/data/text_misc.xml.append:1981
+#: src-ru/data/text_misc.xml.append:2006
 msgid "data/text_misc.xml.append$//text[@name=\"lua_nocancel_mindcontrol\"]"
 msgstr "Сейчас нельзя отменить действие контроля разума."
 
-#: src-ru/data/text_misc.xml.append:1982
+#: src-ru/data/text_misc.xml.append:2007
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fire_weakness\"]"
 msgstr ""
 "Экипаж на вражеском корабле (в том числе союзный) получает утроенный урон от"
 " огня."
 
-#: src-ru/data/text_misc.xml.append:1983
+#: src-ru/data/text_misc.xml.append:2008
 msgid "data/text_misc.xml.append$//text[@name=\"lua_here_wasted_weap\"]"
 msgstr "В этом месте было сброшено орудие:"
 
-#: src-ru/data/text_misc.xml.append:1984
+#: src-ru/data/text_misc.xml.append:2009
 msgid "data/text_misc.xml.append$//text[@name=\"lua_here_wasted_drone\"]"
 msgstr "В этом месте была сброшена схема дрона:"
 
-#: src-ru/data/text_misc.xml.append:1985
+#: src-ru/data/text_misc.xml.append:2010
 msgid "data/text_misc.xml.append$//text[@name=\"lua_here_wasted_aug\"]"
 msgstr "В этом месте было сброшено усиление:"
 
-#: src-ru/data/text_misc.xml.append:1986
+#: src-ru/data/text_misc.xml.append:2011
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sector_scaner_active\"]"
 msgstr "Сканер секторов активен!"
 
-#: src-ru/data/text_misc.xml.append:1987
+#: src-ru/data/text_misc.xml.append:2012
 msgid "data/text_misc.xml.append$//text[@name=\"lua_strong_0\"]"
 msgstr "Уровень силы вашего корабля: Корыто."
 
-#: src-ru/data/text_misc.xml.append:1988
+#: src-ru/data/text_misc.xml.append:2013
 msgid "data/text_misc.xml.append$//text[@name=\"lua_strong_1\"]"
 msgstr "Уровень силы вашего корабля: Крейсер."
 
-#: src-ru/data/text_misc.xml.append:1989
+#: src-ru/data/text_misc.xml.append:2014
 msgid "data/text_misc.xml.append$//text[@name=\"lua_strong_2\"]"
 msgstr "Уровень силы вашего корабля: Дредноут."
 
-#: src-ru/data/text_misc.xml.append:1990
+#: src-ru/data/text_misc.xml.append:2015
 msgid "data/text_misc.xml.append$//text[@name=\"lua_waiting_with_fuel\"]"
 msgstr "Переключение режима ожидания на маяке."
 
-#: src-ru/data/text_misc.xml.append:1991
+#: src-ru/data/text_misc.xml.append:2016
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory_4_phase_end\"]"
 msgstr ""
 "Вы оказываетесь прямо рядом с базой Федерации, на которую напали повстанцы. "
@@ -6545,7 +6634,7 @@ msgstr ""
 "сопротивления. Федерации больше ничто не угрожает, а вас навсегда запомнят "
 "как героев."
 
-#: src-ru/data/text_misc.xml.append:1992
+#: src-ru/data/text_misc.xml.append:2017
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_aim_drones\"]"
 msgstr ""
 "Левой кнопкой мыши выбирайте первую цель, правой кнопкой мыши - вторую. "
@@ -6557,30 +6646,36 @@ msgstr ""
 "не уничтожены полностью. Если обе системы полностью уничтожены, дроны "
 "случайным образом нацелятся на одну из двух выбранных целей."
 
-#: src-ru/data/text_misc.xml.append:1993
+#: src-ru/data/text_misc.xml.append:2018
 msgid "data/text_misc.xml.append$//text[@name=\"lua_capsule\"]"
 msgstr ""
 "На вашем корабле есть спасательная капсула, которую можно использовать для "
 "задержки преследующего вас флота."
 
-#: src-ru/data/text_misc.xml.append:1994
+#: src-ru/data/text_misc.xml.append:2019
+msgid "data/text_misc.xml.append$//text[@name=\"lua_barrel\"]"
+msgstr ""
+"На вашем корабле есть дополнительный топливный бак, который можно "
+"использовать для получения топлива."
+
+#: src-ru/data/text_misc.xml.append:2020
 msgid "data/text_misc.xml.append$//text[@name=\"lua_engi_monster_text_replacer\"]"
 msgstr ""
 "Похоже, чудовище затихает, а враждебные микроорганизмы перестали на вас "
 "нападать. Успокоившись, вы осматриваетесь и находите рядом с маяком топливо."
 " Время убираться отсюда..."
 
-#: src-ru/data/text_misc.xml.append:1995
+#: src-ru/data/text_misc.xml.append:2021
 msgid "data/text_misc.xml.append$//text[@name=\"lua_draw\"]"
 msgstr ""
 "Вкл./выкл. режим рисования маршрута по карте сектора (используйте правую "
 "кнопку мыши на карте, чтобы добавить точки)."
 
-#: src-ru/data/text_misc.xml.append:1996
+#: src-ru/data/text_misc.xml.append:2022
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_draw\"]"
 msgstr "Убрать нарисованные точки."
 
-#: src-ru/data/text_misc.xml.append:1998
+#: src-ru/data/text_misc.xml.append:2024
 msgid "data/text_misc.xml.append$//text[@name=\"tip_rainbow_beam\"]"
 msgstr ""
 "Красный: 1 обычного урона\n"
@@ -6591,299 +6686,441 @@ msgstr ""
 "Синий: запирание\n"
 "Фиолетовый: 90% пробоины"
 
-#: src-ru/data/text_misc.xml.append:2006
+#: src-ru/data/text_misc.xml.append:2032
 msgid "data/text_misc.xml.append$//text[@name=\"lua_enemy_has_nechet_shield\"]"
 msgstr "Противник имеет нечётный уровень системы щитов."
 
-#: src-ru/data/text_misc.xml.append:2007
+#: src-ru/data/text_misc.xml.append:2033
 msgid "data/text_misc.xml.append$//text[@name=\"lua_copy_this_weapon\"]"
 msgstr "Скопировать это орудие."
 
-#: src-ru/data/text_misc.xml.append:2008
+#: src-ru/data/text_misc.xml.append:2034
 msgid "data/text_misc.xml.append$//text[@name=\"lua_copyed_weapon\"]"
 msgstr "Орудие успешно скопировано. Можно его подключать.\\n"
 
-#: src-ru/data/text_misc.xml.append:2011
+#: src-ru/data/text_misc.xml.append:2037
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_1\"]"
 msgstr "одолеть"
 
-#: src-ru/data/text_misc.xml.append:2012
+#: src-ru/data/text_misc.xml.append:2038
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_2\"]"
 msgstr "Ультранасосы"
 
-#: src-ru/data/text_misc.xml.append:2013
+#: src-ru/data/text_misc.xml.append:2039
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_3\"]"
 msgstr "и гель слизней"
 
-#: src-ru/data/text_misc.xml.append:2014
+#: src-ru/data/text_misc.xml.append:2040
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_4\"]"
 msgstr "ускоритель дронов и"
 
-#: src-ru/data/text_misc.xml.append:2015
+#: src-ru/data/text_misc.xml.append:2041
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_5\"]"
 msgstr "на последней"
 
-#: src-ru/data/text_misc.xml.append:2016
+#: src-ru/data/text_misc.xml.append:2042
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_6\"]"
 msgstr "на последних двух из четырёх фаз"
 
-#: src-ru/data/text_misc.xml.append:2017
+#: src-ru/data/text_misc.xml.append:2043
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_7\"]"
 msgstr "отходы"
 
-#: src-ru/data/text_misc.xml.append:2018
+#: src-ru/data/text_misc.xml.append:2044
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_8\"]"
 msgstr "Кестрел"
 
-#: src-ru/data/text_misc.xml.append:2019
+#: src-ru/data/text_misc.xml.append:2045
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_9\"]"
 msgstr "на последней, а ещё какие-то загадочные изменения в артиллерии"
 
-#: src-ru/data/text_misc.xml.append:2020
+#: src-ru/data/text_misc.xml.append:2046
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_10\"]"
 msgstr ""
 "на последних двух из четырёх фаз, а ещё какие-то загадочные изменения в "
 "артиллерии"
 
-#: src-ru/data/text_misc.xml.append:2021
+#: src-ru/data/text_misc.xml.append:2047
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_artillery\"]"
 msgstr "артиллерия"
 
-#: src-ru/data/text_misc.xml.append:2022
+#: src-ru/data/text_misc.xml.append:2048
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_artillery_remover\"]"
 msgstr "артиллерию"
 
-#: src-ru/data/text_misc.xml.append:2023
+#: src-ru/data/text_misc.xml.append:2049
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_not_avaiable_install_artillery\"]"
 msgstr "Установить артиллерию (достигнут лимит систем)."
 
-#: src-ru/data/text_misc.xml.append:2024
+#: src-ru/data/text_misc.xml.append:2050
 msgid "data/text_misc.xml.append$//text[@name=\"lua_not_ship_install_artillery\"]"
 msgstr "Установить артиллерию (на вашем корабле не предусмотрена)."
 
-#: src-ru/data/text_misc.xml.append:2026
+#: src-ru/data/text_misc.xml.append:2052
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_ready\"]"
 msgstr "Запуск волны, уничтожающей снаряды. Горячая клавиша: DELETE"
 
-#: src-ru/data/text_misc.xml.append:2027
+#: src-ru/data/text_misc.xml.append:2053
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_wait_cooldown\"]"
 msgstr "Нельзя использовать: дождитесь перезарядки."
 
-#: src-ru/data/text_misc.xml.append:2028
+#: src-ru/data/text_misc.xml.append:2054
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_needed_jump\"]"
 msgstr "Нельзя использовать: для перезарядки нужен FTL-прыжок."
 
-#: src-ru/data/text_misc.xml.append:2029
+#: src-ru/data/text_misc.xml.append:2055
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_anaerobic\"]"
 msgstr "Анаэробное"
 
-#: src-ru/data/text_misc.xml.append:2030
+#: src-ru/data/text_misc.xml.append:2056
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_anaerobic_choice_replacer\"]"
 msgstr ""
 "(Анаэробное пламя) Катализатор, усиливающий урон от огня, всё ещё активен."
 
-#: src-ru/data/text_misc.xml.append:2031
+#: src-ru/data/text_misc.xml.append:2057
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coefficients_zero\"]"
 msgstr "Награды боеприпасами и деталями дронов не снижены."
 
-#: src-ru/data/text_misc.xml.append:2032
+#: src-ru/data/text_misc.xml.append:2058
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_msls\"]"
 msgstr ""
 "Награды боеприпасами снижены на VAL%, поскольку они не использовались в "
 "сражениях."
 
-#: src-ru/data/text_misc.xml.append:2033
+#: src-ru/data/text_misc.xml.append:2059
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_drns\"]"
 msgstr ""
 "Награды деталями дронов снижены на VAL%, поскольку они не использовались в "
 "сражениях."
 
-#: src-ru/data/text_misc.xml.append:2034
+#: src-ru/data/text_misc.xml.append:2060
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_msls_zero\"]"
 msgstr "Награды боеприпасами не снижены."
 
-#: src-ru/data/text_misc.xml.append:2035
+#: src-ru/data/text_misc.xml.append:2061
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_drns_zero\"]"
 msgstr "Награды деталями дронов не снижены."
 
-#: src-ru/data/text_misc.xml.append:2036
+#: src-ru/data/text_misc.xml.append:2062
 msgid "data/text_misc.xml.append$//text[@name=\"lua_ai_ship\"]"
 msgstr ""
 "Этот корабль имеет внутренний искуственный интеллект. Если весь экипаж "
 "погибнет, это не завершит полёт."
 
-#: src-ru/data/text_misc.xml.append:2037
+#: src-ru/data/text_misc.xml.append:2063
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_shop_is_close\"]"
 msgstr "Магазин на ближайшем маяке отправил приветственное сообщение."
 
-#: src-ru/data/text_misc.xml.append:2038
+#: src-ru/data/text_misc.xml.append:2064
 msgid "data/text_misc.xml.append$//text[@name=\"alas_friendly\"]"
 msgstr ""
 "Ваш защитный дрон-отражатель: \\nПеренаправляет лазерные снаряды в "
 "противника. Будет работать, пока не будет уничтожен, или вы не совершите "
 "прыжок."
 
-#: src-ru/data/text_misc.xml.append:2039
+#: src-ru/data/text_misc.xml.append:2065
 msgid "data/text_misc.xml.append$//text[@name=\"alas_enemy\"]"
 msgstr ""
 "Дрон-отражатель: \\nПеренаправляет лазерные снаряды в ваш корабль. Может "
 "быть отключён повреждением вражеской системы управления дронами."
 
-#: src-ru/data/text_misc.xml.append:2040
+#: src-ru/data/text_misc.xml.append:2066
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_switcher\"]"
 msgstr "Показать/спрятать счётчик урона в секунду."
 
-#: src-ru/data/text_misc.xml.append:2041
+#: src-ru/data/text_misc.xml.append:2067
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_sim\"]"
 msgstr "Урон в секунду для одновременного залпа из всех орудий."
 
-#: src-ru/data/text_misc.xml.append:2042
+#: src-ru/data/text_misc.xml.append:2068
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_auto\"]"
 msgstr "Урон в секунду для авто-огня."
 
-#: src-ru/data/text_misc.xml.append:2043
+#: src-ru/data/text_misc.xml.append:2069
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_oxygen\"]"
 msgstr ""
 "Вы находитесь в плотном газовом пространстве. Снаружи корабля пригодная для "
 "дыхания атмосфера."
 
-#: src-ru/data/text_misc.xml.append:2044
+#: src-ru/data/text_misc.xml.append:2070
 msgid "data/text_misc.xml.append$//text[@name=\"lua_legendary_egg_name\"]"
 msgstr "Ори"
 
-#: src-ru/data/text_misc.xml.append:2045
+#: src-ru/data/text_misc.xml.append:2071
 msgid "data/text_misc.xml.append$//text[@name=\"lua_shots_for_charge\"]"
 msgstr "Выстрелов за заряд:"
 
-#: src-ru/data/text_misc.xml.append:2046
+#: src-ru/data/text_misc.xml.append:2072
 msgid "data/text_misc.xml.append$//text[@name=\"lua_mc_tip_auto\"]"
 msgstr ""
 "Контроль разума в авто-режиме для защиты экипажа на своём корабле от "
 "вражеского контроля разума."
 
-#: src-ru/data/text_misc.xml.append:2047
+#: src-ru/data/text_misc.xml.append:2073
 msgid "data/text_misc.xml.append$//text[@name=\"lua_mc_tip_hand\"]"
 msgstr "Контроль разума не использует авто-режим."
 
-#: src-ru/data/text_misc.xml.append:2048
+#: src-ru/data/text_misc.xml.append:2074
 msgid "data/text_misc.xml.append$//text[@name=\"needed_change_language\"]"
 msgstr "Внимание! Смените в настройках язык на \"Русский (Arsenal +)\""
 
-#: src-ru/data/text_misc.xml.append:2050
+#: src-ru/data/text_misc.xml.append:2076
 msgid "data/text_misc.xml.append$//text[@name=\"lua_onoff_glif_panel\"]"
 msgstr "Вкл./выкл. панель управления Глифганом."
 
-#: src-ru/data/text_misc.xml.append:2051
+#: src-ru/data/text_misc.xml.append:2077
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_glif_panel\"]"
 msgstr "Очистить все глифы."
 
-#: src-ru/data/text_misc.xml.append:2052
+#: src-ru/data/text_misc.xml.append:2078
+msgid "data/text_misc.xml.append$//text[@name=\"lua_lastclear_glif_panel\"]"
+msgstr "Очистить последний глиф."
+
+#: src-ru/data/text_misc.xml.append:2079
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_glif\"]"
 msgstr "Информация об этом орудии недоступна."
 
-#: src-ru/data/text_misc.xml.append:2053
+#: src-ru/data/text_misc.xml.append:2080
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_glif_panel_no\"]"
 msgstr "Нет глифов для очистки."
 
-#: src-ru/data/text_misc.xml.append:2054
+#: src-ru/data/text_misc.xml.append:2081
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_acc\"]"
 msgstr "Модификатор точности"
 
-#: src-ru/data/text_misc.xml.append:2055
+#: src-ru/data/text_misc.xml.append:2082
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_iondamage\"]"
 msgstr "Ионный урон"
 
-#: src-ru/data/text_misc.xml.append:2056
+#: src-ru/data/text_misc.xml.append:2083
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_crewdamage\"]"
 msgstr "Урон по экипажу"
 
-#: src-ru/data/text_misc.xml.append:2057
+#: src-ru/data/text_misc.xml.append:2084
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sysdamage\"]"
 msgstr "Урон по системам"
 
-#: src-ru/data/text_misc.xml.append:2058
+#: src-ru/data/text_misc.xml.append:2085
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_hulldamage\"]"
 msgstr "Урон по корпусу"
 
-#: src-ru/data/text_misc.xml.append:2059
+#: src-ru/data/text_misc.xml.append:2086
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_shots\"]"
 msgstr "Выстрелов за заряд"
 
-#: src-ru/data/text_misc.xml.append:2060
+#: src-ru/data/text_misc.xml.append:2087
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_cooldown\"]"
 msgstr "Время зарядки"
 
-#: src-ru/data/text_misc.xml.append:2061
+#: src-ru/data/text_misc.xml.append:2088
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sec\"]"
 msgstr "сек."
 
-#: src-ru/data/text_misc.xml.append:2062
+#: src-ru/data/text_misc.xml.append:2089
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_charact\"]"
 msgstr "Характеристики"
 
-#: src-ru/data/text_misc.xml.append:2063
+#: src-ru/data/text_misc.xml.append:2090
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_power\"]"
 msgstr "Требует энергии"
 
-#: src-ru/data/text_misc.xml.append:2064
+#: src-ru/data/text_misc.xml.append:2091
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_speed\"]"
 msgstr "Скорость снаряда"
 
-#: src-ru/data/text_misc.xml.append:2065
+#: src-ru/data/text_misc.xml.append:2092
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_resetcd\"]"
 msgstr "После выстрела перезарядится на"
 
-#: src-ru/data/text_misc.xml.append:2066
+#: src-ru/data/text_misc.xml.append:2093
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_freeze\"]"
 msgstr "Запирает целевой отсек"
 
-#: src-ru/data/text_misc.xml.append:2067
+#: src-ru/data/text_misc.xml.append:2094
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_hullbst\"]"
 msgstr "x2 урона по пустым отсекам"
 
-#: src-ru/data/text_misc.xml.append:2068
+#: src-ru/data/text_misc.xml.append:2095
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_stun\"]"
 msgstr "Оглушение"
 
-#: src-ru/data/text_misc.xml.append:2069
+#: src-ru/data/text_misc.xml.append:2096
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sp\"]"
 msgstr "Пробивает щитов"
 
-#: src-ru/data/text_misc.xml.append:2070
+#: src-ru/data/text_misc.xml.append:2097
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_fc\"]"
 msgstr "Шанс возгорания"
 
-#: src-ru/data/text_misc.xml.append:2071
+#: src-ru/data/text_misc.xml.append:2098
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_bc\"]"
 msgstr "Шанс пробить корпус"
 
-#: src-ru/data/text_misc.xml.append:2072
+#: src-ru/data/text_misc.xml.append:2099
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_copycdnext\"]"
 msgstr ""
 "При выстреле зарядит орудие справа до уровня своего времени перезарядки"
 
-#: src-ru/data/text_misc.xml.append:2073
+#: src-ru/data/text_misc.xml.append:2100
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_stealcrew\"]"
 msgstr "Снаряд при попадании телепортирует экипаж в отсеке на другой корабль"
 
-#: src-ru/data/text_misc.xml.append:2074
+#: src-ru/data/text_misc.xml.append:2101
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_blood\"]"
 msgstr "Снаряд при попадании вызывает кровотечение"
 
-#: src-ru/data/text_misc.xml.append:2075
+#: src-ru/data/text_misc.xml.append:2102
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_erosion\"]"
 msgstr "Снаряд при попадании вызывает эрозию"
 
-#: src-ru/data/text_misc.xml.append:2077
+#: src-ru/data/text_misc.xml.append:2104
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_evasion\"]"
+msgstr "Дополнительное уклонение корабля"
+
+#: src-ru/data/text_misc.xml.append:2105
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_bomb\"]"
+msgstr "Каждый выстрел дополнительно запускает неприцельные бомбы"
+
+#: src-ru/data/text_misc.xml.append:2106
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_oxygen_fill\"]"
+msgstr "Попадание заполняет отсек кислородом до 100%"
+
+#: src-ru/data/text_misc.xml.append:2107
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_spall\"]"
+msgstr "Пробивает все щиты"
+
+#: src-ru/data/text_misc.xml.append:2108
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_asin\"]"
+msgstr ""
+"Дополнительно 30 урона всем корабельным дронам, инжи, морфам и аватарам + "
+"оглушение на 3 секунды."
+
+#: src-ru/data/text_misc.xml.append:2109
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_tau\"]"
+msgstr "Ионизирует рубку пилота и оглушает экипаж в ней на 3 секунды"
+
+#: src-ru/data/text_misc.xml.append:2110
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_empty_teleport\"]"
+msgstr "Отправляет союзный экипаж из пустых отсеков на абордаж"
+
+#: src-ru/data/text_misc.xml.append:2111
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_spawn_mantis\"]"
+msgstr "Снаряд создаёт временного союзного мантиса"
+
+#: src-ru/data/text_misc.xml.append:2112
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_add_mc\"]"
+msgstr "Берёт под контроль 1 противника в отсеке"
+
+#: src-ru/data/text_misc.xml.append:2113
+msgid "data/text_misc.xml.append$//text[@name=\"lua_info_add_hack\"]"
+msgstr "Взламывает систему на 5 секунд"
+
+#: src-ru/data/text_misc.xml.append:2142
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_on\"]"
 msgstr "Уволенный экипаж будет выброшен в космос."
 
-#: src-ru/data/text_misc.xml.append:2078
+#: src-ru/data/text_misc.xml.append:2143
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_off\"]"
 msgstr ""
 "Уволенный экипаж отправится на мини-челноке к ближайшей планете или станции."
+
+#: src-ru/data/text_misc.xml.append:2144
+msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_cloak_blocked\"]"
+msgstr "Заблокировано усилением противника"
+
+#: src-ru/data/text_misc.xml.append:2146
+msgid "data/text_misc.xml.append$//text[@name=\"lua_pds_from_planet_marker\"]"
+msgstr "Противокорабельная батарея с планеты"
+
+#: src-ru/data/text_misc.xml.append:2147
+msgid "data/text_misc.xml.append$//text[@name=\"lua_pds_fed_fleet\"]"
+msgstr ""
+"Противокорабельная батарея союзного флота наводится на вашего противника"
+
+#: src-ru/data/text_misc.xml.append:2149
+msgid "data/text_misc.xml.append$//text[@name=\"tip_mc_weapon\"]"
+msgstr "Система контроля разума не требуется для работы этого орудия"
+
+#: src-ru/data/text_misc.xml.append:2151
+msgid "data/text_misc.xml.append$//text[@name=\"lua_annihilator_text_adder\"]"
+msgstr ""
+"Похоже, что флагман вооружён каким-то [style[color:ff6e6e]]огромным лучевым "
+"орудием[[/style]], состоящим из трёх компонентов. Это объясняет, почему они "
+"не попадались вам в этом полёте..."
+
+#: src-ru/data/text_misc.xml.append:2153
+msgid "data/text_misc.xml.append$//text[@name=\"lua_show_ftl_timer_on\"]"
+msgstr "Таймер зарядки FTL-привода включён"
+
+#: src-ru/data/text_misc.xml.append:2154
+msgid "data/text_misc.xml.append$//text[@name=\"lua_show_ftl_timer_off\"]"
+msgstr "Таймер зарядки FTL-привода выключен"
+
+#: src-ru/data/text_misc.xml.append:2157
+msgid "data/text_misc.xml.append$//text[@name=\"lua_get_this_weapon\"]"
+msgstr "Получить это орудие."
+
+#: src-ru/data/text_misc.xml.append:2158
+msgid "data/text_misc.xml.append$//text[@name=\"lua_container_broke\"]"
+msgstr "От контейнера хранения ядра остаётся лишь пустая оболочка..."
+
+#: src-ru/data/text_misc.xml.append:2159
+msgid "data/text_misc.xml.append$//text[@name=\"lua_install_core\"]"
+msgstr ""
+"Вы успешно устанавливаете ядро в орудие через специальный соединительный "
+"разъём.\\n"
+
+#: src-ru/data/text_misc.xml.append:2161
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_11\"]"
+msgstr "Очистить оружие"
+
+#: src-ru/data/text_misc.xml.append:2163
+msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_top\"]"
+msgstr ""
+"Нажмите HOME, чтобы узнать боевую стоимость кораблей на экране (в скобках "
+"стоимость с перевозимым грузом) и ваш текущий урон в секунду. Рядом с "
+"орудиями есть небольшой \"+\", если нужно постоянное "
+"отображение.\\n\\nНажмите END, чтобы узнать номер сектора и возможные "
+"награды ломом.\\n\\nНажмите INS, чтобы узнать номера отсеков."
+
+#: src-ru/data/text_misc.xml.append:2165
+msgid "data/text_misc.xml.append$//text[@name=\"lua_flagman_sbezhal\"]"
+msgstr "Вы быстро грузите в трюм уцелевшие части флагмана."
+
+#: src-ru/data/text_misc.xml.append:2167
+msgid "data/text_misc.xml.append$//text[@name=\"lua_legendary_morph_name\"]"
+msgstr "Коротыш"
+
+#: src-ru/data/text_misc.xml.append:2169
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka0\"]"
+msgstr "А ещё он тихо бормочет про какое-то супер орудие с обычными лазерами."
+
+#: src-ru/data/text_misc.xml.append:2170
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka1\"]"
+msgstr "А ещё он тихо бормочет про какое-то супер орудие с контролем разума."
+
+#: src-ru/data/text_misc.xml.append:2171
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka2\"]"
+msgstr "А ещё он тихо бормочет про какое-то супер орудие с минами."
+
+#: src-ru/data/text_misc.xml.append:2172
+msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka3\"]"
+msgstr "А ещё он тихо бормочет про какое-то супер орудие с тяжёлыми лазерами."
+
+#: src-ru/data/text_misc.xml.append:2174
+msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_grenades\"]"
+msgstr ""
+"Совет: Гранатомёты имеют гибкую систему прицеливания. Используйте колёсико "
+"мыши для регулировки длины."
+
+#: src-ru/data/text_misc.xml.append:2175
+msgid "data/text_misc.xml.append$//text[@name=\"tip_protector_beam\"]"
+msgstr ""
+"Совет: Располагайте его поближе к важным системам. Нажмите BACKSPACE, чтобы "
+"показать радиус работы дрона. Несколько таких дронов атакуют только по "
+"очереди."

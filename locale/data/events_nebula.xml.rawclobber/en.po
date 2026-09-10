@@ -574,7 +574,6 @@ msgid ""
 msgstr "Ignore their bribe and attack."
 
 #: src-ru/data/events_nebula.xml.rawclobber:338
-#, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AUTO_DEFENSE_ITEM\"]/text"
 msgstr ""
@@ -3294,7 +3293,6 @@ msgstr ""
 "Disassemble them for scrap metal — the only true solution to this situation."
 
 #: src-ru/data/events_nebula.xml.rawclobber:2409
-#, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/destroyed/text"
 msgstr ""

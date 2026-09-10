@@ -260,16 +260,24 @@ msgstr ""
 "Вы снимаете с корабля инжи всё, что можете, перед тем, как приняться за "
 "мантиса. Однако, десантник мгновенно понимает ваши намерения и нападает!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:226
+#: src-ru/data/events_mantis.xml.rawclobber:228
 msgid ""
-"data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_TALK\"]/event[1]/text"
+"data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_TALK\"]/event[1]/loadEventList/event[1]/text"
+msgstr ""
+"После короткого промежутка времени наедине с мантисом, вам сообщают, что он "
+"желает присоединиться к вам. И хотя вы удивлены готовности мантиса сменить "
+"свои взгляды, вы доверяете мнениям своей команды на его счёт."
+
+#: src-ru/data/events_mantis.xml.rawclobber:233
+msgid ""
+"data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_TALK\"]/event[1]/loadEventList/event[2]/text"
 msgstr ""
 "Неизвестно, что происходит между двумя мантисами за запертой дверью, но "
 "когда они появляются, десантник готов поделиться с вами данными телеметрии "
 "текущего сектора. Затем он улетает на корабле инжи. Ваша карта была "
 "обновлена."
 
-#: src-ru/data/events_mantis.xml.rawclobber:230
+#: src-ru/data/events_mantis.xml.rawclobber:239
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_TALK\"]/event[2]/text"
 msgstr ""
@@ -277,7 +285,7 @@ msgstr ""
 "желает присоединиться к вам. И хотя вы удивлены готовности мантиса сменить "
 "свои взгляды, вы доверяете мнениям своей команды на его счёт."
 
-#: src-ru/data/events_mantis.xml.rawclobber:238
+#: src-ru/data/events_mantis.xml.rawclobber:247
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/text"
 msgstr ""
 "Этот маяк на данный момент является пристанищем для развлекательного корабля"
@@ -285,39 +293,39 @@ msgstr ""
 "выпустить пар. Просканировав ваше имущество, они дали понять, что вам "
 "желательно поучаствовать в главной азартной игре."
 
-#: src-ru/data/events_mantis.xml.rawclobber:240
+#: src-ru/data/events_mantis.xml.rawclobber:249
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[1]/text"
 msgstr ""
 "Поставить 50 лома на воина в [style[color:5f97ff]]синих[[/style]] штанах."
 
-#: src-ru/data/events_mantis.xml.rawclobber:242
+#: src-ru/data/events_mantis.xml.rawclobber:251
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[1]/event/text"
 msgstr ""
 "Сквозь экран вы наблюдаете, как двое молодых мантисов сходятся друг с другом"
 " в схватке."
 
-#: src-ru/data/events_mantis.xml.rawclobber:253
+#: src-ru/data/events_mantis.xml.rawclobber:262
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[2]/text"
 msgstr ""
 "Поставить 50 лома на воина в [style[color:ff4551]]красных[[/style]] штанах."
 
-#: src-ru/data/events_mantis.xml.rawclobber:255
+#: src-ru/data/events_mantis.xml.rawclobber:264
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[2]/event/text"
 msgstr ""
 "Сквозь экран вы наблюдаете, как двое молодых мантисов сходятся друг с другом"
 " в схватке."
 
-#: src-ru/data/events_mantis.xml.rawclobber:266
+#: src-ru/data/events_mantis.xml.rawclobber:275
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[3]/text"
 msgstr ""
 "Вы не играете с шулерами. Поговорить с экипажем, пока заряжается FTL-привод."
 
-#: src-ru/data/events_mantis.xml.rawclobber:272
+#: src-ru/data/events_mantis.xml.rawclobber:281
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[1]/text"
 msgstr ""
@@ -325,7 +333,7 @@ msgstr ""
 "последний момент, он набрасывается и обезглавливает своего оппонента. Вы "
 "забираете свой выигрыш!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:279
+#: src-ru/data/events_mantis.xml.rawclobber:288
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/text"
 msgstr ""
@@ -333,41 +341,41 @@ msgstr ""
 "множество ударов по противнику. Внезапно тот, что в "
 "[style[color:ff4551]]красном[[/style]], заканчивает бой одним точным ударом."
 
-#: src-ru/data/events_mantis.xml.rawclobber:281
+#: src-ru/data/events_mantis.xml.rawclobber:290
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[1]/text"
 msgstr "Заплатить то, что вы должны."
 
-#: src-ru/data/events_mantis.xml.rawclobber:283
+#: src-ru/data/events_mantis.xml.rawclobber:292
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[1]/event/text"
 msgstr ""
 "Вы передаёте лом, который поставили, и уходите, пока у вас ещё есть корабль,"
 " чтобы отчалить."
 
-#: src-ru/data/events_mantis.xml.rawclobber:287
+#: src-ru/data/events_mantis.xml.rawclobber:296
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"clonebay\"]/text"
 msgstr "(Улучшенный клон-отсек) Быстро настроить клон-отсек и спасти убитого."
 
-#: src-ru/data/events_mantis.xml.rawclobber:289
+#: src-ru/data/events_mantis.xml.rawclobber:298
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"clonebay\"]/event/text"
 msgstr ""
 "Павший боец появляется в клон-отсеке и с благодарностью вступает в ваш "
 "экипаж."
 
-#: src-ru/data/events_mantis.xml.rawclobber:290
+#: src-ru/data/events_mantis.xml.rawclobber:299
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"clonebay\"]/event/crewMember"
 msgstr "Рокки"
 
-#: src-ru/data/events_mantis.xml.rawclobber:294
+#: src-ru/data/events_mantis.xml.rawclobber:303
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"engines\"]/text"
 msgstr "(Улучшенные двигатели) Уклониться от уплаты и завести двигатели."
 
-#: src-ru/data/events_mantis.xml.rawclobber:296
+#: src-ru/data/events_mantis.xml.rawclobber:305
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"engines\"]/event/text"
 msgstr ""
@@ -376,7 +384,7 @@ msgstr ""
 "отреагировать. Тем не менее небольшой корабль прерывает патрулирование и "
 "идёт на перехват."
 
-#: src-ru/data/events_mantis.xml.rawclobber:307
+#: src-ru/data/events_mantis.xml.rawclobber:316
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[1]/text"
 msgstr ""
@@ -385,48 +393,48 @@ msgstr ""
 "[style[color:ff4551]]красном[[/style]], заканчивает бой одним точным ударом."
 " Вы забираете свой выигрыш!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:314
+#: src-ru/data/events_mantis.xml.rawclobber:323
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/text"
 msgstr ""
 "Тот, что в [style[color:5f97ff]]синем[[/style]], зажат в угол. И тут, в "
 "последний момент, он набрасывается и обезглавливает своего оппонента."
 
-#: src-ru/data/events_mantis.xml.rawclobber:316
+#: src-ru/data/events_mantis.xml.rawclobber:325
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[1]/text"
 msgstr "Заплатить то, что вы должны."
 
-#: src-ru/data/events_mantis.xml.rawclobber:318
+#: src-ru/data/events_mantis.xml.rawclobber:327
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[1]/event/text"
 msgstr ""
 "Вы передаёте лом, который поставили, и уходите, пока у вас ещё есть корабль,"
 " чтобы отчалить."
 
-#: src-ru/data/events_mantis.xml.rawclobber:322
+#: src-ru/data/events_mantis.xml.rawclobber:331
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"clonebay\"]/text"
 msgstr "(Улучшенный клон-отсек) Быстро настроить клон-отсек и спасти убитого."
 
-#: src-ru/data/events_mantis.xml.rawclobber:324
+#: src-ru/data/events_mantis.xml.rawclobber:333
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"clonebay\"]/event/text"
 msgstr ""
 "Павший боец появляется в клон-отсеке и с благодарностью вступает в ваш "
 "экипаж."
 
-#: src-ru/data/events_mantis.xml.rawclobber:325
+#: src-ru/data/events_mantis.xml.rawclobber:334
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"clonebay\"]/event/crewMember"
 msgstr "Рокки"
 
-#: src-ru/data/events_mantis.xml.rawclobber:329
+#: src-ru/data/events_mantis.xml.rawclobber:338
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"engines\"]/text"
 msgstr "(Улучшенные двигатели) Уклониться от уплаты и завести двигатели."
 
-#: src-ru/data/events_mantis.xml.rawclobber:331
+#: src-ru/data/events_mantis.xml.rawclobber:340
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"engines\"]/event/text"
 msgstr ""
@@ -435,14 +443,14 @@ msgstr ""
 "отреагировать. Тем не менее небольшой корабль прерывает патрулирование и "
 "идёт на перехват."
 
-#: src-ru/data/events_mantis.xml.rawclobber:354
+#: src-ru/data/events_mantis.xml.rawclobber:363
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[1]"
 msgstr ""
 "На радаре появляются военный корабль мантисов и останки транспортника людей."
 " Приготовьтесь к стычке!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:355
+#: src-ru/data/events_mantis.xml.rawclobber:364
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[2]"
 msgstr ""
@@ -450,7 +458,7 @@ msgstr ""
 "вам подобные подавляли наше величие! Вы проклянёте тот день, когда "
 "поддержали Федерацию!»"
 
-#: src-ru/data/events_mantis.xml.rawclobber:356
+#: src-ru/data/events_mantis.xml.rawclobber:365
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[3]"
 msgstr ""
@@ -459,7 +467,7 @@ msgstr ""
 "на нашу территорию, поплатятся за это. Отключите щиты и сдавайтесь, если вы "
 "цените свою жизнь»."
 
-#: src-ru/data/events_mantis.xml.rawclobber:357
+#: src-ru/data/events_mantis.xml.rawclobber:366
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[4]"
 msgstr ""
@@ -468,7 +476,7 @@ msgstr ""
 "является замечательным местом для незаконного бурения мантисами. Пока вы "
 "просчитываете варианты, с аванпоста стартует корабль. Готовьтесь к битве."
 
-#: src-ru/data/events_mantis.xml.rawclobber:358
+#: src-ru/data/events_mantis.xml.rawclobber:367
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[5]"
 msgstr ""
@@ -476,7 +484,7 @@ msgstr ""
 "высказывают свои претензии. Корабль мантисов приближается к вам до того, как"
 " вы успели улететь."
 
-#: src-ru/data/events_mantis.xml.rawclobber:359
+#: src-ru/data/events_mantis.xml.rawclobber:368
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[6]"
 msgstr ""
@@ -484,7 +492,7 @@ msgstr ""
 "места крушения. У них нет времени рассыпаться предупреждениями, они "
 "готовятся к бою."
 
-#: src-ru/data/events_mantis.xml.rawclobber:360
+#: src-ru/data/events_mantis.xml.rawclobber:369
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[7]"
 msgstr ""
@@ -492,14 +500,14 @@ msgstr ""
 "приёмнике. «Все местные людские колонии наказаны за преступления Федерации. "
 "Не мешайте процессу»."
 
-#: src-ru/data/events_mantis.xml.rawclobber:362
+#: src-ru/data/events_mantis.xml.rawclobber:371
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[8]"
 msgstr ""
 "Находящийся неподалёку корабль мантисов начинает агрессивные манёвры. Вы "
 "готовитесь к худшему."
 
-#: src-ru/data/events_mantis.xml.rawclobber:363
+#: src-ru/data/events_mantis.xml.rawclobber:372
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[9]"
 msgstr ""
@@ -507,43 +515,43 @@ msgstr ""
 "враждебно настроенного разведчика мантисов. Универсальный переводчик может "
 "не справляться со своей задачей, но намерения мантиса совершенно очевидны."
 
-#: src-ru/data/events_mantis.xml.rawclobber:364
+#: src-ru/data/events_mantis.xml.rawclobber:373
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[10]"
 msgstr "Корабль мантисов рад вас видеть и разогревает свои орудия."
 
-#: src-ru/data/events_mantis.xml.rawclobber:365
+#: src-ru/data/events_mantis.xml.rawclobber:374
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[11]"
 msgstr "Вы узнаете очертания корабля мантисов на фоне черноты. К бою!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:366
+#: src-ru/data/events_mantis.xml.rawclobber:375
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[12]"
 msgstr "Маячит что-то красное. Это мантис."
 
-#: src-ru/data/events_mantis.xml.rawclobber:367
+#: src-ru/data/events_mantis.xml.rawclobber:376
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[13]"
 msgstr ""
 "Судно мантисов выходит на связь: «Это послание всего лишь должно отвлечь "
 "вас!» Вы замечаете, что их щиты и орудия включились."
 
-#: src-ru/data/events_mantis.xml.rawclobber:368
+#: src-ru/data/events_mantis.xml.rawclobber:377
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[14]"
 msgstr ""
 "Вы замечаете сполохи шквального лазерного огня в иллюминаторе. Мантисы прямо"
 " над вами."
 
-#: src-ru/data/events_mantis.xml.rawclobber:369
+#: src-ru/data/events_mantis.xml.rawclobber:378
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[15]"
 msgstr ""
 "Мантисы выходят на связь. Их капитан говорит: «Я присвою это судно для "
 "своего клана. Хорошей охоты, братья!»"
 
-#: src-ru/data/events_mantis.xml.rawclobber:370
+#: src-ru/data/events_mantis.xml.rawclobber:379
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[16]"
 msgstr ""
@@ -551,14 +559,14 @@ msgstr ""
 "постов, исключение составляют, пожалуй, лишь особо жестокие. Вы заряжаете "
 "орудия."
 
-#: src-ru/data/events_mantis.xml.rawclobber:371
+#: src-ru/data/events_mantis.xml.rawclobber:380
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[17]"
 msgstr ""
 "Корабль мантисов с опознавательными знаками воина срывается с места и "
 "атакует!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:372
+#: src-ru/data/events_mantis.xml.rawclobber:381
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[18]"
 msgstr ""
@@ -566,7 +574,7 @@ msgstr ""
 "добыча! Мы почтим вас нашим самым опустошающим оружием!» Вы чувствуете, что "
 "ещё есть шанс спастись, и активируете орудия."
 
-#: src-ru/data/events_mantis.xml.rawclobber:373
+#: src-ru/data/events_mantis.xml.rawclobber:382
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[19]"
 msgstr ""
@@ -574,7 +582,7 @@ msgstr ""
 "вторжения мантисов (как раз таких, с каким вы сейчас имеете дело), которые "
 "однажды угрожали планете. Вы приказываете открыть огонь!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:374
+#: src-ru/data/events_mantis.xml.rawclobber:383
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[20]"
 msgstr ""
@@ -583,39 +591,39 @@ msgstr ""
 "Кааазтвак отдаёт дань уважения». Похоже, что уважение в культуре мантисов "
 "выказывают лазерами."
 
-#: src-ru/data/events_mantis.xml.rawclobber:390
+#: src-ru/data/events_mantis.xml.rawclobber:399
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_FIGHT_CHOICE\"]/choice[1]/text"
 msgstr "Атаковать корабль."
 
-#: src-ru/data/events_mantis.xml.rawclobber:392
+#: src-ru/data/events_mantis.xml.rawclobber:401
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_FIGHT_CHOICE\"]/choice[1]/event/text"
 msgstr "Вы мчитесь в бой, уверенные в своей скорой победе."
 
-#: src-ru/data/events_mantis.xml.rawclobber:398
+#: src-ru/data/events_mantis.xml.rawclobber:407
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_FIGHT_CHOICE\"]/choice[2]/text"
 msgstr "Попытаться остаться незамеченным."
 
-#: src-ru/data/events_mantis.xml.rawclobber:402
+#: src-ru/data/events_mantis.xml.rawclobber:411
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_FIGHT_CHOICE\"]/choice[@req=\"cloaking\"]/text"
 msgstr "(Маскировка) Активировать маскировку, чтобы оставаться незамеченными."
 
-#: src-ru/data/events_mantis.xml.rawclobber:407
+#: src-ru/data/events_mantis.xml.rawclobber:416
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[1]"
 msgstr ""
 "Вам довелось стать свидетелем редкого стечения обстоятельств: корабль "
 "мантисов, который вас не заметил."
 
-#: src-ru/data/events_mantis.xml.rawclobber:408
+#: src-ru/data/events_mantis.xml.rawclobber:417
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[2]"
 msgstr "На этот раз удалось заметить мантисов прежде, чем они увидели вас."
 
-#: src-ru/data/events_mantis.xml.rawclobber:409
+#: src-ru/data/events_mantis.xml.rawclobber:418
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[3]"
 msgstr ""
@@ -623,14 +631,14 @@ msgstr ""
 "координатам, облегчённо вздыхает, так как вы каким-то образом вышли из "
 "прыжка не у маяка."
 
-#: src-ru/data/events_mantis.xml.rawclobber:410
+#: src-ru/data/events_mantis.xml.rawclobber:419
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[4]"
 msgstr ""
 "Вы подслушиваете разговор мантисов по передатчику: «Неправда, я убил больше "
 "человеков!» Вы шумно сглатываете, но, к счастью, они вас пока не видят."
 
-#: src-ru/data/events_mantis.xml.rawclobber:411
+#: src-ru/data/events_mantis.xml.rawclobber:420
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[5]"
 msgstr ""
@@ -638,14 +646,14 @@ msgstr ""
 "разлагаться. Снимите его. Отрубите ему пальцы. Выкиньте его из шлюза». Они, "
 "определённо, не кажутся дружелюбными..."
 
-#: src-ru/data/events_mantis.xml.rawclobber:412
+#: src-ru/data/events_mantis.xml.rawclobber:421
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[6]"
 msgstr ""
 "Вы подслушиваете разговор мантисов по передатчику: «Договорились. Следующий "
 "корабль — твой. Хорошей охоты». Они вас пока не видят."
 
-#: src-ru/data/events_mantis.xml.rawclobber:416
+#: src-ru/data/events_mantis.xml.rawclobber:425
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_AVOID\"]/event[1]/text"
 msgstr ""
@@ -653,14 +661,14 @@ msgstr ""
 "не хотят сражаться, либо не заметили ваше судно — что гораздо более "
 "вероятно."
 
-#: src-ru/data/events_mantis.xml.rawclobber:419
+#: src-ru/data/events_mantis.xml.rawclobber:428
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_AVOID\"]/event[2]/text"
 msgstr ""
 "Прежде чем вам удаётся ускользнуть, корабль мантисов засекает вас и включает"
 " орудия."
 
-#: src-ru/data/events_mantis.xml.rawclobber:424
+#: src-ru/data/events_mantis.xml.rawclobber:433
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_AVOID\"]/event[3]/text"
 msgstr ""
@@ -668,58 +676,58 @@ msgstr ""
 "Похоже, они собирались улетать, когда неожиданно развернулись и взяли курс "
 "на вас, заряжая орудия."
 
-#: src-ru/data/events_mantis.xml.rawclobber:431
+#: src-ru/data/events_mantis.xml.rawclobber:440
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_CLOAK\"]/event[1]/text"
 msgstr ""
 "Вы поспешно маскируете корабль и выходите из зоны сканирования. Вы ушли "
 "незамеченными."
 
-#: src-ru/data/events_mantis.xml.rawclobber:434
+#: src-ru/data/events_mantis.xml.rawclobber:443
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_CLOAK\"]/event[2]/text"
 msgstr ""
 "Вы маскируетесь и выключаете вспомогательные системы. Через короткое время "
 "корабль мантисов улетает — несомненно, в поисках добычи."
 
-#: src-ru/data/events_mantis.xml.rawclobber:437
+#: src-ru/data/events_mantis.xml.rawclobber:446
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_CLOAK\"]/event[3]/text"
 msgstr ""
 "Вы поспешно маскируете корабль, но недостаточно быстро. Они замечают вас и "
 "готовятся к бою."
 
-#: src-ru/data/events_mantis.xml.rawclobber:447
+#: src-ru/data/events_mantis.xml.rawclobber:456
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CIVILIAN\"]/choice[1]/text"
 msgstr "Помочь гражданским."
 
-#: src-ru/data/events_mantis.xml.rawclobber:449
+#: src-ru/data/events_mantis.xml.rawclobber:458
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CIVILIAN\"]/choice[1]/event/text"
 msgstr ""
 "Нахмурившись, вы заряжаете орудия и готовитесь к бою с кораблём мантисов. "
 "Только не сегодня."
 
-#: src-ru/data/events_mantis.xml.rawclobber:455
+#: src-ru/data/events_mantis.xml.rawclobber:464
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CIVILIAN\"]/choice[2]/text"
 msgstr "Держаться от них подальше."
 
-#: src-ru/data/events_mantis.xml.rawclobber:462
+#: src-ru/data/events_mantis.xml.rawclobber:471
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[1]"
 msgstr ""
 "Судно мантисов проносится через ваше обзорное окно, с полностью заряженными "
 "орудиями и двигателями. Крошечная точка на радаре отмечает их жертву."
 
-#: src-ru/data/events_mantis.xml.rawclobber:463
+#: src-ru/data/events_mantis.xml.rawclobber:472
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[2]"
 msgstr ""
 "Вы заметили корабль мантисов, занятый охотой на большом расстоянии от вас."
 
-#: src-ru/data/events_mantis.xml.rawclobber:464
+#: src-ru/data/events_mantis.xml.rawclobber:473
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[3]"
 msgstr ""
@@ -727,34 +735,34 @@ msgstr ""
 "Вокруг его кабины летают искры, и он кричит: «Не вмешивайся, человек! Или ты"
 " следующий!»"
 
-#: src-ru/data/events_mantis.xml.rawclobber:465
+#: src-ru/data/events_mantis.xml.rawclobber:474
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[4]"
 msgstr ""
 "Локальные сенсоры засекают два корабля, схлестнувшихся в жарком бою. Похоже,"
 " что военный корабль мантисов вот-вот победит свою жертву."
 
-#: src-ru/data/events_mantis.xml.rawclobber:466
+#: src-ru/data/events_mantis.xml.rawclobber:475
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[5]"
 msgstr ""
 "Вы ловите аварийный вызов гражданского корабля. Его преследует корабль "
 "мантисов!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:468
+#: src-ru/data/events_mantis.xml.rawclobber:477
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[6]"
 msgstr ""
 "Судно мантисов проносится через ваше обзорное окно, с полностью заряженными "
 "орудиями и двигателями. Крошечная точка на радаре отмечает их жертву."
 
-#: src-ru/data/events_mantis.xml.rawclobber:469
+#: src-ru/data/events_mantis.xml.rawclobber:478
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[7]"
 msgstr ""
 "Вы заметили корабль мантисов, занятый охотой на большом расстоянии от вас."
 
-#: src-ru/data/events_mantis.xml.rawclobber:470
+#: src-ru/data/events_mantis.xml.rawclobber:479
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[8]"
 msgstr ""
@@ -762,96 +770,96 @@ msgstr ""
 "Вокруг его кабины летают искры, и он кричит: «Не вмешивайся, человек! Или ты"
 " следующий!»"
 
-#: src-ru/data/events_mantis.xml.rawclobber:471
+#: src-ru/data/events_mantis.xml.rawclobber:480
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[9]"
 msgstr ""
 "Локальные сенсоры засекают два корабля, схлестнувшихся в жарком бою. Похоже,"
 " что военный корабль мантисов вот-вот победит свою жертву."
 
-#: src-ru/data/events_mantis.xml.rawclobber:472
+#: src-ru/data/events_mantis.xml.rawclobber:481
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[10]"
 msgstr ""
 "Вы ловите аварийный вызов гражданского корабля. Его преследует корабль "
 "мантисов!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:475
+#: src-ru/data/events_mantis.xml.rawclobber:484
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[1]"
 msgstr ""
 "Дымясь, гражданский корабль кое-как движется дальше. Вы стараетесь не думать"
 " о его судьбе и сконцентрироваться на будущем."
 
-#: src-ru/data/events_mantis.xml.rawclobber:476
+#: src-ru/data/events_mantis.xml.rawclobber:485
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[2]"
 msgstr ""
 "Шум раскручивающегося FTL-привода почти тонет в звуках взрывов. Почти."
 
-#: src-ru/data/events_mantis.xml.rawclobber:477
+#: src-ru/data/events_mantis.xml.rawclobber:486
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[3]"
 msgstr "Вы даёте им уйти и стараетесь не думать об этом."
 
-#: src-ru/data/events_mantis.xml.rawclobber:479
+#: src-ru/data/events_mantis.xml.rawclobber:488
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[4]"
 msgstr ""
 "Дымясь, гражданский корабль кое-как движется дальше. Вы стараетесь не думать"
 " о его судьбе и сконцентрироваться на будущем."
 
-#: src-ru/data/events_mantis.xml.rawclobber:480
+#: src-ru/data/events_mantis.xml.rawclobber:489
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[5]"
 msgstr ""
 "Шум раскручивающегося FTL-привода почти тонет в звуках взрывов. Почти."
 
-#: src-ru/data/events_mantis.xml.rawclobber:481
+#: src-ru/data/events_mantis.xml.rawclobber:490
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[6]"
 msgstr "Вы даёте им уйти и стараетесь не думать об этом."
 
-#: src-ru/data/events_mantis.xml.rawclobber:485
+#: src-ru/data/events_mantis.xml.rawclobber:494
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/text"
 msgstr ""
 "Вы обнаруживаете и вылавливаете спасательную капсулу, плавающую поблизости. "
 "Вы уже думали выкинуть её обратно в космос, как замечаете, что она "
 "принадлежит мантисам."
 
-#: src-ru/data/events_mantis.xml.rawclobber:487
+#: src-ru/data/events_mantis.xml.rawclobber:496
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[1]/text"
 msgstr "Полюбопытствовать, открыв."
 
-#: src-ru/data/events_mantis.xml.rawclobber:491
+#: src-ru/data/events_mantis.xml.rawclobber:500
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[2]/text"
 msgstr "Выкинуть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:493
+#: src-ru/data/events_mantis.xml.rawclobber:502
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[2]/event/text"
 msgstr "Вы запускаете капсулу обратно в космос. Вы же не идиот."
 
-#: src-ru/data/events_mantis.xml.rawclobber:497
+#: src-ru/data/events_mantis.xml.rawclobber:506
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr "(Инфракрасный сканер) Просканировать, что находится внутри."
 
-#: src-ru/data/events_mantis.xml.rawclobber:501
+#: src-ru/data/events_mantis.xml.rawclobber:510
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[@req=\"slug_crew\"]/text"
 msgstr "(Член экипажа слаг) Пусть слаг взглянет, что находится внутри."
 
-#: src-ru/data/events_mantis.xml.rawclobber:505
+#: src-ru/data/events_mantis.xml.rawclobber:514
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[@req=\"orchid_crew\"]/text"
 msgstr ""
 "(Член экипажа орхид) Заполнить отсек успокаивающим ароматом перед тем, как "
 "вскрыть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:507
+#: src-ru/data/events_mantis.xml.rawclobber:516
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[@req=\"orchid_crew\"]/event/text"
 msgstr ""
@@ -859,51 +867,51 @@ msgstr ""
 "свежего воздуха и свободно двигать конечностями. Мантис предлагает "
 "присоединиться к вашему экипажу до тех пор, пока не найдёт дорогу домой."
 
-#: src-ru/data/events_mantis.xml.rawclobber:515
+#: src-ru/data/events_mantis.xml.rawclobber:524
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[1]/text"
 msgstr ""
 "Сканер показал, что внутри находится мантис. Возможно, не стоит его "
 "выпускать."
 
-#: src-ru/data/events_mantis.xml.rawclobber:517
+#: src-ru/data/events_mantis.xml.rawclobber:526
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[1]/choice[1]/text"
 msgstr "Открыть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:521
+#: src-ru/data/events_mantis.xml.rawclobber:530
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[1]/choice[2]/text"
 msgstr "Выкинуть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:523
+#: src-ru/data/events_mantis.xml.rawclobber:532
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[1]/choice[2]/event/text"
 msgstr "Вы запускаете капсулу обратно в космос. Вы же не идиот."
 
-#: src-ru/data/events_mantis.xml.rawclobber:528
+#: src-ru/data/events_mantis.xml.rawclobber:537
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[2]/text"
 msgstr ""
 "Сканер показал, что внутри находится мантис. Возможно, не стоит его "
 "выпускать."
 
-#: src-ru/data/events_mantis.xml.rawclobber:530
+#: src-ru/data/events_mantis.xml.rawclobber:539
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[2]/choice[1]/text"
 msgstr "Открыть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:534
+#: src-ru/data/events_mantis.xml.rawclobber:543
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[2]/choice[2]/text"
 msgstr "Выкинуть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:536
+#: src-ru/data/events_mantis.xml.rawclobber:545
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[2]/choice[2]/event/text"
 msgstr "Вы запускаете капсулу обратно в космос. Вы же не идиот."
 
-#: src-ru/data/events_mantis.xml.rawclobber:541
+#: src-ru/data/events_mantis.xml.rawclobber:550
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[3]/text"
 msgstr ""
@@ -912,66 +920,66 @@ msgstr ""
 "выжить в плену у мантисов. Успокоившись, он предлагает присоединиться к "
 "вашему экипажу на время."
 
-#: src-ru/data/events_mantis.xml.rawclobber:547
+#: src-ru/data/events_mantis.xml.rawclobber:556
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/text"
 msgstr "Слаг говорит, что внутри находится очень возбуждённый мантис."
 
-#: src-ru/data/events_mantis.xml.rawclobber:549
+#: src-ru/data/events_mantis.xml.rawclobber:558
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[1]/text"
 msgstr "Открыть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:551
+#: src-ru/data/events_mantis.xml.rawclobber:560
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[1]/event/text"
 msgstr ""
 "Мантис внутри РАЗЪЯРЁН. Одним сильным ударом он рвёт пополам ближайшее к "
 "себе существо. Убейте его, прежде чем жертв станет больше."
 
-#: src-ru/data/events_mantis.xml.rawclobber:558
+#: src-ru/data/events_mantis.xml.rawclobber:567
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[1]/event/choice/event/removeCrew/text"
 msgstr ""
 "Мантис шокирован. Он увидел, как только что убитый член вашего экипажа вышел"
 " из клон-отсека."
 
-#: src-ru/data/events_mantis.xml.rawclobber:565
+#: src-ru/data/events_mantis.xml.rawclobber:574
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[2]/text"
 msgstr "Выкинуть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:567
+#: src-ru/data/events_mantis.xml.rawclobber:576
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[2]/event/text"
 msgstr "Вы запускаете капсулу обратно в космос. Вы же не идиот."
 
-#: src-ru/data/events_mantis.xml.rawclobber:572
+#: src-ru/data/events_mantis.xml.rawclobber:581
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/text"
 msgstr "Слаг говорит, что внутри находится спокойный мантис."
 
-#: src-ru/data/events_mantis.xml.rawclobber:574
+#: src-ru/data/events_mantis.xml.rawclobber:583
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/choice[1]/text"
 msgstr "Открыть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:576
+#: src-ru/data/events_mantis.xml.rawclobber:585
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/choice[1]/event/text"
 msgstr "Мантис внутри считает вас посланником божьим и просится в ваш экипаж."
 
-#: src-ru/data/events_mantis.xml.rawclobber:581
+#: src-ru/data/events_mantis.xml.rawclobber:590
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/choice[2]/text"
 msgstr "Выкинуть капсулу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:583
+#: src-ru/data/events_mantis.xml.rawclobber:592
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/choice[2]/event/text"
 msgstr "Вы запускаете капсулу обратно в космос. Вы же не идиот."
 
-#: src-ru/data/events_mantis.xml.rawclobber:588
+#: src-ru/data/events_mantis.xml.rawclobber:597
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[3]/text"
 msgstr ""
@@ -980,14 +988,14 @@ msgstr ""
 " плену у мантисов. Успокоившись, он предлагает присоединиться к вашему "
 "экипажу на время."
 
-#: src-ru/data/events_mantis.xml.rawclobber:594
+#: src-ru/data/events_mantis.xml.rawclobber:603
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[1]/text"
 msgstr ""
 "Мантис внутри РАЗЪЯРЁН. Одним сильным ударом он рвёт пополам ближайшее к "
 "себе существо. Убейте его, прежде чем жертв станет больше."
 
-#: src-ru/data/events_mantis.xml.rawclobber:601
+#: src-ru/data/events_mantis.xml.rawclobber:610
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
@@ -995,7 +1003,7 @@ msgstr ""
 "Мантис шокирован. Он увидел, как только что убитый член вашего экипажа вышел"
 " из клон-отсека."
 
-#: src-ru/data/events_mantis.xml.rawclobber:608
+#: src-ru/data/events_mantis.xml.rawclobber:617
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
@@ -1003,12 +1011,12 @@ msgstr ""
 "Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
 "смерти всего экипажа."
 
-#: src-ru/data/events_mantis.xml.rawclobber:613
+#: src-ru/data/events_mantis.xml.rawclobber:622
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[2]/text"
 msgstr "Мантис внутри считает вас посланником божьим и просится в ваш экипаж."
 
-#: src-ru/data/events_mantis.xml.rawclobber:617
+#: src-ru/data/events_mantis.xml.rawclobber:626
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[3]/text"
 msgstr ""
@@ -1016,14 +1024,14 @@ msgstr ""
 "Нечасто кто-либо способен выжить в плену у мантисов. Успокоившись, он "
 "предлагает присоединиться к вашему экипажу на время."
 
-#: src-ru/data/events_mantis.xml.rawclobber:623
+#: src-ru/data/events_mantis.xml.rawclobber:632
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST_2\"]/event[1]/text"
 msgstr ""
 "Мантис внутри РАЗЪЯРЁН. Одним сильным ударом он рвёт пополам ближайшее к "
 "себе существо. Убейте его, прежде чем жертв станет больше."
 
-#: src-ru/data/events_mantis.xml.rawclobber:630
+#: src-ru/data/events_mantis.xml.rawclobber:639
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST_2\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
@@ -1031,7 +1039,7 @@ msgstr ""
 "Мантис шокирован. Он увидел, как только что убитый член вашего экипажа вышел"
 " из клон-отсека."
 
-#: src-ru/data/events_mantis.xml.rawclobber:637
+#: src-ru/data/events_mantis.xml.rawclobber:646
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST_2\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
@@ -1039,18 +1047,18 @@ msgstr ""
 "Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
 "смерти всего экипажа."
 
-#: src-ru/data/events_mantis.xml.rawclobber:642
+#: src-ru/data/events_mantis.xml.rawclobber:651
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST_2\"]/event[2]/text"
 msgstr "Мантис внутри считает вас посланником божьим и просится в ваш экипаж."
 
-#: src-ru/data/events_mantis.xml.rawclobber:653
+#: src-ru/data/events_mantis.xml.rawclobber:662
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_SUN_FIGHT\"]/text"
 msgstr ""
 "Кто знает, зачем мантис рискует, находясь так близко к солнцу. Может он ищет"
 " более сложных испытаний?"
 
-#: src-ru/data/events_mantis.xml.rawclobber:676
+#: src-ru/data/events_mantis.xml.rawclobber:685
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_BOARDERS\"]/text[1]"
 msgstr ""
@@ -1058,20 +1066,20 @@ msgstr ""
 "должно быть, произошло недавно. Выжившая команда телепортировалась на ваш "
 "корабль. Приготовьтесь к бою!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:677
+#: src-ru/data/events_mantis.xml.rawclobber:686
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_BOARDERS\"]/text[2]"
 msgstr ""
 "Внезапно спокойное течение вашей жизни меняется. На борту корабля высадились"
 " мантисы."
 
-#: src-ru/data/events_mantis.xml.rawclobber:678
+#: src-ru/data/events_mantis.xml.rawclobber:687
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_BOARDERS\"]/text[3]"
 msgstr ""
 "Вы слышите скрежетание и мягкое пощёлкивание. Вы тянетесь к пистолету."
 
-#: src-ru/data/events_mantis.xml.rawclobber:692
+#: src-ru/data/events_mantis.xml.rawclobber:701
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/text"
 msgstr ""
@@ -1079,12 +1087,12 @@ msgstr ""
 "брони, нашитых, наверное, после сотни лет полётов. Его капитан — легендарный"
 " вор КазааакплетКилик. Ваш экипаж выглядит испуганным."
 
-#: src-ru/data/events_mantis.xml.rawclobber:694
+#: src-ru/data/events_mantis.xml.rawclobber:703
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[@req=\"mantis_crew\"]/text"
 msgstr "(Член экипажа мантис) Попробовать приветствовать его."
 
-#: src-ru/data/events_mantis.xml.rawclobber:696
+#: src-ru/data/events_mantis.xml.rawclobber:705
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[@req=\"mantis_crew\"]/event/text"
 msgstr ""
@@ -1093,55 +1101,55 @@ msgstr ""
 "КазааакплетКилик обещает не включать орудия на полную мощность. Вы тем "
 "временем заряжаете боевые системы."
 
-#: src-ru/data/events_mantis.xml.rawclobber:701
+#: src-ru/data/events_mantis.xml.rawclobber:710
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[@req=\"mantis_crew\"]/event/choice/event/text"
 msgstr ""
 "Вы немало удивлены подобным решением КазааакплетКилика, но готовитесь к бою."
 
-#: src-ru/data/events_mantis.xml.rawclobber:708
+#: src-ru/data/events_mantis.xml.rawclobber:717
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[2]/text"
 msgstr "Приготовиться к бою."
 
-#: src-ru/data/events_mantis.xml.rawclobber:710
+#: src-ru/data/events_mantis.xml.rawclobber:719
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[2]/event/text"
 msgstr "Вы готовитесь к битве..."
 
-#: src-ru/data/events_mantis.xml.rawclobber:716
+#: src-ru/data/events_mantis.xml.rawclobber:725
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/text"
 msgstr "Никаких признаков жизни на борту их корабля. Похоже, вы выиграли."
 
-#: src-ru/data/events_mantis.xml.rawclobber:718
+#: src-ru/data/events_mantis.xml.rawclobber:727
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[1]/text"
 msgstr "Двинуться внутрь, чтобы обчистить их корабль."
 
-#: src-ru/data/events_mantis.xml.rawclobber:720
+#: src-ru/data/events_mantis.xml.rawclobber:729
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[1]/event/text"
 msgstr ""
 "Для такого грозного врага кажется бессмысленным умереть столь глупым "
 "образом. Вы не обращаете на это внимания и забираете всё, что возможно."
 
-#: src-ru/data/events_mantis.xml.rawclobber:725
+#: src-ru/data/events_mantis.xml.rawclobber:734
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/text"
 msgstr "(Телепортер) Быстро телепортировать экипаж и поискать выживших."
 
-#: src-ru/data/events_mantis.xml.rawclobber:727
+#: src-ru/data/events_mantis.xml.rawclobber:736
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/text"
 msgstr "Вы находите умирающего КазааакплетКилика, завалившегося в углу."
 
-#: src-ru/data/events_mantis.xml.rawclobber:729
+#: src-ru/data/events_mantis.xml.rawclobber:738
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[1]/text"
 msgstr "Без жалости прикончить его."
 
-#: src-ru/data/events_mantis.xml.rawclobber:731
+#: src-ru/data/events_mantis.xml.rawclobber:740
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[1]/event/text"
 msgstr ""
@@ -1149,12 +1157,12 @@ msgstr ""
 "размышляете, какие же секреты унёс он с собой в могилу, пока тщательно "
 "обчищаете его корабль."
 
-#: src-ru/data/events_mantis.xml.rawclobber:736
+#: src-ru/data/events_mantis.xml.rawclobber:745
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[2]/text"
 msgstr "Послушать, что он скажет."
 
-#: src-ru/data/events_mantis.xml.rawclobber:738
+#: src-ru/data/events_mantis.xml.rawclobber:747
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[2]/event/text"
 msgstr ""
@@ -1162,12 +1170,12 @@ msgstr ""
 "какие же ещё секреты унёс он с собой в могилу, пока тщательно обчищаете его "
 "корабль."
 
-#: src-ru/data/events_mantis.xml.rawclobber:744
+#: src-ru/data/events_mantis.xml.rawclobber:753
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"medbay\"]/text"
 msgstr "(Улучшенный медотсек) Быстрее телепортировать его в медотсек."
 
-#: src-ru/data/events_mantis.xml.rawclobber:746
+#: src-ru/data/events_mantis.xml.rawclobber:755
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"medbay\"]/event/text"
 msgstr ""
@@ -1175,17 +1183,17 @@ msgstr ""
 "пришёл в себя, он сказал: «Никогда не думал, что увижу этот день, поэтому..."
 " Я хочу посвятить себя вашему делу»."
 
-#: src-ru/data/events_mantis.xml.rawclobber:748
+#: src-ru/data/events_mantis.xml.rawclobber:757
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"medbay\"]/event/choice/text"
 msgstr "Согласиться."
 
-#: src-ru/data/events_mantis.xml.rawclobber:754
+#: src-ru/data/events_mantis.xml.rawclobber:763
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"clonebay\"]/text"
 msgstr "(Улучшенный клон-отсек) Быстро настроить клон-отсек и спасти его."
 
-#: src-ru/data/events_mantis.xml.rawclobber:756
+#: src-ru/data/events_mantis.xml.rawclobber:765
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"clonebay\"]/event/text"
 msgstr ""
@@ -1194,28 +1202,28 @@ msgstr ""
 "вашего корабля. Придя в сознание, он говорит: «Никогда не думал, что увижу "
 "этот день... Я готов посвятить себя вашему делу»."
 
-#: src-ru/data/events_mantis.xml.rawclobber:758
+#: src-ru/data/events_mantis.xml.rawclobber:767
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"clonebay\"]/event/choice/text"
 msgstr "Согласиться."
 
-#: src-ru/data/events_mantis.xml.rawclobber:766
+#: src-ru/data/events_mantis.xml.rawclobber:775
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Продвинутые сенсоры) Быстро просканировать их корабль в поисках выживших."
 
-#: src-ru/data/events_mantis.xml.rawclobber:768
+#: src-ru/data/events_mantis.xml.rawclobber:777
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/text"
 msgstr "Вы обнаружили умирающего в углу КазааакплетКилика."
 
-#: src-ru/data/events_mantis.xml.rawclobber:770
+#: src-ru/data/events_mantis.xml.rawclobber:779
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[1]/text"
 msgstr "Оставить его умирать."
 
-#: src-ru/data/events_mantis.xml.rawclobber:772
+#: src-ru/data/events_mantis.xml.rawclobber:781
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[1]/event/text"
 msgstr ""
@@ -1223,12 +1231,12 @@ msgstr ""
 "размышляете, какие же секреты унёс он с собой в могилу, пока тщательно "
 "обчищаете его корабль."
 
-#: src-ru/data/events_mantis.xml.rawclobber:777
+#: src-ru/data/events_mantis.xml.rawclobber:786
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[2]/text"
 msgstr "Состыковаться и попробовать поговорить с ним."
 
-#: src-ru/data/events_mantis.xml.rawclobber:779
+#: src-ru/data/events_mantis.xml.rawclobber:788
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[2]/event/text"
 msgstr ""
@@ -1236,13 +1244,13 @@ msgstr ""
 "какие же ещё секреты унёс он с собой в могилу, пока тщательно обчищаете его "
 "корабль."
 
-#: src-ru/data/events_mantis.xml.rawclobber:785
+#: src-ru/data/events_mantis.xml.rawclobber:794
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Улучшенный медотсек) Состыковаться и быстро перенести его в медотсек."
 
-#: src-ru/data/events_mantis.xml.rawclobber:787
+#: src-ru/data/events_mantis.xml.rawclobber:796
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"medbay\"]/event/text"
 msgstr ""
@@ -1250,17 +1258,17 @@ msgstr ""
 "пришёл в себя, он сказал: «Никогда не думал, что увижу этот день, поэтому..."
 " Я хочу посвятить себя вашему делу»."
 
-#: src-ru/data/events_mantis.xml.rawclobber:789
+#: src-ru/data/events_mantis.xml.rawclobber:798
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"medbay\"]/event/choice/text"
 msgstr "Согласиться."
 
-#: src-ru/data/events_mantis.xml.rawclobber:795
+#: src-ru/data/events_mantis.xml.rawclobber:804
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"clonebay\"]/text"
 msgstr "(Улучшенный клон-отсек) Быстро настроить клон-отсек и спасти его."
 
-#: src-ru/data/events_mantis.xml.rawclobber:797
+#: src-ru/data/events_mantis.xml.rawclobber:806
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"clonebay\"]/event/text"
 msgstr ""
@@ -1269,28 +1277,28 @@ msgstr ""
 "вашего корабля. Придя в сознание, он говорит: «Никогда не думал, что увижу "
 "этот день... Я готов посвятить себя вашему делу»."
 
-#: src-ru/data/events_mantis.xml.rawclobber:799
+#: src-ru/data/events_mantis.xml.rawclobber:808
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"clonebay\"]/event/choice/text"
 msgstr "Согласиться."
 
-#: src-ru/data/events_mantis.xml.rawclobber:807
+#: src-ru/data/events_mantis.xml.rawclobber:816
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/text"
 msgstr ""
 "(Направленный сканер) Быстро просканировать их корабль в поисках выживших."
 
-#: src-ru/data/events_mantis.xml.rawclobber:809
+#: src-ru/data/events_mantis.xml.rawclobber:818
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/text"
 msgstr "Вы обнаружили умирающего в углу КазааакплетКилика."
 
-#: src-ru/data/events_mantis.xml.rawclobber:811
+#: src-ru/data/events_mantis.xml.rawclobber:820
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[1]/text"
 msgstr "Оставить его умирать."
 
-#: src-ru/data/events_mantis.xml.rawclobber:813
+#: src-ru/data/events_mantis.xml.rawclobber:822
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[1]/event/text"
 msgstr ""
@@ -1298,12 +1306,12 @@ msgstr ""
 "размышляете, какие же секреты унёс он с собой в могилу, пока тщательно "
 "обчищаете его корабль."
 
-#: src-ru/data/events_mantis.xml.rawclobber:818
+#: src-ru/data/events_mantis.xml.rawclobber:827
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[2]/text"
 msgstr "Состыковаться и попробовать поговорить с ним."
 
-#: src-ru/data/events_mantis.xml.rawclobber:820
+#: src-ru/data/events_mantis.xml.rawclobber:829
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[2]/event/text"
 msgstr ""
@@ -1311,13 +1319,13 @@ msgstr ""
 "какие же ещё секреты унёс он с собой в могилу, пока тщательно обчищаете его "
 "корабль."
 
-#: src-ru/data/events_mantis.xml.rawclobber:826
+#: src-ru/data/events_mantis.xml.rawclobber:835
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Улучшенный медотсек) Состыковаться и быстро перенести его в медотсек."
 
-#: src-ru/data/events_mantis.xml.rawclobber:828
+#: src-ru/data/events_mantis.xml.rawclobber:837
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"medbay\"]/event/text"
 msgstr ""
@@ -1325,17 +1333,17 @@ msgstr ""
 "пришёл в себя, он сказал: «Никогда не думал, что увижу этот день, поэтому..."
 " Я хочу посвятить себя вашему делу»."
 
-#: src-ru/data/events_mantis.xml.rawclobber:830
+#: src-ru/data/events_mantis.xml.rawclobber:839
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"medbay\"]/event/choice/text"
 msgstr "Согласиться."
 
-#: src-ru/data/events_mantis.xml.rawclobber:836
+#: src-ru/data/events_mantis.xml.rawclobber:845
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"clonebay\"]/text"
 msgstr "(Улучшенный клон-отсек) Быстро настроить клон-отсек и спасти его."
 
-#: src-ru/data/events_mantis.xml.rawclobber:838
+#: src-ru/data/events_mantis.xml.rawclobber:847
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"clonebay\"]/event/text"
 msgstr ""
@@ -1344,12 +1352,12 @@ msgstr ""
 "вашего корабля. Придя в сознание, он говорит: «Никогда не думал, что увижу "
 "этот день... Я готов посвятить себя вашему делу»."
 
-#: src-ru/data/events_mantis.xml.rawclobber:840
+#: src-ru/data/events_mantis.xml.rawclobber:849
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"clonebay\"]/event/choice/text"
 msgstr "Согласиться."
 
-#: src-ru/data/events_mantis.xml.rawclobber:850
+#: src-ru/data/events_mantis.xml.rawclobber:859
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"KAZAAK\"]/text"
 msgstr ""
 "КазааакплетКилик присоединяется к экипажу и показывает координаты ближайшего"
@@ -1357,15 +1365,15 @@ msgstr ""
 "модифицированного крейсера, над которым он работал. Вы перенаправили их в "
 "Федерацию, будучи уверенным, что там об этом позаботятся."
 
-#: src-ru/data/events_mantis.xml.rawclobber:854
+#: src-ru/data/events_mantis.xml.rawclobber:863
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"KAZAAK\"]/crewMember"
 msgstr "Казааак"
 
-#: src-ru/data/events_mantis.xml.rawclobber:857
+#: src-ru/data/events_mantis.xml.rawclobber:866
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"KAZAAK\"]/unlockShip"
 msgstr "Крейсер мантисов был разблокирован и добавлен в ангар!"
 
-#: src-ru/data/events_mantis.xml.rawclobber:862
+#: src-ru/data/events_mantis.xml.rawclobber:871
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_STASH\"]/text"
 msgstr ""

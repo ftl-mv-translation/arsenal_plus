@@ -1,0 +1,55 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-ru/data/events_pony.xml.rawclobber:9
+msgid "data/events_pony.xml.rawclobber$//event[@name=\"PONY_GAME2\"]/text"
+msgstr ""
+"В космосе мимо вас проплывает какой-то странный объект, похожий на "
+"гигантских размеров монитор. Внезапно монитор включается и откуда-то на "
+"вашем корабле раздаётся ностальгическая мелодия. Где-то вы её слышали..."
+
+#: src-ru/data/events_pony.xml.rawclobber:11
+msgid ""
+"data/events_pony.xml.rawclobber$//event[@name=\"PONY_GAME2\"]/choice[1]/text"
+msgstr "Подлететь поближе."
+
+#: src-ru/data/events_pony.xml.rawclobber:15
+msgid ""
+"data/events_pony.xml.rawclobber$//event[@name=\"PONY_GAME2\"]/choice[2]/text"
+msgstr "Убраться поскорее отсюда и побеседовать с экипажем."
+
+#: src-ru/data/events_pony.xml.rawclobber:17
+msgid ""
+"data/events_pony.xml.rawclobber$//event[@name=\"PONY_GAME2\"]/choice[2]/event/text"
+msgstr ""
+"Вы не привыкли доверять каким-либо мониторам в космосе, особенно гигантским."
+
+#: src-ru/data/events_pony.xml.rawclobber:4452
+msgid ""
+"data/events_pony.xml.rawclobber$//ship[@name=\"PONY_MONITOR_SHIPS_PARAM\"]/gotaway/text"
+msgstr "Странный объект внезапно сбежал в неизвестном направлении..."
+
+#: src-ru/data/events_pony.xml.rawclobber:4459
+msgid ""
+"data/events_pony.xml.rawclobber$//ship[@name=\"PONY_MONITOR_SHIPS_PARAM\"]/destroyed/text"
+msgstr "Уничтожив противника, вы собираете всё уцелевшее..."
+
+#: src-ru/data/events_pony.xml.rawclobber:4470
+msgid ""
+"data/events_pony.xml.rawclobber$//ship[@name=\"PONY_MONITOR_SHIPS_PARAM\"]/deadCrew/text"
+msgstr "Перебив экипаж противника, вы собираете всё уцелевшее..."
+
+#: src-ru/data/events_pony.xml.rawclobber:4483
+msgid "data/events_pony.xml.rawclobber$//event[@name=\"PONY_ADD_REWARD\"]/text"
+msgstr ""
+"Кажется, одно из орудий противника не пострадало, и вы забираете его себе."
+
+#: src-ru/data/events_pony.xml.rawclobber:4804
+msgid ""
+"data/events_pony.xml.rawclobber$//event[@name=\"EVENT_PONY_UPDATES5\"]/text"
+msgstr ""
+"Похоже, что за время загрузки обновления флот повстанцев приблизился..."

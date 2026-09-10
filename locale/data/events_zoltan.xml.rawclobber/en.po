@@ -1,16 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-05 17:43+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
-"dataevents_zoltanxmlrawclobber/en/>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:169
 #, fuzzy
@@ -37,7 +30,6 @@ msgstr ""
 "coming war and made preparations to hold their borders."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:172
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"START_BEACON_ZOLTAN\"]/text[4]"
 msgstr ""
@@ -152,7 +144,6 @@ msgstr ""
 "but you've none of the necessary equipment to mine them."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:203
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"NOTHING_ZOLTAN\"]/text[2]"
 msgstr ""
@@ -1082,8 +1073,8 @@ msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[1]/text"
 msgstr ""
 "As you approach, an ancient alien voice speaks to you: \"Your mission has "
-"brought you great battles, and great losses. This will help ease the pain.\" "
-"A few minutes later someone reports medical equipment has appeared on the "
+"brought you great battles, and great losses. This will help ease the pain.\""
+" A few minutes later someone reports medical equipment has appeared on the "
 "ship!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:769
@@ -1436,8 +1427,8 @@ msgstr ""
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_DRONEPARTS\"]/destroyed/text"
 msgstr ""
-"The ship obliterated, only scant ammunition crates can be scavenged from the "
-"wreckage before the ion storm clears and you have to jump away."
+"The ship obliterated, only scant ammunition crates can be scavenged from the"
+" wreckage before the ion storm clears and you have to jump away."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1037
 #, fuzzy
@@ -7146,7 +7137,6 @@ msgid ""
 msgstr "Inquire on the cost of upgrading your shield tech."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4605
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"8\"]/event/text"
@@ -10966,7 +10956,6 @@ msgid ""
 msgstr "While you were dealing with the drone, the smugglers fled..."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6961
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_VS_AUTOSHIP_R1\"]/event[3]/text"
 msgstr ""
@@ -14624,7 +14613,6 @@ msgid ""
 msgstr "Chen Rong"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9207
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_ITB_VEK_LAND\"]/event[4]/text"
 msgstr ""

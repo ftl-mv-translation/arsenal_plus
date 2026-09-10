@@ -1,16 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-05 17:44+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
-"dataevents_fuelxmlrawclobber/en/>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_fuel.xml.rawclobber:41
 #, fuzzy
@@ -20,7 +13,7 @@ msgstr ""
 "in one of their closer fighters and move in to attack. Maybe you can still "
 "pull this off."
 
-#: src-ru/data/events_fuel.xml.rawclobber:61
+#: src-ru/data/events_fuel.xml.rawclobber:93
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_CLASSIC_TEXT\"]/text[1]"
@@ -30,37 +23,42 @@ msgstr ""
 "approaching fighters gets into weapon range and your scanners detect it has "
 "surplus fuel. Maybe you can still pull this off."
 
-#: src-ru/data/events_fuel.xml.rawclobber:62
+#: src-ru/data/events_fuel.xml.rawclobber:94
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_CLASSIC_TEXT\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:63
+#: src-ru/data/events_fuel.xml.rawclobber:95
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_CLASSIC_TEXT\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:68
+#: src-ru/data/events_fuel.xml.rawclobber:101
+msgid ""
+"data/events_fuel.xml.rawclobber$/dummyroot/FTL/event[@name=\"NEBULA_NO_FUEL_FLEET_DLC_BAD\"]/choice/text"
+msgstr ""
+
+#: src-ru/data/events_fuel.xml.rawclobber:108
 msgid ""
 "data/events_fuel.xml.rawclobber$/dummyroot/FTL/event[@name=\"NO_FUEL_FLEET_DLC_BAD\"]/choice/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:73
+#: src-ru/data/events_fuel.xml.rawclobber:113
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_BAD_TEXT\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:74
+#: src-ru/data/events_fuel.xml.rawclobber:114
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_BAD_TEXT\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:75
+#: src-ru/data/events_fuel.xml.rawclobber:115
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_BAD_TEXT\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:136
+#: src-ru/data/events_fuel.xml.rawclobber:180
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[1]"
@@ -68,7 +66,7 @@ msgstr ""
 "As you are keeping a low profile, you're certain that the Rebel fleet is "
 "having a hard time tracking your ship."
 
-#: src-ru/data/events_fuel.xml.rawclobber:137
+#: src-ru/data/events_fuel.xml.rawclobber:181
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[2]"
@@ -77,7 +75,7 @@ msgstr ""
 "the Rebel fleet is having difficulty tracking you. It should buy you a "
 "little time."
 
-#: src-ru/data/events_fuel.xml.rawclobber:138
+#: src-ru/data/events_fuel.xml.rawclobber:182
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[3]"
@@ -86,14 +84,14 @@ msgstr ""
 "advance on your position. Your decision to leave the distress beacon "
 "deactivated was farsighted."
 
-#: src-ru/data/events_fuel.xml.rawclobber:139
+#: src-ru/data/events_fuel.xml.rawclobber:183
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[4]"
 msgstr ""
 "Scanners show that the Rebel fleet has ceased its pursuit for a short time."
 
-#: src-ru/data/events_fuel.xml.rawclobber:140
+#: src-ru/data/events_fuel.xml.rawclobber:184
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[5]"
@@ -101,7 +99,7 @@ msgstr ""
 "Your intuition as captain is telling you that the Rebels are having a hard "
 "time trying to find your ship."
 
-#: src-ru/data/events_fuel.xml.rawclobber:141
+#: src-ru/data/events_fuel.xml.rawclobber:185
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[6]"
@@ -110,7 +108,7 @@ msgstr ""
 "the Rebels are struggling to find you. You can only hope their confusion "
 "lasts until more fuel can be found."
 
-#: src-ru/data/events_fuel.xml.rawclobber:142
+#: src-ru/data/events_fuel.xml.rawclobber:186
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[7]"
@@ -119,24 +117,24 @@ msgstr ""
 "you could get some fuel, you might still have a chance to place some "
 "distance between you and the Rebels..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:148
+#: src-ru/data/events_fuel.xml.rawclobber:192
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_NOTHING\"]/choice/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:153
+#: src-ru/data/events_fuel.xml.rawclobber:197
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[1]"
 msgstr "No ship is in scanning range and no one arrives at the beacon."
 
-#: src-ru/data/events_fuel.xml.rawclobber:154
+#: src-ru/data/events_fuel.xml.rawclobber:198
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[2]"
 msgstr "Your waiting yields nothing while the fleet surely gets closer..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:155
+#: src-ru/data/events_fuel.xml.rawclobber:199
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[3]"
@@ -144,7 +142,7 @@ msgstr ""
 "A freighter suddenly arrives nearby. They are so close you can almost wave "
 "at them, but your hails are ignored and the ship quickly jumps away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:156
+#: src-ru/data/events_fuel.xml.rawclobber:200
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[4]"
@@ -152,7 +150,7 @@ msgstr ""
 "Small traffic passes within a short distance of you, but no one responds to "
 "your hails."
 
-#: src-ru/data/events_fuel.xml.rawclobber:157
+#: src-ru/data/events_fuel.xml.rawclobber:201
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[5]"
@@ -160,7 +158,7 @@ msgstr ""
 "The only ship within hailing range appears to be a civilian vessel. However,"
 " it quickly leaves once it picks up your signal."
 
-#: src-ru/data/events_fuel.xml.rawclobber:158
+#: src-ru/data/events_fuel.xml.rawclobber:202
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[6]"
@@ -168,7 +166,7 @@ msgstr ""
 "As you wait, a small asteroid storm pelts softly against your shields and "
 "hull."
 
-#: src-ru/data/events_fuel.xml.rawclobber:159
+#: src-ru/data/events_fuel.xml.rawclobber:203
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[7]"
@@ -176,13 +174,13 @@ msgstr ""
 "You begin to wonder if turning on the beacon would be worth the risk of "
 "detection. The fleet slowly approaches."
 
-#: src-ru/data/events_fuel.xml.rawclobber:160
+#: src-ru/data/events_fuel.xml.rawclobber:204
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[8]"
 msgstr "You contemplate the vastness of space."
 
-#: src-ru/data/events_fuel.xml.rawclobber:161
+#: src-ru/data/events_fuel.xml.rawclobber:205
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[9]"
@@ -190,32 +188,32 @@ msgstr ""
 "The prolonged wait in empty space is causing tension among the crew. Still "
 "no contact."
 
-#: src-ru/data/events_fuel.xml.rawclobber:162
+#: src-ru/data/events_fuel.xml.rawclobber:206
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[10]"
 msgstr "Cabin fever begins to spread among your crew."
 
-#: src-ru/data/events_fuel.xml.rawclobber:163
+#: src-ru/data/events_fuel.xml.rawclobber:207
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[11]"
 msgstr ""
 "Long range scanners detect a small settlement, but they refuse all contact."
 
-#: src-ru/data/events_fuel.xml.rawclobber:170
+#: src-ru/data/events_fuel.xml.rawclobber:214
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER\"]/choice[1]/text"
 msgstr "Gladly trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:174
+#: src-ru/data/events_fuel.xml.rawclobber:218
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER\"]/choice[2]/text"
 msgstr "Respectfully decline."
 
-#: src-ru/data/events_fuel.xml.rawclobber:179
+#: src-ru/data/events_fuel.xml.rawclobber:223
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[1]"
@@ -223,7 +221,7 @@ msgstr ""
 "A merchant ship jumps into the sector and you quickly hail them asking for "
 "help. They respond, \"Perhaps we could work out an exchange...\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:180
+#: src-ru/data/events_fuel.xml.rawclobber:224
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[2]"
@@ -232,7 +230,7 @@ msgstr ""
 "and one finally responds. \"I can't help much right now but perhaps we can "
 "trade.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:181
+#: src-ru/data/events_fuel.xml.rawclobber:225
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[3]"
@@ -242,7 +240,7 @@ msgstr ""
 "think of doing anything rash. We've got a teleporter at our base and a squad"
 " ready to defend us."
 
-#: src-ru/data/events_fuel.xml.rawclobber:182
+#: src-ru/data/events_fuel.xml.rawclobber:226
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[4]"
@@ -251,7 +249,7 @@ msgstr ""
 "Sensing an opportunity, one ship breaks off from the fleet to offer you an "
 "exchange."
 
-#: src-ru/data/events_fuel.xml.rawclobber:183
+#: src-ru/data/events_fuel.xml.rawclobber:227
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[5]"
@@ -260,7 +258,7 @@ msgstr ""
 "tells you these people are smugglers, but they seem to be feeling altruistic"
 " and present an offer of assistance."
 
-#: src-ru/data/events_fuel.xml.rawclobber:186
+#: src-ru/data/events_fuel.xml.rawclobber:230
 #, fuzzy
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_EXPLORE\"]/text"
 msgstr ""
@@ -268,47 +266,47 @@ msgstr ""
 "still use your impulse engines. Will you spend some time exploring the "
 "nearby system?"
 
-#: src-ru/data/events_fuel.xml.rawclobber:188
+#: src-ru/data/events_fuel.xml.rawclobber:232
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_EXPLORE\"]/choice[1]/text"
 msgstr "Explore the nearby area."
 
-#: src-ru/data/events_fuel.xml.rawclobber:192
+#: src-ru/data/events_fuel.xml.rawclobber:236
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_EXPLORE\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:198
+#: src-ru/data/events_fuel.xml.rawclobber:242
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[1]/text"
 msgstr "You happen across a small asteroid field near the beacon."
 
-#: src-ru/data/events_fuel.xml.rawclobber:200
+#: src-ru/data/events_fuel.xml.rawclobber:244
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[1]/choice[1]/text"
 msgstr "Approach the asteroid field to scan it."
 
-#: src-ru/data/events_fuel.xml.rawclobber:204
+#: src-ru/data/events_fuel.xml.rawclobber:248
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[1]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:209
+#: src-ru/data/events_fuel.xml.rawclobber:253
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[2]/text"
 msgstr "No ships respond to your hails and you find nothing of interest."
 
-#: src-ru/data/events_fuel.xml.rawclobber:213
+#: src-ru/data/events_fuel.xml.rawclobber:257
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[3]/text"
 msgstr "You wander within scanning range of a small Rebel automated scout!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:219
+#: src-ru/data/events_fuel.xml.rawclobber:263
 #, fuzzy
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/text"
 msgstr ""
@@ -316,37 +314,37 @@ msgstr ""
 "still use your impulse engines. Will you spend some time exploring the "
 "nearby system?"
 
-#: src-ru/data/events_fuel.xml.rawclobber:221
+#: src-ru/data/events_fuel.xml.rawclobber:265
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/choice[1]/text"
 msgstr "Explore the nearby area."
 
-#: src-ru/data/events_fuel.xml.rawclobber:225
+#: src-ru/data/events_fuel.xml.rawclobber:269
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/choice[2]/text"
 msgstr "Stay near the beacon."
 
-#: src-ru/data/events_fuel.xml.rawclobber:231
+#: src-ru/data/events_fuel.xml.rawclobber:275
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/text"
 msgstr "You happen across a small asteroid field near the beacon."
 
-#: src-ru/data/events_fuel.xml.rawclobber:233
+#: src-ru/data/events_fuel.xml.rawclobber:277
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/choice[1]/text"
 msgstr "Approach the asteroid field to scan it."
 
-#: src-ru/data/events_fuel.xml.rawclobber:237
+#: src-ru/data/events_fuel.xml.rawclobber:281
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/choice[2]/text"
 msgstr "Avoid the risk."
 
-#: src-ru/data/events_fuel.xml.rawclobber:242
+#: src-ru/data/events_fuel.xml.rawclobber:286
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/text"
@@ -355,126 +353,126 @@ msgstr ""
 "seems few ships in this area employ FTL drives. Their stock of fuel cells is"
 " small and their price high, but beggars can't be choosers..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:244
+#: src-ru/data/events_fuel.xml.rawclobber:288
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[1]/text"
 msgstr "Trade 25 scrap for 5 fuel."
 
-#: src-ru/data/events_fuel.xml.rawclobber:246
+#: src-ru/data/events_fuel.xml.rawclobber:290
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[1]/event/text"
 msgstr "You gladly make the trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:254
+#: src-ru/data/events_fuel.xml.rawclobber:298
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[2]/text"
 msgstr "Trade 10 scrap for 2 fuel."
 
-#: src-ru/data/events_fuel.xml.rawclobber:256
+#: src-ru/data/events_fuel.xml.rawclobber:300
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[2]/event/text"
 msgstr "This fuel won't last long, but you gladly make the trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:264
+#: src-ru/data/events_fuel.xml.rawclobber:308
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[3]/text"
 msgstr "Trade 5 scrap for 1 fuel."
 
-#: src-ru/data/events_fuel.xml.rawclobber:266
+#: src-ru/data/events_fuel.xml.rawclobber:310
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[3]/event/text"
 msgstr ""
 "This fuel won't last long, but at least you can jump to another beacon."
 
-#: src-ru/data/events_fuel.xml.rawclobber:274
+#: src-ru/data/events_fuel.xml.rawclobber:318
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[4]/text"
 msgstr "Don't make a trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:279
+#: src-ru/data/events_fuel.xml.rawclobber:323
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[3]/text"
 msgstr "No ships respond to your hails and you find nothing of interest."
 
-#: src-ru/data/events_fuel.xml.rawclobber:283
+#: src-ru/data/events_fuel.xml.rawclobber:327
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[4]/text"
 msgstr "You wander within scanning range of a small Rebel automated scout!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:289
+#: src-ru/data/events_fuel.xml.rawclobber:333
 #, fuzzy
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/text"
 msgstr ""
-"A ship approaches. They hail you saying, \"You need some fuel? We'll prepare "
-"to dock to help.\""
+"A ship approaches. They hail you saying, \"You need some fuel? We'll prepare"
+" to dock to help.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:291
+#: src-ru/data/events_fuel.xml.rawclobber:335
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/choice[1]/text"
 msgstr "Graciously accept their offer."
 
-#: src-ru/data/events_fuel.xml.rawclobber:295
+#: src-ru/data/events_fuel.xml.rawclobber:339
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/choice[2]/text"
 msgstr "Request that they keep their distance."
 
-#: src-ru/data/events_fuel.xml.rawclobber:299
+#: src-ru/data/events_fuel.xml.rawclobber:343
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Advanced Sensors) Run a detailed scan with your sensors before responding."
 
-#: src-ru/data/events_fuel.xml.rawclobber:303
+#: src-ru/data/events_fuel.xml.rawclobber:347
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr "(Long-Ranged Scanners) Run a detailed scan before responding."
 
-#: src-ru/data/events_fuel.xml.rawclobber:309
+#: src-ru/data/events_fuel.xml.rawclobber:353
 #, fuzzy
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/text"
 msgstr ""
 "A ship approaches. They hail you saying, \"You need some fuel? We'll prepare"
 " to dock to help.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:311
+#: src-ru/data/events_fuel.xml.rawclobber:355
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[1]/text"
 msgstr "Graciously accept their offer."
 
-#: src-ru/data/events_fuel.xml.rawclobber:315
+#: src-ru/data/events_fuel.xml.rawclobber:359
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[2]/text"
 msgstr "Request that they keep their distance."
 
-#: src-ru/data/events_fuel.xml.rawclobber:319
+#: src-ru/data/events_fuel.xml.rawclobber:363
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Advanced Sensors) Run a detailed scan with your sensors before responding."
 
-#: src-ru/data/events_fuel.xml.rawclobber:323
+#: src-ru/data/events_fuel.xml.rawclobber:367
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr "(Long-Ranged Scanners) Run a detailed scan before responding."
 
-#: src-ru/data/events_fuel.xml.rawclobber:329
+#: src-ru/data/events_fuel.xml.rawclobber:373
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[1]/text"
@@ -483,26 +481,26 @@ msgstr ""
 "out of fuel again. These are dangerous times; who knows who could have "
 "showed up.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:336
+#: src-ru/data/events_fuel.xml.rawclobber:380
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[2]/text"
 msgstr ""
 "They approach and dock with your ship. On board they present an offer."
 
-#: src-ru/data/events_fuel.xml.rawclobber:339
+#: src-ru/data/events_fuel.xml.rawclobber:383
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[2]/choice[1]/text"
 msgstr "Gladly trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:343
+#: src-ru/data/events_fuel.xml.rawclobber:387
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[2]/choice[2]/text"
 msgstr "Respectfully decline."
 
-#: src-ru/data/events_fuel.xml.rawclobber:348
+#: src-ru/data/events_fuel.xml.rawclobber:392
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[3]/text"
@@ -511,7 +509,7 @@ msgstr ""
 "certainly help... Help to relieve you of that nice ship!\" Sensors detect a "
 "hidden teleporter has been activated. We've been boarded!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:353
+#: src-ru/data/events_fuel.xml.rawclobber:397
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[4]/text"
@@ -519,31 +517,31 @@ msgstr ""
 "As they approach, you detect their weapons powering up. It seems their "
 "intentions are hostile!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:359
+#: src-ru/data/events_fuel.xml.rawclobber:403
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:368
+#: src-ru/data/events_fuel.xml.rawclobber:412
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[2]/text"
 msgstr ""
 "They approach and dock with your ship. On board they present an offer."
 
-#: src-ru/data/events_fuel.xml.rawclobber:371
+#: src-ru/data/events_fuel.xml.rawclobber:415
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[2]/choice[1]/text"
 msgstr "Gladly trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:375
+#: src-ru/data/events_fuel.xml.rawclobber:419
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[2]/choice[2]/text"
 msgstr "Respectfully decline."
 
-#: src-ru/data/events_fuel.xml.rawclobber:380
+#: src-ru/data/events_fuel.xml.rawclobber:424
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[3]/text"
@@ -552,7 +550,7 @@ msgstr ""
 "certainly help... Help to relieve you of that nice ship!\" Sensors detect a "
 "hidden teleporter has been activated. We've been boarded!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:385
+#: src-ru/data/events_fuel.xml.rawclobber:429
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[4]/text"
@@ -560,7 +558,7 @@ msgstr ""
 "As they approach, you detect their weapons powering up. It seems their "
 "intentions are hostile!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:391
+#: src-ru/data/events_fuel.xml.rawclobber:435
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_DECLINE_LIST\"]/event[1]/text"
@@ -569,13 +567,13 @@ msgstr ""
 "transport.\" A small ship docks and offloads some fuel just as they said. "
 "They leave, saying, \"Stay cautious, friend.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:396
+#: src-ru/data/events_fuel.xml.rawclobber:440
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_DECLINE_LIST\"]/event[2]/text"
 msgstr "\"No one trusts anyone these days...\" The ship jumps away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:400
+#: src-ru/data/events_fuel.xml.rawclobber:444
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_DECLINE_LIST\"]/event[3]/text"
@@ -583,7 +581,7 @@ msgstr ""
 "They reply,\"Keep our distance? Let's see if you can stop us!\" They power "
 "up their weapons and advance."
 
-#: src-ru/data/events_fuel.xml.rawclobber:406
+#: src-ru/data/events_fuel.xml.rawclobber:450
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[1]/text"
@@ -592,13 +590,13 @@ msgstr ""
 "transport.\" A small ship docks and offloads some fuel just as they said. "
 "They leave, saying, \"Stay cautious, friend.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:413
+#: src-ru/data/events_fuel.xml.rawclobber:457
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[2]/text"
 msgstr "\"No one trusts anyone these days...\" The ship jumps away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:417
+#: src-ru/data/events_fuel.xml.rawclobber:461
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[3]/text"
@@ -606,7 +604,7 @@ msgstr ""
 "They reply,\"Keep our distance? Let's see if you can stop us!\" They power "
 "up their weapons and advance."
 
-#: src-ru/data/events_fuel.xml.rawclobber:423
+#: src-ru/data/events_fuel.xml.rawclobber:467
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[1]/text"
@@ -616,7 +614,7 @@ msgstr ""
 "remember a time when we didn't have to be so paranoid about each others' "
 "intentions... Stay safe.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:429
+#: src-ru/data/events_fuel.xml.rawclobber:473
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/text"
@@ -624,13 +622,13 @@ msgstr ""
 "Sensors are picking up armed crew and considerably more weaponry than is "
 "legal for a craft of this size. This is surely a trap."
 
-#: src-ru/data/events_fuel.xml.rawclobber:431
+#: src-ru/data/events_fuel.xml.rawclobber:475
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[1]/text"
 msgstr "Power up weapons and prepare for a fight."
 
-#: src-ru/data/events_fuel.xml.rawclobber:437
+#: src-ru/data/events_fuel.xml.rawclobber:481
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/text"
@@ -638,7 +636,7 @@ msgstr ""
 "(Cloaking) Cloak and get out of scanning range before they have a chance to "
 "lock on."
 
-#: src-ru/data/events_fuel.xml.rawclobber:439
+#: src-ru/data/events_fuel.xml.rawclobber:483
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/event/text"
@@ -646,7 +644,7 @@ msgstr ""
 "Your highly advanced cloaking system allows you to get out of range easily "
 "since they were still out of firing range. Eventually the ship jumps away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:447
+#: src-ru/data/events_fuel.xml.rawclobber:491
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[1]/text"
@@ -656,7 +654,7 @@ msgstr ""
 "remember a time when we didn't have to be so paranoid about each others' "
 "intentions... Stay safe.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:451
+#: src-ru/data/events_fuel.xml.rawclobber:495
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[2]/text"
@@ -664,13 +662,13 @@ msgstr ""
 "Sensors are picking up armed crew and considerably more weaponry than is "
 "legal for a craft of this size. This is surely a trap."
 
-#: src-ru/data/events_fuel.xml.rawclobber:453
+#: src-ru/data/events_fuel.xml.rawclobber:497
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[2]/choice[1]/text"
 msgstr "Power up weapons and prepare for a fight."
 
-#: src-ru/data/events_fuel.xml.rawclobber:459
+#: src-ru/data/events_fuel.xml.rawclobber:503
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/text"
@@ -678,7 +676,7 @@ msgstr ""
 "(Cloaking) Cloak and get out of scanning range before they have a chance to "
 "lock on."
 
-#: src-ru/data/events_fuel.xml.rawclobber:461
+#: src-ru/data/events_fuel.xml.rawclobber:505
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/event/text"
@@ -686,7 +684,7 @@ msgstr ""
 "Your highly advanced cloaking system allows you to get out of range easily "
 "since they were still out of firing range. Eventually the ship jumps away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:534
+#: src-ru/data/events_fuel.xml.rawclobber:580
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[1]"
@@ -694,7 +692,7 @@ msgstr ""
 "As you are keeping a low profile, you're certain that the Rebel fleet is "
 "having a hard time tracking your ship."
 
-#: src-ru/data/events_fuel.xml.rawclobber:535
+#: src-ru/data/events_fuel.xml.rawclobber:581
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[2]"
@@ -703,7 +701,7 @@ msgstr ""
 "the Rebel fleet is having difficulty tracking you. It should buy you a "
 "little time."
 
-#: src-ru/data/events_fuel.xml.rawclobber:536
+#: src-ru/data/events_fuel.xml.rawclobber:582
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[3]"
@@ -712,14 +710,14 @@ msgstr ""
 "advance on your position. Your decision to leave the distress beacon "
 "deactivated was farsighted."
 
-#: src-ru/data/events_fuel.xml.rawclobber:537
+#: src-ru/data/events_fuel.xml.rawclobber:583
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[4]"
 msgstr ""
 "Scanners show that the Rebel fleet has ceased its pursuit for a short time."
 
-#: src-ru/data/events_fuel.xml.rawclobber:538
+#: src-ru/data/events_fuel.xml.rawclobber:584
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[5]"
@@ -727,7 +725,7 @@ msgstr ""
 "Your intuition as captain is telling you that the Rebels are having a hard "
 "time trying to find your ship."
 
-#: src-ru/data/events_fuel.xml.rawclobber:539
+#: src-ru/data/events_fuel.xml.rawclobber:585
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[6]"
@@ -736,7 +734,7 @@ msgstr ""
 "the Rebels are struggling to find you. You can only hope their confusion "
 "lasts until more fuel can be found."
 
-#: src-ru/data/events_fuel.xml.rawclobber:540
+#: src-ru/data/events_fuel.xml.rawclobber:586
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[7]"
@@ -745,12 +743,12 @@ msgstr ""
 "you could get some fuel, you might still have a chance to place some "
 "distance between you and the Rebels..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:548
+#: src-ru/data/events_fuel.xml.rawclobber:594
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_NOTHING_DISTRESS\"]/choice/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:553
+#: src-ru/data/events_fuel.xml.rawclobber:599
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[1]"
@@ -758,26 +756,26 @@ msgstr ""
 "You contemplate that it is fortunate the ship's life support system does not"
 " rely on FTL fuel cells."
 
-#: src-ru/data/events_fuel.xml.rawclobber:554
+#: src-ru/data/events_fuel.xml.rawclobber:600
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[2]"
 msgstr "Nothing happens. Your calls go unanswered."
 
-#: src-ru/data/events_fuel.xml.rawclobber:555
+#: src-ru/data/events_fuel.xml.rawclobber:601
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[3]"
 msgstr ""
 "The distress beacon's light is the only movement visible outside the ship."
 
-#: src-ru/data/events_fuel.xml.rawclobber:556
+#: src-ru/data/events_fuel.xml.rawclobber:602
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[4]"
 msgstr "No ships jump into the sector..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:557
+#: src-ru/data/events_fuel.xml.rawclobber:603
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[5]"
@@ -785,7 +783,7 @@ msgstr ""
 "A few passing ships seem oblivious to your distress call and ignore all "
 "hails."
 
-#: src-ru/data/events_fuel.xml.rawclobber:558
+#: src-ru/data/events_fuel.xml.rawclobber:604
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[6]"
@@ -793,13 +791,13 @@ msgstr ""
 "A few civilian ships are within scanning range, yet none respond to your "
 "calls."
 
-#: src-ru/data/events_fuel.xml.rawclobber:559
+#: src-ru/data/events_fuel.xml.rawclobber:605
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[7]"
 msgstr "No ships pass through the area."
 
-#: src-ru/data/events_fuel.xml.rawclobber:564
+#: src-ru/data/events_fuel.xml.rawclobber:610
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/text"
@@ -808,43 +806,43 @@ msgstr ""
 "refueling services once a monetary exchange is complete. Complimentary "
 "amounts of fuel are available in emergencies only.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:566
+#: src-ru/data/events_fuel.xml.rawclobber:612
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[1]/text"
 msgstr "Request emergency fuel reserves."
 
-#: src-ru/data/events_fuel.xml.rawclobber:570
+#: src-ru/data/events_fuel.xml.rawclobber:616
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[2]/text"
 msgstr "Buy 5 fuel for 25 scrap."
 
-#: src-ru/data/events_fuel.xml.rawclobber:572
+#: src-ru/data/events_fuel.xml.rawclobber:618
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[2]/event/text"
 msgstr "\"Automated refueling complete.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:580
+#: src-ru/data/events_fuel.xml.rawclobber:626
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[3]/text"
 msgstr "Buy 2 fuel for 10 scrap."
 
-#: src-ru/data/events_fuel.xml.rawclobber:582
+#: src-ru/data/events_fuel.xml.rawclobber:628
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[3]/event/text"
 msgstr "\"Automated refueling complete.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:590
+#: src-ru/data/events_fuel.xml.rawclobber:636
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[4]/text"
 msgstr "Attack the automated ship."
 
-#: src-ru/data/events_fuel.xml.rawclobber:599
+#: src-ru/data/events_fuel.xml.rawclobber:645
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"AUTO_FUEL_SELLER_ZAPROS\"]/event[1]/text"
@@ -852,25 +850,25 @@ msgstr ""
 "\"Your ship is registered to have already consumed your one-time "
 "complimentary emergency fuel allowance.\" The automated ship jumps away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:603
+#: src-ru/data/events_fuel.xml.rawclobber:649
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"AUTO_FUEL_SELLER_ZAPROS\"]/event[2]/text"
 msgstr "\"Emergency confirmed. Sending fuel.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:614
+#: src-ru/data/events_fuel.xml.rawclobber:660
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER_DISTRESS\"]/choice[1]/text"
 msgstr "Gladly trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:618
+#: src-ru/data/events_fuel.xml.rawclobber:664
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER_DISTRESS\"]/choice[2]/text"
 msgstr "Respectfully decline."
 
-#: src-ru/data/events_fuel.xml.rawclobber:623
+#: src-ru/data/events_fuel.xml.rawclobber:669
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[1]"
@@ -878,7 +876,7 @@ msgstr ""
 "A merchant ship jumps into the sector, obviously responding to your ship's "
 "distress beacon. They hail you offering a trade for fuel."
 
-#: src-ru/data/events_fuel.xml.rawclobber:624
+#: src-ru/data/events_fuel.xml.rawclobber:670
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[2]"
@@ -887,7 +885,7 @@ msgstr ""
 "you're out of fuel? We're a bit low ourselves but perhaps we can make a "
 "trade.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:625
+#: src-ru/data/events_fuel.xml.rawclobber:671
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[3]"
@@ -895,7 +893,7 @@ msgstr ""
 "A ship traveling near the beacon approaches your ship and hails you. \"Out "
 "of fuel? This is a good opportunity for both of us... Care to trade?\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:626
+#: src-ru/data/events_fuel.xml.rawclobber:672
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[4]"
@@ -903,25 +901,25 @@ msgstr ""
 "A mercenary ship arrives at the beacon. \"We have a bit of extra fuel we can"
 " give you... for a price.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:673
+#: src-ru/data/events_fuel.xml.rawclobber:719
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[1]/text"
 msgstr "They respond: \"Seeing that you're in need, is this trade acceptable?\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:675
+#: src-ru/data/events_fuel.xml.rawclobber:721
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[1]/choice[1]/text"
 msgstr "Accept it."
 
-#: src-ru/data/events_fuel.xml.rawclobber:679
+#: src-ru/data/events_fuel.xml.rawclobber:725
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[1]/choice[2]/text"
 msgstr "Decline again."
 
-#: src-ru/data/events_fuel.xml.rawclobber:684
+#: src-ru/data/events_fuel.xml.rawclobber:730
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/text"
@@ -929,19 +927,19 @@ msgstr ""
 "\"I'm not doing this for charity, you know,\" says their captain. \"This is "
 "the only other way I'll part with my fuel.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:686
+#: src-ru/data/events_fuel.xml.rawclobber:732
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[1]/text"
 msgstr "Accept it."
 
-#: src-ru/data/events_fuel.xml.rawclobber:690
+#: src-ru/data/events_fuel.xml.rawclobber:736
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[2]/text"
 msgstr "Decline again."
 
-#: src-ru/data/events_fuel.xml.rawclobber:692
+#: src-ru/data/events_fuel.xml.rawclobber:738
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[2]/event/text"
@@ -949,7 +947,7 @@ msgstr ""
 "Their captain disconnects from the channel and without another word their "
 "ship prepares to jumps away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:698
+#: src-ru/data/events_fuel.xml.rawclobber:744
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[3]/text"
@@ -957,19 +955,19 @@ msgstr ""
 "Before they jump away, their captain says, \"I'm sorry, but we are unable to"
 " help in any other way.\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:724
+#: src-ru/data/events_fuel.xml.rawclobber:770
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT3\"]/event[1]/text"
 msgstr "They take pity on you and offer you some fuel free of charge."
 
-#: src-ru/data/events_fuel.xml.rawclobber:730
+#: src-ru/data/events_fuel.xml.rawclobber:776
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT3\"]/event[2]/text"
 msgstr "They end the discussion and prepare to jump away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:759
+#: src-ru/data/events_fuel.xml.rawclobber:805
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[1]"
@@ -977,7 +975,7 @@ msgstr ""
 "A Rebel ship hails you, \"Hello citizen. We are responding to your distress "
 "call and can assist... Wait a second... You're that ship! Prepare to die!\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:760
+#: src-ru/data/events_fuel.xml.rawclobber:806
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[2]"
@@ -987,7 +985,7 @@ msgstr ""
 "asking for me to find you. It looks like it's my lucky day!\" They power up "
 "their weapons."
 
-#: src-ru/data/events_fuel.xml.rawclobber:761
+#: src-ru/data/events_fuel.xml.rawclobber:807
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[3]"
@@ -995,7 +993,7 @@ msgstr ""
 "Your distress beacon must be working because a ship just jumped nearby. You "
 "run a scan on it and activate a red alert. It's a Rebel fighter!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:762
+#: src-ru/data/events_fuel.xml.rawclobber:808
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[4]"
@@ -1003,7 +1001,7 @@ msgstr ""
 "A Rebel ship jumps in and hails you, \"I knew you would slip up some time. "
 "Surrender quietly!\""
 
-#: src-ru/data/events_fuel.xml.rawclobber:767
+#: src-ru/data/events_fuel.xml.rawclobber:813
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_REBEL_WARNING\"]/text"
@@ -1012,7 +1010,7 @@ msgstr ""
 "be an automated Rebel scout. It immediately reverses thrust after scanning "
 "your ship."
 
-#: src-ru/data/events_fuel.xml.rawclobber:778
+#: src-ru/data/events_fuel.xml.rawclobber:824
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/text"
@@ -1021,31 +1019,31 @@ msgstr ""
 "their com channel it sounds like they're discussing making repairs on their "
 "ship."
 
-#: src-ru/data/events_fuel.xml.rawclobber:781
+#: src-ru/data/events_fuel.xml.rawclobber:827
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[1]/text"
 msgstr "Hail them."
 
-#: src-ru/data/events_fuel.xml.rawclobber:785
+#: src-ru/data/events_fuel.xml.rawclobber:831
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[2]/text"
 msgstr "Ignore them."
 
-#: src-ru/data/events_fuel.xml.rawclobber:787
+#: src-ru/data/events_fuel.xml.rawclobber:833
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[2]/event/text"
 msgstr "They clearly are busy because they don't notice your ship at all."
 
-#: src-ru/data/events_fuel.xml.rawclobber:792
+#: src-ru/data/events_fuel.xml.rawclobber:838
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[@req=\"DRONES_SHIP_REPAIR\"]/text"
 msgstr "(Hull Repair Drone) Offer to help repair their hull."
 
-#: src-ru/data/events_fuel.xml.rawclobber:794
+#: src-ru/data/events_fuel.xml.rawclobber:840
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[@req=\"DRONES_SHIP_REPAIR\"]/event/text"
@@ -1053,12 +1051,12 @@ msgstr ""
 "They happily accept your offer for help. Once the drone does its work they "
 "transfer over some fuel for your trouble."
 
-#: src-ru/data/events_fuel.xml.rawclobber:804
+#: src-ru/data/events_fuel.xml.rawclobber:850
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:808
+#: src-ru/data/events_fuel.xml.rawclobber:854
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[2]/text"
@@ -1067,7 +1065,7 @@ msgstr ""
 "electromagnetic signals aboard the ship — someone has reprogrammed them to "
 "fight!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:812
+#: src-ru/data/events_fuel.xml.rawclobber:858
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/text"
@@ -1075,31 +1073,31 @@ msgstr ""
 "The Engi respond to your signal. \"Your need: fuel. This unit's need: scrap."
 " Exchange beneficial. Exchange permitted?"
 
-#: src-ru/data/events_fuel.xml.rawclobber:814
+#: src-ru/data/events_fuel.xml.rawclobber:860
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[1]/text"
 msgstr "Make a deal."
 
-#: src-ru/data/events_fuel.xml.rawclobber:816
+#: src-ru/data/events_fuel.xml.rawclobber:862
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[1]/event/text"
 msgstr "You make the exchange and the Engi leave without another word."
 
-#: src-ru/data/events_fuel.xml.rawclobber:824
+#: src-ru/data/events_fuel.xml.rawclobber:870
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[2]/text"
 msgstr "Decline."
 
-#: src-ru/data/events_fuel.xml.rawclobber:826
+#: src-ru/data/events_fuel.xml.rawclobber:872
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[2]/event/text"
 msgstr "The Engi coolly cut communications and continue on their journey."
 
-#: src-ru/data/events_fuel.xml.rawclobber:832
+#: src-ru/data/events_fuel.xml.rawclobber:878
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[4]/text"
@@ -1107,7 +1105,7 @@ msgstr ""
 "Upon discovering your need, the Engi gladly offer some of their extra fuel "
 "reserves. It's amazing how altruistic these robotic creatures can be."
 
-#: src-ru/data/events_fuel.xml.rawclobber:853
+#: src-ru/data/events_fuel.xml.rawclobber:899
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[1]"
@@ -1115,7 +1113,7 @@ msgstr ""
 "A Mantis ship hails you, \"Looks like we found the poor fools that need some"
 " help. Come brothers, let's 'help' them!\" They move in to attack."
 
-#: src-ru/data/events_fuel.xml.rawclobber:854
+#: src-ru/data/events_fuel.xml.rawclobber:900
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[2]"
@@ -1124,7 +1122,7 @@ msgstr ""
 " any relief you felt disappears as soon as you recognize that the ship is of"
 " Mantis design. Prepare for a fight."
 
-#: src-ru/data/events_fuel.xml.rawclobber:855
+#: src-ru/data/events_fuel.xml.rawclobber:901
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[3]"
@@ -1134,7 +1132,7 @@ msgstr ""
 "This has been a disappointing day so far.\" Looks like they're not here to "
 "help."
 
-#: src-ru/data/events_fuel.xml.rawclobber:856
+#: src-ru/data/events_fuel.xml.rawclobber:902
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[4]"
@@ -1142,7 +1140,7 @@ msgstr ""
 "A Mantis ship jump nearby. Sensors detect weapon locks and all hope of "
 "avoiding a fight fades away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:858
+#: src-ru/data/events_fuel.xml.rawclobber:904
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[5]"
@@ -1150,7 +1148,7 @@ msgstr ""
 "A Mantis ship hails you, \"Looks like we found the poor fools that need some"
 " help. Come brothers, let's 'help' them!\" They move in to attack."
 
-#: src-ru/data/events_fuel.xml.rawclobber:859
+#: src-ru/data/events_fuel.xml.rawclobber:905
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[6]"
@@ -1159,7 +1157,7 @@ msgstr ""
 " any relief you felt disappears as soon as you recognize that the ship is of"
 " Mantis design. Prepare for a fight."
 
-#: src-ru/data/events_fuel.xml.rawclobber:860
+#: src-ru/data/events_fuel.xml.rawclobber:906
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[7]"
@@ -1169,7 +1167,7 @@ msgstr ""
 "This has been a disappointing day so far.\" Looks like they're not here to "
 "help."
 
-#: src-ru/data/events_fuel.xml.rawclobber:861
+#: src-ru/data/events_fuel.xml.rawclobber:907
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[8]"
@@ -1177,7 +1175,7 @@ msgstr ""
 "A Mantis ship jump nearby. Sensors detect weapon locks and all hope of "
 "avoiding a fight fades away."
 
-#: src-ru/data/events_fuel.xml.rawclobber:870
+#: src-ru/data/events_fuel.xml.rawclobber:916
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/text"
@@ -1187,13 +1185,13 @@ msgstr ""
 "bigger in size until the stern of a Rock frigate, gutted in some distant "
 "war, comes into view."
 
-#: src-ru/data/events_fuel.xml.rawclobber:872
+#: src-ru/data/events_fuel.xml.rawclobber:918
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[1]/text"
 msgstr "Send an away team."
 
-#: src-ru/data/events_fuel.xml.rawclobber:874
+#: src-ru/data/events_fuel.xml.rawclobber:920
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[1]/event/text"
@@ -1201,19 +1199,19 @@ msgstr ""
 "Perhaps there's some viable fuel left on board; a small away team boards the"
 " vessel."
 
-#: src-ru/data/events_fuel.xml.rawclobber:876
+#: src-ru/data/events_fuel.xml.rawclobber:922
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[1]/event/choice/text"
 msgstr "Report the results!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:882
+#: src-ru/data/events_fuel.xml.rawclobber:928
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[2]/text"
 msgstr "Let it drift by."
 
-#: src-ru/data/events_fuel.xml.rawclobber:884
+#: src-ru/data/events_fuel.xml.rawclobber:930
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[2]/event/text"
@@ -1222,13 +1220,13 @@ msgstr ""
 "matter how decrepit they may seem, and you don't take risks in Rock "
 "territory."
 
-#: src-ru/data/events_fuel.xml.rawclobber:889
+#: src-ru/data/events_fuel.xml.rawclobber:935
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr "(Infrared Scanner) Run additional scans."
 
-#: src-ru/data/events_fuel.xml.rawclobber:891
+#: src-ru/data/events_fuel.xml.rawclobber:937
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[@req=\"LIFE_SCANNER\"]/event/text"
@@ -1236,7 +1234,7 @@ msgstr ""
 "The ship appears to be entirely lifeless. Your crew is able to find some "
 "usable fuel cells after a brief search."
 
-#: src-ru/data/events_fuel.xml.rawclobber:898
+#: src-ru/data/events_fuel.xml.rawclobber:944
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[1]/text"
@@ -1244,16 +1242,21 @@ msgstr ""
 "A short time later the team returns with a stash of ammunition and scrap - "
 "but all the fuel on board is long gone."
 
-#: src-ru/data/events_fuel.xml.rawclobber:902
+#: src-ru/data/events_fuel.xml.rawclobber:950
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[2]/loadEventList/event[1]/text"
+msgstr ""
+
+#: src-ru/data/events_fuel.xml.rawclobber:954
 #, fuzzy
 msgid ""
-"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[2]/text"
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[2]/loadEventList/event[2]/text"
 msgstr ""
 "One of the crew reports that the main computer was housed in this section "
 "and is still partially operational. They're able to download local telemetry"
 " as well the location of the ship's reserve fuel! Your map has been updated."
 
-#: src-ru/data/events_fuel.xml.rawclobber:907
+#: src-ru/data/events_fuel.xml.rawclobber:961
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[3]/text"
@@ -1262,7 +1265,7 @@ msgstr ""
 "were making entry to the frigate, the ship's emergency fuel cell just "
 "happened to drift by!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:911
+#: src-ru/data/events_fuel.xml.rawclobber:965
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/text"
@@ -1272,13 +1275,13 @@ msgstr ""
 "from the frigate's crew, and completely mad. He demands you pay a scrap "
 "ransom in return for your crew-member's life!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:913
+#: src-ru/data/events_fuel.xml.rawclobber:967
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[1]/text"
 msgstr "Pay."
 
-#: src-ru/data/events_fuel.xml.rawclobber:915
+#: src-ru/data/events_fuel.xml.rawclobber:969
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[1]/event/text"
@@ -1287,13 +1290,13 @@ msgstr ""
 "your crew-member, who is suitably grateful. Sadly, gratitude doesn't power "
 "the FTL drive."
 
-#: src-ru/data/events_fuel.xml.rawclobber:922
+#: src-ru/data/events_fuel.xml.rawclobber:976
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/text"
 msgstr "Decline."
 
-#: src-ru/data/events_fuel.xml.rawclobber:924
+#: src-ru/data/events_fuel.xml.rawclobber:978
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/event/text"
@@ -1301,7 +1304,7 @@ msgstr ""
 "It's a tough call, but it's for the Federation and the liberty of all. You "
 "set off before you can change your mind."
 
-#: src-ru/data/events_fuel.xml.rawclobber:930
+#: src-ru/data/events_fuel.xml.rawclobber:984
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/event/choice[@req=\"CREW_ALL\""
@@ -1310,7 +1313,7 @@ msgstr ""
 "Before preparing to jump you check the Clone Bay but there is no sign of "
 "activity."
 
-#: src-ru/data/events_fuel.xml.rawclobber:937
+#: src-ru/data/events_fuel.xml.rawclobber:991
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/event/choice[@req=\"CREW_ALL\""
@@ -1319,7 +1322,7 @@ msgstr ""
 "Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
 "смерти всего экипажа."
 
-#: src-ru/data/events_fuel.xml.rawclobber:946
+#: src-ru/data/events_fuel.xml.rawclobber:1000
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/text"
@@ -1327,13 +1330,13 @@ msgstr ""
 "A curious Rock ship comes in for a closer look at you. They refuse all "
 "hails."
 
-#: src-ru/data/events_fuel.xml.rawclobber:948
+#: src-ru/data/events_fuel.xml.rawclobber:1002
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/choice[1]/text"
 msgstr "Attack."
 
-#: src-ru/data/events_fuel.xml.rawclobber:950
+#: src-ru/data/events_fuel.xml.rawclobber:1004
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/choice[1]/event/text"
@@ -1341,13 +1344,13 @@ msgstr ""
 "The Rock people are not renowned for their generosity. If it's fuel you "
 "need, it's fuel you must take!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:955
+#: src-ru/data/events_fuel.xml.rawclobber:1009
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/choice[2]/text"
 msgstr "Wait and see."
 
-#: src-ru/data/events_fuel.xml.rawclobber:961
+#: src-ru/data/events_fuel.xml.rawclobber:1015
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_CURIOUS_LIST\"]/event[1]/text"
@@ -1357,7 +1360,7 @@ msgstr ""
 " communicate, but they transfer over a cache of fuel before flashing their "
 "lights and jumping away!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:967
+#: src-ru/data/events_fuel.xml.rawclobber:1021
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_CURIOUS_LIST\"]/event[2]/text"
@@ -1366,13 +1369,13 @@ msgstr ""
 " are confirmed when they identify your engines and teleport a bomb straight "
 "onto it! Combat ready!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:974
+#: src-ru/data/events_fuel.xml.rawclobber:1028
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/escape/text"
 msgstr "Looks like they don't want to fight and are trying to escape."
 
-#: src-ru/data/events_fuel.xml.rawclobber:977
+#: src-ru/data/events_fuel.xml.rawclobber:1031
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/gotaway/text"
@@ -1380,19 +1383,19 @@ msgstr ""
 "The ship jumps away without a word. You hope they didn't leave to get "
 "reinforcements."
 
-#: src-ru/data/events_fuel.xml.rawclobber:980
+#: src-ru/data/events_fuel.xml.rawclobber:1034
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/destroyed/text"
 msgstr "You take care to salvage as much fuel as possible from the wreck."
 
-#: src-ru/data/events_fuel.xml.rawclobber:985
+#: src-ru/data/events_fuel.xml.rawclobber:1039
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/deadCrew/text"
 msgstr "You take care to salvage as much fuel as possible from the wreck."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1002
+#: src-ru/data/events_fuel.xml.rawclobber:1056
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/text"
@@ -1400,18 +1403,18 @@ msgstr ""
 "A poorly armed Slug ship cruises by and offers assistance. Their captain "
 "seems to be chuckling to himself, perhaps at the prices he's charging."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1005
+#: src-ru/data/events_fuel.xml.rawclobber:1059
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1009
+#: src-ru/data/events_fuel.xml.rawclobber:1063
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[2]/text"
 msgstr "Ignore the offer."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1011
+#: src-ru/data/events_fuel.xml.rawclobber:1065
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[2]/event/text"
@@ -1419,19 +1422,19 @@ msgstr ""
 "You know better than to do business with a Slugman who seems like he knows "
 "something you don't. He jumps off with another chuckle."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1016
+#: src-ru/data/events_fuel.xml.rawclobber:1070
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[3]/text"
 msgstr "Attack them."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1020
+#: src-ru/data/events_fuel.xml.rawclobber:1074
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[@req=\"slug_crew\"]/text"
 msgstr "(Slug Crewmember) Have your Slug make the purchase."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1022
+#: src-ru/data/events_fuel.xml.rawclobber:1076
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[@req=\"slug_crew\"]/event/text"
@@ -1440,15 +1443,14 @@ msgstr ""
 "The exchange appears to go smoothly although you wonder what mental battles "
 "are telepathically occurring between the two Slugs."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1032
-#, fuzzy
+#: src-ru/data/events_fuel.xml.rawclobber:1086
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[1]/text"
 msgstr ""
 "You doubt he is trustworthy but have no choice but to make the deal. However"
 " you complete the exchange without event."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1040
+#: src-ru/data/events_fuel.xml.rawclobber:1094
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[1]/choice/event/text"
@@ -1457,25 +1459,24 @@ msgstr ""
 " have planted a portable teleporter into your cargo bay somehow. Before you "
 "can react his ship is long gone."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1049
-#, fuzzy
+#: src-ru/data/events_fuel.xml.rawclobber:1103
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[2]/text"
 msgstr ""
 "You doubt he is trustworthy but have no choice but to make the deal. However"
 " you complete the exchange without event."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1058
+#: src-ru/data/events_fuel.xml.rawclobber:1112
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_ATTACK_LIST\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1062
+#: src-ru/data/events_fuel.xml.rawclobber:1116
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_ATTACK_LIST\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_fuel.xml.rawclobber:1068
+#: src-ru/data/events_fuel.xml.rawclobber:1122
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/text"
@@ -1484,13 +1485,13 @@ msgstr ""
 " I ask one thing - do not insult me with negotiation!\" You check out his "
 "price list."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1071
+#: src-ru/data/events_fuel.xml.rawclobber:1125
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[1]/text"
 msgstr "Buy 5 fuel for 50 scrap."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1073
+#: src-ru/data/events_fuel.xml.rawclobber:1127
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[1]/event/text"
@@ -1498,13 +1499,13 @@ msgstr ""
 "The trader looks shocked. You're struck by the sense that this is the first "
 "time anyone's ever paid him these prices."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1081
+#: src-ru/data/events_fuel.xml.rawclobber:1135
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[2]/text"
 msgstr "Buy 10 fuel for 95 scrap. (BEST DEAL!)"
 
-#: src-ru/data/events_fuel.xml.rawclobber:1083
+#: src-ru/data/events_fuel.xml.rawclobber:1137
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[2]/event/text"
@@ -1512,13 +1513,13 @@ msgstr ""
 "The trader looks shocked. You're struck by the sense that this is the first "
 "time anyone's ever paid him these prices."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1091
+#: src-ru/data/events_fuel.xml.rawclobber:1145
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[3]/text"
 msgstr "Negotiate."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1093
+#: src-ru/data/events_fuel.xml.rawclobber:1147
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[3]/event/text"
@@ -1526,7 +1527,7 @@ msgstr ""
 "You offer a more reasonable price but the Slugman is outraged! He moves in "
 "to attack!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:1122
+#: src-ru/data/events_fuel.xml.rawclobber:1176
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE\"]/event[1]/text"
@@ -1536,7 +1537,7 @@ msgstr ""
 "recognizes you are part of the Federation and offers to split its remaining "
 "fuel with you."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1130
+#: src-ru/data/events_fuel.xml.rawclobber:1184
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/text"
@@ -1546,13 +1547,13 @@ msgstr ""
 "looks damaged - it is in bad need of scrap and is willing to trade fuel for "
 "it."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1132
+#: src-ru/data/events_fuel.xml.rawclobber:1186
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[1]/text"
 msgstr "Trade some scrap for fuel."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1134
+#: src-ru/data/events_fuel.xml.rawclobber:1188
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[1]/event/text"
@@ -1561,13 +1562,13 @@ msgstr ""
 "fuel. They wish you well on your mission, and declare their support for the "
 "Federation."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1142
+#: src-ru/data/events_fuel.xml.rawclobber:1196
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/text"
 msgstr "(Engi Crewmember) Negotiate a better trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1144
+#: src-ru/data/events_fuel.xml.rawclobber:1198
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/text"
@@ -1577,25 +1578,25 @@ msgstr ""
 "they admit that their need for repairs is greater than their fuel surplus "
 "and offer a better trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1147
+#: src-ru/data/events_fuel.xml.rawclobber:1201
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/choice[1]/text"
 msgstr "Accept it."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1156
+#: src-ru/data/events_fuel.xml.rawclobber:1210
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/choice[2]/text"
 msgstr "Decline."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1162
+#: src-ru/data/events_fuel.xml.rawclobber:1216
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/text"
 msgstr "(Engi Crewmember) Negotiate a better trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1164
+#: src-ru/data/events_fuel.xml.rawclobber:1218
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/event/text"
@@ -1605,31 +1606,31 @@ msgstr ""
 "they admit that their need for repairs is greater than their fuel surplus "
 "and offer a better trade."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1166
+#: src-ru/data/events_fuel.xml.rawclobber:1220
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/event/choice[1]/text"
 msgstr "Accept it."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1175
+#: src-ru/data/events_fuel.xml.rawclobber:1229
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/event/choice[2]/text"
 msgstr "Decline."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1181
+#: src-ru/data/events_fuel.xml.rawclobber:1235
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[4]/text"
 msgstr "Decline their offer."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1185
+#: src-ru/data/events_fuel.xml.rawclobber:1239
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[5]/text"
 msgstr "The helpless refugees make easy targets. Attack them."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1187
+#: src-ru/data/events_fuel.xml.rawclobber:1241
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[5]/event/text"
@@ -1638,7 +1639,7 @@ msgstr ""
 "pass along their fuel and what few other supplies they have left in exchange"
 " for their lives."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1195
+#: src-ru/data/events_fuel.xml.rawclobber:1249
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[1]/text"
@@ -1646,7 +1647,7 @@ msgstr ""
 "The refugee ship cuts communications and jumps from the system without "
 "another word, the galactic equivalent of giving you the cold shoulder."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1199
+#: src-ru/data/events_fuel.xml.rawclobber:1253
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/text"
@@ -1655,19 +1656,19 @@ msgstr ""
 "even more damaged than it first appears. Almost begging, they offer a better"
 " trade than before."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1201
+#: src-ru/data/events_fuel.xml.rawclobber:1255
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[1]/text"
 msgstr "Accept it."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1210
+#: src-ru/data/events_fuel.xml.rawclobber:1264
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[2]/text"
 msgstr "Refuse their offer again."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1212
+#: src-ru/data/events_fuel.xml.rawclobber:1266
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[2]/event/text"
@@ -1675,7 +1676,7 @@ msgstr ""
 "The refugee ship cuts communications and jumps from the system without "
 "another word, the galactic equivalent of giving you the cold shoulder."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1219
+#: src-ru/data/events_fuel.xml.rawclobber:1273
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_PIRATE\"]/text"
@@ -1684,26 +1685,26 @@ msgstr ""
 " your distress beacon. While it doesn't have much fuel to spare, it is bad "
 "need of armaments and is willing to trade for them."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1221
+#: src-ru/data/events_fuel.xml.rawclobber:1275
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_PIRATE\"]/choice[1]/text"
 msgstr "Offer some missiles for fuel."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1225
+#: src-ru/data/events_fuel.xml.rawclobber:1279
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_PIRATE\"]/choice[2]/text"
 msgstr "Decline their offer."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1232
+#: src-ru/data/events_fuel.xml.rawclobber:1286
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_ACCEPT\"]/event[1]/text"
 msgstr ""
 "The refugee ship makes the exchange, and wishes you well on your mission."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1239
+#: src-ru/data/events_fuel.xml.rawclobber:1293
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_ACCEPT\"]/event[2]/text"
@@ -1711,7 +1712,7 @@ msgstr ""
 "Having traded supplies, the ship suddenly powers up and attacks - it's a "
 "pirate ship!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:1250
+#: src-ru/data/events_fuel.xml.rawclobber:1304
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[1]/text"
@@ -1719,7 +1720,7 @@ msgstr ""
 "The refugee ship apologizes, but they need their fuel. They wish you well, "
 "and then vanish from the system."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1253
+#: src-ru/data/events_fuel.xml.rawclobber:1307
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[2]/text"
@@ -1729,7 +1730,7 @@ msgstr ""
 "before it is overtaken by Rebels, then it jumps and vanishes to parts "
 "unknown."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1257
+#: src-ru/data/events_fuel.xml.rawclobber:1311
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[3]/text"
@@ -1737,7 +1738,7 @@ msgstr ""
 "Taking your reluctance as weakness, the refugee ship suddenly bristles with "
 "weapons — it's a pirate ship, and it believes it's found easy prey!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:1261
+#: src-ru/data/events_fuel.xml.rawclobber:1315
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[4]/text"
@@ -1745,7 +1746,7 @@ msgstr ""
 "Taking your reluctance as weakness, the refugee ship suddenly bristles with "
 "weapons — it's a pirate ship, and it believes it's found easy prey!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:1269
+#: src-ru/data/events_fuel.xml.rawclobber:1323
 #, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_FRIENDLY\"]/text"

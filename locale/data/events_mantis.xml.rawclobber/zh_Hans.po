@@ -1,16 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-06 11:36+0000\n"
-"Last-Translator: circle217 <3545024352@qq.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
-"projects/arsenal-plus/dataevents_mantisxmlrawclobber/zh_Hans/>\n"
-"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_mantis.xml.rawclobber:124
 msgid ""
@@ -185,874 +178,879 @@ msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_KILL\"]/event[2]/text"
 msgstr "在对付螳螂之前，你从那艘半械族飞船上搜刮了所有能拿的东西。然而，登舰兵立刻明白了你的意图，发起了攻击！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:226
+#: src-ru/data/events_mantis.xml.rawclobber:228
 msgid ""
-"data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_TALK\"]/event[1]/text"
+"data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_TALK\"]/event[1]/loadEventList/event[1]/text"
+msgstr "在与那只螳螂独处一小段时间后，你被告知他希望加入你的队伍。尽管你对这只螳螂改变立场的意愿感到惊讶，但你信任船员们对他的看法。"
+
+#: src-ru/data/events_mantis.xml.rawclobber:233
+msgid ""
+"data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_TALK\"]/event[1]/loadEventList/event[2]/text"
 msgstr "不清楚两只螳螂在锁上的门后发生了什么，但当他们出现时，登舰兵愿意与你分享当前星区的遥测数据。随后他乘坐半械族飞船离开了。你的星图已更新。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:230
+#: src-ru/data/events_mantis.xml.rawclobber:239
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CAPTURE_COMMANDO_TALK\"]/event[2]/text"
 msgstr "在与那只螳螂独处一小段时间后，你被告知他希望加入你的队伍。尽管你对这只螳螂改变立场的意愿感到惊讶，但你信任船员们对他的看法。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:238
+#: src-ru/data/events_mantis.xml.rawclobber:247
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/text"
 msgstr ""
 "这个信标目前是一艘螳螂族娱乐飞船的停泊处——一个满是妓院和战斗竞技场、供战士们发泄情绪的地方。扫描过你的财物后，他们表示希望你参加一场主要的赌博游戏。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:240
+#: src-ru/data/events_mantis.xml.rawclobber:249
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[1]/text"
 msgstr "押50废料赌穿[style[color:5f97ff]]蓝色[[/style]]裤子的战士赢。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:242
+#: src-ru/data/events_mantis.xml.rawclobber:251
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[1]/event/text"
 msgstr "透过屏幕，你看到两只年轻的螳螂正激烈交锋。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:253
+#: src-ru/data/events_mantis.xml.rawclobber:262
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[2]/text"
 msgstr "押50废料赌穿[style[color:ff4551]]红色[[/style]]裤子的战士赢。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:255
+#: src-ru/data/events_mantis.xml.rawclobber:264
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[2]/event/text"
 msgstr "透过屏幕，你看到两只年轻的螳螂正激烈交锋。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:266
+#: src-ru/data/events_mantis.xml.rawclobber:275
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_GAMBLE\"]/choice[3]/text"
 msgstr "你不跟骗子玩。在超光速驱动器充电时与船员交谈。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:272
+#: src-ru/data/events_mantis.xml.rawclobber:281
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[1]/text"
 msgstr ""
 "穿[style[color:5f97ff]]蓝色[[/style]]的那个被逼到了角落。就在最后一刻，他扑上去砍下了对手的头。你拿走了你的赢利！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:279
+#: src-ru/data/events_mantis.xml.rawclobber:288
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/text"
 msgstr ""
 "看起来穿[style[color:5f97ff]]蓝色[[/style]]的螳螂正在占上风，对对手连连猛击。突然，穿[style[color:ff4551]]红色[[/style]]的那位以一记精准的攻击结束了战斗。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:281
+#: src-ru/data/events_mantis.xml.rawclobber:290
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[1]/text"
 msgstr "支付你欠的赌债。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:283
+#: src-ru/data/events_mantis.xml.rawclobber:292
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[1]/event/text"
 msgstr "你交出你押的废料，然后趁你的飞船还能离开时赶紧撤退。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:287
+#: src-ru/data/events_mantis.xml.rawclobber:296
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"clonebay\"]/text"
 msgstr "（先进克隆舱）快速调整克隆舱，救活被杀者。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:289
+#: src-ru/data/events_mantis.xml.rawclobber:298
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"clonebay\"]/event/text"
 msgstr "倒下的战士在克隆舱中出现，并怀着感激之情加入了你的船员队伍。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:290
+#: src-ru/data/events_mantis.xml.rawclobber:299
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"clonebay\"]/event/crewMember"
 msgstr "岩石族"
 
-#: src-ru/data/events_mantis.xml.rawclobber:294
+#: src-ru/data/events_mantis.xml.rawclobber:303
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"engines\"]/text"
 msgstr "（先进引擎）逃避付款并启动引擎。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:296
+#: src-ru/data/events_mantis.xml.rawclobber:305
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_BLUE\"]/event[2]/choice[@req=\"engines\"]/event/text"
 msgstr "你收回已经准备好送出的废料，在那艘巡洋舰的船员来得及反应之前，退到了它的火力范围之外。不过，一艘小型飞船中断了巡逻，开始拦截你。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:307
+#: src-ru/data/events_mantis.xml.rawclobber:316
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[1]/text"
 msgstr ""
 "看起来穿[style[color:5f97ff]]蓝色[[/style]]的螳螂正在占上风，对对手连连猛击。突然，穿[style[color:ff4551]]红色[[/style]]的那位以一记精准的攻击结束了战斗。你拿走了你的赢利！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:314
+#: src-ru/data/events_mantis.xml.rawclobber:323
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/text"
 msgstr "穿[style[color:5f97ff]]蓝色[[/style]]的那个被逼到了角落。就在最后一刻，他扑上去砍下了对手的头。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:316
+#: src-ru/data/events_mantis.xml.rawclobber:325
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[1]/text"
 msgstr "支付你欠的赌债。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:318
+#: src-ru/data/events_mantis.xml.rawclobber:327
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[1]/event/text"
 msgstr "你交出你押的废料，然后趁你的飞船还能离开时赶紧撤退。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:322
+#: src-ru/data/events_mantis.xml.rawclobber:331
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"clonebay\"]/text"
 msgstr "（先进克隆舱）快速调整克隆舱，救活被杀者。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:324
+#: src-ru/data/events_mantis.xml.rawclobber:333
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"clonebay\"]/event/text"
 msgstr "倒下的战士在克隆舱中出现，并怀着感激之情加入了你的船员队伍。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:325
+#: src-ru/data/events_mantis.xml.rawclobber:334
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"clonebay\"]/event/crewMember"
 msgstr "岩石族"
 
-#: src-ru/data/events_mantis.xml.rawclobber:329
+#: src-ru/data/events_mantis.xml.rawclobber:338
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"engines\"]/text"
 msgstr "（先进引擎）逃避付款并启动引擎。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:331
+#: src-ru/data/events_mantis.xml.rawclobber:340
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_GAMBLE_RED\"]/event[2]/choice[@req=\"engines\"]/event/text"
 msgstr "你收回已经准备好送出的废料，在那艘巡洋舰的船员来得及反应之前，退到了它的火力范围之外。不过，一艘小型飞船中断了巡逻，开始拦截你。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:354
+#: src-ru/data/events_mantis.xml.rawclobber:363
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[1]"
 msgstr "雷达上出现了一艘螳螂族军舰和一艘人类运输船的残骸。准备交战！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:355
+#: src-ru/data/events_mantis.xml.rawclobber:364
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[2]"
 msgstr "螳螂族侦察兵向你发信号：“愚蠢的外星人！你和你的同类压制我们的伟大已经太久了！你们会后悔支持联邦的那一天的！”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:356
+#: src-ru/data/events_mantis.xml.rawclobber:365
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[3]"
 msgstr "一艘小型螳螂族巡洋舰在宽带频率上循环播放消息：“所有非螳螂族的飞船进入我们的领土都将付出代价。如果你珍惜自己的生命，就关闭护盾并投降。”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:357
+#: src-ru/data/events_mantis.xml.rawclobber:366
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[4]"
 msgstr ""
 "你发现了一个小型军事前哨和附近的几艘货船。这颗富含矿物的星球位于星区的一个偏僻角落，是螳螂族非法钻探的好地方。在你权衡对策时，一艘飞船从前哨起飞。准备战斗。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:358
+#: src-ru/data/events_mantis.xml.rawclobber:367
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[5]"
 msgstr "你发现了另一个螳螂族非法殖民地。他们毫不浪费时间，直接提出了他们的主张。你还没来得及逃离，一艘螳螂族飞船就靠近了你。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:359
+#: src-ru/data/events_mantis.xml.rawclobber:368
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[6]"
 msgstr "一艘螳螂族侦察兵似乎刚刚收集完坠毁地点的战利品。他们没时间发出警告，直接准备战斗。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:360
+#: src-ru/data/events_mantis.xml.rawclobber:369
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[7]"
 msgstr "一艘小型军舰向你致意，螳螂族船长出现在接收器上。“所有当地的人类殖民地都已因联邦的罪行受到惩罚。不要妨碍这个过程。”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:362
+#: src-ru/data/events_mantis.xml.rawclobber:371
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[8]"
 msgstr "附近的一艘螳螂族飞船开始进行攻击性机动。你做好了最坏的打算。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:363
+#: src-ru/data/events_mantis.xml.rawclobber:372
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[9]"
 msgstr "通讯器传来敌对螳螂族侦察兵发出的一连串咔哒声和咕噜声。通用翻译器可能无法胜任，但螳螂的意图显而易见。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:364
+#: src-ru/data/events_mantis.xml.rawclobber:373
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[10]"
 msgstr "螳螂族飞船很高兴见到你，正在预热武器。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:365
+#: src-ru/data/events_mantis.xml.rawclobber:374
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[11]"
 msgstr "你在黑暗中辨认出螳螂族飞船的轮廓。战斗吧！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:366
+#: src-ru/data/events_mantis.xml.rawclobber:375
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[12]"
 msgstr "有什么红色的东西在闪烁。那是螳螂族飞船。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:367
+#: src-ru/data/events_mantis.xml.rawclobber:376
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[13]"
 msgstr "螳螂族飞船发来通讯：“这条消息只是为了分散你的注意力！”你注意到他们的护盾和武器已经开启。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:368
+#: src-ru/data/events_mantis.xml.rawclobber:377
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[14]"
 msgstr "你注意到舷窗外有猛烈激光火力的闪光。螳螂族就在你头顶。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:369
+#: src-ru/data/events_mantis.xml.rawclobber:378
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[15]"
 msgstr "螳螂族发来通讯。他们的船长说：“这艘船我将收归我的部族所有。狩猎愉快，兄弟们！”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:370
+#: src-ru/data/events_mantis.xml.rawclobber:379
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[16]"
 msgstr "屏幕上出现了一只雌性螳螂的图像。雌性通常不担任要职，也许只有特别残暴的除外。你给武器充能。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:371
+#: src-ru/data/events_mantis.xml.rawclobber:380
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[17]"
 msgstr "带有战士标识的螳螂族飞船猛地冲出，发动攻击！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:372
+#: src-ru/data/events_mantis.xml.rawclobber:381
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[18]"
 msgstr "螳螂族飞船给你发来消息：“啊！好猎物！好猎物！我们将用最毁灭性的武器来荣耀你！”你觉得还有机会逃脱，于是启动了武器。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:373
+#: src-ru/data/events_mantis.xml.rawclobber:382
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[19]"
 msgstr "地球上流传着关于血红色螳螂族入侵飞船（就像你现在遇到的这艘）的恐怖故事，它们曾一度威胁过地球。你下令开火！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:374
+#: src-ru/data/events_mantis.xml.rawclobber:383
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT\"]/text[20]"
 msgstr ""
 "一位看起来很年轻的螳螂族船长致意道：“你，猎物，应当知道。你的死是卡兹特瓦克成年之前的最后一场杀戮。卡兹特瓦克致以敬意。”看来在螳螂族文化中，敬意是用激光来表达的。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:390
+#: src-ru/data/events_mantis.xml.rawclobber:399
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_FIGHT_CHOICE\"]/choice[1]/text"
 msgstr "攻击这艘船。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:392
+#: src-ru/data/events_mantis.xml.rawclobber:401
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_FIGHT_CHOICE\"]/choice[1]/event/text"
 msgstr "你冲入战斗，确信自己即将获胜。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:398
+#: src-ru/data/events_mantis.xml.rawclobber:407
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_FIGHT_CHOICE\"]/choice[2]/text"
 msgstr "试图保持隐蔽。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:402
+#: src-ru/data/events_mantis.xml.rawclobber:411
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_FIGHT_CHOICE\"]/choice[@req=\"cloaking\"]/text"
 msgstr "（隐形系统）启动隐形以保持隐蔽。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:407
+#: src-ru/data/events_mantis.xml.rawclobber:416
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[1]"
 msgstr "你目睹了一个罕见的情况：一艘螳螂族飞船没有发现你。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:408
+#: src-ru/data/events_mantis.xml.rawclobber:417
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[2]"
 msgstr "这次你成功地在螳螂族发现你之前发现了他们。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:409
+#: src-ru/data/events_mantis.xml.rawclobber:418
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[3]"
 msgstr "你的船员看到你指定的坐标处有一艘埋伏的螳螂族军舰，松了口气，因为你不知怎么没有跃迁到信标处。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:410
+#: src-ru/data/events_mantis.xml.rawclobber:419
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[4]"
 msgstr "你通过应答器偷听到螳螂族的对话：“不对，我杀的人类更多！”你紧张地咽了口唾沫，但幸运的是，他们还没发现你。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:411
+#: src-ru/data/events_mantis.xml.rawclobber:420
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[5]"
 msgstr "你在接收器中听到螳螂族的对话：“右边那个开始腐烂了。把他弄下来。砍掉他的手指。把他从气闸扔出去。”他们显然不那么友好……"
 
-#: src-ru/data/events_mantis.xml.rawclobber:412
+#: src-ru/data/events_mantis.xml.rawclobber:421
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_FIGHT_CHOICE\"]/text[6]"
 msgstr "你通过应答器偷听到螳螂族的对话：“说定了。下一艘船是你的。狩猎愉快。”他们还没发现你。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:416
+#: src-ru/data/events_mantis.xml.rawclobber:425
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_AVOID\"]/event[1]/text"
 msgstr "你关闭辅助系统，等待超光速驱动器充电。他们要么不想战斗，要么没有注意到你的飞船——后者的可能性要大得多。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:419
+#: src-ru/data/events_mantis.xml.rawclobber:428
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_AVOID\"]/event[2]/text"
 msgstr "你还没来得及溜走，螳螂族飞船就发现了你并启动了武器。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:424
+#: src-ru/data/events_mantis.xml.rawclobber:433
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_AVOID\"]/event[3]/text"
 msgstr "你关闭辅助系统试图不被发现。他们似乎正要离开，却突然调转方向朝你驶来，同时给武器充能。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:431
+#: src-ru/data/events_mantis.xml.rawclobber:440
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_CLOAK\"]/event[1]/text"
 msgstr "你匆忙将飞船隐形，并离开了扫描范围。你未被发现地离开了。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:434
+#: src-ru/data/events_mantis.xml.rawclobber:443
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_CLOAK\"]/event[2]/text"
 msgstr "你启动隐形并关闭辅助系统。不久，螳螂族飞船飞走了——无疑是在寻找猎物。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:437
+#: src-ru/data/events_mantis.xml.rawclobber:446
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_FIGHT_CHOICE_CLOAK\"]/event[3]/text"
 msgstr "你匆忙将飞船隐形，但不够快。他们发现了你并准备战斗。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:447
+#: src-ru/data/events_mantis.xml.rawclobber:456
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CIVILIAN\"]/choice[1]/text"
 msgstr "援救平民船。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:449
+#: src-ru/data/events_mantis.xml.rawclobber:458
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CIVILIAN\"]/choice[1]/event/text"
 msgstr "你皱着眉头给武器充能，准备与螳螂族飞船战斗。今天不行。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:455
+#: src-ru/data/events_mantis.xml.rawclobber:464
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CIVILIAN\"]/choice[2]/text"
 msgstr "远离他们。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:462
+#: src-ru/data/events_mantis.xml.rawclobber:471
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[1]"
 msgstr "一艘螳螂族飞船从你的观察窗前飞过，武器和引擎已完全充能。雷达上的一个小点标记着他们的猎物。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:463
+#: src-ru/data/events_mantis.xml.rawclobber:472
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[2]"
 msgstr "你注意到一艘螳螂族飞船在离你很远的地方进行狩猎。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:464
+#: src-ru/data/events_mantis.xml.rawclobber:473
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[3]"
 msgstr "一艘正在攻击平民的螳螂族飞船试图与你通讯。他的驾驶舱周围火花四溅，他喊道：“别多管闲事，人类！否则下一个就是你！”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:465
+#: src-ru/data/events_mantis.xml.rawclobber:474
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[4]"
 msgstr "本地传感器探测到两艘飞船正在激战。螳螂族军舰似乎即将击败它的猎物。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:466
+#: src-ru/data/events_mantis.xml.rawclobber:475
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[5]"
 msgstr "你收到一艘平民船的求救信号。它正被一艘螳螂族飞船追击！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:468
+#: src-ru/data/events_mantis.xml.rawclobber:477
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[6]"
 msgstr "一艘螳螂族飞船从你的观察窗前飞过，武器和引擎已完全充能。雷达上的一个小点标记着他们的猎物。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:469
+#: src-ru/data/events_mantis.xml.rawclobber:478
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[7]"
 msgstr "你注意到一艘螳螂族飞船在离你很远的地方进行狩猎。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:470
+#: src-ru/data/events_mantis.xml.rawclobber:479
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[8]"
 msgstr "一艘正在攻击平民的螳螂族飞船试图与你通讯。他的驾驶舱周围火花四溅，他喊道：“别多管闲事，人类！否则下一个就是你！”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:471
+#: src-ru/data/events_mantis.xml.rawclobber:480
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[9]"
 msgstr "本地传感器探测到两艘飞船正在激战。螳螂族军舰似乎即将击败它的猎物。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:472
+#: src-ru/data/events_mantis.xml.rawclobber:481
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN\"]/text[10]"
 msgstr "你收到一艘平民船的求救信号。它正被一艘螳螂族飞船追击！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:475
+#: src-ru/data/events_mantis.xml.rawclobber:484
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[1]"
 msgstr "那艘冒着烟的平民船艰难地继续前行。你尽量不去想它的命运，专注于未来。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:476
+#: src-ru/data/events_mantis.xml.rawclobber:485
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[2]"
 msgstr "超光速驱动器加速的声音几乎被爆炸声淹没。只是几乎。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:477
+#: src-ru/data/events_mantis.xml.rawclobber:486
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[3]"
 msgstr "你放他们离开，尽量不去想这件事。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:479
+#: src-ru/data/events_mantis.xml.rawclobber:488
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[4]"
 msgstr "那艘冒着烟的平民船艰难地继续前行。你尽量不去想它的命运，专注于未来。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:480
+#: src-ru/data/events_mantis.xml.rawclobber:489
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[5]"
 msgstr "超光速驱动器加速的声音几乎被爆炸声淹没。只是几乎。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:481
+#: src-ru/data/events_mantis.xml.rawclobber:490
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_CIVILIAN_AVOID\"]/text[6]"
 msgstr "你放他们离开，尽量不去想这件事。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:485
+#: src-ru/data/events_mantis.xml.rawclobber:494
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/text"
 msgstr "你发现并捞起了一艘漂浮在附近的救生舱。你正想把它扔回太空，却注意到它属于螳螂族。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:487
+#: src-ru/data/events_mantis.xml.rawclobber:496
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[1]/text"
 msgstr "好奇地打开。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:491
+#: src-ru/data/events_mantis.xml.rawclobber:500
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[2]/text"
 msgstr "扔掉救生舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:493
+#: src-ru/data/events_mantis.xml.rawclobber:502
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[2]/event/text"
 msgstr "你把救生舱扔回太空。你又不是白痴。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:497
+#: src-ru/data/events_mantis.xml.rawclobber:506
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr "（红外扫描仪）扫描内部有什么。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:501
+#: src-ru/data/events_mantis.xml.rawclobber:510
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[@req=\"slug_crew\"]/text"
 msgstr "（蛞蝓族船员）让蛞蝓族看看里面有什么。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:505
+#: src-ru/data/events_mantis.xml.rawclobber:514
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[@req=\"orchid_crew\"]/text"
 msgstr "（兰花族船员）在打开救生舱之前，用安抚性芳香物质充满舱室。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:507
+#: src-ru/data/events_mantis.xml.rawclobber:516
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_CREW\"]/choice[@req=\"orchid_crew\"]/event/text"
 msgstr "里面的螳螂正在休息。醒来后，他很高兴能呼吸到新鲜空气并自由活动四肢。这只螳螂提议在找到回家的路之前加入你的船员队伍。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:515
+#: src-ru/data/events_mantis.xml.rawclobber:524
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[1]/text"
 msgstr "扫描仪显示里面是一只螳螂。也许不该放他出来。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:517
+#: src-ru/data/events_mantis.xml.rawclobber:526
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[1]/choice[1]/text"
 msgstr "打开救生舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:521
+#: src-ru/data/events_mantis.xml.rawclobber:530
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[1]/choice[2]/text"
 msgstr "扔掉救生舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:523
+#: src-ru/data/events_mantis.xml.rawclobber:532
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[1]/choice[2]/event/text"
 msgstr "你把救生舱扔回太空。你又不是白痴。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:528
+#: src-ru/data/events_mantis.xml.rawclobber:537
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[2]/text"
 msgstr "扫描仪显示里面是一只螳螂。也许不该放他出来。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:530
+#: src-ru/data/events_mantis.xml.rawclobber:539
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[2]/choice[1]/text"
 msgstr "打开救生舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:534
+#: src-ru/data/events_mantis.xml.rawclobber:543
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[2]/choice[2]/text"
 msgstr "扔掉救生舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:536
+#: src-ru/data/events_mantis.xml.rawclobber:545
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[2]/choice[2]/event/text"
 msgstr "你把救生舱扔回太空。你又不是白痴。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:541
+#: src-ru/data/events_mantis.xml.rawclobber:550
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_CREW_LIST\"]/event[3]/text"
 msgstr ""
 "扫描仪显示里面是一个人类，你打开了救生舱。囚徒挣脱出来，尖叫着蜷缩在角落里。很少有人能在螳螂族的囚禁下幸存。冷静下来后，他提出暂时加入你的船员队伍。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:547
+#: src-ru/data/events_mantis.xml.rawclobber:556
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/text"
 msgstr "蛞蝓族说里面是一只极度亢奋的螳螂。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:549
+#: src-ru/data/events_mantis.xml.rawclobber:558
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[1]/text"
 msgstr "打开救生舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:551
+#: src-ru/data/events_mantis.xml.rawclobber:560
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[1]/event/text"
 msgstr "里面的螳螂已经暴怒。他猛力一挥，将离他最近的一个生物撕成两半。在他造成更多伤亡之前杀了他。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:558
+#: src-ru/data/events_mantis.xml.rawclobber:567
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[1]/event/choice/event/removeCrew/text"
 msgstr "螳螂震惊了。他看到刚刚被他杀死的你的船员从克隆舱里走了出来。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:565
+#: src-ru/data/events_mantis.xml.rawclobber:574
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[2]/text"
 msgstr "扔掉救生舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:567
+#: src-ru/data/events_mantis.xml.rawclobber:576
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[1]/choice[2]/event/text"
 msgstr "你把救生舱扔回太空。你又不是白痴。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:572
+#: src-ru/data/events_mantis.xml.rawclobber:581
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/text"
 msgstr "蛞蝓族说里面是一只平静的螳螂。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:574
+#: src-ru/data/events_mantis.xml.rawclobber:583
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/choice[1]/text"
 msgstr "打开救生舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:576
+#: src-ru/data/events_mantis.xml.rawclobber:585
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/choice[1]/event/text"
 msgstr "里面的螳螂视你为神之使者，请求加入你的船员队伍。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:581
+#: src-ru/data/events_mantis.xml.rawclobber:590
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/choice[2]/text"
 msgstr "扔掉救生舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:583
+#: src-ru/data/events_mantis.xml.rawclobber:592
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[2]/choice[2]/event/text"
 msgstr "你把救生舱扔回太空。你又不是白痴。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:588
+#: src-ru/data/events_mantis.xml.rawclobber:597
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_SCAN_SLUG_CREW_LIST\"]/event[3]/text"
 msgstr ""
 "蛞蝓族说里面是一个人类，你打开了救生舱。囚徒挣脱出来，尖叫着蜷缩在角落里。很少有人能在螳螂族的囚禁下幸存。冷静下来后，他提出暂时加入你的船员队伍。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:594
+#: src-ru/data/events_mantis.xml.rawclobber:603
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[1]/text"
 msgstr "里面的螳螂已经暴怒。他猛力一挥，将离他最近的一个生物撕成两半。在他造成更多伤亡之前杀了他。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:601
+#: src-ru/data/events_mantis.xml.rawclobber:610
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr "螳螂震惊了。他看到刚刚被他杀死的你的船员从克隆舱里走了出来。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:608
+#: src-ru/data/events_mantis.xml.rawclobber:617
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr "由于你的飞船由AI控制，你无需担心全体船员死亡。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:613
+#: src-ru/data/events_mantis.xml.rawclobber:622
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[2]/text"
 msgstr "里面的螳螂视你为神之使者，请求加入你的船员队伍。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:617
+#: src-ru/data/events_mantis.xml.rawclobber:626
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST\"]/event[3]/text"
 msgstr "一个人类从救生舱中挣脱出来，尖叫着蜷缩在角落里。很少有人能在螳螂族的囚禁下幸存。冷静下来后，他提出暂时加入你的船员队伍。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:623
+#: src-ru/data/events_mantis.xml.rawclobber:632
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST_2\"]/event[1]/text"
 msgstr "里面的螳螂已经暴怒。他猛力一挥，将离他最近的一个生物撕成两半。在他造成更多伤亡之前杀了他。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:630
+#: src-ru/data/events_mantis.xml.rawclobber:639
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST_2\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr "螳螂震惊了。他看到刚刚被他杀死的你的船员从克隆舱里走了出来。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:637
+#: src-ru/data/events_mantis.xml.rawclobber:646
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST_2\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr "由于你的飞船由AI控制，你无需担心全体船员死亡。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:642
+#: src-ru/data/events_mantis.xml.rawclobber:651
 msgid ""
 "data/events_mantis.xml.rawclobber$//eventList[@name=\"MANTIS_CREW_LIST_2\"]/event[2]/text"
 msgstr "里面的螳螂视你为神之使者，请求加入你的船员队伍。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:653
+#: src-ru/data/events_mantis.xml.rawclobber:662
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_SUN_FIGHT\"]/text"
 msgstr "谁知道这只螳螂为什么冒着风险待在离太阳这么近的地方。也许他在寻找更具挑战性的考验？"
 
-#: src-ru/data/events_mantis.xml.rawclobber:676
+#: src-ru/data/events_mantis.xml.rawclobber:685
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_BOARDERS\"]/text[1]"
 msgstr "一艘被遗弃的、仍在冒烟的螳螂族飞船从旁边飘过。战斗想必是刚发生不久。幸存的船员传送到了你的飞船上。准备战斗！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:677
+#: src-ru/data/events_mantis.xml.rawclobber:686
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_BOARDERS\"]/text[2]"
 msgstr "你平静的生活之流突然改变。螳螂族登上了你的飞船。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:678
+#: src-ru/data/events_mantis.xml.rawclobber:687
 msgid ""
 "data/events_mantis.xml.rawclobber$//textList[@name=\"MANTIS_BOARDERS\"]/text[3]"
 msgstr "你听到刮擦声和轻微的咔哒声。你伸手去拿手枪。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:692
+#: src-ru/data/events_mantis.xml.rawclobber:701
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/text"
 msgstr ""
 "你遇到了一艘螳螂族飞船，它装有数十层附加装甲，恐怕是经过数百年飞行后缝补上去的。它的船长是传奇大盗卡扎卡普勒斯里克。你的船员们看起来很害怕。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:694
+#: src-ru/data/events_mantis.xml.rawclobber:703
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[@req=\"mantis_crew\"]/text"
 msgstr "（螳螂族船员）试着向他致意。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:696
+#: src-ru/data/events_mantis.xml.rawclobber:705
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[@req=\"mantis_crew\"]/event/text"
 msgstr ""
 "你的螳螂族船员走上前。他和卡扎卡普勒斯里克表演了一段类似仪式性的舞蹈。出于对你船上那只螳螂的尊重，卡扎卡普勒斯里克承诺不会将武器全力开启。与此同时，你为战斗系统充能。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:701
+#: src-ru/data/events_mantis.xml.rawclobber:710
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[@req=\"mantis_crew\"]/event/choice/event/text"
 msgstr "你对卡扎卡普勒斯里克的决定相当惊讶，但还是做好了战斗准备。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:708
+#: src-ru/data/events_mantis.xml.rawclobber:717
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[2]/text"
 msgstr "做好战斗准备。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:710
+#: src-ru/data/events_mantis.xml.rawclobber:719
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF\"]/choice[2]/event/text"
 msgstr "你正在准备战斗……"
 
-#: src-ru/data/events_mantis.xml.rawclobber:716
+#: src-ru/data/events_mantis.xml.rawclobber:725
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/text"
 msgstr "他们的飞船上没有任何生命迹象。看来你赢了。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:718
+#: src-ru/data/events_mantis.xml.rawclobber:727
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[1]/text"
 msgstr "进入内部洗劫他们的飞船。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:720
+#: src-ru/data/events_mantis.xml.rawclobber:729
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[1]/event/text"
 msgstr "对于如此可怕的敌人来说，以如此愚蠢的方式死去似乎毫无意义。你对此不予理会，拿走了所有能拿的东西。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:725
+#: src-ru/data/events_mantis.xml.rawclobber:734
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/text"
 msgstr "（传送装置）快速传送船员并寻找幸存者。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:727
+#: src-ru/data/events_mantis.xml.rawclobber:736
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/text"
 msgstr "你发现奄奄一息的卡扎卡普勒斯里克倒在角落里。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:729
+#: src-ru/data/events_mantis.xml.rawclobber:738
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[1]/text"
 msgstr "毫不留情地结果他。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:731
+#: src-ru/data/events_mantis.xml.rawclobber:740
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[1]/event/text"
 msgstr "著名船长卡扎卡普勒斯里克的生命就这样结束了……你在仔细搜刮他的飞船时，思索着他带进了坟墓哪些秘密。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:736
+#: src-ru/data/events_mantis.xml.rawclobber:745
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[2]/text"
 msgstr "听听他说什么。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:738
+#: src-ru/data/events_mantis.xml.rawclobber:747
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[2]/event/text"
 msgstr "在临终之际，他说出了自己藏匿点的坐标。你在仔细搜刮他的飞船时，思索着他还带走了哪些秘密。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:744
+#: src-ru/data/events_mantis.xml.rawclobber:753
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"medbay\"]/text"
 msgstr "（先进医疗舱）迅速将他传送到医疗舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:746
+#: src-ru/data/events_mantis.xml.rawclobber:755
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"medbay\"]/event/text"
 msgstr "你的迅速行动得到了回报，你把他从死亡线上拉了回来。当他苏醒后，他说：“我从没想过会有这一天，所以……我想投身于你的事业。”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:748
+#: src-ru/data/events_mantis.xml.rawclobber:757
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"medbay\"]/event/choice/text"
 msgstr "接受。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:754
+#: src-ru/data/events_mantis.xml.rawclobber:763
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"clonebay\"]/text"
 msgstr "（先进克隆舱）快速调整克隆舱，救活他。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:756
+#: src-ru/data/events_mantis.xml.rawclobber:765
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"clonebay\"]/event/text"
 msgstr ""
 "你的迅速行动得到了回报，你把他登记到了克隆舱数据库中。螳螂死后，他很快在你的飞船上复活。苏醒后，他说：“我从没想过会有这一天……我愿意投身于你的事业。”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:758
+#: src-ru/data/events_mantis.xml.rawclobber:767
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"clonebay\"]/event/choice/text"
 msgstr "接受。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:766
+#: src-ru/data/events_mantis.xml.rawclobber:775
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/text"
 msgstr "（先进传感器）快速扫描他们的飞船寻找幸存者。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:768
+#: src-ru/data/events_mantis.xml.rawclobber:777
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/text"
 msgstr "你发现奄奄一息的卡扎卡普勒斯里克倒在角落里。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:770
+#: src-ru/data/events_mantis.xml.rawclobber:779
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[1]/text"
 msgstr "让他等死。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:772
+#: src-ru/data/events_mantis.xml.rawclobber:781
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[1]/event/text"
 msgstr "著名船长卡扎卡普勒斯里克的生命就这样结束了……你在仔细搜刮他的飞船时，思索着他带进了坟墓哪些秘密。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:777
+#: src-ru/data/events_mantis.xml.rawclobber:786
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[2]/text"
 msgstr "对接并尝试与他交谈。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:779
+#: src-ru/data/events_mantis.xml.rawclobber:788
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[2]/event/text"
 msgstr "在临终之际，他说出了自己藏匿点的坐标。你在仔细搜刮他的飞船时，思索着他还带走了哪些秘密。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:785
+#: src-ru/data/events_mantis.xml.rawclobber:794
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"medbay\"]/text"
 msgstr "（先进医疗舱）对接并迅速将他转移到医疗舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:787
+#: src-ru/data/events_mantis.xml.rawclobber:796
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"medbay\"]/event/text"
 msgstr "你的迅速行动得到了回报，你把他从死亡线上拉了回来。当他苏醒后，他说：“我从没想过会有这一天，所以……我想投身于你的事业。”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:789
+#: src-ru/data/events_mantis.xml.rawclobber:798
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"medbay\"]/event/choice/text"
 msgstr "接受。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:795
+#: src-ru/data/events_mantis.xml.rawclobber:804
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"clonebay\"]/text"
 msgstr "（先进克隆舱）快速调整克隆舱，救活他。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:797
+#: src-ru/data/events_mantis.xml.rawclobber:806
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"clonebay\"]/event/text"
 msgstr ""
 "你的迅速行动得到了回报，你把他登记到了克隆舱数据库中。螳螂死后，他很快在你的飞船上复活。苏醒后，他说：“我从没想过会有这一天……我愿意投身于你的事业。”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:799
+#: src-ru/data/events_mantis.xml.rawclobber:808
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"sensors\"]/event/choice[@req=\"clonebay\"]/event/choice/text"
 msgstr "接受。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:807
+#: src-ru/data/events_mantis.xml.rawclobber:816
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/text"
 msgstr "（定向扫描仪）快速扫描他们的飞船寻找幸存者。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:809
+#: src-ru/data/events_mantis.xml.rawclobber:818
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/text"
 msgstr "你发现奄奄一息的卡扎卡普勒斯里克倒在角落里。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:811
+#: src-ru/data/events_mantis.xml.rawclobber:820
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[1]/text"
 msgstr "让他等死。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:813
+#: src-ru/data/events_mantis.xml.rawclobber:822
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[1]/event/text"
 msgstr "著名船长卡扎卡普勒斯里克的生命就这样结束了……你在仔细搜刮他的飞船时，思索着他带进了坟墓哪些秘密。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:818
+#: src-ru/data/events_mantis.xml.rawclobber:827
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[2]/text"
 msgstr "对接并尝试与他交谈。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:820
+#: src-ru/data/events_mantis.xml.rawclobber:829
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[2]/event/text"
 msgstr "在临终之际，他说出了自己藏匿点的坐标。你在仔细搜刮他的飞船时，思索着他还带走了哪些秘密。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:826
+#: src-ru/data/events_mantis.xml.rawclobber:835
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"medbay\"]/text"
 msgstr "（先进医疗舱）对接并迅速将他转移到医疗舱。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:828
+#: src-ru/data/events_mantis.xml.rawclobber:837
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"medbay\"]/event/text"
 msgstr "你的迅速行动得到了回报，你把他从死亡线上拉了回来。当他苏醒后，他说：“我从没想过会有这一天，所以……我想投身于你的事业。”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:830
+#: src-ru/data/events_mantis.xml.rawclobber:839
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"medbay\"]/event/choice/text"
 msgstr "接受。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:836
+#: src-ru/data/events_mantis.xml.rawclobber:845
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"clonebay\"]/text"
 msgstr "（先进克隆舱）快速调整克隆舱，救活他。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:838
+#: src-ru/data/events_mantis.xml.rawclobber:847
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"clonebay\"]/event/text"
 msgstr ""
 "你的迅速行动得到了回报，你把他登记到了克隆舱数据库中。螳螂死后，他很快在你的飞船上复活。苏醒后，他说：“我从没想过会有这一天……我愿意投身于你的事业。”"
 
-#: src-ru/data/events_mantis.xml.rawclobber:840
+#: src-ru/data/events_mantis.xml.rawclobber:849
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_DEFEAT\"]/choice[@req=\"SHIPRADAR\"]/event/choice[@req=\"clonebay\"]/event/choice/text"
 msgstr "接受。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:850
+#: src-ru/data/events_mantis.xml.rawclobber:859
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"KAZAAK\"]/text"
 msgstr ""
 "卡扎卡普勒斯里克加入了船员队伍，并指出了附近一个藏匿偷来的军用物资的藏匿点坐标，还提供了他一直在改装的一艘巡洋舰的坐标。你将这些信息转发给了联邦，相信他们会处理。"
 
-#: src-ru/data/events_mantis.xml.rawclobber:854
+#: src-ru/data/events_mantis.xml.rawclobber:863
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"KAZAAK\"]/crewMember"
 msgstr "卡扎"
 
-#: src-ru/data/events_mantis.xml.rawclobber:857
+#: src-ru/data/events_mantis.xml.rawclobber:866
 msgid "data/events_mantis.xml.rawclobber$//event[@name=\"KAZAAK\"]/unlockShip"
 msgstr "螳螂族巡洋舰已解锁并添加到舰库！"
 
-#: src-ru/data/events_mantis.xml.rawclobber:862
+#: src-ru/data/events_mantis.xml.rawclobber:871
 msgid ""
 "data/events_mantis.xml.rawclobber$//event[@name=\"MANTIS_NAMED_THIEF_STASH\"]/text"
 msgstr "你来到一个小行星带，在残骸中发现了一个藏匿点。你输入卡扎卡普勒斯里克给你的密码，在里面找到了武器。"

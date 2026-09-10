@@ -387,1009 +387,1014 @@ msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_REFUEL\"]/destroyed/choice/event/text"
 msgstr "摧毁侦察船后，前哨向你致意：“感谢帮助。那些侦察船一直骚扰我们。给，这是我们的谢礼。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:582
+#: src-ru/data/events_ships.xml.rawclobber:584
 msgid ""
-"data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_MAP\"]/destroyed/text"
+"data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_MAP\"]/destroyed/loadEventList/event[1]/text"
+msgstr ""
+
+#: src-ru/data/events_ships.xml.rawclobber:588
+msgid ""
+"data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_MAP\"]/destroyed/loadEventList/event[2]/text"
 msgstr "毫无防御的站点让你查阅了周边区域的最新数据。你的星图补充了周围空间的详细信息。"
 
-#: src-ru/data/events_ships.xml.rawclobber:590
+#: src-ru/data/events_ships.xml.rawclobber:598
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_ITEM\"]/destroyed/text"
 msgstr "你从被击毁的飞船上收集了所有能拿的东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:593
+#: src-ru/data/events_ships.xml.rawclobber:601
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_ITEM\"]/destroyed/choice/text"
 msgstr "侦察这个站点。"
 
-#: src-ru/data/events_ships.xml.rawclobber:601
+#: src-ru/data/events_ships.xml.rawclobber:609
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/text"
 msgstr "你收集了所有能拿的东西，并靠近了站点。它被用来向叛军舰队传输信息。你可以入侵它，向叛军发送虚假信息。"
 
-#: src-ru/data/events_ships.xml.rawclobber:604
+#: src-ru/data/events_ships.xml.rawclobber:612
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/choice[1]/text"
 msgstr "尝试手动入侵站点。"
 
-#: src-ru/data/events_ships.xml.rawclobber:608
+#: src-ru/data/events_ships.xml.rawclobber:616
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/choice[2]/text"
 msgstr "不冒险。离开站点。"
 
-#: src-ru/data/events_ships.xml.rawclobber:612
+#: src-ru/data/events_ships.xml.rawclobber:620
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/choice[@req=\"hacking\"]/text"
 msgstr "（入侵无人机）使用无人机入侵站点。"
 
-#: src-ru/data/events_ships.xml.rawclobber:614
+#: src-ru/data/events_ships.xml.rawclobber:622
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/choice[@req=\"hacking\"]/event/text"
 msgstr "你成功入侵了他们的系统，并发送了关于你位置的虚假信息。这应该能稍微拖延舰队。你还下载了周围信标的信息。"
 
-#: src-ru/data/events_ships.xml.rawclobber:627
+#: src-ru/data/events_ships.xml.rawclobber:635
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_WARNING\"]/escape/text"
 msgstr "飞船开始为其超光速引擎充能。如果它溜走，无疑会通知舰队你的位置。"
 
-#: src-ru/data/events_ships.xml.rawclobber:631
+#: src-ru/data/events_ships.xml.rawclobber:639
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_WARNING\"]/gotaway/text"
 msgstr "侦察船飞走了。它肯定已经通知了舰队你的位置。你必须尽快赶到下一个星区。"
 
-#: src-ru/data/events_ships.xml.rawclobber:635
+#: src-ru/data/events_ships.xml.rawclobber:643
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_WARNING\"]/destroyed/text"
 msgstr "飞船四分五裂，你松了口气，意识到你可能仍然领先舰队一步。"
 
-#: src-ru/data/events_ships.xml.rawclobber:642
+#: src-ru/data/events_ships.xml.rawclobber:650
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_BAIT\"]/escape/text"
 msgstr "小心！传感器显示这艘自动舰装备了在自身被摧毁时通知舰队你位置的装置。最好别冒险，绕开它，否则舰队会在这个星区更快发现你。"
 
-#: src-ru/data/events_ships.xml.rawclobber:646
+#: src-ru/data/events_ships.xml.rawclobber:654
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_BAIT\"]/gotaway/text"
 msgstr "侦察船飞走了。它肯定已经通知了舰队你的位置。你必须尽快赶到下一个星区。"
 
-#: src-ru/data/events_ships.xml.rawclobber:650
+#: src-ru/data/events_ships.xml.rawclobber:658
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_BAIT\"]/destroyed/text"
 msgstr "飞船刚化为碎片，你就探测到一个外发的信号。舰队想必刚刚得知了你的位置。"
 
-#: src-ru/data/events_ships.xml.rawclobber:658
+#: src-ru/data/events_ships.xml.rawclobber:666
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_REFUEL_STATION\"]/destroyed/text"
 msgstr "飞船解体，你迅速收集了所有有用的残留物。"
 
-#: src-ru/data/events_ships.xml.rawclobber:663
+#: src-ru/data/events_ships.xml.rawclobber:671
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_REFUEL_STATION\"]/destroyed/choice/event/text"
 msgstr "前哨向你致意：“那些自大的混蛋以为他们打败了联邦就能免费享受服务。给你，这是感谢你的帮助。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:669
+#: src-ru/data/events_ships.xml.rawclobber:677
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_REFUEL_STATION\"]/deadCrew/text"
 msgstr "既然船员已死，你可以毫无阻碍地搜索飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:674
+#: src-ru/data/events_ships.xml.rawclobber:682
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_REFUEL_STATION\"]/deadCrew/choice/event/text"
 msgstr "前哨向你致意：“那些自大的混蛋以为他们打败了联邦就能免费享受服务。给你，这是感谢你的帮助。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:683
+#: src-ru/data/events_ships.xml.rawclobber:691
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_WARNING\"]/escape/text"
 msgstr "他们正在为超光速引擎充能。如果他们溜走，无疑会通知舰队你的位置。"
 
-#: src-ru/data/events_ships.xml.rawclobber:687
+#: src-ru/data/events_ships.xml.rawclobber:695
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_WARNING\"]/gotaway/text"
 msgstr "侦察船飞走了。它肯定已经通知了舰队你的位置。你必须尽快赶到下一个星区。"
 
-#: src-ru/data/events_ships.xml.rawclobber:691
+#: src-ru/data/events_ships.xml.rawclobber:699
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_WARNING\"]/destroyed/text"
 msgstr "飞船四分五裂，你松了口气，意识到你仍然领先舰队一步。"
 
-#: src-ru/data/events_ships.xml.rawclobber:695
+#: src-ru/data/events_ships.xml.rawclobber:703
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_WARNING\"]/deadCrew/text"
 msgstr "飞船安静下来，你松了口气，意识到你仍然领先舰队一步。"
 
-#: src-ru/data/events_ships.xml.rawclobber:702
+#: src-ru/data/events_ships.xml.rawclobber:710
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_TRANSPORT\"]/escape/text"
 msgstr "看来他们不想战斗，正试图逃跑。"
 
-#: src-ru/data/events_ships.xml.rawclobber:711
+#: src-ru/data/events_ships.xml.rawclobber:719
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_STORE_RESCUE\"]/destroyed/text"
 msgstr "前哨向你致意：“谢谢你！我不知道我们怎么惹怒了叛军，但他们准备杀了我们。我会让你看看我们的商品，并修理你的飞船。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:720
+#: src-ru/data/events_ships.xml.rawclobber:728
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_STORE_RESCUE\"]/deadCrew/text"
 msgstr "前哨向你致意：“谢谢你！我不知道我们怎么惹怒了叛军，但他们准备杀了我们。我会让你看看我们的商品，并修理你的飞船。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:732
+#: src-ru/data/events_ships.xml.rawclobber:740
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FEDERATION_BASE\"]/destroyed/text"
 msgstr "你将残骸拆解成废料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:737
+#: src-ru/data/events_ships.xml.rawclobber:745
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FEDERATION_BASE\"]/destroyed/choice/event/text"
 msgstr ""
 "当威胁消失后，你联系了联邦的前哨站。他们回答：“叛军已经知道了我们的坐标！带上所有你能拿的东西，并请护送幸存者到最近的基础。”一名登船的士兵表示愿意加入你的队伍。"
 
-#: src-ru/data/events_ships.xml.rawclobber:746
+#: src-ru/data/events_ships.xml.rawclobber:754
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FEDERATION_BASE2\"]/destroyed/text"
 msgstr "你将残骸拆解成废料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:751
+#: src-ru/data/events_ships.xml.rawclobber:759
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FEDERATION_BASE2\"]/destroyed/choice/event/text"
 msgstr "摧毁叛军飞船后，你联系了站点。唯一的幸存者回答：“这个基地不再安全了。请允许我加入你的队伍，我可以用站点的无人机修理你的飞船。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:762
+#: src-ru/data/events_ships.xml.rawclobber:770
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_VS_FEDERATION\"]/destroyed/text"
 msgstr "摧毁飞船后，你迅速收集了所有剩余的有用资源。"
 
-#: src-ru/data/events_ships.xml.rawclobber:765
+#: src-ru/data/events_ships.xml.rawclobber:773
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_VS_FEDERATION\"]/destroyed/choice/text"
 msgstr "联系联邦飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:770
+#: src-ru/data/events_ships.xml.rawclobber:778
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_VS_FEDERATION\"]/deadCrew/text"
 msgstr "既然叛军船员已死，你可以毫无阻碍地搜索他们的飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:773
+#: src-ru/data/events_ships.xml.rawclobber:781
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_VS_FEDERATION\"]/deadCrew/choice/text"
 msgstr "联系联邦飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:782
+#: src-ru/data/events_ships.xml.rawclobber:790
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"LONG_ELITE\"]/destroyed/text"
 msgstr "你可以从飞船残骸中获取废料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:790
+#: src-ru/data/events_ships.xml.rawclobber:798
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"LONG_FLEET\"]/destroyed/text"
 msgstr "没时间搜索残骸了……你必须在巡洋舰进入射程之前离开！"
 
-#: src-ru/data/events_ships.xml.rawclobber:796
+#: src-ru/data/events_ships.xml.rawclobber:804
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"LONG_FLEET\"]/deadCrew/text"
 msgstr "没时间搜索残骸了……你必须在巡洋舰进入射程之前离开！"
 
-#: src-ru/data/events_ships.xml.rawclobber:813
+#: src-ru/data/events_ships.xml.rawclobber:821
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FLEET_FUEL\"]/escape/text"
 msgstr "看来他们不想战斗，正试图逃跑。"
 
-#: src-ru/data/events_ships.xml.rawclobber:816
+#: src-ru/data/events_ships.xml.rawclobber:824
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FLEET_FUEL\"]/gotaway/text"
 msgstr "飞船默默地飞走了。你猜想他们是去叫救兵了……"
 
-#: src-ru/data/events_ships.xml.rawclobber:819
+#: src-ru/data/events_ships.xml.rawclobber:827
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FLEET_FUEL\"]/destroyed/text"
 msgstr "你可以在叛军巡洋舰开火前偷走几罐急需的燃料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:825
+#: src-ru/data/events_ships.xml.rawclobber:833
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FLEET_FUEL\"]/deadCrew/text"
 msgstr "你可以在叛军巡洋舰开火前偷走几罐急需的燃料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:835
+#: src-ru/data/events_ships.xml.rawclobber:843
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2FAKE\"]/escape/text"
 msgstr "他们一发现你，就启动了引擎，打算逃跑。必须阻止他们！"
 
-#: src-ru/data/events_ships.xml.rawclobber:839
+#: src-ru/data/events_ships.xml.rawclobber:847
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2FAKE\"]/gotaway/text"
 msgstr "跟丢了飞船，你搜索基地寻找他们目的地的信息，但一无所获。"
 
-#: src-ru/data/events_ships.xml.rawclobber:843
+#: src-ru/data/events_ships.xml.rawclobber:851
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2FAKE\"]/destroyed/text"
 msgstr "你从残骸中尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:847
+#: src-ru/data/events_ships.xml.rawclobber:855
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2FAKE\"]/deadCrew/text"
 msgstr "快速浏览本地消息日志显示，这座基地从未有过你寻找的技术……你被引上了歧途！你收集所有可能有用的东西，开始准备跃迁。"
 
-#: src-ru/data/events_ships.xml.rawclobber:853
+#: src-ru/data/events_ships.xml.rawclobber:861
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2REAL\"]/escape/text"
 msgstr "他们一发现你，就启动了引擎，打算逃跑。必须阻止他们！"
 
-#: src-ru/data/events_ships.xml.rawclobber:857
+#: src-ru/data/events_ships.xml.rawclobber:865
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2REAL\"]/gotaway/text"
 msgstr "跟丢了飞船，你搜索基地寻找他们目的地的信息，但一无所获。"
 
-#: src-ru/data/events_ships.xml.rawclobber:861
+#: src-ru/data/events_ships.xml.rawclobber:869
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2REAL\"]/destroyed/text"
 msgstr "你从残骸中尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:865
+#: src-ru/data/events_ships.xml.rawclobber:873
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2REAL\"]/deadCrew/text"
 msgstr "解决了船员后，你查看他们的消息日志寻找目标。运气不错！看来符合窃贼描述的飞船最近在附近经过。你拿走所有值钱的东西，准备继续追击。"
 
-#: src-ru/data/events_ships.xml.rawclobber:875
+#: src-ru/data/events_ships.xml.rawclobber:883
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"DISTRESS_ENGI_REBEL\"]/destroyed/text"
 msgstr "干掉了叛军，你拿走所有值钱的东西，等待那艘小型半械族飞船追上你。"
 
-#: src-ru/data/events_ships.xml.rawclobber:883
+#: src-ru/data/events_ships.xml.rawclobber:891
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"DISTRESS_ENGI_REBEL\"]/deadCrew/text"
 msgstr "干掉了叛军，你拿走所有值钱的东西，等待那艘小型半械族飞船追上你。"
 
-#: src-ru/data/events_ships.xml.rawclobber:916
+#: src-ru/data/events_ships.xml.rawclobber:924
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/destroyed/text"
 msgstr "螳螂族飞船四分五裂。"
 
-#: src-ru/data/events_ships.xml.rawclobber:919
+#: src-ru/data/events_ships.xml.rawclobber:927
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/destroyed/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/text"
 msgstr "尝试联系半械族。"
 
-#: src-ru/data/events_ships.xml.rawclobber:923
+#: src-ru/data/events_ships.xml.rawclobber:931
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/destroyed/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"1\"]/text"
 msgstr "尝试联系半械族。"
 
-#: src-ru/data/events_ships.xml.rawclobber:928
+#: src-ru/data/events_ships.xml.rawclobber:936
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/deadCrew/text"
 msgstr "螳螂族飞船已无生命迹象。你急忙联系半械族。"
 
-#: src-ru/data/events_ships.xml.rawclobber:931
+#: src-ru/data/events_ships.xml.rawclobber:939
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/deadCrew/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/text"
 msgstr "尝试联系半械族。"
 
-#: src-ru/data/events_ships.xml.rawclobber:935
+#: src-ru/data/events_ships.xml.rawclobber:943
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/deadCrew/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"1\"]/text"
 msgstr "尝试联系半械族。"
 
-#: src-ru/data/events_ships.xml.rawclobber:943
+#: src-ru/data/events_ships.xml.rawclobber:951
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/escape/text"
 msgstr "看来他们不想战斗，正试图逃跑。"
 
-#: src-ru/data/events_ships.xml.rawclobber:946
+#: src-ru/data/events_ships.xml.rawclobber:954
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/gotaway/text"
 msgstr "一言不发，那艘船跃迁离开了。你希望他们不是去叫救兵。"
 
-#: src-ru/data/events_ships.xml.rawclobber:949
+#: src-ru/data/events_ships.xml.rawclobber:957
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/destroyed/text"
 msgstr "摧毁敌对的半械族飞船后，你小心地从残骸中取出幸存的燃料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:953
+#: src-ru/data/events_ships.xml.rawclobber:961
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/deadCrew/text"
 msgstr "摧毁敌对的半械族后，你小心地从他们的飞船中取出燃料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:979
+#: src-ru/data/events_ships.xml.rawclobber:987
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[1]"
 msgstr "胜利！一名岩石族因爆炸飞向你的舰桥时，你奇迹般地避免了舰体破裂。"
 
-#: src-ru/data/events_ships.xml.rawclobber:980
+#: src-ru/data/events_ships.xml.rawclobber:988
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[2]"
 msgstr "岩石族飞船解体。燃烧的超光速引擎将其船员化作了星尘。"
 
-#: src-ru/data/events_ships.xml.rawclobber:981
+#: src-ru/data/events_ships.xml.rawclobber:989
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[3]"
 msgstr "敌舰承受了你最后一轮齐射后解体。岩石族被彻底消灭。"
 
-#: src-ru/data/events_ships.xml.rawclobber:982
+#: src-ru/data/events_ships.xml.rawclobber:990
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[4]"
 msgstr "你眨了一下眼，他们就不见了：岩石族飞船只剩下最坚固的几块舰体碎片。也许其中有些东西还能用。"
 
-#: src-ru/data/events_ships.xml.rawclobber:983
+#: src-ru/data/events_ships.xml.rawclobber:991
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[5]"
 msgstr "岩石族很少不战而退，但这次他们不得不退。他们的飞船被击得粉碎，你可以随意拿走任何东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:986
+#: src-ru/data/events_ships.xml.rawclobber:994
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_CREWDEAD\"]/text[1]"
 msgstr "岩石族是强壮的生物，所以你在登舰时格外小心。似乎一切平静——你拿走所需的一切后离开了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:987
+#: src-ru/data/events_ships.xml.rawclobber:995
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_CREWDEAD\"]/text[2]"
 msgstr "传感器未在敌舰上探测到生命迹象。谁知道岩石族会这么弱？是时候打劫了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:988
+#: src-ru/data/events_ships.xml.rawclobber:996
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_CREWDEAD\"]/text[3]"
 msgstr "岩石族试图联系你，但当视频信号同步时，你看到的只是他们最后一名船员，毫无生气地瘫在椅子上。就把它当作一个邀请，让你去洗劫他们的补给吧。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1011
+#: src-ru/data/events_ships.xml.rawclobber:1019
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ROCK_UNLOCK2\"]/escape/text"
 msgstr "岩石族飞船开始预热超光速引擎。如果我们想赢得他们的信任，就必须像他们一样忍受这高温！"
 
-#: src-ru/data/events_ships.xml.rawclobber:1015
+#: src-ru/data/events_ships.xml.rawclobber:1023
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ROCK_UNLOCK2\"]/gotaway/text"
 msgstr "跃迁前，他们向你的导航系统发送了坐标。这是邀请你跟随他们！"
 
-#: src-ru/data/events_ships.xml.rawclobber:1019
+#: src-ru/data/events_ships.xml.rawclobber:1027
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ROCK_UNLOCK2\"]/destroyed/text"
 msgstr "他们的飞船解体，你感到一阵痛心的愧疚。如果情况不同，他们或许能为联邦所用。你收集所有可能有用的东西，准备从这个炼狱中跃迁离开。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1023
+#: src-ru/data/events_ships.xml.rawclobber:1031
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ROCK_UNLOCK2\"]/deadCrew/text"
 msgstr "他们的飞船安静下来，你感到一阵痛心的愧疚。如果情况不同，他们或许能为联邦所用。你收集所有可能有用的东西，准备从这个炼狱中跃迁离开。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1050
+#: src-ru/data/events_ships.xml.rawclobber:1058
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CIVILIAN\"]/destroyed/text"
 msgstr "螳螂族飞船四分五裂。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1053
+#: src-ru/data/events_ships.xml.rawclobber:1061
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CIVILIAN\"]/destroyed/choice/text"
 msgstr "尝试联系平民船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1058
+#: src-ru/data/events_ships.xml.rawclobber:1066
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CIVILIAN\"]/deadCrew/text"
 msgstr "海盗船上已无生命迹象。你急忙联系那艘平民船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1061
+#: src-ru/data/events_ships.xml.rawclobber:1069
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CIVILIAN\"]/deadCrew/choice/text"
 msgstr "尝试联系平民船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1073
+#: src-ru/data/events_ships.xml.rawclobber:1081
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_NAMED_THIEF\"]/destroyed/text"
 msgstr "卡扎卡普勒斯里克战斗到了最后一刻，现在你检查他飞船的残骸，寻找幸存的部件。一种感觉挥之不去：他的死留下了一个未解的巨大谜团。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1084
+#: src-ru/data/events_ships.xml.rawclobber:1092
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_UNLOCK_3\"]/deadCrew/text"
 msgstr "你收集了所有能拿的东西，然后联系了那艘半械族飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1099
+#: src-ru/data/events_ships.xml.rawclobber:1107
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/destroyed/text"
 msgstr "螳螂被击败了，你联系了那艘受损的蛞蝓族飞船。“你看～～”他们开始说“我们非常感激，但～～我们目前没有流动性～～资金来酬谢你。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:1102
+#: src-ru/data/events_ships.xml.rawclobber:1110
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/destroyed/choice[1]/text"
 msgstr "和平地放他们走。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1104
+#: src-ru/data/events_ships.xml.rawclobber:1112
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/destroyed/choice[1]/event/text"
 msgstr "不值得为这些恶棍弄脏手。是时候加速离开这里了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1108
+#: src-ru/data/events_ships.xml.rawclobber:1116
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/destroyed/choice[2]/text"
 msgstr "干掉他们。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1113
+#: src-ru/data/events_ships.xml.rawclobber:1121
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/deadCrew/text"
 msgstr "螳螂被击败了，你联系了那艘受损的蛞蝓族飞船。“你看～～”他们开始说“我们非常感激，但～～我们目前没有流动性～～资金来酬谢你。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:1116
+#: src-ru/data/events_ships.xml.rawclobber:1124
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/deadCrew/choice[1]/text"
 msgstr "和平地放他们走。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1118
+#: src-ru/data/events_ships.xml.rawclobber:1126
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/deadCrew/choice[1]/event/text"
 msgstr "不值得为这些恶棍弄脏手。是时候加速离开这里了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1122
+#: src-ru/data/events_ships.xml.rawclobber:1130
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/deadCrew/choice[2]/text"
 msgstr "干掉他们。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1136
+#: src-ru/data/events_ships.xml.rawclobber:1144
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SHIP_SAVE_MANTIS2\"]/destroyed/text"
 msgstr "当你还在搜刮螳螂族的残骸时，超能族的安全巡逻队带着另外三艘船回来了。你迅速收拾了能拿的东西，赶在他们拦住你盘问之前启程。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1140
+#: src-ru/data/events_ships.xml.rawclobber:1148
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SHIP_SAVE_MANTIS2\"]/deadCrew/text"
 msgstr "当你还在搜刮螳螂族的残骸时，超能族的安全巡逻队带着另外三艘船回来了。你迅速收拾了能拿的东西，赶在他们拦住你盘问之前启程。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1171
+#: src-ru/data/events_ships.xml.rawclobber:1179
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK2\"]/destroyed/text"
 msgstr "解决了登陆舰后，你注意到了建造平台。然而，你发现它早已消失在星云中。你收集了能拿的东西，准备继续前行。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1175
+#: src-ru/data/events_ships.xml.rawclobber:1183
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK2\"]/deadCrew/text"
 msgstr "解决了登陆舰后，你注意到了建造平台。然而，你发现它早已消失在星云中。你收集了能拿的东西，准备继续前行。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1181
+#: src-ru/data/events_ships.xml.rawclobber:1189
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/escape/text"
 msgstr "拦截舰正在预热超光速引擎准备逃跑。这时你注意到巡洋舰也在做同样的事。他们肯定是联合起来了！别让他们跑了！"
 
-#: src-ru/data/events_ships.xml.rawclobber:1185
+#: src-ru/data/events_ships.xml.rawclobber:1193
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/gotaway/text"
 msgstr "拦截舰和那艘利用其超光速尾迹导航的巡洋舰一起飞走了。你明明就差一点了……"
 
-#: src-ru/data/events_ships.xml.rawclobber:1188
+#: src-ru/data/events_ships.xml.rawclobber:1196
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/destroyed/text"
 msgstr ""
 "消灭了守卫后，你得意地看着战利品。但现在有紧急任务，连试飞的时间都没有。在将飞船设置为自动驾驶返回联邦基地之前，你拿走了那个让蛞蝓族能修复破舱的独特增强部件！"
 
-#: src-ru/data/events_ships.xml.rawclobber:1189
+#: src-ru/data/events_ships.xml.rawclobber:1197
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/destroyed/unlockShip"
 msgstr "蛞蝓族巡洋舰已解锁并添加到舰库！"
 
-#: src-ru/data/events_ships.xml.rawclobber:1194
+#: src-ru/data/events_ships.xml.rawclobber:1202
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/deadCrew/text"
 msgstr ""
 "消灭了守卫后，你得意地看着战利品。但现在有紧急任务，连试飞的时间都没有。在将飞船设置为自动驾驶返回联邦基地之前，你拿走了那个让蛞蝓族能修复破舱的独特增强部件！"
 
-#: src-ru/data/events_ships.xml.rawclobber:1195
+#: src-ru/data/events_ships.xml.rawclobber:1203
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/deadCrew/unlockShip"
 msgstr "蛞蝓族巡洋舰已解锁并添加到舰库！"
 
-#: src-ru/data/events_ships.xml.rawclobber:1204
+#: src-ru/data/events_ships.xml.rawclobber:1212
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_DISTRESS_ROCK\"]/destroyed/text"
 msgstr "摧毁蛞蝓族飞船后，你从残骸中取出一些废料，然后返回岩石族飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1212
+#: src-ru/data/events_ships.xml.rawclobber:1220
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_DISTRESS_ROCK\"]/deadCrew/text"
 msgstr "既然蛞蝓族不再构成威胁，你搜查了他们的飞船，然后返回岩石族那里。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1224
+#: src-ru/data/events_ships.xml.rawclobber:1232
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS_SLUG\"]/destroyed/text"
 msgstr "蛞蝓族的珍贵财物终于归你了。稍后你和螳螂族分享了战利品。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1228
+#: src-ru/data/events_ships.xml.rawclobber:1236
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS_SLUG\"]/deadCrew/text"
 msgstr "蛞蝓族的珍贵财物终于归你了。稍后你和螳螂族分享了战利品。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1237
+#: src-ru/data/events_ships.xml.rawclobber:1245
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_OVERPRICED\"]/escape/text"
 msgstr "看来他们不想战斗，正试图逃跑。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1240
+#: src-ru/data/events_ships.xml.rawclobber:1248
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_OVERPRICED\"]/gotaway/text"
 msgstr "一言不发，那艘船跃迁离开了。你希望他们不是去叫救兵。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1243
+#: src-ru/data/events_ships.xml.rawclobber:1251
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_OVERPRICED\"]/destroyed/text"
 msgstr "你从残骸中尽可能多地收集燃料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1247
+#: src-ru/data/events_ships.xml.rawclobber:1255
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_OVERPRICED\"]/deadCrew/text"
 msgstr "既然蛞蝓族飞船已被击败，你可以安心拿走所有能找到的燃料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1256
+#: src-ru/data/events_ships.xml.rawclobber:1264
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_OXYGEN\"]/destroyed/text"
 msgstr "蛞蝓族飞船解体，你的系统恢复正常功能。你尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1261
+#: src-ru/data/events_ships.xml.rawclobber:1269
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_OXYGEN\"]/deadCrew/text"
 msgstr "消灭船员后，你迅速关闭了他们的入侵模块，你的系统恢复正常。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1268
+#: src-ru/data/events_ships.xml.rawclobber:1276
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_OXYGEN_FIRE\"]/destroyed/text"
 msgstr "蛞蝓族飞船解体，你的系统恢复正常功能。你尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1274
+#: src-ru/data/events_ships.xml.rawclobber:1282
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_OXYGEN_FIRE\"]/deadCrew/text"
 msgstr "消灭船员后，他们的入侵系统关闭，你的系统恢复正常。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1287
+#: src-ru/data/events_ships.xml.rawclobber:1295
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_DOORS\"]/destroyed/text"
 msgstr "蛞蝓族飞船解体，你的系统恢复正常功能。你尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1293
+#: src-ru/data/events_ships.xml.rawclobber:1301
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_DOORS\"]/deadCrew/text"
 msgstr "消灭船员后，你迅速关闭了他们的入侵模块，你的系统恢复正常。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1305
+#: src-ru/data/events_ships.xml.rawclobber:1313
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_ENGINES\"]/destroyed/text"
 msgstr "蛞蝓族飞船解体，你的系统恢复正常功能。你尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1311
+#: src-ru/data/events_ships.xml.rawclobber:1319
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_ENGINES\"]/deadCrew/text"
 msgstr "消灭船员后，你迅速关闭了他们的入侵模块，你的系统恢复正常。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1319
+#: src-ru/data/events_ships.xml.rawclobber:1327
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_SHIELDS\"]/destroyed/text"
 msgstr "蛞蝓族飞船解体，你的护盾恢复正常功能。你尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1324
+#: src-ru/data/events_ships.xml.rawclobber:1332
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_SHIELDS\"]/deadCrew/text"
 msgstr "消灭船员后，你迅速关闭了他们的入侵模块，你的护盾恢复正常。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1332
+#: src-ru/data/events_ships.xml.rawclobber:1340
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_PILOT\"]/destroyed/text"
 msgstr "蛞蝓族飞船解体，你的驾驶模块恢复正常功能。你尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1337
+#: src-ru/data/events_ships.xml.rawclobber:1345
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_PILOT\"]/deadCrew/text"
 msgstr "消灭船员后，你迅速关闭了他们的入侵模块，你的驾驶模块恢复正常。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1345
+#: src-ru/data/events_ships.xml.rawclobber:1353
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_WEAPONS\"]/destroyed/text"
 msgstr "蛞蝓族飞船解体，你的武器系统恢复正常功能。你尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1350
+#: src-ru/data/events_ships.xml.rawclobber:1358
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_WEAPONS\"]/deadCrew/text"
 msgstr "消灭船员后，你迅速关闭了他们的入侵模块，你的武器系统恢复正常。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1358
+#: src-ru/data/events_ships.xml.rawclobber:1366
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_HACKING\"]/destroyed/text"
 msgstr "蛞蝓族飞船解体，他们的入侵模块被摧毁。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1363
+#: src-ru/data/events_ships.xml.rawclobber:1371
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_HACKING\"]/deadCrew/text"
 msgstr "消灭船员后，你迅速关闭了他们的入侵模块，你的系统恢复正常。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1375
+#: src-ru/data/events_ships.xml.rawclobber:1383
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_MEDBAY\"]/destroyed/text"
 msgstr "蛞蝓族飞船解体，你的系统恢复正常功能。你尽可能收集东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1382
+#: src-ru/data/events_ships.xml.rawclobber:1390
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_MEDBAY\"]/deadCrew/text"
 msgstr "消灭船员后，你迅速关闭了他们的入侵模块，你的系统恢复正常。你搜索了飞船。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1423
+#: src-ru/data/events_ships.xml.rawclobber:1431
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PIRATE\"]/gotaway/text"
 msgstr "海盗船跃迁离开了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1431
+#: src-ru/data/events_ships.xml.rawclobber:1439
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SCIENCE_DOCK\"]/surrender/text"
 msgstr ""
 "超能族船长发出紧急消息：“等等，这只是一场测试！而且你通过了！如此多样化的船员却能一起工作，无疑会让最冷静的观察者也为之赞叹。我加入你的队伍！”"
 
-#: src-ru/data/events_ships.xml.rawclobber:1437
+#: src-ru/data/events_ships.xml.rawclobber:1445
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SCIENCE_DOCK\"]/destroyed/text"
 msgstr "拆解残骸时，你不禁思索——究竟是什么促使他们如此鲁莽行事？"
 
-#: src-ru/data/events_ships.xml.rawclobber:1441
+#: src-ru/data/events_ships.xml.rawclobber:1449
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SCIENCE_DOCK\"]/deadCrew/text"
 msgstr "拆解他们的飞船时，你不禁思索——究竟是什么促使他们如此鲁莽行事？"
 
-#: src-ru/data/events_ships.xml.rawclobber:1450
+#: src-ru/data/events_ships.xml.rawclobber:1458
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/text"
 msgstr "他们显然不想打架。你确定要摧毁他们吗？"
 
-#: src-ru/data/events_ships.xml.rawclobber:1452
+#: src-ru/data/events_ships.xml.rawclobber:1460
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/choice[1]/text"
 msgstr "干掉他们。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1454
+#: src-ru/data/events_ships.xml.rawclobber:1462
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/choice[1]/event/text"
 msgstr "你继续攻击。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1458
+#: src-ru/data/events_ships.xml.rawclobber:1466
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/choice[2]/text"
 msgstr "放过对方。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1460
+#: src-ru/data/events_ships.xml.rawclobber:1468
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/choice[2]/event/text"
 msgstr "你关闭了武器，过了一段时间，他们的飞船慢慢开走了。他们不回应你的联系尝试，你甚至感到一丝羞愧——现在你已经帮不了他们了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1466
+#: src-ru/data/events_ships.xml.rawclobber:1474
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/destroyed/text"
 msgstr "你搜刮残骸时不禁感到一丝内疚。这肯定是个陷阱……对吧？"
 
-#: src-ru/data/events_ships.xml.rawclobber:1470
+#: src-ru/data/events_ships.xml.rawclobber:1478
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/deadCrew/text"
 msgstr "你开始拆解他们的飞船，没有发现任何能表明他们任务具有敌意的东西。也许你对他们的判断过于草率了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1476
+#: src-ru/data/events_ships.xml.rawclobber:1484
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK2\"]/destroyed/text"
 msgstr "你击败了你的对手，但那艘平民船在混乱中跃迁离开了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1480
+#: src-ru/data/events_ships.xml.rawclobber:1488
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK2\"]/deadCrew/text"
 msgstr "你击败了你的对手，但那艘平民船在混乱中跃迁离开了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1489
+#: src-ru/data/events_ships.xml.rawclobber:1497
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SHIP_SAVE_MANTIS1\"]/destroyed/text"
 msgstr "螳螂族真是慷慨，只拿走了四分之三的战利品，把剩下的留给了你。多么高尚啊！"
 
-#: src-ru/data/events_ships.xml.rawclobber:1493
+#: src-ru/data/events_ships.xml.rawclobber:1501
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SHIP_SAVE_MANTIS1\"]/deadCrew/text"
 msgstr "螳螂族真是慷慨，只拿走了一半的战利品，把剩下的留给了你。多么高尚啊！"
 
-#: src-ru/data/events_ships.xml.rawclobber:1501
+#: src-ru/data/events_ships.xml.rawclobber:1509
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PRIMITIVES_ZOLTAN\"]/destroyed/text"
 msgstr "叛军联系了你：“真贴心，你替我们干了所有的活！为此我们会饶你一命。不过我不保证舰队也会同样宽容。”他们飞走了，你收集超能族飞船剩下的东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1506
+#: src-ru/data/events_ships.xml.rawclobber:1514
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PRIMITIVES_ZOLTAN\"]/deadCrew/text"
 msgstr "叛军联系了你：“真贴心，你替我们干了所有的活！为此我们会饶你一命。不过我不保证舰队也会同样宽容。”他们飞走了，你收集超能族飞船剩下的东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1514
+#: src-ru/data/events_ships.xml.rawclobber:1522
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PRIMITIVES_REBEL\"]/destroyed/text"
 msgstr ""
 "烟雾散去，超能族说：“谢谢你们。有人试图让我们相信，联邦的理想已经和联邦本身一同消亡了。请允许我略尽绵力，以纪念往昔。”你接受了他们的酬谢和废料，然后从叛军飞船上收集了一些残留物。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1518
+#: src-ru/data/events_ships.xml.rawclobber:1526
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PRIMITIVES_REBEL\"]/deadCrew/text"
 msgstr ""
 "烟雾散去，超能族说：“谢谢你们。有人试图让我们相信，联邦的理想已经和联邦本身一同消亡了。请允许我略尽绵力，以纪念往昔。”你接受了他们的酬谢和废料，然后从叛军飞船上收集了一些残留物。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1527
+#: src-ru/data/events_ships.xml.rawclobber:1535
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/destroyed/text"
 msgstr "你从飞船残骸中获取了所有能拿到的东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1532
+#: src-ru/data/events_ships.xml.rawclobber:1540
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/destroyed/choice/event/text"
 msgstr "超能族对战斗结果显得极为恼火。毫不奇怪，你击碎了他的飞船！他要求尽快把他放下。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1534
+#: src-ru/data/events_ships.xml.rawclobber:1542
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/destroyed/choice/event/choice[1]/text"
 msgstr "把他放下。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1538
+#: src-ru/data/events_ships.xml.rawclobber:1546
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/destroyed/choice/event/choice[2]/text"
 msgstr "以30废料的价格提供一份工作。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1545
+#: src-ru/data/events_ships.xml.rawclobber:1553
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/deadCrew/text"
 msgstr "生命探测器报告船上最后一名海盗已死亡，超能族回到自己的舰桥：“平等是和平共处的基石。请享用你的劳动果实吧。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:1556
+#: src-ru/data/events_ships.xml.rawclobber:1564
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_MANTIS\"]/destroyed/text"
 msgstr "你从飞船残骸中收集废料，然后联系了智者。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1564
+#: src-ru/data/events_ships.xml.rawclobber:1572
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_MANTIS\"]/deadCrew/text"
 msgstr "你从飞船上收集废料，然后联系了智者。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1574
+#: src-ru/data/events_ships.xml.rawclobber:1582
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_SLUG\"]/destroyed/text"
 msgstr "你从飞船残骸中收集废料，然后联系了智者。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1582
+#: src-ru/data/events_ships.xml.rawclobber:1590
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_SLUG\"]/deadCrew/text"
 msgstr "你从飞船上收集废料，然后联系了智者。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1592
+#: src-ru/data/events_ships.xml.rawclobber:1600
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_ROCK\"]/destroyed/text"
 msgstr "你从飞船残骸中收集废料，然后联系了智者。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1600
+#: src-ru/data/events_ships.xml.rawclobber:1608
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_ROCK\"]/deadCrew/text"
 msgstr "你从飞船上收集废料，然后联系了智者。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1610
+#: src-ru/data/events_ships.xml.rawclobber:1618
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_RIFT_ROCK\"]/destroyed/text"
 msgstr "你从飞船残骸中收集废料，然后联系了智者。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1618
+#: src-ru/data/events_ships.xml.rawclobber:1626
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_RIFT_ROCK\"]/deadCrew/text"
 msgstr "你从飞船上收集废料，然后联系了智者。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1633
+#: src-ru/data/events_ships.xml.rawclobber:1641
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_CREW_SCAN\"]/destroyed/text"
 msgstr "你收集了所有能拿的东西，然后在其余守卫到达之前准备跃迁。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1638
+#: src-ru/data/events_ships.xml.rawclobber:1646
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_CREW_SCAN\"]/deadCrew/text"
 msgstr "你收集了所有能拿的东西，然后在其余守卫到达之前准备跃迁。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1657
+#: src-ru/data/events_ships.xml.rawclobber:1665
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_ZOLTAN_CREW_STUDY\"]/destroyed/text"
 msgstr "你离开飞船，联系了研究站。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1662
+#: src-ru/data/events_ships.xml.rawclobber:1670
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_ZOLTAN_CREW_STUDY\"]/destroyed/choice/event/text"
 msgstr "“感谢解放我们！他们把我们当作诱饵，吸引过往的飞船。请收下这个。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:1669
+#: src-ru/data/events_ships.xml.rawclobber:1677
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_ZOLTAN_CREW_STUDY\"]/deadCrew/text"
 msgstr "你使飞船失去战斗力，然后联系了研究站。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1674
+#: src-ru/data/events_ships.xml.rawclobber:1682
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_ZOLTAN_CREW_STUDY\"]/deadCrew/choice/event/text"
 msgstr "“感谢解放我们！他们把我们当作诱饵，吸引过往的飞船。请收下这个。”"
 
-#: src-ru/data/events_ships.xml.rawclobber:1709
+#: src-ru/data/events_ships.xml.rawclobber:1717
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CIVILIAN_SHIP_NOFUEL\"]/escape/text"
 msgstr "看来他们不想战斗，正试图逃跑。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1712
+#: src-ru/data/events_ships.xml.rawclobber:1720
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CIVILIAN_SHIP_NOFUEL\"]/gotaway/text"
 msgstr "飞船朝未知方向飞走了……"
 
-#: src-ru/data/events_ships.xml.rawclobber:1720
+#: src-ru/data/events_ships.xml.rawclobber:1728
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FUEL_SELLER\"]/escape/text"
 msgstr "这艘船显然不是为战斗而设计的。看来他们正试图逃跑。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1723
+#: src-ru/data/events_ships.xml.rawclobber:1731
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FUEL_SELLER\"]/gotaway/text"
 msgstr "一言不发，那艘船跃迁离开了。你希望他们不是去叫救兵。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1726
+#: src-ru/data/events_ships.xml.rawclobber:1734
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FUEL_SELLER\"]/destroyed/text"
 msgstr "飞船四分五裂，你拼命试图从他们的货舱中抢救燃料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1749
+#: src-ru/data/events_ships.xml.rawclobber:1757
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_SHIP\"]/surrender/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/text"
 msgstr "接受投降。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1753
+#: src-ru/data/events_ships.xml.rawclobber:1761
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_SHIP\"]/surrender/choice[2]/text"
 msgstr "无视他们的请求。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1755
+#: src-ru/data/events_ships.xml.rawclobber:1763
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_SHIP\"]/surrender/choice[2]/event/text"
 msgstr "你中断了通讯，准备消灭他们。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1759
+#: src-ru/data/events_ships.xml.rawclobber:1767
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_SHIP\"]/surrender/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"1\"]/text"
 msgstr "（蛞蝓族船员）你的蛞蝓族知道他们想用什么来买命。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1774
+#: src-ru/data/events_ships.xml.rawclobber:1782
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_FED\"]/destroyed/text"
 msgstr "水晶族飞船四分五裂，你收集了所有可能有用的东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1782
+#: src-ru/data/events_ships.xml.rawclobber:1790
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_FED\"]/deadCrew/text"
 msgstr "敌舰船员已被消灭。你收集了所有能拿的东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1793
+#: src-ru/data/events_ships.xml.rawclobber:1801
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/text"
 msgstr "他们的飞船看起来伤痕累累，而且他们似乎已经不想打仗了。也许应该关闭武器，试图让他们相信你的和平意图？"
 
-#: src-ru/data/events_ships.xml.rawclobber:1795
+#: src-ru/data/events_ships.xml.rawclobber:1803
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[1]/text"
 msgstr "停止战斗。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1797
+#: src-ru/data/events_ships.xml.rawclobber:1805
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[1]/event/text"
 msgstr "他们接受了你的解释，并允许你靠近船队。原来他们只是来自外围定居点的普通矿工和殖民者，为躲避海盗和叛军的袭击而逃往太空更安全的区域。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1802
+#: src-ru/data/events_ships.xml.rawclobber:1810
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[1]/event/choice/event/text"
 msgstr "他们为自己对你出现的轻率反应道歉，并花了一些时间为两艘船补充燃料和进行维修。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1810
+#: src-ru/data/events_ships.xml.rawclobber:1818
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[2]/text"
 msgstr "干掉他们。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1812
+#: src-ru/data/events_ships.xml.rawclobber:1820
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[2]/event/text"
 msgstr "他们想要战斗，那就会如愿以偿。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1817
+#: src-ru/data/events_ships.xml.rawclobber:1825
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/destroyed/text"
 msgstr "水晶族飞船四分五裂，你收集了所有能拿的东西。在此期间，船队的其余部分已与你拉开很大距离。没办法，只能继续跃迁了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1821
+#: src-ru/data/events_ships.xml.rawclobber:1829
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/deadCrew/text"
 msgstr "敌舰船员被全灭。当你从飞船上收集废料时，船队的其余部分已与你拉开很大距离。没办法，只能继续跃迁了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1830
+#: src-ru/data/events_ships.xml.rawclobber:1838
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/text"
 msgstr "猎手们给你发来消息：“我们投降。拿走一个我们抓获的这些软肉袋子吧。”他们指的似乎是人类俘虏。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1832
+#: src-ru/data/events_ships.xml.rawclobber:1840
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/choice[1]/text"
 msgstr "接受投降。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1834
+#: src-ru/data/events_ships.xml.rawclobber:1842
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/choice[1]/event/text"
 msgstr "他们派出一名俘虏到你的飞船上。他有些震惊，你怀疑他曾经是叛军，但他看起来对获得自由非常高兴。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1840
+#: src-ru/data/events_ships.xml.rawclobber:1848
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/choice[2]/text"
 msgstr "干掉他们。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1842
+#: src-ru/data/events_ships.xml.rawclobber:1850
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/choice[2]/event/text"
 msgstr "谁知道如果你现在摧毁他们，能拯救多少人。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1847
+#: src-ru/data/events_ships.xml.rawclobber:1855
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/destroyed/text"
 msgstr "水晶族飞船四分五裂，你收集了所有能拿的东西。谁知道拦截这艘船救了多少人。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1851
+#: src-ru/data/events_ships.xml.rawclobber:1859
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/deadCrew/text"
 msgstr "敌舰船员已被消灭。你尽可能收集所有能拿的东西。谁知道拦截这艘船救了多少人。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1858
+#: src-ru/data/events_ships.xml.rawclobber:1866
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_CRYSTAL_REBEL_CRYSTAL\"]/destroyed/text"
 msgstr "叛军飞船被摧毁，你收集了残骸。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1866
+#: src-ru/data/events_ships.xml.rawclobber:1874
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_CRYSTAL_REBEL_CRYSTAL\"]/deadCrew/text"
 msgstr "叛军飞船被俘获，你拿走了其货舱里的东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1879
+#: src-ru/data/events_ships.xml.rawclobber:1887
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CRYSTAL\"]/destroyed/text"
 msgstr "飞船爆炸了，你尽可能多地拿走了废料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1887
+#: src-ru/data/events_ships.xml.rawclobber:1895
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CRYSTAL\"]/deadCrew/text"
 msgstr "他们的船员已死，你从飞船上拿走了所有有用的东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1898
+#: src-ru/data/events_ships.xml.rawclobber:1906
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_CRYSTAL\"]/destroyed/text"
 msgstr "飞船爆炸，你尽可能多地收集废料。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1906
+#: src-ru/data/events_ships.xml.rawclobber:1914
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_CRYSTAL\"]/deadCrew/text"
 msgstr "他们的船员已死，你从飞船上拿走了所有有用的东西。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1927
+#: src-ru/data/events_ships.xml.rawclobber:1935
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PRIZRAK_SHIP\"]/destroyed/text"
 msgstr "幽灵船被摧毁。它再也不会打扰旅行者了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1934
+#: src-ru/data/events_ships.xml.rawclobber:1942
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PRIZRAK_SHIP\"]/deadCrew/text"
 msgstr "现在这艘船是真的空了。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1994
+#: src-ru/data/events_ships.xml.rawclobber:2002
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/text"
 msgstr "当你从他们的飞船上取走有用的补给时，你的蛞蝓族对一只死去的甲壳族的壳产生了兴趣……"
 
-#: src-ru/data/events_ships.xml.rawclobber:1997
+#: src-ru/data/events_ships.xml.rawclobber:2005
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/choice[1]/text"
 msgstr "让蛞蝓族拿走壳。"
 
-#: src-ru/data/events_ships.xml.rawclobber:1999
+#: src-ru/data/events_ships.xml.rawclobber:2007
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/choice[1]/event/text"
 msgstr "蛞蝓族心满意足地爬了进去。现在他脆弱的身体在近战中得到了保护！"
 
-#: src-ru/data/events_ships.xml.rawclobber:2004
+#: src-ru/data/events_ships.xml.rawclobber:2012
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/choice[2]/text"
 msgstr "命令他扔掉壳。"
 
-#: src-ru/data/events_ships.xml.rawclobber:2006
+#: src-ru/data/events_ships.xml.rawclobber:2014
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/choice[2]/event/text"
 msgstr "蛞蝓族恶狠狠地发出嘶嘶声，但还是服从了。"

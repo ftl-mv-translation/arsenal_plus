@@ -1,0 +1,357 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-ru/data/text_sectorname.xml.append:14
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_STANDARD_SPACE\"]"
+msgstr "Пространство Федерации"
+
+#: src-ru/data/text_sectorname.xml.append:15
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_FINAL\"]"
+msgstr "Последний рубеж"
+
+#: src-ru/data/text_sectorname.xml.append:16
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_CIVILIAN_SECTOR\"]"
+msgstr "Пространство Федерации"
+
+#: src-ru/data/text_sectorname.xml.append:17
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_TRUE_CIVILIAN_SECTOR\"]"
+msgstr "Гражданский сектор"
+
+#: src-ru/data/text_sectorname.xml.append:18
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ENGI_SECTOR\"]"
+msgstr "Сектор инжи"
+
+#: src-ru/data/text_sectorname.xml.append:19
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ENGI_HOME\"]"
+msgstr "Родной мир инжи"
+
+#: src-ru/data/text_sectorname.xml.append:20
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_MORPH_SECTOR\"]"
+msgstr "Сектор морфов"
+
+#: src-ru/data/text_sectorname.xml.append:21
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_MORPH_HOME\"]"
+msgstr "Родной мир морфов"
+
+#: src-ru/data/text_sectorname.xml.append:22
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_PIRATE_SECTOR\"]"
+msgstr "Сектор пиратов"
+
+#: src-ru/data/text_sectorname.xml.append:23
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_REBEL_SECTOR\"]"
+msgstr "Сектор повстанцев"
+
+#: src-ru/data/text_sectorname.xml.append:24
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_REBEL_SECTOR_MINIBOSS\"]"
+msgstr "Оплот повстанцев"
+
+#: src-ru/data/text_sectorname.xml.append:25
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_MANTIS_SECTOR\"]"
+msgstr "Сектор мантисов"
+
+#: src-ru/data/text_sectorname.xml.append:26
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_MANTIS_HOME\"]"
+msgstr "Родной мир мантисов"
+
+#: src-ru/data/text_sectorname.xml.append:27
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_NEBULA_SECTOR\"]"
+msgstr "Неизведанная туманность"
+
+#: src-ru/data/text_sectorname.xml.append:28
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_SLUG_SECTOR\"]"
+msgstr "Туманность слагов"
+
+#: src-ru/data/text_sectorname.xml.append:29
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_SLUG_HOME\"]"
+msgstr "Родная туманность слагов"
+
+#: src-ru/data/text_sectorname.xml.append:30
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ZOLTAN_SECTOR\"]"
+msgstr "Сектор золтанцев"
+
+#: src-ru/data/text_sectorname.xml.append:31
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ZOLTAN_HOME\"]"
+msgstr "Родной мир золтанцев"
+
+#: src-ru/data/text_sectorname.xml.append:32
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ZOLTON_SECTOR\"]"
+msgstr "Сектор золтонцев"
+
+#: src-ru/data/text_sectorname.xml.append:33
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ZOLTON_HOME\"]"
+msgstr "Родной мир золтонцев"
+
+#: src-ru/data/text_sectorname.xml.append:34
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ROCK_SECTOR\"]"
+msgstr "Сектор роков"
+
+#: src-ru/data/text_sectorname.xml.append:35
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ROCK_HOME\"]"
+msgstr "Родной мир роков"
+
+#: src-ru/data/text_sectorname.xml.append:36
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_CRYSTAL_HOME\"]"
+msgstr "Родной мир кристалинов"
+
+#: src-ru/data/text_sectorname.xml.append:37
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_LANIUS_SECTOR\"]"
+msgstr "Сектор ланиусов"
+
+#: src-ru/data/text_sectorname.xml.append:38
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_LANIUS_SECTOR_HOME\"]"
+msgstr "Родной мир ланиусов"
+
+#: src-ru/data/text_sectorname.xml.append:39
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_TRADE_SECTOR\"]"
+msgstr "Торговый сектор"
+
+#: src-ru/data/text_sectorname.xml.append:40
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_BORDER_SECTOR\"]"
+msgstr "Пограничный сектор"
+
+#: src-ru/data/text_sectorname.xml.append:41
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_ORDEN_SECTOR_MINIBOSS\"]"
+msgstr "Оплот Ордена"
+
+#: src-ru/data/text_sectorname.xml.append:42
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ORDEN_SECTOR\"]"
+msgstr "Сектор Ордена"
+
+#: src-ru/data/text_sectorname.xml.append:43
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_HAL_SECTOR\"]"
+msgstr "Система HAL"
+
+#: src-ru/data/text_sectorname.xml.append:44
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_HAL_SECTOR_HOME\"]"
+msgstr "Ядро HAL"
+
+#: src-ru/data/text_sectorname.xml.append:45
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_SLURM_SECTOR\"]"
+msgstr "Обитель слёрмов"
+
+#: src-ru/data/text_sectorname.xml.append:46
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_AVATAR_SECTOR\"]"
+msgstr "Туманность аватаров"
+
+#: src-ru/data/text_sectorname.xml.append:47
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_AVATAR_SECTOR_HOME\"]"
+msgstr "Родная туманность аватаров"
+
+#: src-ru/data/text_sectorname.xml.append:48
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_UNSTABLE_SECTOR\"]"
+msgstr "Нестабильный сектор"
+
+#: src-ru/data/text_sectorname.xml.append:49
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_ULTRA_UNSTABLE_SECTOR\"]"
+msgstr "Сверхнестабильный сектор"
+
+#: src-ru/data/text_sectorname.xml.append:50
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ORCHID_SECTOR\"]"
+msgstr "Сектор орхидов"
+
+#: src-ru/data/text_sectorname.xml.append:51
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_ORCHID_HOME\"]"
+msgstr "Родной мир орхидов"
+
+#: src-ru/data/text_sectorname.xml.append:53
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ORCHID_SECTOR\"]"
+msgstr "Сектор орхидов"
+
+#: src-ru/data/text_sectorname.xml.append:54
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ORCHID_HOME\"]"
+msgstr "Родной мир орхидов"
+
+#: src-ru/data/text_sectorname.xml.append:55
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_STANDARD_SPACE\"]"
+msgstr "Пространство Федерации"
+
+#: src-ru/data/text_sectorname.xml.append:56
+msgid "data/text_sectorname.xml.append$//text[@name=\"sectorname_short_FINAL\"]"
+msgstr "Последний рубеж"
+
+#: src-ru/data/text_sectorname.xml.append:57
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_CIVILIAN_SECTOR\"]"
+msgstr "Пространство Федерации"
+
+#: src-ru/data/text_sectorname.xml.append:58
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_TRUE_CIVILIAN_SECTOR\"]"
+msgstr "Гражданский сектор"
+
+#: src-ru/data/text_sectorname.xml.append:59
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ENGI_SECTOR\"]"
+msgstr "Сектор инжи"
+
+#: src-ru/data/text_sectorname.xml.append:60
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ENGI_HOME\"]"
+msgstr "Родной мир инжи"
+
+#: src-ru/data/text_sectorname.xml.append:61
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_MORPH_SECTOR\"]"
+msgstr "Сектор морфов"
+
+#: src-ru/data/text_sectorname.xml.append:62
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_MORPH_HOME\"]"
+msgstr "Родной мир морфов"
+
+#: src-ru/data/text_sectorname.xml.append:63
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_PIRATE_SECTOR\"]"
+msgstr "Сектор пиратов"
+
+#: src-ru/data/text_sectorname.xml.append:64
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_REBEL_SECTOR\"]"
+msgstr "Сектор повстанцев"
+
+#: src-ru/data/text_sectorname.xml.append:65
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_REBEL_SECTOR_MINIBOSS\"]"
+msgstr "Оплот повстанцев"
+
+#: src-ru/data/text_sectorname.xml.append:66
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_MANTIS_SECTOR\"]"
+msgstr "Сектор мантисов"
+
+#: src-ru/data/text_sectorname.xml.append:67
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_MANTIS_HOME\"]"
+msgstr "Родной мир мантисов"
+
+#: src-ru/data/text_sectorname.xml.append:68
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_NEBULA_SECTOR\"]"
+msgstr "Неизведанная туманность"
+
+#: src-ru/data/text_sectorname.xml.append:69
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_SLUG_SECTOR\"]"
+msgstr "Туманность слагов"
+
+#: src-ru/data/text_sectorname.xml.append:70
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_SLUG_HOME\"]"
+msgstr "Родная туманность слагов"
+
+#: src-ru/data/text_sectorname.xml.append:71
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ZOLTAN_SECTOR\"]"
+msgstr "Сектор золтанцев"
+
+#: src-ru/data/text_sectorname.xml.append:72
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ZOLTAN_HOME\"]"
+msgstr "Родной мир золтанцев"
+
+#: src-ru/data/text_sectorname.xml.append:73
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ZOLTON_SECTOR\"]"
+msgstr "Сектор золтонцев"
+
+#: src-ru/data/text_sectorname.xml.append:74
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ZOLTON_HOME\"]"
+msgstr "Родной мир золтонцев"
+
+#: src-ru/data/text_sectorname.xml.append:75
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ROCK_SECTOR\"]"
+msgstr "Сектор роков"
+
+#: src-ru/data/text_sectorname.xml.append:76
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ROCK_HOME\"]"
+msgstr "Родной мир роков"
+
+#: src-ru/data/text_sectorname.xml.append:77
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_CRYSTAL_HOME\"]"
+msgstr "Родной мир кристалинов"
+
+#: src-ru/data/text_sectorname.xml.append:78
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_LANIUS_SECTOR\"]"
+msgstr "Сектор ланиусов"
+
+#: src-ru/data/text_sectorname.xml.append:79
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_LANIUS_SECTOR_HOME\"]"
+msgstr "Родной мир ланиусов"
+
+#: src-ru/data/text_sectorname.xml.append:80
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_TRADE_SECTOR\"]"
+msgstr "Торговый сектор"
+
+#: src-ru/data/text_sectorname.xml.append:81
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_BORDER_SECTOR\"]"
+msgstr "Пограничный сектор"
+
+#: src-ru/data/text_sectorname.xml.append:82
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ORDEN_SECTOR_MINIBOSS\"]"
+msgstr "Оплот Ордена"
+
+#: src-ru/data/text_sectorname.xml.append:83
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ORDEN_SECTOR\"]"
+msgstr "Сектор Ордена"
+
+#: src-ru/data/text_sectorname.xml.append:84
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_HAL_SECTOR\"]"
+msgstr "Система HAL"
+
+#: src-ru/data/text_sectorname.xml.append:85
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_HAL_SECTOR_HOME\"]"
+msgstr "Ядро HAL"
+
+#: src-ru/data/text_sectorname.xml.append:86
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_SLURM_SECTOR\"]"
+msgstr "Обитель слёрмов"
+
+#: src-ru/data/text_sectorname.xml.append:87
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_AVATAR_SECTOR\"]"
+msgstr "Туманность аватаров"
+
+#: src-ru/data/text_sectorname.xml.append:88
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_AVATAR_SECTOR_HOME\"]"
+msgstr "Родная туманность аватаров"
+
+#: src-ru/data/text_sectorname.xml.append:89
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_UNSTABLE_SECTOR\"]"
+msgstr "Нестабильный сектор"
+
+#: src-ru/data/text_sectorname.xml.append:90
+msgid ""
+"data/text_sectorname.xml.append$//text[@name=\"sectorname_short_ULTRA_UNSTABLE_SECTOR\"]"
+msgstr "Сверхнестабильный сектор"

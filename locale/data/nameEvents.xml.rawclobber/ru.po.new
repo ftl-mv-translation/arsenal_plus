@@ -1,0 +1,267 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-ru/data/nameEvents.xml.rawclobber:8
+msgid "data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/text"
+msgstr ""
+"Корабль с пиратскими знаками вызывает вас: «Здравствуйте, мы в курсе, что у "
+"вас на борту %crew. За голову %crew_his объявлена существенная награда, "
+"передайте %crew_him нам и мы поделимся»."
+
+#: src-ru/data/nameEvents.xml.rawclobber:10
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/choice[1]/text"
+msgstr ""
+"Награда может быть жизненно важной для нашего выживания, передать %crew."
+
+#: src-ru/data/nameEvents.xml.rawclobber:12
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/choice[1]/event/text"
+msgstr ""
+"%loss1 уходит без возражений, понимая, что ваша миссия важнее чем жизнь "
+"%loss1_his."
+
+#: src-ru/data/nameEvents.xml.rawclobber:20
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/choice[2]/text"
+msgstr ""
+"Вы не уступили требованиям пиратов. Заряжайте свои орудия и готовьтесь к "
+"бою."
+
+#: src-ru/data/nameEvents.xml.rawclobber:26
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/choice[@req=\"engi_crew\"]/text"
+msgstr ""
+"%req говорит, что %req_he обнаружил уязвимость в сенсорах их корабля и "
+"сможет использовать её, чтобы дать Kestrel возможность сбежать без боя."
+
+#: src-ru/data/nameEvents.xml.rawclobber:28
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/choice[@req=\"engi_crew\"]/event/text"
+msgstr ""
+"По всем каналам вы слышите град сообщений: «Проклятье, куда ты делся!? Мы "
+"ещё не закончили с %crew!»"
+
+#: src-ru/data/nameEvents.xml.rawclobber:34
+msgid "data/nameEvents.xml.rawclobber$//event[@name=\"NEBULA_NOTHING_TEST\"]/text"
+msgstr ""
+"Кажется, что этот маяк в туманности пуст. %crew чувствует себя неуютно в "
+"этой тишине и %crew_himself развлекает себя, запуская дэт-метал через "
+"громкоговорители корабля."
+
+#: src-ru/data/nameEvents.xml.rawclobber:38
+msgid "data/nameEvents.xml.rawclobber$//event[@name=\"FREE_AUGMENT\"]/text"
+msgstr ""
+"Вот это да! Элемент модернизации для корабля просто плавает в космосе. "
+"Похоже, это чрезвычайно взволновало %crew."
+
+#: src-ru/data/nameEvents.xml.rawclobber:43
+msgid "data/nameEvents.xml.rawclobber$//event[@name=\"LONE_SHUTTLE\"]/text"
+msgstr ""
+"Небольшой одноместный корабль направляется прямо на вас. Повторение позывных"
+" не даёт никакого отклика. И у вас странные ощущения по этому поводу."
+
+#: src-ru/data/nameEvents.xml.rawclobber:45
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"LONE_SHUTTLE\"]/choice[1]/text"
+msgstr ""
+"Расстрелять его. Вероятно, это заброшенное судно, но безопасность стоит "
+"дороже извинений."
+
+#: src-ru/data/nameEvents.xml.rawclobber:47
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"LONE_SHUTTLE\"]/choice[1]/event/text"
+msgstr ""
+"У шаттла нет защитных систем, и он разваливается под огнём ваших тяжёлых "
+"орудий."
+
+#: src-ru/data/nameEvents.xml.rawclobber:55
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"LONE_SHUTTLE\"]/choice[2]/text"
+msgstr "Подождите немного. Возможно, кто-то нуждается в помощи."
+
+#: src-ru/data/nameEvents.xml.rawclobber:62
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"LONE_SHUTTLE_WAIT\"]/event[1]/text"
+msgstr ""
+"Когда расстояние сократилось, вы смогли просканировать его на наличие "
+"признаков жизни. Похоже, что он беспилотный. Вы забираете немного топлива, "
+"что на нём было, и летите дальше."
+
+#: src-ru/data/nameEvents.xml.rawclobber:68
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"LONE_SHUTTLE_WAIT\"]/event[2]/text"
+msgstr ""
+"Спустя несколько минут ожидания, пока шаттл становился всё ближе, вы, "
+"наконец, получаете сообщение: «Вы за Федерацию? Я %add1, и это просто "
+"здорово, что я встретил вас. Я был нанят на разведку этого сектора, но мой "
+"корабль был уничтожен. Буду признателен, если подбросите меня». При помощи "
+"луча вы поднимаете %add1_him на борт."
+
+#: src-ru/data/nameEvents.xml.rawclobber:72
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"LONE_SHUTTLE_WAIT\"]/event[3]/text"
+msgstr ""
+"По мере приближения, вы обнаружили признаки жизни на корабле. К тому времени"
+" вы поняли, что это судно повстанцев, но уже было слишком поздно — они "
+"появились на борту."
+
+#: src-ru/data/nameEvents.xml.rawclobber:79
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"LONE_SHUTTLE_WAIT\"]/event[4]/text"
+msgstr ""
+"Приглядевшись вы обнаружили транспортный знак! Шаттл довёз до Kestrel "
+"батарею взрывных устройств и самоуничтожился. Ваш корабль получил лёгкие "
+"повреждения, но %loss1 был ранен взрывом и умер."
+
+#: src-ru/data/nameEvents.xml.rawclobber:88
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"LONE_SHUTTLE_DESTROY\"]/event[1]/text"
+msgstr ""
+"Сканирование не показывает никаких биологических останков на судне, оно было"
+" беспилотным... Очень странно."
+
+#: src-ru/data/nameEvents.xml.rawclobber:91
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"LONE_SHUTTLE_DESTROY\"]/event[2]/text"
+msgstr ""
+"В обломках вы находите множество человеческих останков. А ещё вам попалась "
+"зашифрованная система связи повстанцев. Вот и стало одним вражеским кораблём"
+" меньше."
+
+#: src-ru/data/nameEvents.xml.rawclobber:95
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"LONE_SHUTTLE_DESTROY\"]/event[3]/text"
+msgstr ""
+"К маяку прибывает корабль повстанцев: «Ааа! Похоже, вы сделали нашу грязную "
+"работу за нас. Уничтожили беженцев с инжи. Позвольте в благодарность отдать "
+"вам резервные запасы. Мы преследовали этих пёсиков Федерации целых 2 "
+"сектора». К счастью, они слишком признательны за помощь, чтобы обратить "
+"внимание, кто вы."
+
+#: src-ru/data/nameEvents.xml.rawclobber:106
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"DERELICT_TREASURE\"]/choice[1]/text"
+msgstr "Попытаться найти что-нибудь в обломках."
+
+#: src-ru/data/nameEvents.xml.rawclobber:110
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"DERELICT_TREASURE\"]/choice[@req=\"engi_crew\"]/text"
+msgstr ""
+"(Член экипажа инжи) %req не уверен, что это безопасно. Он просит "
+"предоставить ему больше времени, чтобы просмотреть всё ещё раз."
+
+#: src-ru/data/nameEvents.xml.rawclobber:114
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"DERELICT_TREASURE\"]/choice[3]/text"
+msgstr ""
+"Кто знает, какие опасности могут содержать обломки? Вам всё равно не нужны "
+"запасы. Продолжайте свой путь."
+
+#: src-ru/data/nameEvents.xml.rawclobber:120
+msgid ""
+"data/nameEvents.xml.rawclobber$//textList[@name=\"DERELICT_TREASURE\"]/text[1]"
+msgstr ""
+"Вы наткнулись на остатки недавней битвы. Одно судно поблизости выглядит так,"
+" будто в нем ещё могут быть ценные ресурсы."
+
+#: src-ru/data/nameEvents.xml.rawclobber:121
+msgid ""
+"data/nameEvents.xml.rawclobber$//textList[@name=\"DERELICT_TREASURE\"]/text[2]"
+msgstr ""
+"Заброшенное грузовое судно класса Зельц плавает возле этого маяка. Оно может"
+" содержать что-нибудь ценное."
+
+#: src-ru/data/nameEvents.xml.rawclobber:122
+msgid ""
+"data/nameEvents.xml.rawclobber$//textList[@name=\"DERELICT_TREASURE\"]/text[3]"
+msgstr ""
+"Массивная полуразрушенная космическая станция находится на орбите около "
+"луны. Первоначальное сканирование показывает, что она пустая и заброшенная."
+
+#: src-ru/data/nameEvents.xml.rawclobber:127
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"DERELICT_TREASURE_REWARD\"]/event[1]/text"
+msgstr ""
+"Взорвавшиеся обломки на вашем корабле скорее всего содержали замаскированное"
+" взрывное устройство. Вы не знаете, зачем это кто-то подстроил..."
+
+#: src-ru/data/nameEvents.xml.rawclobber:132
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"DERELICT_TREASURE_REWARD\"]/event[2]/text"
+msgstr ""
+"Когда вы подобрались поближе к обломкам, чтобы собрать лом, ваша система "
+"обнаружила исходящую передачу. Кажется, повстанцы специально соорудили это, "
+"чтобы предупредить их о вашем приближении."
+
+#: src-ru/data/nameEvents.xml.rawclobber:136
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"DERELICT_TREASURE_REWARD\"]/event[3]/text"
+msgstr ""
+"Вы обнаружили несколько тонн обломков, среди которых лом и некоторое "
+"вооружение."
+
+#: src-ru/data/nameEvents.xml.rawclobber:146
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"DERELICT_ENGI\"]/event[1]/text"
+msgstr ""
+"%req обнаружил, что обломки заминированы и взорвутся, если вы подойдёте "
+"слишком близко. Было бы лучше, если бы вы обошли их и продолжили свой путь."
+
+#: src-ru/data/nameEvents.xml.rawclobber:149
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"DERELICT_ENGI\"]/event[2]/text"
+msgstr ""
+"%req нашёл скрытый передатчик повстанцев в обломках! Он может удалённо "
+"отключить его, чтобы можно было забрать на корабль ценные ресурсы."
+
+#: src-ru/data/nameEvents.xml.rawclobber:156
+msgid ""
+"data/nameEvents.xml.rawclobber$//eventList[@name=\"DERELICT_ENGI\"]/event[3]/text"
+msgstr ""
+"%req не обнаружил ничего необычного в этих конкретных обломках. Вы "
+"принимаетесь собирать то, что там ещё можно собрать."
+
+#: src-ru/data/nameEvents.xml.rawclobber:165
+msgid "data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/text"
+msgstr ""
+"Вы наткнулись на грузовое судно инжи, спасающихся от повстанцев. Их корабль "
+"серьёзно повреждён, и они очень сильно нуждаются в помощи."
+
+#: src-ru/data/nameEvents.xml.rawclobber:167
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/choice[1]/text"
+msgstr ""
+"Вам просто не хватает ни оборудования, ни времени, чтобы помочь им. Вы "
+"желаете им удачи в их дальнейшем пути."
+
+#: src-ru/data/nameEvents.xml.rawclobber:171
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/choice[2]/text"
+msgstr ""
+"Вы даёте им столько лома, сколько можете себе позволить, чтобы оказать "
+"помощь с их ремонтными работами."
+
+#: src-ru/data/nameEvents.xml.rawclobber:173
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/choice[2]/event/text"
+msgstr "Они благодарят вас, не переставая, и желают удачи в вашей миссии."
+
+#: src-ru/data/nameEvents.xml.rawclobber:180
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/choice[@req=\"engi_crew\"]/text"
+msgstr ""
+"(Член экипажа инжи) %req хочет войти на судно и посмотреть, сможет ли он "
+"лично оказать какую-либо помощь. Для оказания помощи он просит некоторое "
+"количество лома."
+
+#: src-ru/data/nameEvents.xml.rawclobber:182
+msgid ""
+"data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/choice[@req=\"engi_crew\"]/event/text"
+msgstr ""
+"Он вернулся с хорошей новостью. Ему удалось улучшить двигатели и убедить "
+"одного из их экипажа присоединиться к вам."

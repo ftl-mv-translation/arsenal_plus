@@ -1739,201 +1739,333 @@ msgstr ""
 "\"Now that that's taken care of, let us patch up your hull. Maybe we can "
 "improve its armor plating while we're at it.\""
 
-#: src-ru/data/events_rock.xml.rawclobber:1247
-msgid "data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/text"
+#: src-ru/data/events_rock.xml.rawclobber:1204
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1250
+#: src-ru/data/events_rock.xml.rawclobber:1205
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[1]/text"
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[2]"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1254
+#: src-ru/data/events_rock.xml.rawclobber:1206
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[2]/text"
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1256
+#: src-ru/data/events_rock.xml.rawclobber:1207
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[2]/event/text"
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[4]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1208
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[5]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1209
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"START_BEACON_MAGMAN\"]/text[6]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1217
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_MAGMAN\"]/text[1]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1218
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_MAGMAN\"]/text[2]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1219
+msgid "data/events_rock.xml.rawclobber$//textList[@name=\"STORE_MAGMAN\"]/text[3]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1230
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_MAGMAN\"]/text[1]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1231
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_MAGMAN\"]/text[2]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1232
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"NOTHING_MAGMAN\"]/text[3]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1236
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"EVENT_MAGMAN_ART_TEXT\"]/text[1]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1237
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"EVENT_MAGMAN_ART_TEXT\"]/text[2]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1259
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SUN_TEXT\"]/text[1]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1260
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SUN_TEXT\"]/text[2]"
 msgstr ""
 
 #: src-ru/data/events_rock.xml.rawclobber:1261
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[3]/text"
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SUN_TEXT\"]/text[3]"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1266
+#: src-ru/data/events_rock.xml.rawclobber:1270
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/text"
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SHIP_TEXT\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1268
+#: src-ru/data/events_rock.xml.rawclobber:1271
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[1]/text"
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SHIP_TEXT\"]/text[2]"
 msgstr ""
 
 #: src-ru/data/events_rock.xml.rawclobber:1272
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[2]/text"
-msgstr ""
-
-#: src-ru/data/events_rock.xml.rawclobber:1276
-msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[3]/text"
-msgstr ""
-
-#: src-ru/data/events_rock.xml.rawclobber:1278
-msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[3]/event/text"
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_SHIP_TEXT\"]/text[3]"
 msgstr ""
 
 #: src-ru/data/events_rock.xml.rawclobber:1283
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[4]/text"
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_ASTEROID_TEXT\"]/text[1]"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1285
+#: src-ru/data/events_rock.xml.rawclobber:1284
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[4]/event/text"
+"data/events_rock.xml.rawclobber$//textList[@name=\"MAGMAN_BOARDERS_ASTEROID_TEXT\"]/text[2]"
 msgstr ""
 
 #: src-ru/data/events_rock.xml.rawclobber:1291
 msgid ""
-"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_DNA\"]/event[1]/text"
-msgstr ""
-
-#: src-ru/data/events_rock.xml.rawclobber:1296
-msgid ""
-"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_DNA\"]/event[2]/text"
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_DOUBLE_BATTLE\"]/text"
 msgstr ""
 
 #: src-ru/data/events_rock.xml.rawclobber:1301
 msgid ""
-"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_DNA\"]/event[3]/text"
+"data/events_rock.xml.rawclobber$//ship[@name=\"DOUBLE_BATTLE_PARAMETERS1\"]/destroyed/text"
 msgstr ""
 
 #: src-ru/data/events_rock.xml.rawclobber:1307
 msgid ""
-"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[1]/text"
+"data/events_rock.xml.rawclobber$//ship[@name=\"DOUBLE_BATTLE_PARAMETERS1\"]/deadCrew/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1311
+#: src-ru/data/events_rock.xml.rawclobber:1320
 msgid ""
-"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[2]/text"
+"data/events_rock.xml.rawclobber$//ship[@name=\"DOUBLE_BATTLE_PARAMETERS2\"]/destroyed/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1316
+#: src-ru/data/events_rock.xml.rawclobber:1324
 msgid ""
-"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[3]/text"
+"data/events_rock.xml.rawclobber$//ship[@name=\"DOUBLE_BATTLE_PARAMETERS2\"]/deadCrew/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1322
-msgid ""
-"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[4]/text"
+#: src-ru/data/events_rock.xml.rawclobber:1332
+msgid "data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1328
+#: src-ru/data/events_rock.xml.rawclobber:1335
 msgid ""
-"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[5]/text"
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1334
+#: src-ru/data/events_rock.xml.rawclobber:1339
 msgid ""
-"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[6]/text"
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1345
+#: src-ru/data/events_rock.xml.rawclobber:1341
 msgid ""
-"data/events_rock.xml.rawclobber$//ship[@name=\"KESTRAL_PART_PARAMETERS\"]/destroyed/text"
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1349
+#: src-ru/data/events_rock.xml.rawclobber:1346
 msgid ""
-"data/events_rock.xml.rawclobber$//ship[@name=\"KESTRAL_PART_PARAMETERS\"]/deadCrew/text"
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1366
+#: src-ru/data/events_rock.xml.rawclobber:1351
 msgid ""
-"data/events_rock.xml.rawclobber$//textList[@name=\"ULTRA_SUN_FIGHT_TEXT\"]/text[1]"
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1367
+#: src-ru/data/events_rock.xml.rawclobber:1353
 msgid ""
-"data/events_rock.xml.rawclobber$//textList[@name=\"ULTRA_SUN_FIGHT_TEXT\"]/text[2]"
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1375
+#: src-ru/data/events_rock.xml.rawclobber:1357
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/text"
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1379
+#: src-ru/data/events_rock.xml.rawclobber:1361
 msgid ""
-"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/choice[1]/text"
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[3]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1363
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[3]/event/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1368
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[4]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1370
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_KESTRAL_PART_SEND\"]/choice[4]/event/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1376
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_DNA\"]/event[1]/text"
 msgstr ""
 
 #: src-ru/data/events_rock.xml.rawclobber:1381
 msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_DNA\"]/event[2]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1386
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_DNA\"]/event[3]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1392
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[1]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1396
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[2]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1401
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[3]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1407
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[4]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1413
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[5]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1419
+msgid ""
+"data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_KESTRAL_PART_CLONES\"]/event[6]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1430
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"KESTRAL_PART_PARAMETERS\"]/destroyed/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1434
+msgid ""
+"data/events_rock.xml.rawclobber$//ship[@name=\"KESTRAL_PART_PARAMETERS\"]/deadCrew/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1451
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ULTRA_SUN_FIGHT_TEXT\"]/text[1]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1452
+msgid ""
+"data/events_rock.xml.rawclobber$//textList[@name=\"ULTRA_SUN_FIGHT_TEXT\"]/text[2]"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1460
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1464
+msgid ""
+"data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/choice[1]/text"
+msgstr ""
+
+#: src-ru/data/events_rock.xml.rawclobber:1466
+msgid ""
 "data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1387
+#: src-ru/data/events_rock.xml.rawclobber:1472
 msgid ""
 "data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1391
+#: src-ru/data/events_rock.xml.rawclobber:1476
 msgid ""
 "data/events_rock.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2_BROKEN\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1398
+#: src-ru/data/events_rock.xml.rawclobber:1483
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1405
+#: src-ru/data/events_rock.xml.rawclobber:1490
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1411
+#: src-ru/data/events_rock.xml.rawclobber:1496
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1417
+#: src-ru/data/events_rock.xml.rawclobber:1502
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1421
+#: src-ru/data/events_rock.xml.rawclobber:1506
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[5]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1426
+#: src-ru/data/events_rock.xml.rawclobber:1511
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[6]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1431
+#: src-ru/data/events_rock.xml.rawclobber:1516
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[7]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1436
+#: src-ru/data/events_rock.xml.rawclobber:1521
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[8]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1441
+#: src-ru/data/events_rock.xml.rawclobber:1526
 msgid ""
 "data/events_rock.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_BROKEN_OPEN\"]/event[9]/text"
 msgstr ""
 
-#: src-ru/data/events_rock.xml.rawclobber:1448
+#: src-ru/data/events_rock.xml.rawclobber:1533
 msgid ""
 "data/events_rock.xml.rawclobber$//ship[@name=\"CAPSULE_2_BROKEN_PARAMETERS\"]/destroyed/text"
 msgstr ""

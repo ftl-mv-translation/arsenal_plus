@@ -1,1423 +1,1430 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-08-28 07:36+0000\n"
-"Last-Translator: circle217 <3545024352@qq.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
-"projects/arsenal-plus/dataevents_piratexmlrawclobber/zh_Hans/>\n"
-"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17.1\n"
 
-#: src-ru/data/events_pirate.xml.rawclobber:157
+#: src-ru/data/events_pirate.xml.rawclobber:158
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[1]"
 msgstr "几年前，这个地区还是一个有利可图的贸易场所。如今，这里到处是匪徒和海盗。务必保持谨慎。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:158
+#: src-ru/data/events_pirate.xml.rawclobber:159
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[2]"
 msgstr "这个偏远星区在叛乱初期便陷入混乱。即使在和平时期这里也有海盗出没，而如今更是成了众多海盗舰队的指挥中枢。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:159
+#: src-ru/data/events_pirate.xml.rawclobber:160
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[3]"
 msgstr "如果报告属实，这片星域已被海盗控制了相当长的时间。一些商人仍试图与残存的定居点进行贸易，但他们冒着极大的风险。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:160
+#: src-ru/data/events_pirate.xml.rawclobber:161
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[4]"
 msgstr "这个星区中仍有几个亲联邦的星球存在，但它们 constantly 遭受海盗的袭扰。这是个危险的星区，务必小心。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:161
+#: src-ru/data/events_pirate.xml.rawclobber:162
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[5]"
 msgstr "你已进入海盗空域。叛军崛起后，这个星区遭到了猛烈袭击，至今仍掌握在海盗手中。保持警惕。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:162
+#: src-ru/data/events_pirate.xml.rawclobber:163
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[6]"
 msgstr "这个星区以持续抢劫和袭击过往飞船而闻名。你的船员们希望，如果你表现得像海盗一样，对方就会把你们当成自己人，不加阻拦。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:163
+#: src-ru/data/events_pirate.xml.rawclobber:164
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[7]"
 msgstr "这个星区过去位于重要贸易航路的交汇处，如今由于海盗数量激增，商人们都宁愿绕道而行……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:164
+#: src-ru/data/events_pirate.xml.rawclobber:165
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[8]"
 msgstr "星区入口的信标上钉着“海盗旗”，也许是时候让这些野蛮人想起联邦的厉害了。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:165
+#: src-ru/data/events_pirate.xml.rawclobber:166
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[9]"
 msgstr "这个星区在内战前就不太平，但现在更是充斥着形形色色的海盗。做好最坏的打算。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:166
+#: src-ru/data/events_pirate.xml.rawclobber:167
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[10]"
 msgstr "这个星区完全可以被称为海盗和掠夺者的大本营。检查护盾和武器，以防遇到的飞船“碰巧”对你产生兴趣。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:167
+#: src-ru/data/events_pirate.xml.rawclobber:168
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[11]"
 msgstr "强盗已经占领了这个星区。这里不太可能有和平的商船迎面飞来，但会有很多人想把你的飞船拆成零件。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:168
+#: src-ru/data/events_pirate.xml.rawclobber:169
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"START_BEACON_PIRATE\"]/text[12]"
 msgstr "随着联邦统治的崩溃，海盗已遍布整个银河。尽管海盗团伙之间存在某种凝聚力，但总体上他们还是各自为战，试图从混乱中获利。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:176
+#: src-ru/data/events_pirate.xml.rawclobber:177
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[1]"
 msgstr ""
 "取景器里出现了几艘小飞船，你差点就激活了武器瞄准系统。但传感器显示他们只是正经商人。这些海盗真让人不得安生，都快神经衰弱了……你联络了商人，询问他们的商品。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:177
+#: src-ru/data/events_pirate.xml.rawclobber:178
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[2]"
 msgstr "你侦测到附近有一个活动中心。一家大公司设立了贸易仓库，并留下了几艘武装精良的飞船在此巡逻。这看起来是个相当安全的维修地点。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:178
+#: src-ru/data/events_pirate.xml.rawclobber:179
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[3]"
 msgstr "你收到一条自动广播信息：“欢迎光临本贸易仓库与船坞！我们欢迎所有人，但若你敢乱来，我们152门自动卫星炮塔会把你的飞船打成筛子！”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:179
+#: src-ru/data/events_pirate.xml.rawclobber:180
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"STORE_PIRATE\"]/text[4]"
 msgstr "一艘全副武装的运输船和一个战斗机中队正在附近轨道上。你不确定能否信任他们，但俗话说，穷光蛋没得选。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:191
+#: src-ru/data/events_pirate.xml.rawclobber:192
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[1]"
-msgstr ""
-"你刚一抵达，一艘小型飞船便在你身后解除隐形。你立刻准备迎战，但他们却若无其事"
-"地继续航行。你试图让自己镇定下来。"
+msgstr "你刚一抵达，一艘小型飞船便在你身后解除隐形。你立刻准备迎战，但他们却若无其事地继续航行。你试图让自己镇定下来。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:192
+#: src-ru/data/events_pirate.xml.rawclobber:193
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[2]"
 msgstr "一艘小型海盗船对你说：“你这飞船真不错。”你朝他们船头前方开了一枪警告，他们回应道：“嘿！没必要动粗吧！我只是随口一说……”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:193
+#: src-ru/data/events_pirate.xml.rawclobber:194
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[3]"
 msgstr "扫描范围内唯一的物体是一个带有燃料补给站的废弃旧采矿设施。看起来它们已经被掠夺者洗劫一空。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:194
+#: src-ru/data/events_pirate.xml.rawclobber:195
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"NOTHING_PIRATE\"]/text[4]"
 msgstr "你接近一支半械族小舰队，他们瞄准了你并发出信息：“海盗行为对社会有负面影响。禁止。”你向他们保证自己是善意的，于是他们放你通行。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:211
+#: src-ru/data/events_pirate.xml.rawclobber:212
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[1]"
 msgstr "你一进入星系，一艘海盗船就高速向你冲来。他们不回应呼叫。准备战斗。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:212
+#: src-ru/data/events_pirate.xml.rawclobber:213
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[2]"
 msgstr "一抵达星系，一艘小型星舰就向你打招呼：“真是幸运，我们碰上了。不是针对你，但我们需要你掌握的情报！”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:214
+#: src-ru/data/events_pirate.xml.rawclobber:215
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[3]"
 msgstr "信标处一艘孤零零的飞船对你说：“终于来了！等了几个月，总算有人掉进我们的陷阱了！”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:215
+#: src-ru/data/events_pirate.xml.rawclobber:216
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[4]"
 msgstr "你刚完成跃迁，飞船的安全系统就警告有敌人正持武器向你逼近。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:217
+#: src-ru/data/events_pirate.xml.rawclobber:218
 msgid "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE\"]/text[5]"
 msgstr ""
 "你遇到了一艘海盗船。他们的船长讥讽道：“你开的这是什么破船？看起来更像是从破木桶的碎片里捡出来的烂渣！”是时候让他们看看谁才是真正的破烂王了！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:222
+#: src-ru/data/events_pirate.xml.rawclobber:223
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_NO_ESCAPE\"]/text"
 msgstr ""
 "抵达后，你的屏幕上亮起警告信号。附近一艘海盗船似乎搞到了先进的黑客工具，正试图关闭你的引擎。在你对付这个“黑客”的同时，船员们竭力维持引擎运转……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:231
+#: src-ru/data/events_pirate.xml.rawclobber:232
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_NO_ESCAPE\"]/choice[@req=\"hacking\"]/text"
 msgstr "（黑客）抵抗入侵。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:233
+#: src-ru/data/events_pirate.xml.rawclobber:234
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_NO_ESCAPE\"]/choice[@req=\"hacking\"]/event/text"
 msgstr "你的入侵系统自动抵御了数字攻击，你转而向敌舰发起进攻。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:254
+#: src-ru/data/events_pirate.xml.rawclobber:255
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[1]/text"
 msgstr "援救平民船。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:256
+#: src-ru/data/events_pirate.xml.rawclobber:257
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[1]/event/text"
 msgstr "你启动武器，向海盗船发起攻击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:262
+#: src-ru/data/events_pirate.xml.rawclobber:263
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[2]/text"
 msgstr "远离他们。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:264
+#: src-ru/data/events_pirate.xml.rawclobber:265
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CIVILIAN\"]/choice[2]/event/text"
 msgstr "战斗使他们脱离了你的扫描范围。不久后，求救信号也消失了。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:269
+#: src-ru/data/events_pirate.xml.rawclobber:270
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[1]"
 msgstr "你恰好及时赶到这个星系，看到一艘海盗船正在追逐平民。受害者正绝望地在求救频道上发送信息。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:270
+#: src-ru/data/events_pirate.xml.rawclobber:271
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[2]"
 msgstr "扫描仪显示附近正在发生战斗。似乎有人正遭到太空海盗的攻击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:271
+#: src-ru/data/events_pirate.xml.rawclobber:272
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[3]"
 msgstr "你侦测到两艘飞船，一艘在追逐另一艘……扫描仪显示追逐者是海盗。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:272
+#: src-ru/data/events_pirate.xml.rawclobber:273
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[4]"
 msgstr "这片区域只有两艘飞船，而且似乎在交战。其中一艘带有海盗标志。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:273
+#: src-ru/data/events_pirate.xml.rawclobber:274
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[5]"
 msgstr "你刚飞到下一个信标，一艘小型穿梭机就立刻向你打招呼：“救命！我们遭到海盗攻击！”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:274
+#: src-ru/data/events_pirate.xml.rawclobber:275
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_CIVILIAN\"]/text[6]"
 msgstr "你退出跃迁，看到信标另一侧有激光弹丸飞过。似乎有人遭到了海盗袭击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:278
+#: src-ru/data/events_pirate.xml.rawclobber:279
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/text"
 msgstr "你救下的飞船在战斗中严重受损。大多数船员同意你提出的载他们到最近空间站的建议，其中一人则请求加入你的队伍。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:280
+#: src-ru/data/events_pirate.xml.rawclobber:281
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[1]/text"
 msgstr "欢迎登舰！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:282
+#: src-ru/data/events_pirate.xml.rawclobber:283
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[1]/event/text"
 msgstr "幸存者加入了队伍。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:287
+#: src-ru/data/events_pirate.xml.rawclobber:288
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[2]/text"
 msgstr "拒绝，并问他们要废料。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:289
+#: src-ru/data/events_pirate.xml.rawclobber:290
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[1]/choice[2]/event/text"
 msgstr "他们把所有的东西都给了你。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:295
+#: src-ru/data/events_pirate.xml.rawclobber:296
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[2]/text"
 msgstr "看来遇袭的飞船是一艘科考船。他们感谢你的救援，并提供了少量奖励。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:299
+#: src-ru/data/events_pirate.xml.rawclobber:300
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[3]/text"
 msgstr "船员们似乎没能从袭击中幸存。你从飞船残骸中带走能用的东西。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:303
+#: src-ru/data/events_pirate.xml.rawclobber:304
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[4]/text"
 msgstr "他们回答：“幸好你来了，否则我们就死定了。我们是造船师，希望能像你帮助我们一样回报你。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:305
+#: src-ru/data/events_pirate.xml.rawclobber:306
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[4]/choice/text"
 msgstr "船长提议在你的飞船上安装一些设备。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:312
+#: src-ru/data/events_pirate.xml.rawclobber:313
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[5]/text"
 msgstr "“这个星区对联邦支持者来说越来越危险。我想我的船员可以帮你们修补一些舰体损伤，以示感谢。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:316
+#: src-ru/data/events_pirate.xml.rawclobber:317
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST\"]/event[6]/text"
 msgstr "在你战斗时，平民飞船明智地选择了逃之夭夭。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:321
+#: src-ru/data/events_pirate.xml.rawclobber:322
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/text"
 msgstr "你救下的飞船在战斗中严重受损。大多数船员同意你提出的载他们到最近空间站的建议，其中一人则请求加入你的队伍。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:323
+#: src-ru/data/events_pirate.xml.rawclobber:324
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[1]/text"
 msgstr "欢迎登舰！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:325
+#: src-ru/data/events_pirate.xml.rawclobber:326
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[1]/event/text"
 msgstr "幸存者加入了队伍。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:330
+#: src-ru/data/events_pirate.xml.rawclobber:331
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[2]/text"
 msgstr "拒绝，并问他们要废料。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:332
+#: src-ru/data/events_pirate.xml.rawclobber:333
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[1]/choice[2]/event/text"
 msgstr "他们把所有的东西都给了你。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:338
+#: src-ru/data/events_pirate.xml.rawclobber:339
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[2]/text"
 msgstr "看来遇袭的飞船是一艘科考船。他们感谢你的救援，并提供了少量奖励。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:342
+#: src-ru/data/events_pirate.xml.rawclobber:343
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[3]/text"
 msgstr "船员们似乎没能从袭击中幸存。你从飞船残骸中带走能用的东西。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:346
+#: src-ru/data/events_pirate.xml.rawclobber:347
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[4]/text"
 msgstr "他们回答：“幸好你来了，否则我们就死定了。我们是造船师，希望能像你帮助我们一样回报你。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:348
+#: src-ru/data/events_pirate.xml.rawclobber:349
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[4]/choice/text"
 msgstr "船长提议在你的飞船上安装一些设备。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:355
+#: src-ru/data/events_pirate.xml.rawclobber:356
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"SAVE_CIVILIAN_LIST_NO_ESCAPE\"]/event[5]/text"
 msgstr "“这个星区对联邦支持者来说越来越危险。我想我的船员可以帮你们修补一些舰体损伤，以示感谢。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:365
+#: src-ru/data/events_pirate.xml.rawclobber:366
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[1]/text"
 msgstr "接受贿赂。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:367
+#: src-ru/data/events_pirate.xml.rawclobber:368
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[1]/event/text"
 msgstr "“明智的选择，小子。我们都能捞到好处。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:372
+#: src-ru/data/events_pirate.xml.rawclobber:373
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[2]/text"
 msgstr "挺身而出，攻击海盗。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:374
+#: src-ru/data/events_pirate.xml.rawclobber:375
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_BRIBER\"]/choice[2]/event/text"
 msgstr "海盗船放弃了追击，将炮口转向了你的飞船。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:382
+#: src-ru/data/events_pirate.xml.rawclobber:383
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/text"
 msgstr "仔细一看那艘遇袭的飞船，你发现它原来是叛军的侦察船！它已经严重受损，无法进行有效抵抗。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:384
+#: src-ru/data/events_pirate.xml.rawclobber:385
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[1]/text"
 msgstr "摧毁飞船并收集战利品。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:386
+#: src-ru/data/events_pirate.xml.rawclobber:387
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[1]/event/text"
 msgstr "你从船上卸下一切有用的东西，而船上的人则只能指望有人来救援。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:391
+#: src-ru/data/events_pirate.xml.rawclobber:392
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[2]/text"
 msgstr "利用你救了他们性命这一恩惠，说服他们拖住追击的舰队。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:393
+#: src-ru/data/events_pirate.xml.rawclobber:394
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[1]/choice[2]/event/text"
 msgstr "希望这能为你争取更多时间以抵达下一个星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:399
+#: src-ru/data/events_pirate.xml.rawclobber:400
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[2]/text"
 msgstr "你来晚了。在与海盗搏斗时，舰体损伤导致船员失去了氧气。你搜集了能拿的东西。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:403
+#: src-ru/data/events_pirate.xml.rawclobber:404
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[3]/text"
 msgstr "海盗的受害者在你设法联系上之前就飞走了。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:406
+#: src-ru/data/events_pirate.xml.rawclobber:407
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[4]/text"
 msgstr "“感谢帮忙！我是个商人。通常我只和叛军做生意，但鉴于情况特殊，破例一次。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:413
+#: src-ru/data/events_pirate.xml.rawclobber:414
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_BRIBER_WIN\"]/event[5]/text"
 msgstr "“谢天谢地，你就在附近！我们拿不出太多东西，但我们的工程师或许能在这次可怕的战斗后帮你维修一下。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:418
+#: src-ru/data/events_pirate.xml.rawclobber:419
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_BRIBER\"]/text[1]"
 msgstr "你遇到一个海盗正在追逐一艘未知飞船。你立刻收到了海盗的通讯：“别插手这场战斗，你不会后悔的。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:419
+#: src-ru/data/events_pirate.xml.rawclobber:420
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_BRIBER\"]/text[2]"
 msgstr "那艘不明飞船受损严重，仍在遭受海盗攻击。受害者正在广播求救信号，但海盗中断了信号，并提议如果你不插手，就与你分赃。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:420
+#: src-ru/data/events_pirate.xml.rawclobber:421
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"PIRATE_BRIBER\"]/text[3]"
 msgstr ""
 "你刚完成跃迁，一枚导弹就从船头前飞过。快速扫描发现一艘带有海盗标志的飞船正在追逐一艘不明船只。海盗对你说：“该死，没想到还有人来。别多管闲事就能捞一笔。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:428
+#: src-ru/data/events_pirate.xml.rawclobber:429
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/text"
 msgstr "跃迁结束后，你收到附近一艘飞船的信息：“欢迎，欢迎来到我们的信标！支付一小笔费用，我们就让你继续赶路。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:431
+#: src-ru/data/events_pirate.xml.rawclobber:432
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[1]/text"
 msgstr "交保护费。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:433
+#: src-ru/data/events_pirate.xml.rawclobber:434
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[1]/event/text"
 msgstr "“你做了个明智的决定，朋友。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:441
+#: src-ru/data/events_pirate.xml.rawclobber:442
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[2]/text"
 msgstr "拒绝他们的“提议”。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:443
+#: src-ru/data/events_pirate.xml.rawclobber:444
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_CHOICE\"]/choice[2]/event/text"
 msgstr "“遗憾，真遗憾。你会为这个决定后悔的。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:453
+#: src-ru/data/events_pirate.xml.rawclobber:454
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/text"
 msgstr "一艘全副武装的海盗船靠近了你。“交出你们的一名船员，其余人就可以安全离开。”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:457
+#: src-ru/data/events_pirate.xml.rawclobber:458
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[1]/text"
 msgstr "从你的队伍中派出一人，预先让他带上武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:463
+#: src-ru/data/events_pirate.xml.rawclobber:464
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr "他们突然意识到派去的是一个无人机，于是向你的飞船发起攻击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:469
+#: src-ru/data/events_pirate.xml.rawclobber:470
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[3]/text"
 msgstr "不冒险，直接正面进攻。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:476
+#: src-ru/data/events_pirate.xml.rawclobber:477
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[@req=\"mantis_crew\"]/text"
 msgstr "（螳螂族船员）派一名武装的螳螂族过去。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:480
+#: src-ru/data/events_pirate.xml.rawclobber:481
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SLAVER\"]/choice[@req=\"engines\"]/text"
 msgstr "（先进引擎）试图摆脱奴隶贩子的飞船。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:486
+#: src-ru/data/events_pirate.xml.rawclobber:487
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[1]/text"
 msgstr "不幸的是，海盗发现了你派去的渗透者身上的武器，在他使用前就把他抓走了。你决定不再拿船员冒险，于是离开了这个信标。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:492
+#: src-ru/data/events_pirate.xml.rawclobber:493
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[1]/choice/event/removeCrew/text"
 msgstr "你考虑过要不要克隆一个替代品，但最终还是决定尊重联邦关于同时存在分身的相关法律。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:498
+#: src-ru/data/events_pirate.xml.rawclobber:499
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[2]/text"
 msgstr "不幸的是，海盗发现了你派去的渗透者身上的武器，在他使用前就把他抓走了。你决定不再拿船员冒险，于是离开了这个信标。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:504
+#: src-ru/data/events_pirate.xml.rawclobber:505
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[2]/choice/event/removeCrew/text"
 msgstr "你考虑过要不要克隆一个替代品，但最终还是决定尊重联邦关于同时存在分身的相关法律。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:510
+#: src-ru/data/events_pirate.xml.rawclobber:511
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[3]/text"
 msgstr "你交出一名船员，暗中让他带上武器。他上了海盗船后成功杀死了海盗头目，其余海盗随即投降。你释放了海盗船上的奴隶，其中一人加入了你的队伍。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:514
+#: src-ru/data/events_pirate.xml.rawclobber:515
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[4]/text"
 msgstr "你交出一名船员，暗中让他带上武器。他上了海盗船后成功杀死了海盗头目，其余海盗随即投降。你下令搬走他们船上所有值钱的东西。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:518
+#: src-ru/data/events_pirate.xml.rawclobber:519
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[5]/text"
 msgstr "你交出一名船员，暗中让他带上武器。他上了海盗船后成功杀死了海盗头目，其余海盗随即投降。你从他们船上拆下一门武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:522
+#: src-ru/data/events_pirate.xml.rawclobber:523
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[6]/text"
 msgstr "你交出一名船员，暗中让他带上武器，但海盗们起了疑心，对他进行了搜身。发现武器后，他们当场处决了他。然后他们怀恨在心，向你的飞船发起攻击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:530
+#: src-ru/data/events_pirate.xml.rawclobber:531
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RAB\"]/event[6]/choice/event/removeCrew/text"
 msgstr "牺牲的渗透者正从克隆舱走出，准备与海盗作战。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:538
+#: src-ru/data/events_pirate.xml.rawclobber:539
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[1]/text"
 msgstr ""
 "你交出一名螳螂族，暗中让他带上武器。他一上船就大开杀戒！螳螂族砍下头目的脑袋后，其余海盗投降。你释放了他们船上的奴隶，其中一人加入了你的队伍。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:542
+#: src-ru/data/events_pirate.xml.rawclobber:543
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[2]/text"
 msgstr "你交出一名螳螂族，暗中让他带上武器。他一上船就大开杀戒！螳螂族砍下头目的脑袋后，其余海盗投降。你下令搬走他们船上所有值钱的东西。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:546
+#: src-ru/data/events_pirate.xml.rawclobber:547
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[3]/text"
 msgstr "你交出一名螳螂族，暗中让他带上武器。他一上船就大开杀戒！螳螂族砍下头目的脑袋后，其余海盗投降。你从他们船上拆下一门武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:550
+#: src-ru/data/events_pirate.xml.rawclobber:551
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_MANTIS\"]/event[4]/text"
 msgstr "武装螳螂杀死了几名海盗，然后驾驶一艘抢来的小艇返回。恼羞成怒的海盗向你发起攻击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:557
+#: src-ru/data/events_pirate.xml.rawclobber:558
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RUN\"]/event[1]/text"
 msgstr "你下令：“全速前进！”但这是徒劳——奴隶贩子很快追上了你，并占据攻击位置。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:562
+#: src-ru/data/events_pirate.xml.rawclobber:563
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RUN\"]/event[2]/text"
 msgstr ""
 "你将所有可用能量转移至引擎后逃跑。你打了他们个措手不及，但他们似乎正在追上来。幸运的是，你能与他们保持足够长时间的距离，为超光速推进器充能。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:565
+#: src-ru/data/events_pirate.xml.rawclobber:566
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"PIRATE_SLAVER_RUN\"]/event[3]/text"
 msgstr "你启动引擎试图逃跑。他们较慢的飞船追不上。最终他们放弃并返回信标，等待更容易得手的猎物。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:575
+#: src-ru/data/events_pirate.xml.rawclobber:576
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/text"
 msgstr "你认出那是著名奴隶贩子的飞船。他向你打招呼，并提出可以购买廉价的“劳动力”。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:577
+#: src-ru/data/events_pirate.xml.rawclobber:578
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[1]/text"
 msgstr "买下一名奴隶，释放他并让他加入队伍。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:586
+#: src-ru/data/events_pirate.xml.rawclobber:587
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[2]/text"
 msgstr "买下这个奴隶。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:595
+#: src-ru/data/events_pirate.xml.rawclobber:596
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[3]/text"
 msgstr "干掉这帮奴隶贩子败类！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:601
+#: src-ru/data/events_pirate.xml.rawclobber:602
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[4]/text"
 msgstr "无视奴隶贩子，继续飞行。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:605
+#: src-ru/data/events_pirate.xml.rawclobber:606
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[@req=\"teleporter\"]/text"
 msgstr "（先进传送器）使用传送器——尝试登上敌舰并解救奴隶。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:611
+#: src-ru/data/events_pirate.xml.rawclobber:612
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[1]/text"
 msgstr "你派出一个小队。他们行动迅速——释放奴隶后传送回你的飞船。其中一名俘虏看起来适合战斗，你扔给他一把武器，准备迎战。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:616
+#: src-ru/data/events_pirate.xml.rawclobber:617
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[2]/text"
 msgstr "你派出一队人去尝试解救囚犯。他们成功找到一名囚犯，但随后被敌船船员抓获并围困。你迅速将自己的小队和那名囚犯传送回船上。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:621
+#: src-ru/data/events_pirate.xml.rawclobber:622
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[3]/text"
 msgstr "你将小队传送到对方船上。但对囚犯位置的判断有误。等你的小队找到囚犯所在地时，奴隶贩子们发现了他们。你将队员撤回船上，准备战斗。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:638
+#: src-ru/data/events_pirate.xml.rawclobber:639
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_SUN\"]/text"
 msgstr "信标建得离一颗M级红超巨星太近了！在你设法离开这里之前，飞船肯定会过热……或者直接完蛋。海盗们大概忘了太阳的威胁，正冲过来战斗。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:649
+#: src-ru/data/events_pirate.xml.rawclobber:650
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_ASTEROID\"]/text"
 msgstr "一艘海盗船潜伏在小行星带中。它立刻发起攻击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:652
+#: src-ru/data/events_pirate.xml.rawclobber:653
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"PIRATE_ASTEROID\"]/choice/text"
 msgstr "转身应战。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:690
+#: src-ru/data/events_pirate.xml.rawclobber:691
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"BOARDERS_PIRATE\"]/text"
 msgstr "嘶～～～～～～～～～～～～～"
 
-#: src-ru/data/events_pirate.xml.rawclobber:695
+#: src-ru/data/events_pirate.xml.rawclobber:696
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"BOARDERS_SUN\"]/text"
 msgstr ""
 "跃迁将你直接送到了当地恒星的日冕层。你收到附近一艘海盗船的信息：“你来得正好——我们的破船被日珥烧得够呛，所以我们要借你的船用用！”检测到飞船上有入侵者！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:706
+#: src-ru/data/events_pirate.xml.rawclobber:707
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"BOARDERS_ASTEROID\"]/text"
 msgstr "你直接跃迁进了一个危险的小行星带。更糟的是，传感器显示一个海盗要塞正瞄准你的飞船并启动了传送器。准备战斗！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:716
+#: src-ru/data/events_pirate.xml.rawclobber:717
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/text"
 msgstr "在信标附近，你发现一艘被摧毁的货船。部分完好的货物飘浮在附近太空中。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:718
+#: src-ru/data/events_pirate.xml.rawclobber:719
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[1]/text"
 msgstr "将货物搬上船。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:722
+#: src-ru/data/events_pirate.xml.rawclobber:723
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[2]/text"
 msgstr "别碰货物，这看起来可疑。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:724
+#: src-ru/data/events_pirate.xml.rawclobber:725
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[2]/event/text"
 msgstr "你没有动那些货物，准备跃迁。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:728
+#: src-ru/data/events_pirate.xml.rawclobber:729
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[@req=\"sensors\"]/text"
 msgstr "（先进传感器）仔细扫描货箱。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:732
+#: src-ru/data/events_pirate.xml.rawclobber:733
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FLOATING_CARGO\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr "（广域扫描仪）仔细扫描货箱。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:738
+#: src-ru/data/events_pirate.xml.rawclobber:739
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[1]/text"
 msgstr "箱子里面装满了军用装备！你们拿走所有能用的东西，把其余的都扔出船外。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:742
+#: src-ru/data/events_pirate.xml.rawclobber:743
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[2]/text"
 msgstr "货物主要是衣物和各种家居小物件。不过，你还是搜集到了一些废料。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:746
+#: src-ru/data/events_pirate.xml.rawclobber:747
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[3]/text"
 msgstr ""
 "你把货物搬到船上后，一个海盗从最近的箱子里跳出来喊道：“呸……这里面真挤。哦，对了！准备受死吧！”随着这声战斗口号，你的飞船里充满了箱子破裂的声音……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:750
+#: src-ru/data/events_pirate.xml.rawclobber:751
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_LIST\"]/event[4]/text"
 msgstr "你刚把货物拖上船，还没打开，一艘海盗船就从隐蔽处出现并发起攻击。与此同时，货箱也打开了。船上有入侵者！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:757
+#: src-ru/data/events_pirate.xml.rawclobber:758
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[1]/text"
 msgstr "货物里根本没什么有趣的东西。不过，你倒是从那艘飞船上搜集到了一些废料。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:763
+#: src-ru/data/events_pirate.xml.rawclobber:764
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[2]/text"
 msgstr "您的先进传感器能够穿透防护屏障并扫描货物。结果发现里面装满了军用装备！你拿走了所有能利用的东西。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:767
+#: src-ru/data/events_pirate.xml.rawclobber:768
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/text"
 msgstr "你的先进传感器探测到货物内部有微弱的生命特征信号。这些生命体似乎携带武器。这看起来像是海盗的伏击计划。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:769
+#: src-ru/data/events_pirate.xml.rawclobber:770
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/choice[1]/text"
 msgstr "摧毁箱子，以免其他人中埋伏。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:771
+#: src-ru/data/events_pirate.xml.rawclobber:772
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/choice[1]/event/text"
 msgstr "你向箱子开火，将它们炸开，海盗被抛向太空各处。一艘海盗船不知从哪里冒出来并发来信息：“你会为此付出代价的，混蛋！”"
 
-#: src-ru/data/events_pirate.xml.rawclobber:776
+#: src-ru/data/events_pirate.xml.rawclobber:777
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FLOATING_CARGO_SCAN_LIST\"]/event[3]/choice[2]/text"
 msgstr "别碰，准备跃迁。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:786
+#: src-ru/data/events_pirate.xml.rawclobber:787
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"CURIOSITY_EVENT\"]/text"
 msgstr "你面前的海盗船正在追逐平民。你收到海盗的来电：“别插手，否则下一个就是你。”没时间谈判了，战斗！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:790
+#: src-ru/data/events_pirate.xml.rawclobber:791
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"PIRATE_CURIOSITY\"]/destroyed/text"
 msgstr "海盗船已被摧毁。平民开始联络你……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:798
+#: src-ru/data/events_pirate.xml.rawclobber:799
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"PIRATE_CURIOSITY\"]/deadCrew/text"
 msgstr "海盗已死。平民开始联络你……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:809
+#: src-ru/data/events_pirate.xml.rawclobber:810
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[1]/text"
 msgstr "“谢谢你没有丢下我们！我们是奇珍商人，有东西要给你。”他们给你留下一件奇怪的武器，然后道别。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:813
+#: src-ru/data/events_pirate.xml.rawclobber:814
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/text"
 msgstr "“谢谢你没有丢下我们！我们是奇珍商人，你可以免费挑选一件商品！”你打量着他们货舱中那些不寻常的武器……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:815
+#: src-ru/data/events_pirate.xml.rawclobber:816
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[1]/text"
 msgstr "索要这件武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:817
+#: src-ru/data/events_pirate.xml.rawclobber:818
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[1]/event/text"
 msgstr "你拿上武器，随后与商人道别。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:822
+#: src-ru/data/events_pirate.xml.rawclobber:823
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[2]/text"
 msgstr "索要这件武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:824
+#: src-ru/data/events_pirate.xml.rawclobber:825
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[2]/choice[2]/event/text"
 msgstr "你拿上武器，随后与商人道别。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:830
+#: src-ru/data/events_pirate.xml.rawclobber:831
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/text"
 msgstr "“谢谢你没有丢下我们！我们是奇珍商人，你可以免费挑选一件商品！”你打量着他们货舱中那些不寻常的武器……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:832
+#: src-ru/data/events_pirate.xml.rawclobber:833
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[1]/text"
 msgstr "索要这件武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:834
+#: src-ru/data/events_pirate.xml.rawclobber:835
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[1]/event/text"
 msgstr "你拿上武器，随后与商人道别。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:839
+#: src-ru/data/events_pirate.xml.rawclobber:840
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[2]/text"
 msgstr "索要这件武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:841
+#: src-ru/data/events_pirate.xml.rawclobber:842
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[2]/event/text"
 msgstr "你拿上武器，随后与商人道别。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:846
+#: src-ru/data/events_pirate.xml.rawclobber:847
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[3]/text"
 msgstr "索要这件武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:848
+#: src-ru/data/events_pirate.xml.rawclobber:849
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"CURIOSITY_REWARD\"]/event[3]/choice[3]/event/text"
 msgstr "你拿上武器，随后与商人道别。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:861
+#: src-ru/data/events_pirate.xml.rawclobber:862
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/text"
 msgstr "信标附近停着一艘气势不凡的海盗船。其指挥官自称凯尼克斯，并提出让你在一款视频游戏中接受考验。你意下如何？"
 
-#: src-ru/data/events_pirate.xml.rawclobber:864
+#: src-ru/data/events_pirate.xml.rawclobber:865
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[1]/text"
 msgstr "同意并启动他的游戏。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:868
+#: src-ru/data/events_pirate.xml.rawclobber:869
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[2]/text"
 msgstr "攻击他！跟海盗没什么游戏好玩的。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:870
+#: src-ru/data/events_pirate.xml.rawclobber:871
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[2]/event/text"
 msgstr "海盗随即启动武器。这场战斗注定会成为传奇……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:875
+#: src-ru/data/events_pirate.xml.rawclobber:876
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT\"]/choice[3]/text"
 msgstr "拒绝并飞走。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:881
+#: src-ru/data/events_pirate.xml.rawclobber:882
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_DECLINE\"]/event[1]/text"
 msgstr "凯尼克斯很失望，但还是留在信标处等待下一位旅行者。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:888
+#: src-ru/data/events_pirate.xml.rawclobber:889
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_DECLINE\"]/event[2]/text"
 msgstr "凯尼克斯说“由不得你拒绝”，然后激活了武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:892
+#: src-ru/data/events_pirate.xml.rawclobber:893
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_DECLINE\"]/event[3]/text"
 msgstr "凯尼克斯说“由不得你拒绝”，然后激活了武器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:897
+#: src-ru/data/events_pirate.xml.rawclobber:898
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[1]"
 msgstr "你的主终端上启动了《FTL》游戏。凯尼克斯给你选了一艘锈迹斑斑的破船而不是飞船。你在想起飞前该做点什么？"
 
-#: src-ru/data/events_pirate.xml.rawclobber:898
+#: src-ru/data/events_pirate.xml.rawclobber:899
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[2]"
 msgstr "你的主终端上启动了《FTL》游戏。凯尼克斯给你选了一艘相当弱的飞船。你在想起飞前该做点什么？"
 
-#: src-ru/data/events_pirate.xml.rawclobber:899
+#: src-ru/data/events_pirate.xml.rawclobber:900
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[3]"
 msgstr "你的主终端上启动了《FTL》游戏。凯尼克斯给你选了一艘明显是用来折磨人的飞船。你在想起飞前该做点什么？"
 
-#: src-ru/data/events_pirate.xml.rawclobber:900
+#: src-ru/data/events_pirate.xml.rawclobber:901
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE\"]/text[4]"
 msgstr "你的主终端上启动了《FTL》游戏。凯尼克斯给你选了一艘梦想中的飞船。你在想起飞前该做点什么？"
 
-#: src-ru/data/events_pirate.xml.rawclobber:903
+#: src-ru/data/events_pirate.xml.rawclobber:904
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[1]"
 msgstr "带上尺子以便改进导航。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:904
+#: src-ru/data/events_pirate.xml.rawclobber:905
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[2]"
 msgstr "去上个厕所。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:905
+#: src-ru/data/events_pirate.xml.rawclobber:906
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[3]"
 msgstr "撸撸猫求好运。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:906
+#: src-ru/data/events_pirate.xml.rawclobber:907
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[4]"
 msgstr "在单杠上活动一下筋骨。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:907
+#: src-ru/data/events_pirate.xml.rawclobber:908
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[5]"
 msgstr "给仙人掌浇水，它能保护你免受显示器的有害辐射。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:908
+#: src-ru/data/events_pirate.xml.rawclobber:909
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[6]"
 msgstr "擦擦摄像头。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:909
+#: src-ru/data/events_pirate.xml.rawclobber:910
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE1\"]/text[7]"
 msgstr "打开奖励列表。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:912
+#: src-ru/data/events_pirate.xml.rawclobber:913
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[1]"
 msgstr "冲一杯咖啡。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:913
+#: src-ru/data/events_pirate.xml.rawclobber:914
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[2]"
 msgstr "泡一杯茶。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:914
+#: src-ru/data/events_pirate.xml.rawclobber:915
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[3]"
 msgstr "清理身后的杂乱。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:915
+#: src-ru/data/events_pirate.xml.rawclobber:916
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[4]"
 msgstr "擦拭显示器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:916
+#: src-ru/data/events_pirate.xml.rawclobber:917
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[5]"
 msgstr "拿一枚硬币来做重要决定。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:917
+#: src-ru/data/events_pirate.xml.rawclobber:918
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[6]"
 msgstr "把无关人员赶出舱室。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:918
+#: src-ru/data/events_pirate.xml.rawclobber:919
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE2\"]/text[7]"
 msgstr "检查是否所有频道都在直播。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:921
+#: src-ru/data/events_pirate.xml.rawclobber:922
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[1]"
 msgstr "确认所有按键都正常工作。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:922
+#: src-ru/data/events_pirate.xml.rawclobber:923
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[2]"
 msgstr "给无线鼠标充电。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:923
+#: src-ru/data/events_pirate.xml.rawclobber:924
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[3]"
 msgstr "关掉手机。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:924
+#: src-ru/data/events_pirate.xml.rawclobber:925
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[4]"
 msgstr "在旁边放个计算器。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:925
+#: src-ru/data/events_pirate.xml.rawclobber:926
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[5]"
 msgstr "囤点薯片。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:926
+#: src-ru/data/events_pirate.xml.rawclobber:927
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[6]"
 msgstr "吃一盘饺子。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:927
+#: src-ru/data/events_pirate.xml.rawclobber:928
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_TEXT_PREPARE_CHOISE3\"]/text[7]"
 msgstr "好好挠一挠很痒的地方。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:930
+#: src-ru/data/events_pirate.xml.rawclobber:931
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_HEADER_TEXT\"]/text"
 msgstr "需要决定下一步前往哪个星区……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:933
+#: src-ru/data/events_pirate.xml.rawclobber:934
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[1]"
 msgstr "螳螂族星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:934
+#: src-ru/data/events_pirate.xml.rawclobber:935
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[2]"
 msgstr "半械族星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:935
+#: src-ru/data/events_pirate.xml.rawclobber:936
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[3]"
 msgstr "岩石族星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:936
+#: src-ru/data/events_pirate.xml.rawclobber:937
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[4]"
 msgstr "海盗星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:937
+#: src-ru/data/events_pirate.xml.rawclobber:938
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[5]"
 msgstr "蛞蝓族星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:938
+#: src-ru/data/events_pirate.xml.rawclobber:939
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[6]"
 msgstr "化身星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:939
+#: src-ru/data/events_pirate.xml.rawclobber:940
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[7]"
 msgstr "平民星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:940
+#: src-ru/data/events_pirate.xml.rawclobber:941
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[8]"
 msgstr "迷雾星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:941
+#: src-ru/data/events_pirate.xml.rawclobber:942
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[9]"
 msgstr "不稳定星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:942
+#: src-ru/data/events_pirate.xml.rawclobber:943
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[10]"
 msgstr "极不稳定星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:943
+#: src-ru/data/events_pirate.xml.rawclobber:944
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[11]"
 msgstr "模物族星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:944
+#: src-ru/data/events_pirate.xml.rawclobber:945
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[12]"
 msgstr "超能族星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:945
+#: src-ru/data/events_pirate.xml.rawclobber:946
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[13]"
 msgstr "超能族星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:946
+#: src-ru/data/events_pirate.xml.rawclobber:947
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[14]"
 msgstr "海盗星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:947
+#: src-ru/data/events_pirate.xml.rawclobber:948
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[15]"
 msgstr "水晶族星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:948
+#: src-ru/data/events_pirate.xml.rawclobber:949
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[16]"
 msgstr "叛军星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:949
+#: src-ru/data/events_pirate.xml.rawclobber:950
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[17]"
 msgstr "秩序星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:950
+#: src-ru/data/events_pirate.xml.rawclobber:951
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[18]"
 msgstr "熔岩族星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:951
+#: src-ru/data/events_pirate.xml.rawclobber:952
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[19]"
 msgstr "半械族母星。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:952
+#: src-ru/data/events_pirate.xml.rawclobber:953
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[20]"
 msgstr "岩石族母星。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:953
+#: src-ru/data/events_pirate.xml.rawclobber:954
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[21]"
 msgstr "螳螂族母星。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:954
+#: src-ru/data/events_pirate.xml.rawclobber:955
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[22]"
 msgstr "蛞蝓族母星。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:955
+#: src-ru/data/events_pirate.xml.rawclobber:956
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[23]"
 msgstr "化身母星。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:956
+#: src-ru/data/events_pirate.xml.rawclobber:957
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_CHOISE_SECTOR_TEXT\"]/text[24]"
 msgstr "异常星区。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:959
+#: src-ru/data/events_pirate.xml.rawclobber:960
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[1]"
 msgstr "飞越这个星区后，你什么有用的东西都没找到……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:960
+#: src-ru/data/events_pirate.xml.rawclobber:961
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[2]"
 msgstr "飞越这个星区后，你的飞船获得了一些小改进……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:961
+#: src-ru/data/events_pirate.xml.rawclobber:962
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[3]"
 msgstr "飞越这个星区时，你救了一个被困在小行星上的可怜虫……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:962
+#: src-ru/data/events_pirate.xml.rawclobber:963
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[4]"
 msgstr "飞越这个星区后，你只找到一个完全没用的无人机……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:963
+#: src-ru/data/events_pirate.xml.rawclobber:964
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[5]"
 msgstr "飞越这个星区时，你被海盗揍了几次。没关系，至少大家都还活着……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:964
+#: src-ru/data/events_pirate.xml.rawclobber:965
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT1\"]/text[6]"
 msgstr "飞越这个星区时，你救了一艘维修船。但你的飞船并不需要修理……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:967
+#: src-ru/data/events_pirate.xml.rawclobber:968
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[1]"
 msgstr "飞越这个星区后，你从一艘废弃飞船上拆下了有价值的武器……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:968
+#: src-ru/data/events_pirate.xml.rawclobber:969
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[2]"
 msgstr "飞越这个星区后，你成功卖掉了货舱里的破烂，赚了一笔……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:969
+#: src-ru/data/events_pirate.xml.rawclobber:970
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[3]"
 msgstr "飞越这个星区后，你的船员队伍得到了补充……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:970
+#: src-ru/data/events_pirate.xml.rawclobber:971
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[4]"
 msgstr "飞越这个星区后，你找到了一个爆裂激光II。它真是太棒了！…"
 
-#: src-ru/data/events_pirate.xml.rawclobber:971
+#: src-ru/data/events_pirate.xml.rawclobber:972
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[5]"
 msgstr "飞越这个星区后，你找到了成吨的无主废料……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:972
+#: src-ru/data/events_pirate.xml.rawclobber:973
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT2\"]/text[6]"
 msgstr "飞越这个星区后，你在最后一个信标处找到了星区地图……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:975
+#: src-ru/data/events_pirate.xml.rawclobber:976
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[1]"
 msgstr "飞越这个星区后，你在最后一个信标的商店里勉强修好了船……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:976
+#: src-ru/data/events_pirate.xml.rawclobber:977
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[2]"
 msgstr "飞越这个星区后，你只找到一个商店。没什么有用的东西……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:977
+#: src-ru/data/events_pirate.xml.rawclobber:978
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[3]"
 msgstr "飞越这个星区后，你连续找到了三个商店。不幸的是，你在第一个商店之前就把钱全花光了……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:978
+#: src-ru/data/events_pirate.xml.rawclobber:979
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[4]"
 msgstr "飞越这个星区时，你轻松干掉了当地的飞船，拿走了他们的破烂……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:979
+#: src-ru/data/events_pirate.xml.rawclobber:980
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[5]"
 msgstr "飞越这个星区后，你找到了一个藏有武器和导弹的秘密基地……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:980
+#: src-ru/data/events_pirate.xml.rawclobber:981
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT3\"]/text[6]"
 msgstr "飞越这个星区时，你差点没从黑翼无畏舰手下逃掉……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:983
+#: src-ru/data/events_pirate.xml.rawclobber:984
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[1]"
 msgstr "飞越这个星区后，你找到了一个自动装填器。看来这次尝试会成功……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:984
+#: src-ru/data/events_pirate.xml.rawclobber:985
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[2]"
 msgstr "飞越这个星区后，你找到了一个导弹发射器和复制器。这是上天的旨意……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:985
+#: src-ru/data/events_pirate.xml.rawclobber:986
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[3]"
 msgstr "飞越这个星区时，你挨了几枚导弹，但总体上找到了很多有用的东西……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:986
+#: src-ru/data/events_pirate.xml.rawclobber:987
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[4]"
 msgstr "飞越这个星区后，你收到了当地占星家发来的一条毫无意义的信息。你惊讶地发现，船上的“人口”翻了一倍……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:987
+#: src-ru/data/events_pirate.xml.rawclobber:988
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[5]"
 msgstr "飞越这个星区后，你找到了一个废料收集吊臂。唉，太迟了……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:988
+#: src-ru/data/events_pirate.xml.rawclobber:989
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYRESULT_TEXT4\"]/text[6]"
 msgstr "飞越这个星区后，你找到了钛合金镀层。这很有用……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:991
+#: src-ru/data/events_pirate.xml.rawclobber:992
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[1]"
 msgstr "在这个星区，你的船员被一群突然出现的螳螂族屠杀殆尽…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:992
+#: src-ru/data/events_pirate.xml.rawclobber:993
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[2]"
 msgstr "在这个星区，你拼命抵抗海盗，但最后一场爆炸成为致命一击，将你的飞船炸得粉碎…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:993
+#: src-ru/data/events_pirate.xml.rawclobber:994
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[3]"
 msgstr "在这个星区，在激烈战斗的某个时刻，你忘了给武器供电，导致飞船受到致命损伤…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:994
+#: src-ru/data/events_pirate.xml.rawclobber:995
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[4]"
 msgstr "在这个星区，你居然没注意到黑洞，并永远地困在了里面（从外部观察者的视角来看）…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:995
+#: src-ru/data/events_pirate.xml.rawclobber:996
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[5]"
 msgstr "在这个星区，你被蛞蝓族骗了（又是他们！），在不利条件下船员全部遇难…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:996
+#: src-ru/data/events_pirate.xml.rawclobber:997
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[6]"
 msgstr "在这个星区，你自信地机动着，结果用飞船舰体接住了整个小行星带…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:997
+#: src-ru/data/events_pirate.xml.rawclobber:998
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[7]"
 msgstr "在这个星区，无情的当地恒星把你的飞船变成了船员的大烤炉…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:998
+#: src-ru/data/events_pirate.xml.rawclobber:999
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[8]"
 msgstr "在这个星区，一个无情的海盗用第三代破片炮把你飞船轰成了渣…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:999
+#: src-ru/data/events_pirate.xml.rawclobber:1000
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[9]"
 msgstr "在这个星区，你驾驶飞船冲向一个未知的方碑，并在其表面爆炸…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1000
+#: src-ru/data/events_pirate.xml.rawclobber:1001
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_FLYREASONDEATH_TEXT\"]/text[10]"
 msgstr "在这个星区，你驾驶飞船冲向那个划破太空的“先知圣眼”。没人会看到你的飞船在接近时爆炸…… 游戏结束"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1018
+#: src-ru/data/events_pirate.xml.rawclobber:1019
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT_GAME_PREPARE_ENDED\"]/text"
 msgstr "你完成了重要的准备工作，并启动了第一个星区……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1138
+#: src-ru/data/events_pirate.xml.rawclobber:1139
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE\"]/text"
 msgstr "这就是——最终堡垒！即将与旗舰展开决战。选择你的战术。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1154
+#: src-ru/data/events_pirate.xml.rawclobber:1155
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[1]"
 msgstr "清空旗舰附近的所有信标，在联邦主基地被摧毁前的最后一刻发起攻击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1155
+#: src-ru/data/events_pirate.xml.rawclobber:1156
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[2]"
 msgstr "现在就果断进攻旗舰，这样如果情况不妙还有机会撤退。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1156
+#: src-ru/data/events_pirate.xml.rawclobber:1157
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[3]"
 msgstr "不使用任何战术。直接冲过去，把那艘叛军破船拆成碎片。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1157
+#: src-ru/data/events_pirate.xml.rawclobber:1158
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[4]"
 msgstr "长时间盯着旗舰，等它变弱，然后在那时出击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1158
+#: src-ru/data/events_pirate.xml.rawclobber:1159
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE1\"]/text[5]"
 msgstr "瘫痪他们的导弹炮，派出登舰小队清剿船员。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1161
+#: src-ru/data/events_pirate.xml.rawclobber:1162
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[1]"
 msgstr "在最终战前寻找维修站，修好后再攻击旗舰。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1162
+#: src-ru/data/events_pirate.xml.rawclobber:1163
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[2]"
 msgstr "从精英敌人身上搜集更多资源，然后再攻击旗舰。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1163
+#: src-ru/data/events_pirate.xml.rawclobber:1164
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[3]"
 msgstr "专注于消灭旗舰上的所有船员。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1164
+#: src-ru/data/events_pirate.xml.rawclobber:1165
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[4]"
 msgstr "骇入他们的氧气舱。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1165
+#: src-ru/data/events_pirate.xml.rawclobber:1166
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE2\"]/text[5]"
 msgstr "用炸弹炸掉他们的护盾，然后用激光扫射其余系统。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1168
+#: src-ru/data/events_pirate.xml.rawclobber:1169
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[1]"
 msgstr "找到商店，卖掉破烂，买齐必需品，然后再攻击旗舰。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1169
+#: src-ru/data/events_pirate.xml.rawclobber:1170
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[2]"
 msgstr "绕到旗舰后方，趁其最不备时发起攻击。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1170
+#: src-ru/data/events_pirate.xml.rawclobber:1171
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[3]"
 msgstr "使用隐形，然后以所有武器的全力齐射突破旗舰的防御。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1171
+#: src-ru/data/events_pirate.xml.rawclobber:1172
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[4]"
 msgstr "在战斗的最初几分钟内对舰体造成尽可能多的伤害。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1172
+#: src-ru/data/events_pirate.xml.rawclobber:1173
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"KENIX_BOSS_EVENT_GAME_ENDBATTLE_CHOISE3\"]/text[5]"
 msgstr "骇入护盾，然后用光束切割敌舰——这是最佳策略。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1176
+#: src-ru/data/events_pirate.xml.rawclobber:1177
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[1]/text"
 msgstr "令人惊讶的是，尽管你浑身是汗，但你的战术奏效了。凯尼克斯非常兴奋，给了你应得的奖励。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1180
+#: src-ru/data/events_pirate.xml.rawclobber:1181
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[2]/text"
 msgstr "令人惊讶的是，尽管你弄坏了几颗按键，但你的战术奏效了。凯尼克斯非常兴奋，给了你应得的奖励。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1184
+#: src-ru/data/events_pirate.xml.rawclobber:1185
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[3]/text"
 msgstr "令人惊讶的是，你的战术奏效了，大概是因为你花了大量时间在第一个星区用很弱的敌人来刷船员技能。无论如何，凯尼克斯都很兴奋，给了你应得的奖励。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1188
+#: src-ru/data/events_pirate.xml.rawclobber:1189
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[4]/text"
 msgstr "令人惊讶的是，你的战术奏效了，很可能是因为你选择了超简单模式。无论如何，凯尼克斯都很满意，给了你应得的奖励。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1195
+#: src-ru/data/events_pirate.xml.rawclobber:1196
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_FINAL\"]/event[8]/text"
 msgstr "旗舰的火力太猛，在某个时刻用一记强大的激光齐射直接炸毁了你的飞船。游戏结束。你突然意识到，叛军舰队已经追上来了……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1200
+#: src-ru/data/events_pirate.xml.rawclobber:1201
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"KENIX_FTL_WIN\"]/text"
 msgstr "令人惊讶的是，你的战术奏效了，很可能是因为你在这款游戏上投入了超过1000小时。无论如何，凯尼克斯都非常满意，给了你应得的奖励。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1207
+#: src-ru/data/events_pirate.xml.rawclobber:1208
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[1]/text"
 msgstr ""
 "凯尼克斯说这次飞行只能打个C，换只猴子都飞得比你好，但出于同情，他还是从自己的仓库里给了你点东西。顺便一提，在你玩的时候，叛军舰队已经逼近了。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1212
+#: src-ru/data/events_pirate.xml.rawclobber:1213
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[2]/text"
 msgstr "凯尼克斯说这次飞行还不错，于是从自己的货舱里给了你点东西。顺便一提，在你玩的时候，叛军舰队已经逼近了。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1217
+#: src-ru/data/events_pirate.xml.rawclobber:1218
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[3]/text"
 msgstr "凯尼克斯说，和你不同，上一位旅行者一次就通关了。出于同情，他给了你一点垃圾。顺便一提，在你玩的时候，叛军舰队已经逼近了。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1222
+#: src-ru/data/events_pirate.xml.rawclobber:1223
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[4]/text"
 msgstr "凯尼克斯说，这次飞行只配得到1枚废料纪念币。顺便一提，在你玩的时候，叛军舰队已经逼近了。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1227
+#: src-ru/data/events_pirate.xml.rawclobber:1228
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_BOSS_EVENT_GAME_OVER\"]/event[5]/text"
 msgstr "凯尼克斯说他很久没见过这么耻辱的飞行了，为了不让类似的事发生在现实中，他最好还是摧毁你的飞船。顺便一提，在你玩的时候，叛军舰队已经逼近了。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1234
+#: src-ru/data/events_pirate.xml.rawclobber:1235
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/escape/text"
 msgstr "你侦测到超光速推进器正在充能！凯尼克斯逃跑了！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1237
+#: src-ru/data/events_pirate.xml.rawclobber:1238
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/gotaway/text"
 msgstr "海盗消失在了未知方向。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1240
+#: src-ru/data/events_pirate.xml.rawclobber:1241
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/destroyed/text"
 msgstr "飞船四分五裂。你搜索残骸寻找有价值的东西。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1248
+#: src-ru/data/events_pirate.xml.rawclobber:1249
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"KENIX_BOSS_PARAMETERS\"]/deadCrew/text"
 msgstr "传感器未在飞船上发现生命迹象。你搜索飞船寻找有价值的东西。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1259
+#: src-ru/data/events_pirate.xml.rawclobber:1260
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_SHIP_DEAD\"]/event[1]/text"
 msgstr "他们的一门火炮幸存了下来，你把它收归己用。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1267
+#: src-ru/data/events_pirate.xml.rawclobber:1268
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_CREW_DEAD\"]/event[1]/text"
 msgstr "他们的一门火炮幸存了下来，你把它收归己用。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1271
+#: src-ru/data/events_pirate.xml.rawclobber:1272
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"KENIX_CREW_DEAD\"]/event[2]/text"
 msgstr "他们的一门火炮幸存了下来，你把它收归己用。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1286
+#: src-ru/data/events_pirate.xml.rawclobber:1287
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"ROCK_JAIL_TEXT\"]/text[1]"
 msgstr "你出现在信标处，遭到了一艘奇怪海盗船的攻击……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1287
+#: src-ru/data/events_pirate.xml.rawclobber:1288
 msgid ""
 "data/events_pirate.xml.rawclobber$//textList[@name=\"ROCK_JAIL_TEXT\"]/text[2]"
 msgstr "你刚一出现，就看到一艘装有奇怪武器的海盗船。它想抢走你的船员！"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1291
+#: src-ru/data/events_pirate.xml.rawclobber:1292
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"ROCK_JAIL_SHIPS_PARAM\"]/escape/text"
 msgstr "看来那艘船正试图逃跑。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1294
+#: src-ru/data/events_pirate.xml.rawclobber:1295
 msgid ""
 "data/events_pirate.xml.rawclobber$//ship[@name=\"ROCK_JAIL_SHIPS_PARAM\"]/gotaway/text"
 msgstr "劫掠者朝未知方向消失了。"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1301
+#: src-ru/data/events_pirate.xml.rawclobber:1302
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"ROCK_JAIL_DEAD_CREW\"]/event[1]/text"
-msgstr ""
-"你收集了战斗中幸存下来的所有东西。可惜这艘船的牢笼里没有囚犯。大概他们不久前"
-"刚被卖掉了吧……"
+msgstr "你收集了战斗中幸存下来的所有东西。可惜这艘船的牢笼里没有囚犯。大概他们不久前刚被卖掉了吧……"
 
-#: src-ru/data/events_pirate.xml.rawclobber:1305
+#: src-ru/data/events_pirate.xml.rawclobber:1306
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"ROCK_JAIL_DEAD_CREW\"]/event[2]/text"
+msgstr "你收集了战斗中幸存下来的所有东西。此外，你还在其中一间牢房里发现了一名囚犯，他加入了你的队伍。"
+
+#: src-ru/data/events_pirate.xml.rawclobber:1317
+msgid ""
+"data/events_pirate.xml.rawclobber$//event[@name=\"EVENT_PIRATE_GLIF_FIGHT\"]/loadEventList/event[1]/text"
 msgstr ""
-"你收集了战斗中幸存下来的所有东西。此外，你还在其中一间牢房里发现了一名囚犯，"
-"他加入了你的队伍。"
+
+#: src-ru/data/events_pirate.xml.rawclobber:1325
+msgid ""
+"data/events_pirate.xml.rawclobber$//event[@name=\"EVENT_PIRATE_GLIF_FIGHT\"]/loadEventList/event[2]/text"
+msgstr ""
+
+#: src-ru/data/events_pirate.xml.rawclobber:1336
+msgid ""
+"data/events_pirate.xml.rawclobber$//ship[@name=\"GLIF_ENEMY_PARAM\"]/destroyed/text"
+msgstr ""
+
+#: src-ru/data/events_pirate.xml.rawclobber:1340
+msgid ""
+"data/events_pirate.xml.rawclobber$//ship[@name=\"GLIF_ENEMY_PARAM\"]/deadCrew/text"
+msgstr ""
