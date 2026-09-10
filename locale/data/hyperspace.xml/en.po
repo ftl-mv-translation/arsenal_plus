@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datahyperspace-xml/en/>\n"
 "Language: en\n"
@@ -2100,6 +2100,7 @@ msgid ""
 msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3074
+#, fuzzy
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_REPLACE_MEDCLON\"]/description"
 msgstr "Replace the Medbay with a Clone Bay, or vice versa."
