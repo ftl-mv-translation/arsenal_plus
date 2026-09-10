@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/datadlceventsxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:9
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_PULSAR\"]/text"
@@ -50,8 +57,11 @@ msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP2\"]/deadCrew/text"
 msgstr "乌拉！"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:75
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/text"
-msgstr "你偶然发现了一个大型贸易空间站。然而，你刚一靠近，周围所有人都收到了同一条广播：“不要与联邦支持者来往。任何与他们接触的人都将受到惩罚。”"
+msgstr ""
+"你偶然发现了一个大型贸易空间站。然而，你刚一靠近，周围所有人都收到了同一条广"
+"播：“不要与联邦支持者来往。任何与他们接触的人都将受到惩罚。”"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:77
 msgid ""
