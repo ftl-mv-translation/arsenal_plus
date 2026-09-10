@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/datablueprintsxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/blueprints.xml.rawclobber:169
 msgid ""
@@ -4226,6 +4233,7 @@ msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SOUL_MAGNIT\"]/titl
 msgstr "灵魂囚笼"
 
 #: src-ru/data/blueprints.xml.rawclobber:15194
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SOUL_MAGNIT\"]/desc"
 msgstr "这个装置的用途尚不明确，但至少它值一些废料。"
 
@@ -14108,8 +14116,11 @@ msgid ""
 msgstr "快子I"
 
 #: src-ru/data/blueprints.xml.rawclobber:33615
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1\"]/desc"
-msgstr "此武器生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"此武器生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍"
+"无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:33640
 msgid ""
@@ -14127,8 +14138,11 @@ msgid ""
 msgstr "快子II"
 
 #: src-ru/data/blueprints.xml.rawclobber:33644
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:33669
 msgid ""
@@ -14146,8 +14160,11 @@ msgid ""
 msgstr "重型快子炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:33673
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:33702
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"KERNEL_1\"]/title"
@@ -35080,9 +35097,12 @@ msgid ""
 msgstr "快子I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:78875
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_FRC\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:78899
 msgid ""
@@ -35100,9 +35120,12 @@ msgid ""
 msgstr "快子I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:78903
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_CLD\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:78927
 msgid ""
@@ -35120,9 +35143,12 @@ msgid ""
 msgstr "快子I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:78931
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_POW\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:78955
 msgid ""
@@ -35140,9 +35166,12 @@ msgid ""
 msgstr "快子II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:78959
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_FRC\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:78983
 msgid ""
@@ -35160,9 +35189,12 @@ msgid ""
 msgstr "快子II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:78987
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_CLD\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:79011
 msgid ""
@@ -35180,9 +35212,12 @@ msgid ""
 msgstr "快子II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:79015
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_POW\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:79039
 msgid ""
@@ -35200,9 +35235,12 @@ msgid ""
 msgstr "重型快子 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:79043
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_FRC\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:79067
 msgid ""
@@ -35220,9 +35258,12 @@ msgid ""
 msgstr "重型快子 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:79071
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_CLD\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:79095
 msgid ""
@@ -35240,9 +35281,12 @@ msgid ""
 msgstr "重型快子 †"
 
 #: src-ru/data/blueprints.xml.rawclobber:79099
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_POW\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:79127
 msgid ""
@@ -55180,9 +55224,12 @@ msgid ""
 msgstr "快子I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:121737
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_UNI\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:121761
 msgid ""
@@ -55200,9 +55247,12 @@ msgid ""
 msgstr "快子II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:121765
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_UNI\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:121789
 msgid ""
@@ -55220,9 +55270,12 @@ msgid ""
 msgstr "重型快子 √"
 
 #: src-ru/data/blueprints.xml.rawclobber:121793
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_UNI\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:121817
 msgid ""
