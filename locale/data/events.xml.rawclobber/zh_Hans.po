@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataeventsxmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -5051,16 +5051,22 @@ msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_FUEL_TANK\"]/text[3]"
 msgstr "你偶然发现了一座太空站的残骸。大部分已被洗劫一空，但你在里面找到了一个燃料罐。"
 
 #: src-ru/data/events.xml.rawclobber:6215
+#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_KOMAROV_CORE\"]/text[1]"
-msgstr "进入星系后，你注意到附近有一艘联邦飞船。扫描显示船上没有船员，唯一的发现是一个密封的燃料罐。没有找到任何能解释船员失踪的痕迹或线索。"
+msgstr ""
+"进入星系后，你注意到附近有一艘联邦飞船。扫描显示船上没有船员，唯一的发现是一"
+"个密封的燃料罐。没有找到任何能解释船员失踪的痕迹或线索。"
 
 #: src-ru/data/events.xml.rawclobber:6216
 msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_KOMAROV_CORE\"]/text[2]"
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:6217
+#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_KOMAROV_CORE\"]/text[3]"
-msgstr "你偶然发现了一座太空站的残骸。大部分已被洗劫一空，但你在里面找到了一个燃料罐。"
+msgstr ""
+"你偶然发现了一座太空站的残骸。大部分已被洗劫一空，但你在里面找到了一个燃料罐"
+"。"
 
 #: src-ru/data/events.xml.rawclobber:6223
 msgid ""
@@ -14941,9 +14947,12 @@ msgid ""
 msgstr "你的蛞蝓族能力太弱，骗局被揭穿。佐尔坦人发起攻击！"
 
 #: src-ru/data/events.xml.rawclobber:18382
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ZOLTAN_FLEET_ZOLTALKS\"]/event[1]/loadEventList/event[1]/text"
-msgstr "佐尔坦船员与同胞们热烈地聊着各种话题，最终讨到了一张飞行许可证、一张星区地图和一门武器。"
+msgstr ""
+"佐尔坦船员与同胞们热烈地聊着各种话题，最终讨到了一张飞行许可证、一张星区地图"
+"和一门武器。"
 
 #: src-ru/data/events.xml.rawclobber:18386
 msgid ""
@@ -19011,12 +19020,14 @@ msgid "data/events.xml.rawclobber$//event[@name=\"DOOR_WORM_LIST_PREPARE\"]/text
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:22683
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DOOR_WORM_LIST_PREPARE\"]/choice[@req=\"hacking\""
 " and @lvl=\"0\"]/text"
 msgstr "不幸的是，没有护盾系统就无法进行此项操作。"
 
 #: src-ru/data/events.xml.rawclobber:22698
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"DOOR_WORM_LIST_NOTHING\"]/text"
 msgstr "你的团队无法完成无人机系统的设置。你不能再浪费时间了，准备跃迁。"
 
@@ -19029,6 +19040,7 @@ msgid "data/events.xml.rawclobber$//event[@name=\"DOOR_WORM_LIST_GOOD_2\"]/text"
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:22710
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"DOOR_WORM_LIST_BAD\"]/text"
 msgstr "在优化过程中，无人机系统发生了爆炸！出了差错……"
 
@@ -44067,6 +44079,7 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:51336
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"DOOR_WORM\"]/text"
 msgstr "（网络屏障）将此增强嵌入飞船结构，以腾出增强槽位。"
@@ -44126,6 +44139,7 @@ msgid ""
 msgstr "返回商店。"
 
 #: src-ru/data/events.xml.rawclobber:51658
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_FUEL_IN_STORE\"]/choice[2]/text"
 msgstr "20。"
@@ -44240,6 +44254,7 @@ msgid ""
 msgstr "返回商店。"
 
 #: src-ru/data/events.xml.rawclobber:51766
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_MISSILES_IN_STORE\"]/choice[2]/text"
 msgstr "20。"
@@ -44354,6 +44369,7 @@ msgid ""
 msgstr "返回商店。"
 
 #: src-ru/data/events.xml.rawclobber:51873
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SELL_DRONES_IN_STORE\"]/choice[2]/text"
 msgstr "20。"
@@ -55370,6 +55386,7 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:68980
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_PIRATE_SELLS_TRAITORATOR\"]/choice[1]/text"
 msgstr "攻击海盗。"
@@ -55464,6 +55481,7 @@ msgid ""
 msgstr "这艘船似乎试图逃离。"
 
 #: src-ru/data/events.xml.rawclobber:69061
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"FED_TRRAD_PARAMETERS\"]/gotaway/text"
 msgstr "飞船离开了信标。"
