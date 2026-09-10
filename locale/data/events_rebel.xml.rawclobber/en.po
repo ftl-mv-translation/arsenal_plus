@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"dataevents_rebelxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_rebel.xml.rawclobber:140
 #, fuzzy
@@ -990,6 +997,7 @@ msgstr ""
 "teleported onto your ship!"
 
 #: src-ru/data/events_rebel.xml.rawclobber:838
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"START_BEACON_ORDEN\"]/text[1]"
 msgstr ""
@@ -1024,6 +1032,7 @@ msgstr ""
 " are increasingly frequent, they do not take trespassers kindly."
 
 #: src-ru/data/events_rebel.xml.rawclobber:842
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"START_BEACON_ORDEN\"]/text[5]"
 msgstr ""
@@ -5092,6 +5101,7 @@ msgstr ""
 "Since then, the HAL have been capturing more and more territories."
 
 #: src-ru/data/events_rebel.xml.rawclobber:3313
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"START_BEACON_HAL\"]/text[3]"
 msgstr ""
@@ -5546,6 +5556,7 @@ msgid ""
 msgstr "Attack the repair drones."
 
 #: src-ru/data/events_rebel.xml.rawclobber:3485
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"HAL_BOSS_FIGHT\"]/choice[1]/event/text"
 msgstr ""
@@ -6709,13 +6720,14 @@ msgid ""
 msgstr "Decline."
 
 #: src-ru/data/events_rebel.xml.rawclobber:4322
+#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"QUEST_HAL_FED_NOFUEL\"]/text"
 msgstr ""
-"\"Captain, thank you for accompanying us! However, this is not the place. We"
-" made a mistake and went to the wrong beacon. But now we have figured it "
-"out, and we have the exact coordinates! And yes, by the way, we have empty "
-"tanks again... What do you say?\""
+"\"Captain, thank you for accompanying us! However, this is not the place. We "
+"made a mistake and went to the wrong beacon. But now we have figured it out, "
+"and we have the exact coordinates! And yes, by the way, we have empty tanks "
+"again... What do you say?\""
 
 #: src-ru/data/events_rebel.xml.rawclobber:4325
 #, fuzzy
