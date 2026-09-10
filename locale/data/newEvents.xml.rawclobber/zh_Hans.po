@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataneweventsxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/newEvents.xml.rawclobber:361
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[1]"
@@ -134,8 +141,11 @@ msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[32]"
 msgstr "提示：离子武器——离子武器会使系统暂时失效并锁定。如果它击中护盾，护盾系统本身也会受到离子效果影响。"
 
 #: src-ru/data/newEvents.xml.rawclobber:394
+#, fuzzy
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[33]"
-msgstr "提示：炸弹——炸弹会直接传送到两艘飞船中的一艘上。它们无视护盾和防御无人机。然而，它们只影响船员和系统，不造成船体伤害。"
+msgstr ""
+"提示：炸弹——炸弹会直接传送到两艘飞船中的一艘上。它们无视护盾和防御无人机。然"
+"而，它们只影响船员和系统，不造成船体伤害。"
 
 #: src-ru/data/newEvents.xml.rawclobber:395
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[34]"
@@ -196,9 +206,11 @@ msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[47]"
 msgstr "提示：HAL飞船——HAL无人机没有武器系统，但配备了可伤害船员的离子相位巨炮。它们的战斗无人机受到干扰发生器的保护。"
 
 #: src-ru/data/newEvents.xml.rawclobber:410
+#, fuzzy
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[48]"
 msgstr ""
-"提示：HAL机载计算机——当受到伤害时，HAL飞船的AI会启用备用电源回路，从而增加反应堆功率。然而，有时受到的伤害对机载计算机可能是致命的。"
+"提示：HAL机载计算机——当受到伤害时，HAL飞船的AI会启用备用电源回路，从而增加反"
+"应堆功率。然而，有时受到的伤害对机载计算机可能是致命的。"
 
 #: src-ru/data/newEvents.xml.rawclobber:411
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[49]"
@@ -222,8 +234,11 @@ msgstr ""
 "提示：黑翼——黑翼巡洋舰是叛军的前线巡洋舰，它们配备了坚不可摧的武器系统，并在没有ASB掩护的情况下追击你的飞船。摧毁它们可以获得不错的奖励。"
 
 #: src-ru/data/newEvents.xml.rawclobber:418
+#, fuzzy
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[54]"
-msgstr "提示：斯露姆飞船——斯露姆飞船几乎不可能被登舰，因为它们的克隆系统受到保护，免受直接伤害。然而，它仍然容易受到火灾的影响。"
+msgstr ""
+"提示：斯露姆飞船——斯露姆飞船几乎不可能被登舰，因为它们的克隆系统受到保护，免"
+"受直接伤害。然而，它仍然容易受到火灾的影响。"
 
 #: src-ru/data/newEvents.xml.rawclobber:419
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[55]"
