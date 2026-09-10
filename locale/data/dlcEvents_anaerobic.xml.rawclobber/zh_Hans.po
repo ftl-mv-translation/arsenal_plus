@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/datadlcevents_anaerobicxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:125
 msgid ""
@@ -1019,10 +1026,13 @@ msgid ""
 msgstr "传感器注意到一艘小型食铁族巡洋舰正在拆解另一艘小型食铁族飞船。你还没来得及惊讶是什么让他们反目成仇，那艘巡洋舰就发现了你，并发起了攻击。"
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:942
+#, fuzzy
 msgid ""
 "data/dlcEvents_anaerobic.xml.rawclobber$//textList[@name=\"LANIUS_FIGHT_TEXT\"]/text[2]"
 msgstr ""
-"你抵达后不久，一艘食铁族飞船跃迁到了信标附近。它开始缓缓靠近。你尝试用公共频道与他们联系。然而，他们要么选择无视，要么听不懂你的话。当飞船靠近时，你下令武器充能，同时看到食铁族也在做同样的事。"
+"你抵达后不久，一艘食铁族飞船跃迁到了信标附近。它开始缓缓靠近。你尝试用公共频"
+"道与他们联系。然而，他们要么选择无视，要么听不懂你的话。当飞船靠近时，你下令"
+"武器充能，同时看到食铁族也在做同样的事。"
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:943
 msgid ""
@@ -1318,10 +1328,13 @@ msgid ""
 msgstr "不幸的是，拯救所有受战争或食铁族侵扰的人并非你的使命。"
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:1160
+#, fuzzy
 msgid ""
 "data/dlcEvents_anaerobic.xml.rawclobber$//textList[@name=\"LANIUS_PIRATE_CIVILIAN_TEXT\"]/text[1]"
 msgstr ""
-"你发现一个废弃的挖掘场正被食铁族“收购”。然而，你立刻收到一艘民用运输船的呼叫：“救命！我们本想赶在食铁族到来前逃走，却被海盗抓住了！”你看到一艘孤零零的海盗船正扣留那艘民用船。"
+"你发现一个废弃的挖掘场正被食铁族“收购”。然而，你立刻收到一艘民用运输船的呼叫"
+"：“救命！我们本想赶在食铁族到来前逃走，却被海盗抓住了！”你看到一艘孤零零的海"
+"盗船正扣留那艘民用船。"
 
 #: src-ru/data/dlcEvents_anaerobic.xml.rawclobber:1161
 msgid ""
