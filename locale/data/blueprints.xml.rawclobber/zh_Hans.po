@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datablueprintsxmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -4851,9 +4851,11 @@ msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MIND_ORDER\"]/title
 msgstr "神经操纵器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15853
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MIND_ORDER\"]/desc"
 msgstr ""
-"使友方免疫心灵控制，并完全控制被心灵控制的敌人，控制时间延长50%。被控制敌人的所有能力变为友方效果。需要船上已通电的心灵控制系统才能工作。"
+"使友方免疫心灵控制，并完全控制被心灵控制的敌人，控制时间延长50%。被控制敌人的"
+"所有能力变为友方效果。需要船上已通电的心灵控制系统才能工作。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15861
 msgid ""
@@ -81030,10 +81032,12 @@ msgid ""
 msgstr "对每个舱室造成1点伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:178064
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/descriptionOverride"
 msgstr ""
-"此武器造成巨大伤害。每次射击也会不可避免地损伤宿主飞船的武器舱，每次齐射最多可能造成1点船体伤害。\n"
+"此武器造成巨大伤害。每次射击也会不可避免地损伤宿主飞船的武器舱，每次齐射最多"
+"可能造成1点船体伤害。\n"
 "\n"
 "数据：\n"
 "所需能量：4\n"
@@ -81615,10 +81619,12 @@ msgid ""
 msgstr "对每个舱室造成1点伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:179476
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_PRC\"]/descriptionOverride"
 msgstr ""
-"此武器造成毁灭性伤害。每次射击还必然对母舰的武器舱造成损伤，每次齐射最多可造成1点舰体伤害。\n"
+"此武器造成毁灭性伤害。每次射击还必然对母舰的武器舱造成损伤，每次齐射最多可造"
+"成1点舰体伤害。\n"
 "\t\n"
 "\t属性：\n"
 "\t需要能量： 4\n"
@@ -81661,10 +81667,12 @@ msgid ""
 msgstr "对每个舱室造成1点伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:179524
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_CLD\"]/descriptionOverride"
 msgstr ""
-"此武器造成毁灭性伤害。每次射击还必然对母舰的武器舱造成损伤，每次齐射最多可造成1点舰体伤害。\n"
+"此武器造成毁灭性伤害。每次射击还必然对母舰的武器舱造成损伤，每次齐射最多可造"
+"成1点舰体伤害。\n"
 "\t\n"
 "\t属性：\n"
 "\t需要能量： 4\n"
@@ -81706,10 +81714,12 @@ msgid ""
 msgstr "对每个舱室造成1点伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:179571
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_POW\"]/descriptionOverride"
 msgstr ""
-"此武器造成毁灭性伤害。每次射击还必然对母舰的武器舱造成损伤，每次齐射最多可造成1点舰体伤害。\n"
+"此武器造成毁灭性伤害。每次射击还必然对母舰的武器舱造成损伤，每次齐射最多可造"
+"成1点舰体伤害。\n"
 "\t\n"
 "\t属性：\n"
 "\t需要能量： 3\n"
@@ -81751,10 +81761,12 @@ msgid ""
 msgstr "对每个舱室造成1点伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:179618
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_UNI\"]/descriptionOverride"
 msgstr ""
-"此武器造成毁灭性伤害。每次射击还必然对母舰的武器舱造成损伤，每次齐射最多可造成1点舰体伤害。\n"
+"此武器造成毁灭性伤害。每次射击还必然对母舰的武器舱造成损伤，每次齐射最多可造"
+"成1点舰体伤害。\n"
 "\t\n"
 "\t属性：\n"
 "\t需要能量： 4\n"
@@ -84521,11 +84533,13 @@ msgid ""
 msgstr "光点武器，在垂直线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184458
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_PRC\"]/title"
 msgstr "叉形光束（火）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184459
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_PRC\"]/short"
 msgstr "叉形光束（火）"
@@ -84536,11 +84550,13 @@ msgid ""
 msgstr "光点武器，在水平线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184483
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_BRC\"]/title"
 msgstr "叉形光束（火）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184484
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_BRC\"]/short"
 msgstr "叉形光束（火）"
@@ -84551,11 +84567,13 @@ msgid ""
 msgstr "光点武器，在水平线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184508
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_CLD\"]/title"
 msgstr "叉形光束（火）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184509
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_CLD\"]/short"
 msgstr "叉形光束（火）"
@@ -84566,11 +84584,13 @@ msgid ""
 msgstr "光点武器，在水平线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184533
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_POW\"]/title"
 msgstr "叉形光束（火）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184534
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_POW\"]/short"
 msgstr "叉形光束（火）"
@@ -84581,11 +84601,13 @@ msgid ""
 msgstr "光点武器，在水平线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184558
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_UNI\"]/title"
 msgstr "叉形光束（火）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184559
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_G_UNI\"]/short"
 msgstr "叉形光束（火）"
@@ -84596,11 +84618,13 @@ msgid ""
 msgstr "光点武器，在水平线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184584
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_PRC\"]/title"
 msgstr "叉形光束（纵）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184585
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_PRC\"]/short"
 msgstr "叉形光束（纵）"
@@ -84611,11 +84635,13 @@ msgid ""
 msgstr "光点武器，在垂直线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184609
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_BRC\"]/title"
 msgstr "叉形光束（纵）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184610
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_BRC\"]/short"
 msgstr "叉形光束（纵）"
@@ -84626,11 +84652,13 @@ msgid ""
 msgstr "光点武器，在垂直线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184634
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_CLD\"]/title"
 msgstr "叉形光束（纵）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184635
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_CLD\"]/short"
 msgstr "叉形光束（纵）"
@@ -84641,11 +84669,13 @@ msgid ""
 msgstr "光点武器，在垂直线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184659
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_POW\"]/title"
 msgstr "叉形光束（纵）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184660
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_POW\"]/short"
 msgstr "叉形光束（纵）"
@@ -84656,11 +84686,13 @@ msgid ""
 msgstr "光点武器，在垂直线上对3个邻近点造成伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:184684
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_UNI\"]/title"
 msgstr "叉形光束（纵）"
 
 #: src-ru/data/blueprints.xml.rawclobber:184685
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_V_UNI\"]/short"
 msgstr "叉形光束（纵）"
@@ -85221,6 +85253,7 @@ msgid ""
 msgstr "反护盾无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:185996
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ASHIELD\"]/desc"
 msgstr "此无人机使敌方护盾充能速度降低100%。"
@@ -85443,6 +85476,7 @@ msgid ""
 msgstr "离子谐振器"
 
 #: src-ru/data/blueprints.xml.rawclobber:186393
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ION_RESONATOR\"]/desc"
 msgstr "为所有无系统/船体伤害的离子武器增加系统伤害。"
