@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_engixmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -8367,9 +8367,12 @@ msgid ""
 msgstr "你迅速搜刮了飞船货舱内的物品……"
 
 #: src-ru/data/events_engi.xml.rawclobber:10059
+#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/text"
-msgstr "机器人技师感谢了你，尽管他们能提供的不多，但他们准备在你的飞船上安装一个备用人工智能。"
+msgstr ""
+"机器人技师感谢了你，尽管他们能提供的不多，但他们准备在你的飞船上安装一个备用"
+"人工智能。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10061
 msgid ""
