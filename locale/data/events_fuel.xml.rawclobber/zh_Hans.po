@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_fuelxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_fuel.xml.rawclobber:41
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_FLEET\"]/text"
@@ -1010,9 +1017,12 @@ msgid ""
 msgstr "看到你的船员中有一名蛞蝓族，他停止了不断的轻笑。交易似乎进行得很顺利，尽管你想知道两个蛞蝓族之间在心灵感应中进行着怎样的智斗。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:1086
+#, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[1]/text"
-msgstr "你怀疑他是否值得信任，但别无选择只能达成交易。然而，交易顺利完成，没有发生意外。"
+msgstr ""
+"你怀疑他是否值得信任，但别无选择只能达成交易。然而，交易顺利完成，没有发生意"
+"外。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:1094
 msgid ""
@@ -1020,9 +1030,12 @@ msgid ""
 msgstr "一切看似正常，但突然大量物资消失！他一定是在你的货舱里安装了便携式传送器。在你反应过来之前，他的船已经逃之夭夭。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:1103
+#, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[2]/text"
-msgstr "你怀疑他是否值得信任，但别无选择只能达成交易。然而，交易顺利完成，没有发生意外。"
+msgstr ""
+"你怀疑他是否值得信任，但别无选择只能达成交易。然而，交易顺利完成，没有发生意"
+"外。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:1112
 msgid ""
