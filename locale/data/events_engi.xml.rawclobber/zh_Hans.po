@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 12:56+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_engixmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_engi.xml.rawclobber:158
 msgid ""
@@ -8321,6 +8328,7 @@ msgid ""
 msgstr "不需要巨炮。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10010
+#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[6]/text"
 msgstr "在FTL驱动器充能时与船员交谈。"
