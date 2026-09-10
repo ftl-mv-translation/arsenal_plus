@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_slugxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_slug.xml.rawclobber:159
 msgid "data/events_slug.xml.rawclobber$//textList[@name=\"NOTHING_SLUG\"]/text[1]"
@@ -993,10 +1000,13 @@ msgid ""
 msgstr "等待，希望护卫队能离开。"
 
 #: src-ru/data/events_slug.xml.rawclobber:1051
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"SLUG_UNLOCK_2\"]/choice[2]/event/text"
 msgstr ""
-"等待未知让人煎熬。犹豫一番后，你还是尝试小心翼翼地朝平台摸回去。然而，搜寻了一个小时无果后，你无法确定他们是飞走了，还是你只是算错了飞行轨迹……是时候放弃寻找，继续前进了。"
+"等待未知让人煎熬。犹豫一番后，你还是尝试小心翼翼地朝平台摸回去。然而，搜寻了"
+"一个小时无果后，你无法确定他们是飞走了，还是你只是算错了飞行轨迹……是时候放弃"
+"寻找，继续前进了。"
 
 #: src-ru/data/events_slug.xml.rawclobber:1055
 msgid ""
@@ -1128,10 +1138,13 @@ msgid ""
 msgstr "你抵达了蛞蝓族星云。这些有害的心灵感应生物狡猾透顶，自私到骨子里。在这里飞行，只需记住一点：他们已经知道了你的存在。务必万分小心。"
 
 #: src-ru/data/events_slug.xml.rawclobber:1191
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"START_BEACON_SLUG\"]/text[7]"
 msgstr ""
-"刚一进入这个星区，你就注意到船体旁边有一件完美的武器。你船员们的眼睛闪烁着喜悦的光芒，驾驶员还拿出了一瓶超能族朗姆酒。然而，打开扫描仪后，你只看到一颗小行星。难道这又是那些狡猾蛞蝓族的催眠把戏？..."
+"刚一进入这个星区，你就注意到船体旁边有一件完美的武器。你船员们的眼睛闪烁着喜"
+"悦的光芒，驾驶员还拿出了一瓶超能族朗姆酒。然而，打开扫描仪后，你只看到一颗小"
+"行星。难道这又是那些狡猾蛞蝓族的催眠把戏？..."
 
 #: src-ru/data/events_slug.xml.rawclobber:1192
 msgid ""
@@ -3123,6 +3136,7 @@ msgid ""
 msgstr "看来离子风暴导致了设备故障，你在附近没有看到任何求救信号的源头。"
 
 #: src-ru/data/events_slug.xml.rawclobber:3186
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_STORM_DISTRESS_OLD_PIRATE\"]/text[1]"
 msgstr "原来，求救的是艘老旧的海盗船。然而，一看到你，他们就发起了攻击。"
@@ -5103,9 +5117,12 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5374
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X\"]/event/choice[2]/event/text"
-msgstr "小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡。“游 戏 结 束”。"
+msgstr ""
+"小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡"
+"。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5376
 msgid ""
@@ -5320,9 +5337,12 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5532
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F\"]/event/choice[2]/event/text"
-msgstr "小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡。“游 戏 结 束”。"
+msgstr ""
+"小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡"
+"。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5534
 msgid ""
@@ -6020,9 +6040,12 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6059
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[2]/event/text"
-msgstr "小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡。“游 戏 结 束”。"
+msgstr ""
+"小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡"
+"。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6061
 msgid ""
@@ -6525,9 +6548,12 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6439
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[2]/event/text"
-msgstr "小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡。“游 戏 结 束”。"
+msgstr ""
+"小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡"
+"。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6441
 msgid ""
