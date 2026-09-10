@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"dataeventsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events.xml.rawclobber:32
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/text"
@@ -2146,6 +2153,7 @@ msgstr ""
 "usual form. Quite frightened, you ask them not to do that again."
 
 #: src-ru/data/events.xml.rawclobber:3107
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"NOTHING2_ENGI_TEXT\"]/text[11]"
 msgstr ""
@@ -2281,6 +2289,7 @@ msgstr ""
 " usual form. Quite frightened, you ask them not to do that again."
 
 #: src-ru/data/events.xml.rawclobber:3166
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"NOTHING2_MORPH_TEXT\"]/text[11]"
 msgstr ""
@@ -6273,13 +6282,14 @@ msgid ""
 msgstr "(Infrared Scanner) Run advanced life scans."
 
 #: src-ru/data/events.xml.rawclobber:5912
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"STATION_SICK_SCANNER\"]/event[1]/text"
 msgstr ""
-"Sensors show scattered signs of life although most of the crew are deceased."
-" However the health signatures of the living indicate they are violent and "
-"unstable. You decide it's better to move on than risk engaging the remaining"
-" crew."
+"Sensors show scattered signs of life although most of the crew are deceased. "
+"However the health signatures of the living indicate they are violent and "
+"unstable. You decide it's better to move on than risk engaging the remaining "
+"crew."
 
 #: src-ru/data/events.xml.rawclobber:5915
 #, fuzzy
@@ -6578,6 +6588,7 @@ msgstr ""
 "(Improved Piloting) Have your pilot maneuver you out of the asteroid field."
 
 #: src-ru/data/events.xml.rawclobber:6092
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BOARDERS_ASTEROID_PRIZRAK\"]/choice[@req=\"pilot\"]/event/text"
 msgstr ""
@@ -8568,6 +8579,7 @@ msgstr ""
 "well-deserved reward."
 
 #: src-ru/data/events.xml.rawclobber:7494
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"QUEST_MANTIS_INVASION_START\"]/text"
 msgstr ""
@@ -11844,12 +11856,13 @@ msgstr ""
 "preparing to defend themselves."
 
 #: src-ru/data/events.xml.rawclobber:9584
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"CIRCLE_PRO_TALK\"]/event[1]/text"
 msgstr ""
 "You send your Engi over to the station to persuade them to hand over the "
-"prototype weapon to you for your fight against the Rebels. It seems that the"
-" Engi also aren't too fond of them, since soon afterwards they contact you "
+"prototype weapon to you for your fight against the Rebels. It seems that the "
+"Engi also aren't too fond of them, since soon afterwards they contact you "
 "and ask where to install the weapon. However, your Engi wishes to stay at "
 "the station and engage in research with the other scientists, so you've no "
 "choice but to leave them there. You decide that this is a fair price to pay "
@@ -39964,6 +39977,7 @@ msgid ""
 msgstr "Kiselev"
 
 #: src-ru/data/events.xml.rawclobber:32614
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_5_JOIN\"]/event[2]/text"
 msgstr ""
@@ -44979,6 +44993,7 @@ msgstr ""
 "returns aboard to their rooms."
 
 #: src-ru/data/events.xml.rawclobber:35203
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"CIV_CW_ST_DANCE1\"]/event[5]/text"
 msgstr ""
@@ -50066,6 +50081,7 @@ msgstr ""
 "letting you into the store."
 
 #: src-ru/data/events.xml.rawclobber:45193
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"ENGI_EVO\"]/text"
 msgstr ""
 "At first glance, the beacon is empty. However, soon you are contacted by a "
