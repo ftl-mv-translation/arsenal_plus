@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataeventsxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events.xml.rawclobber:32
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/text"
@@ -1227,6 +1234,7 @@ msgid "data/events.xml.rawclobber$//event[@name=\"NOTHING2_KEEPER2\"]/text"
 msgstr "占位"
 
 #: src-ru/data/events.xml.rawclobber:2302
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"AUTOSHIP_TALK\"]/text"
 msgstr "这里无人可交谈。不过，你可以对无人机进行一些升级。"
 
@@ -1747,9 +1755,12 @@ msgid ""
 msgstr "你去找半械族，但舱室里空无一人。突然，附近的一把椅子开始变形，半械族恢复了正常形态。你被吓得不轻，请求他不要再这样做了。"
 
 #: src-ru/data/events.xml.rawclobber:3107
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"NOTHING2_ENGI_TEXT\"]/text[11]"
-msgstr "半械族声称他对最近的事件进行了分析，并找到了船上所有问题的根源。然而，伦理模块不允许他说出来。"
+msgstr ""
+"半械族声称他对最近的事件进行了分析，并找到了船上所有问题的根源。然而，伦理模"
+"块不允许他说出来。"
 
 #: src-ru/data/events.xml.rawclobber:3108
 msgid ""
@@ -1829,9 +1840,12 @@ msgid ""
 msgstr "你去找模物族，但舱室里空无一人。突然，附近的一把椅子开始变形，模物族恢复了正常形态。你被吓得不轻，请求他不要再这样做了。"
 
 #: src-ru/data/events.xml.rawclobber:3166
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"NOTHING2_MORPH_TEXT\"]/text[11]"
-msgstr "模物族声称他对最近的事件进行了分析，并找到了船上所有问题的根源。然而，伦理模块不允许他说出来。"
+msgstr ""
+"模物族声称他对最近的事件进行了分析，并找到了船上所有问题的根源。然而，伦理模"
+"块不允许他说出来。"
 
 #: src-ru/data/events.xml.rawclobber:3167
 msgid ""
@@ -4698,9 +4712,12 @@ msgid ""
 msgstr "（红外扫描仪）扫描空间站上的生命迹象。"
 
 #: src-ru/data/events.xml.rawclobber:5912
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"STATION_SICK_SCANNER\"]/event[1]/text"
-msgstr "尽管大多数船员已死亡，传感器仍显示有零散的生命迹象。然而，他们的特征表明他们强壮且不稳定。你认为最好离开，而不是冒险引起剩余船员的注意。"
+msgstr ""
+"尽管大多数船员已死亡，传感器仍显示有零散的生命迹象。然而，他们的特征表明他们"
+"强壮且不稳定。你认为最好离开，而不是冒险引起剩余船员的注意。"
 
 #: src-ru/data/events.xml.rawclobber:5915
 msgid ""
@@ -4895,9 +4912,12 @@ msgid ""
 msgstr "（改进驾驶舱）命令你的飞行员在小行星之间机动。"
 
 #: src-ru/data/events.xml.rawclobber:6092
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BOARDERS_ASTEROID_PRIZRAK\"]/choice[@req=\"pilot\"]/event/text"
-msgstr "多亏了你的飞行员，你成功在小行星间机动。然而，一束亮光紧追着你的飞船，幽灵登船了！"
+msgstr ""
+"多亏了你的飞行员，你成功在小行星间机动。然而，一束亮光紧追着你的飞船，幽灵登"
+"船了！"
 
 #: src-ru/data/events.xml.rawclobber:6109
 msgid "data/events.xml.rawclobber$//event[@name=\"AUTO_ASTEROID\"]/text"
@@ -6304,9 +6324,12 @@ msgid ""
 msgstr "……你把贵重设备交给了定居点，并得到了应得的报酬。"
 
 #: src-ru/data/events.xml.rawclobber:7494
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"QUEST_MANTIS_INVASION_START\"]/text"
-msgstr "你收到一个请求：“我们所有的军舰都在叛乱期间受损或被毁。不过，我们得知离我们几次跃迁距离外有一个螳螂族的军营。你能帮忙吗？”"
+msgstr ""
+"你收到一个请求：“我们所有的军舰都在叛乱期间受损或被毁。不过，我们得知离我们几"
+"次跃迁距离外有一个螳螂族的军营。你能帮忙吗？”"
 
 #: src-ru/data/events.xml.rawclobber:7496
 msgid ""
@@ -8632,10 +8655,14 @@ msgid ""
 msgstr "你太晚才注意到空间站的预置火力系统，来不及躲避齐射。与此同时，空间站正准备防御。"
 
 #: src-ru/data/events.xml.rawclobber:9584
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"CIRCLE_PRO_TALK\"]/event[1]/text"
 msgstr ""
-"你派自己的半械族前往空间站，劝说他们将武器原型机交给你用于对抗叛军。半械族似乎也不待见他们，因为不久后对方就联系你询问武器安装位置。然而，你的半械族希望留在空间站与同胞们一起研究，所以只能把他留在这里。你认为这是获得如此强大武器所应付出的公平代价。"
+"你派自己的半械族前往空间站，劝说他们将武器原型机交给你用于对抗叛军。半械族似"
+"乎也不待见他们，因为不久后对方就联系你询问武器安装位置。然而，你的半械族希望"
+"留在空间站与同胞们一起研究，所以只能把他留在这里。你认为这是获得如此强大武器"
+"所应付出的公平代价。"
 
 #: src-ru/data/events.xml.rawclobber:9589
 msgid ""
@@ -19028,6 +19055,7 @@ msgid "data/events.xml.rawclobber$//event[@name=\"AIM_DRONES_LIST_GOOD_2\"]/text
 msgstr "你的团队花了太长时间来优化无人机系统与目标指示器。无人机操控得到了改进，但在此期间叛军舰队已经逼近。"
 
 #: src-ru/data/events.xml.rawclobber:22752
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"AIM_DRONES_LIST_BAD\"]/text"
 msgstr "在优化过程中，无人机系统发生了爆炸！出了差错……"
 
@@ -19057,6 +19085,7 @@ msgid ""
 msgstr "你的团队花了太长时间来优化火炮与自动瞄准器。火炮得到了改进，但在此期间叛军舰队已经逼近。"
 
 #: src-ru/data/events.xml.rawclobber:22792
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"ART_ACCURACY_LIST_BAD\"]/text"
 msgstr "在优化过程中，火炮系统发生了爆炸！出了差错……"
 
@@ -20978,9 +21007,12 @@ msgid ""
 msgstr "队伍中有人提出了一个绝妙的主意，你成功做到了！射弹摧毁者获得了一次额外的使用次数。"
 
 #: src-ru/data/events.xml.rawclobber:25294
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"PROJECTILE_EATER_LIST_GOOD_AND_BAD\"]/text"
-msgstr "你的队伍在算法上花了很长时间，但总算成功了！弹药摧毁器获得了一次额外使用次数。不过，叛军舰队在此期间逼近了。"
+msgstr ""
+"你的队伍在算法上花了很长时间，但总算成功了！弹药摧毁器获得了一次额外使用次数"
+"。不过，叛军舰队在此期间逼近了。"
 
 #: src-ru/data/events.xml.rawclobber:25312
 msgid ""
@@ -21003,9 +21035,12 @@ msgid ""
 msgstr "队伍中有人提出了一个绝妙的点子，你成功做到了！系统自动维修现在将比基础速度快100%。"
 
 #: src-ru/data/events.xml.rawclobber:25325
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"AUTO_REPAIR_LIST_GOOD_AND_BAD\"]/text"
-msgstr "你的队伍在算法上花了很长时间，但总算成功了！系统自动维修现在将比基础速度快100%。不过，叛军舰队在此期间逼近了。"
+msgstr ""
+"你的队伍在算法上花了很长时间，但总算成功了！系统自动维修现在将比基础速度快"
+"100%。不过，叛军舰队在此期间逼近了。"
 
 #: src-ru/data/events.xml.rawclobber:25361
 msgid "data/events.xml.rawclobber$//textList[@name=\"ROCK_ARMOR_LIST_GOOD\"]/text"
@@ -47854,10 +47889,12 @@ msgstr ""
 "半械族拒绝了。他结结巴巴地使用名词和形容词，并通过移动的全息图像解释说，这些飞船……正在利用彼此，粗俗点翻译，是为了“达成融合”。不知为何，这种飞船物质的融合听起来既尴尬又非常私人。"
 
 #: src-ru/data/events.xml.rawclobber:55064
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_SEX\"]/choice[@req=\"engi_crew\"]/event/choice/event/text"
 msgstr ""
-"你决定让这些半械族飞船继续他们的“私事”。不过，在询问了你的半械族船员后，你收集了所有能够触及范围内的废料，尽管这个行为让你感觉有些不舒服。"
+"你决定让这些半械族飞船继续他们的“私事”。不过，在询问了你的半械族船员后，你收"
+"集了所有能够触及范围内的废料，尽管这个行为让你感觉有些不舒服。"
 
 #: src-ru/data/events.xml.rawclobber:55071
 msgid ""
@@ -48169,6 +48206,7 @@ msgid ""
 msgstr "海盗船已被摧毁，他们再也不能骚扰任何人了。你收集了战场上的残骸。"
 
 #: src-ru/data/events.xml.rawclobber:55491
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"BIG_MISSILE_SHIP\"]/deadCrew/text"
 msgstr "所有海盗都已死亡，他们再也不能骚扰任何人了。你洗劫了他们的货舱。"
@@ -54508,6 +54546,7 @@ msgid ""
 msgstr "在超光速推进器充能时和船员谈谈。"
 
 #: src-ru/data/events.xml.rawclobber:67800
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_BATTLE_OR_PRAZDNIK\"]/choice/event/loadEventList/event[1]/loadEventList/event/text"
 msgstr "一艘有点奇怪的飞船从超光速跃迁中出现在附近。它提议以节日折扣价出售一件武器。"
