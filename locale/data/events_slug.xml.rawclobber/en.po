@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"dataevents_slugxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_slug.xml.rawclobber:159
 #, fuzzy
@@ -1398,6 +1405,7 @@ msgid ""
 msgstr "Wait and hope the escort leaves."
 
 #: src-ru/data/events_slug.xml.rawclobber:1051
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"SLUG_UNLOCK_2\"]/choice[2]/event/text"
 msgstr ""
@@ -1594,6 +1602,7 @@ msgstr ""
 "they already know of your presence here. Be extremely careful."
 
 #: src-ru/data/events_slug.xml.rawclobber:1191
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"START_BEACON_SLUG\"]/text[7]"
 msgstr ""
@@ -4396,11 +4405,12 @@ msgstr ""
 "don't see any source of disaster nearby."
 
 #: src-ru/data/events_slug.xml.rawclobber:3186
+#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_STORM_DISTRESS_OLD_PIRATE\"]/text[1]"
 msgstr ""
-"Turns out an old pirate ship asked for help. However, after seeing you, they"
-" go on the attack."
+"Turns out an old pirate ship asked for help. However, after seeing you, they "
+"go on the attack."
 
 #: src-ru/data/events_slug.xml.rawclobber:3187
 #, fuzzy
