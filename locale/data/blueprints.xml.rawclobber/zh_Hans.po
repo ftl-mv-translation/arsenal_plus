@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: circle217 <3545024352@qq.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datablueprintsxmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -61540,11 +61540,13 @@ msgid ""
 msgstr "这件自适应武器已预热完毕。"
 
 #: src-ru/data/blueprints.xml.rawclobber:134961
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1P_ACC\"]/title"
 msgstr "小型炸弹+ ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:134962
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1P_ACC\"]/short"
 msgstr "小型炸弹+ ‰"
@@ -61560,11 +61562,13 @@ msgid ""
 msgstr "炸弹类武器，消耗导弹。仅对系统造成2点伤害，不伤船体。可在你的舰船上使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:134994
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_ACC\"]/title"
 msgstr "星辰粉碎者 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:134995
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_ACC\"]/short"
 msgstr "碎星者 ‰"
@@ -61610,6 +61614,7 @@ msgid ""
 msgstr "..."
 
 #: src-ru/data/blueprints.xml.rawclobber:135072
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_TELE_ACC\"]/title"
 msgstr "传送炸弹"
@@ -61625,11 +61630,13 @@ msgid ""
 msgstr "可传送炸弹，将舱室内所有单位送至另一艘飞船，同时造成短暂眩晕。可作用于己方飞船。无法通过注射器升级。不会传送无人机。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135106
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_STUN_ACC\"]/title"
 msgstr "震荡炸弹 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135107
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_STUN_ACC\"]/short"
 msgstr "震荡炸弹 ‡"
@@ -61640,11 +61647,13 @@ msgid ""
 msgstr "可传送炸弹，造成1点离子伤害，损坏并眩晕舱室内船员。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135140
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEAL_SYSTEM_ACC\"]/title"
 msgstr "维修炸弹 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135141
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEAL_SYSTEM_ACC\"]/short"
 msgstr "维修炸弹 ‡"
@@ -61655,11 +61664,13 @@ msgid ""
 msgstr "可传送装置，向舱室释放纳米机器人，完全修复系统。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135172
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_LOCK_ACC\"]/title"
 msgstr "封锁炸弹I €"
 
 #: src-ru/data/blueprints.xml.rawclobber:135173
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_LOCK_ACC\"]/short"
 msgstr "封锁I €"
@@ -61670,11 +61681,13 @@ msgid ""
 msgstr "传送炸弹，能造成密集的破舱壁，阻止进出舱室，同时伤害并眩晕船员。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135207
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_LOCK_2_ACC\"]/title"
 msgstr "封锁炸弹II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135208
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_LOCK_2_ACC\"]/short"
 msgstr "封锁II ‡"
@@ -61685,11 +61698,13 @@ msgid ""
 msgstr "传送炸弹，能造成密集的破舱壁，阻止进出舱室，同时伤害并眩晕船员。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135242
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_ACC\"]/title"
 msgstr "小型炸弹 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135243
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_ACC\"]/short"
 msgstr "小型炸弹 ‰"
@@ -61700,11 +61715,13 @@ msgid ""
 msgstr "可传送爆炸装置，对系统和船员造成伤害，不损伤舰体。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135274
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIG_ACC\"]/title"
 msgstr "大型炸弹 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135275
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIG_ACC\"]/short"
 msgstr "大型炸弹 ‰"
@@ -61715,11 +61732,13 @@ msgid ""
 msgstr "装填和引爆速度比小型炸弹慢，但伤害更高。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135305
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEALFIRE_ACC\"]/title"
 msgstr "治疗火焰炸弹 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135306
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEALFIRE_ACC\"]/short"
 msgstr "治疗火焰 ‰"
@@ -61730,11 +61749,13 @@ msgid ""
 msgstr "可传送治疗块，瞬间治愈舱室内所有友方船员，并大概率引发火灾。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135337
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_SMALL_ACC\"]/title"
 msgstr "火焰炸弹I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135338
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_SMALL_ACC\"]/short"
 msgstr "火焰I ‰"
@@ -61745,11 +61766,13 @@ msgid ""
 msgstr "可传送爆炸装置，对船员造成伤害。高概率引发火灾。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135369
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_FIRE_ACC\"]/title"
 msgstr "火焰炸弹II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135370
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_FIRE_ACC\"]/short"
 msgstr "火焰II ‰"
@@ -61760,11 +61783,13 @@ msgid ""
 msgstr "可传送爆炸装置，对船员造成伤害。引发火灾。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135401
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_2_ACC\"]/title"
 msgstr "火焰炸弹III ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135402
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_FIRE_2_ACC\"]/short"
 msgstr "火焰III ‡"
@@ -61775,11 +61800,13 @@ msgid ""
 msgstr "比火焰炸弹速度更慢，但对船员伤害更高，并能损坏系统。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135433
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_FIRE_ACC\"]/title"
 msgstr "火焰集束炸弹 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135434
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_FIRE_ACC\"]/short"
 msgstr "火焰集束 ‰"
@@ -61790,11 +61817,13 @@ msgid ""
 msgstr "发射3枚可传送炸弹，伤害船员并引发火灾。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135464
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_FIRE_STUN_ACC\"]/title"
 msgstr "延时火焰炸弹 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135465
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_FIRE_STUN_ACC\"]/short"
 msgstr "延时火焰 ‡"
@@ -61805,11 +61834,13 @@ msgid ""
 msgstr "可传送爆炸装置。引发火灾并瘫痪船员。爆炸延迟10秒。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135494
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_BIO_ACC\"]/title"
 msgstr "延时生物炸弹 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135495
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_DELAY_BIO_ACC\"]/short"
 msgstr "延时生物 ‡"
@@ -61820,11 +61851,13 @@ msgid ""
 msgstr "可传送爆炸装置。对船员造成大量伤害。爆炸延迟10秒。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135525
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIO_ACC\"]/title"
 msgstr "生物炸弹 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135526
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_BIO_ACC\"]/short"
 msgstr "生物炸弹 ‡"
@@ -61835,6 +61868,7 @@ msgid ""
 msgstr "可传送爆炸装置，不造成物理伤害，但会破坏有机物质，对船员造成严重伤害。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135556
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_HEAL_ACC\"]/title"
 msgstr "治疗炸弹 ‡"
@@ -61850,11 +61884,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:135588
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_HEAL_2_ACC\"]/title"
 msgstr "治疗集束炸弹 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135589
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_HEAL_2_ACC\"]/short"
 msgstr "治疗集束 ‡"
@@ -61865,11 +61901,13 @@ msgid ""
 msgstr "发射3枚可传送治疗块，瞬间治愈己方船员。可作用于己方飞船，但治疗块数量会降至1个。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135619
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_1_ACC\"]/title"
 msgstr "穿甲炸弹I €"
 
 #: src-ru/data/blueprints.xml.rawclobber:135620
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_1_ACC\"]/short"
 msgstr "穿甲I €"
@@ -61880,11 +61918,13 @@ msgid ""
 msgstr "可传送爆炸装置，对系统造成伤害并造成破舱。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135651
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_2_ACC\"]/title"
 msgstr "穿甲炸弹II €"
 
 #: src-ru/data/blueprints.xml.rawclobber:135652
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_2_ACC\"]/short"
 msgstr "穿甲II €"
@@ -61895,11 +61935,13 @@ msgid ""
 msgstr "比I型速度更慢，但对系统和船员造成更多伤害。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135683
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_3_ACC\"]/title"
 msgstr "穿甲炸弹III ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135684
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_BREACH_3_ACC\"]/short"
 msgstr "穿甲炸弹III ‡"
@@ -61910,11 +61952,13 @@ msgid ""
 msgstr "比II型速度更慢，但对系统和船员造成更多伤害。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135715
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_BREACH_ACC\"]/title"
 msgstr "穿甲集束炸弹 €"
 
 #: src-ru/data/blueprints.xml.rawclobber:135716
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_BREACH_ACC\"]/short"
 msgstr "穿甲集束 €"
@@ -61925,11 +61969,13 @@ msgid ""
 msgstr "发射3枚可传送炸弹，对系统造成伤害并在舰体上留下破洞。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135747
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_1_ACC\"]/title"
 msgstr "集束炸弹 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135748
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_1_ACC\"]/short"
 msgstr "集束 ‰"
@@ -61940,11 +61986,13 @@ msgid ""
 msgstr "发射3枚炸弹，伤害系统和船员，但不损伤舰体。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135779
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_ION_ACC\"]/title"
 msgstr "离子炸弹 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135780
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_ION_ACC\"]/short"
 msgstr "离子 ‡"
@@ -61955,11 +62003,13 @@ msgid ""
 msgstr "可传送爆炸装置，对系统造成离子伤害，使其失效。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135813
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_ION_ACC\"]/title"
 msgstr "离子集束炸弹 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:135814
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_ION_ACC\"]/short"
 msgstr "离子集束 ‡"
@@ -61970,11 +62020,13 @@ msgid ""
 msgstr "发射3枚可传送炸弹，造成离子伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135846
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN_ACC\"]/title"
 msgstr "闪光集束炸弹I"
 
 #: src-ru/data/blueprints.xml.rawclobber:135847
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN_ACC\"]/short"
 msgstr "闪光集束I €"
@@ -61985,11 +62037,13 @@ msgid ""
 msgstr "发射3枚可传送炸弹，伤害船员并造成10秒眩晕。可作用于己方飞船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135880
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN2_ACC\"]/title"
 msgstr "闪光集束炸弹II"
 
 #: src-ru/data/blueprints.xml.rawclobber:135881
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BOMB_CLUSTER_STUN2_ACC\"]/short"
 msgstr "闪光集束II €"
@@ -62005,19 +62059,24 @@ msgid ""
 msgstr "速子巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:135915
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_ACC\"]/title"
 msgstr "快子炮I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135916
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_ACC\"]/short"
 msgstr "快子I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135917
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_ACC\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135942
 msgid ""
@@ -62025,19 +62084,24 @@ msgid ""
 msgstr "速子巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:135944
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_ACC\"]/title"
 msgstr "快子炮II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135945
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_ACC\"]/short"
 msgstr "快子II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135946
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_ACC\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:135971
 msgid ""
@@ -62045,26 +62109,33 @@ msgid ""
 msgstr "速子巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:135973
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_ACC\"]/title"
 msgstr "重型快子炮 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135974
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_ACC\"]/short"
 msgstr "重型快子 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:135975
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_ACC\"]/desc"
-msgstr "这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况仍无法避免。"
+msgstr ""
+"这门巨炮生成的粒子团能逆转时间，因此任何手段都无法将其拦截。然而，失手的情况"
+"仍无法避免。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136001
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_ACC\"]/title"
 msgstr "离子效应器I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136002
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_ACC\"]/short"
 msgstr "效应器I ‡"
@@ -62080,11 +62151,13 @@ msgid ""
 msgstr "普通离子发射器，无视护盾并使系统失效。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136042
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_ACC\"]/title"
 msgstr "离子效应器II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136043
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_ACC\"]/short"
 msgstr "效应器II ‡"
@@ -62120,11 +62193,13 @@ msgid ""
 msgstr "慢速离子发射器，长时间使系统失效。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136124
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_ACC\"]/title"
 msgstr "自适应离子效应器 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136125
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_ACC\"]/short"
 msgstr "自适应效应器 ‡"
@@ -62140,11 +62215,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:136170
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_1_ACC\"]/title"
 msgstr "熔岩族原型武器 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136171
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_1_ACC\"]/short"
 msgstr "熔岩原型 ‡"
@@ -62155,11 +62232,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:136215
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_2_ACC\"]/title"
 msgstr "熔岩族原型武器 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136216
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_PROTOTYPE_2_ACC\"]/short"
 msgstr "熔岩原型 ‡"
@@ -62230,11 +62309,13 @@ msgid ""
 msgstr "[星辰粉碎者] 走私者制造的通用武器。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136360
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_1_ACC\"]/title"
 msgstr "纵火者I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136361
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_1_ACC\"]/short"
 msgstr "纵火者I ‡"
@@ -62245,11 +62326,13 @@ msgid ""
 msgstr "熔岩族的点火眩晕武器。施加100%火焰易伤，持续15秒。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136405
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_2_ACC\"]/title"
 msgstr "纵火者II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136406
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_2_ACC\"]/short"
 msgstr "纵火者II ‡"
@@ -62260,11 +62343,13 @@ msgid ""
 msgstr "熔岩族的点火眩晕武器。施加200%火焰易伤，持续15秒。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136450
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_3_ACC\"]/title"
 msgstr "纵火者III ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:136451
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MAGMAN_GUN_3_ACC\"]/short"
 msgstr "纵火者III ‡"
@@ -62275,6 +62360,7 @@ msgid ""
 msgstr "熔岩族的点火眩晕武器。施加400%火焰易伤，持续15秒。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136495
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_M_ACC\"]/title"
 msgstr "模物-M炮 ‡"
@@ -62290,6 +62376,7 @@ msgid ""
 msgstr "发射两发穿过平行维度的炮弹。当接近目标时，炮弹会返回我们的维度。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136526
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_R_ACC\"]/title"
 msgstr "模物-R ‰"
@@ -62305,6 +62392,7 @@ msgid ""
 msgstr "发射两发穿过平行维度的炮弹。当接近目标时，炮弹会返回我们的维度。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136557
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_S_ACC\"]/title"
 msgstr "模物-S €"
@@ -62320,6 +62408,7 @@ msgid ""
 msgstr "发射两发穿过平行维度的炮弹。当接近目标时，炮弹会返回我们的维度。"
 
 #: src-ru/data/blueprints.xml.rawclobber:136588
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_Z_ACC\"]/title"
 msgstr "模物-Z ‡"
@@ -90787,11 +90876,13 @@ msgid ""
 msgstr "..."
 
 #: src-ru/data/blueprints.xml.rawclobber:198490
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_ADV\"]/title"
 msgstr "叉形光束（火）"
 
 #: src-ru/data/blueprints.xml.rawclobber:198491
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_VILKA_ADV\"]/short"
 msgstr "叉形光束（火）"
