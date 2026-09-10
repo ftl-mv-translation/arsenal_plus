@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_nebulaxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_nebula.xml.rawclobber:104
 msgid ""
@@ -367,9 +374,12 @@ msgid ""
 msgstr "不接受贿赂并发动攻击。"
 
 #: src-ru/data/events_nebula.xml.rawclobber:338
+#, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AUTO_DEFENSE_ITEM\"]/text"
-msgstr "一艘叛军先进自动化飞船正在守卫一座小型空间站。然而，没有可用的传感器，无法知道里面有什么。"
+msgstr ""
+"一艘叛军先进自动化飞船正在守卫一座小型空间站。然而，没有可用的传感器，无法知"
+"道里面有什么。"
 
 #: src-ru/data/events_nebula.xml.rawclobber:341
 msgid ""
@@ -2443,9 +2453,12 @@ msgid ""
 msgstr "把他们拆成废料是这种情况下唯一正确的决定。"
 
 #: src-ru/data/events_nebula.xml.rawclobber:2409
+#, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/destroyed/text"
-msgstr "你彻底摧毁了平民的飞船，他们显然不会感谢你杀害了他们的同伴。不过，没人能阻止你捡拾飞船的残骸。"
+msgstr ""
+"你彻底摧毁了平民的飞船，他们显然不会感谢你杀害了他们的同伴。不过，没人能阻止"
+"你捡拾飞船的残骸。"
 
 #: src-ru/data/events_nebula.xml.rawclobber:2413
 msgid ""
