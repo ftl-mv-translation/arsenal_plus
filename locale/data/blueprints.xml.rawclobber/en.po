@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
 "Language: en\n"
@@ -60295,6 +60295,7 @@ msgid ""
 msgstr "Tachyon I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:121737
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M1_UNI\"]/desc"
 msgstr ""
@@ -60320,6 +60321,7 @@ msgid ""
 msgstr "Tachyon II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:121765
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M2_UNI\"]/desc"
 msgstr ""
@@ -60345,6 +60347,7 @@ msgid ""
 msgstr "Heavy Tachyon √"
 
 #: src-ru/data/blueprints.xml.rawclobber:121793
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TAHION_M3_UNI\"]/desc"
 msgstr ""
