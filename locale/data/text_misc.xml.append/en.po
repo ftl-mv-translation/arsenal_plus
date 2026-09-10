@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datatext_miscxmlappend/en/>\n"
 "Language: en\n"
@@ -1131,6 +1131,7 @@ msgid "data/text_misc.xml.append$//text[@name=\"most_scrap_stat\"]"
 msgstr "Most Scrap Collected"
 
 #: src-ru/data/text_misc.xml.append:342
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"most_crew_stat\"]"
 msgstr "Most Crew Hired"
 
@@ -1147,6 +1148,7 @@ msgid "data/text_misc.xml.append$//text[@name=\"total_scrap_stat\"]"
 msgstr "Total Scrap Collected"
 
 #: src-ru/data/text_misc.xml.append:346
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"total_crew_stat\"]"
 msgstr "Total Crew Hired"
 
@@ -3023,6 +3025,7 @@ msgid "data/text_misc.xml.append$//text[@name=\"sensor_2\"]"
 msgstr "See enemy interior"
 
 #: src-ru/data/text_misc.xml.append:934
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"sensor_3\"]"
 msgstr "|, }, dodge, O2 and weapon charge"
 
@@ -4902,6 +4905,7 @@ msgid "data/text_misc.xml.append$//text[@name=\"gameover_blowup\"]"
 msgstr "One last explosion marks your fate as your ship is torn apart."
 
 #: src-ru/data/text_misc.xml.append:1553
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_fedbase\"]"
 msgstr ""
 "The Rebel Flagship has destroyed the Federation Base. All is lost, they've "
