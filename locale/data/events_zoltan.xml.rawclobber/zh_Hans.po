@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-10 15:36+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/arsenal-plus/dataevents_zoltanxmlrawclobber/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:169
 msgid ""
@@ -21,9 +28,12 @@ msgid ""
 msgstr "你已进入佐尔坦空域。据你所知，他们预见到了即将到来的战争，并准备好守住自己的边界。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:172
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"START_BEACON_ZOLTAN\"]/text[4]"
-msgstr "在佐尔坦的领地，你远离联邦的本土空域，不清楚当局是否会对你友善。然而，你必须继续前进。"
+msgstr ""
+"在佐尔坦的领地，你远离联邦的本土空域，不清楚当局是否会对你友善。然而，你必须"
+"继续前进。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:173
 msgid ""
@@ -87,9 +97,12 @@ msgid ""
 msgstr "几颗富含矿藏的小行星被当地佐尔坦“留待以后”开采。可惜，你没有必要的设备来开发它们。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:203
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"NOTHING_ZOLTAN\"]/text[2]"
-msgstr "你必须承认——佐尔坦的领地实际上是个美丽而和平的地方。然而，你的首要任务是给超光速推进器充能并完成任务，而不是观光。"
+msgstr ""
+"你必须承认——佐尔坦的领地实际上是个美丽而和平的地方。然而，你的首要任务是给超"
+"光速推进器充能并完成任务，而不是观光。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:204
 msgid ""
@@ -4916,6 +4929,7 @@ msgid ""
 msgstr "询问升级护盾的价格。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4605
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"8\"]/event/text"
@@ -7656,9 +7670,12 @@ msgid ""
 msgstr "在你对付无人机的时候，走私者逃跑了……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6961
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_VS_AUTOSHIP_R1\"]/event[3]/text"
-msgstr "在你对付无人机的时候，走私者试图进行超光速跃迁。然而，他们的引擎烧毁了，现在他们正在忙着修理。看到你，他们给了你宝贵的设备以示感谢。"
+msgstr ""
+"在你对付无人机的时候，走私者试图进行超光速跃迁。然而，他们的引擎烧毁了，现在"
+"他们正在忙着修理。看到你，他们给了你宝贵的设备以示感谢。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6965
 msgid ""
@@ -10401,10 +10418,13 @@ msgid ""
 msgstr "亨利·关"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9207
+#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_ITB_VEK_LAND\"]/event[4]/text"
 msgstr ""
-"你在城市附近的一处战术要地降落，并积极地一只接一只地杀死巨型甲虫，直到它们撤退到地下的裂缝中。然而，当你的飞船停在地面上时，其中一只怪物扑向它并攻击了好几下！感激的居民给了你一些在飞行中可能有用的东西。"
+"你在城市附近的一处战术要地降落，并积极地一只接一只地杀死巨型甲虫，直到它们撤"
+"退到地下的裂缝中。然而，当你的飞船停在地面上时，其中一只怪物扑向它并攻击了好"
+"几下！感激的居民给了你一些在飞行中可能有用的东西。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9216
 msgid ""
